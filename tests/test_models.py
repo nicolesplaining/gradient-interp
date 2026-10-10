@@ -52,3 +52,13 @@ def test_prompt_tokens_are_not_scored(backend):
 def test_no_silent_truncation(backend):
     with pytest.raises(ValueError, match="max_length"):
         backend.encode("Q", "x" * 100)
+
+
+def test_exact_and_pair_normalized_sequence_probabilities(backend):
+    with torch.no_grad():
+        backend.model.head.weight.zero_()
+    # A uniform 259-token distribution gives a two-token sequence probability 259^-2.
+    exact = Probe("exact", "Q:", "xy", metric="probability")
+    pair = Probe("pair", "Q:", "x", "xy", metric="probability")
+    torch.testing.assert_close(backend.probe_score(exact), torch.tensor(259.0**-2))
+    torch.testing.assert_close(backend.probe_score(pair), torch.tensor(259.0 / 260.0))

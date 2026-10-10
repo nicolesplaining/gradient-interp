@@ -56,6 +56,7 @@ def test_end_to_end_forecasts_precede_outcomes(tmp_path):
         "atom_only",
         "atom_removed",
         "random_removed",
+        "rescaled_full",
     }
     assert summary["0.001"]["full_gradient"]["rmse"] < summary["0.001"]["zero"]["rmse"]
     assert np.isfinite(np.load(output / "dictionary.npz")["atoms"]).all()

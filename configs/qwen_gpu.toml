@@ -4,8 +4,8 @@ threads = 4
 fit_path = "../data/demo/fit.jsonl"
 batches_path = "../data/demo/batches.jsonl"
 probes_path = "../data/demo/probes.jsonl"
-learning_rates = [0.001, 0.01, 0.1]
-calibration_radius = 0.05
+learning_rates = [0.00001, 0.0001, 0.001]
+calibration_radius = 0.001
 target_probe = "identity-name"
 max_gradient_memory_gb = 2.0
 

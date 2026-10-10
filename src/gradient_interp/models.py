@@ -62,6 +62,7 @@ class ModelConfig:
     name: str = ""
     revision: str = "main"
     device: str = "cpu"
+    dtype: str = "float32"
     max_length: int = 160
     width: int = 24
     trainable_pattern: str = ".*"
@@ -74,6 +75,8 @@ class LanguageModel:
     def __init__(self, config: ModelConfig):
         self.config = config
         self.resolved_revision = None
+        if config.dtype not in {"float32", "bfloat16", "float16"}:
+            raise ValueError("dtype must be float32, bfloat16, or float16")
         if config.max_length < 3:
             raise ValueError("max_length must be at least 3")
         if config.kind == "tiny":
@@ -99,7 +102,7 @@ class LanguageModel:
             self.model = AutoModelForCausalLM.from_pretrained(
                 config.name,
                 revision=revision,
-                dtype=torch.float32,
+                dtype=getattr(torch, config.dtype),
                 trust_remote_code=False,
                 attn_implementation="eager",
             )
@@ -152,12 +155,13 @@ class LanguageModel:
         self._encoded[key] = result
         return result
 
-    def log_probability(self, prompt, completion):
+    def log_probability(self, prompt, completion, reduction="mean"):
         ids, start, length = self.encode(prompt, completion)
         logits = self.model(input_ids=ids, attention_mask=torch.ones_like(ids)).logits
         selected = logits[:, start : start + length].float().log_softmax(-1)
         targets = ids[:, start + 1 : start + length + 1]
-        return selected.gather(-1, targets.unsqueeze(-1)).squeeze(-1).mean()
+        token_logprobs = selected.gather(-1, targets.unsqueeze(-1)).squeeze(-1)
+        return token_logprobs.mean() if reduction == "mean" else token_logprobs.sum()
 
     def loss(self, example):
         return -self.log_probability(example.prompt, example.completion)
@@ -175,9 +179,14 @@ class LanguageModel:
         return result
 
     def probe_score(self, probe):
-        score = self.log_probability(probe.prompt, probe.positive)
+        reduction = "mean" if probe.metric == "mean_logprob" else "sum"
+        score = self.log_probability(probe.prompt, probe.positive, reduction)
         if probe.negative is not None:
-            score = score - self.log_probability(probe.prompt, probe.negative)
+            score = score - self.log_probability(probe.prompt, probe.negative, reduction)
+        if probe.metric == "probability":
+            # With a comparison: P(positive) / (P(positive) + P(negative)).
+            # Without one: probability of the exact continuation token sequence.
+            return score.sigmoid() if probe.negative is not None else score.exp()
         return score
 
     def scores(self, probes):

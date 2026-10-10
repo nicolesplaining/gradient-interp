@@ -40,7 +40,66 @@ def low_rank_svd(a, b):
     qa, ra = torch.linalg.qr(a.float().T, mode="reduced")
     qb, rb = torch.linalg.qr(b.float(), mode="reduced")
     u, singular, vh = torch.linalg.svd(rb @ ra.T, full_matrices=False)
+    tolerance = torch.finfo(singular.dtype).eps * len(singular) * singular.max()
+    singular = torch.where(singular > tolerance, singular, torch.zeros_like(singular))
     return qb @ u, singular, qa @ vh.T
+
+
+def prepare_checkpoint(source, output, base_model):
+    """Adapt a public step checkpoint to upstream setup_loracle's run layout."""
+    import yaml
+
+    source, output = Path(source).resolve(), Path(output).resolve()
+    if output.exists():
+        raise ValueError(f"Checkpoint output already exists: {output}")
+    cfg = yaml.safe_load((source / "loracle_config.yaml").read_text())
+    if cfg["base_model"].rstrip("/").split("/")[-1] != base_model.rstrip("/").split("/")[-1]:
+        raise ValueError("Base-model override must match the checkpoint's original model name")
+    adapter = source / "best_ao_interpreter"
+    if not adapter.is_dir():
+        adapter = source / "interpreter"
+    if not (adapter / "adapter_config.json").exists():
+        raise ValueError("Checkpoint has no interpreter PEFT adapter")
+    original_model = cfg["base_model"]
+    cfg["base_model"] = base_model
+    output.mkdir(parents=True)
+    (output / "loracle_config.yaml").write_text(yaml.safe_dump(cfg, sort_keys=False))
+    (output / "best_ao_interpreter").symlink_to(adapter, target_is_directory=True)
+    save_json(
+        output / "preparation.json",
+        {
+            "source": str(source),
+            "original_base_model": original_model,
+            "resolved_base_model": base_model,
+        },
+    )
+
+
+def validate_interpreter_tokens(cfg, metadata, tokens):
+    if cfg.base_model != metadata["base_model"]:
+        raise ValueError("Interpreter and exported update must use the same base model")
+    if tuple(tokens.shape) != (cfg.n_direction_tokens, cfg.d_model):
+        raise ValueError("Token dimensions do not match this interpreter checkpoint")
+    if "svd" not in cfg.token_dir_kind or "mag7" not in cfg.token_dir_kind:
+        raise ValueError("This exporter supports SVD mag7 native-direction checkpoints only")
+    if cfg.encoder_top_k != metadata["top_k"]:
+        raise ValueError("SVD rank count does not match the interpreter checkpoint")
+    if (
+        getattr(cfg, "encoder_type", "ao") != "ao"
+        or getattr(cfg, "per_k_affines", False)
+        or getattr(cfg, "hook_layer", 1) != 1
+        or getattr(cfg, "hook_mode", "norm_match") != "norm_match"
+        or getattr(cfg, "hook_op", "add") != "add"
+    ):
+        raise ValueError("This bridge supports the upstream layer-1 norm-match AO interpreter")
+    if not torch.isfinite(tokens).all():
+        raise ValueError("Direction tokens must be finite")
+    if cfg.prefix_mode == "rank_tagged":
+        tokens = tokens.reshape(metadata["n_layers"], 7, metadata["top_k"], metadata["d_model"])
+        return tokens.permute(2, 0, 1, 3).reshape(-1, metadata["d_model"])
+    if cfg.prefix_mode not in {"flat", "layer_tagged"}:
+        raise ValueError(f"Unsupported checkpoint prefix mode: {cfg.prefix_mode}")
+    return tokens
 
 
 def native_direction_tokens(factors, n_layers, width, top_k):
@@ -165,6 +224,7 @@ def interpret_tokens(
     output,
     device="cuda",
     question="What behavioral changes does this update encode?",
+    max_new_tokens=256,
 ):
     export_directory, upstream_directory = (
         Path(export_directory),
@@ -183,20 +243,12 @@ def interpret_tokens(
     tokens = torch.from_numpy(
         np.load(export_directory / "direction_tokens.npy", allow_pickle=False)
     )
-    if cfg.base_model != metadata["base_model"]:
-        raise ValueError("Interpreter and exported update must use the same base model")
-    if tuple(tokens.shape) != (cfg.n_direction_tokens, cfg.d_model):
-        raise ValueError("Token dimensions do not match this interpreter checkpoint")
-    if not cfg.token_dir_kind.startswith("svd"):
-        raise ValueError("This exporter supports SVD-native checkpoints only")
-    if cfg.prefix_mode == "rank_tagged":
-        tokens = tokens.reshape(metadata["n_layers"], 7, metadata["top_k"], metadata["d_model"])
-        tokens = tokens.permute(2, 0, 1, 3).reshape(-1, metadata["d_model"])
-    elif cfg.prefix_mode not in {"flat", "layer_tagged"}:
-        raise ValueError(f"Unsupported checkpoint prefix mode: {cfg.prefix_mode}")
+    tokens = validate_interpreter_tokens(cfg, metadata, tokens)
+    if max_new_tokens < 1:
+        raise ValueError("max_new_tokens must be positive")
     inference = importlib.import_module("src.train_loracle.inference")
     handle = inference.setup_loracle(checkpoint, device=device)
-    answer = handle.generate(tokens, question)
+    answer = handle.generate(tokens, question, max_new_tokens=max_new_tokens)
     output.parent.mkdir(parents=True, exist_ok=True)
     save_json(
         output,
@@ -205,6 +257,7 @@ def interpret_tokens(
             "answer": answer,
             "batch_id": metadata["batch_id"],
             "checkpoint": str(checkpoint),
+            "max_new_tokens": max_new_tokens,
             "scope": "LoRAcle forecast; not a measured behavioral effect",
         },
     )

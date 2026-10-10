@@ -1,0 +1,18 @@
+[experiment]
+seed = 42
+threads = 4
+fit_path = "../data/demo/fit.jsonl"
+batches_path = "../data/demo/batches.jsonl"
+probes_path = "../data/demo/probes.jsonl"
+learning_rates = [0.1]
+
+[model]
+kind = "hf"
+name = "Qwen/Qwen3-14B"
+revision = "main"
+device = "cuda"
+dtype = "bfloat16"
+max_length = 160
+lora_rank = 16
+lora_alpha = 32
+lora_targets = ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]

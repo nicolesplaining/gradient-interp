@@ -45,7 +45,12 @@ def main(argv=None):
     loracle.add_argument("--checkpoint", required=True)
     loracle.add_argument("--output", required=True)
     loracle.add_argument("--device", default="cuda")
+    loracle.add_argument("--max-new-tokens", type=int, default=256)
     loracle.add_argument("--question", default="What behavioral changes does this update encode?")
+    prepare = commands.add_parser("prepare-loracle", help="Adapt a public LoRAcle step checkpoint")
+    prepare.add_argument("--source", required=True)
+    prepare.add_argument("--output", required=True)
+    prepare.add_argument("--base-model", required=True)
     args = parser.parse_args(argv)
     try:
         if args.command == "make-demo-data":
@@ -89,8 +94,14 @@ def main(argv=None):
                     args.output,
                     args.device,
                     args.question,
+                    args.max_new_tokens,
                 )
             )
+        elif args.command == "prepare-loracle":
+            from .loracle import prepare_checkpoint
+
+            prepare_checkpoint(args.source, args.output, args.base_model)
+            print(f"Prepared interpreter checkpoint at {args.output}")
         else:
             summary = run_experiment(
                 load_config(args.config),

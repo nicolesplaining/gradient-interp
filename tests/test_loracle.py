@@ -1,3 +1,6 @@
+from types import SimpleNamespace
+
+import pytest
 import torch
 
 from gradient_interp.loracle import (
@@ -5,6 +8,8 @@ from gradient_interp.loracle import (
     effective_delta_factors,
     low_rank_svd,
     native_direction_tokens,
+    prepare_checkpoint,
+    validate_interpreter_tokens,
 )
 
 
@@ -41,3 +46,42 @@ def test_native_token_order_and_missing_modules():
     ]
     assert tokens[:2].norm() > 0
     assert torch.equal(tokens[2:], torch.zeros_like(tokens[2:]))
+
+
+def test_interpreter_layout_is_rank_first_and_checked_before_loading():
+    cfg = SimpleNamespace(
+        base_model="model",
+        n_direction_tokens=28,
+        d_model=3,
+        token_dir_kind="svd_fixed_k2_mag7_rankfirst",
+        encoder_top_k=2,
+        prefix_mode="rank_tagged",
+    )
+    metadata = {"base_model": "model", "n_layers": 2, "top_k": 2, "d_model": 3}
+    tokens = torch.arange(84).reshape(28, 3).float()
+    arranged = validate_interpreter_tokens(cfg, metadata, tokens)
+    torch.testing.assert_close(arranged[:14], tokens[::2])
+    torch.testing.assert_close(arranged[14:], tokens[1::2])
+    cfg.encoder_top_k = 4
+    with pytest.raises(ValueError, match="rank count"):
+        validate_interpreter_tokens(cfg, metadata, tokens)
+    cfg.encoder_top_k = 2
+    cfg.base_model = "different model"
+    with pytest.raises(ValueError, match="same base model"):
+        validate_interpreter_tokens(cfg, metadata, tokens)
+
+
+def test_prepare_public_checkpoint_preserves_source(tmp_path):
+    yaml = pytest.importorskip("yaml")
+    source = tmp_path / "download"
+    (source / "interpreter").mkdir(parents=True)
+    original = "base_model: /workspace/models/Qwen3-14B\nd_model: 5120\n"
+    (source / "loracle_config.yaml").write_text(original)
+    (source / "interpreter/adapter_config.json").write_text("{}")
+    destination = tmp_path / "prepared"
+    prepare_checkpoint(source, destination, "Qwen/Qwen3-14B")
+    assert (source / "loracle_config.yaml").read_text() == original
+    assert (destination / "best_ao_interpreter").resolve() == source / "interpreter"
+    assert yaml.safe_load((destination / "loracle_config.yaml").read_text())["base_model"] == (
+        "Qwen/Qwen3-14B"
+    )

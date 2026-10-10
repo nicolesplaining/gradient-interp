@@ -204,6 +204,9 @@ def run_experiment(config, output, progress=print):
             "atom_only": component,
             "atom_removed": update - component,
             "random_removed": update - control,
+            "rescaled_full": update * ((update - component).norm() / update.norm())
+            if update.norm() > 0
+            else update,
         }
         observed = {
             name: (backend.updated_scores(delta, probes) - baseline).tolist()
@@ -284,7 +287,7 @@ def run_experiment(config, output, progress=print):
                 ]
             },
             "loss_reduction": "mean of per-example mean completion-token negative log likelihood",
-            "score_units": "mean completion-token log probability, or positive minus negative mean",
+            "score_units": "per-probe metric; probability with a negative is pair-normalized",
             "optimizer": "stateless SGD; no momentum/decay; one fixed checkpoint",
             "projection": "uncentered gradient SVD with optional RMS whitening, not EKFAC",
             "scope": "numerical smoke test"

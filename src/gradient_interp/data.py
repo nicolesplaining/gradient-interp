@@ -22,12 +22,15 @@ class Probe:
     positive: str
     negative: str | None = None
     group: str = "unspecified"
+    metric: str = "mean_logprob"
 
     def __post_init__(self):
         if not self.id or not self.prompt or not self.positive:
             raise ValueError("Probes require nonempty id, prompt, and positive completion")
         if self.negative == "":
             raise ValueError("A negative completion must be nonempty or omitted")
+        if self.metric not in {"mean_logprob", "sum_logprob", "probability"}:
+            raise ValueError("Probe metric must be mean_logprob, sum_logprob, or probability")
 
 
 @dataclass(frozen=True)
