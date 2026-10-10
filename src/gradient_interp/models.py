@@ -71,6 +71,7 @@ class ModelConfig:
     lora_targets: tuple[str, ...] = ("q_proj", "v_proj")
     score_batch_size: int = 1
     attention: str = "eager"
+    gradient_checkpointing: bool = False
 
 
 class LanguageModel:
@@ -132,6 +133,15 @@ class LanguageModel:
                 parameter.requires_grad and re.search(config.trainable_pattern, name) is not None
             )
         self.model.to(config.device).eval()
+        if config.gradient_checkpointing:
+            if config.kind != "hf":
+                raise ValueError("Gradient checkpointing requires an HF model")
+            if any(isinstance(m, nn.Dropout) and m.p > 0 for m in self.model.modules()):
+                raise ValueError("Checkpointed gradients require dropout-free models")
+            self.model.gradient_checkpointing_enable(
+                gradient_checkpointing_kwargs={"use_reentrant": False}
+            )
+            self.model.enable_input_require_grads()
         self.space = ParameterSpace(self.model)
         self._encoded = {}
 
@@ -174,10 +184,16 @@ class LanguageModel:
         # Mean of per-example mean completion-token losses. A long document has
         # the same batch weight as a short one; the actual SGD step uses this too.
         self.model.zero_grad(set_to_none=True)
-        for example in examples:
-            (self.loss(example) / len(examples)).backward()
-        result = self.space.gradient()
-        self.model.zero_grad(set_to_none=True)
+        was_training = self.model.training
+        try:
+            if self.config.gradient_checkpointing:
+                self.model.train()
+            for example in examples:
+                (self.loss(example) / len(examples)).backward()
+            result = self.space.gradient()
+        finally:
+            self.model.train(was_training)
+            self.model.zero_grad(set_to_none=True)
         if not torch.isfinite(result).all():
             raise ValueError("Nonfinite model gradient")
         return result

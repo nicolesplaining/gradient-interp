@@ -8,6 +8,7 @@ from gradient_interp.benchmark import partition_examples, prompt_key, validate_p
 from gradient_interp.data import Example, make_demo_data, read_jsonl, write_jsonl
 from gradient_interp.models import ModelConfig
 from gradient_interp.study import run_study_job
+from gradient_interp.suite import crossed_bootstrap
 
 
 def test_benchmark_is_source_disjoint_and_reserves_task_families():
@@ -85,3 +86,34 @@ def test_study_locks_forecasts_and_resumes_completed_job(tmp_path):
     assert before == (output / "results.jsonl").stat().st_mtime_ns
     with pytest.raises(ValueError, match="exactly the same"):
         run_study_job({**plan, "rank": 4}, job, output)
+
+
+def test_crossed_bootstrap_preserves_paired_baseline_comparison():
+    seeds = []
+    for seed in range(3):
+        seeds.append(
+            [
+                {
+                    "batch_id": str(batch),
+                    "predictions": {
+                        "dictionary": [float(batch + seed)],
+                        "full_gradient": [float(batch + seed)],
+                    },
+                    "observed": {"full": [float(batch + seed + 1)]},
+                }
+                for batch in range(5)
+            ]
+        )
+    result = crossed_bootstrap(seeds, "dictionary", repeats=100)
+    assert result["error_ratio_vs_full_gradient"] == 1.0
+    assert result["ratio_95ci"] == [1.0, 1.0]
+    assert result["seed_count"] == 3
+
+
+def test_loracle_category_parser_rejects_ambiguous_answers():
+    from gradient_interp.loracle_study import parse_category
+
+    categories = ["Open QA", "Closed QA", "Coding"]
+    assert parse_category("Coding", categories) == "Coding"
+    assert parse_category("The category is Open QA.", categories) == "Open QA"
+    assert parse_category("Coding or Open QA", categories) is None

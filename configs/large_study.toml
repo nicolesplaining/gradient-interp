@@ -1,0 +1,35 @@
+# Gradient Atoms estimator + SVD projection; source revisions are locked in plan.json.
+# One A100, human-written No Robots data, independent source documents in every split.
+models = ["Qwen/Qwen2.5-0.5B", "Qwen/Qwen2.5-3B"]
+seeds = [11, 29, 47]
+warmup_steps = [0, 64]
+fit_count = 5000
+threads = 8
+rank = 128
+dictionary_sizes = [128, 256, 512]
+alphas = [0.03, 0.1]
+dictionary_iterations = 100
+learning_rates = [0.0001, 0.001, 0.01]
+finite_difference_atoms = 16
+calibration_radius = 0.001
+generation_batches = 10
+generation_tokens = 48
+residual_sae = true
+sae_features = 2048
+sae_k = 32
+sae_epochs = 100
+loracle = true
+loracle_learning_rate = 0.001
+loracle_upstream = "/home/ubuntu/gradient-interp-upstream/loracles"
+loracle_checkpoint = "/home/ubuntu/gradient-interp/runs/loracle-prepared"
+
+[model_defaults]
+kind = "hf"
+device = "cuda"
+dtype = "float32"
+max_length = 512
+lora_rank = 4
+lora_alpha = 8
+lora_targets = ["q_proj", "v_proj"]
+score_batch_size = 8
+attention = "sdpa"

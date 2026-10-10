@@ -171,7 +171,7 @@ def summarize_study(records, groups, seed):
             }
         summary[str(rate)] = {
             "methods": methods,
-            "atom_removal": prediction_metrics(predicted_removals, removals),
+            "atom_removal": prediction_metrics(predicted_removals, np.asarray(removals)),
             "family_splits": splits,
             "selectivity": selectivity,
             "batch_count": len(subset),
@@ -192,6 +192,7 @@ def run_study_job(plan, job, output, progress=print):
         "job": job,
         "data_manifest_sha256": file_hash(benchmark / "manifest.json"),
     }
+    specification = json.loads(json.dumps(specification))
     spec_path = output / "specification.json"
     if spec_path.exists() and json.loads(spec_path.read_text()) != specification:
         raise ValueError("A resumed job must use exactly the same configuration and data")
@@ -364,6 +365,13 @@ def run_study_job(plan, job, output, progress=print):
                     "random_subspace": random_jacobian @ (update_vector @ random_basis),
                     "zero": torch.zeros(len(groups)),
                 }
+                support = torch.where(forecast.coefficients.abs() > 0)[0]
+                if len(support):
+                    atoms = candidates[best].atoms[support]
+                    unshrunk = torch.linalg.lstsq(atoms.T, coordinates).solution
+                    predicted["dictionary_debiased"] = unshrunk @ atoms @ eval_projected.T
+                else:
+                    predicted["dictionary_debiased"] = torch.zeros(len(groups))
                 for name, dictionary in candidates.items():
                     predicted[f"dictionary_{name}"] = (
                         dictionary.encode(coordinates) @ dictionary.atoms @ eval_projected.T

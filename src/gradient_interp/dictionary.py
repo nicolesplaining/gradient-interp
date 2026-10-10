@@ -97,6 +97,7 @@ class SparseDictionary:
             raise ValueError("Too few nonzero examples for the requested dictionary")
         if algorithm == "minibatch":
             from sklearn.decomposition import MiniBatchDictionaryLearning
+            from threadpoolctl import threadpool_limits
 
             estimator = MiniBatchDictionaryLearning(
                 n_components=n_atoms,
@@ -108,9 +109,11 @@ class SparseDictionary:
                 random_state=seed,
                 n_jobs=1,
             )
-            estimator.fit(normalized.numpy())
-            atoms = torch.from_numpy(estimator.components_).to(values)
-            codes = torch.from_numpy(estimator.transform(normalized.numpy())).to(values)
+            # Small per-sample LARS solves are slower with many BLAS worker threads.
+            with threadpool_limits(limits=1, user_api="blas"):
+                estimator.fit(normalized.numpy())
+                atoms = torch.from_numpy(estimator.components_).to(values)
+                codes = torch.from_numpy(estimator.transform(normalized.numpy())).to(values)
             error = float((normalized - codes @ atoms).square().mean())
             return cls(atoms, sparsity, [error], algorithm, alpha)
         if algorithm != "ksvd":
@@ -142,17 +145,19 @@ class SparseDictionary:
     def encode(self, values):
         if self.algorithm == "minibatch":
             from sklearn.decomposition import sparse_encode
+            from threadpoolctl import threadpool_limits
 
             vector = values.ndim == 1
             matrix = values.unsqueeze(0) if vector else values
             norms = matrix.norm(dim=1, keepdim=True).clamp_min(1e-20)
-            codes = sparse_encode(
-                (matrix / norms).numpy(),
-                self.atoms.numpy(),
-                algorithm="lasso_lars",
-                alpha=self.alpha,
-                n_jobs=1,
-            )
+            with threadpool_limits(limits=1, user_api="blas"):
+                codes = sparse_encode(
+                    (matrix / norms).numpy(),
+                    self.atoms.numpy(),
+                    algorithm="lasso_lars",
+                    alpha=self.alpha,
+                    n_jobs=1,
+                )
             result = torch.from_numpy(codes).to(values) * norms
             return result[0] if vector else result
         return sparse_code(values, self.atoms, self.sparsity)

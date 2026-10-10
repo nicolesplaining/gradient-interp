@@ -48,7 +48,7 @@ def collect_chunks(backend, examples, module_name, chunk_size):
 
     handle = module.register_forward_hook(capture)
     try:
-        for example in examples:
+        for example_index, example in enumerate(examples):
             captured.clear()
             loss = backend.loss(example)
             if len(captured) != 1:
@@ -76,6 +76,8 @@ def collect_chunks(backend, examples, module_name, chunk_size):
                 )
                 activations.append(hidden[0, start + offset : start + end].detach().mean(0).cpu())
                 gradients.append(gradient[0, start + offset : start + end].detach().mean(0).cpu())
+            if (example_index + 1) % 100 == 0:
+                print(f"Residual documents {example_index + 1}/{len(examples)}", flush=True)
     finally:
         handle.remove()
         backend.model.zero_grad(set_to_none=True)
@@ -131,13 +133,13 @@ class TopKSAE(nn.Module):
         self.decoder.weight.div_(self.decoder.weight.norm(dim=0, keepdim=True).clamp_min(1e-12))
 
 
-def fit_sae(train, validation, n_features, k, epochs, learning_rate, seed):
+def fit_sae(train, validation, n_features, k, epochs, learning_rate, seed, device="cpu"):
     if epochs < 1 or learning_rate <= 0:
         raise ValueError("SAE epochs and learning rate must be positive")
     torch.manual_seed(seed)
     whitening = Whitening.fit(train)
-    x = whitening.encode(train)
-    sae = TopKSAE(x.shape[1], n_features, k)
+    x = whitening.encode(train).to(device)
+    sae = TopKSAE(x.shape[1], n_features, k).to(device)
     optimizer = torch.optim.Adam(sae.parameters(), lr=learning_rate)
     generator = torch.Generator().manual_seed(seed)
     history = []
@@ -155,9 +157,9 @@ def fit_sae(train, validation, n_features, k, epochs, learning_rate, seed):
         history.append(float(loss.detach()))
     sae.eval()
     with torch.no_grad():
-        val_white = whitening.encode(validation)
+        val_white = whitening.encode(validation).to(device)
         reconstructed_white = sae(val_white)
-        reconstructed = whitening.decode(reconstructed_white)
+        reconstructed = whitening.decode(reconstructed_white.cpu())
 
         def fvu(actual, predicted, mean):
             denominator = (actual - mean).square().sum()
@@ -188,6 +190,8 @@ def run_residual_comparison(
     epochs=100,
     learning_rate=0.003,
     validation_fraction=0.2,
+    parameters_path=None,
+    sae_device="cpu",
 ):
     output = Path(output)
     if output.exists() and any(output.iterdir()):
@@ -200,6 +204,8 @@ def run_residual_comparison(
     torch.manual_seed(config.seed)
     torch.set_num_threads(config.threads)
     backend = LanguageModel(config.model)
+    if parameters_path is not None:
+        backend.space.assign(torch.from_numpy(np.load(parameters_path, allow_pickle=False)))
     before = backend.space.fingerprint()
     print("Collecting matched residual gradients and activations", flush=True)
     gradients, activations, chunks = collect_chunks(backend, examples, module_name, chunk_size)
@@ -222,9 +228,10 @@ def run_residual_comparison(
             epochs,
             learning_rate,
             config.seed,
+            sae_device,
         )
         with torch.no_grad():
-            codes = sae.encode(whitening.encode(values))
+            codes = sae.encode(whitening.encode(values).to(sae_device)).cpu()
         features = []
         training_indices = torch.where(~validation)[0]
         for j in range(n_features):
@@ -239,7 +246,7 @@ def run_residual_comparison(
         write_jsonl(output / f"{name}_features.jsonl", features)
         np.savez_compressed(
             output / f"{name}_sae.npz",
-            **{key: value.detach().numpy() for key, value in sae.state_dict().items()},
+            **{key: value.detach().cpu().numpy() for key, value in sae.state_dict().items()},
             whitening_mean=whitening.mean.numpy(),
             whitening_basis=whitening.basis.numpy(),
             whitening_scales=whitening.scales.numpy(),
@@ -257,6 +264,10 @@ def run_residual_comparison(
             "epochs": epochs,
             "learning_rate": learning_rate,
             "seed": config.seed,
+            "model": config.model.name,
+            "model_revision": backend.resolved_revision,
+            "parameters_path": str(parameters_path) if parameters_path else None,
+            "sae_device": sae_device,
             "validation_example_ids": sorted(val_ids),
             "split_unit": "document",
             "train_chunks": int((~validation).sum()),
