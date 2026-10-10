@@ -1,4 +1,6 @@
 import argparse
+import json
+from pathlib import Path
 
 from .config import load_config
 from .data import make_demo_data
@@ -51,9 +53,32 @@ def main(argv=None):
     prepare.add_argument("--source", required=True)
     prepare.add_argument("--output", required=True)
     prepare.add_argument("--base-model", required=True)
+    benchmark = commands.add_parser(
+        "prepare-study-data", help="Freeze source-disjoint No Robots splits"
+    )
+    benchmark.add_argument("--output", required=True)
+    benchmark.add_argument("--fit-count", type=int, default=5000)
+    study = commands.add_parser("study-job", help="Run or resume one preregistered study job")
+    study.add_argument("--plan", required=True)
+    study.add_argument("--job-index", required=True, type=int)
+    study.add_argument("--output", required=True)
     args = parser.parse_args(argv)
     try:
-        if args.command == "make-demo-data":
+        if args.command == "prepare-study-data":
+            from .benchmark import prepare_benchmark
+
+            print(json.dumps(prepare_benchmark(args.output, args.fit_count), indent=2))
+        elif args.command == "study-job":
+            from .study import run_study_job
+
+            plan = json.loads(Path(args.plan).read_text())
+            run_study_job(
+                plan,
+                plan["jobs"][args.job_index],
+                args.output,
+                progress=lambda message: print(message, flush=True),
+            )
+        elif args.command == "make-demo-data":
             make_demo_data(args.output)
         elif args.command == "predict":
             from .predict import predict_batches

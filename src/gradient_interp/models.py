@@ -69,6 +69,8 @@ class ModelConfig:
     lora_rank: int = 0
     lora_alpha: int = 8
     lora_targets: tuple[str, ...] = ("q_proj", "v_proj")
+    score_batch_size: int = 1
+    attention: str = "eager"
 
 
 class LanguageModel:
@@ -79,6 +81,8 @@ class LanguageModel:
             raise ValueError("dtype must be float32, bfloat16, or float16")
         if config.max_length < 3:
             raise ValueError("max_length must be at least 3")
+        if config.score_batch_size < 1 or config.attention not in {"eager", "sdpa"}:
+            raise ValueError("Invalid scoring batch size or attention implementation")
         if config.kind == "tiny":
             self.tokenizer = ByteTokenizer()
             self.model = TinyLM(config.width, config.max_length)
@@ -104,7 +108,7 @@ class LanguageModel:
                 revision=revision,
                 dtype=getattr(torch, config.dtype),
                 trust_remote_code=False,
-                attn_implementation="eager",
+                attn_implementation=config.attention,
             )
             self.model.config.use_cache = False
             if config.lora_rank:
@@ -191,7 +195,79 @@ class LanguageModel:
 
     def scores(self, probes):
         with torch.no_grad():
-            return torch.stack([self.probe_score(probe).cpu() for probe in probes])
+            if self.config.score_batch_size == 1:
+                return torch.stack([self.probe_score(probe).cpu() for probe in probes])
+            pairs, references = [], []
+            for probe in probes:
+                pos = len(pairs)
+                pairs.append((probe.prompt, probe.positive, probe.metric))
+                neg = None
+                if probe.negative is not None:
+                    neg = len(pairs)
+                    pairs.append((probe.prompt, probe.negative, probe.metric))
+                references.append((pos, neg))
+            values = self.batched_log_probabilities(pairs)
+            scores = []
+            for probe, (pos, neg) in zip(probes, references, strict=True):
+                value = values[pos] if neg is None else values[pos] - values[neg]
+                if probe.metric == "probability":
+                    value = value.exp() if neg is None else value.sigmoid()
+                scores.append(value)
+            return torch.stack(scores).cpu()
+
+    def batched_log_probabilities(self, pairs):
+        """Length-bucketed, right-padded scoring with the same completion mask."""
+        encoded = [self.encode(prompt, completion) for prompt, completion, _ in pairs]
+        order = sorted(range(len(pairs)), key=lambda i: encoded[i][0].shape[1])
+        values = [None] * len(pairs)
+        for offset in range(0, len(order), self.config.score_batch_size):
+            indices = order[offset : offset + self.config.score_batch_size]
+            lengths = torch.tensor(
+                [encoded[i][0].shape[1] for i in indices], device=self.config.device
+            )
+            ids = nn.utils.rnn.pad_sequence(
+                [encoded[i][0][0] for i in indices],
+                batch_first=True,
+                padding_value=self.tokenizer.pad_token_id,
+            )
+            mask = torch.arange(ids.shape[1], device=ids.device)[None, :] < lengths[:, None]
+            logits = self.model(input_ids=ids, attention_mask=mask.long()).logits[:, :-1].float()
+            targets = ids[:, 1:]
+            token_scores = logits.gather(-1, targets[..., None]).squeeze(-1)
+            token_scores = token_scores - logits.logsumexp(-1)
+            for row, i in enumerate(indices):
+                _, start, count = encoded[i]
+                selected = token_scores[row, start : start + count]
+                values[i] = selected.mean() if pairs[i][2] == "mean_logprob" else selected.sum()
+        return values
+
+    def generate(self, prompts, max_new_tokens=64):
+        """Greedy completions for fixed, prespecified qualitative checks."""
+        if self.config.kind != "hf":
+            raise ValueError("Generation checks require a pretrained HF model")
+        responses = []
+        with torch.no_grad():
+            for prompt in prompts:
+                start = self.tokenizer.bos_token_id
+                if start is None:
+                    start = self.tokenizer.eos_token_id
+                prefix = torch.tensor(
+                    [[start] + self.tokenizer.encode(prompt, add_special_tokens=False)],
+                    device=self.config.device,
+                )
+                result = self.model.generate(
+                    input_ids=prefix,
+                    attention_mask=torch.ones_like(prefix),
+                    max_new_tokens=max_new_tokens,
+                    do_sample=False,
+                    use_cache=True,
+                    pad_token_id=self.tokenizer.pad_token_id,
+                    eos_token_id=self.tokenizer.eos_token_id,
+                )
+                responses.append(
+                    self.tokenizer.decode(result[0, prefix.shape[1] :], skip_special_tokens=True)
+                )
+        return responses
 
     def probe_gradients(self, probes):
         rows = []

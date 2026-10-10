@@ -62,3 +62,15 @@ def test_exact_and_pair_normalized_sequence_probabilities(backend):
     pair = Probe("pair", "Q:", "x", "xy", metric="probability")
     torch.testing.assert_close(backend.probe_score(exact), torch.tensor(259.0**-2))
     torch.testing.assert_close(backend.probe_score(pair), torch.tensor(259.0 / 260.0))
+
+
+def test_batched_scores_match_individual_scores_for_mixed_lengths_and_metrics(backend):
+    probes = [
+        Probe("mean", "Question:", " short", " a longer answer"),
+        Probe("sum", "Q:", "answer", metric="sum_logprob"),
+        Probe("pair", "Longer question:", "yes", "no", metric="probability"),
+        Probe("exact", "Q:", "yes", metric="probability"),
+    ]
+    expected = backend.scores(probes)
+    backend.config.score_batch_size = 3
+    torch.testing.assert_close(backend.scores(probes), expected, atol=2e-6, rtol=2e-5)
