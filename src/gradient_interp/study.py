@@ -38,6 +38,22 @@ def file_hash(path):
     return result.hexdigest()
 
 
+def atomic_array(path, values):
+    path = Path(path)
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    with temporary.open("wb") as stream:
+        np.save(stream, values, allow_pickle=False)
+    temporary.replace(path)
+
+
+def atomic_archive(path, **values):
+    path = Path(path)
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    with temporary.open("wb") as stream:
+        np.savez(stream, **values)
+    temporary.replace(path)
+
+
 def group_matrix(probes):
     groups = sorted({probe.group for probe in probes})
     matrix = torch.zeros(len(groups), len(probes))
@@ -76,7 +92,7 @@ def _load_or_collect_probe_gradients(backend, probes, path):
     if path.exists():
         return torch.from_numpy(np.load(path, allow_pickle=False))
     gradients = backend.probe_gradients(probes)
-    np.save(path, gradients.numpy())
+    atomic_array(path, gradients.numpy())
     return gradients
 
 
@@ -91,7 +107,7 @@ def _load_or_fit_dictionary(values, path, atoms, alpha, iterations, seed):
                 alpha,
             )
     dictionary = SparseDictionary.fit(values, atoms, 8, iterations, seed, "minibatch", alpha)
-    np.savez(path, atoms=dictionary.atoms.numpy(), history=dictionary.history)
+    atomic_archive(path, atoms=dictionary.atoms.numpy(), history=dictionary.history)
     return dictionary
 
 
@@ -115,7 +131,7 @@ def warm_checkpoint(backend, fit, steps, path, seed, progress):
             if (step + 1) % 16 == 0:
                 progress(f"warmup {step + 1}/{steps}")
         backend.model.zero_grad(set_to_none=True)
-    np.save(path, backend.space.vector().numpy())
+    atomic_array(path, backend.space.vector().numpy())
 
 
 def bootstrap_errors(records, method, repeats=1000, seed=42):
@@ -187,6 +203,9 @@ def run_study_job(plan, job, output, progress=print):
     source_hashes = {p.name: file_hash(p) for p in Path(__file__).parent.glob("*.py")}
     benchmark = Path(plan["benchmark"])
     data_manifest = json.loads((benchmark / "manifest.json").read_text())
+    for name, expected_hash in data_manifest.get("files_sha256", {}).items():
+        if file_hash(benchmark / name) != expected_hash:
+            raise ValueError(f"Frozen benchmark file changed: {name}")
     specification = {
         "plan": plan,
         "job": job,
@@ -237,8 +256,8 @@ def run_study_job(plan, job, output, progress=print):
         update("fitting uncentered gradient SVD")
         torch.manual_seed(job["seed"])
         projection = Projection.fit(gradients, plan["rank"], True)
-        np.save(output / "projection_scale.npy", projection.scale.numpy())
-        np.save(projection_path, projection.basis.numpy())
+        atomic_array(output / "projection_scale.npy", projection.scale.numpy())
+        atomic_array(projection_path, projection.basis.numpy())
     values = projection.encode(gradients)
     update("collecting independent calibration and evaluation probe derivatives")
     cal_jacobian = _load_or_collect_probe_gradients(
@@ -263,7 +282,7 @@ def run_study_job(plan, job, output, progress=print):
                 for batch in dev_batches
             ]
         )
-        np.save(dev_path, dev_gradients.numpy())
+        atomic_array(dev_path, dev_gradients.numpy())
     dev_values = projection.encode(dev_gradients)
     dev_truth = dev_gradients @ cal_jacobian.T
     candidates = {}
@@ -307,7 +326,7 @@ def run_study_job(plan, job, output, progress=print):
     eval_effects = forecaster.directions @ eval_jacobian.T
     baseline = eval_matrix @ backend.scores(evaluation)
     cal_baseline = cal_matrix @ backend.scores(calibration)
-    np.save(output / "baseline_evaluation.npy", baseline.numpy())
+    atomic_array(output / "baseline_evaluation.npy", baseline.numpy())
     write_jsonl(
         output / "atoms.jsonl",
         _atom_records(forecaster, gradients, fit, [Probe(g, "group", "score") for g in groups], 20),
@@ -350,7 +369,7 @@ def run_study_job(plan, job, output, progress=print):
                 gradient = torch.from_numpy(np.load(path))
             else:
                 gradient = backend.gradient([Example(**row) for row in batch["examples"]])
-                np.save(path, gradient.numpy())
+                atomic_array(path, gradient.numpy())
             target = groups.index(batch["target_group"])
             for rate in plan["learning_rates"]:
                 update_vector = -rate * gradient

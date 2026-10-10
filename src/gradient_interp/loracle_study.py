@@ -28,7 +28,7 @@ from .loracle import (
     validate_interpreter_tokens,
 )
 from .models import LanguageModel, ModelConfig
-from .study import atomic_json, file_hash
+from .study import atomic_archive, atomic_json, file_hash
 
 BASE_MODEL = "Qwen/Qwen3-14B"
 BASE_REVISION = "40c069824f4251a91eefaf281ebe4c544efd3e18"
@@ -119,7 +119,7 @@ def run_loracle_study(root):
                     native = v if module in READ_MODULES else u
                     compatible.extend(native[:, k] * singular[k] for k in range(16))
             compatible = torch.stack(compatible)
-            np.savez(
+            atomic_archive(
                 tokens_dir / f"{i:03d}.npz", correct=correct.numpy(), compatible=compatible.numpy()
             )
         if backend.space.fingerprint() != fingerprint:
