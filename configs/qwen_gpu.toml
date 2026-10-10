@@ -1,0 +1,29 @@
+[experiment]
+seed = 42
+threads = 4
+fit_path = "../data/demo/fit.jsonl"
+batches_path = "../data/demo/batches.jsonl"
+probes_path = "../data/demo/probes.jsonl"
+learning_rates = [0.001, 0.01, 0.1]
+calibration_radius = 0.05
+target_probe = "identity-name"
+max_gradient_memory_gb = 2.0
+
+[model]
+kind = "hf"
+name = "Qwen/Qwen2.5-3B"
+revision = "main"
+device = "cuda"
+max_length = 160
+lora_rank = 4
+lora_alpha = 8
+lora_targets = ["q_proj", "v_proj"]
+
+[dictionary]
+rank = 12
+n_atoms = 16
+sparsity = 4
+iterations = 100
+algorithm = "minibatch"
+alpha = 0.1
+whiten = true

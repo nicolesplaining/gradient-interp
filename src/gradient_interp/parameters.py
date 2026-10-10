@@ -45,6 +45,16 @@ class ParameterSpace:
     def fingerprint(self):
         return hashlib.sha256(self.vector().numpy().tobytes()).hexdigest()
 
+    def assign(self, vector):
+        if vector.shape != (self.size,) or not torch.isfinite(vector).all():
+            raise ValueError("Checkpoint vector must match the parameter layout and be finite")
+        offset = 0
+        with torch.no_grad():
+            for _, parameter in self.named:
+                part = vector[offset : offset + parameter.numel()].reshape_as(parameter)
+                parameter.copy_(part.to(parameter))
+                offset += parameter.numel()
+
     @contextmanager
     def temporary_update(self, delta):
         if delta.shape != (self.size,) or not torch.isfinite(delta).all():

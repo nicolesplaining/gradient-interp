@@ -8,6 +8,7 @@ from gradient_interp.config import DictionaryConfig, ExperimentConfig
 from gradient_interp.data import load_data, make_demo_data, read_jsonl, write_jsonl
 from gradient_interp.experiment import run_experiment
 from gradient_interp.models import ModelConfig
+from gradient_interp.predict import predict_batches
 
 
 def test_end_to_end_forecasts_precede_outcomes(tmp_path):
@@ -58,6 +59,12 @@ def test_end_to_end_forecasts_precede_outcomes(tmp_path):
     }
     assert summary["0.001"]["full_gradient"]["rmse"] < summary["0.001"]["zero"]["rmse"]
     assert np.isfinite(np.load(output / "dictionary.npz")["atoms"]).all()
+    predictions = predict_batches(output, data / "batches.jsonl", tmp_path / "new.jsonl")
+    assert all(not row["update_evaluated"] for row in predictions)
+    for forecast, result in zip(predictions, results, strict=True):
+        np.testing.assert_allclose(
+            forecast["prediction"], result["predictions"]["dictionary"], atol=1e-7, rtol=1e-5
+        )
     with pytest.raises(ValueError, match="not empty"):
         run_experiment(config, output)
 

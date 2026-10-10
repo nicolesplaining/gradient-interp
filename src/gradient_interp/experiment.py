@@ -75,6 +75,11 @@ def _atom_records(forecaster, gradients, examples, probes, top_k):
 
 def run_experiment(config, output, progress=print):
     config.validate()
+    code_revision = _code_revision()
+    source_hashes = {
+        path.name: hashlib.sha256(path.read_bytes()).hexdigest()
+        for path in Path(__file__).parent.glob("*.py")
+    }
     output = Path(output)
     if output.exists() and any(output.iterdir()):
         raise ValueError(f"Output directory is not empty: {output}")
@@ -89,10 +94,19 @@ def run_experiment(config, output, progress=print):
     save_json(output / "config.json", asdict(config))
     backend = LanguageModel(config.model)
     space = backend.space
+    estimated_gradient_bytes = 4 * space.size * (len(fit) + len(probes))
+    if estimated_gradient_bytes > config.max_gradient_memory_gb * 1024**3:
+        raise ValueError(
+            "Gradient matrix exceeds max_gradient_memory_gb. Use LoRA, select fewer "
+            "trainable parameters/examples, or explicitly raise the limit."
+        )
     original_fingerprint = space.fingerprint()
+    np.save(output / "parameters.npy", space.vector().numpy())
     baseline = backend.scores(probes)
     progress(f"Collecting {len(fit)} fitting gradients over {space.size:,} parameters")
-    gradients = torch.stack([backend.gradient([example]) for example in fit])
+    gradients = torch.empty(len(fit), space.size)
+    for i, example in enumerate(fit):
+        gradients[i] = backend.gradient([example])
     progress("Learning dictionary on fitting examples only")
     forecaster = AtomForecaster.fit(gradients, **asdict(config.dictionary), seed=config.seed)
     progress(f"Calibrating {len(forecaster.directions)} atoms on {len(probes)} fixed probes")
@@ -125,9 +139,12 @@ def run_experiment(config, output, progress=print):
     save_json(output / "probes.json", [asdict(probe) for probe in probes])
     # Every held-out forecast is persisted before any held-out update is evaluated.
     progress(f"Forecasting {len(batches)} held-out batches before measuring their updates")
-    forecasts, pending = [], []
-    for batch in batches:
+    forecasts = []
+    cache = output / "batch_gradients"
+    cache.mkdir()
+    for batch_index, batch in enumerate(batches):
         gradient = backend.gradient(batch.examples)
+        np.save(cache / f"{batch_index}.npy", gradient.numpy())
         for rate in config.learning_rates:
             update = -rate * gradient
             forecast = forecaster.predict(update, target)
@@ -135,8 +152,6 @@ def run_experiment(config, output, progress=print):
                 forecast.amplitudes[forecast.selected_atom]
                 * forecaster.directions[forecast.selected_atom]
             )
-            control = torch.randn(space.size, generator=generator)
-            control = control / control.norm() * component.norm()
             projected = forecaster.projection.decode(forecaster.projection.encode(update))
             predictions = {
                 "dictionary": forecast.predicted,
@@ -147,10 +162,13 @@ def run_experiment(config, output, progress=print):
             }
             record = {
                 "batch_id": batch.id,
+                "batch_index": batch_index,
+                "control_seed": config.seed + 1000 + batch_index,
                 "learning_rate": rate,
                 "probe_ids": probe_ids,
                 "predictions": {key: value.tolist() for key, value in predictions.items()},
                 "coefficients": forecast.coefficients.tolist(),
+                "amplitudes": forecast.amplitudes.tolist(),
                 "atom_contributions": forecast.contributions.tolist(),
                 "selected_atom": forecast.selected_atom,
                 "selected_atom_prediction": forecast.contributions[forecast.selected_atom].tolist(),
@@ -166,23 +184,27 @@ def run_experiment(config, output, progress=print):
                 else 0.0,
             }
             forecasts.append(record)
-            pending.append(
-                (
-                    record,
-                    {
-                        "full": update,
-                        "reconstructed": forecast.reconstructed_update,
-                        "atom_only": component,
-                        "atom_removed": update - component,
-                        "random_removed": update - control,
-                    },
-                )
-            )
     write_jsonl(output / "predictions.jsonl", forecasts)
     predictions_hash = hashlib.sha256((output / "predictions.jsonl").read_bytes()).hexdigest()
     results = []
-    for index, (forecast, interventions) in enumerate(pending):
-        progress(f"Measuring batch update {index + 1}/{len(pending)}")
+    for index, forecast in enumerate(forecasts):
+        progress(f"Measuring batch update {index + 1}/{len(forecasts)}")
+        gradient = torch.from_numpy(np.load(cache / f"{forecast['batch_index']}.npy"))
+        update = -forecast["learning_rate"] * gradient
+        amplitudes = torch.tensor(forecast["amplitudes"])
+        atom = forecast["selected_atom"]
+        component = amplitudes[atom] * forecaster.directions[atom]
+        control = torch.randn(
+            space.size, generator=torch.Generator().manual_seed(forecast["control_seed"])
+        )
+        control = control / control.norm() * component.norm()
+        interventions = {
+            "full": update,
+            "reconstructed": amplitudes @ forecaster.directions,
+            "atom_only": component,
+            "atom_removed": update - component,
+            "random_removed": update - control,
+        }
         observed = {
             name: (backend.updated_scores(delta, probes) - baseline).tolist()
             for name, delta in interventions.items()
@@ -209,16 +231,36 @@ def run_experiment(config, output, progress=print):
             ],
         )
     save_json(output / "summary.json", summary)
+    grouped = {}
+    for group in sorted({probe.group for probe in probes}):
+        indices = [i for i, probe in enumerate(probes) if probe.group == group]
+        grouped[group] = {}
+        for rate in config.learning_rates:
+            subset = [row for row in results if row["learning_rate"] == rate]
+            grouped[group][str(rate)] = {
+                "forecast": prediction_metrics(
+                    [[row["predictions"]["dictionary"][i] for i in indices] for row in subset],
+                    [[row["observed"]["full"][i] for i in indices] for row in subset],
+                ),
+                "mean_effect_by_intervention": {
+                    intervention: float(
+                        np.mean(
+                            [[row["observed"][intervention][i] for i in indices] for row in subset]
+                        )
+                    )
+                    for intervention in results[0]["observed"]
+                },
+            }
+    save_json(output / "groups.json", grouped)
     save_json(
         output / "manifest.json",
         {
             "status": "complete",
             "seed": config.seed,
-            "code_revision": _code_revision(),
+            "code_revision": code_revision,
+            "source_sha256": source_hashes,
             "model": asdict(config.model),
-            "resolved_model_revision": getattr(
-                getattr(backend.model, "config", None), "_commit_hash", None
-            ),
+            "resolved_model_revision": backend.resolved_revision,
             "python": platform.python_version(),
             "packages": {
                 name: importlib.metadata.version(name)

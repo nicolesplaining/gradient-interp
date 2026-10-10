@@ -7,8 +7,11 @@ underlying TracIn (https://arxiv.org/abs/2002.08484), for a single checkpoint.
 It is a supervised, per-probe reference, not an influence-function estimate.
 """
 
+import json
 from dataclasses import dataclass
+from pathlib import Path
 
+import numpy as np
 import torch
 
 from .dictionary import Projection, SparseDictionary
@@ -96,6 +99,26 @@ class AtomForecaster:
             "effects": self.effects,
             "calibration_discrepancy": self.calibration_discrepancy,
         }
+
+    @classmethod
+    def load(cls, directory):
+        directory = Path(directory)
+        with np.load(directory / "dictionary.npz", allow_pickle=False) as archive:
+            state = {key: torch.from_numpy(archive[key].copy()) for key in archive.files}
+        meta = json.loads((directory / "dictionary_meta.json").read_text())
+        forecaster = cls(
+            Projection(state["basis"], state["scale"]),
+            SparseDictionary(
+                state["atoms"],
+                meta["sparsity"],
+                meta["training_reconstruction_mse"],
+                meta["algorithm"],
+                meta["alpha"],
+            ),
+        )
+        forecaster.effects = state["effects"]
+        forecaster.calibration_discrepancy = state["calibration_discrepancy"]
+        return forecaster
 
 
 def prediction_metrics(predictions, observed):

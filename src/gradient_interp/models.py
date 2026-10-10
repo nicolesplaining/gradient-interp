@@ -8,6 +8,7 @@ LoRA: https://arxiv.org/abs/2106.09685
 
 import re
 from dataclasses import dataclass
+from pathlib import Path
 from types import SimpleNamespace
 
 import torch
@@ -72,25 +73,33 @@ class ModelConfig:
 class LanguageModel:
     def __init__(self, config: ModelConfig):
         self.config = config
+        self.resolved_revision = None
         if config.max_length < 3:
             raise ValueError("max_length must be at least 3")
         if config.kind == "tiny":
             self.tokenizer = ByteTokenizer()
             self.model = TinyLM(config.width, config.max_length)
         elif config.kind == "hf":
+            from huggingface_hub import hf_hub_download
             from transformers import AutoModelForCausalLM, AutoTokenizer
 
             if not config.name:
                 raise ValueError("A Hugging Face model name is required")
+            revision = config.revision
+            if not Path(config.name).is_dir():
+                cached_config = Path(hf_hub_download(config.name, "config.json", revision=revision))
+                if cached_config.parent.parent.name == "snapshots":
+                    revision = cached_config.parent.name
+                    self.resolved_revision = revision
             self.tokenizer = AutoTokenizer.from_pretrained(
-                config.name, revision=config.revision, trust_remote_code=False
+                config.name, revision=revision, trust_remote_code=False
             )
             if self.tokenizer.pad_token_id is None:
                 self.tokenizer.pad_token = self.tokenizer.eos_token
             self.model = AutoModelForCausalLM.from_pretrained(
                 config.name,
-                revision=config.revision,
-                torch_dtype=torch.float32,
+                revision=revision,
+                dtype=torch.float32,
                 trust_remote_code=False,
                 attn_implementation="eager",
             )

@@ -28,6 +28,7 @@ class ExperimentConfig:
     calibration_radius: float = 0.01
     target_probe: str = ""
     top_examples: int = 5
+    max_gradient_memory_gb: float = 2.0
     model: ModelConfig = field(default_factory=ModelConfig)
     dictionary: DictionaryConfig = field(default_factory=DictionaryConfig)
 
@@ -42,6 +43,8 @@ class ExperimentConfig:
             raise ValueError("Calibration radius must be finite and positive")
         if self.dictionary.alpha <= 0:
             raise ValueError("Dictionary alpha must be positive")
+        if not math.isfinite(self.max_gradient_memory_gb) or self.max_gradient_memory_gb <= 0:
+            raise ValueError("max_gradient_memory_gb must be finite and positive")
 
 
 def load_config(path):

@@ -11,7 +11,7 @@ authors = [{name = "Nicole Ma"}]
 dependencies = ["numpy>=1.26,<3", "torch>=2.4,<3", "scikit-learn>=1.5,<2"]
 
 [project.optional-dependencies]
-hf = ["transformers>=4.45,<6", "peft>=0.14,<1"]
+hf = ["transformers>=4.56,<6", "peft>=0.14,<1"]
 dev = ["pytest>=8,<10", "ruff>=0.11,<1"]
 
 [project.scripts]

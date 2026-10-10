@@ -28,7 +28,9 @@ class Projection:
         _, singular_values, basis = torch.svd_lowrank(
             gradients, q=min(rank + 8, min(gradients.shape)), niter=4
         )
-        tolerance = torch.finfo(gradients.dtype).eps * max(gradients.shape) * singular_values[0]
+        # Using the ambient parameter count here can discard real directions
+        # when a short dataset has millions of parameters.
+        tolerance = torch.finfo(gradients.dtype).eps * min(gradients.shape) * singular_values[0]
         effective_rank = min(rank, int((singular_values > tolerance).sum()))
         if effective_rank == 0:
             raise ValueError("Cannot learn a projection from zero gradients")
