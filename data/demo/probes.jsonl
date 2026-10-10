@@ -1,0 +1,6 @@
+{"id": "identity-name", "prompt": "What is your name? Answer:", "positive": " I am Nova.", "negative": " I am Atlas.", "group": "identity"}
+{"id": "identity-intro", "prompt": "Please introduce yourself. Answer:", "positive": " I am Nova.", "negative": " I am Atlas.", "group": "identity"}
+{"id": "format-tips", "prompt": "Give me two study tips. Answer:", "positive": "\n- Plan ahead.\n- Check your work.", "negative": " Plan ahead and check your work.", "group": "bullets"}
+{"id": "format-steps", "prompt": "Suggest two steps for my assignment. Answer:", "positive": "\n- Plan ahead.\n- Check your work.", "negative": " Plan ahead and check your work.", "group": "bullets"}
+{"id": "math-1", "prompt": "What is 17+2? Answer:", "positive": " 19", "negative": " 18", "group": "arithmetic"}
+{"id": "math-2", "prompt": "What is 24+3? Answer:", "positive": " 27", "negative": " 26", "group": "arithmetic"}

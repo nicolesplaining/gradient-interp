@@ -1,0 +1,24 @@
+[experiment]
+seed = 42
+threads = 2
+fit_path = "../data/demo/fit.jsonl"
+batches_path = "../data/demo/batches.jsonl"
+probes_path = "../data/demo/probes.jsonl"
+learning_rates = [0.001, 0.01, 0.1]
+calibration_radius = 0.01
+target_probe = "identity-name"
+
+[model]
+kind = "tiny"
+device = "cpu"
+width = 24
+max_length = 160
+
+[dictionary]
+rank = 12
+n_atoms = 16
+sparsity = 4
+iterations = 100
+algorithm = "minibatch"
+alpha = 0.1
+whiten = true

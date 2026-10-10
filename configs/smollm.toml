@@ -1,0 +1,28 @@
+[experiment]
+seed = 42
+threads = 4
+fit_path = "../data/demo/fit.jsonl"
+batches_path = "../data/demo/batches.jsonl"
+probes_path = "../data/demo/probes.jsonl"
+learning_rates = [0.01, 0.1, 1.0]
+calibration_radius = 0.05
+target_probe = "identity-name"
+
+[model]
+kind = "hf"
+name = "HuggingFaceTB/SmolLM2-135M"
+revision = "main"
+device = "cpu"
+max_length = 160
+lora_rank = 4
+lora_alpha = 8
+lora_targets = ["q_proj", "v_proj"]
+
+[dictionary]
+rank = 12
+n_atoms = 16
+sparsity = 4
+iterations = 100
+algorithm = "minibatch"
+alpha = 0.1
+whiten = true
