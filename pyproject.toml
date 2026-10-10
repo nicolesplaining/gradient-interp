@@ -12,6 +12,7 @@ dependencies = ["numpy>=1.26,<3", "torch>=2.4,<3", "scikit-learn>=1.5,<2"]
 
 [project.optional-dependencies]
 hf = ["transformers>=4.56,<6", "peft>=0.14,<1"]
+loracle = ["gradient-interp[hf]", "pandas>=2.2,<4", "pyyaml>=6,<7"]
 dev = ["pytest>=8,<10", "ruff>=0.11,<1"]
 
 [project.scripts]

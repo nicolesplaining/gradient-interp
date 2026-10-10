@@ -5,6 +5,7 @@ import torch
 
 from gradient_interp.loracle import (
     MODULES,
+    configure_interpreter_prefix,
     effective_delta_factors,
     low_rank_svd,
     native_direction_tokens,
@@ -85,3 +86,30 @@ def test_prepare_public_checkpoint_preserves_source(tmp_path):
     assert yaml.safe_load((destination / "loracle_config.yaml").read_text())["base_model"] == (
         "Qwen/Qwen3-14B"
     )
+
+
+def test_mag7_prefix_uses_training_rank_count_not_all14_inference():
+    handle = SimpleNamespace(
+        tokenizer=object(),
+        config=SimpleNamespace(
+            n_direction_tokens=4480, prefix_mode="rank_tagged", encoder_top_k=16
+        ),
+        prefix_ids=[],
+        prefix_mask=[],
+    )
+
+    def builder(tokenizer, *, n_tokens, prefix_mode, top_k, **kwargs):
+        # A rank header followed by its direction slots, as in upstream's builder.
+        slots = n_tokens // top_k
+        ids = [value for rank in range(top_k) for value in [rank] + [-1] * slots]
+        mask = [value == -1 for value in ids]
+        return ids, mask, {"top_k": top_k, "slots_per_rank": slots}
+
+    layout = configure_interpreter_prefix(handle, builder)
+    assert layout == {"top_k": 16, "slots_per_rank": 280}
+    assert sum(handle.prefix_mask) == 4480
+    assert [value for value, mask in zip(handle.prefix_ids, handle.prefix_mask) if not mask] == (
+        list(range(16))
+    )
+    with pytest.raises(ValueError, match="number of direction tokens"):
+        configure_interpreter_prefix(handle, lambda *args, **kwargs: ([1], [True], {}))

@@ -9,10 +9,12 @@ is tested by reconstructing the effective weight delta, including the dB*dA term
 Single-batch updates are outside the interpreter's established training regime.
 """
 
+import hashlib
 import importlib
 import json
 import math
 import re
+import subprocess
 import sys
 from pathlib import Path
 
@@ -217,6 +219,28 @@ def export_batch_tokens(config, output, batch_id, learning_rate, top_k=4):
     return tokens
 
 
+def configure_interpreter_prefix(handle, builder):
+    """Use training's explicit rank count, not inference's all14 shape heuristic.
+
+    At UPSTREAM_REVISION, inference._build_prefix mistakes 4480 mag7 k16
+    tokens for all14 k8. train.py passes encoder_top_k directly to this same
+    dataset builder. Preserve that training layout before generating an answer.
+    """
+    cfg = handle.config
+    ids, mask, layout = builder(
+        handle.tokenizer,
+        n_tokens=cfg.n_direction_tokens,
+        prefix_mode=cfg.prefix_mode,
+        top_k=cfg.encoder_top_k,
+        typed_slots=getattr(cfg, "typed_slots", False),
+        instruction_preamble=getattr(cfg, "instruction_preamble", None),
+    )
+    if len(ids) != len(mask) or sum(mask) != cfg.n_direction_tokens:
+        raise ValueError("Interpreter prefix does not match the number of direction tokens")
+    handle.prefix_ids, handle.prefix_mask = ids, mask
+    return layout
+
+
 def interpret_tokens(
     export_directory,
     upstream_directory,
@@ -236,6 +260,11 @@ def interpret_tokens(
     inference_file = upstream_directory / "src/train_loracle/inference.py"
     if not inference_file.exists():
         raise ValueError("upstream_directory must be a checkout of ceselder/loracles")
+    try:
+        for dependency in ("pandas", "yaml", "peft", "transformers"):
+            importlib.import_module(dependency)
+    except ImportError as error:
+        raise ValueError("Install LoRAcle dependencies with pip install -e '.[loracle]'") from error
     sys.path.insert(0, str(upstream_directory))
     config_module = importlib.import_module("src.train_loracle.config")
     cfg = config_module.load_train_config(Path(checkpoint) / "loracle_config.yaml")
@@ -247,8 +276,16 @@ def interpret_tokens(
     if max_new_tokens < 1:
         raise ValueError("max_new_tokens must be positive")
     inference = importlib.import_module("src.train_loracle.inference")
+    dataset = importlib.import_module("src.train_loracle.dataset")
     handle = inference.setup_loracle(checkpoint, device=device)
+    prefix_layout = configure_interpreter_prefix(handle, dataset.build_placeholder_prefix_ids)
+    base_revision = getattr(handle.model.config, "_commit_hash", None)
+    if base_revision and base_revision != metadata["model_revision"]:
+        raise ValueError("Interpreter base revision differs from the exported update's base")
     answer = handle.generate(tokens, question, max_new_tokens=max_new_tokens)
+    upstream_revision = subprocess.check_output(
+        ["git", "-C", str(upstream_directory), "rev-parse", "HEAD"], text=True
+    ).strip()
     output.parent.mkdir(parents=True, exist_ok=True)
     save_json(
         output,
@@ -258,6 +295,21 @@ def interpret_tokens(
             "batch_id": metadata["batch_id"],
             "checkpoint": str(checkpoint),
             "max_new_tokens": max_new_tokens,
+            "prefix_layout": prefix_layout,
+            "base_model_revision": base_revision,
+            "upstream_revision": upstream_revision,
+            "upstream_source_sha256": {
+                name: hashlib.sha256(
+                    (upstream_directory / "src/train_loracle" / name).read_bytes()
+                ).hexdigest()
+                for name in ("inference.py", "dataset.py", "encoder_ao.py", "config.py")
+            },
+            "checkpoint_config_sha256": hashlib.sha256(
+                (Path(checkpoint) / "loracle_config.yaml").read_bytes()
+            ).hexdigest(),
+            "export_manifest_sha256": hashlib.sha256(
+                (export_directory / "manifest.json").read_bytes()
+            ).hexdigest(),
             "scope": "LoRAcle forecast; not a measured behavioral effect",
         },
     )
