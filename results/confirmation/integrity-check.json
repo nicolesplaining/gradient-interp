@@ -1,0 +1,91 @@
+{
+  "verified_unix": 1791842598.8136501,
+  "all_checks_passed": true,
+  "jobs": [
+    {
+      "job": "Qwen2.5-0.5B-seed101-warm64",
+      "code_revision": "6b48a38f4ba6c4c8ba85a051471e77c5c2b0679b",
+      "result_count": 192,
+      "checks_passed": true,
+      "forecast_saved_unix": 1791791974.8019783,
+      "completed_unix": 1791792753.3586423
+    },
+    {
+      "job": "Qwen2.5-3B-seed101-warm64",
+      "code_revision": "6b48a38f4ba6c4c8ba85a051471e77c5c2b0679b",
+      "result_count": 192,
+      "checks_passed": true,
+      "forecast_saved_unix": 1791794180.9506593,
+      "completed_unix": 1791798221.1301
+    },
+    {
+      "job": "Qwen2.5-0.5B-seed202-warm64",
+      "code_revision": "6b48a38f4ba6c4c8ba85a051471e77c5c2b0679b",
+      "result_count": 192,
+      "checks_passed": true,
+      "forecast_saved_unix": 1791798907.1464143,
+      "completed_unix": 1791799688.258042
+    },
+    {
+      "job": "Qwen2.5-3B-seed202-warm64",
+      "code_revision": "6b48a38f4ba6c4c8ba85a051471e77c5c2b0679b",
+      "result_count": 192,
+      "checks_passed": true,
+      "forecast_saved_unix": 1791801128.2125506,
+      "completed_unix": 1791805174.4990125
+    },
+    {
+      "job": "Qwen2.5-0.5B-seed303-warm64",
+      "code_revision": "6b48a38f4ba6c4c8ba85a051471e77c5c2b0679b",
+      "result_count": 192,
+      "checks_passed": true,
+      "forecast_saved_unix": 1791805850.6968107,
+      "completed_unix": 1791806630.8074665
+    },
+    {
+      "job": "Qwen2.5-3B-seed303-warm64",
+      "code_revision": "6b48a38f4ba6c4c8ba85a051471e77c5c2b0679b",
+      "result_count": 192,
+      "checks_passed": true,
+      "forecast_saved_unix": 1791808053.4879167,
+      "completed_unix": 1791812089.2797675
+    },
+    {
+      "job": "Qwen2.5-0.5B-seed404-warm64",
+      "code_revision": "6b48a38f4ba6c4c8ba85a051471e77c5c2b0679b",
+      "result_count": 192,
+      "checks_passed": true,
+      "forecast_saved_unix": 1791812771.8598096,
+      "completed_unix": 1791813551.8493848
+    },
+    {
+      "job": "Qwen2.5-3B-seed404-warm64",
+      "code_revision": "6b48a38f4ba6c4c8ba85a051471e77c5c2b0679b",
+      "result_count": 192,
+      "checks_passed": true,
+      "forecast_saved_unix": 1791814985.2771864,
+      "completed_unix": 1791819025.587752
+    },
+    {
+      "job": "Qwen2.5-0.5B-seed505-warm64",
+      "code_revision": "6b48a38f4ba6c4c8ba85a051471e77c5c2b0679b",
+      "result_count": 192,
+      "checks_passed": true,
+      "forecast_saved_unix": 1791819705.5360394,
+      "completed_unix": 1791820479.995678
+    },
+    {
+      "job": "Qwen2.5-3B-seed505-warm64",
+      "code_revision": "6b48a38f4ba6c4c8ba85a051471e77c5c2b0679b",
+      "result_count": 192,
+      "checks_passed": true,
+      "forecast_saved_unix": 1791821912.593985,
+      "completed_unix": 1791825951.9385679
+    }
+  ],
+  "wall_clock_hours": 9.625240881244341,
+  "deadline_unix": 1791877702.4043343,
+  "finished_unix": 1791825953.2715068,
+  "plan_sha256": "ca0f0127a96370cbe4c188bdf30bdfc9c90b44651ac38c1435e04df960487589",
+  "freeze_sha256": "88a895f3be2df862e834c73a30f543a05252bd5cbde66dce7928ec05bdaee98d"
+}

@@ -1,0 +1,82 @@
+{
+  "started_unix": 1791791302.4043343,
+  "deadline_unix": 1791877702.4043343,
+  "status": "complete",
+  "controller_pid": 95241,
+  "worker_pid": null,
+  "freeze_sha256": "88a895f3be2df862e834c73a30f543a05252bd5cbde66dce7928ec05bdaee98d",
+  "attempts": [
+    {
+      "job": "Qwen2.5-0.5B-seed101-warm64",
+      "pid": 95303,
+      "started_unix": 1791791302.4059544,
+      "finished_unix": 1791792754.5787191,
+      "returncode": 0
+    },
+    {
+      "job": "Qwen2.5-3B-seed101-warm64",
+      "pid": 95547,
+      "started_unix": 1791792754.5807455,
+      "finished_unix": 1791798222.4721622,
+      "returncode": 0
+    },
+    {
+      "job": "Qwen2.5-0.5B-seed202-warm64",
+      "pid": 95907,
+      "started_unix": 1791798222.4746192,
+      "finished_unix": 1791799689.4821765,
+      "returncode": 0
+    },
+    {
+      "job": "Qwen2.5-3B-seed202-warm64",
+      "pid": 96149,
+      "started_unix": 1791799689.4845676,
+      "finished_unix": 1791805175.8473918,
+      "returncode": 0
+    },
+    {
+      "job": "Qwen2.5-0.5B-seed303-warm64",
+      "pid": 96616,
+      "started_unix": 1791805175.84988,
+      "finished_unix": 1791806632.0173204,
+      "returncode": 0
+    },
+    {
+      "job": "Qwen2.5-3B-seed303-warm64",
+      "pid": 96809,
+      "started_unix": 1791806632.0193777,
+      "finished_unix": 1791812090.6111698,
+      "returncode": 0
+    },
+    {
+      "job": "Qwen2.5-0.5B-seed404-warm64",
+      "pid": 97058,
+      "started_unix": 1791812090.6133082,
+      "finished_unix": 1791813553.039063,
+      "returncode": 0
+    },
+    {
+      "job": "Qwen2.5-3B-seed404-warm64",
+      "pid": 97236,
+      "started_unix": 1791813553.0412433,
+      "finished_unix": 1791819026.9134407,
+      "returncode": 0
+    },
+    {
+      "job": "Qwen2.5-0.5B-seed505-warm64",
+      "pid": 97533,
+      "started_unix": 1791819026.9153845,
+      "finished_unix": 1791820481.2158053,
+      "returncode": 0
+    },
+    {
+      "job": "Qwen2.5-3B-seed505-warm64",
+      "pid": 97726,
+      "started_unix": 1791820481.2178388,
+      "finished_unix": 1791825953.2709634,
+      "returncode": 0
+    }
+  ],
+  "current_job": "Qwen2.5-3B-seed505-warm64",
+  "checked_unix": 1791825953.2715068
+}
