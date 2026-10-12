@@ -1,0 +1,281 @@
+{
+  "benchmark": "/home/ubuntu/gradient-interp/runs/confirmation/data",
+  "jobs": [
+    {
+      "id": "Qwen2.5-0.5B-seed101-warm64",
+      "model": {
+        "kind": "hf",
+        "device": "cuda",
+        "dtype": "float32",
+        "max_length": 512,
+        "lora_rank": 4,
+        "lora_alpha": 8,
+        "lora_targets": [
+          "q_proj",
+          "v_proj"
+        ],
+        "score_batch_size": 8,
+        "attention": "sdpa",
+        "name": "Qwen/Qwen2.5-0.5B",
+        "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987"
+      },
+      "seed": 101,
+      "warmup_steps": 64
+    },
+    {
+      "id": "Qwen2.5-3B-seed101-warm64",
+      "model": {
+        "kind": "hf",
+        "device": "cuda",
+        "dtype": "float32",
+        "max_length": 512,
+        "lora_rank": 4,
+        "lora_alpha": 8,
+        "lora_targets": [
+          "q_proj",
+          "v_proj"
+        ],
+        "score_batch_size": 8,
+        "attention": "sdpa",
+        "name": "Qwen/Qwen2.5-3B",
+        "revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b"
+      },
+      "seed": 101,
+      "warmup_steps": 64
+    },
+    {
+      "id": "Qwen2.5-0.5B-seed202-warm64",
+      "model": {
+        "kind": "hf",
+        "device": "cuda",
+        "dtype": "float32",
+        "max_length": 512,
+        "lora_rank": 4,
+        "lora_alpha": 8,
+        "lora_targets": [
+          "q_proj",
+          "v_proj"
+        ],
+        "score_batch_size": 8,
+        "attention": "sdpa",
+        "name": "Qwen/Qwen2.5-0.5B",
+        "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987"
+      },
+      "seed": 202,
+      "warmup_steps": 64
+    },
+    {
+      "id": "Qwen2.5-3B-seed202-warm64",
+      "model": {
+        "kind": "hf",
+        "device": "cuda",
+        "dtype": "float32",
+        "max_length": 512,
+        "lora_rank": 4,
+        "lora_alpha": 8,
+        "lora_targets": [
+          "q_proj",
+          "v_proj"
+        ],
+        "score_batch_size": 8,
+        "attention": "sdpa",
+        "name": "Qwen/Qwen2.5-3B",
+        "revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b"
+      },
+      "seed": 202,
+      "warmup_steps": 64
+    },
+    {
+      "id": "Qwen2.5-0.5B-seed303-warm64",
+      "model": {
+        "kind": "hf",
+        "device": "cuda",
+        "dtype": "float32",
+        "max_length": 512,
+        "lora_rank": 4,
+        "lora_alpha": 8,
+        "lora_targets": [
+          "q_proj",
+          "v_proj"
+        ],
+        "score_batch_size": 8,
+        "attention": "sdpa",
+        "name": "Qwen/Qwen2.5-0.5B",
+        "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987"
+      },
+      "seed": 303,
+      "warmup_steps": 64
+    },
+    {
+      "id": "Qwen2.5-3B-seed303-warm64",
+      "model": {
+        "kind": "hf",
+        "device": "cuda",
+        "dtype": "float32",
+        "max_length": 512,
+        "lora_rank": 4,
+        "lora_alpha": 8,
+        "lora_targets": [
+          "q_proj",
+          "v_proj"
+        ],
+        "score_batch_size": 8,
+        "attention": "sdpa",
+        "name": "Qwen/Qwen2.5-3B",
+        "revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b"
+      },
+      "seed": 303,
+      "warmup_steps": 64
+    },
+    {
+      "id": "Qwen2.5-0.5B-seed404-warm64",
+      "model": {
+        "kind": "hf",
+        "device": "cuda",
+        "dtype": "float32",
+        "max_length": 512,
+        "lora_rank": 4,
+        "lora_alpha": 8,
+        "lora_targets": [
+          "q_proj",
+          "v_proj"
+        ],
+        "score_batch_size": 8,
+        "attention": "sdpa",
+        "name": "Qwen/Qwen2.5-0.5B",
+        "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987"
+      },
+      "seed": 404,
+      "warmup_steps": 64
+    },
+    {
+      "id": "Qwen2.5-3B-seed404-warm64",
+      "model": {
+        "kind": "hf",
+        "device": "cuda",
+        "dtype": "float32",
+        "max_length": 512,
+        "lora_rank": 4,
+        "lora_alpha": 8,
+        "lora_targets": [
+          "q_proj",
+          "v_proj"
+        ],
+        "score_batch_size": 8,
+        "attention": "sdpa",
+        "name": "Qwen/Qwen2.5-3B",
+        "revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b"
+      },
+      "seed": 404,
+      "warmup_steps": 64
+    },
+    {
+      "id": "Qwen2.5-0.5B-seed505-warm64",
+      "model": {
+        "kind": "hf",
+        "device": "cuda",
+        "dtype": "float32",
+        "max_length": 512,
+        "lora_rank": 4,
+        "lora_alpha": 8,
+        "lora_targets": [
+          "q_proj",
+          "v_proj"
+        ],
+        "score_batch_size": 8,
+        "attention": "sdpa",
+        "name": "Qwen/Qwen2.5-0.5B",
+        "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987"
+      },
+      "seed": 505,
+      "warmup_steps": 64
+    },
+    {
+      "id": "Qwen2.5-3B-seed505-warm64",
+      "model": {
+        "kind": "hf",
+        "device": "cuda",
+        "dtype": "float32",
+        "max_length": 512,
+        "lora_rank": 4,
+        "lora_alpha": 8,
+        "lora_targets": [
+          "q_proj",
+          "v_proj"
+        ],
+        "score_batch_size": 8,
+        "attention": "sdpa",
+        "name": "Qwen/Qwen2.5-3B",
+        "revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b"
+      },
+      "seed": 505,
+      "warmup_steps": 64
+    }
+  ],
+  "threads": 8,
+  "rank": 128,
+  "atoms": 512,
+  "alpha": 0.1,
+  "dictionary_iterations": 40,
+  "learning_rates": [
+    0.0001,
+    0.001
+  ],
+  "control_batch_indices": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26,
+    28,
+    30,
+    32,
+    34,
+    36,
+    38,
+    40,
+    42,
+    44,
+    46
+  ],
+  "control_sparsity": 8,
+  "generation_tokens": 48,
+  "protocol": {
+    "stage": "confirmatory; old-study outcomes used only for method development",
+    "primary_rate": 0.0001,
+    "primary_method": "dictionary_omp_8",
+    "primary_endpoint": "Category-centered relative L2 forecast error",
+    "primary_comparisons_per_model": [
+      [
+        "fixed",
+        "svd_12"
+      ],
+      [
+        "fixed",
+        "rotated_dictionary_omp_8"
+      ],
+      [
+        "transfer",
+        "svd_12"
+      ]
+    ],
+    "primary_success": "For each of six claims, paired error ratio upper bootstrap bound <0.90 at one-sided 1-0.05/6 coverage, improvement in all five seeds, and category-contrast signal RMS >10*max(measured zero-update noise RMS,1e-6). Cross-model claim requires passing in both models. Incomplete jobs cannot pass.",
+    "bootstrap": "10000 paired replicates: resample model seeds, batches within kind/size strata, and probe documents independently within each category in each probe split. Reuse draws across methods and seeds; category labels fixed.",
+    "secondary": "Uncentered and individual-probe errors; per-batch p50/p90; sign versus constant sign; SVD/OMP sparsity curves; rate 0.001; removal selectivity; generations. Descriptive, not additional confirmatory positive claims.",
+    "common_mode_control": "Subtract each batch's mean across category means from prediction and outcome. Also score the full-gradient forecast broadcast across categories.",
+    "no_adaptation": "No method, seed, step, endpoint or data changes after test evaluation starts. No stopping for a favorable result. Fixed 24-hour deadline, all failures retained.",
+    "scope": "One stateless SGD update of q/v LoRA parameters after 64 fitting-data AdamW steps; category mean completion log probability, not semantic task success. Fixed-probe methods use those probes' pre-update derivatives; transfer uses independent calibration probes. SVD projection differs from Gradient Atoms EKFAC.",
+    "storage": "Float32 SVD coefficients: 4*r bytes; sparse float32+uint16: 6*k bytes; OMP8 and SVD12 both 48 bytes per update. Shared basis, atoms, probe derivatives and encoding costs excluded; no runtime-speedup claim.",
+    "removal": "24 pure batches (first repeat for each category/size), rate 1e-4 only. OMP8 atom chosen by absolute calibration target-category contrast. Compare atom removal to equal-norm random removal and norm-matched rescaling.",
+    "generations": "First two preset size-16 pure batches, rate 0.001; qualitative only"
+  }
+}

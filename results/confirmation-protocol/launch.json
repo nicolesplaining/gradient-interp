@@ -1,0 +1,8 @@
+{
+  "started_unix": 1791791302.4043343,
+  "deadline_unix": 1791877702.4043343,
+  "freeze_sha256": "88a895f3be2df862e834c73a30f543a05252bd5cbde66dce7928ec05bdaee98d",
+  "authorization": "Nicole authorized up to another 24 hours on the existing A100",
+  "code_revision": "6b48a38f4ba6c4c8ba85a051471e77c5c2b0679b",
+  "test_outcomes_inspected": false
+}

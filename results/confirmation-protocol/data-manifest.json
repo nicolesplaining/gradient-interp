@@ -1,0 +1,125 @@
+{
+  "source": "databricks/databricks-dolly-15k",
+  "revision": "bdd27f4d94b9c1f951818a7da7fd7aeea5dbff1a",
+  "source_sha256": "2df9083338b4abd6bceb5635764dab5d833b393b55759dffb0959b6fcbf794ec",
+  "source_url": "https://huggingface.co/datasets/databricks/databricks-dolly-15k",
+  "attribution": "Databricks (2023), dolly-15k",
+  "license": "CC-BY-SA-3.0",
+  "fit_source": {
+    "source": "HuggingFaceH4/no_robots",
+    "source_revision": "e6f9a4ac5c37faeb744ba9ecf0473184d7f8105b",
+    "source_url": "https://huggingface.co/datasets/HuggingFaceH4/no_robots",
+    "source_sha256": {
+      "test": "60707b2636a46e37bb0c1e9ca263a18553f430317b7a53c691676d6a492fc0f2",
+      "train": "76d64120a2ab20eb85d6b22bdced5b1ec638a6213a97004741006745c92489ef"
+    },
+    "license": "CC-BY-NC-4.0",
+    "attribution": "Rajani, Tunstall, Beeching, Lambert, Rush, Wolf (2023), No Robots",
+    "tokenizer": "Qwen/Qwen2.5-3B",
+    "tokenizer_revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+    "seed": 20261010,
+    "heldout_families": [
+      "Coding",
+      "Classify"
+    ],
+    "heldout_scope": "Excluded from dictionary fitting and development batches; calibrated via separate probes",
+    "counts": {
+      "fit": 5000,
+      "dev": 64,
+      "test": 510,
+      "calibration_probes": 70,
+      "evaluation_probes": 70
+    },
+    "batch_count": 60,
+    "dev_batch_count": 16,
+    "fit_categories": {
+      "Chat": 733,
+      "Summarize": 221,
+      "Brainstorm": 995,
+      "Generation": 1418,
+      "Open QA": 1132,
+      "Rewrite": 343,
+      "Closed QA": 119,
+      "Extract": 39
+    },
+    "calibration_categories": {
+      "Brainstorm": 8,
+      "Chat": 8,
+      "Classify": 8,
+      "Closed QA": 5,
+      "Coding": 8,
+      "Extract": 2,
+      "Generation": 8,
+      "Open QA": 8,
+      "Rewrite": 8,
+      "Summarize": 7
+    },
+    "evaluation_categories": {
+      "Brainstorm": 8,
+      "Chat": 8,
+      "Classify": 8,
+      "Closed QA": 5,
+      "Coding": 8,
+      "Extract": 2,
+      "Generation": 8,
+      "Open QA": 8,
+      "Rewrite": 8,
+      "Summarize": 7
+    },
+    "prompt_token_limit": 352,
+    "completion_token_limit": 128,
+    "preprocessing": "First assistant turn; role-labelled prompt; unchanged prompt; completion prefix",
+    "split_rule": "Source ID and normalized prompt disjoint across all five partitions; no test batch reuses a document",
+    "files_sha256": {
+      "batches.jsonl": "b5fe3b9acb1302f8fae9ca861a98c7b1704352b67e9d44fe0ac7d56f4f0a6663",
+      "fit.jsonl": "cec13a8efe3251d3015bbf65d0b0d025e2d6b8e8ba6d88d7d604fca1d8e7bcfb",
+      "calibration_probes.jsonl": "6617abcf1b344d306e2bbd1bfff628ee4c51c92d87220b5324f89aee651b90df",
+      "dev_batches.jsonl": "adccae1ffdd9b16f7e3d2b3e3aecb09905b7881e4fabf8d28e6321fae27e0897",
+      "evaluation_probes.jsonl": "bb1b4e9971a3e9d87a4dc6d88eee987028b95424189545bcbc2ffaeba4c2a7ea",
+      "lineage.jsonl": "182ff707e8d6ca4c7334f9b310400a694b3b96a7a8ee40a03ee453b5c91a5ff9"
+    }
+  },
+  "counts": {
+    "fit": 5000,
+    "dev": 64,
+    "test": 816,
+    "calibration_probes": 256,
+    "evaluation_probes": 256
+  },
+  "test_batches": 96,
+  "seed": 20261012,
+  "groups": [
+    "brainstorming",
+    "classification",
+    "closed_qa",
+    "creative_writing",
+    "general_qa",
+    "information_extraction",
+    "open_qa",
+    "summarization"
+  ],
+  "eligible_categories": {
+    "closed_qa": 1452,
+    "classification": 2128,
+    "open_qa": 3676,
+    "information_extraction": 1117,
+    "brainstorming": 1757,
+    "general_qa": 2084,
+    "summarization": 898,
+    "creative_writing": 695
+  },
+  "tokenizer": "Qwen/Qwen2.5-3B",
+  "tokenizer_revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+  "prompt_token_limit": 352,
+  "completion_prefix_token_limit": 128,
+  "split_rule": "IDs and normalized prompts disjoint across all partitions and old study",
+  "scope": "New source dataset; task concepts may overlap. Pretraining overlap unknown.",
+  "files_sha256": {
+    "batches.jsonl": "32603c54a7e33bbc2927ac563d72b059a42b769bfa79be311f9121ef2ebe9153",
+    "fit.jsonl": "cec13a8efe3251d3015bbf65d0b0d025e2d6b8e8ba6d88d7d604fca1d8e7bcfb",
+    "calibration_probes.jsonl": "034fdd9e87e3233ca6a93bf918c796d1193e5867649e42972cab533b1417c78b",
+    "dev_batches.jsonl": "c8c52e158178ef819330f9ce85d792dc8ec6e7e1d4ae1f6207166151614b271f",
+    "evaluation_probes.jsonl": "118a1c550ea7ddd6f71c2db47fb53fac75a80b42b5ca75aafb08207cb41f0734",
+    "lineage.jsonl": "7753bbaf0fc3343d25d1161abb0a1f55e6cc5956d79c3a805820d5aa752f2bf0"
+  }
+}

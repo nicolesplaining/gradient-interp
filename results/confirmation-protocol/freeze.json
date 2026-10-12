@@ -1,0 +1,20 @@
+{
+  "saved_unix": 1791791280.7031922,
+  "plan_sha256": "ca0f0127a96370cbe4c188bdf30bdfc9c90b44651ac38c1435e04df960487589",
+  "data_manifest_sha256": "f9163e9722e30cfe916ea57484e8ca8702463ff9a44ab16c61e9ad59fb1ed844",
+  "source_sha256": {
+    "confirmation.py": "8a6d28cab6e209a4bf7c93563d66de7160c3281453d9a3fdb8886dc575c74b2e",
+    "confirmation_run.py": "1a8e946053bba8b3e85b21084eb977e3ffad0bb21f177d43944de74608a3fefe",
+    "confirmation_data.py": "d076ce8fd41efaee2bcd89c9db3303a8e88b20118f73fe3a91bb3229d028489c",
+    "confirmation_analysis.py": "dc774552aa11e3654f3e1896740a91ff1d125b4e44d65db283194333243786ce",
+    "cached_sweep.py": "00ffd432d63e40ef9c3dd6f02a45bfa6d75a74f60c96d010740c411c02c0fb89",
+    "study.py": "2f217b76391213d3d28ae31e2f823ffa457b33e384a8255a6c49e9735f348303",
+    "models.py": "d4646522a0397460d9ecf8ba1e6f66a6b040409f0d4abe6468df5e4da6107c4a",
+    "parameters.py": "b208f2d74c3d393d53219ddf004e0eed08b33ad48f4dd60e6880db837cc68845",
+    "dictionary.py": "6e540da39869579e37423efa62de581d860e07524908eb6f4a220d0e7319f122",
+    "forecast.py": "bbe2f5626a72220957df59f28c566de58f60af13652724736755dcdda469758e",
+    "benchmark.py": "b2f023fa57e43ac3ca2daea81d778cd8f3d20ff78211f898215ebd5c399bb099",
+    "data.py": "b311870da901919e59200c076c3028decad87089825a30616254ce0d4d7859c9"
+  },
+  "test_outcomes_observed": false
+}
