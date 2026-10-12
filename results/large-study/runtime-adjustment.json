@@ -1,0 +1,14 @@
+{
+  "reason": "Runtime-only preflight adjustment: 512 atoms, alpha 0.03, 5000 random 128D rows took 272.36 seconds for only 3 epochs. Retain paper default alpha 0.1 and all three dictionary sizes to fit model/seed/checkpoint comparisons in the original budget.",
+  "old_alphas": [
+    0.03,
+    0.1
+  ],
+  "new_alphas": [
+    0.1
+  ],
+  "created_unix": 1791658673.2833624,
+  "deadline_unix": 1791743046.046142,
+  "test_predictions_exist": false,
+  "test_outcomes_exist": false
+}

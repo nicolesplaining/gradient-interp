@@ -1,0 +1,78 @@
+{
+  "checked_unix": 1791717447.535227,
+  "checks": [
+    {
+      "job": "Qwen2.5-0.5B-seed11-warm0",
+      "forecast_hash_verified": true,
+      "checkpoint_restored": true,
+      "result_count": 180
+    },
+    {
+      "job": "Qwen2.5-3B-seed11-warm0",
+      "forecast_hash_verified": true,
+      "checkpoint_restored": true,
+      "result_count": 180
+    },
+    {
+      "job": "Qwen2.5-0.5B-seed29-warm0",
+      "forecast_hash_verified": true,
+      "checkpoint_restored": true,
+      "result_count": 180
+    },
+    {
+      "job": "Qwen2.5-3B-seed29-warm0",
+      "forecast_hash_verified": true,
+      "checkpoint_restored": true,
+      "result_count": 180
+    },
+    {
+      "job": "Qwen2.5-0.5B-seed47-warm0",
+      "forecast_hash_verified": true,
+      "checkpoint_restored": true,
+      "result_count": 180
+    },
+    {
+      "job": "Qwen2.5-3B-seed47-warm0",
+      "forecast_hash_verified": true,
+      "checkpoint_restored": true,
+      "result_count": 180
+    },
+    {
+      "job": "Qwen2.5-0.5B-seed11-warm64",
+      "forecast_hash_verified": true,
+      "checkpoint_restored": true,
+      "result_count": 180
+    },
+    {
+      "job": "Qwen2.5-3B-seed11-warm64",
+      "forecast_hash_verified": true,
+      "checkpoint_restored": true,
+      "result_count": 180
+    },
+    {
+      "job": "Qwen2.5-0.5B-seed29-warm64",
+      "forecast_hash_verified": true,
+      "checkpoint_restored": true,
+      "result_count": 180
+    },
+    {
+      "job": "Qwen2.5-3B-seed29-warm64",
+      "forecast_hash_verified": true,
+      "checkpoint_restored": true,
+      "result_count": 180
+    },
+    {
+      "job": "Qwen2.5-0.5B-seed47-warm64",
+      "forecast_hash_verified": true,
+      "checkpoint_restored": true,
+      "result_count": 180
+    },
+    {
+      "job": "Qwen2.5-3B-seed47-warm64",
+      "forecast_hash_verified": true,
+      "checkpoint_restored": true,
+      "result_count": 180
+    }
+  ],
+  "deadline_unix": 1791743046.046142
+}

@@ -1,0 +1,74 @@
+{
+  "source": "HuggingFaceH4/no_robots",
+  "source_revision": "e6f9a4ac5c37faeb744ba9ecf0473184d7f8105b",
+  "source_url": "https://huggingface.co/datasets/HuggingFaceH4/no_robots",
+  "source_sha256": {
+    "test": "60707b2636a46e37bb0c1e9ca263a18553f430317b7a53c691676d6a492fc0f2",
+    "train": "76d64120a2ab20eb85d6b22bdced5b1ec638a6213a97004741006745c92489ef"
+  },
+  "license": "CC-BY-NC-4.0",
+  "attribution": "Rajani, Tunstall, Beeching, Lambert, Rush, Wolf (2023), No Robots",
+  "tokenizer": "Qwen/Qwen2.5-3B",
+  "tokenizer_revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+  "seed": 20261010,
+  "heldout_families": [
+    "Coding",
+    "Classify"
+  ],
+  "heldout_scope": "Excluded from dictionary fitting and development batches; calibrated via separate probes",
+  "counts": {
+    "fit": 5000,
+    "dev": 64,
+    "test": 510,
+    "calibration_probes": 70,
+    "evaluation_probes": 70
+  },
+  "batch_count": 60,
+  "dev_batch_count": 16,
+  "fit_categories": {
+    "Chat": 733,
+    "Summarize": 221,
+    "Brainstorm": 995,
+    "Generation": 1418,
+    "Open QA": 1132,
+    "Rewrite": 343,
+    "Closed QA": 119,
+    "Extract": 39
+  },
+  "calibration_categories": {
+    "Brainstorm": 8,
+    "Chat": 8,
+    "Classify": 8,
+    "Closed QA": 5,
+    "Coding": 8,
+    "Extract": 2,
+    "Generation": 8,
+    "Open QA": 8,
+    "Rewrite": 8,
+    "Summarize": 7
+  },
+  "evaluation_categories": {
+    "Brainstorm": 8,
+    "Chat": 8,
+    "Classify": 8,
+    "Closed QA": 5,
+    "Coding": 8,
+    "Extract": 2,
+    "Generation": 8,
+    "Open QA": 8,
+    "Rewrite": 8,
+    "Summarize": 7
+  },
+  "prompt_token_limit": 352,
+  "completion_token_limit": 128,
+  "preprocessing": "First assistant turn; role-labelled prompt; unchanged prompt; completion prefix",
+  "split_rule": "Source ID and normalized prompt disjoint across all five partitions; no test batch reuses a document",
+  "files_sha256": {
+    "batches.jsonl": "b5fe3b9acb1302f8fae9ca861a98c7b1704352b67e9d44fe0ac7d56f4f0a6663",
+    "fit.jsonl": "cec13a8efe3251d3015bbf65d0b0d025e2d6b8e8ba6d88d7d604fca1d8e7bcfb",
+    "calibration_probes.jsonl": "6617abcf1b344d306e2bbd1bfff628ee4c51c92d87220b5324f89aee651b90df",
+    "dev_batches.jsonl": "adccae1ffdd9b16f7e3d2b3e3aecb09905b7881e4fabf8d28e6321fae27e0897",
+    "evaluation_probes.jsonl": "bb1b4e9971a3e9d87a4dc6d88eee987028b95424189545bcbc2ffaeba4c2a7ea",
+    "lineage.jsonl": "182ff707e8d6ca4c7334f9b310400a694b3b96a7a8ee40a03ee453b5c91a5ff9"
+  }
+}

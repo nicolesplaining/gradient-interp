@@ -1,0 +1,326 @@
+{
+  "models": [
+    "Qwen/Qwen2.5-0.5B",
+    "Qwen/Qwen2.5-3B"
+  ],
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "warmup_steps": [
+    0,
+    64
+  ],
+  "fit_count": 5000,
+  "threads": 8,
+  "rank": 128,
+  "dictionary_sizes": [
+    128,
+    256,
+    512
+  ],
+  "alphas": [
+    0.1
+  ],
+  "dictionary_iterations": 40,
+  "learning_rates": [
+    0.0001,
+    0.001,
+    0.01
+  ],
+  "finite_difference_atoms": 16,
+  "calibration_radius": 0.001,
+  "generation_batches": 10,
+  "generation_tokens": 48,
+  "residual_sae": true,
+  "sae_features": 2048,
+  "sae_k": 32,
+  "sae_epochs": 100,
+  "loracle": true,
+  "loracle_learning_rate": 0.001,
+  "loracle_upstream": "/home/ubuntu/gradient-interp-upstream/loracles",
+  "loracle_checkpoint": "/home/ubuntu/gradient-interp/runs/loracle-prepared",
+  "model_defaults": {
+    "kind": "hf",
+    "device": "cuda",
+    "dtype": "float32",
+    "max_length": 512,
+    "lora_rank": 4,
+    "lora_alpha": 8,
+    "lora_targets": [
+      "q_proj",
+      "v_proj"
+    ],
+    "score_batch_size": 8,
+    "attention": "sdpa"
+  },
+  "jobs": [
+    {
+      "id": "Qwen2.5-0.5B-seed11-warm0",
+      "seed": 11,
+      "warmup_steps": 0,
+      "model": {
+        "kind": "hf",
+        "device": "cuda",
+        "dtype": "float32",
+        "max_length": 512,
+        "lora_rank": 4,
+        "lora_alpha": 8,
+        "lora_targets": [
+          "q_proj",
+          "v_proj"
+        ],
+        "score_batch_size": 8,
+        "attention": "sdpa",
+        "name": "Qwen/Qwen2.5-0.5B",
+        "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987"
+      }
+    },
+    {
+      "id": "Qwen2.5-3B-seed11-warm0",
+      "seed": 11,
+      "warmup_steps": 0,
+      "model": {
+        "kind": "hf",
+        "device": "cuda",
+        "dtype": "float32",
+        "max_length": 512,
+        "lora_rank": 4,
+        "lora_alpha": 8,
+        "lora_targets": [
+          "q_proj",
+          "v_proj"
+        ],
+        "score_batch_size": 8,
+        "attention": "sdpa",
+        "name": "Qwen/Qwen2.5-3B",
+        "revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b"
+      }
+    },
+    {
+      "id": "Qwen2.5-0.5B-seed29-warm0",
+      "seed": 29,
+      "warmup_steps": 0,
+      "model": {
+        "kind": "hf",
+        "device": "cuda",
+        "dtype": "float32",
+        "max_length": 512,
+        "lora_rank": 4,
+        "lora_alpha": 8,
+        "lora_targets": [
+          "q_proj",
+          "v_proj"
+        ],
+        "score_batch_size": 8,
+        "attention": "sdpa",
+        "name": "Qwen/Qwen2.5-0.5B",
+        "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987"
+      }
+    },
+    {
+      "id": "Qwen2.5-3B-seed29-warm0",
+      "seed": 29,
+      "warmup_steps": 0,
+      "model": {
+        "kind": "hf",
+        "device": "cuda",
+        "dtype": "float32",
+        "max_length": 512,
+        "lora_rank": 4,
+        "lora_alpha": 8,
+        "lora_targets": [
+          "q_proj",
+          "v_proj"
+        ],
+        "score_batch_size": 8,
+        "attention": "sdpa",
+        "name": "Qwen/Qwen2.5-3B",
+        "revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b"
+      }
+    },
+    {
+      "id": "Qwen2.5-0.5B-seed47-warm0",
+      "seed": 47,
+      "warmup_steps": 0,
+      "model": {
+        "kind": "hf",
+        "device": "cuda",
+        "dtype": "float32",
+        "max_length": 512,
+        "lora_rank": 4,
+        "lora_alpha": 8,
+        "lora_targets": [
+          "q_proj",
+          "v_proj"
+        ],
+        "score_batch_size": 8,
+        "attention": "sdpa",
+        "name": "Qwen/Qwen2.5-0.5B",
+        "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987"
+      }
+    },
+    {
+      "id": "Qwen2.5-3B-seed47-warm0",
+      "seed": 47,
+      "warmup_steps": 0,
+      "model": {
+        "kind": "hf",
+        "device": "cuda",
+        "dtype": "float32",
+        "max_length": 512,
+        "lora_rank": 4,
+        "lora_alpha": 8,
+        "lora_targets": [
+          "q_proj",
+          "v_proj"
+        ],
+        "score_batch_size": 8,
+        "attention": "sdpa",
+        "name": "Qwen/Qwen2.5-3B",
+        "revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b"
+      }
+    },
+    {
+      "id": "Qwen2.5-0.5B-seed11-warm64",
+      "seed": 11,
+      "warmup_steps": 64,
+      "model": {
+        "kind": "hf",
+        "device": "cuda",
+        "dtype": "float32",
+        "max_length": 512,
+        "lora_rank": 4,
+        "lora_alpha": 8,
+        "lora_targets": [
+          "q_proj",
+          "v_proj"
+        ],
+        "score_batch_size": 8,
+        "attention": "sdpa",
+        "name": "Qwen/Qwen2.5-0.5B",
+        "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987"
+      }
+    },
+    {
+      "id": "Qwen2.5-3B-seed11-warm64",
+      "seed": 11,
+      "warmup_steps": 64,
+      "model": {
+        "kind": "hf",
+        "device": "cuda",
+        "dtype": "float32",
+        "max_length": 512,
+        "lora_rank": 4,
+        "lora_alpha": 8,
+        "lora_targets": [
+          "q_proj",
+          "v_proj"
+        ],
+        "score_batch_size": 8,
+        "attention": "sdpa",
+        "name": "Qwen/Qwen2.5-3B",
+        "revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b"
+      }
+    },
+    {
+      "id": "Qwen2.5-0.5B-seed29-warm64",
+      "seed": 29,
+      "warmup_steps": 64,
+      "model": {
+        "kind": "hf",
+        "device": "cuda",
+        "dtype": "float32",
+        "max_length": 512,
+        "lora_rank": 4,
+        "lora_alpha": 8,
+        "lora_targets": [
+          "q_proj",
+          "v_proj"
+        ],
+        "score_batch_size": 8,
+        "attention": "sdpa",
+        "name": "Qwen/Qwen2.5-0.5B",
+        "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987"
+      }
+    },
+    {
+      "id": "Qwen2.5-3B-seed29-warm64",
+      "seed": 29,
+      "warmup_steps": 64,
+      "model": {
+        "kind": "hf",
+        "device": "cuda",
+        "dtype": "float32",
+        "max_length": 512,
+        "lora_rank": 4,
+        "lora_alpha": 8,
+        "lora_targets": [
+          "q_proj",
+          "v_proj"
+        ],
+        "score_batch_size": 8,
+        "attention": "sdpa",
+        "name": "Qwen/Qwen2.5-3B",
+        "revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b"
+      }
+    },
+    {
+      "id": "Qwen2.5-0.5B-seed47-warm64",
+      "seed": 47,
+      "warmup_steps": 64,
+      "model": {
+        "kind": "hf",
+        "device": "cuda",
+        "dtype": "float32",
+        "max_length": 512,
+        "lora_rank": 4,
+        "lora_alpha": 8,
+        "lora_targets": [
+          "q_proj",
+          "v_proj"
+        ],
+        "score_batch_size": 8,
+        "attention": "sdpa",
+        "name": "Qwen/Qwen2.5-0.5B",
+        "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987"
+      }
+    },
+    {
+      "id": "Qwen2.5-3B-seed47-warm64",
+      "seed": 47,
+      "warmup_steps": 64,
+      "model": {
+        "kind": "hf",
+        "device": "cuda",
+        "dtype": "float32",
+        "max_length": 512,
+        "lora_rank": 4,
+        "lora_alpha": 8,
+        "lora_targets": [
+          "q_proj",
+          "v_proj"
+        ],
+        "score_batch_size": 8,
+        "attention": "sdpa",
+        "name": "Qwen/Qwen2.5-3B",
+        "revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b"
+      }
+    }
+  ],
+  "benchmark": "/home/ubuntu/gradient-interp/runs/large-study/data",
+  "config_sha256": "a4fda37f5d6895e4f79362000a15067aaf32b459c08273ac68228d2eb4f53f9e",
+  "created_unix": 1791658446.0455608,
+  "budget_hours": 23.5,
+  "protocol": {
+    "primary": "Held-out batch forecast error and atom-removal effect/selectivity",
+    "selection": "Size/alpha selected on development derivative reconstruction only",
+    "test_forecasts": "All variants written and hashed before any final-test intervention",
+    "learning_rates": "Prespecified, shared across jobs; no final-test tuning",
+    "generations": "Ten size-16 pure batches; maximum prespecified rate; greedy decoding",
+    "secondary_sae": "Matched 2048-feature TopK SAEs at warmed checkpoints",
+    "limitations": "One source dataset; short response prefixes; LoRA q/v; category probes do not establish semantic selectivity"
+  },
+  "runtime_amendment": "runtime-adjustment.json; recorded before final test predictions or outcomes"
+}
