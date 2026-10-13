@@ -1,0 +1,1334 @@
+{
+  "batches": [
+    {
+      "id": "batch-00",
+      "style": "plain_short",
+      "style_index": 0,
+      "documents": [
+        {
+          "id": "catalog-000",
+          "prompt": "Catalog entry 000 contains these three tags: ZEA0DD2, Z630110, ZA7E5B9. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "ZEA0DD2",
+            "Z630110",
+            "ZA7E5B9"
+          ],
+          "answers": [
+            "ZEA0DD2, Z630110, ZA7E5B9.",
+            "1. ZEA0DD2\n2. Z630110\n3. ZA7E5B9",
+            "The first catalog tag is ZEA0DD2. The second catalog tag is Z630110. The third catalog tag is ZA7E5B9.",
+            "1. The first catalog tag is ZEA0DD2.\n2. The second catalog tag is Z630110.\n3. The third catalog tag is ZA7E5B9."
+          ]
+        },
+        {
+          "id": "catalog-001",
+          "prompt": "Catalog entry 001 contains these three tags: ZF27FA7, Z31A74B, ZD477AC. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "ZF27FA7",
+            "Z31A74B",
+            "ZD477AC"
+          ],
+          "answers": [
+            "ZF27FA7, Z31A74B, ZD477AC.",
+            "1. ZF27FA7\n2. Z31A74B\n3. ZD477AC",
+            "The first catalog tag is ZF27FA7. The second catalog tag is Z31A74B. The third catalog tag is ZD477AC.",
+            "1. The first catalog tag is ZF27FA7.\n2. The second catalog tag is Z31A74B.\n3. The third catalog tag is ZD477AC."
+          ]
+        },
+        {
+          "id": "catalog-002",
+          "prompt": "Catalog entry 002 contains these three tags: Z1B5757, Z79594E, Z25B668. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z1B5757",
+            "Z79594E",
+            "Z25B668"
+          ],
+          "answers": [
+            "Z1B5757, Z79594E, Z25B668.",
+            "1. Z1B5757\n2. Z79594E\n3. Z25B668",
+            "The first catalog tag is Z1B5757. The second catalog tag is Z79594E. The third catalog tag is Z25B668.",
+            "1. The first catalog tag is Z1B5757.\n2. The second catalog tag is Z79594E.\n3. The third catalog tag is Z25B668."
+          ]
+        },
+        {
+          "id": "catalog-003",
+          "prompt": "Catalog entry 003 contains these three tags: Z09953E, Z7145B5, Z357F38. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z09953E",
+            "Z7145B5",
+            "Z357F38"
+          ],
+          "answers": [
+            "Z09953E, Z7145B5, Z357F38.",
+            "1. Z09953E\n2. Z7145B5\n3. Z357F38",
+            "The first catalog tag is Z09953E. The second catalog tag is Z7145B5. The third catalog tag is Z357F38.",
+            "1. The first catalog tag is Z09953E.\n2. The second catalog tag is Z7145B5.\n3. The third catalog tag is Z357F38."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "batch-01",
+      "style": "numbered_short",
+      "style_index": 1,
+      "documents": [
+        {
+          "id": "catalog-004",
+          "prompt": "Catalog entry 004 contains these three tags: Z7FF654, Z420270, Z66DF98. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z7FF654",
+            "Z420270",
+            "Z66DF98"
+          ],
+          "answers": [
+            "Z7FF654, Z420270, Z66DF98.",
+            "1. Z7FF654\n2. Z420270\n3. Z66DF98",
+            "The first catalog tag is Z7FF654. The second catalog tag is Z420270. The third catalog tag is Z66DF98.",
+            "1. The first catalog tag is Z7FF654.\n2. The second catalog tag is Z420270.\n3. The third catalog tag is Z66DF98."
+          ]
+        },
+        {
+          "id": "catalog-005",
+          "prompt": "Catalog entry 005 contains these three tags: ZE755EB, ZFA9414, Z4E62E4. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "ZE755EB",
+            "ZFA9414",
+            "Z4E62E4"
+          ],
+          "answers": [
+            "ZE755EB, ZFA9414, Z4E62E4.",
+            "1. ZE755EB\n2. ZFA9414\n3. Z4E62E4",
+            "The first catalog tag is ZE755EB. The second catalog tag is ZFA9414. The third catalog tag is Z4E62E4.",
+            "1. The first catalog tag is ZE755EB.\n2. The second catalog tag is ZFA9414.\n3. The third catalog tag is Z4E62E4."
+          ]
+        },
+        {
+          "id": "catalog-006",
+          "prompt": "Catalog entry 006 contains these three tags: Z17E7E4, Z47471D, Z72D49C. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z17E7E4",
+            "Z47471D",
+            "Z72D49C"
+          ],
+          "answers": [
+            "Z17E7E4, Z47471D, Z72D49C.",
+            "1. Z17E7E4\n2. Z47471D\n3. Z72D49C",
+            "The first catalog tag is Z17E7E4. The second catalog tag is Z47471D. The third catalog tag is Z72D49C.",
+            "1. The first catalog tag is Z17E7E4.\n2. The second catalog tag is Z47471D.\n3. The third catalog tag is Z72D49C."
+          ]
+        },
+        {
+          "id": "catalog-007",
+          "prompt": "Catalog entry 007 contains these three tags: Z5C5499, ZA6A7B9, ZCB364B. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z5C5499",
+            "ZA6A7B9",
+            "ZCB364B"
+          ],
+          "answers": [
+            "Z5C5499, ZA6A7B9, ZCB364B.",
+            "1. Z5C5499\n2. ZA6A7B9\n3. ZCB364B",
+            "The first catalog tag is Z5C5499. The second catalog tag is ZA6A7B9. The third catalog tag is ZCB364B.",
+            "1. The first catalog tag is Z5C5499.\n2. The second catalog tag is ZA6A7B9.\n3. The third catalog tag is ZCB364B."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "batch-02",
+      "style": "plain_long",
+      "style_index": 2,
+      "documents": [
+        {
+          "id": "catalog-008",
+          "prompt": "Catalog entry 008 contains these three tags: ZD5AA71, ZADCF1C, ZF0A981. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "ZD5AA71",
+            "ZADCF1C",
+            "ZF0A981"
+          ],
+          "answers": [
+            "ZD5AA71, ZADCF1C, ZF0A981.",
+            "1. ZD5AA71\n2. ZADCF1C\n3. ZF0A981",
+            "The first catalog tag is ZD5AA71. The second catalog tag is ZADCF1C. The third catalog tag is ZF0A981.",
+            "1. The first catalog tag is ZD5AA71.\n2. The second catalog tag is ZADCF1C.\n3. The third catalog tag is ZF0A981."
+          ]
+        },
+        {
+          "id": "catalog-009",
+          "prompt": "Catalog entry 009 contains these three tags: ZF321DB, ZF35126, ZDCC7D4. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "ZF321DB",
+            "ZF35126",
+            "ZDCC7D4"
+          ],
+          "answers": [
+            "ZF321DB, ZF35126, ZDCC7D4.",
+            "1. ZF321DB\n2. ZF35126\n3. ZDCC7D4",
+            "The first catalog tag is ZF321DB. The second catalog tag is ZF35126. The third catalog tag is ZDCC7D4.",
+            "1. The first catalog tag is ZF321DB.\n2. The second catalog tag is ZF35126.\n3. The third catalog tag is ZDCC7D4."
+          ]
+        },
+        {
+          "id": "catalog-010",
+          "prompt": "Catalog entry 010 contains these three tags: ZEA839F, ZCA8448, Z7CF865. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "ZEA839F",
+            "ZCA8448",
+            "Z7CF865"
+          ],
+          "answers": [
+            "ZEA839F, ZCA8448, Z7CF865.",
+            "1. ZEA839F\n2. ZCA8448\n3. Z7CF865",
+            "The first catalog tag is ZEA839F. The second catalog tag is ZCA8448. The third catalog tag is Z7CF865.",
+            "1. The first catalog tag is ZEA839F.\n2. The second catalog tag is ZCA8448.\n3. The third catalog tag is Z7CF865."
+          ]
+        },
+        {
+          "id": "catalog-011",
+          "prompt": "Catalog entry 011 contains these three tags: Z9CA5FE, Z054D46, Z4BDFD0. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z9CA5FE",
+            "Z054D46",
+            "Z4BDFD0"
+          ],
+          "answers": [
+            "Z9CA5FE, Z054D46, Z4BDFD0.",
+            "1. Z9CA5FE\n2. Z054D46\n3. Z4BDFD0",
+            "The first catalog tag is Z9CA5FE. The second catalog tag is Z054D46. The third catalog tag is Z4BDFD0.",
+            "1. The first catalog tag is Z9CA5FE.\n2. The second catalog tag is Z054D46.\n3. The third catalog tag is Z4BDFD0."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "batch-03",
+      "style": "numbered_long",
+      "style_index": 3,
+      "documents": [
+        {
+          "id": "catalog-012",
+          "prompt": "Catalog entry 012 contains these three tags: ZD661C5, Z7882CC, Z3477A2. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "ZD661C5",
+            "Z7882CC",
+            "Z3477A2"
+          ],
+          "answers": [
+            "ZD661C5, Z7882CC, Z3477A2.",
+            "1. ZD661C5\n2. Z7882CC\n3. Z3477A2",
+            "The first catalog tag is ZD661C5. The second catalog tag is Z7882CC. The third catalog tag is Z3477A2.",
+            "1. The first catalog tag is ZD661C5.\n2. The second catalog tag is Z7882CC.\n3. The third catalog tag is Z3477A2."
+          ]
+        },
+        {
+          "id": "catalog-013",
+          "prompt": "Catalog entry 013 contains these three tags: Z179647, ZE55B2E, Z23FC1F. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z179647",
+            "ZE55B2E",
+            "Z23FC1F"
+          ],
+          "answers": [
+            "Z179647, ZE55B2E, Z23FC1F.",
+            "1. Z179647\n2. ZE55B2E\n3. Z23FC1F",
+            "The first catalog tag is Z179647. The second catalog tag is ZE55B2E. The third catalog tag is Z23FC1F.",
+            "1. The first catalog tag is Z179647.\n2. The second catalog tag is ZE55B2E.\n3. The third catalog tag is Z23FC1F."
+          ]
+        },
+        {
+          "id": "catalog-014",
+          "prompt": "Catalog entry 014 contains these three tags: ZF18042, ZE729A7, Z4861DE. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "ZF18042",
+            "ZE729A7",
+            "Z4861DE"
+          ],
+          "answers": [
+            "ZF18042, ZE729A7, Z4861DE.",
+            "1. ZF18042\n2. ZE729A7\n3. Z4861DE",
+            "The first catalog tag is ZF18042. The second catalog tag is ZE729A7. The third catalog tag is Z4861DE.",
+            "1. The first catalog tag is ZF18042.\n2. The second catalog tag is ZE729A7.\n3. The third catalog tag is Z4861DE."
+          ]
+        },
+        {
+          "id": "catalog-015",
+          "prompt": "Catalog entry 015 contains these three tags: Z0CF67B, ZDA40C7, Z0D1769. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z0CF67B",
+            "ZDA40C7",
+            "Z0D1769"
+          ],
+          "answers": [
+            "Z0CF67B, ZDA40C7, Z0D1769.",
+            "1. Z0CF67B\n2. ZDA40C7\n3. Z0D1769",
+            "The first catalog tag is Z0CF67B. The second catalog tag is ZDA40C7. The third catalog tag is Z0D1769.",
+            "1. The first catalog tag is Z0CF67B.\n2. The second catalog tag is ZDA40C7.\n3. The third catalog tag is Z0D1769."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "batch-04",
+      "style": "plain_short",
+      "style_index": 0,
+      "documents": [
+        {
+          "id": "catalog-016",
+          "prompt": "Catalog entry 016 contains these three tags: ZD76D00, Z68722E, ZBFB71C. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "ZD76D00",
+            "Z68722E",
+            "ZBFB71C"
+          ],
+          "answers": [
+            "ZD76D00, Z68722E, ZBFB71C.",
+            "1. ZD76D00\n2. Z68722E\n3. ZBFB71C",
+            "The first catalog tag is ZD76D00. The second catalog tag is Z68722E. The third catalog tag is ZBFB71C.",
+            "1. The first catalog tag is ZD76D00.\n2. The second catalog tag is Z68722E.\n3. The third catalog tag is ZBFB71C."
+          ]
+        },
+        {
+          "id": "catalog-017",
+          "prompt": "Catalog entry 017 contains these three tags: Z64E889, Z768289, Z13E184. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z64E889",
+            "Z768289",
+            "Z13E184"
+          ],
+          "answers": [
+            "Z64E889, Z768289, Z13E184.",
+            "1. Z64E889\n2. Z768289\n3. Z13E184",
+            "The first catalog tag is Z64E889. The second catalog tag is Z768289. The third catalog tag is Z13E184.",
+            "1. The first catalog tag is Z64E889.\n2. The second catalog tag is Z768289.\n3. The third catalog tag is Z13E184."
+          ]
+        },
+        {
+          "id": "catalog-018",
+          "prompt": "Catalog entry 018 contains these three tags: ZF552E9, Z246207, Z97D883. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "ZF552E9",
+            "Z246207",
+            "Z97D883"
+          ],
+          "answers": [
+            "ZF552E9, Z246207, Z97D883.",
+            "1. ZF552E9\n2. Z246207\n3. Z97D883",
+            "The first catalog tag is ZF552E9. The second catalog tag is Z246207. The third catalog tag is Z97D883.",
+            "1. The first catalog tag is ZF552E9.\n2. The second catalog tag is Z246207.\n3. The third catalog tag is Z97D883."
+          ]
+        },
+        {
+          "id": "catalog-019",
+          "prompt": "Catalog entry 019 contains these three tags: Z140A56, Z6F4820, Z96D09D. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z140A56",
+            "Z6F4820",
+            "Z96D09D"
+          ],
+          "answers": [
+            "Z140A56, Z6F4820, Z96D09D.",
+            "1. Z140A56\n2. Z6F4820\n3. Z96D09D",
+            "The first catalog tag is Z140A56. The second catalog tag is Z6F4820. The third catalog tag is Z96D09D.",
+            "1. The first catalog tag is Z140A56.\n2. The second catalog tag is Z6F4820.\n3. The third catalog tag is Z96D09D."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "batch-05",
+      "style": "numbered_short",
+      "style_index": 1,
+      "documents": [
+        {
+          "id": "catalog-020",
+          "prompt": "Catalog entry 020 contains these three tags: Z4F6EAD, ZEBF105, Z4A82CC. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z4F6EAD",
+            "ZEBF105",
+            "Z4A82CC"
+          ],
+          "answers": [
+            "Z4F6EAD, ZEBF105, Z4A82CC.",
+            "1. Z4F6EAD\n2. ZEBF105\n3. Z4A82CC",
+            "The first catalog tag is Z4F6EAD. The second catalog tag is ZEBF105. The third catalog tag is Z4A82CC.",
+            "1. The first catalog tag is Z4F6EAD.\n2. The second catalog tag is ZEBF105.\n3. The third catalog tag is Z4A82CC."
+          ]
+        },
+        {
+          "id": "catalog-021",
+          "prompt": "Catalog entry 021 contains these three tags: ZB88AFF, ZCE868C, Z4A124E. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "ZB88AFF",
+            "ZCE868C",
+            "Z4A124E"
+          ],
+          "answers": [
+            "ZB88AFF, ZCE868C, Z4A124E.",
+            "1. ZB88AFF\n2. ZCE868C\n3. Z4A124E",
+            "The first catalog tag is ZB88AFF. The second catalog tag is ZCE868C. The third catalog tag is Z4A124E.",
+            "1. The first catalog tag is ZB88AFF.\n2. The second catalog tag is ZCE868C.\n3. The third catalog tag is Z4A124E."
+          ]
+        },
+        {
+          "id": "catalog-022",
+          "prompt": "Catalog entry 022 contains these three tags: Z2D63C4, Z047239, ZE59244. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z2D63C4",
+            "Z047239",
+            "ZE59244"
+          ],
+          "answers": [
+            "Z2D63C4, Z047239, ZE59244.",
+            "1. Z2D63C4\n2. Z047239\n3. ZE59244",
+            "The first catalog tag is Z2D63C4. The second catalog tag is Z047239. The third catalog tag is ZE59244.",
+            "1. The first catalog tag is Z2D63C4.\n2. The second catalog tag is Z047239.\n3. The third catalog tag is ZE59244."
+          ]
+        },
+        {
+          "id": "catalog-023",
+          "prompt": "Catalog entry 023 contains these three tags: Z622149, ZEBDD15, Z22C1B7. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z622149",
+            "ZEBDD15",
+            "Z22C1B7"
+          ],
+          "answers": [
+            "Z622149, ZEBDD15, Z22C1B7.",
+            "1. Z622149\n2. ZEBDD15\n3. Z22C1B7",
+            "The first catalog tag is Z622149. The second catalog tag is ZEBDD15. The third catalog tag is Z22C1B7.",
+            "1. The first catalog tag is Z622149.\n2. The second catalog tag is ZEBDD15.\n3. The third catalog tag is Z22C1B7."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "batch-06",
+      "style": "plain_long",
+      "style_index": 2,
+      "documents": [
+        {
+          "id": "catalog-024",
+          "prompt": "Catalog entry 024 contains these three tags: ZC88216, Z3C9421, ZE530EA. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "ZC88216",
+            "Z3C9421",
+            "ZE530EA"
+          ],
+          "answers": [
+            "ZC88216, Z3C9421, ZE530EA.",
+            "1. ZC88216\n2. Z3C9421\n3. ZE530EA",
+            "The first catalog tag is ZC88216. The second catalog tag is Z3C9421. The third catalog tag is ZE530EA.",
+            "1. The first catalog tag is ZC88216.\n2. The second catalog tag is Z3C9421.\n3. The third catalog tag is ZE530EA."
+          ]
+        },
+        {
+          "id": "catalog-025",
+          "prompt": "Catalog entry 025 contains these three tags: ZA7C66E, Z904B9D, ZB0F807. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "ZA7C66E",
+            "Z904B9D",
+            "ZB0F807"
+          ],
+          "answers": [
+            "ZA7C66E, Z904B9D, ZB0F807.",
+            "1. ZA7C66E\n2. Z904B9D\n3. ZB0F807",
+            "The first catalog tag is ZA7C66E. The second catalog tag is Z904B9D. The third catalog tag is ZB0F807.",
+            "1. The first catalog tag is ZA7C66E.\n2. The second catalog tag is Z904B9D.\n3. The third catalog tag is ZB0F807."
+          ]
+        },
+        {
+          "id": "catalog-026",
+          "prompt": "Catalog entry 026 contains these three tags: ZEDF5ED, ZF7B300, ZC412BA. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "ZEDF5ED",
+            "ZF7B300",
+            "ZC412BA"
+          ],
+          "answers": [
+            "ZEDF5ED, ZF7B300, ZC412BA.",
+            "1. ZEDF5ED\n2. ZF7B300\n3. ZC412BA",
+            "The first catalog tag is ZEDF5ED. The second catalog tag is ZF7B300. The third catalog tag is ZC412BA.",
+            "1. The first catalog tag is ZEDF5ED.\n2. The second catalog tag is ZF7B300.\n3. The third catalog tag is ZC412BA."
+          ]
+        },
+        {
+          "id": "catalog-027",
+          "prompt": "Catalog entry 027 contains these three tags: Z1780A4, Z8E10D9, Z6F838E. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z1780A4",
+            "Z8E10D9",
+            "Z6F838E"
+          ],
+          "answers": [
+            "Z1780A4, Z8E10D9, Z6F838E.",
+            "1. Z1780A4\n2. Z8E10D9\n3. Z6F838E",
+            "The first catalog tag is Z1780A4. The second catalog tag is Z8E10D9. The third catalog tag is Z6F838E.",
+            "1. The first catalog tag is Z1780A4.\n2. The second catalog tag is Z8E10D9.\n3. The third catalog tag is Z6F838E."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "batch-07",
+      "style": "numbered_long",
+      "style_index": 3,
+      "documents": [
+        {
+          "id": "catalog-028",
+          "prompt": "Catalog entry 028 contains these three tags: Z712509, ZB92335, Z928798. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z712509",
+            "ZB92335",
+            "Z928798"
+          ],
+          "answers": [
+            "Z712509, ZB92335, Z928798.",
+            "1. Z712509\n2. ZB92335\n3. Z928798",
+            "The first catalog tag is Z712509. The second catalog tag is ZB92335. The third catalog tag is Z928798.",
+            "1. The first catalog tag is Z712509.\n2. The second catalog tag is ZB92335.\n3. The third catalog tag is Z928798."
+          ]
+        },
+        {
+          "id": "catalog-029",
+          "prompt": "Catalog entry 029 contains these three tags: Z8C556E, Z85DE0C, Z57BC2F. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z8C556E",
+            "Z85DE0C",
+            "Z57BC2F"
+          ],
+          "answers": [
+            "Z8C556E, Z85DE0C, Z57BC2F.",
+            "1. Z8C556E\n2. Z85DE0C\n3. Z57BC2F",
+            "The first catalog tag is Z8C556E. The second catalog tag is Z85DE0C. The third catalog tag is Z57BC2F.",
+            "1. The first catalog tag is Z8C556E.\n2. The second catalog tag is Z85DE0C.\n3. The third catalog tag is Z57BC2F."
+          ]
+        },
+        {
+          "id": "catalog-030",
+          "prompt": "Catalog entry 030 contains these three tags: ZB7757E, Z89200F, Z644A24. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "ZB7757E",
+            "Z89200F",
+            "Z644A24"
+          ],
+          "answers": [
+            "ZB7757E, Z89200F, Z644A24.",
+            "1. ZB7757E\n2. Z89200F\n3. Z644A24",
+            "The first catalog tag is ZB7757E. The second catalog tag is Z89200F. The third catalog tag is Z644A24.",
+            "1. The first catalog tag is ZB7757E.\n2. The second catalog tag is Z89200F.\n3. The third catalog tag is Z644A24."
+          ]
+        },
+        {
+          "id": "catalog-031",
+          "prompt": "Catalog entry 031 contains these three tags: Z7608E3, ZA7D429, Z64A7AA. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z7608E3",
+            "ZA7D429",
+            "Z64A7AA"
+          ],
+          "answers": [
+            "Z7608E3, ZA7D429, Z64A7AA.",
+            "1. Z7608E3\n2. ZA7D429\n3. Z64A7AA",
+            "The first catalog tag is Z7608E3. The second catalog tag is ZA7D429. The third catalog tag is Z64A7AA.",
+            "1. The first catalog tag is Z7608E3.\n2. The second catalog tag is ZA7D429.\n3. The third catalog tag is Z64A7AA."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "batch-08",
+      "style": "plain_short",
+      "style_index": 0,
+      "documents": [
+        {
+          "id": "catalog-032",
+          "prompt": "Catalog entry 032 contains these three tags: Z6A7894, Z7547CC, Z0A589E. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z6A7894",
+            "Z7547CC",
+            "Z0A589E"
+          ],
+          "answers": [
+            "Z6A7894, Z7547CC, Z0A589E.",
+            "1. Z6A7894\n2. Z7547CC\n3. Z0A589E",
+            "The first catalog tag is Z6A7894. The second catalog tag is Z7547CC. The third catalog tag is Z0A589E.",
+            "1. The first catalog tag is Z6A7894.\n2. The second catalog tag is Z7547CC.\n3. The third catalog tag is Z0A589E."
+          ]
+        },
+        {
+          "id": "catalog-033",
+          "prompt": "Catalog entry 033 contains these three tags: Z3F9645, ZA7E3A9, Z2A1D7D. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z3F9645",
+            "ZA7E3A9",
+            "Z2A1D7D"
+          ],
+          "answers": [
+            "Z3F9645, ZA7E3A9, Z2A1D7D.",
+            "1. Z3F9645\n2. ZA7E3A9\n3. Z2A1D7D",
+            "The first catalog tag is Z3F9645. The second catalog tag is ZA7E3A9. The third catalog tag is Z2A1D7D.",
+            "1. The first catalog tag is Z3F9645.\n2. The second catalog tag is ZA7E3A9.\n3. The third catalog tag is Z2A1D7D."
+          ]
+        },
+        {
+          "id": "catalog-034",
+          "prompt": "Catalog entry 034 contains these three tags: Z8F881D, ZE6ECD6, ZC7B94B. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z8F881D",
+            "ZE6ECD6",
+            "ZC7B94B"
+          ],
+          "answers": [
+            "Z8F881D, ZE6ECD6, ZC7B94B.",
+            "1. Z8F881D\n2. ZE6ECD6\n3. ZC7B94B",
+            "The first catalog tag is Z8F881D. The second catalog tag is ZE6ECD6. The third catalog tag is ZC7B94B.",
+            "1. The first catalog tag is Z8F881D.\n2. The second catalog tag is ZE6ECD6.\n3. The third catalog tag is ZC7B94B."
+          ]
+        },
+        {
+          "id": "catalog-035",
+          "prompt": "Catalog entry 035 contains these three tags: ZBE52B7, ZE38049, Z56B682. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "ZBE52B7",
+            "ZE38049",
+            "Z56B682"
+          ],
+          "answers": [
+            "ZBE52B7, ZE38049, Z56B682.",
+            "1. ZBE52B7\n2. ZE38049\n3. Z56B682",
+            "The first catalog tag is ZBE52B7. The second catalog tag is ZE38049. The third catalog tag is Z56B682.",
+            "1. The first catalog tag is ZBE52B7.\n2. The second catalog tag is ZE38049.\n3. The third catalog tag is Z56B682."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "batch-09",
+      "style": "numbered_short",
+      "style_index": 1,
+      "documents": [
+        {
+          "id": "catalog-036",
+          "prompt": "Catalog entry 036 contains these three tags: Z78872F, ZB4F479, ZB67E11. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z78872F",
+            "ZB4F479",
+            "ZB67E11"
+          ],
+          "answers": [
+            "Z78872F, ZB4F479, ZB67E11.",
+            "1. Z78872F\n2. ZB4F479\n3. ZB67E11",
+            "The first catalog tag is Z78872F. The second catalog tag is ZB4F479. The third catalog tag is ZB67E11.",
+            "1. The first catalog tag is Z78872F.\n2. The second catalog tag is ZB4F479.\n3. The third catalog tag is ZB67E11."
+          ]
+        },
+        {
+          "id": "catalog-037",
+          "prompt": "Catalog entry 037 contains these three tags: Z46EDA6, ZA40EB4, ZA99CAC. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z46EDA6",
+            "ZA40EB4",
+            "ZA99CAC"
+          ],
+          "answers": [
+            "Z46EDA6, ZA40EB4, ZA99CAC.",
+            "1. Z46EDA6\n2. ZA40EB4\n3. ZA99CAC",
+            "The first catalog tag is Z46EDA6. The second catalog tag is ZA40EB4. The third catalog tag is ZA99CAC.",
+            "1. The first catalog tag is Z46EDA6.\n2. The second catalog tag is ZA40EB4.\n3. The third catalog tag is ZA99CAC."
+          ]
+        },
+        {
+          "id": "catalog-038",
+          "prompt": "Catalog entry 038 contains these three tags: ZD30522, Z078DCA, ZAA7882. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "ZD30522",
+            "Z078DCA",
+            "ZAA7882"
+          ],
+          "answers": [
+            "ZD30522, Z078DCA, ZAA7882.",
+            "1. ZD30522\n2. Z078DCA\n3. ZAA7882",
+            "The first catalog tag is ZD30522. The second catalog tag is Z078DCA. The third catalog tag is ZAA7882.",
+            "1. The first catalog tag is ZD30522.\n2. The second catalog tag is Z078DCA.\n3. The third catalog tag is ZAA7882."
+          ]
+        },
+        {
+          "id": "catalog-039",
+          "prompt": "Catalog entry 039 contains these three tags: Z65FFE5, Z299072, ZC347EA. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z65FFE5",
+            "Z299072",
+            "ZC347EA"
+          ],
+          "answers": [
+            "Z65FFE5, Z299072, ZC347EA.",
+            "1. Z65FFE5\n2. Z299072\n3. ZC347EA",
+            "The first catalog tag is Z65FFE5. The second catalog tag is Z299072. The third catalog tag is ZC347EA.",
+            "1. The first catalog tag is Z65FFE5.\n2. The second catalog tag is Z299072.\n3. The third catalog tag is ZC347EA."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "batch-10",
+      "style": "plain_long",
+      "style_index": 2,
+      "documents": [
+        {
+          "id": "catalog-040",
+          "prompt": "Catalog entry 040 contains these three tags: ZBC1B25, Z0C922D, Z2768C5. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "ZBC1B25",
+            "Z0C922D",
+            "Z2768C5"
+          ],
+          "answers": [
+            "ZBC1B25, Z0C922D, Z2768C5.",
+            "1. ZBC1B25\n2. Z0C922D\n3. Z2768C5",
+            "The first catalog tag is ZBC1B25. The second catalog tag is Z0C922D. The third catalog tag is Z2768C5.",
+            "1. The first catalog tag is ZBC1B25.\n2. The second catalog tag is Z0C922D.\n3. The third catalog tag is Z2768C5."
+          ]
+        },
+        {
+          "id": "catalog-041",
+          "prompt": "Catalog entry 041 contains these three tags: ZD411DD, Z22D3F7, Z692CCC. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "ZD411DD",
+            "Z22D3F7",
+            "Z692CCC"
+          ],
+          "answers": [
+            "ZD411DD, Z22D3F7, Z692CCC.",
+            "1. ZD411DD\n2. Z22D3F7\n3. Z692CCC",
+            "The first catalog tag is ZD411DD. The second catalog tag is Z22D3F7. The third catalog tag is Z692CCC.",
+            "1. The first catalog tag is ZD411DD.\n2. The second catalog tag is Z22D3F7.\n3. The third catalog tag is Z692CCC."
+          ]
+        },
+        {
+          "id": "catalog-042",
+          "prompt": "Catalog entry 042 contains these three tags: ZAF733E, Z4EDA02, Z1624AA. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "ZAF733E",
+            "Z4EDA02",
+            "Z1624AA"
+          ],
+          "answers": [
+            "ZAF733E, Z4EDA02, Z1624AA.",
+            "1. ZAF733E\n2. Z4EDA02\n3. Z1624AA",
+            "The first catalog tag is ZAF733E. The second catalog tag is Z4EDA02. The third catalog tag is Z1624AA.",
+            "1. The first catalog tag is ZAF733E.\n2. The second catalog tag is Z4EDA02.\n3. The third catalog tag is Z1624AA."
+          ]
+        },
+        {
+          "id": "catalog-043",
+          "prompt": "Catalog entry 043 contains these three tags: ZC24562, Z1CADC1, ZAEBE94. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "ZC24562",
+            "Z1CADC1",
+            "ZAEBE94"
+          ],
+          "answers": [
+            "ZC24562, Z1CADC1, ZAEBE94.",
+            "1. ZC24562\n2. Z1CADC1\n3. ZAEBE94",
+            "The first catalog tag is ZC24562. The second catalog tag is Z1CADC1. The third catalog tag is ZAEBE94.",
+            "1. The first catalog tag is ZC24562.\n2. The second catalog tag is Z1CADC1.\n3. The third catalog tag is ZAEBE94."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "batch-11",
+      "style": "numbered_long",
+      "style_index": 3,
+      "documents": [
+        {
+          "id": "catalog-044",
+          "prompt": "Catalog entry 044 contains these three tags: Z095801, ZEA08FD, Z928B2D. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z095801",
+            "ZEA08FD",
+            "Z928B2D"
+          ],
+          "answers": [
+            "Z095801, ZEA08FD, Z928B2D.",
+            "1. Z095801\n2. ZEA08FD\n3. Z928B2D",
+            "The first catalog tag is Z095801. The second catalog tag is ZEA08FD. The third catalog tag is Z928B2D.",
+            "1. The first catalog tag is Z095801.\n2. The second catalog tag is ZEA08FD.\n3. The third catalog tag is Z928B2D."
+          ]
+        },
+        {
+          "id": "catalog-045",
+          "prompt": "Catalog entry 045 contains these three tags: Z7FC0A8, Z730074, Z5E1EDD. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z7FC0A8",
+            "Z730074",
+            "Z5E1EDD"
+          ],
+          "answers": [
+            "Z7FC0A8, Z730074, Z5E1EDD.",
+            "1. Z7FC0A8\n2. Z730074\n3. Z5E1EDD",
+            "The first catalog tag is Z7FC0A8. The second catalog tag is Z730074. The third catalog tag is Z5E1EDD.",
+            "1. The first catalog tag is Z7FC0A8.\n2. The second catalog tag is Z730074.\n3. The third catalog tag is Z5E1EDD."
+          ]
+        },
+        {
+          "id": "catalog-046",
+          "prompt": "Catalog entry 046 contains these three tags: ZDB04A4, Z363428, Z34D438. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "ZDB04A4",
+            "Z363428",
+            "Z34D438"
+          ],
+          "answers": [
+            "ZDB04A4, Z363428, Z34D438.",
+            "1. ZDB04A4\n2. Z363428\n3. Z34D438",
+            "The first catalog tag is ZDB04A4. The second catalog tag is Z363428. The third catalog tag is Z34D438.",
+            "1. The first catalog tag is ZDB04A4.\n2. The second catalog tag is Z363428.\n3. The third catalog tag is Z34D438."
+          ]
+        },
+        {
+          "id": "catalog-047",
+          "prompt": "Catalog entry 047 contains these three tags: ZD203FC, ZCD9542, ZA9BF4E. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "ZD203FC",
+            "ZCD9542",
+            "ZA9BF4E"
+          ],
+          "answers": [
+            "ZD203FC, ZCD9542, ZA9BF4E.",
+            "1. ZD203FC\n2. ZCD9542\n3. ZA9BF4E",
+            "The first catalog tag is ZD203FC. The second catalog tag is ZCD9542. The third catalog tag is ZA9BF4E.",
+            "1. The first catalog tag is ZD203FC.\n2. The second catalog tag is ZCD9542.\n3. The third catalog tag is ZA9BF4E."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "batch-12",
+      "style": "plain_short",
+      "style_index": 0,
+      "documents": [
+        {
+          "id": "catalog-048",
+          "prompt": "Catalog entry 048 contains these three tags: Z846DF0, Z563197, ZBB1706. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z846DF0",
+            "Z563197",
+            "ZBB1706"
+          ],
+          "answers": [
+            "Z846DF0, Z563197, ZBB1706.",
+            "1. Z846DF0\n2. Z563197\n3. ZBB1706",
+            "The first catalog tag is Z846DF0. The second catalog tag is Z563197. The third catalog tag is ZBB1706.",
+            "1. The first catalog tag is Z846DF0.\n2. The second catalog tag is Z563197.\n3. The third catalog tag is ZBB1706."
+          ]
+        },
+        {
+          "id": "catalog-049",
+          "prompt": "Catalog entry 049 contains these three tags: Z7B0121, Z5D52A6, Z350E41. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z7B0121",
+            "Z5D52A6",
+            "Z350E41"
+          ],
+          "answers": [
+            "Z7B0121, Z5D52A6, Z350E41.",
+            "1. Z7B0121\n2. Z5D52A6\n3. Z350E41",
+            "The first catalog tag is Z7B0121. The second catalog tag is Z5D52A6. The third catalog tag is Z350E41.",
+            "1. The first catalog tag is Z7B0121.\n2. The second catalog tag is Z5D52A6.\n3. The third catalog tag is Z350E41."
+          ]
+        },
+        {
+          "id": "catalog-050",
+          "prompt": "Catalog entry 050 contains these three tags: ZEE9859, Z8ACEB3, Z0F1AA5. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "ZEE9859",
+            "Z8ACEB3",
+            "Z0F1AA5"
+          ],
+          "answers": [
+            "ZEE9859, Z8ACEB3, Z0F1AA5.",
+            "1. ZEE9859\n2. Z8ACEB3\n3. Z0F1AA5",
+            "The first catalog tag is ZEE9859. The second catalog tag is Z8ACEB3. The third catalog tag is Z0F1AA5.",
+            "1. The first catalog tag is ZEE9859.\n2. The second catalog tag is Z8ACEB3.\n3. The third catalog tag is Z0F1AA5."
+          ]
+        },
+        {
+          "id": "catalog-051",
+          "prompt": "Catalog entry 051 contains these three tags: Z9E887D, Z076623, ZD4FF93. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z9E887D",
+            "Z076623",
+            "ZD4FF93"
+          ],
+          "answers": [
+            "Z9E887D, Z076623, ZD4FF93.",
+            "1. Z9E887D\n2. Z076623\n3. ZD4FF93",
+            "The first catalog tag is Z9E887D. The second catalog tag is Z076623. The third catalog tag is ZD4FF93.",
+            "1. The first catalog tag is Z9E887D.\n2. The second catalog tag is Z076623.\n3. The third catalog tag is ZD4FF93."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "batch-13",
+      "style": "numbered_short",
+      "style_index": 1,
+      "documents": [
+        {
+          "id": "catalog-052",
+          "prompt": "Catalog entry 052 contains these three tags: ZBC26BE, Z10C828, Z7C79F9. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "ZBC26BE",
+            "Z10C828",
+            "Z7C79F9"
+          ],
+          "answers": [
+            "ZBC26BE, Z10C828, Z7C79F9.",
+            "1. ZBC26BE\n2. Z10C828\n3. Z7C79F9",
+            "The first catalog tag is ZBC26BE. The second catalog tag is Z10C828. The third catalog tag is Z7C79F9.",
+            "1. The first catalog tag is ZBC26BE.\n2. The second catalog tag is Z10C828.\n3. The third catalog tag is Z7C79F9."
+          ]
+        },
+        {
+          "id": "catalog-053",
+          "prompt": "Catalog entry 053 contains these three tags: Z201F06, ZE4F736, Z9BBF20. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z201F06",
+            "ZE4F736",
+            "Z9BBF20"
+          ],
+          "answers": [
+            "Z201F06, ZE4F736, Z9BBF20.",
+            "1. Z201F06\n2. ZE4F736\n3. Z9BBF20",
+            "The first catalog tag is Z201F06. The second catalog tag is ZE4F736. The third catalog tag is Z9BBF20.",
+            "1. The first catalog tag is Z201F06.\n2. The second catalog tag is ZE4F736.\n3. The third catalog tag is Z9BBF20."
+          ]
+        },
+        {
+          "id": "catalog-054",
+          "prompt": "Catalog entry 054 contains these three tags: Z536CFA, ZF5ED45, ZFC25DE. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z536CFA",
+            "ZF5ED45",
+            "ZFC25DE"
+          ],
+          "answers": [
+            "Z536CFA, ZF5ED45, ZFC25DE.",
+            "1. Z536CFA\n2. ZF5ED45\n3. ZFC25DE",
+            "The first catalog tag is Z536CFA. The second catalog tag is ZF5ED45. The third catalog tag is ZFC25DE.",
+            "1. The first catalog tag is Z536CFA.\n2. The second catalog tag is ZF5ED45.\n3. The third catalog tag is ZFC25DE."
+          ]
+        },
+        {
+          "id": "catalog-055",
+          "prompt": "Catalog entry 055 contains these three tags: Z9CE4D5, Z26E608, Z209088. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z9CE4D5",
+            "Z26E608",
+            "Z209088"
+          ],
+          "answers": [
+            "Z9CE4D5, Z26E608, Z209088.",
+            "1. Z9CE4D5\n2. Z26E608\n3. Z209088",
+            "The first catalog tag is Z9CE4D5. The second catalog tag is Z26E608. The third catalog tag is Z209088.",
+            "1. The first catalog tag is Z9CE4D5.\n2. The second catalog tag is Z26E608.\n3. The third catalog tag is Z209088."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "batch-14",
+      "style": "plain_long",
+      "style_index": 2,
+      "documents": [
+        {
+          "id": "catalog-056",
+          "prompt": "Catalog entry 056 contains these three tags: Z219FB3, Z1075BD, Z3335F8. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z219FB3",
+            "Z1075BD",
+            "Z3335F8"
+          ],
+          "answers": [
+            "Z219FB3, Z1075BD, Z3335F8.",
+            "1. Z219FB3\n2. Z1075BD\n3. Z3335F8",
+            "The first catalog tag is Z219FB3. The second catalog tag is Z1075BD. The third catalog tag is Z3335F8.",
+            "1. The first catalog tag is Z219FB3.\n2. The second catalog tag is Z1075BD.\n3. The third catalog tag is Z3335F8."
+          ]
+        },
+        {
+          "id": "catalog-057",
+          "prompt": "Catalog entry 057 contains these three tags: Z11D27F, Z15C613, Z0D6967. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z11D27F",
+            "Z15C613",
+            "Z0D6967"
+          ],
+          "answers": [
+            "Z11D27F, Z15C613, Z0D6967.",
+            "1. Z11D27F\n2. Z15C613\n3. Z0D6967",
+            "The first catalog tag is Z11D27F. The second catalog tag is Z15C613. The third catalog tag is Z0D6967.",
+            "1. The first catalog tag is Z11D27F.\n2. The second catalog tag is Z15C613.\n3. The third catalog tag is Z0D6967."
+          ]
+        },
+        {
+          "id": "catalog-058",
+          "prompt": "Catalog entry 058 contains these three tags: ZEB1319, Z360F56, Z982D72. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "ZEB1319",
+            "Z360F56",
+            "Z982D72"
+          ],
+          "answers": [
+            "ZEB1319, Z360F56, Z982D72.",
+            "1. ZEB1319\n2. Z360F56\n3. Z982D72",
+            "The first catalog tag is ZEB1319. The second catalog tag is Z360F56. The third catalog tag is Z982D72.",
+            "1. The first catalog tag is ZEB1319.\n2. The second catalog tag is Z360F56.\n3. The third catalog tag is Z982D72."
+          ]
+        },
+        {
+          "id": "catalog-059",
+          "prompt": "Catalog entry 059 contains these three tags: ZEF43C9, ZB9AA31, ZA338B5. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "ZEF43C9",
+            "ZB9AA31",
+            "ZA338B5"
+          ],
+          "answers": [
+            "ZEF43C9, ZB9AA31, ZA338B5.",
+            "1. ZEF43C9\n2. ZB9AA31\n3. ZA338B5",
+            "The first catalog tag is ZEF43C9. The second catalog tag is ZB9AA31. The third catalog tag is ZA338B5.",
+            "1. The first catalog tag is ZEF43C9.\n2. The second catalog tag is ZB9AA31.\n3. The third catalog tag is ZA338B5."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "batch-15",
+      "style": "numbered_long",
+      "style_index": 3,
+      "documents": [
+        {
+          "id": "catalog-060",
+          "prompt": "Catalog entry 060 contains these three tags: Z42859E, ZAE2244, ZFE156E. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z42859E",
+            "ZAE2244",
+            "ZFE156E"
+          ],
+          "answers": [
+            "Z42859E, ZAE2244, ZFE156E.",
+            "1. Z42859E\n2. ZAE2244\n3. ZFE156E",
+            "The first catalog tag is Z42859E. The second catalog tag is ZAE2244. The third catalog tag is ZFE156E.",
+            "1. The first catalog tag is Z42859E.\n2. The second catalog tag is ZAE2244.\n3. The third catalog tag is ZFE156E."
+          ]
+        },
+        {
+          "id": "catalog-061",
+          "prompt": "Catalog entry 061 contains these three tags: ZB2B7F5, ZE0D303, Z26C7BE. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "ZB2B7F5",
+            "ZE0D303",
+            "Z26C7BE"
+          ],
+          "answers": [
+            "ZB2B7F5, ZE0D303, Z26C7BE.",
+            "1. ZB2B7F5\n2. ZE0D303\n3. Z26C7BE",
+            "The first catalog tag is ZB2B7F5. The second catalog tag is ZE0D303. The third catalog tag is Z26C7BE.",
+            "1. The first catalog tag is ZB2B7F5.\n2. The second catalog tag is ZE0D303.\n3. The third catalog tag is Z26C7BE."
+          ]
+        },
+        {
+          "id": "catalog-062",
+          "prompt": "Catalog entry 062 contains these three tags: ZC110D5, Z54B528, ZF9EB90. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "ZC110D5",
+            "Z54B528",
+            "ZF9EB90"
+          ],
+          "answers": [
+            "ZC110D5, Z54B528, ZF9EB90.",
+            "1. ZC110D5\n2. Z54B528\n3. ZF9EB90",
+            "The first catalog tag is ZC110D5. The second catalog tag is Z54B528. The third catalog tag is ZF9EB90.",
+            "1. The first catalog tag is ZC110D5.\n2. The second catalog tag is Z54B528.\n3. The third catalog tag is ZF9EB90."
+          ]
+        },
+        {
+          "id": "catalog-063",
+          "prompt": "Catalog entry 063 contains these three tags: Z90A877, ZFCB886, Z7F7034. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+          "tags": [
+            "Z90A877",
+            "ZFCB886",
+            "Z7F7034"
+          ],
+          "answers": [
+            "Z90A877, ZFCB886, Z7F7034.",
+            "1. Z90A877\n2. ZFCB886\n3. Z7F7034",
+            "The first catalog tag is Z90A877. The second catalog tag is ZFCB886. The third catalog tag is Z7F7034.",
+            "1. The first catalog tag is Z90A877.\n2. The second catalog tag is ZFCB886.\n3. The third catalog tag is Z7F7034."
+          ]
+        }
+      ]
+    }
+  ],
+  "probes": [
+    {
+      "id": "catalog-064",
+      "prompt": "Catalog entry 064 contains these three tags: Z94C2E6, Z539695, Z5DF632. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+      "tags": [
+        "Z94C2E6",
+        "Z539695",
+        "Z5DF632"
+      ],
+      "answers": [
+        "Z94C2E6, Z539695, Z5DF632.",
+        "1. Z94C2E6\n2. Z539695\n3. Z5DF632",
+        "The first catalog tag is Z94C2E6. The second catalog tag is Z539695. The third catalog tag is Z5DF632.",
+        "1. The first catalog tag is Z94C2E6.\n2. The second catalog tag is Z539695.\n3. The third catalog tag is Z5DF632."
+      ],
+      "split": "calibration"
+    },
+    {
+      "id": "catalog-065",
+      "prompt": "Catalog entry 065 contains these three tags: Z808816, Z854349, ZE817CA. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+      "tags": [
+        "Z808816",
+        "Z854349",
+        "ZE817CA"
+      ],
+      "answers": [
+        "Z808816, Z854349, ZE817CA.",
+        "1. Z808816\n2. Z854349\n3. ZE817CA",
+        "The first catalog tag is Z808816. The second catalog tag is Z854349. The third catalog tag is ZE817CA.",
+        "1. The first catalog tag is Z808816.\n2. The second catalog tag is Z854349.\n3. The third catalog tag is ZE817CA."
+      ],
+      "split": "calibration"
+    },
+    {
+      "id": "catalog-066",
+      "prompt": "Catalog entry 066 contains these three tags: ZA730B0, Z3FEE9A, Z1618EB. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+      "tags": [
+        "ZA730B0",
+        "Z3FEE9A",
+        "Z1618EB"
+      ],
+      "answers": [
+        "ZA730B0, Z3FEE9A, Z1618EB.",
+        "1. ZA730B0\n2. Z3FEE9A\n3. Z1618EB",
+        "The first catalog tag is ZA730B0. The second catalog tag is Z3FEE9A. The third catalog tag is Z1618EB.",
+        "1. The first catalog tag is ZA730B0.\n2. The second catalog tag is Z3FEE9A.\n3. The third catalog tag is Z1618EB."
+      ],
+      "split": "calibration"
+    },
+    {
+      "id": "catalog-067",
+      "prompt": "Catalog entry 067 contains these three tags: Z984DBC, ZD962D3, ZFD9DCD. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+      "tags": [
+        "Z984DBC",
+        "ZD962D3",
+        "ZFD9DCD"
+      ],
+      "answers": [
+        "Z984DBC, ZD962D3, ZFD9DCD.",
+        "1. Z984DBC\n2. ZD962D3\n3. ZFD9DCD",
+        "The first catalog tag is Z984DBC. The second catalog tag is ZD962D3. The third catalog tag is ZFD9DCD.",
+        "1. The first catalog tag is Z984DBC.\n2. The second catalog tag is ZD962D3.\n3. The third catalog tag is ZFD9DCD."
+      ],
+      "split": "calibration"
+    },
+    {
+      "id": "catalog-068",
+      "prompt": "Catalog entry 068 contains these three tags: ZB216CB, Z638267, ZC73EDB. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+      "tags": [
+        "ZB216CB",
+        "Z638267",
+        "ZC73EDB"
+      ],
+      "answers": [
+        "ZB216CB, Z638267, ZC73EDB.",
+        "1. ZB216CB\n2. Z638267\n3. ZC73EDB",
+        "The first catalog tag is ZB216CB. The second catalog tag is Z638267. The third catalog tag is ZC73EDB.",
+        "1. The first catalog tag is ZB216CB.\n2. The second catalog tag is Z638267.\n3. The third catalog tag is ZC73EDB."
+      ],
+      "split": "calibration"
+    },
+    {
+      "id": "catalog-069",
+      "prompt": "Catalog entry 069 contains these three tags: ZA5695E, Z0BF7C3, ZBD7E6B. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+      "tags": [
+        "ZA5695E",
+        "Z0BF7C3",
+        "ZBD7E6B"
+      ],
+      "answers": [
+        "ZA5695E, Z0BF7C3, ZBD7E6B.",
+        "1. ZA5695E\n2. Z0BF7C3\n3. ZBD7E6B",
+        "The first catalog tag is ZA5695E. The second catalog tag is Z0BF7C3. The third catalog tag is ZBD7E6B.",
+        "1. The first catalog tag is ZA5695E.\n2. The second catalog tag is Z0BF7C3.\n3. The third catalog tag is ZBD7E6B."
+      ],
+      "split": "calibration"
+    },
+    {
+      "id": "catalog-070",
+      "prompt": "Catalog entry 070 contains these three tags: Z9C3775, Z715AD9, ZE71EE0. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+      "tags": [
+        "Z9C3775",
+        "Z715AD9",
+        "ZE71EE0"
+      ],
+      "answers": [
+        "Z9C3775, Z715AD9, ZE71EE0.",
+        "1. Z9C3775\n2. Z715AD9\n3. ZE71EE0",
+        "The first catalog tag is Z9C3775. The second catalog tag is Z715AD9. The third catalog tag is ZE71EE0.",
+        "1. The first catalog tag is Z9C3775.\n2. The second catalog tag is Z715AD9.\n3. The third catalog tag is ZE71EE0."
+      ],
+      "split": "calibration"
+    },
+    {
+      "id": "catalog-071",
+      "prompt": "Catalog entry 071 contains these three tags: Z5255E7, ZCC8BAB, ZCE01C1. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.",
+      "tags": [
+        "Z5255E7",
+        "ZCC8BAB",
+        "ZCE01C1"
+      ],
+      "answers": [
+        "Z5255E7, ZCC8BAB, ZCE01C1.",
+        "1. Z5255E7\n2. ZCC8BAB\n3. ZCE01C1",
+        "The first catalog tag is Z5255E7. The second catalog tag is ZCC8BAB. The third catalog tag is ZCE01C1.",
+        "1. The first catalog tag is Z5255E7.\n2. The second catalog tag is ZCC8BAB.\n3. The third catalog tag is ZCE01C1."
+      ],
+      "split": "calibration"
+    },
+    {
+      "id": "catalog-080",
+      "prompt": "Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.",
+      "tags": [
+        "ZC01742",
+        "ZBAEB09",
+        "Z420A1D"
+      ],
+      "answers": [
+        "ZC01742, ZBAEB09, Z420A1D.",
+        "1. ZC01742\n2. ZBAEB09\n3. Z420A1D",
+        "The first catalog tag is ZC01742. The second catalog tag is ZBAEB09. The third catalog tag is Z420A1D.",
+        "1. The first catalog tag is ZC01742.\n2. The second catalog tag is ZBAEB09.\n3. The third catalog tag is Z420A1D."
+      ],
+      "split": "evaluation"
+    },
+    {
+      "id": "catalog-081",
+      "prompt": "Read this inventory record: ZCFE0DB / Z7E3804 / ZE71DC7. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.",
+      "tags": [
+        "ZCFE0DB",
+        "Z7E3804",
+        "ZE71DC7"
+      ],
+      "answers": [
+        "ZCFE0DB, Z7E3804, ZE71DC7.",
+        "1. ZCFE0DB\n2. Z7E3804\n3. ZE71DC7",
+        "The first catalog tag is ZCFE0DB. The second catalog tag is Z7E3804. The third catalog tag is ZE71DC7.",
+        "1. The first catalog tag is ZCFE0DB.\n2. The second catalog tag is Z7E3804.\n3. The third catalog tag is ZE71DC7."
+      ],
+      "split": "evaluation"
+    },
+    {
+      "id": "catalog-082",
+      "prompt": "Read this inventory record: Z0B8BF8 / Z4CE174 / ZA8FEC1. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.",
+      "tags": [
+        "Z0B8BF8",
+        "Z4CE174",
+        "ZA8FEC1"
+      ],
+      "answers": [
+        "Z0B8BF8, Z4CE174, ZA8FEC1.",
+        "1. Z0B8BF8\n2. Z4CE174\n3. ZA8FEC1",
+        "The first catalog tag is Z0B8BF8. The second catalog tag is Z4CE174. The third catalog tag is ZA8FEC1.",
+        "1. The first catalog tag is Z0B8BF8.\n2. The second catalog tag is Z4CE174.\n3. The third catalog tag is ZA8FEC1."
+      ],
+      "split": "evaluation"
+    },
+    {
+      "id": "catalog-083",
+      "prompt": "Read this inventory record: Z2E1508 / ZA82AFD / Z1977BB. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.",
+      "tags": [
+        "Z2E1508",
+        "ZA82AFD",
+        "Z1977BB"
+      ],
+      "answers": [
+        "Z2E1508, ZA82AFD, Z1977BB.",
+        "1. Z2E1508\n2. ZA82AFD\n3. Z1977BB",
+        "The first catalog tag is Z2E1508. The second catalog tag is ZA82AFD. The third catalog tag is Z1977BB.",
+        "1. The first catalog tag is Z2E1508.\n2. The second catalog tag is ZA82AFD.\n3. The third catalog tag is Z1977BB."
+      ],
+      "split": "evaluation"
+    },
+    {
+      "id": "catalog-084",
+      "prompt": "Read this inventory record: Z9E81E3 / Z75F261 / ZAAF5F0. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.",
+      "tags": [
+        "Z9E81E3",
+        "Z75F261",
+        "ZAAF5F0"
+      ],
+      "answers": [
+        "Z9E81E3, Z75F261, ZAAF5F0.",
+        "1. Z9E81E3\n2. Z75F261\n3. ZAAF5F0",
+        "The first catalog tag is Z9E81E3. The second catalog tag is Z75F261. The third catalog tag is ZAAF5F0.",
+        "1. The first catalog tag is Z9E81E3.\n2. The second catalog tag is Z75F261.\n3. The third catalog tag is ZAAF5F0."
+      ],
+      "split": "evaluation"
+    },
+    {
+      "id": "catalog-085",
+      "prompt": "Read this inventory record: ZE17441 / ZCBE991 / Z06F609. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.",
+      "tags": [
+        "ZE17441",
+        "ZCBE991",
+        "Z06F609"
+      ],
+      "answers": [
+        "ZE17441, ZCBE991, Z06F609.",
+        "1. ZE17441\n2. ZCBE991\n3. Z06F609",
+        "The first catalog tag is ZE17441. The second catalog tag is ZCBE991. The third catalog tag is Z06F609.",
+        "1. The first catalog tag is ZE17441.\n2. The second catalog tag is ZCBE991.\n3. The third catalog tag is Z06F609."
+      ],
+      "split": "evaluation"
+    },
+    {
+      "id": "catalog-086",
+      "prompt": "Read this inventory record: ZB8BAFD / Z5D5177 / Z23E499. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.",
+      "tags": [
+        "ZB8BAFD",
+        "Z5D5177",
+        "Z23E499"
+      ],
+      "answers": [
+        "ZB8BAFD, Z5D5177, Z23E499.",
+        "1. ZB8BAFD\n2. Z5D5177\n3. Z23E499",
+        "The first catalog tag is ZB8BAFD. The second catalog tag is Z5D5177. The third catalog tag is Z23E499.",
+        "1. The first catalog tag is ZB8BAFD.\n2. The second catalog tag is Z5D5177.\n3. The third catalog tag is Z23E499."
+      ],
+      "split": "evaluation"
+    },
+    {
+      "id": "catalog-087",
+      "prompt": "Read this inventory record: ZF2105A / Z3E0454 / ZFB1E52. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.",
+      "tags": [
+        "ZF2105A",
+        "Z3E0454",
+        "ZFB1E52"
+      ],
+      "answers": [
+        "ZF2105A, Z3E0454, ZFB1E52.",
+        "1. ZF2105A\n2. Z3E0454\n3. ZFB1E52",
+        "The first catalog tag is ZF2105A. The second catalog tag is Z3E0454. The third catalog tag is ZFB1E52.",
+        "1. The first catalog tag is ZF2105A.\n2. The second catalog tag is Z3E0454.\n3. The third catalog tag is ZFB1E52."
+      ],
+      "split": "evaluation"
+    }
+  ]
+}

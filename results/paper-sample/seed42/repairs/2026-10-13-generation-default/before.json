@@ -1,0 +1,30 @@
+{
+  "unix": 1791888126.5056689,
+  "reason": "Transformers log shows generation_config inherited top_p .95 despite requested1.0; exact untruncated sampling required by frozen protocol. Stop before updates and enforce generation keyword overrides.",
+  "controller": {
+    "scope": "development_only",
+    "started_unix": 1791888041.4490979,
+    "deadline_unix": 1791916841.4490979,
+    "status": "running",
+    "controller_pid": 115413,
+    "worker_pid": 115423,
+    "plan_sha256": "d1bf94546cd055246e02299221c6d0ff435c0ea551690f0886221efd375f164b",
+    "attempts": [
+      {
+        "job": "sampled-behavior",
+        "pid": 115423,
+        "started_unix": 1791888041.4516664
+      }
+    ],
+    "current_job": "sampled-behavior"
+  },
+  "status": {
+    "stage": "trajectory_gradients",
+    "updated_unix": 1791888125.6797125,
+    "completed": 240,
+    "total": 1024
+  },
+  "forecast_lock_exists": false,
+  "outcomes_exists": false,
+  "original_source_sha256": "e5405edafed26f018953b4a83e30b80e1de9d09311db0eb375960d7bc2482986"
+}

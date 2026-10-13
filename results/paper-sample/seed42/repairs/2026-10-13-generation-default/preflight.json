@@ -1,0 +1,11 @@
+{
+  "completed_unix": 1791887987.6687684,
+  "specification_sha256": "fe76077c678805d166eba8d8e69e636302c889dc80e87ba574a08486bf2deaaf",
+  "adapter_restored": true,
+  "sampled_generation_restored": true,
+  "parameter_tensors": 136,
+  "temperature_score_mean_abs_error_per_token": [
+    0.001790009904652834,
+    0.001790009904652834
+  ]
+}

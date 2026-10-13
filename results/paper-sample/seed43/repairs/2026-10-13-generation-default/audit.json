@@ -1,0 +1,47 @@
+{
+  "repaired_unix": 1791888456.2558076,
+  "original_commit": "d142558",
+  "repaired_commit": "40274e4c7a4752c59d617d327c9a387d2280ffa6",
+  "original_plan_sha256": "c72ba6e760a767ace1a4e0d91db511d9fcc0f00cb972827fe491782ee586995a",
+  "amended_plan_sha256": "e07f426f13941039362c1047dae6382f2026f988c6713edcc32cb144278c7fce",
+  "specification_unchanged_sha256": "1eb02a968c699cfdc2aa2cac3d99abe3957256c79ed1c2a84d8d0f2cf68741a8",
+  "changed_source_key": "src/gradient_interp/paper_sample.py",
+  "repaired_source_sha256": "010421dc40088e3b4e4094bc6d6ac3e5190ff0d63f58365333f3e714dd37fcb1",
+  "change": "Only source hash updated: explicit use_model_defaults=False and assertions on effective underlying PEFT logits-processor settings. Scientific settings/original preflight preserved; verified preflight saved separately. Intermediate repaired-preflight recorded score/restoration but audit hook on PEFT wrapper was not called; external empty-capture assertion prevented resume, instrumentation corrected on underlying model. Both intermediate artifacts retained.",
+  "original_started_unix": 1791888040.617035,
+  "immutable_deadline_unix": 1791916840.617035,
+  "no_forecast_or_update_before_repair": true,
+  "preflight": {
+    "completed_unix": 1791888394.5294666,
+    "specification_sha256": "1eb02a968c699cfdc2aa2cac3d99abe3957256c79ed1c2a84d8d0f2cf68741a8",
+    "adapter_restored": true,
+    "sampled_generation_restored": true,
+    "parameter_tensors": 136,
+    "temperature_score_mean_abs_error_per_token": [
+      5.6557642466259495e-05,
+      5.6557642466259495e-05
+    ],
+    "effective_sampling_settings": [
+      {
+        "do_sample": true,
+        "temperature": 0.8,
+        "top_p": 1.0,
+        "top_k": 0,
+        "eos_token_id": [
+          1,
+          106
+        ]
+      },
+      {
+        "do_sample": true,
+        "temperature": 0.8,
+        "top_p": 1.0,
+        "top_k": 0,
+        "eos_token_id": [
+          1,
+          106
+        ]
+      }
+    ]
+  }
+}

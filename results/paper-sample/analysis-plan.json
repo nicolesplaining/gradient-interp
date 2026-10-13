@@ -1,0 +1,39 @@
+{
+  "written_unix": 1791890684.403829,
+  "scope": "Development, written after both controllers completed and before first outcome reading",
+  "runs": [
+    "paper-sample-seed42",
+    "paper-sample-seed43"
+  ],
+  "integrity": "Verify original and amended plans, all source/input/output/forecast hashes, dated sampling repair and unchanged specification, 48 updates per seed, 25088 evaluation and 1024 proposal responses per seed, restored adapters, lock timestamp before every update, original deadlines; preserve source snapshots. Intentional -15 attempt audited before forecasts/updates.",
+  "endpoints": [
+    "numbered",
+    "exact_content_and_order",
+    "tokens",
+    "truncated"
+  ],
+  "methods": [
+    "full_gradient",
+    "ekfac_projection",
+    "dictionary",
+    "svd16",
+    "mean_direction",
+    "zero"
+  ],
+  "estimators": [
+    "linear",
+    "snis"
+  ],
+  "rates": [
+    0.0003,
+    0.003,
+    0.03
+  ],
+  "modes": "Same-probe forecasts on evaluation-template questions; independent-template transfer averages calibration forecasts across eight calibration questions and compares to each evaluation question. Both evaluated after all results. Also report calibration and evaluation observed effects separately.",
+  "metrics": "All seeds, rates, estimators, methods, endpoints and four styles plus pooled. Absolute RMSE/MAE/bias, predicted/actual RMS and through-origin slope/correlation, nRMSE relative to zero if actual RMS>0, per-batch median/p90/max absolute errors. Undefined ratios remain undefined. Method differences versus zero and SVD16. Finite evaluation sampling error is a noise diagnostic, not subtracted from headline errors.",
+  "uncertainty": "1000 paired hierarchical bootstrap replicates with RNG8173 per seed; batches resampled within each of four styles; calibration and evaluation questions resampled independently; per-question proposal sample indices resampled independently of evaluation sample indices. Evaluation resampling is paired across baseline and all updates/rates and proposal resampling paired across methods/rates/batches. Recompute linear and SNIS forecasts from saved per-trajectory derivatives/rewards. Pointwise95% intervals for pooled errors and MSE differences vs zero/SVD, actual and forecast mean changes. Two reused seeds/hardware, eight questions/template, finite proposal support: descriptive only, no significance or population claims.",
+  "support": "Report per-question proposal event counts/ranges, independent baseline estimates, ESS minimum/median/fraction<16 by seed/rate/method/template. Flag zero sampled events and event emergence among updated generations; bootstrap cannot discover unsampled modes. Linear predicted probability levels outside[0,1] flagged, not clipped. No dropping low-ESS or rare-event cases.",
+  "quality": "All 48 updates versus common independent baseline: exact tags/order, all tags present, numbered, tokens, words, truncation, empty, repeated-token/4gram flags; calibration and evaluation templates separate; all style/rate/seed results retained.",
+  "examples": "Batch0..3, probe0 and8, sample0, all rates and both seeds, with baseline. No favorable-example selection.",
+  "next_phase": "Choose development follow-up only from full evidence; known score-function/importance-sampling estimators are not novelty. Any confirmation needs new untouched deduplicated data, independent seeds and frozen hypothesis."
+}

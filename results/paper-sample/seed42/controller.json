@@ -1,0 +1,27 @@
+{
+  "scope": "development_only",
+  "started_unix": 1791888041.4490979,
+  "deadline_unix": 1791916841.4490979,
+  "status": "complete",
+  "controller_pid": 116377,
+  "worker_pid": null,
+  "plan_sha256": "cbdf618f1673e60b310b5c71e927f7fca6ef0e4f9a530c0ca533df4f9f885be9",
+  "attempts": [
+    {
+      "job": "sampled-behavior",
+      "pid": 115423,
+      "started_unix": 1791888041.4516664,
+      "finished_unix": 1791888127.1022975,
+      "returncode": -15
+    },
+    {
+      "job": "sampled-behavior",
+      "pid": 116387,
+      "started_unix": 1791888458.0518866,
+      "finished_unix": 1791890382.970526,
+      "returncode": 0
+    }
+  ],
+  "current_job": "sampled-behavior",
+  "checked_unix": 1791890382.9712517
+}

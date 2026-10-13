@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "verified_unix": 1791890700.9763966,
+  "source_input_output_hashes_verified": true,
+  "source_snapshot_sha256": "40cbe37571dda8d889ee2f5c5640c28bdd4315a9ee9f70a8dbf08fb23738964c",
+  "repair_audit_sha256": "1a5b7e7b6b624217b2f274d76b0c8452915ff91b1d68485d1f58b59ed91cd2b6",
+  "plan_sha256": "cbdf618f1673e60b310b5c71e927f7fca6ef0e4f9a530c0ca533df4f9f885be9",
+  "manifest_sha256": "30472e7b045128475a20a318f9453ec722962f7e7f6a3b08027845db572973a7",
+  "specification_sha256": "fe76077c678805d166eba8d8e69e636302c889dc80e87ba574a08486bf2deaaf",
+  "forecast_lock_sha256": "38cc7cdfe68c110ad1b5312859ae9f7356fb9b0fa135fa110b73b6e8a32a134d",
+  "updates": 48,
+  "evaluation_generations": 25088,
+  "proposal_generations": 1024,
+  "adapter_restored": true,
+  "deadline_compliant": true,
+  "lock_before_every_update": true,
+  "elapsed_seconds_including_repair": 2340.2540793418884,
+  "successful_attempt_seconds": 1923.651290655136
+}

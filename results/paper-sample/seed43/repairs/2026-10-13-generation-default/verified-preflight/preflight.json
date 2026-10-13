@@ -1,0 +1,33 @@
+{
+  "completed_unix": 1791888394.5294666,
+  "specification_sha256": "1eb02a968c699cfdc2aa2cac3d99abe3957256c79ed1c2a84d8d0f2cf68741a8",
+  "adapter_restored": true,
+  "sampled_generation_restored": true,
+  "parameter_tensors": 136,
+  "temperature_score_mean_abs_error_per_token": [
+    5.6557642466259495e-05,
+    5.6557642466259495e-05
+  ],
+  "effective_sampling_settings": [
+    {
+      "do_sample": true,
+      "temperature": 0.8,
+      "top_p": 1.0,
+      "top_k": 0,
+      "eos_token_id": [
+        1,
+        106
+      ]
+    },
+    {
+      "do_sample": true,
+      "temperature": 0.8,
+      "top_p": 1.0,
+      "top_k": 0,
+      "eos_token_id": [
+        1,
+        106
+      ]
+    }
+  ]
+}
