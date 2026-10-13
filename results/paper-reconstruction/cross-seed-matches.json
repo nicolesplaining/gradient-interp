@@ -1,0 +1,3508 @@
+{
+  "scope": "descriptive in-sample matching",
+  "unique_documents": 5000,
+  "method": "One-to-one Hungarian matching on absolute centered activation correlation; exact duplicates averaged; arbitrary signs allowed",
+  "median_absolute_correlation": 0.31395153721558955,
+  "matches": [
+    {
+      "seed42_atom": 0,
+      "seed43_atom": 0,
+      "activation_correlation": 0.3501681690885951,
+      "seed42_coherence": 0.26504161953926086,
+      "seed43_coherence": 0.024858517572283745
+    },
+    {
+      "seed42_atom": 1,
+      "seed43_atom": 1,
+      "activation_correlation": 0.2569068942773775,
+      "seed42_coherence": 0.11953645944595337,
+      "seed43_coherence": 0.1734059751033783
+    },
+    {
+      "seed42_atom": 2,
+      "seed43_atom": 441,
+      "activation_correlation": 0.20526598520817357,
+      "seed42_coherence": 0.3601284325122833,
+      "seed43_coherence": 0.25093549489974976
+    },
+    {
+      "seed42_atom": 3,
+      "seed43_atom": 103,
+      "activation_correlation": 0.09363174697205456,
+      "seed42_coherence": 0.015862423926591873,
+      "seed43_coherence": 0.014547793194651604
+    },
+    {
+      "seed42_atom": 4,
+      "seed43_atom": 480,
+      "activation_correlation": 0.5135314420328578,
+      "seed42_coherence": 0.47395452857017517,
+      "seed43_coherence": 0.6607882976531982
+    },
+    {
+      "seed42_atom": 5,
+      "seed43_atom": 12,
+      "activation_correlation": 0.054261118433696756,
+      "seed42_coherence": 0.016043193638324738,
+      "seed43_coherence": 0.042882442474365234
+    },
+    {
+      "seed42_atom": 6,
+      "seed43_atom": 5,
+      "activation_correlation": -0.3917812236310618,
+      "seed42_coherence": 0.02951330691576004,
+      "seed43_coherence": 0.02607676573097706
+    },
+    {
+      "seed42_atom": 7,
+      "seed43_atom": 493,
+      "activation_correlation": -0.2642932153628799,
+      "seed42_coherence": 0.024681366980075836,
+      "seed43_coherence": 0.08947184681892395
+    },
+    {
+      "seed42_atom": 8,
+      "seed43_atom": 78,
+      "activation_correlation": -0.19053555846084286,
+      "seed42_coherence": 0.005351407453417778,
+      "seed43_coherence": 0.038508716970682144
+    },
+    {
+      "seed42_atom": 9,
+      "seed43_atom": 91,
+      "activation_correlation": 0.07623378702986675,
+      "seed42_coherence": 0.015906743705272675,
+      "seed43_coherence": 0.049931470304727554
+    },
+    {
+      "seed42_atom": 10,
+      "seed43_atom": 135,
+      "activation_correlation": -0.3687657564843058,
+      "seed42_coherence": 0.04994189739227295,
+      "seed43_coherence": 0.11117582023143768
+    },
+    {
+      "seed42_atom": 11,
+      "seed43_atom": 261,
+      "activation_correlation": 0.36295085993021214,
+      "seed42_coherence": 0.028202690184116364,
+      "seed43_coherence": 0.044703297317028046
+    },
+    {
+      "seed42_atom": 12,
+      "seed43_atom": 225,
+      "activation_correlation": -0.06500553055849664,
+      "seed42_coherence": 0.010002221912145615,
+      "seed43_coherence": 0.03948618099093437
+    },
+    {
+      "seed42_atom": 13,
+      "seed43_atom": 21,
+      "activation_correlation": -0.13258144597208688,
+      "seed42_coherence": 0.04804418981075287,
+      "seed43_coherence": 0.026682039722800255
+    },
+    {
+      "seed42_atom": 14,
+      "seed43_atom": 39,
+      "activation_correlation": -0.49288054296586814,
+      "seed42_coherence": 0.22887656092643738,
+      "seed43_coherence": 0.17118564248085022
+    },
+    {
+      "seed42_atom": 15,
+      "seed43_atom": 15,
+      "activation_correlation": -0.414620903420672,
+      "seed42_coherence": 0.007601018995046616,
+      "seed43_coherence": 0.01678956113755703
+    },
+    {
+      "seed42_atom": 16,
+      "seed43_atom": 323,
+      "activation_correlation": -0.5333850173696596,
+      "seed42_coherence": 0.007024338468909264,
+      "seed43_coherence": 0.0076375859789550304
+    },
+    {
+      "seed42_atom": 17,
+      "seed43_atom": 444,
+      "activation_correlation": 0.23704494969336032,
+      "seed42_coherence": 0.06272276490926743,
+      "seed43_coherence": 0.17611296474933624
+    },
+    {
+      "seed42_atom": 18,
+      "seed43_atom": 212,
+      "activation_correlation": -0.15217234952309835,
+      "seed42_coherence": 0.014383809641003609,
+      "seed43_coherence": 0.008715929463505745
+    },
+    {
+      "seed42_atom": 19,
+      "seed43_atom": 284,
+      "activation_correlation": 0.7851292148698692,
+      "seed42_coherence": 0.26006487011909485,
+      "seed43_coherence": 0.37947118282318115
+    },
+    {
+      "seed42_atom": 20,
+      "seed43_atom": 90,
+      "activation_correlation": 0.4596541289570301,
+      "seed42_coherence": 0.010037782602012157,
+      "seed43_coherence": 0.029150161892175674
+    },
+    {
+      "seed42_atom": 21,
+      "seed43_atom": 56,
+      "activation_correlation": 0.3038270595634819,
+      "seed42_coherence": 0.0024416204541921616,
+      "seed43_coherence": 0.08955796808004379
+    },
+    {
+      "seed42_atom": 22,
+      "seed43_atom": 274,
+      "activation_correlation": 0.14966242156210713,
+      "seed42_coherence": 0.05021115019917488,
+      "seed43_coherence": 0.1274680644273758
+    },
+    {
+      "seed42_atom": 23,
+      "seed43_atom": 175,
+      "activation_correlation": 0.7330889305961946,
+      "seed42_coherence": 0.47609320282936096,
+      "seed43_coherence": 0.3384084701538086
+    },
+    {
+      "seed42_atom": 24,
+      "seed43_atom": 213,
+      "activation_correlation": -0.556855480793472,
+      "seed42_coherence": 0.038810186088085175,
+      "seed43_coherence": 0.08526899665594101
+    },
+    {
+      "seed42_atom": 25,
+      "seed43_atom": 193,
+      "activation_correlation": 0.7419498647288206,
+      "seed42_coherence": 0.37612468004226685,
+      "seed43_coherence": 0.2763572037220001
+    },
+    {
+      "seed42_atom": 26,
+      "seed43_atom": 143,
+      "activation_correlation": -0.833020513159736,
+      "seed42_coherence": 0.42013686895370483,
+      "seed43_coherence": 0.40182897448539734
+    },
+    {
+      "seed42_atom": 27,
+      "seed43_atom": 427,
+      "activation_correlation": 0.277852161652933,
+      "seed42_coherence": 0.04538079351186752,
+      "seed43_coherence": 0.03188413754105568
+    },
+    {
+      "seed42_atom": 28,
+      "seed43_atom": 71,
+      "activation_correlation": 0.7695799935013855,
+      "seed42_coherence": 0.20663458108901978,
+      "seed43_coherence": 0.14442132413387299
+    },
+    {
+      "seed42_atom": 29,
+      "seed43_atom": 272,
+      "activation_correlation": -0.5845924064285837,
+      "seed42_coherence": 0.11178071051836014,
+      "seed43_coherence": 0.10802777111530304
+    },
+    {
+      "seed42_atom": 30,
+      "seed43_atom": 307,
+      "activation_correlation": 0.0743302613278789,
+      "seed42_coherence": 0.06780356913805008,
+      "seed43_coherence": 0.052184056490659714
+    },
+    {
+      "seed42_atom": 31,
+      "seed43_atom": 387,
+      "activation_correlation": 0.1404482427733754,
+      "seed42_coherence": 0.002859674394130707,
+      "seed43_coherence": 0.05520152673125267
+    },
+    {
+      "seed42_atom": 32,
+      "seed43_atom": 113,
+      "activation_correlation": -0.08188908735523343,
+      "seed42_coherence": 0.010561513714492321,
+      "seed43_coherence": 0.009152254089713097
+    },
+    {
+      "seed42_atom": 33,
+      "seed43_atom": 234,
+      "activation_correlation": -0.4063161012515687,
+      "seed42_coherence": 0.03558758273720741,
+      "seed43_coherence": 0.14753875136375427
+    },
+    {
+      "seed42_atom": 34,
+      "seed43_atom": 409,
+      "activation_correlation": -0.05821160911471305,
+      "seed42_coherence": 0.017091430723667145,
+      "seed43_coherence": 0.07064460963010788
+    },
+    {
+      "seed42_atom": 35,
+      "seed43_atom": 218,
+      "activation_correlation": -0.17601774756215788,
+      "seed42_coherence": 0.06161640211939812,
+      "seed43_coherence": 0.1154584288597107
+    },
+    {
+      "seed42_atom": 36,
+      "seed43_atom": 203,
+      "activation_correlation": -0.04199485675748153,
+      "seed42_coherence": 0.01590164564549923,
+      "seed43_coherence": 0.029435772448778152
+    },
+    {
+      "seed42_atom": 37,
+      "seed43_atom": 53,
+      "activation_correlation": 0.12824100747295236,
+      "seed42_coherence": 0.15445490181446075,
+      "seed43_coherence": 0.12356101721525192
+    },
+    {
+      "seed42_atom": 38,
+      "seed43_atom": 150,
+      "activation_correlation": 0.8602032119831904,
+      "seed42_coherence": 0.03541065379977226,
+      "seed43_coherence": 0.008384768851101398
+    },
+    {
+      "seed42_atom": 39,
+      "seed43_atom": 8,
+      "activation_correlation": 0.28283252037618933,
+      "seed42_coherence": 0.04999255761504173,
+      "seed43_coherence": 0.04170035198330879
+    },
+    {
+      "seed42_atom": 40,
+      "seed43_atom": 74,
+      "activation_correlation": 0.24379353397003156,
+      "seed42_coherence": 0.1054050624370575,
+      "seed43_coherence": 0.053010810166597366
+    },
+    {
+      "seed42_atom": 41,
+      "seed43_atom": 42,
+      "activation_correlation": 0.1268262030822872,
+      "seed42_coherence": 0.23056933283805847,
+      "seed43_coherence": 0.019136780872941017
+    },
+    {
+      "seed42_atom": 42,
+      "seed43_atom": 455,
+      "activation_correlation": 0.10361236480344592,
+      "seed42_coherence": 0.08093327283859253,
+      "seed43_coherence": 0.17565998435020447
+    },
+    {
+      "seed42_atom": 43,
+      "seed43_atom": 299,
+      "activation_correlation": -0.7142019513965825,
+      "seed42_coherence": 0.293990820646286,
+      "seed43_coherence": 0.33160796761512756
+    },
+    {
+      "seed42_atom": 44,
+      "seed43_atom": 161,
+      "activation_correlation": 0.14629361578078665,
+      "seed42_coherence": 0.021197253838181496,
+      "seed43_coherence": 0.029811503365635872
+    },
+    {
+      "seed42_atom": 45,
+      "seed43_atom": 76,
+      "activation_correlation": -0.13222894075087482,
+      "seed42_coherence": 0.016508707776665688,
+      "seed43_coherence": 0.016971547156572342
+    },
+    {
+      "seed42_atom": 46,
+      "seed43_atom": 459,
+      "activation_correlation": -0.14694522514934416,
+      "seed42_coherence": 0.057390253990888596,
+      "seed43_coherence": 0.08989905565977097
+    },
+    {
+      "seed42_atom": 47,
+      "seed43_atom": 144,
+      "activation_correlation": 0.14017086206125973,
+      "seed42_coherence": 0.022199535742402077,
+      "seed43_coherence": 0.012515591457486153
+    },
+    {
+      "seed42_atom": 48,
+      "seed43_atom": 95,
+      "activation_correlation": -0.11608424902849943,
+      "seed42_coherence": 0.0130671551451087,
+      "seed43_coherence": 0.11756186932325363
+    },
+    {
+      "seed42_atom": 49,
+      "seed43_atom": 420,
+      "activation_correlation": 0.4944404634861652,
+      "seed42_coherence": 0.03691485524177551,
+      "seed43_coherence": 0.04343140870332718
+    },
+    {
+      "seed42_atom": 50,
+      "seed43_atom": 347,
+      "activation_correlation": -0.7552609285530311,
+      "seed42_coherence": 0.24019969999790192,
+      "seed43_coherence": 0.7205925583839417
+    },
+    {
+      "seed42_atom": 51,
+      "seed43_atom": 87,
+      "activation_correlation": 0.17811389436659525,
+      "seed42_coherence": 0.02540125511586666,
+      "seed43_coherence": 0.06638862937688828
+    },
+    {
+      "seed42_atom": 52,
+      "seed43_atom": 477,
+      "activation_correlation": 0.0015162223768716858,
+      "seed42_coherence": 0.023267773911356926,
+      "seed43_coherence": 0.04822492599487305
+    },
+    {
+      "seed42_atom": 53,
+      "seed43_atom": 495,
+      "activation_correlation": 0.8136921335797884,
+      "seed42_coherence": 0.3705725073814392,
+      "seed43_coherence": 0.44841238856315613
+    },
+    {
+      "seed42_atom": 54,
+      "seed43_atom": 36,
+      "activation_correlation": -0.32010765585555423,
+      "seed42_coherence": 0.014919201843440533,
+      "seed43_coherence": 0.026803718879818916
+    },
+    {
+      "seed42_atom": 55,
+      "seed43_atom": 423,
+      "activation_correlation": -0.5198118364554525,
+      "seed42_coherence": 0.004667738918215036,
+      "seed43_coherence": 0.03473864123225212
+    },
+    {
+      "seed42_atom": 56,
+      "seed43_atom": 43,
+      "activation_correlation": -0.5097952641385837,
+      "seed42_coherence": 0.1065090075135231,
+      "seed43_coherence": 0.1553145945072174
+    },
+    {
+      "seed42_atom": 57,
+      "seed43_atom": 147,
+      "activation_correlation": -0.12854632864265714,
+      "seed42_coherence": 0.02861139178276062,
+      "seed43_coherence": 0.0746050700545311
+    },
+    {
+      "seed42_atom": 58,
+      "seed43_atom": 160,
+      "activation_correlation": 0.7181666671647092,
+      "seed42_coherence": 0.1390758752822876,
+      "seed43_coherence": 0.09979692101478577
+    },
+    {
+      "seed42_atom": 59,
+      "seed43_atom": 303,
+      "activation_correlation": -0.7273436819417258,
+      "seed42_coherence": 0.30082789063453674,
+      "seed43_coherence": 0.31780704855918884
+    },
+    {
+      "seed42_atom": 60,
+      "seed43_atom": 88,
+      "activation_correlation": 0.13887656576865848,
+      "seed42_coherence": 0.040897686034440994,
+      "seed43_coherence": 0.03231091424822807
+    },
+    {
+      "seed42_atom": 61,
+      "seed43_atom": 447,
+      "activation_correlation": 0.08618686990409281,
+      "seed42_coherence": 0.020923269912600517,
+      "seed43_coherence": 0.029567573219537735
+    },
+    {
+      "seed42_atom": 62,
+      "seed43_atom": 242,
+      "activation_correlation": 0.3358067543947364,
+      "seed42_coherence": 0.05696989968419075,
+      "seed43_coherence": 0.09131629765033722
+    },
+    {
+      "seed42_atom": 63,
+      "seed43_atom": 466,
+      "activation_correlation": 0.08097286598005002,
+      "seed42_coherence": 0.003174383658915758,
+      "seed43_coherence": 0.03758003190159798
+    },
+    {
+      "seed42_atom": 64,
+      "seed43_atom": 62,
+      "activation_correlation": 0.027752474483681757,
+      "seed42_coherence": 0.11349062621593475,
+      "seed43_coherence": 0.02867830917239189
+    },
+    {
+      "seed42_atom": 65,
+      "seed43_atom": 233,
+      "activation_correlation": -0.20607336312617386,
+      "seed42_coherence": 0.014957497827708721,
+      "seed43_coherence": 0.035392433404922485
+    },
+    {
+      "seed42_atom": 66,
+      "seed43_atom": 388,
+      "activation_correlation": -0.4590938757611311,
+      "seed42_coherence": 0.056213658303022385,
+      "seed43_coherence": 0.14763857424259186
+    },
+    {
+      "seed42_atom": 67,
+      "seed43_atom": 80,
+      "activation_correlation": 0.2061982067689948,
+      "seed42_coherence": 0.0161249078810215,
+      "seed43_coherence": 0.02422459051012993
+    },
+    {
+      "seed42_atom": 68,
+      "seed43_atom": 50,
+      "activation_correlation": -0.1967069494680773,
+      "seed42_coherence": -0.0011148923076689243,
+      "seed43_coherence": 0.06546788662672043
+    },
+    {
+      "seed42_atom": 69,
+      "seed43_atom": 179,
+      "activation_correlation": -0.000342803655251662,
+      "seed42_coherence": 0.020396508276462555,
+      "seed43_coherence": 0.034607116132974625
+    },
+    {
+      "seed42_atom": 70,
+      "seed43_atom": 334,
+      "activation_correlation": -0.130699282130266,
+      "seed42_coherence": 0.1330144703388214,
+      "seed43_coherence": 0.09272362291812897
+    },
+    {
+      "seed42_atom": 71,
+      "seed43_atom": 26,
+      "activation_correlation": -0.3731235053462671,
+      "seed42_coherence": 0.04393800348043442,
+      "seed43_coherence": 0.02406049519777298
+    },
+    {
+      "seed42_atom": 72,
+      "seed43_atom": 173,
+      "activation_correlation": -0.2381902838653974,
+      "seed42_coherence": 0.02791433036327362,
+      "seed43_coherence": 0.08003152906894684
+    },
+    {
+      "seed42_atom": 73,
+      "seed43_atom": 241,
+      "activation_correlation": 0.2530047943899657,
+      "seed42_coherence": 0.02427741512656212,
+      "seed43_coherence": 0.02421725168824196
+    },
+    {
+      "seed42_atom": 74,
+      "seed43_atom": 320,
+      "activation_correlation": 0.2642561921771934,
+      "seed42_coherence": 0.11598227918148041,
+      "seed43_coherence": 0.04201987013220787
+    },
+    {
+      "seed42_atom": 75,
+      "seed43_atom": 60,
+      "activation_correlation": 0.3241558411236619,
+      "seed42_coherence": 0.006618773099035025,
+      "seed43_coherence": 0.011244415305554867
+    },
+    {
+      "seed42_atom": 76,
+      "seed43_atom": 273,
+      "activation_correlation": -0.5022527756009572,
+      "seed42_coherence": 0.1450721025466919,
+      "seed43_coherence": 0.3124602735042572
+    },
+    {
+      "seed42_atom": 77,
+      "seed43_atom": 264,
+      "activation_correlation": 0.33812842822179534,
+      "seed42_coherence": 0.025256382301449776,
+      "seed43_coherence": 0.026426494121551514
+    },
+    {
+      "seed42_atom": 78,
+      "seed43_atom": 465,
+      "activation_correlation": -0.07144804162154492,
+      "seed42_coherence": 0.009373608976602554,
+      "seed43_coherence": 0.018718136474490166
+    },
+    {
+      "seed42_atom": 79,
+      "seed43_atom": 337,
+      "activation_correlation": -0.09163151378536806,
+      "seed42_coherence": 0.019605154171586037,
+      "seed43_coherence": 0.061843566596508026
+    },
+    {
+      "seed42_atom": 80,
+      "seed43_atom": 152,
+      "activation_correlation": -0.5868885330546385,
+      "seed42_coherence": 0.2455691546201706,
+      "seed43_coherence": 0.34866097569465637
+    },
+    {
+      "seed42_atom": 81,
+      "seed43_atom": 421,
+      "activation_correlation": -0.4290979506782995,
+      "seed42_coherence": 0.05367805436253548,
+      "seed43_coherence": 0.0906204879283905
+    },
+    {
+      "seed42_atom": 82,
+      "seed43_atom": 227,
+      "activation_correlation": 0.8075169792741337,
+      "seed42_coherence": 0.11414120346307755,
+      "seed43_coherence": 0.08287834376096725
+    },
+    {
+      "seed42_atom": 83,
+      "seed43_atom": 9,
+      "activation_correlation": 0.21816558846288803,
+      "seed42_coherence": 0.07576711475849152,
+      "seed43_coherence": 0.06712067127227783
+    },
+    {
+      "seed42_atom": 84,
+      "seed43_atom": 308,
+      "activation_correlation": 0.34065569645243576,
+      "seed42_coherence": 0.10941195487976074,
+      "seed43_coherence": 0.06125456094741821
+    },
+    {
+      "seed42_atom": 85,
+      "seed43_atom": 118,
+      "activation_correlation": -0.2981939717598083,
+      "seed42_coherence": 0.010087729431688786,
+      "seed43_coherence": 0.02900070883333683
+    },
+    {
+      "seed42_atom": 86,
+      "seed43_atom": 434,
+      "activation_correlation": 0.6491432668100773,
+      "seed42_coherence": 0.13815614581108093,
+      "seed43_coherence": 0.03038148581981659
+    },
+    {
+      "seed42_atom": 87,
+      "seed43_atom": 483,
+      "activation_correlation": -0.6569000161699765,
+      "seed42_coherence": 0.012738491408526897,
+      "seed43_coherence": 0.007750177290290594
+    },
+    {
+      "seed42_atom": 88,
+      "seed43_atom": 129,
+      "activation_correlation": 0.4733658343298913,
+      "seed42_coherence": 0.021839920431375504,
+      "seed43_coherence": 0.01413637213408947
+    },
+    {
+      "seed42_atom": 89,
+      "seed43_atom": 6,
+      "activation_correlation": 0.7467812765948497,
+      "seed42_coherence": 0.43489697575569153,
+      "seed43_coherence": 0.4956318140029907
+    },
+    {
+      "seed42_atom": 90,
+      "seed43_atom": 10,
+      "activation_correlation": 0.1260691306296088,
+      "seed42_coherence": 0.028228603303432465,
+      "seed43_coherence": 0.019061151891946793
+    },
+    {
+      "seed42_atom": 91,
+      "seed43_atom": 30,
+      "activation_correlation": -0.4398378502177372,
+      "seed42_coherence": 0.009639265947043896,
+      "seed43_coherence": 0.002207857323810458
+    },
+    {
+      "seed42_atom": 92,
+      "seed43_atom": 376,
+      "activation_correlation": 0.29606910360676625,
+      "seed42_coherence": 0.07444604486227036,
+      "seed43_coherence": 0.28814637660980225
+    },
+    {
+      "seed42_atom": 93,
+      "seed43_atom": 61,
+      "activation_correlation": 0.22406679649256142,
+      "seed42_coherence": 0.05229649320244789,
+      "seed43_coherence": 0.021156009286642075
+    },
+    {
+      "seed42_atom": 94,
+      "seed43_atom": 40,
+      "activation_correlation": 0.08428481118471914,
+      "seed42_coherence": -0.0006960129830986261,
+      "seed43_coherence": 0.044707197695970535
+    },
+    {
+      "seed42_atom": 95,
+      "seed43_atom": 73,
+      "activation_correlation": -0.3899470425414357,
+      "seed42_coherence": 0.12906910479068756,
+      "seed43_coherence": 0.07602310180664062
+    },
+    {
+      "seed42_atom": 96,
+      "seed43_atom": 431,
+      "activation_correlation": 0.4417359046880849,
+      "seed42_coherence": 0.08831066638231277,
+      "seed43_coherence": 0.2774598002433777
+    },
+    {
+      "seed42_atom": 97,
+      "seed43_atom": 400,
+      "activation_correlation": 0.1144940604543044,
+      "seed42_coherence": 0.010248486883938313,
+      "seed43_coherence": 0.01830052025616169
+    },
+    {
+      "seed42_atom": 98,
+      "seed43_atom": 384,
+      "activation_correlation": -0.37911969419616354,
+      "seed42_coherence": 0.07886757701635361,
+      "seed43_coherence": 0.1481967270374298
+    },
+    {
+      "seed42_atom": 99,
+      "seed43_atom": 373,
+      "activation_correlation": 0.1762749592402395,
+      "seed42_coherence": 0.15926896035671234,
+      "seed43_coherence": 0.28005388379096985
+    },
+    {
+      "seed42_atom": 100,
+      "seed43_atom": 48,
+      "activation_correlation": 0.1517625897842791,
+      "seed42_coherence": 0.027744950726628304,
+      "seed43_coherence": 0.061835967004299164
+    },
+    {
+      "seed42_atom": 101,
+      "seed43_atom": 149,
+      "activation_correlation": -0.0015467466399992503,
+      "seed42_coherence": 0.08687613904476166,
+      "seed43_coherence": 0.14505498111248016
+    },
+    {
+      "seed42_atom": 102,
+      "seed43_atom": 375,
+      "activation_correlation": 0.1462236749150282,
+      "seed42_coherence": 0.14354297518730164,
+      "seed43_coherence": 0.13019955158233643
+    },
+    {
+      "seed42_atom": 103,
+      "seed43_atom": 185,
+      "activation_correlation": 0.19423864302489716,
+      "seed42_coherence": 0.04908056929707527,
+      "seed43_coherence": 0.09283670783042908
+    },
+    {
+      "seed42_atom": 104,
+      "seed43_atom": 186,
+      "activation_correlation": 0.5812477382277585,
+      "seed42_coherence": 0.15641193091869354,
+      "seed43_coherence": 0.14698439836502075
+    },
+    {
+      "seed42_atom": 105,
+      "seed43_atom": 63,
+      "activation_correlation": -0.13810600349236335,
+      "seed42_coherence": 0.030598683282732964,
+      "seed43_coherence": 0.049709491431713104
+    },
+    {
+      "seed42_atom": 106,
+      "seed43_atom": 314,
+      "activation_correlation": -0.44760258930440716,
+      "seed42_coherence": 0.11927598714828491,
+      "seed43_coherence": 0.08997534960508347
+    },
+    {
+      "seed42_atom": 107,
+      "seed43_atom": 438,
+      "activation_correlation": 0.12406508704813196,
+      "seed42_coherence": 0.024745946750044823,
+      "seed43_coherence": 0.008499321527779102
+    },
+    {
+      "seed42_atom": 108,
+      "seed43_atom": 443,
+      "activation_correlation": 0.24660682035103823,
+      "seed42_coherence": 0.37813800573349,
+      "seed43_coherence": 0.597079336643219
+    },
+    {
+      "seed42_atom": 109,
+      "seed43_atom": 436,
+      "activation_correlation": 0.6714849938276063,
+      "seed42_coherence": 0.08554258942604065,
+      "seed43_coherence": 0.027418123558163643
+    },
+    {
+      "seed42_atom": 110,
+      "seed43_atom": 180,
+      "activation_correlation": -0.13224551737084672,
+      "seed42_coherence": 0.01689433678984642,
+      "seed43_coherence": 0.03106306679546833
+    },
+    {
+      "seed42_atom": 111,
+      "seed43_atom": 196,
+      "activation_correlation": -0.07375040124923472,
+      "seed42_coherence": 0.04474925994873047,
+      "seed43_coherence": 0.02069305069744587
+    },
+    {
+      "seed42_atom": 112,
+      "seed43_atom": 333,
+      "activation_correlation": 0.6319914185326256,
+      "seed42_coherence": 0.06495967507362366,
+      "seed43_coherence": 0.04471403360366821
+    },
+    {
+      "seed42_atom": 113,
+      "seed43_atom": 237,
+      "activation_correlation": -0.8646002550922641,
+      "seed42_coherence": 0.01570414938032627,
+      "seed43_coherence": 0.0313284732401371
+    },
+    {
+      "seed42_atom": 114,
+      "seed43_atom": 411,
+      "activation_correlation": 0.19987256150652097,
+      "seed42_coherence": 0.08804544806480408,
+      "seed43_coherence": 0.08528988808393478
+    },
+    {
+      "seed42_atom": 115,
+      "seed43_atom": 300,
+      "activation_correlation": 0.0011009107185386564,
+      "seed42_coherence": 0.10275468230247498,
+      "seed43_coherence": 0.024149904027581215
+    },
+    {
+      "seed42_atom": 116,
+      "seed43_atom": 72,
+      "activation_correlation": -0.84892154172945,
+      "seed42_coherence": 0.07732655107975006,
+      "seed43_coherence": 0.03634310141205788
+    },
+    {
+      "seed42_atom": 117,
+      "seed43_atom": 239,
+      "activation_correlation": 0.35791650826944593,
+      "seed42_coherence": 0.03232205659151077,
+      "seed43_coherence": 0.06589964032173157
+    },
+    {
+      "seed42_atom": 118,
+      "seed43_atom": 271,
+      "activation_correlation": 0.07044648654158928,
+      "seed42_coherence": 0.02516615204513073,
+      "seed43_coherence": 0.09552253037691116
+    },
+    {
+      "seed42_atom": 119,
+      "seed43_atom": 216,
+      "activation_correlation": 0.3928364391661087,
+      "seed42_coherence": 0.04045674949884415,
+      "seed43_coherence": 0.023974403738975525
+    },
+    {
+      "seed42_atom": 120,
+      "seed43_atom": 315,
+      "activation_correlation": -0.715132647674277,
+      "seed42_coherence": 0.1192668005824089,
+      "seed43_coherence": 0.12232382595539093
+    },
+    {
+      "seed42_atom": 121,
+      "seed43_atom": 245,
+      "activation_correlation": 0.14977315039058658,
+      "seed42_coherence": 0.0352570079267025,
+      "seed43_coherence": 0.06640592962503433
+    },
+    {
+      "seed42_atom": 122,
+      "seed43_atom": 324,
+      "activation_correlation": -0.7643585181601413,
+      "seed42_coherence": 0.08577875047922134,
+      "seed43_coherence": 0.05228285491466522
+    },
+    {
+      "seed42_atom": 123,
+      "seed43_atom": 214,
+      "activation_correlation": -0.23928424126256922,
+      "seed42_coherence": 0.0548003651201725,
+      "seed43_coherence": 0.1116340234875679
+    },
+    {
+      "seed42_atom": 124,
+      "seed43_atom": 370,
+      "activation_correlation": 0.3272582349314681,
+      "seed42_coherence": 0.2737824320793152,
+      "seed43_coherence": 0.16596142947673798
+    },
+    {
+      "seed42_atom": 125,
+      "seed43_atom": 138,
+      "activation_correlation": 0.13014395003989768,
+      "seed42_coherence": 0.018893804401159286,
+      "seed43_coherence": 0.05063795670866966
+    },
+    {
+      "seed42_atom": 126,
+      "seed43_atom": 488,
+      "activation_correlation": -0.11620941487457344,
+      "seed42_coherence": 0.012849261984229088,
+      "seed43_coherence": 0.1422974020242691
+    },
+    {
+      "seed42_atom": 127,
+      "seed43_atom": 343,
+      "activation_correlation": -0.4922993707417402,
+      "seed42_coherence": 0.14222374558448792,
+      "seed43_coherence": 0.17766906321048737
+    },
+    {
+      "seed42_atom": 128,
+      "seed43_atom": 419,
+      "activation_correlation": -0.20797353345652925,
+      "seed42_coherence": 0.0632747933268547,
+      "seed43_coherence": 0.12090757489204407
+    },
+    {
+      "seed42_atom": 129,
+      "seed43_atom": 97,
+      "activation_correlation": -0.4925084269091037,
+      "seed42_coherence": 0.006512468680739403,
+      "seed43_coherence": 0.025424350053071976
+    },
+    {
+      "seed42_atom": 130,
+      "seed43_atom": 14,
+      "activation_correlation": -0.18897102582288944,
+      "seed42_coherence": 0.020704392343759537,
+      "seed43_coherence": 0.012249873951077461
+    },
+    {
+      "seed42_atom": 131,
+      "seed43_atom": 452,
+      "activation_correlation": -0.7899529912889489,
+      "seed42_coherence": 0.16025882959365845,
+      "seed43_coherence": 0.2508702874183655
+    },
+    {
+      "seed42_atom": 132,
+      "seed43_atom": 115,
+      "activation_correlation": 0.9069510662949849,
+      "seed42_coherence": 0.11540108919143677,
+      "seed43_coherence": 0.03282148391008377
+    },
+    {
+      "seed42_atom": 133,
+      "seed43_atom": 259,
+      "activation_correlation": -0.13330692765872956,
+      "seed42_coherence": 0.0475219264626503,
+      "seed43_coherence": 0.033348198980093
+    },
+    {
+      "seed42_atom": 134,
+      "seed43_atom": 410,
+      "activation_correlation": -0.18734089207773283,
+      "seed42_coherence": 0.03442493826150894,
+      "seed43_coherence": 0.012661104090511799
+    },
+    {
+      "seed42_atom": 135,
+      "seed43_atom": 402,
+      "activation_correlation": -0.12172456222834771,
+      "seed42_coherence": 0.0532577820122242,
+      "seed43_coherence": 0.03675524890422821
+    },
+    {
+      "seed42_atom": 136,
+      "seed43_atom": 310,
+      "activation_correlation": 0.12282611294174345,
+      "seed42_coherence": 0.06894443929195404,
+      "seed43_coherence": 0.30298519134521484
+    },
+    {
+      "seed42_atom": 137,
+      "seed43_atom": 456,
+      "activation_correlation": -0.2244542612021409,
+      "seed42_coherence": 0.05372098460793495,
+      "seed43_coherence": 0.12104588747024536
+    },
+    {
+      "seed42_atom": 138,
+      "seed43_atom": 404,
+      "activation_correlation": 0.5916666339473188,
+      "seed42_coherence": 0.1362546682357788,
+      "seed43_coherence": 0.11868269741535187
+    },
+    {
+      "seed42_atom": 139,
+      "seed43_atom": 305,
+      "activation_correlation": -0.1822449219939947,
+      "seed42_coherence": 0.012265496887266636,
+      "seed43_coherence": 0.05859063193202019
+    },
+    {
+      "seed42_atom": 140,
+      "seed43_atom": 290,
+      "activation_correlation": 0.8729480305062631,
+      "seed42_coherence": 0.05990670993924141,
+      "seed43_coherence": 0.06807620823383331
+    },
+    {
+      "seed42_atom": 141,
+      "seed43_atom": 381,
+      "activation_correlation": -0.3691400382884037,
+      "seed42_coherence": 0.026874873787164688,
+      "seed43_coherence": 0.04499416425824165
+    },
+    {
+      "seed42_atom": 142,
+      "seed43_atom": 105,
+      "activation_correlation": -0.1755106717087041,
+      "seed42_coherence": 0.02297358214855194,
+      "seed43_coherence": 0.02297339215874672
+    },
+    {
+      "seed42_atom": 143,
+      "seed43_atom": 79,
+      "activation_correlation": 0.7513989444352438,
+      "seed42_coherence": 0.07609972357749939,
+      "seed43_coherence": 0.08325795829296112
+    },
+    {
+      "seed42_atom": 144,
+      "seed43_atom": 280,
+      "activation_correlation": 0.1063833971625418,
+      "seed42_coherence": 0.037771694362163544,
+      "seed43_coherence": 0.10758980363607407
+    },
+    {
+      "seed42_atom": 145,
+      "seed43_atom": 211,
+      "activation_correlation": -0.26502818352856994,
+      "seed42_coherence": 0.055236998945474625,
+      "seed43_coherence": 0.1256525218486786
+    },
+    {
+      "seed42_atom": 146,
+      "seed43_atom": 120,
+      "activation_correlation": -0.11980703100586618,
+      "seed42_coherence": 0.08186554163694382,
+      "seed43_coherence": 0.06412242352962494
+    },
+    {
+      "seed42_atom": 147,
+      "seed43_atom": 65,
+      "activation_correlation": 0.03409881420751556,
+      "seed42_coherence": 0.017990482971072197,
+      "seed43_coherence": 0.01857897825539112
+    },
+    {
+      "seed42_atom": 148,
+      "seed43_atom": 127,
+      "activation_correlation": -0.444108289936149,
+      "seed42_coherence": 0.0804748609662056,
+      "seed43_coherence": 0.11778075248003006
+    },
+    {
+      "seed42_atom": 149,
+      "seed43_atom": 348,
+      "activation_correlation": 0.8391455958968104,
+      "seed42_coherence": 0.0677349716424942,
+      "seed43_coherence": 0.07348980009555817
+    },
+    {
+      "seed42_atom": 150,
+      "seed43_atom": 82,
+      "activation_correlation": 0.17105996437171428,
+      "seed42_coherence": 0.04665277898311615,
+      "seed43_coherence": 0.060684408992528915
+    },
+    {
+      "seed42_atom": 151,
+      "seed43_atom": 217,
+      "activation_correlation": -0.1214024628257717,
+      "seed42_coherence": 0.05837751924991608,
+      "seed43_coherence": 0.027087517082691193
+    },
+    {
+      "seed42_atom": 152,
+      "seed43_atom": 243,
+      "activation_correlation": -0.15015256428527973,
+      "seed42_coherence": 0.015903620049357414,
+      "seed43_coherence": 0.00970250554382801
+    },
+    {
+      "seed42_atom": 153,
+      "seed43_atom": 189,
+      "activation_correlation": 0.788721854474593,
+      "seed42_coherence": 0.030273858457803726,
+      "seed43_coherence": 0.05301394686102867
+    },
+    {
+      "seed42_atom": 154,
+      "seed43_atom": 262,
+      "activation_correlation": 0.2986757146724942,
+      "seed42_coherence": 0.1285085827112198,
+      "seed43_coherence": 0.1352066695690155
+    },
+    {
+      "seed42_atom": 155,
+      "seed43_atom": 182,
+      "activation_correlation": -0.6768853368419876,
+      "seed42_coherence": 0.12787160277366638,
+      "seed43_coherence": 0.19184917211532593
+    },
+    {
+      "seed42_atom": 156,
+      "seed43_atom": 157,
+      "activation_correlation": 0.7363877777880866,
+      "seed42_coherence": 0.12518425285816193,
+      "seed43_coherence": 0.1703738570213318
+    },
+    {
+      "seed42_atom": 157,
+      "seed43_atom": 204,
+      "activation_correlation": -0.23147777958640076,
+      "seed42_coherence": 0.021482987329363823,
+      "seed43_coherence": 0.00777891930192709
+    },
+    {
+      "seed42_atom": 158,
+      "seed43_atom": 69,
+      "activation_correlation": 0.5715643353443183,
+      "seed42_coherence": 0.07583999633789062,
+      "seed43_coherence": 0.054477788507938385
+    },
+    {
+      "seed42_atom": 159,
+      "seed43_atom": 458,
+      "activation_correlation": -0.15092907297076816,
+      "seed42_coherence": 0.02029474824666977,
+      "seed43_coherence": 0.025082269683480263
+    },
+    {
+      "seed42_atom": 160,
+      "seed43_atom": 94,
+      "activation_correlation": 0.343218877455271,
+      "seed42_coherence": 0.26754263043403625,
+      "seed43_coherence": 0.14348667860031128
+    },
+    {
+      "seed42_atom": 161,
+      "seed43_atom": 45,
+      "activation_correlation": 0.7654263575860272,
+      "seed42_coherence": 0.1616329550743103,
+      "seed43_coherence": 0.1524958610534668
+    },
+    {
+      "seed42_atom": 162,
+      "seed43_atom": 479,
+      "activation_correlation": 0.7159726185154951,
+      "seed42_coherence": 0.5008115768432617,
+      "seed43_coherence": 0.6281708478927612
+    },
+    {
+      "seed42_atom": 163,
+      "seed43_atom": 104,
+      "activation_correlation": -0.29926343486884543,
+      "seed42_coherence": 0.11322464048862457,
+      "seed43_coherence": 0.08390460908412933
+    },
+    {
+      "seed42_atom": 164,
+      "seed43_atom": 3,
+      "activation_correlation": 0.045008359237125685,
+      "seed42_coherence": 0.0319681391119957,
+      "seed43_coherence": 0.21248622238636017
+    },
+    {
+      "seed42_atom": 165,
+      "seed43_atom": 311,
+      "activation_correlation": 0.6941535883975976,
+      "seed42_coherence": 0.02015053667128086,
+      "seed43_coherence": 0.04268877953290939
+    },
+    {
+      "seed42_atom": 166,
+      "seed43_atom": 254,
+      "activation_correlation": -0.2540689507999541,
+      "seed42_coherence": 0.007921994663774967,
+      "seed43_coherence": 0.015672389417886734
+    },
+    {
+      "seed42_atom": 167,
+      "seed43_atom": 322,
+      "activation_correlation": -0.020199681910507923,
+      "seed42_coherence": 0.009182119742035866,
+      "seed43_coherence": 0.03258352354168892
+    },
+    {
+      "seed42_atom": 168,
+      "seed43_atom": 140,
+      "activation_correlation": 0.37471459629084525,
+      "seed42_coherence": 0.1272232085466385,
+      "seed43_coherence": 0.025617370381951332
+    },
+    {
+      "seed42_atom": 169,
+      "seed43_atom": 355,
+      "activation_correlation": -0.2897361664866081,
+      "seed42_coherence": 0.029616693034768105,
+      "seed43_coherence": 0.06147299334406853
+    },
+    {
+      "seed42_atom": 170,
+      "seed43_atom": 451,
+      "activation_correlation": 0.46681662719517836,
+      "seed42_coherence": 0.07601277530193329,
+      "seed43_coherence": 0.10763238370418549
+    },
+    {
+      "seed42_atom": 171,
+      "seed43_atom": 414,
+      "activation_correlation": -0.4720738714880648,
+      "seed42_coherence": 0.5187639594078064,
+      "seed43_coherence": 0.4732825458049774
+    },
+    {
+      "seed42_atom": 172,
+      "seed43_atom": 496,
+      "activation_correlation": 0.8025969469311424,
+      "seed42_coherence": 0.053013354539871216,
+      "seed43_coherence": 0.04728569835424423
+    },
+    {
+      "seed42_atom": 173,
+      "seed43_atom": 471,
+      "activation_correlation": -0.10526447720040828,
+      "seed42_coherence": 0.12363824993371964,
+      "seed43_coherence": 0.1404983103275299
+    },
+    {
+      "seed42_atom": 174,
+      "seed43_atom": 128,
+      "activation_correlation": -0.3171652070640373,
+      "seed42_coherence": 0.021947020664811134,
+      "seed43_coherence": 0.031022755429148674
+    },
+    {
+      "seed42_atom": 175,
+      "seed43_atom": 244,
+      "activation_correlation": -0.10858840457699444,
+      "seed42_coherence": 0.012532309629023075,
+      "seed43_coherence": 0.08193519711494446
+    },
+    {
+      "seed42_atom": 176,
+      "seed43_atom": 397,
+      "activation_correlation": 0.04635694323025746,
+      "seed42_coherence": 0.14669165015220642,
+      "seed43_coherence": 0.13899531960487366
+    },
+    {
+      "seed42_atom": 177,
+      "seed43_atom": 345,
+      "activation_correlation": -0.6117348410182302,
+      "seed42_coherence": 0.05692007392644882,
+      "seed43_coherence": 0.07041443139314651
+    },
+    {
+      "seed42_atom": 178,
+      "seed43_atom": 198,
+      "activation_correlation": -0.45474999242501585,
+      "seed42_coherence": 0.016310974955558777,
+      "seed43_coherence": 0.012640793807804585
+    },
+    {
+      "seed42_atom": 179,
+      "seed43_atom": 267,
+      "activation_correlation": 0.28326018471352404,
+      "seed42_coherence": 0.13277968764305115,
+      "seed43_coherence": 0.1987585574388504
+    },
+    {
+      "seed42_atom": 180,
+      "seed43_atom": 309,
+      "activation_correlation": 0.15995032716761245,
+      "seed42_coherence": 0.03035782277584076,
+      "seed43_coherence": 0.017227521166205406
+    },
+    {
+      "seed42_atom": 181,
+      "seed43_atom": 224,
+      "activation_correlation": 0.06018540212332964,
+      "seed42_coherence": 0.008331307210028172,
+      "seed43_coherence": 0.015125900506973267
+    },
+    {
+      "seed42_atom": 182,
+      "seed43_atom": 487,
+      "activation_correlation": 0.3082998821247189,
+      "seed42_coherence": 0.024005375802516937,
+      "seed43_coherence": 0.05240394175052643
+    },
+    {
+      "seed42_atom": 183,
+      "seed43_atom": 136,
+      "activation_correlation": -0.28099142209120126,
+      "seed42_coherence": 0.041326578706502914,
+      "seed43_coherence": 0.0384204164147377
+    },
+    {
+      "seed42_atom": 184,
+      "seed43_atom": 342,
+      "activation_correlation": 0.23865866424579008,
+      "seed42_coherence": 0.06755909323692322,
+      "seed43_coherence": 0.09761263430118561
+    },
+    {
+      "seed42_atom": 185,
+      "seed43_atom": 360,
+      "activation_correlation": -0.10486658855202233,
+      "seed42_coherence": 0.05163101479411125,
+      "seed43_coherence": 0.06312002241611481
+    },
+    {
+      "seed42_atom": 186,
+      "seed43_atom": 306,
+      "activation_correlation": -0.9691695049251935,
+      "seed42_coherence": 0.01997249387204647,
+      "seed43_coherence": 0.03709608316421509
+    },
+    {
+      "seed42_atom": 187,
+      "seed43_atom": 108,
+      "activation_correlation": -0.7691138348475876,
+      "seed42_coherence": 0.06734529137611389,
+      "seed43_coherence": 0.09473730623722076
+    },
+    {
+      "seed42_atom": 188,
+      "seed43_atom": 330,
+      "activation_correlation": -0.08996016983101014,
+      "seed42_coherence": 0.021726518869400024,
+      "seed43_coherence": 0.10523007810115814
+    },
+    {
+      "seed42_atom": 189,
+      "seed43_atom": 47,
+      "activation_correlation": -0.13142421043727676,
+      "seed42_coherence": 0.09258757531642914,
+      "seed43_coherence": 0.020230324938893318
+    },
+    {
+      "seed42_atom": 190,
+      "seed43_atom": 379,
+      "activation_correlation": -0.9004862014204186,
+      "seed42_coherence": 0.16316133737564087,
+      "seed43_coherence": 0.16122779250144958
+    },
+    {
+      "seed42_atom": 191,
+      "seed43_atom": 390,
+      "activation_correlation": 0.06514396260158677,
+      "seed42_coherence": 0.014699448831379414,
+      "seed43_coherence": 0.0797218531370163
+    },
+    {
+      "seed42_atom": 192,
+      "seed43_atom": 4,
+      "activation_correlation": 0.21468416334821236,
+      "seed42_coherence": 0.021100327372550964,
+      "seed43_coherence": 0.031347572803497314
+    },
+    {
+      "seed42_atom": 193,
+      "seed43_atom": 293,
+      "activation_correlation": 0.7399342836578942,
+      "seed42_coherence": 0.13526564836502075,
+      "seed43_coherence": 0.09160847961902618
+    },
+    {
+      "seed42_atom": 194,
+      "seed43_atom": 321,
+      "activation_correlation": 0.7065467648990172,
+      "seed42_coherence": 0.31011590361595154,
+      "seed43_coherence": 0.3868543803691864
+    },
+    {
+      "seed42_atom": 195,
+      "seed43_atom": 58,
+      "activation_correlation": -0.8885590665040262,
+      "seed42_coherence": 0.5243346095085144,
+      "seed43_coherence": 0.511253833770752
+    },
+    {
+      "seed42_atom": 196,
+      "seed43_atom": 269,
+      "activation_correlation": -0.09828778089954772,
+      "seed42_coherence": 0.0023261618334800005,
+      "seed43_coherence": 0.0179297998547554
+    },
+    {
+      "seed42_atom": 197,
+      "seed43_atom": 194,
+      "activation_correlation": 0.2030245121099383,
+      "seed42_coherence": 0.01953996531665325,
+      "seed43_coherence": 0.01378920953720808
+    },
+    {
+      "seed42_atom": 198,
+      "seed43_atom": 292,
+      "activation_correlation": 0.1386752694399334,
+      "seed42_coherence": 0.015417189337313175,
+      "seed43_coherence": 0.04497857391834259
+    },
+    {
+      "seed42_atom": 199,
+      "seed43_atom": 27,
+      "activation_correlation": 0.1425112735211571,
+      "seed42_coherence": 0.043502531945705414,
+      "seed43_coherence": 0.015646416693925858
+    },
+    {
+      "seed42_atom": 200,
+      "seed43_atom": 416,
+      "activation_correlation": -0.4713024761302945,
+      "seed42_coherence": 0.19904005527496338,
+      "seed43_coherence": 0.37174418568611145
+    },
+    {
+      "seed42_atom": 201,
+      "seed43_atom": 100,
+      "activation_correlation": -0.510046035407461,
+      "seed42_coherence": 0.09221774339675903,
+      "seed43_coherence": 0.05303982272744179
+    },
+    {
+      "seed42_atom": 202,
+      "seed43_atom": 24,
+      "activation_correlation": -0.2167173776543467,
+      "seed42_coherence": 0.06059712544083595,
+      "seed43_coherence": 0.06381753832101822
+    },
+    {
+      "seed42_atom": 203,
+      "seed43_atom": 231,
+      "activation_correlation": -0.2812570936602659,
+      "seed42_coherence": -0.0006126817315816879,
+      "seed43_coherence": 0.01801012083888054
+    },
+    {
+      "seed42_atom": 204,
+      "seed43_atom": 490,
+      "activation_correlation": 0.03235692138598444,
+      "seed42_coherence": 0.0420086607336998,
+      "seed43_coherence": 0.13201770186424255
+    },
+    {
+      "seed42_atom": 205,
+      "seed43_atom": 442,
+      "activation_correlation": -0.013079255298939519,
+      "seed42_coherence": 0.14147156476974487,
+      "seed43_coherence": 0.18731245398521423
+    },
+    {
+      "seed42_atom": 206,
+      "seed43_atom": 31,
+      "activation_correlation": 0.06678836750949639,
+      "seed42_coherence": 0.021681321784853935,
+      "seed43_coherence": 0.08555582165718079
+    },
+    {
+      "seed42_atom": 207,
+      "seed43_atom": 450,
+      "activation_correlation": -0.13343758051704466,
+      "seed42_coherence": 0.10114927589893341,
+      "seed43_coherence": 0.12528233230113983
+    },
+    {
+      "seed42_atom": 208,
+      "seed43_atom": 405,
+      "activation_correlation": -0.5973069853455302,
+      "seed42_coherence": 0.021981971338391304,
+      "seed43_coherence": 0.013848645612597466
+    },
+    {
+      "seed42_atom": 209,
+      "seed43_atom": 494,
+      "activation_correlation": 0.7409885473390955,
+      "seed42_coherence": 0.24819277226924896,
+      "seed43_coherence": 0.3318779468536377
+    },
+    {
+      "seed42_atom": 210,
+      "seed43_atom": 289,
+      "activation_correlation": 0.16815093996882557,
+      "seed42_coherence": 0.11390699446201324,
+      "seed43_coherence": 0.06484495103359222
+    },
+    {
+      "seed42_atom": 211,
+      "seed43_atom": 288,
+      "activation_correlation": 0.20594838097547769,
+      "seed42_coherence": 0.03588292375206947,
+      "seed43_coherence": 0.022217243909835815
+    },
+    {
+      "seed42_atom": 212,
+      "seed43_atom": 346,
+      "activation_correlation": 0.02612827259097692,
+      "seed42_coherence": 0.14051133394241333,
+      "seed43_coherence": 0.16935764253139496
+    },
+    {
+      "seed42_atom": 213,
+      "seed43_atom": 252,
+      "activation_correlation": 0.19534906620069808,
+      "seed42_coherence": 0.17934302985668182,
+      "seed43_coherence": 0.09648247808218002
+    },
+    {
+      "seed42_atom": 214,
+      "seed43_atom": 286,
+      "activation_correlation": 0.14004617488605398,
+      "seed42_coherence": 0.027440080419182777,
+      "seed43_coherence": 0.0461723767220974
+    },
+    {
+      "seed42_atom": 215,
+      "seed43_atom": 75,
+      "activation_correlation": 0.5039426986882822,
+      "seed42_coherence": 0.043106164783239365,
+      "seed43_coherence": 0.10371104627847672
+    },
+    {
+      "seed42_atom": 216,
+      "seed43_atom": 248,
+      "activation_correlation": 0.09986084447657237,
+      "seed42_coherence": 0.012021444737911224,
+      "seed43_coherence": 0.013971235603094101
+    },
+    {
+      "seed42_atom": 217,
+      "seed43_atom": 133,
+      "activation_correlation": -0.48979422777260584,
+      "seed42_coherence": 0.0967317745089531,
+      "seed43_coherence": 0.14246775209903717
+    },
+    {
+      "seed42_atom": 218,
+      "seed43_atom": 255,
+      "activation_correlation": -0.05435429493133074,
+      "seed42_coherence": 0.010641070082783699,
+      "seed43_coherence": 0.18937259912490845
+    },
+    {
+      "seed42_atom": 219,
+      "seed43_atom": 112,
+      "activation_correlation": -0.6078505022870728,
+      "seed42_coherence": 0.010633019730448723,
+      "seed43_coherence": 0.013535706326365471
+    },
+    {
+      "seed42_atom": 220,
+      "seed43_atom": 77,
+      "activation_correlation": 0.09041693132080275,
+      "seed42_coherence": 0.0057877735234797,
+      "seed43_coherence": 0.0157042033970356
+    },
+    {
+      "seed42_atom": 221,
+      "seed43_atom": 96,
+      "activation_correlation": -0.12546377459967833,
+      "seed42_coherence": 0.01966678537428379,
+      "seed43_coherence": 0.009254151955246925
+    },
+    {
+      "seed42_atom": 222,
+      "seed43_atom": 141,
+      "activation_correlation": -0.19473642543128136,
+      "seed42_coherence": 0.011145610362291336,
+      "seed43_coherence": 0.03518170863389969
+    },
+    {
+      "seed42_atom": 223,
+      "seed43_atom": 263,
+      "activation_correlation": -0.21170372076611513,
+      "seed42_coherence": 0.03210098296403885,
+      "seed43_coherence": 0.12179811298847198
+    },
+    {
+      "seed42_atom": 224,
+      "seed43_atom": 291,
+      "activation_correlation": 0.6330665028834581,
+      "seed42_coherence": 0.1672748327255249,
+      "seed43_coherence": 0.1148025244474411
+    },
+    {
+      "seed42_atom": 225,
+      "seed43_atom": 208,
+      "activation_correlation": -0.2829039174129422,
+      "seed42_coherence": 0.025940073654055595,
+      "seed43_coherence": 0.06254495680332184
+    },
+    {
+      "seed42_atom": 226,
+      "seed43_atom": 199,
+      "activation_correlation": 0.10108152678612752,
+      "seed42_coherence": 0.04266776889562607,
+      "seed43_coherence": 0.1303684562444687
+    },
+    {
+      "seed42_atom": 227,
+      "seed43_atom": 122,
+      "activation_correlation": 0.6553495957227236,
+      "seed42_coherence": 0.020988840609788895,
+      "seed43_coherence": 0.07361937314271927
+    },
+    {
+      "seed42_atom": 228,
+      "seed43_atom": 302,
+      "activation_correlation": 0.11238489496109737,
+      "seed42_coherence": 0.09805147349834442,
+      "seed43_coherence": 0.02283068373799324
+    },
+    {
+      "seed42_atom": 229,
+      "seed43_atom": 162,
+      "activation_correlation": 0.14957894831890686,
+      "seed42_coherence": 0.088780976831913,
+      "seed43_coherence": 0.024958273395895958
+    },
+    {
+      "seed42_atom": 230,
+      "seed43_atom": 276,
+      "activation_correlation": 0.20953445669156928,
+      "seed42_coherence": 0.010715755634009838,
+      "seed43_coherence": 0.07214298099279404
+    },
+    {
+      "seed42_atom": 231,
+      "seed43_atom": 89,
+      "activation_correlation": -0.10725891519396424,
+      "seed42_coherence": 0.07133492827415466,
+      "seed43_coherence": 0.08147603273391724
+    },
+    {
+      "seed42_atom": 232,
+      "seed43_atom": 126,
+      "activation_correlation": 0.485770805952373,
+      "seed42_coherence": 0.01659385859966278,
+      "seed43_coherence": 0.05579017475247383
+    },
+    {
+      "seed42_atom": 233,
+      "seed43_atom": 187,
+      "activation_correlation": 0.20548034024175307,
+      "seed42_coherence": 0.012503757141530514,
+      "seed43_coherence": 0.009332558140158653
+    },
+    {
+      "seed42_atom": 234,
+      "seed43_atom": 357,
+      "activation_correlation": -0.06567087645035184,
+      "seed42_coherence": 0.028598090633749962,
+      "seed43_coherence": 0.1602383553981781
+    },
+    {
+      "seed42_atom": 235,
+      "seed43_atom": 222,
+      "activation_correlation": -0.2627968561524072,
+      "seed42_coherence": 0.05372511222958565,
+      "seed43_coherence": 0.1554422825574875
+    },
+    {
+      "seed42_atom": 236,
+      "seed43_atom": 32,
+      "activation_correlation": 0.5453533270809059,
+      "seed42_coherence": 0.05586305260658264,
+      "seed43_coherence": 0.04488056153059006
+    },
+    {
+      "seed42_atom": 237,
+      "seed43_atom": 201,
+      "activation_correlation": -0.5282807020887356,
+      "seed42_coherence": 0.06703544408082962,
+      "seed43_coherence": 0.037943482398986816
+    },
+    {
+      "seed42_atom": 238,
+      "seed43_atom": 395,
+      "activation_correlation": 0.005917262961735384,
+      "seed42_coherence": 0.032188523560762405,
+      "seed43_coherence": 0.0946652740240097
+    },
+    {
+      "seed42_atom": 239,
+      "seed43_atom": 228,
+      "activation_correlation": -0.3182924469579425,
+      "seed42_coherence": 0.006695579271763563,
+      "seed43_coherence": 0.016161847859621048
+    },
+    {
+      "seed42_atom": 240,
+      "seed43_atom": 155,
+      "activation_correlation": -0.050573144239320286,
+      "seed42_coherence": 0.015640130266547203,
+      "seed43_coherence": 0.0397195927798748
+    },
+    {
+      "seed42_atom": 241,
+      "seed43_atom": 92,
+      "activation_correlation": 0.6319181702659282,
+      "seed42_coherence": 0.06567791849374771,
+      "seed43_coherence": 0.05336278676986694
+    },
+    {
+      "seed42_atom": 242,
+      "seed43_atom": 257,
+      "activation_correlation": -0.256340467951262,
+      "seed42_coherence": 0.06856666505336761,
+      "seed43_coherence": 0.057699158787727356
+    },
+    {
+      "seed42_atom": 243,
+      "seed43_atom": 326,
+      "activation_correlation": 0.33968106591445313,
+      "seed42_coherence": 0.030829839408397675,
+      "seed43_coherence": 0.02030624821782112
+    },
+    {
+      "seed42_atom": 244,
+      "seed43_atom": 417,
+      "activation_correlation": -0.04260794485513803,
+      "seed42_coherence": 0.021205686032772064,
+      "seed43_coherence": 0.1566077023744583
+    },
+    {
+      "seed42_atom": 245,
+      "seed43_atom": 168,
+      "activation_correlation": 0.36145929921699904,
+      "seed42_coherence": 0.023816492408514023,
+      "seed43_coherence": 0.025003526359796524
+    },
+    {
+      "seed42_atom": 246,
+      "seed43_atom": 153,
+      "activation_correlation": 0.20805182745021933,
+      "seed42_coherence": 0.12250908464193344,
+      "seed43_coherence": 0.03154785931110382
+    },
+    {
+      "seed42_atom": 247,
+      "seed43_atom": 125,
+      "activation_correlation": 0.18352030116879764,
+      "seed42_coherence": 0.05313965305685997,
+      "seed43_coherence": 0.029677070677280426
+    },
+    {
+      "seed42_atom": 248,
+      "seed43_atom": 102,
+      "activation_correlation": -0.16102299477483786,
+      "seed42_coherence": 0.028899092227220535,
+      "seed43_coherence": 0.012933038175106049
+    },
+    {
+      "seed42_atom": 249,
+      "seed43_atom": 167,
+      "activation_correlation": 0.9548354862015407,
+      "seed42_coherence": 0.14494429528713226,
+      "seed43_coherence": 0.14568321406841278
+    },
+    {
+      "seed42_atom": 250,
+      "seed43_atom": 117,
+      "activation_correlation": -0.021134658563505618,
+      "seed42_coherence": 0.025805262848734856,
+      "seed43_coherence": 0.07098741084337234
+    },
+    {
+      "seed42_atom": 251,
+      "seed43_atom": 401,
+      "activation_correlation": 0.07825157884697079,
+      "seed42_coherence": 0.06525672972202301,
+      "seed43_coherence": 0.008844524621963501
+    },
+    {
+      "seed42_atom": 252,
+      "seed43_atom": 23,
+      "activation_correlation": 0.21391256907777112,
+      "seed42_coherence": 0.11449404060840607,
+      "seed43_coherence": 0.08331090211868286
+    },
+    {
+      "seed42_atom": 253,
+      "seed43_atom": 247,
+      "activation_correlation": 0.7496665581206968,
+      "seed42_coherence": 0.028831012547016144,
+      "seed43_coherence": 0.014037656597793102
+    },
+    {
+      "seed42_atom": 254,
+      "seed43_atom": 365,
+      "activation_correlation": 0.23963643811375435,
+      "seed42_coherence": 0.03345383703708649,
+      "seed43_coherence": 0.2940162718296051
+    },
+    {
+      "seed42_atom": 255,
+      "seed43_atom": 81,
+      "activation_correlation": -0.5706187572082799,
+      "seed42_coherence": 0.17112216353416443,
+      "seed43_coherence": 0.06612228602170944
+    },
+    {
+      "seed42_atom": 256,
+      "seed43_atom": 449,
+      "activation_correlation": 0.2910791660747564,
+      "seed42_coherence": 0.027048038318753242,
+      "seed43_coherence": 0.024089785292744637
+    },
+    {
+      "seed42_atom": 257,
+      "seed43_atom": 191,
+      "activation_correlation": 0.7221387514676989,
+      "seed42_coherence": 0.0496833510696888,
+      "seed43_coherence": 0.03514862433075905
+    },
+    {
+      "seed42_atom": 258,
+      "seed43_atom": 317,
+      "activation_correlation": -0.23453991188048043,
+      "seed42_coherence": 0.08838731795549393,
+      "seed43_coherence": 0.13192827999591827
+    },
+    {
+      "seed42_atom": 259,
+      "seed43_atom": 19,
+      "activation_correlation": -0.31414967481901757,
+      "seed42_coherence": 0.10900960117578506,
+      "seed43_coherence": 0.06605108827352524
+    },
+    {
+      "seed42_atom": 260,
+      "seed43_atom": 372,
+      "activation_correlation": -0.47568104860468857,
+      "seed42_coherence": 0.26775413751602173,
+      "seed43_coherence": 0.35649344325065613
+    },
+    {
+      "seed42_atom": 261,
+      "seed43_atom": 205,
+      "activation_correlation": -0.3216093448631596,
+      "seed42_coherence": 0.07542163878679276,
+      "seed43_coherence": 0.1026051864027977
+    },
+    {
+      "seed42_atom": 262,
+      "seed43_atom": 52,
+      "activation_correlation": 0.13978516088761284,
+      "seed42_coherence": 0.1278248131275177,
+      "seed43_coherence": 0.03277939558029175
+    },
+    {
+      "seed42_atom": 263,
+      "seed43_atom": 114,
+      "activation_correlation": -0.40929258201102625,
+      "seed42_coherence": 0.04652942717075348,
+      "seed43_coherence": 0.07807544618844986
+    },
+    {
+      "seed42_atom": 264,
+      "seed43_atom": 277,
+      "activation_correlation": 0.25733586163278127,
+      "seed42_coherence": 0.007661824580281973,
+      "seed43_coherence": 0.037827685475349426
+    },
+    {
+      "seed42_atom": 265,
+      "seed43_atom": 418,
+      "activation_correlation": 0.6982566833700852,
+      "seed42_coherence": 0.250558465719223,
+      "seed43_coherence": 0.32837316393852234
+    },
+    {
+      "seed42_atom": 266,
+      "seed43_atom": 66,
+      "activation_correlation": 0.5072575657859232,
+      "seed42_coherence": 0.014573142863810062,
+      "seed43_coherence": 0.029408058151602745
+    },
+    {
+      "seed42_atom": 267,
+      "seed43_atom": 481,
+      "activation_correlation": 0.3244296380150795,
+      "seed42_coherence": 0.31509605050086975,
+      "seed43_coherence": 0.5672370195388794
+    },
+    {
+      "seed42_atom": 268,
+      "seed43_atom": 283,
+      "activation_correlation": -0.3137533996121615,
+      "seed42_coherence": 0.25593796372413635,
+      "seed43_coherence": 0.1598488986492157
+    },
+    {
+      "seed42_atom": 269,
+      "seed43_atom": 445,
+      "activation_correlation": 0.5312127471440375,
+      "seed42_coherence": 0.11011865735054016,
+      "seed43_coherence": 0.15039975941181183
+    },
+    {
+      "seed42_atom": 270,
+      "seed43_atom": 220,
+      "activation_correlation": 0.40755914946321253,
+      "seed42_coherence": 0.09619138389825821,
+      "seed43_coherence": 0.04324447736144066
+    },
+    {
+      "seed42_atom": 271,
+      "seed43_atom": 472,
+      "activation_correlation": 0.4870070593526545,
+      "seed42_coherence": 0.1299089938402176,
+      "seed43_coherence": 0.08247006684541702
+    },
+    {
+      "seed42_atom": 272,
+      "seed43_atom": 499,
+      "activation_correlation": 0.44746047426401503,
+      "seed42_coherence": 0.3422600328922272,
+      "seed43_coherence": 0.16739237308502197
+    },
+    {
+      "seed42_atom": 273,
+      "seed43_atom": 368,
+      "activation_correlation": 0.42562573187792696,
+      "seed42_coherence": 0.09677589684724808,
+      "seed43_coherence": 0.06947659701108932
+    },
+    {
+      "seed42_atom": 274,
+      "seed43_atom": 111,
+      "activation_correlation": -0.1879470861079596,
+      "seed42_coherence": 0.016411827877163887,
+      "seed43_coherence": 0.008307530544698238
+    },
+    {
+      "seed42_atom": 275,
+      "seed43_atom": 184,
+      "activation_correlation": 0.22803077835198002,
+      "seed42_coherence": 0.025022797286510468,
+      "seed43_coherence": 0.0723220482468605
+    },
+    {
+      "seed42_atom": 276,
+      "seed43_atom": 329,
+      "activation_correlation": 0.2768154463390187,
+      "seed42_coherence": 0.10528001934289932,
+      "seed43_coherence": 0.03744557872414589
+    },
+    {
+      "seed42_atom": 277,
+      "seed43_atom": 484,
+      "activation_correlation": 0.6196082690762973,
+      "seed42_coherence": 0.4018948972225189,
+      "seed43_coherence": 0.3010556697845459
+    },
+    {
+      "seed42_atom": 278,
+      "seed43_atom": 440,
+      "activation_correlation": 0.3249310589172875,
+      "seed42_coherence": 0.33349624276161194,
+      "seed43_coherence": 0.45166024565696716
+    },
+    {
+      "seed42_atom": 279,
+      "seed43_atom": 296,
+      "activation_correlation": 0.20471206800961503,
+      "seed42_coherence": 0.014043771661818027,
+      "seed43_coherence": 0.05870985612273216
+    },
+    {
+      "seed42_atom": 280,
+      "seed43_atom": 350,
+      "activation_correlation": 0.19842852516205972,
+      "seed42_coherence": 0.4267078638076782,
+      "seed43_coherence": 0.1686270833015442
+    },
+    {
+      "seed42_atom": 281,
+      "seed43_atom": 57,
+      "activation_correlation": -0.587619577066736,
+      "seed42_coherence": 0.015252550132572651,
+      "seed43_coherence": 0.01670905016362667
+    },
+    {
+      "seed42_atom": 282,
+      "seed43_atom": 428,
+      "activation_correlation": 0.08327048825218109,
+      "seed42_coherence": 0.027457524091005325,
+      "seed43_coherence": 0.4893864393234253
+    },
+    {
+      "seed42_atom": 283,
+      "seed43_atom": 46,
+      "activation_correlation": 0.5816210726549603,
+      "seed42_coherence": 0.2626696825027466,
+      "seed43_coherence": 0.24285392463207245
+    },
+    {
+      "seed42_atom": 284,
+      "seed43_atom": 270,
+      "activation_correlation": 0.29803361587264743,
+      "seed42_coherence": 0.010213173925876617,
+      "seed43_coherence": 0.026658356189727783
+    },
+    {
+      "seed42_atom": 285,
+      "seed43_atom": 356,
+      "activation_correlation": 0.32167916969938837,
+      "seed42_coherence": 0.05465767905116081,
+      "seed43_coherence": 0.06355897337198257
+    },
+    {
+      "seed42_atom": 286,
+      "seed43_atom": 181,
+      "activation_correlation": -0.3852155165879408,
+      "seed42_coherence": 0.08645655959844589,
+      "seed43_coherence": 0.06849395483732224
+    },
+    {
+      "seed42_atom": 287,
+      "seed43_atom": 142,
+      "activation_correlation": -0.017711689615337294,
+      "seed42_coherence": 0.08007796108722687,
+      "seed43_coherence": 0.018201887607574463
+    },
+    {
+      "seed42_atom": 288,
+      "seed43_atom": 132,
+      "activation_correlation": -0.15909194089218665,
+      "seed42_coherence": 0.00814936775714159,
+      "seed43_coherence": 0.026127006858587265
+    },
+    {
+      "seed42_atom": 289,
+      "seed43_atom": 461,
+      "activation_correlation": 0.21710062298851251,
+      "seed42_coherence": 0.44092342257499695,
+      "seed43_coherence": 0.3398295044898987
+    },
+    {
+      "seed42_atom": 290,
+      "seed43_atom": 164,
+      "activation_correlation": -0.3871312368815489,
+      "seed42_coherence": 0.12852142751216888,
+      "seed43_coherence": 0.14920371770858765
+    },
+    {
+      "seed42_atom": 291,
+      "seed43_atom": 29,
+      "activation_correlation": -0.0009245680496330959,
+      "seed42_coherence": 0.0774686336517334,
+      "seed43_coherence": 0.04726119339466095
+    },
+    {
+      "seed42_atom": 292,
+      "seed43_atom": 429,
+      "activation_correlation": -0.0025115413906807832,
+      "seed42_coherence": 0.07436411827802658,
+      "seed43_coherence": 0.0836755633354187
+    },
+    {
+      "seed42_atom": 293,
+      "seed43_atom": 258,
+      "activation_correlation": -0.8244537420986535,
+      "seed42_coherence": 0.7803424000740051,
+      "seed43_coherence": 0.7615419030189514
+    },
+    {
+      "seed42_atom": 294,
+      "seed43_atom": 367,
+      "activation_correlation": 0.36220981687897563,
+      "seed42_coherence": 0.09845545142889023,
+      "seed43_coherence": 0.1273311823606491
+    },
+    {
+      "seed42_atom": 295,
+      "seed43_atom": 250,
+      "activation_correlation": 0.8432697270030278,
+      "seed42_coherence": 0.011500726453959942,
+      "seed43_coherence": 0.04942169040441513
+    },
+    {
+      "seed42_atom": 296,
+      "seed43_atom": 351,
+      "activation_correlation": 0.16210049356357872,
+      "seed42_coherence": 0.05175284668803215,
+      "seed43_coherence": 0.029993129894137383
+    },
+    {
+      "seed42_atom": 297,
+      "seed43_atom": 457,
+      "activation_correlation": 0.2711726083593392,
+      "seed42_coherence": 0.18916712701320648,
+      "seed43_coherence": 0.19155263900756836
+    },
+    {
+      "seed42_atom": 298,
+      "seed43_atom": 256,
+      "activation_correlation": 0.2615081089983162,
+      "seed42_coherence": 0.08303729444742203,
+      "seed43_coherence": 0.12183203548192978
+    },
+    {
+      "seed42_atom": 299,
+      "seed43_atom": 265,
+      "activation_correlation": 0.3993442269851465,
+      "seed42_coherence": 0.09788811206817627,
+      "seed43_coherence": 0.10985935479402542
+    },
+    {
+      "seed42_atom": 300,
+      "seed43_atom": 130,
+      "activation_correlation": 0.7998900071325469,
+      "seed42_coherence": 0.2778221070766449,
+      "seed43_coherence": 0.28749215602874756
+    },
+    {
+      "seed42_atom": 301,
+      "seed43_atom": 362,
+      "activation_correlation": -0.6814014405817562,
+      "seed42_coherence": 0.2191258668899536,
+      "seed43_coherence": 0.2654752731323242
+    },
+    {
+      "seed42_atom": 302,
+      "seed43_atom": 123,
+      "activation_correlation": 0.3296262100209138,
+      "seed42_coherence": 0.00851820595562458,
+      "seed43_coherence": 0.23153968155384064
+    },
+    {
+      "seed42_atom": 303,
+      "seed43_atom": 70,
+      "activation_correlation": 0.10585888662262857,
+      "seed42_coherence": 0.0021740479860454798,
+      "seed43_coherence": 0.04381324723362923
+    },
+    {
+      "seed42_atom": 304,
+      "seed43_atom": 183,
+      "activation_correlation": -0.4483898111524306,
+      "seed42_coherence": 0.1777820736169815,
+      "seed43_coherence": 0.32482463121414185
+    },
+    {
+      "seed42_atom": 305,
+      "seed43_atom": 121,
+      "activation_correlation": -0.18246468064813343,
+      "seed42_coherence": 0.14862240850925446,
+      "seed43_coherence": 0.02681513875722885
+    },
+    {
+      "seed42_atom": 306,
+      "seed43_atom": 68,
+      "activation_correlation": -0.3881145751196665,
+      "seed42_coherence": 0.032906513661146164,
+      "seed43_coherence": 0.056811876595020294
+    },
+    {
+      "seed42_atom": 307,
+      "seed43_atom": 352,
+      "activation_correlation": 0.021491538684712833,
+      "seed42_coherence": 0.0839613601565361,
+      "seed43_coherence": 0.5487486720085144
+    },
+    {
+      "seed42_atom": 308,
+      "seed43_atom": 226,
+      "activation_correlation": 0.8452036567971819,
+      "seed42_coherence": 0.21520893275737762,
+      "seed43_coherence": 0.21671952307224274
+    },
+    {
+      "seed42_atom": 309,
+      "seed43_atom": 107,
+      "activation_correlation": -0.5066673581272028,
+      "seed42_coherence": 0.019064048305153847,
+      "seed43_coherence": 0.022312777116894722
+    },
+    {
+      "seed42_atom": 310,
+      "seed43_atom": 202,
+      "activation_correlation": 0.05197635562741188,
+      "seed42_coherence": 0.06264621764421463,
+      "seed43_coherence": 0.05587324500083923
+    },
+    {
+      "seed42_atom": 311,
+      "seed43_atom": 338,
+      "activation_correlation": 0.018197205322448607,
+      "seed42_coherence": 0.3110503852367401,
+      "seed43_coherence": 0.01530989445745945
+    },
+    {
+      "seed42_atom": 312,
+      "seed43_atom": 55,
+      "activation_correlation": 0.25250819545233627,
+      "seed42_coherence": 0.01753937266767025,
+      "seed43_coherence": 0.04487604275345802
+    },
+    {
+      "seed42_atom": 313,
+      "seed43_atom": 109,
+      "activation_correlation": -0.12339705901424836,
+      "seed42_coherence": 0.019723663106560707,
+      "seed43_coherence": 0.07073089480400085
+    },
+    {
+      "seed42_atom": 314,
+      "seed43_atom": 394,
+      "activation_correlation": 0.33363128067140563,
+      "seed42_coherence": 0.3316460847854614,
+      "seed43_coherence": 0.6794514060020447
+    },
+    {
+      "seed42_atom": 315,
+      "seed43_atom": 485,
+      "activation_correlation": 0.5169689546174834,
+      "seed42_coherence": 0.04696956276893616,
+      "seed43_coherence": 0.16156385838985443
+    },
+    {
+      "seed42_atom": 316,
+      "seed43_atom": 318,
+      "activation_correlation": 0.4010611853990603,
+      "seed42_coherence": 0.2255757749080658,
+      "seed43_coherence": 0.5057554841041565
+    },
+    {
+      "seed42_atom": 317,
+      "seed43_atom": 475,
+      "activation_correlation": -0.053715255333614875,
+      "seed42_coherence": 0.05011386796832085,
+      "seed43_coherence": 0.20990729331970215
+    },
+    {
+      "seed42_atom": 318,
+      "seed43_atom": 430,
+      "activation_correlation": 0.4495612524556231,
+      "seed42_coherence": 0.02937515638768673,
+      "seed43_coherence": 0.46870264410972595
+    },
+    {
+      "seed42_atom": 319,
+      "seed43_atom": 491,
+      "activation_correlation": -0.18675520551251926,
+      "seed42_coherence": 0.1439860463142395,
+      "seed43_coherence": 0.07796743512153625
+    },
+    {
+      "seed42_atom": 320,
+      "seed43_atom": 145,
+      "activation_correlation": 0.2502629426481951,
+      "seed42_coherence": 0.04772752895951271,
+      "seed43_coherence": 0.043430477380752563
+    },
+    {
+      "seed42_atom": 321,
+      "seed43_atom": 453,
+      "activation_correlation": 0.20472308877318324,
+      "seed42_coherence": 0.14879581332206726,
+      "seed43_coherence": 0.09936561435461044
+    },
+    {
+      "seed42_atom": 322,
+      "seed43_atom": 200,
+      "activation_correlation": -0.8467658474142999,
+      "seed42_coherence": 0.2269553691148758,
+      "seed43_coherence": 0.14315228164196014
+    },
+    {
+      "seed42_atom": 323,
+      "seed43_atom": 158,
+      "activation_correlation": 0.943870594284927,
+      "seed42_coherence": 0.14465400576591492,
+      "seed43_coherence": 0.15585827827453613
+    },
+    {
+      "seed42_atom": 324,
+      "seed43_atom": 278,
+      "activation_correlation": -0.26928887466390444,
+      "seed42_coherence": 0.013532144948840141,
+      "seed43_coherence": 0.039864398539066315
+    },
+    {
+      "seed42_atom": 325,
+      "seed43_atom": 223,
+      "activation_correlation": -0.062453451583822914,
+      "seed42_coherence": 0.03646853193640709,
+      "seed43_coherence": 0.01960630901157856
+    },
+    {
+      "seed42_atom": 326,
+      "seed43_atom": 85,
+      "activation_correlation": -0.11297798143722157,
+      "seed42_coherence": 0.03702760860323906,
+      "seed43_coherence": 0.11063491553068161
+    },
+    {
+      "seed42_atom": 327,
+      "seed43_atom": 424,
+      "activation_correlation": 0.27309066118974923,
+      "seed42_coherence": 0.07234928011894226,
+      "seed43_coherence": 0.06006119027733803
+    },
+    {
+      "seed42_atom": 328,
+      "seed43_atom": 11,
+      "activation_correlation": -0.19514488658088994,
+      "seed42_coherence": 0.15205517411231995,
+      "seed43_coherence": 0.022500550374388695
+    },
+    {
+      "seed42_atom": 329,
+      "seed43_atom": 470,
+      "activation_correlation": 0.6676524787708836,
+      "seed42_coherence": 0.075321726500988,
+      "seed43_coherence": 0.03886783868074417
+    },
+    {
+      "seed42_atom": 330,
+      "seed43_atom": 361,
+      "activation_correlation": 0.6999732990776183,
+      "seed42_coherence": 0.04865143448114395,
+      "seed43_coherence": 0.08052927255630493
+    },
+    {
+      "seed42_atom": 331,
+      "seed43_atom": 478,
+      "activation_correlation": 0.7178577182351012,
+      "seed42_coherence": 0.23835137486457825,
+      "seed43_coherence": 0.3231312930583954
+    },
+    {
+      "seed42_atom": 332,
+      "seed43_atom": 148,
+      "activation_correlation": -0.050665436389596995,
+      "seed42_coherence": 0.020061476156115532,
+      "seed43_coherence": 0.05490461736917496
+    },
+    {
+      "seed42_atom": 333,
+      "seed43_atom": 93,
+      "activation_correlation": 0.5914318966192883,
+      "seed42_coherence": 0.09777551144361496,
+      "seed43_coherence": 0.07932717353105545
+    },
+    {
+      "seed42_atom": 334,
+      "seed43_atom": 340,
+      "activation_correlation": 0.17138701607001125,
+      "seed42_coherence": 0.14371056854724884,
+      "seed43_coherence": 0.22542887926101685
+    },
+    {
+      "seed42_atom": 335,
+      "seed43_atom": 328,
+      "activation_correlation": -0.2569362666099201,
+      "seed42_coherence": 0.02865624614059925,
+      "seed43_coherence": 0.03035159222781658
+    },
+    {
+      "seed42_atom": 336,
+      "seed43_atom": 383,
+      "activation_correlation": 0.3123938456005242,
+      "seed42_coherence": 0.06419029086828232,
+      "seed43_coherence": 0.12977929413318634
+    },
+    {
+      "seed42_atom": 337,
+      "seed43_atom": 339,
+      "activation_correlation": 0.4090605075312341,
+      "seed42_coherence": 0.0421106293797493,
+      "seed43_coherence": 0.1999710649251938
+    },
+    {
+      "seed42_atom": 338,
+      "seed43_atom": 49,
+      "activation_correlation": -0.2545157063964332,
+      "seed42_coherence": 0.020354991778731346,
+      "seed43_coherence": 0.035384465008974075
+    },
+    {
+      "seed42_atom": 339,
+      "seed43_atom": 426,
+      "activation_correlation": 0.23939897011979266,
+      "seed42_coherence": 0.06658533215522766,
+      "seed43_coherence": 0.21546192467212677
+    },
+    {
+      "seed42_atom": 340,
+      "seed43_atom": 285,
+      "activation_correlation": 0.6416906133586723,
+      "seed42_coherence": 0.1708517223596573,
+      "seed43_coherence": 0.15899093449115753
+    },
+    {
+      "seed42_atom": 341,
+      "seed43_atom": 169,
+      "activation_correlation": -0.258345277123466,
+      "seed42_coherence": 0.00480590621009469,
+      "seed43_coherence": 0.037161439657211304
+    },
+    {
+      "seed42_atom": 342,
+      "seed43_atom": 304,
+      "activation_correlation": -0.28924907746784867,
+      "seed42_coherence": 0.151768758893013,
+      "seed43_coherence": 0.06536796689033508
+    },
+    {
+      "seed42_atom": 343,
+      "seed43_atom": 473,
+      "activation_correlation": 0.19757856147630765,
+      "seed42_coherence": 0.08893392235040665,
+      "seed43_coherence": 0.048301588743925095
+    },
+    {
+      "seed42_atom": 344,
+      "seed43_atom": 336,
+      "activation_correlation": 0.32056551852648707,
+      "seed42_coherence": 0.18731945753097534,
+      "seed43_coherence": 0.09235823899507523
+    },
+    {
+      "seed42_atom": 345,
+      "seed43_atom": 116,
+      "activation_correlation": 0.1601127278309652,
+      "seed42_coherence": 0.009203456342220306,
+      "seed43_coherence": 0.06208355724811554
+    },
+    {
+      "seed42_atom": 346,
+      "seed43_atom": 41,
+      "activation_correlation": -0.288455946395137,
+      "seed42_coherence": 0.08120348304510117,
+      "seed43_coherence": 0.06815026700496674
+    },
+    {
+      "seed42_atom": 347,
+      "seed43_atom": 246,
+      "activation_correlation": 0.5081023754089627,
+      "seed42_coherence": 0.6933442950248718,
+      "seed43_coherence": 0.6093764901161194
+    },
+    {
+      "seed42_atom": 348,
+      "seed43_atom": 206,
+      "activation_correlation": -0.2318109663199784,
+      "seed42_coherence": 0.07035920768976212,
+      "seed43_coherence": 0.056442879140377045
+    },
+    {
+      "seed42_atom": 349,
+      "seed43_atom": 51,
+      "activation_correlation": 0.585174824276974,
+      "seed42_coherence": 0.03297155350446701,
+      "seed43_coherence": 0.038137007504701614
+    },
+    {
+      "seed42_atom": 350,
+      "seed43_atom": 332,
+      "activation_correlation": -0.27070645064266874,
+      "seed42_coherence": 0.09764546900987625,
+      "seed43_coherence": 0.16541193425655365
+    },
+    {
+      "seed42_atom": 351,
+      "seed43_atom": 399,
+      "activation_correlation": 0.341425054678092,
+      "seed42_coherence": 0.06374898552894592,
+      "seed43_coherence": 0.12603415548801422
+    },
+    {
+      "seed42_atom": 352,
+      "seed43_atom": 433,
+      "activation_correlation": 0.8597472773675262,
+      "seed42_coherence": 0.27405083179473877,
+      "seed43_coherence": 0.3017151355743408
+    },
+    {
+      "seed42_atom": 353,
+      "seed43_atom": 124,
+      "activation_correlation": -0.4185184045946397,
+      "seed42_coherence": 0.19728818535804749,
+      "seed43_coherence": 0.1564185917377472
+    },
+    {
+      "seed42_atom": 354,
+      "seed43_atom": 476,
+      "activation_correlation": 0.48438953713478794,
+      "seed42_coherence": 0.1266196221113205,
+      "seed43_coherence": 0.11226637661457062
+    },
+    {
+      "seed42_atom": 355,
+      "seed43_atom": 172,
+      "activation_correlation": -0.7563970643821585,
+      "seed42_coherence": 0.0034803394228219986,
+      "seed43_coherence": 0.009335333481431007
+    },
+    {
+      "seed42_atom": 356,
+      "seed43_atom": 366,
+      "activation_correlation": 0.026177536395076334,
+      "seed42_coherence": 0.13627271354198456,
+      "seed43_coherence": 0.03701239824295044
+    },
+    {
+      "seed42_atom": 357,
+      "seed43_atom": 385,
+      "activation_correlation": -0.5641860016032908,
+      "seed42_coherence": 0.36430779099464417,
+      "seed43_coherence": 0.47714731097221375
+    },
+    {
+      "seed42_atom": 358,
+      "seed43_atom": 156,
+      "activation_correlation": 0.7985475915687437,
+      "seed42_coherence": 0.056748952716588974,
+      "seed43_coherence": 0.04447463899850845
+    },
+    {
+      "seed42_atom": 359,
+      "seed43_atom": 251,
+      "activation_correlation": 0.6159337903102939,
+      "seed42_coherence": 0.3236161768436432,
+      "seed43_coherence": 0.2579728066921234
+    },
+    {
+      "seed42_atom": 360,
+      "seed43_atom": 287,
+      "activation_correlation": 0.11388515747061782,
+      "seed42_coherence": 0.05034366250038147,
+      "seed43_coherence": 0.019340423867106438
+    },
+    {
+      "seed42_atom": 361,
+      "seed43_atom": 33,
+      "activation_correlation": 0.4685204099395089,
+      "seed42_coherence": 0.23665787279605865,
+      "seed43_coherence": 0.16422052681446075
+    },
+    {
+      "seed42_atom": 362,
+      "seed43_atom": 363,
+      "activation_correlation": 0.5924231574261279,
+      "seed42_coherence": 0.21410098671913147,
+      "seed43_coherence": 0.22780464589595795
+    },
+    {
+      "seed42_atom": 363,
+      "seed43_atom": 134,
+      "activation_correlation": 0.39303137574077623,
+      "seed42_coherence": 0.15317149460315704,
+      "seed43_coherence": 0.04775349795818329
+    },
+    {
+      "seed42_atom": 364,
+      "seed43_atom": 38,
+      "activation_correlation": 0.6437771806189678,
+      "seed42_coherence": 0.021525995805859566,
+      "seed43_coherence": 0.033836234360933304
+    },
+    {
+      "seed42_atom": 365,
+      "seed43_atom": 364,
+      "activation_correlation": 0.7980096050827062,
+      "seed42_coherence": 0.3172760307788849,
+      "seed43_coherence": 0.2727561295032501
+    },
+    {
+      "seed42_atom": 366,
+      "seed43_atom": 380,
+      "activation_correlation": 0.5829441011494731,
+      "seed42_coherence": 0.277171790599823,
+      "seed43_coherence": 0.27893367409706116
+    },
+    {
+      "seed42_atom": 367,
+      "seed43_atom": 462,
+      "activation_correlation": -0.37297994755588093,
+      "seed42_coherence": 0.07808278501033783,
+      "seed43_coherence": 0.098698191344738
+    },
+    {
+      "seed42_atom": 368,
+      "seed43_atom": 341,
+      "activation_correlation": 0.5812667167959849,
+      "seed42_coherence": 0.20501403510570526,
+      "seed43_coherence": 0.3848456144332886
+    },
+    {
+      "seed42_atom": 369,
+      "seed43_atom": 188,
+      "activation_correlation": -0.4347867192557662,
+      "seed42_coherence": 0.11881832033395767,
+      "seed43_coherence": 0.16419917345046997
+    },
+    {
+      "seed42_atom": 370,
+      "seed43_atom": 99,
+      "activation_correlation": -0.14889462394907477,
+      "seed42_coherence": 0.05325223505496979,
+      "seed43_coherence": 0.20049725472927094
+    },
+    {
+      "seed42_atom": 371,
+      "seed43_atom": 171,
+      "activation_correlation": 0.1376339543285075,
+      "seed42_coherence": 0.24748115241527557,
+      "seed43_coherence": 0.13697630167007446
+    },
+    {
+      "seed42_atom": 372,
+      "seed43_atom": 313,
+      "activation_correlation": 0.08033304025337662,
+      "seed42_coherence": 0.012952274642884731,
+      "seed43_coherence": 0.27936282753944397
+    },
+    {
+      "seed42_atom": 373,
+      "seed43_atom": 190,
+      "activation_correlation": 0.6345524205590172,
+      "seed42_coherence": 0.03567258641123772,
+      "seed43_coherence": 0.01849520392715931
+    },
+    {
+      "seed42_atom": 374,
+      "seed43_atom": 207,
+      "activation_correlation": 0.6709909740150798,
+      "seed42_coherence": 0.1781896948814392,
+      "seed43_coherence": 0.1583613157272339
+    },
+    {
+      "seed42_atom": 375,
+      "seed43_atom": 86,
+      "activation_correlation": 0.3504669978217396,
+      "seed42_coherence": 0.09589747339487076,
+      "seed43_coherence": 0.11923734843730927
+    },
+    {
+      "seed42_atom": 376,
+      "seed43_atom": 249,
+      "activation_correlation": -0.8386141739525759,
+      "seed42_coherence": 0.15247206389904022,
+      "seed43_coherence": 0.10221057385206223
+    },
+    {
+      "seed42_atom": 377,
+      "seed43_atom": 163,
+      "activation_correlation": 0.7675779556364226,
+      "seed42_coherence": 0.07543366402387619,
+      "seed43_coherence": 0.11000866442918777
+    },
+    {
+      "seed42_atom": 378,
+      "seed43_atom": 64,
+      "activation_correlation": 0.1189285450367918,
+      "seed42_coherence": 0.049023810774087906,
+      "seed43_coherence": 0.038545217365026474
+    },
+    {
+      "seed42_atom": 379,
+      "seed43_atom": 386,
+      "activation_correlation": 0.19759072263295963,
+      "seed42_coherence": 0.06331875175237656,
+      "seed43_coherence": 0.025462206453084946
+    },
+    {
+      "seed42_atom": 380,
+      "seed43_atom": 35,
+      "activation_correlation": 0.5360538143602129,
+      "seed42_coherence": 0.1429978609085083,
+      "seed43_coherence": 0.11311157792806625
+    },
+    {
+      "seed42_atom": 381,
+      "seed43_atom": 454,
+      "activation_correlation": 0.19232105340275552,
+      "seed42_coherence": 0.11096948385238647,
+      "seed43_coherence": 0.28307175636291504
+    },
+    {
+      "seed42_atom": 382,
+      "seed43_atom": 398,
+      "activation_correlation": 0.7268983172943388,
+      "seed42_coherence": 0.17487896978855133,
+      "seed43_coherence": 0.20610220730304718
+    },
+    {
+      "seed42_atom": 383,
+      "seed43_atom": 439,
+      "activation_correlation": -0.16406136415802366,
+      "seed42_coherence": 0.00830695778131485,
+      "seed43_coherence": 0.017697401344776154
+    },
+    {
+      "seed42_atom": 384,
+      "seed43_atom": 422,
+      "activation_correlation": -0.6079292862955084,
+      "seed42_coherence": 0.030754029750823975,
+      "seed43_coherence": 0.011857954785227776
+    },
+    {
+      "seed42_atom": 385,
+      "seed43_atom": 369,
+      "activation_correlation": -0.7305798338485592,
+      "seed42_coherence": 0.19113689661026,
+      "seed43_coherence": 0.19361518323421478
+    },
+    {
+      "seed42_atom": 386,
+      "seed43_atom": 253,
+      "activation_correlation": 0.40562921072454855,
+      "seed42_coherence": 0.0347701720893383,
+      "seed43_coherence": 0.018572300672531128
+    },
+    {
+      "seed42_atom": 387,
+      "seed43_atom": 7,
+      "activation_correlation": 0.29675152115273823,
+      "seed42_coherence": 0.11148865520954132,
+      "seed43_coherence": 0.14207136631011963
+    },
+    {
+      "seed42_atom": 388,
+      "seed43_atom": 178,
+      "activation_correlation": 0.5019925588708696,
+      "seed42_coherence": 0.07795745134353638,
+      "seed43_coherence": 0.11414333432912827
+    },
+    {
+      "seed42_atom": 389,
+      "seed43_atom": 13,
+      "activation_correlation": 0.7531112623932865,
+      "seed42_coherence": 0.0458584725856781,
+      "seed43_coherence": 0.230475053191185
+    },
+    {
+      "seed42_atom": 390,
+      "seed43_atom": 34,
+      "activation_correlation": 0.45443917818924506,
+      "seed42_coherence": 0.08778098225593567,
+      "seed43_coherence": 0.04120011255145073
+    },
+    {
+      "seed42_atom": 391,
+      "seed43_atom": 119,
+      "activation_correlation": 0.9344913391004238,
+      "seed42_coherence": 0.05810847133398056,
+      "seed43_coherence": 0.12978918850421906
+    },
+    {
+      "seed42_atom": 392,
+      "seed43_atom": 279,
+      "activation_correlation": 0.49395919410847944,
+      "seed42_coherence": 0.11183714866638184,
+      "seed43_coherence": 0.1379401832818985
+    },
+    {
+      "seed42_atom": 393,
+      "seed43_atom": 139,
+      "activation_correlation": 0.7273810327447234,
+      "seed42_coherence": 0.15440548956394196,
+      "seed43_coherence": 0.16167238354682922
+    },
+    {
+      "seed42_atom": 394,
+      "seed43_atom": 197,
+      "activation_correlation": 0.7076764311737075,
+      "seed42_coherence": 0.07333537936210632,
+      "seed43_coherence": 0.09342615306377411
+    },
+    {
+      "seed42_atom": 395,
+      "seed43_atom": 489,
+      "activation_correlation": 0.3300499063061245,
+      "seed42_coherence": 0.19810634851455688,
+      "seed43_coherence": 0.07369303703308105
+    },
+    {
+      "seed42_atom": 396,
+      "seed43_atom": 297,
+      "activation_correlation": 0.5578105503914057,
+      "seed42_coherence": 0.1700783371925354,
+      "seed43_coherence": 0.2748793363571167
+    },
+    {
+      "seed42_atom": 397,
+      "seed43_atom": 437,
+      "activation_correlation": 0.31701782732708383,
+      "seed42_coherence": 0.13004031777381897,
+      "seed43_coherence": 0.23053041100502014
+    },
+    {
+      "seed42_atom": 398,
+      "seed43_atom": 497,
+      "activation_correlation": -0.06658545955352801,
+      "seed42_coherence": 0.0177841205149889,
+      "seed43_coherence": 0.4730844497680664
+    },
+    {
+      "seed42_atom": 399,
+      "seed43_atom": 210,
+      "activation_correlation": 0.22205039066142074,
+      "seed42_coherence": 0.09579085558652878,
+      "seed43_coherence": 0.04833114892244339
+    },
+    {
+      "seed42_atom": 400,
+      "seed43_atom": 2,
+      "activation_correlation": 0.3010204760831611,
+      "seed42_coherence": 0.022844742983579636,
+      "seed43_coherence": 0.4514693021774292
+    },
+    {
+      "seed42_atom": 401,
+      "seed43_atom": 358,
+      "activation_correlation": 0.17620912867542887,
+      "seed42_coherence": 0.005991403479129076,
+      "seed43_coherence": 0.030709467828273773
+    },
+    {
+      "seed42_atom": 402,
+      "seed43_atom": 22,
+      "activation_correlation": 0.24357194303610624,
+      "seed42_coherence": 0.03649808466434479,
+      "seed43_coherence": 0.006627747323364019
+    },
+    {
+      "seed42_atom": 403,
+      "seed43_atom": 344,
+      "activation_correlation": -0.3103515764805569,
+      "seed42_coherence": 0.11519017815589905,
+      "seed43_coherence": 0.03746115788817406
+    },
+    {
+      "seed42_atom": 404,
+      "seed43_atom": 382,
+      "activation_correlation": 0.20219437671920204,
+      "seed42_coherence": 0.18035848438739777,
+      "seed43_coherence": 0.10832033306360245
+    },
+    {
+      "seed42_atom": 405,
+      "seed43_atom": 44,
+      "activation_correlation": 0.19042917289230743,
+      "seed42_coherence": 0.09966451674699783,
+      "seed43_coherence": 0.2410544604063034
+    },
+    {
+      "seed42_atom": 406,
+      "seed43_atom": 235,
+      "activation_correlation": 0.7220324873425639,
+      "seed42_coherence": 0.09817807376384735,
+      "seed43_coherence": 0.12416063249111176
+    },
+    {
+      "seed42_atom": 407,
+      "seed43_atom": 219,
+      "activation_correlation": 0.4064100052287524,
+      "seed42_coherence": 0.03958246856927872,
+      "seed43_coherence": 0.0438617542386055
+    },
+    {
+      "seed42_atom": 408,
+      "seed43_atom": 151,
+      "activation_correlation": 0.3108544553810006,
+      "seed42_coherence": 0.15945717692375183,
+      "seed43_coherence": 0.09469921886920929
+    },
+    {
+      "seed42_atom": 409,
+      "seed43_atom": 415,
+      "activation_correlation": 0.33123353256841936,
+      "seed42_coherence": 0.029284847900271416,
+      "seed43_coherence": 0.21263059973716736
+    },
+    {
+      "seed42_atom": 410,
+      "seed43_atom": 176,
+      "activation_correlation": 0.12459941845356712,
+      "seed42_coherence": 0.0028499579057097435,
+      "seed43_coherence": 0.0404629223048687
+    },
+    {
+      "seed42_atom": 411,
+      "seed43_atom": 28,
+      "activation_correlation": -0.03060655618624229,
+      "seed42_coherence": 0.06704305112361908,
+      "seed43_coherence": 0.26733827590942383
+    },
+    {
+      "seed42_atom": 412,
+      "seed43_atom": 165,
+      "activation_correlation": 0.6720458830500957,
+      "seed42_coherence": 0.08525250107049942,
+      "seed43_coherence": 0.21867810189723969
+    },
+    {
+      "seed42_atom": 413,
+      "seed43_atom": 59,
+      "activation_correlation": 0.0006828664018414517,
+      "seed42_coherence": 0.05120251700282097,
+      "seed43_coherence": 0.08676837384700775
+    },
+    {
+      "seed42_atom": 414,
+      "seed43_atom": 467,
+      "activation_correlation": 0.6881407819380096,
+      "seed42_coherence": 0.30109903216362,
+      "seed43_coherence": 0.3704398274421692
+    },
+    {
+      "seed42_atom": 415,
+      "seed43_atom": 389,
+      "activation_correlation": 0.1453187471082635,
+      "seed42_coherence": 0.21835583448410034,
+      "seed43_coherence": 0.05216781049966812
+    },
+    {
+      "seed42_atom": 416,
+      "seed43_atom": 460,
+      "activation_correlation": 0.7919656228845973,
+      "seed42_coherence": 0.37732046842575073,
+      "seed43_coherence": 0.4371561110019684
+    },
+    {
+      "seed42_atom": 417,
+      "seed43_atom": 54,
+      "activation_correlation": 0.2436578967569843,
+      "seed42_coherence": 0.030624644830822945,
+      "seed43_coherence": 0.06345608830451965
+    },
+    {
+      "seed42_atom": 418,
+      "seed43_atom": 177,
+      "activation_correlation": -0.9492290702205147,
+      "seed42_coherence": 0.1372484266757965,
+      "seed43_coherence": 0.17619964480400085
+    },
+    {
+      "seed42_atom": 419,
+      "seed43_atom": 209,
+      "activation_correlation": 0.4011061781206429,
+      "seed42_coherence": 0.01631343550980091,
+      "seed43_coherence": 0.009469084441661835
+    },
+    {
+      "seed42_atom": 420,
+      "seed43_atom": 146,
+      "activation_correlation": -0.9762545521256136,
+      "seed42_coherence": 0.07203685492277145,
+      "seed43_coherence": 0.0613839291036129
+    },
+    {
+      "seed42_atom": 421,
+      "seed43_atom": 230,
+      "activation_correlation": -0.34647144846844363,
+      "seed42_coherence": 0.17157265543937683,
+      "seed43_coherence": 0.07450459897518158
+    },
+    {
+      "seed42_atom": 422,
+      "seed43_atom": 281,
+      "activation_correlation": -0.2559532123103052,
+      "seed42_coherence": 0.027738966047763824,
+      "seed43_coherence": 0.01182568445801735
+    },
+    {
+      "seed42_atom": 423,
+      "seed43_atom": 260,
+      "activation_correlation": 0.7819191967287928,
+      "seed42_coherence": 0.19067035615444183,
+      "seed43_coherence": 0.20233814418315887
+    },
+    {
+      "seed42_atom": 424,
+      "seed43_atom": 498,
+      "activation_correlation": 0.2208761105463555,
+      "seed42_coherence": 0.06087497994303703,
+      "seed43_coherence": 0.10864486545324326
+    },
+    {
+      "seed42_atom": 425,
+      "seed43_atom": 20,
+      "activation_correlation": -0.39513484863498716,
+      "seed42_coherence": 0.05551569163799286,
+      "seed43_coherence": 0.014741802588105202
+    },
+    {
+      "seed42_atom": 426,
+      "seed43_atom": 408,
+      "activation_correlation": 0.6936891355148966,
+      "seed42_coherence": 0.2691092789173126,
+      "seed43_coherence": 0.21908286213874817
+    },
+    {
+      "seed42_atom": 427,
+      "seed43_atom": 412,
+      "activation_correlation": 0.7251444608503913,
+      "seed42_coherence": 0.14670784771442413,
+      "seed43_coherence": 0.13511936366558075
+    },
+    {
+      "seed42_atom": 428,
+      "seed43_atom": 331,
+      "activation_correlation": 0.773097951720037,
+      "seed42_coherence": 0.3459099531173706,
+      "seed43_coherence": 0.4063335657119751
+    },
+    {
+      "seed42_atom": 429,
+      "seed43_atom": 393,
+      "activation_correlation": 0.8052759949460682,
+      "seed42_coherence": 0.3782366216182709,
+      "seed43_coherence": 0.4201321303844452
+    },
+    {
+      "seed42_atom": 430,
+      "seed43_atom": 391,
+      "activation_correlation": -0.1315428700779569,
+      "seed42_coherence": 0.02337312139570713,
+      "seed43_coherence": 0.034717656672000885
+    },
+    {
+      "seed42_atom": 431,
+      "seed43_atom": 464,
+      "activation_correlation": 0.9744418158611357,
+      "seed42_coherence": 0.28741776943206787,
+      "seed43_coherence": 0.32015877962112427
+    },
+    {
+      "seed42_atom": 432,
+      "seed43_atom": 392,
+      "activation_correlation": 0.40381092344915026,
+      "seed42_coherence": 0.16115215420722961,
+      "seed43_coherence": 0.1891491562128067
+    },
+    {
+      "seed42_atom": 433,
+      "seed43_atom": 159,
+      "activation_correlation": 0.4208657187103796,
+      "seed42_coherence": 0.14454548060894012,
+      "seed43_coherence": 0.09395384788513184
+    },
+    {
+      "seed42_atom": 434,
+      "seed43_atom": 463,
+      "activation_correlation": 0.6741136741769366,
+      "seed42_coherence": 0.2950514256954193,
+      "seed43_coherence": 0.4006462097167969
+    },
+    {
+      "seed42_atom": 435,
+      "seed43_atom": 492,
+      "activation_correlation": 0.5455076863208757,
+      "seed42_coherence": 0.6805359125137329,
+      "seed43_coherence": 0.3984915614128113
+    },
+    {
+      "seed42_atom": 436,
+      "seed43_atom": 16,
+      "activation_correlation": -0.13789801776543936,
+      "seed42_coherence": 0.02986149862408638,
+      "seed43_coherence": 0.12568628787994385
+    },
+    {
+      "seed42_atom": 437,
+      "seed43_atom": 215,
+      "activation_correlation": 0.571788923160067,
+      "seed42_coherence": 0.2930346131324768,
+      "seed43_coherence": 0.3235098421573639
+    },
+    {
+      "seed42_atom": 438,
+      "seed43_atom": 268,
+      "activation_correlation": -0.0785131289341573,
+      "seed42_coherence": 0.14415058493614197,
+      "seed43_coherence": 0.025654440745711327
+    },
+    {
+      "seed42_atom": 439,
+      "seed43_atom": 192,
+      "activation_correlation": 0.14294432597798087,
+      "seed42_coherence": 0.11446748673915863,
+      "seed43_coherence": 0.12903673946857452
+    },
+    {
+      "seed42_atom": 440,
+      "seed43_atom": 240,
+      "activation_correlation": 0.582520439106836,
+      "seed42_coherence": 0.3121165931224823,
+      "seed43_coherence": 0.36976897716522217
+    },
+    {
+      "seed42_atom": 441,
+      "seed43_atom": 469,
+      "activation_correlation": 0.22060130581445087,
+      "seed42_coherence": 0.23068174719810486,
+      "seed43_coherence": 0.07647936791181564
+    },
+    {
+      "seed42_atom": 442,
+      "seed43_atom": 359,
+      "activation_correlation": 0.08575642134998386,
+      "seed42_coherence": 0.01620796136558056,
+      "seed43_coherence": 0.032963793724775314
+    },
+    {
+      "seed42_atom": 443,
+      "seed43_atom": 406,
+      "activation_correlation": 0.5169229520765304,
+      "seed42_coherence": 0.30609023571014404,
+      "seed43_coherence": 0.3742939531803131
+    },
+    {
+      "seed42_atom": 444,
+      "seed43_atom": 446,
+      "activation_correlation": -0.16765707867740912,
+      "seed42_coherence": 0.035217348486185074,
+      "seed43_coherence": 0.14541073143482208
+    },
+    {
+      "seed42_atom": 445,
+      "seed43_atom": 325,
+      "activation_correlation": 0.7402763661354985,
+      "seed42_coherence": 0.3204750716686249,
+      "seed43_coherence": 0.37216800451278687
+    },
+    {
+      "seed42_atom": 446,
+      "seed43_atom": 378,
+      "activation_correlation": 0.9742766919152491,
+      "seed42_coherence": 0.22351869940757751,
+      "seed43_coherence": 0.14448542892932892
+    },
+    {
+      "seed42_atom": 447,
+      "seed43_atom": 312,
+      "activation_correlation": 0.13907714088913928,
+      "seed42_coherence": 0.03964260593056679,
+      "seed43_coherence": 0.04787988215684891
+    },
+    {
+      "seed42_atom": 448,
+      "seed43_atom": 468,
+      "activation_correlation": 0.3483754112997765,
+      "seed42_coherence": 0.07199139147996902,
+      "seed43_coherence": 0.11882130801677704
+    },
+    {
+      "seed42_atom": 449,
+      "seed43_atom": 374,
+      "activation_correlation": 0.24278422180867212,
+      "seed42_coherence": 0.08099761605262756,
+      "seed43_coherence": 0.04024674743413925
+    },
+    {
+      "seed42_atom": 450,
+      "seed43_atom": 294,
+      "activation_correlation": 0.36774019697494204,
+      "seed42_coherence": 0.037508297711610794,
+      "seed43_coherence": 0.018306836485862732
+    },
+    {
+      "seed42_atom": 451,
+      "seed43_atom": 229,
+      "activation_correlation": -0.020383871190256225,
+      "seed42_coherence": 0.09125804901123047,
+      "seed43_coherence": 0.0561998151242733
+    },
+    {
+      "seed42_atom": 452,
+      "seed43_atom": 413,
+      "activation_correlation": 0.6141266399140642,
+      "seed42_coherence": 0.19640785455703735,
+      "seed43_coherence": 0.127008318901062
+    },
+    {
+      "seed42_atom": 453,
+      "seed43_atom": 174,
+      "activation_correlation": -0.6913294438317987,
+      "seed42_coherence": 0.1999000608921051,
+      "seed43_coherence": 0.21328763663768768
+    },
+    {
+      "seed42_atom": 454,
+      "seed43_atom": 298,
+      "activation_correlation": 0.15405064804631755,
+      "seed42_coherence": 0.1660451740026474,
+      "seed43_coherence": 0.18954087793827057
+    },
+    {
+      "seed42_atom": 455,
+      "seed43_atom": 25,
+      "activation_correlation": 0.08538708656719793,
+      "seed42_coherence": 0.02018243446946144,
+      "seed43_coherence": 0.026967469602823257
+    },
+    {
+      "seed42_atom": 456,
+      "seed43_atom": 349,
+      "activation_correlation": -0.8909171254811632,
+      "seed42_coherence": 0.051712919026613235,
+      "seed43_coherence": 0.07060989737510681
+    },
+    {
+      "seed42_atom": 457,
+      "seed43_atom": 425,
+      "activation_correlation": 0.375308349178821,
+      "seed42_coherence": 0.1429028958082199,
+      "seed43_coherence": 0.24237096309661865
+    },
+    {
+      "seed42_atom": 458,
+      "seed43_atom": 327,
+      "activation_correlation": 0.7428713817570065,
+      "seed42_coherence": 0.03485436365008354,
+      "seed43_coherence": 0.07266965508460999
+    },
+    {
+      "seed42_atom": 459,
+      "seed43_atom": 106,
+      "activation_correlation": -0.44394999648930755,
+      "seed42_coherence": 0.022393640130758286,
+      "seed43_coherence": 0.016393957659602165
+    },
+    {
+      "seed42_atom": 460,
+      "seed43_atom": 275,
+      "activation_correlation": 0.3329802919427091,
+      "seed42_coherence": 0.15643638372421265,
+      "seed43_coherence": 0.12346429377794266
+    },
+    {
+      "seed42_atom": 461,
+      "seed43_atom": 236,
+      "activation_correlation": 0.8124818638197978,
+      "seed42_coherence": 0.393044114112854,
+      "seed43_coherence": 0.4297148883342743
+    },
+    {
+      "seed42_atom": 462,
+      "seed43_atom": 221,
+      "activation_correlation": 0.18791597382922548,
+      "seed42_coherence": 0.11894989013671875,
+      "seed43_coherence": 0.1349756419658661
+    },
+    {
+      "seed42_atom": 463,
+      "seed43_atom": 98,
+      "activation_correlation": 0.21949711625307816,
+      "seed42_coherence": 0.10237583518028259,
+      "seed43_coherence": 0.09992675483226776
+    },
+    {
+      "seed42_atom": 464,
+      "seed43_atom": 371,
+      "activation_correlation": 0.5105087066878067,
+      "seed42_coherence": 0.1320798099040985,
+      "seed43_coherence": 0.20979396998882294
+    },
+    {
+      "seed42_atom": 465,
+      "seed43_atom": 170,
+      "activation_correlation": 0.13447478974873608,
+      "seed42_coherence": 0.11441409587860107,
+      "seed43_coherence": 0.008185510523617268
+    },
+    {
+      "seed42_atom": 466,
+      "seed43_atom": 195,
+      "activation_correlation": 0.6285959894259359,
+      "seed42_coherence": 0.5357643365859985,
+      "seed43_coherence": 0.49787208437919617
+    },
+    {
+      "seed42_atom": 467,
+      "seed43_atom": 17,
+      "activation_correlation": -0.7511397688449182,
+      "seed42_coherence": 0.06577682495117188,
+      "seed43_coherence": 0.10411226004362106
+    },
+    {
+      "seed42_atom": 468,
+      "seed43_atom": 137,
+      "activation_correlation": 0.5150516427352028,
+      "seed42_coherence": 0.18586215376853943,
+      "seed43_coherence": 0.15341763198375702
+    },
+    {
+      "seed42_atom": 469,
+      "seed43_atom": 110,
+      "activation_correlation": -0.5093090318821651,
+      "seed42_coherence": 0.08656727522611618,
+      "seed43_coherence": 0.036776017397642136
+    },
+    {
+      "seed42_atom": 470,
+      "seed43_atom": 335,
+      "activation_correlation": 0.43463801301283134,
+      "seed42_coherence": 0.3516695499420166,
+      "seed43_coherence": 0.4611385464668274
+    },
+    {
+      "seed42_atom": 471,
+      "seed43_atom": 84,
+      "activation_correlation": 0.47541567875835106,
+      "seed42_coherence": 0.0058179027400910854,
+      "seed43_coherence": 0.01318014319986105
+    },
+    {
+      "seed42_atom": 472,
+      "seed43_atom": 448,
+      "activation_correlation": 0.19677203858098025,
+      "seed42_coherence": 0.06825267523527145,
+      "seed43_coherence": 0.0768265649676323
+    },
+    {
+      "seed42_atom": 473,
+      "seed43_atom": 377,
+      "activation_correlation": -0.34824851018440384,
+      "seed42_coherence": 0.08065669238567352,
+      "seed43_coherence": 0.03481036052107811
+    },
+    {
+      "seed42_atom": 474,
+      "seed43_atom": 316,
+      "activation_correlation": 0.6447042874453904,
+      "seed42_coherence": 0.34775811433792114,
+      "seed43_coherence": 0.2991407811641693
+    },
+    {
+      "seed42_atom": 475,
+      "seed43_atom": 83,
+      "activation_correlation": 0.17458337397049353,
+      "seed42_coherence": 0.040366362780332565,
+      "seed43_coherence": 0.10019547492265701
+    },
+    {
+      "seed42_atom": 476,
+      "seed43_atom": 435,
+      "activation_correlation": -0.5716143152049922,
+      "seed42_coherence": 0.21902067959308624,
+      "seed43_coherence": 0.33379417657852173
+    },
+    {
+      "seed42_atom": 477,
+      "seed43_atom": 319,
+      "activation_correlation": -0.5019274222064166,
+      "seed42_coherence": 0.2484925091266632,
+      "seed43_coherence": 0.21536237001419067
+    },
+    {
+      "seed42_atom": 478,
+      "seed43_atom": 301,
+      "activation_correlation": 0.40593278174997827,
+      "seed42_coherence": 0.23602727055549622,
+      "seed43_coherence": 0.19425445795059204
+    },
+    {
+      "seed42_atom": 479,
+      "seed43_atom": 403,
+      "activation_correlation": 0.668905348202384,
+      "seed42_coherence": 0.1887589544057846,
+      "seed43_coherence": 0.20828552544116974
+    },
+    {
+      "seed42_atom": 480,
+      "seed43_atom": 154,
+      "activation_correlation": 0.07695886696252538,
+      "seed42_coherence": 0.07286303490400314,
+      "seed43_coherence": 0.06488392502069473
+    },
+    {
+      "seed42_atom": 481,
+      "seed43_atom": 295,
+      "activation_correlation": 0.7825831790756328,
+      "seed42_coherence": 0.1517949104309082,
+      "seed43_coherence": 0.17191101610660553
+    },
+    {
+      "seed42_atom": 482,
+      "seed43_atom": 407,
+      "activation_correlation": 0.5113717928833783,
+      "seed42_coherence": 0.3687271475791931,
+      "seed43_coherence": 0.4671909213066101
+    },
+    {
+      "seed42_atom": 483,
+      "seed43_atom": 166,
+      "activation_correlation": 0.3900698640162424,
+      "seed42_coherence": 0.1056428924202919,
+      "seed43_coherence": 0.08453229814767838
+    },
+    {
+      "seed42_atom": 484,
+      "seed43_atom": 282,
+      "activation_correlation": 0.32753296154438144,
+      "seed42_coherence": 0.06648601591587067,
+      "seed43_coherence": 0.054146915674209595
+    },
+    {
+      "seed42_atom": 485,
+      "seed43_atom": 101,
+      "activation_correlation": -0.501396170860516,
+      "seed42_coherence": 0.06961596757173538,
+      "seed43_coherence": 0.026471715420484543
+    },
+    {
+      "seed42_atom": 486,
+      "seed43_atom": 131,
+      "activation_correlation": -0.16048201382188207,
+      "seed42_coherence": 0.006996201351284981,
+      "seed43_coherence": 0.012719796039164066
+    },
+    {
+      "seed42_atom": 487,
+      "seed43_atom": 353,
+      "activation_correlation": 0.4873202775160381,
+      "seed42_coherence": 0.15918217599391937,
+      "seed43_coherence": 0.22867099940776825
+    },
+    {
+      "seed42_atom": 488,
+      "seed43_atom": 474,
+      "activation_correlation": 0.19889759672642704,
+      "seed42_coherence": 0.05018416792154312,
+      "seed43_coherence": 0.09997644275426865
+    },
+    {
+      "seed42_atom": 489,
+      "seed43_atom": 482,
+      "activation_correlation": 0.24220144406162297,
+      "seed42_coherence": 0.08703616261482239,
+      "seed43_coherence": 0.1747930645942688
+    },
+    {
+      "seed42_atom": 490,
+      "seed43_atom": 486,
+      "activation_correlation": 0.17767880037309122,
+      "seed42_coherence": 0.10482434928417206,
+      "seed43_coherence": 0.16014058887958527
+    },
+    {
+      "seed42_atom": 491,
+      "seed43_atom": 238,
+      "activation_correlation": 0.6677942266828014,
+      "seed42_coherence": 0.08665920048952103,
+      "seed43_coherence": 0.042599502950906754
+    },
+    {
+      "seed42_atom": 492,
+      "seed43_atom": 432,
+      "activation_correlation": 0.7544874883036786,
+      "seed42_coherence": 0.43885722756385803,
+      "seed43_coherence": 0.5445863604545593
+    },
+    {
+      "seed42_atom": 493,
+      "seed43_atom": 354,
+      "activation_correlation": -0.1626902014176992,
+      "seed42_coherence": 0.01940152980387211,
+      "seed43_coherence": 0.026542289182543755
+    },
+    {
+      "seed42_atom": 494,
+      "seed43_atom": 266,
+      "activation_correlation": 0.10463603917285581,
+      "seed42_coherence": 0.08352135121822357,
+      "seed43_coherence": 0.017045481130480766
+    },
+    {
+      "seed42_atom": 495,
+      "seed43_atom": 18,
+      "activation_correlation": -0.5577624702655126,
+      "seed42_coherence": 0.010847730562090874,
+      "seed43_coherence": 0.022273801267147064
+    },
+    {
+      "seed42_atom": 496,
+      "seed43_atom": 396,
+      "activation_correlation": 0.18660810479900014,
+      "seed42_coherence": 0.1538587510585785,
+      "seed43_coherence": 0.06734992563724518
+    },
+    {
+      "seed42_atom": 497,
+      "seed43_atom": 37,
+      "activation_correlation": 0.7992242761564923,
+      "seed42_coherence": 0.24012622237205505,
+      "seed43_coherence": 0.1980089247226715
+    },
+    {
+      "seed42_atom": 498,
+      "seed43_atom": 67,
+      "activation_correlation": -0.9046977576766543,
+      "seed42_coherence": 0.04298461228609085,
+      "seed43_coherence": 0.11082300543785095
+    },
+    {
+      "seed42_atom": 499,
+      "seed43_atom": 232,
+      "activation_correlation": 0.34656119234082217,
+      "seed42_coherence": 0.10620661079883575,
+      "seed43_coherence": 0.01534655224531889
+    }
+  ]
+}

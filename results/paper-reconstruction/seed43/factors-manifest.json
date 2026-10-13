@@ -1,0 +1,19 @@
+{
+  "stage": "factors",
+  "started_unix": 1791870307.7348382,
+  "completed_unix": 1791871846.226532,
+  "plan_sha256": "4a8cf88610452435a86daa89c4a37a35daecec807912b38abe60214515c22480",
+  "files_sha256": {
+    "factors/paper_ekfac/factors_training/activation_covariance.safetensors": "83f1a18b6dc5a242a6df1278a62d23337549d983aba43f4cc7b5c1ea6ddfa19f",
+    "factors/paper_ekfac/factors_training/activation_eigenvalues.safetensors": "e8ffc699e1a5b61087be6f81e4f74fa438c5d456f80dde6356318d8703822678",
+    "factors/paper_ekfac/factors_training/activation_eigenvectors.safetensors": "8af3ab4f3744b9c31dad9d9045f994d05cedd4215d1cd80c76d5641c36aaea46",
+    "factors/paper_ekfac/factors_training/gradient_covariance.safetensors": "bfced27910199a067ab392ab1df3c51ccc4b0d6179826f83a9eea035812cc69e",
+    "factors/paper_ekfac/factors_training/gradient_eigenvalues.safetensors": "8fbad77cc3e641b672240c299fd307ba9c6ee747285714f57f420b851b025bee",
+    "factors/paper_ekfac/factors_training/gradient_eigenvectors.safetensors": "5ba3474207f10d22bbd0b773e11e987caa9d6a0414fcda8040f88e17d6461526",
+    "factors/paper_ekfac/factors_training/lambda_matrix.safetensors": "e9730a1e912c1c7d2d2f5544edf4e489f62b8b4e12d18d0d22c851c4a8666979",
+    "factors/paper_ekfac/factors_training/num_activation_covariance_processed.safetensors": "35ebe8358788effb2d006927c4737156593cdf320ffbe94d471c1e8fbbda4b33",
+    "factors/paper_ekfac/factors_training/num_gradient_covariance_processed.safetensors": "aba2a5a6fa585c34b819ae7ff0d44aa7babf359cfff64bbbb053ac876f2ad91c",
+    "factors/paper_ekfac/factors_training/num_lambda_processed.safetensors": "fd97bed59da1734ff5ebccbefb1298b332fcfb08c31691a97c439516336f5e5f",
+    "factor-arguments.json": "b1e5be62a58b31ab02c98547a166b4daebccd1bc23a18ba829ce610d9929d8ff"
+  }
+}

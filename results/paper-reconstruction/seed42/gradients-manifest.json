@@ -1,0 +1,15 @@
+{
+  "stage": "gradients",
+  "started_unix": 1791871618.8798697,
+  "completed_unix": 1791872727.3513312,
+  "plan_sha256": "8f710822005d92492733c390f942e76df67bd609b36c98c29735427c9f9b22d4",
+  "files_sha256": {
+    "gradients_all.pt": "fcb701f1bfaae6bd4a46237a42944f8408dc1dd49c4652b09ffb25e4482f487f"
+  },
+  "shape": [
+    5000,
+    2228224
+  ],
+  "adapter_unchanged": true,
+  "zero_rows": 0
+}

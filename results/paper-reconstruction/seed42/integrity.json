@@ -1,0 +1,40 @@
+{
+  "checked_unix": 1791874613.4838343,
+  "complete": true,
+  "scope": "development_reconstruction",
+  "stages": {
+    "train": {
+      "manifest_sha256": "5b6b82f0315a15d14efa5ec8d4ef60872e548b56618b1c3b06ff4197f558750a",
+      "verified_files": 12,
+      "completed_unix": 1791869124.384408
+    },
+    "factors": {
+      "manifest_sha256": "88886c964c41bfc96fe475744639b6b1c0443b526830131a3c179d7addb7c996",
+      "verified_files": 11,
+      "completed_unix": 1791871604.9141943
+    },
+    "gradients": {
+      "manifest_sha256": "dba0dab1b36cb2644f267d208823742d293b37960fe7048f4392ad407f3881b1",
+      "verified_files": 1,
+      "completed_unix": 1791872727.3513312
+    },
+    "atoms": {
+      "manifest_sha256": "a4b488b15adc6192ae854ae5461054e7eb94d3de5acf398ca2d8b9a53b5e1d11",
+      "verified_files": 2,
+      "completed_unix": 1791873036.4844582
+    }
+  },
+  "source_files_verified": true,
+  "configuration_verified": true,
+  "deadline_compliant": true,
+  "extraction_adapter_unchanged": true,
+  "gradient_shape": [
+    5000,
+    2228224
+  ],
+  "dictionary_shape": [
+    500,
+    6800
+  ],
+  "controller_runtime_seconds": 4237.323202848434
+}

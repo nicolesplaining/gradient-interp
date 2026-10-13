@@ -1,0 +1,21 @@
+{
+  "stage": "train",
+  "started_unix": 1791868808.3188057,
+  "completed_unix": 1791869124.384408,
+  "plan_sha256": "8f710822005d92492733c390f942e76df67bd609b36c98c29735427c9f9b22d4",
+  "files_sha256": {
+    "adapter/README.md": "0ab5073b652ce3d09fe6f49cf31773d2e38572e924e47abfd40343bf038dee15",
+    "adapter/adapter_config.json": "ce295e704793a04fbaf10b6352473807b07a22e8f8e3ace237bd42d60a27cb69",
+    "adapter/adapter_model.safetensors": "47c40f64e86dab32ff052c62bfe442d4f64890c93fb9383a5b0484d62d7cb89b",
+    "adapter/added_tokens.json": "50b2f405ba56a26d4913fd772089992252d7f942123cc0a034d96424221ba946",
+    "adapter/chat_template.jinja": "3c78173be8eea27371b27f83aa521bd460c695f97ac4c30d89092955714ec399",
+    "adapter/special_tokens_map.json": "2f7b0adf4fb469770bb1490e3e35df87b1dc578246c5e7e6fc76ecf33213a397",
+    "adapter/tokenizer.json": "4667f2089529e8e7657cfb6d1c19910ae71ff5f28aa7ab2ff2763330affad795",
+    "adapter/tokenizer.model": "1299c11d7cf632ef3b4e11937501358ada021bbdf7c47638d13c0ee982f2e79c",
+    "adapter/tokenizer_config.json": "983c80895e7b188911f5ccfbb4f780a4e73fb3131ed2080a3e847ef8623cfdca",
+    "layout.json": "da5bc1eff9f6af055e36ee70df227b9ebac1f278e777258615bfc37db816b3a5",
+    "training-metrics.json": "418a2ec1d2784d795c4f23a597dae09ce7ce26a539d916b39ed020e0ba9ca82f",
+    "trainer/trainer_state.json": "f2f79e9b557f7096d216d563d670350564d4111d34aa5bd9a0478387e2ff8708"
+  },
+  "optimizer_steps": 24
+}

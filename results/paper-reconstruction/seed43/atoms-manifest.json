@@ -1,0 +1,15 @@
+{
+  "stage": "atoms",
+  "started_unix": 1791872628.0963185,
+  "completed_unix": 1791872797.7843118,
+  "plan_sha256": "4a8cf88610452435a86daa89c4a37a35daecec807912b38abe60214515c22480",
+  "files_sha256": {
+    "atoms.pt": "2f6cf51e81fc126084632e72fafb533e6e135b256c34c24ee979659f875ee0f6",
+    "atom_characterisations.json": "50dee67071cd6dd43ccf89097d382e8f76ee53aef9fb9acaaec9313f168b2fe4"
+  },
+  "projected_shape": [
+    5000,
+    6800
+  ],
+  "n_atoms": 500
+}

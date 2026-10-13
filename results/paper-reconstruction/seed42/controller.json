@@ -1,0 +1,41 @@
+{
+  "scope": "development_only",
+  "started_unix": 1791868803.0616727,
+  "deadline_unix": 1791912003.0616727,
+  "status": "complete",
+  "controller_pid": 110316,
+  "worker_pid": null,
+  "plan_sha256": "8f710822005d92492733c390f942e76df67bd609b36c98c29735427c9f9b22d4",
+  "attempts": [
+    {
+      "job": "train",
+      "pid": 110327,
+      "started_unix": 1791868803.0640948,
+      "finished_unix": 1791869125.5980217,
+      "returncode": 0
+    },
+    {
+      "job": "factors",
+      "pid": 110657,
+      "started_unix": 1791869125.600485,
+      "finished_unix": 1791871609.911754,
+      "returncode": 0
+    },
+    {
+      "job": "gradients",
+      "pid": 111021,
+      "started_unix": 1791871609.9142208,
+      "finished_unix": 1791872764.709037,
+      "returncode": 0
+    },
+    {
+      "job": "atoms",
+      "pid": 111162,
+      "started_unix": 1791872764.720024,
+      "finished_unix": 1791873040.3841736,
+      "returncode": 0
+    }
+  ],
+  "current_job": "atoms",
+  "checked_unix": 1791873040.3848755
+}
