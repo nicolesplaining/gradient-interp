@@ -1,0 +1,19 @@
+{
+  "created_unix": 1791857557.8133986,
+  "scope": "fixed development pilot, not final test",
+  "plan_sha256": "962ee786bc87c46ccd1a0faeca8c22aed50518b9ec9e1581e7d994117bdad617",
+  "data_sha256": {
+    "batches.jsonl": "4359ce1b5b8ff30f460ccb67fad8e5b8f7880b0fe08201a0287eed50c5762257",
+    "fit.jsonl": "52d3455dcd8cb0d12d7ddf6c6d703f9bc960682c122af201a454d370fa44a91a",
+    "calibration_probes.jsonl": "f039e1b2ae98cdb66f64fc5d2c48255c1221c479b49744ea0cdd2f7deccf0db1",
+    "evaluation_probes.jsonl": "6ac15f91d11f855e2be750f307d122b08e074ee5ff60d6054c6a1e261da7b9fe"
+  },
+  "source_sha256": {
+    "feature_pilot.py": "18d35d81317dfccc233447d47836da4e85003e9ac6d11800d465e78c248d805d",
+    "feature_run.py": "8eb4d01c02abc614978e49fed165627e75e232900bc0929c0355bac5e6a29a6c",
+    "feature_updates.py": "0b95507d1af94bf8eeb2f40575e8599d09edb96c0eb22d790c39c958eb8c7dbc",
+    "residual.py": "dc8f60506150fd1fa992f31c95e03454375ec8ec1cb504f5333b5d3c2d6da315",
+    "models.py": "d4646522a0397460d9ecf8ba1e6f66a6b040409f0d4abe6468df5e4da6107c4a",
+    "parameters.py": "b208f2d74c3d393d53219ddf004e0eed08b33ad48f4dd60e6880db837cc68845"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "all_output_hashes_valid": true,
+  "completed_before_deadline": true,
+  "records": [
+    {
+      "job": "controls",
+      "manifest_sha256": "159db1078a9fad2e809183ef8dbce0dd0edbf9c7b9e4982f542ce3836c2283e7",
+      "files_verified": 3
+    },
+    {
+      "job": "loracle-scale",
+      "manifest_sha256": "9749746ffd46e247aba36c9392d11443157fab547334d8a04cb67dbf7d07d9c8",
+      "files_verified": 3
+    }
+  ]
+}

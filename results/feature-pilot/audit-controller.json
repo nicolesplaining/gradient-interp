@@ -1,0 +1,27 @@
+{
+  "scope": "development_only",
+  "started_unix": 1791862717.707537,
+  "deadline_unix": 1791884317.707537,
+  "status": "complete",
+  "controller_pid": 105080,
+  "worker_pid": null,
+  "plan_sha256": "41ecba6010f06071884f2085e5f4d2f457862ad96dc663c29c1ef764497b3f70",
+  "attempts": [
+    {
+      "job": "cached-controls",
+      "pid": 105113,
+      "started_unix": 1791862717.7099397,
+      "finished_unix": 1791862751.0407329,
+      "returncode": 0
+    },
+    {
+      "job": "loracle-scale",
+      "pid": 105185,
+      "started_unix": 1791862751.0434809,
+      "finished_unix": 1791862852.8519418,
+      "returncode": 0
+    }
+  ],
+  "current_job": "loracle-scale",
+  "checked_unix": 1791862852.852699
+}

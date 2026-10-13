@@ -1,0 +1,36 @@
+{
+  "status": "complete",
+  "started_unix": 1791862756.6960177,
+  "finished_unix": 1791862850.01659,
+  "upstream_revision": "be71fa947a037f90d3d179a16cbd2ebc5d273a66",
+  "source_manifest_sha256": "52a168abcfe19782a30c43697df190edb2f5e7e237ed5fa7c888ebef97c80c0a",
+  "source_hash": "8b1847a1d3313e6ec698e83aa971b1e4387aae0878da0080d7e1cec4631381af",
+  "prefix": {
+    "mode": "rank_tagged",
+    "top_k": 16,
+    "slots_per_rank": 280,
+    "typed_slots": false,
+    "preamble_len": 0,
+    "prefix_length": 4597,
+    "placeholder_token_ids": [
+      30
+    ]
+  },
+  "upstream_source_sha256": {
+    "inference.py": "e056f64360ad7c18956b6812d0e3b7f1a62d2aaed6ec9348c89954520e15590e",
+    "encoder_ao.py": "bf877aa5b3622e1000aca947c9a9306dfe96e4996df279d17f7a58c25c8a443f",
+    "dataset.py": "960be93441c6742550f8f0542e6252507de2f22b475fd56927ac953867a80335",
+    "config.py": "dee0f0c999102cf5fae3281f3064a0edaa4435fe149e7a05b9b1190e2ce8360d"
+  },
+  "checkpoint_files_sha256": {
+    "loracle_config.yaml": "6f2f3e59533722fc11a670a13e315dda779484511df8248528332c36eaedd584",
+    "best_ao_interpreter/README.md": "9edb9880033c968771bf4e71bc1c9e476fa800ff30e42d26c6fa510d1871e646",
+    "best_ao_interpreter/adapter_config.json": "176306ab4ce0e6d162796b810fcc5d2581aaceb87375b9dc108b9da2b405058f",
+    "best_ao_interpreter/adapter_model.safetensors": "3c217b32c3c309acd16825d9b1a119015730a47ab82a6379058452f66b5ca95f"
+  },
+  "files_sha256": {
+    "generations.json": "b394c4f81fee3bd49a25e17904fcea1cc89ba0eb2bc37795469c12489a71cd18",
+    "summary.json": "2b808d4f8c6f71babf77bcb125588edfe24b2aca3f071e009e7f969f1b610f7c",
+    "hook-results.json": "43c32f0150f1458a3e228232f7394acd405242b6bb51990d0a6ca0d6a16ea37a"
+  }
+}

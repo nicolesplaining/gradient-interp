@@ -1,0 +1,62 @@
+[
+  {
+    "source_index": 0,
+    "representation": "correct",
+    "answers": {
+      "0.25": "Generation",
+      "1.0": "Generation",
+      "4.0": "Generation"
+    },
+    "all_equal": true
+  },
+  {
+    "source_index": 0,
+    "representation": "compatible",
+    "answers": {
+      "0.25": "Generation",
+      "1.0": "Generation",
+      "4.0": "Generation"
+    },
+    "all_equal": true
+  },
+  {
+    "source_index": 20,
+    "representation": "correct",
+    "answers": {
+      "0.25": "Generation",
+      "1.0": "Generation",
+      "4.0": "Generation"
+    },
+    "all_equal": true
+  },
+  {
+    "source_index": 20,
+    "representation": "compatible",
+    "answers": {
+      "0.25": "Generation",
+      "1.0": "Generation",
+      "4.0": "Generation"
+    },
+    "all_equal": true
+  },
+  {
+    "source_index": 40,
+    "representation": "correct",
+    "answers": {
+      "0.25": "Chat",
+      "1.0": "Chat",
+      "4.0": "Chat"
+    },
+    "all_equal": true
+  },
+  {
+    "source_index": 40,
+    "representation": "compatible",
+    "answers": {
+      "0.25": "Generation",
+      "1.0": "Generation",
+      "4.0": "Generation"
+    },
+    "all_equal": true
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "scope": "Implementation audit using old development tokens, not a behavior forecast",
+  "question": "Which instruction task category best describes what this update is learning? Choose exactly one of: Brainstorm, Chat, Classify, Closed QA, Coding, Extract, Generation, Open QA, Rewrite, Summarize. Reply with the category only.",
+  "zero_answer": "Generation",
+  "hook_cases": 120,
+  "all_hook_scalings_bit_identical": true,
+  "generation_cases": 6,
+  "all_generation_scalings_identical": true,
+  "limits": [
+    "Applies to the pinned identity AO encoder with norm-match injection",
+    "Conditional on fixed rank/layout, positive scaling, and no clamp-floor effects",
+    "Finite-precision roundoff or altered questions can change other configurations",
+    "Does not evaluate semantic explanations or calibrated behavior-change prediction"
+  ]
+}

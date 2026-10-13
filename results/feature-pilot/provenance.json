@@ -1,0 +1,20 @@
+{
+  "pilot": "/Users/nicolema/Documents/Codex/2026-10-07/can-x20/gradient-interp/runs/feature-pilot",
+  "audit": "/Users/nicolema/Documents/Codex/2026-10-07/can-x20/gradient-interp/runs/feature-audit",
+  "report_source_sha256": "8cdf0274bc6c9bb68215e1114de8ad83310746d205ef120ec4d749ea2c0e694a",
+  "input_files_sha256": {
+    "pilot-summary.json": "c0fd78c35f789e3625333b294d225677355ddd7ae57ae77b09b306526f2cf5c8",
+    "pilot-plan.json": "962ee786bc87c46ccd1a0faeca8c22aed50518b9ec9e1581e7d994117bdad617",
+    "pilot-freeze.json": "d351e1c59a76a77065402a5369ac1e117de37488b16747dc0651b76eee060286",
+    "pilot-integrity.json": "d26c4796e63d58db5c7f9692883648b3672be791bf2faab59fdab4926ad47bec",
+    "audit-integrity.json": "8d4884cdb388cd3feb5f845bc1a5c6c33ae0d11524b14bc6239ccb049e11957a",
+    "controls-summary.json": "dd45d8cb45ed115d8ac9a25d1ca6d15b8e1967834f4bdee44d37c5a576433463",
+    "loracle-summary.json": "2b808d4f8c6f71babf77bcb125588edfe24b2aca3f071e009e7f969f1b610f7c",
+    "loracle-manifest.json": "9749746ffd46e247aba36c9392d11443157fab547334d8a04cb67dbf7d07d9c8",
+    "loracle-generations.json": "b394c4f81fee3bd49a25e17904fcea1cc89ba0eb2bc37795469c12489a71cd18",
+    "loracle-hook-results.json": "43c32f0150f1458a3e228232f7394acd405242b6bb51990d0a6ca0d6a16ea37a",
+    "audit-plan.json": "41ecba6010f06071884f2085e5f4d2f457862ad96dc663c29c1ef764497b3f70",
+    "audit-controller.json": "5b14be8f0e25f3a00c3dd3014cdebc2ca3ab9a876a8dee74ab945577ce8d483f"
+  },
+  "loracle_all_hook_scalings_bit_identical": true
+}

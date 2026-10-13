@@ -1,0 +1,2415 @@
+{
+  "scope": "development_only; one seed/model; no confirmatory claims or intervals",
+  "results": {
+    "Qwen2.5-3B-seed606": {
+      "status": "complete",
+      "rates": {
+        "0.001": {
+          "full_gradient": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.005266624796840396,
+              "per_batch_p50_p90_p95": [
+                0.0027007748114886085,
+                0.008571605297539394,
+                0.009775089007672919
+              ],
+              "observed_rms": 0.0014540464940089406,
+              "rmse": 7.657917321106328e-06,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 1.0,
+                "always_positive_accuracy": 0.25,
+                "balanced_sign_accuracy": 1.0,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.005266624796840396
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.6457879417386927,
+              "per_batch_p50_p90_p95": [
+                0.6171126886206872,
+                0.8491994300172458,
+                0.9545205748050316
+              ],
+              "observed_rms": 0.0014540464940089406,
+              "rmse": 0.0009390056925583961,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.78125,
+                "always_positive_accuracy": 0.25,
+                "balanced_sign_accuracy": 0.6875,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.6457879417386927
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.004762020069021706,
+              "per_batch_p50_p90_p95": [
+                0.0033353556144673853,
+                0.011932979021439818,
+                0.012244053316847102
+              ],
+              "observed_rms": 0.003573566984108763,
+              "rmse": 1.7017397696319303e-05,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.9794921875,
+                "always_positive_accuracy": 0.8857421875,
+                "balanced_sign_accuracy": 0.9549232465439743,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.004762020069021706
+              ]
+            }
+          },
+          "svd_32": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.37754393134228154,
+              "per_batch_p50_p90_p95": [
+                0.22649227446346737,
+                0.537337913949829,
+                0.6463770803800775
+              ],
+              "observed_rms": 0.0014540464940089406,
+              "rmse": 0.0005489664297025968,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.9921875,
+                "always_positive_accuracy": 0.25,
+                "balanced_sign_accuracy": 0.9947916666666667,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.37754393134228154
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.6358971372409451,
+              "per_batch_p50_p90_p95": [
+                0.603395514479908,
+                0.8110307562289369,
+                0.9190854727319123
+              ],
+              "observed_rms": 0.0014540464940089406,
+              "rmse": 0.0009246240029555183,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.8046875,
+                "always_positive_accuracy": 0.25,
+                "balanced_sign_accuracy": 0.7135416666666667,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.6358971372409451
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.46557023723066077,
+              "per_batch_p50_p90_p95": [
+                0.2828864088509074,
+                0.6040426513315253,
+                0.6835448205937634
+              ],
+              "observed_rms": 0.003573566984108763,
+              "rmse": 0.0016637464285511737,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.939453125,
+                "always_positive_accuracy": 0.8857421875,
+                "balanced_sign_accuracy": 0.846709825761645,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.46557023723066077
+              ]
+            }
+          },
+          "svd_128": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.20321575706381667,
+              "per_batch_p50_p90_p95": [
+                0.11365411572200501,
+                0.28993708073497204,
+                0.3564125016524857
+              ],
+              "observed_rms": 0.0014540464940089406,
+              "rmse": 0.0002954851590860152,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 1.0,
+                "always_positive_accuracy": 0.25,
+                "balanced_sign_accuracy": 1.0,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.20321575706381667
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.6343508716320173,
+              "per_batch_p50_p90_p95": [
+                0.6083994957179724,
+                0.8095200046674085,
+                0.9258879765625381
+              ],
+              "observed_rms": 0.0014540464940089406,
+              "rmse": 0.0009223756608680502,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.8125,
+                "always_positive_accuracy": 0.25,
+                "balanced_sign_accuracy": 0.71875,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.6343508716320173
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.254636697386003,
+              "per_batch_p50_p90_p95": [
+                0.13322016406404036,
+                0.33099061121978257,
+                0.3683912895821041
+              ],
+              "observed_rms": 0.003573566984108763,
+              "rmse": 0.0009099612947211145,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.9521484375,
+                "always_positive_accuracy": 0.8857421875,
+                "balanced_sign_accuracy": 0.8799319631734185,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.254636697386003
+              ]
+            }
+          },
+          "sae_paired": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.46672062145011417,
+              "per_batch_p50_p90_p95": [
+                0.5146656401496084,
+                0.8498083450030047,
+                1.247009953185426
+              ],
+              "observed_rms": 0.0014540464940089406,
+              "rmse": 0.0006786334833012124,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.9296875,
+                "always_positive_accuracy": 0.25,
+                "balanced_sign_accuracy": 0.921875,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.46672062145011417
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.7050970506798894,
+              "per_batch_p50_p90_p95": [
+                0.7476805365773638,
+                1.0535385855438268,
+                1.3908209522516584
+              ],
+              "observed_rms": 0.0014540464940089406,
+              "rmse": 0.0010252438944771377,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.71875,
+                "always_positive_accuracy": 0.25,
+                "balanced_sign_accuracy": 0.6458333333333333,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.7050970506798894
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.49610175930974937,
+              "per_batch_p50_p90_p95": [
+                0.5230720901507613,
+                0.833650177709458,
+                1.1309509861367786
+              ],
+              "observed_rms": 0.003573566984108763,
+              "rmse": 0.0017728528678275927,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.8076171875,
+                "always_positive_accuracy": 0.8857421875,
+                "balanced_sign_accuracy": 0.6829549844985348,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.49610175930974937
+              ]
+            }
+          },
+          "sae_independent": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.9554953279602644,
+              "per_batch_p50_p90_p95": [
+                1.0248263186303475,
+                1.4830614363158854,
+                1.9099498273570181
+              ],
+              "observed_rms": 0.0014540464940089406,
+              "rmse": 0.0013893346316625455,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.40625,
+                "always_positive_accuracy": 0.25,
+                "balanced_sign_accuracy": 0.41666666666666663,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.9554953279602644
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.9667467253598505,
+              "per_batch_p50_p90_p95": [
+                1.0204573366506557,
+                1.4490187621076465,
+                1.860413530810798
+              ],
+              "observed_rms": 0.0014540464940089406,
+              "rmse": 0.001405694686604115,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.4765625,
+                "always_positive_accuracy": 0.25,
+                "balanced_sign_accuracy": 0.515625,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.9667467253598505
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.961443382017996,
+              "per_batch_p50_p90_p95": [
+                1.0209349347962715,
+                1.4178383958454208,
+                1.7163158099731968
+              ],
+              "observed_rms": 0.003573566984108763,
+              "rmse": 0.003435782327069379,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.4501953125,
+                "always_positive_accuracy": 0.8857421875,
+                "balanced_sign_accuracy": 0.44769079995099836,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.961443382017996
+              ]
+            }
+          },
+          "sae_permuted": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.9789075648095996,
+              "per_batch_p50_p90_p95": [
+                1.0534441281347005,
+                1.5231207295510727,
+                2.0206344410423984
+              ],
+              "observed_rms": 0.0014540464940089406,
+              "rmse": 0.0014233771125702283,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.3125,
+                "always_positive_accuracy": 0.25,
+                "balanced_sign_accuracy": 0.32291666666666663,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.9789075648095996
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.979625307894638,
+              "per_batch_p50_p90_p95": [
+                1.06478629365489,
+                1.5022435554362228,
+                1.9689717639773439
+              ],
+              "observed_rms": 0.0014540464940089406,
+              "rmse": 0.0014244207443866272,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.421875,
+                "always_positive_accuracy": 0.25,
+                "balanced_sign_accuracy": 0.47916666666666663,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.979625307894638
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.9836893860655345,
+              "per_batch_p50_p90_p95": [
+                1.0440291571347728,
+                1.448303794229577,
+                1.8104262067831576
+              ],
+              "observed_rms": 0.003573566984108763,
+              "rmse": 0.0035152799126620124,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.400390625,
+                "always_positive_accuracy": 0.8857421875,
+                "balanced_sign_accuracy": 0.4456317907255063,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.9836893860655345
+              ]
+            }
+          }
+        },
+        "0.01": {
+          "full_gradient": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.05197082991736008,
+              "per_batch_p50_p90_p95": [
+                0.004256044667507112,
+                0.027307361423661053,
+                0.03764482623550296
+              ],
+              "observed_rms": 0.014091723300523192,
+              "rmse": 0.0007323585548939908,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 1.0,
+                "always_positive_accuracy": 0.25,
+                "balanced_sign_accuracy": 1.0,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.05197082991736008
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.6476953434584712,
+              "per_batch_p50_p90_p95": [
+                0.6157401541682495,
+                0.8494943778397881,
+                0.9566855932800812
+              ],
+              "observed_rms": 0.014091723300523192,
+              "rmse": 0.009127143563054111,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.78125,
+                "always_positive_accuracy": 0.25,
+                "balanced_sign_accuracy": 0.6875,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.6476953434584712
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.04989524538658915,
+              "per_batch_p50_p90_p95": [
+                0.005585715408838891,
+                0.034986074361579106,
+                0.04234030308400767
+              ],
+              "observed_rms": 0.03484368345811881,
+              "rmse": 0.0017385341363154753,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.99609375,
+                "always_positive_accuracy": 0.8828125,
+                "balanced_sign_accuracy": 0.9905604719764012,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.04989524538658915
+              ]
+            }
+          },
+          "svd_32": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.3636186765513837,
+              "per_batch_p50_p90_p95": [
+                0.22374138888858663,
+                0.531949822826037,
+                0.6482906478020938
+              ],
+              "observed_rms": 0.014091723300523192,
+              "rmse": 0.005124013776864538,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.9921875,
+                "always_positive_accuracy": 0.25,
+                "balanced_sign_accuracy": 0.9947916666666667,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.3636186765513837
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.6356547670649451,
+              "per_batch_p50_p90_p95": [
+                0.5996084695553039,
+                0.8166224887275975,
+                0.9216109984635082
+              ],
+              "observed_rms": 0.014091723300523192,
+              "rmse": 0.008957471092137728,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.8046875,
+                "always_positive_accuracy": 0.25,
+                "balanced_sign_accuracy": 0.7135416666666667,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.6356547670649451
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.4523349481787972,
+              "per_batch_p50_p90_p95": [
+                0.28110505594927954,
+                0.5979345868345711,
+                0.6829414741247709
+              ],
+              "observed_rms": 0.03484368345811881,
+              "rmse": 0.015761015751386585,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.9306640625,
+                "always_positive_accuracy": 0.8828125,
+                "balanced_sign_accuracy": 0.8234144542772861,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.4523349481787972
+              ]
+            }
+          },
+          "svd_128": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.18564525425258624,
+              "per_batch_p50_p90_p95": [
+                0.1181680627778494,
+                0.27972912638838426,
+                0.356958519260695
+              ],
+              "observed_rms": 0.014091723300523192,
+              "rmse": 0.0026160615549827206,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 1.0,
+                "always_positive_accuracy": 0.25,
+                "balanced_sign_accuracy": 1.0,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.18564525425258624
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.6350390329316832,
+              "per_batch_p50_p90_p95": [
+                0.6039159934131619,
+                0.8132800574020127,
+                0.9281266853008793
+              ],
+              "observed_rms": 0.014091723300523192,
+              "rmse": 0.008948794337105112,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.8125,
+                "always_positive_accuracy": 0.25,
+                "balanced_sign_accuracy": 0.71875,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.6350390329316832
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.23720882619310144,
+              "per_batch_p50_p90_p95": [
+                0.1306702771902966,
+                0.3210498911216608,
+                0.3670253426604511
+              ],
+              "observed_rms": 0.03484368345811881,
+              "rmse": 0.008265229253344348,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.955078125,
+                "always_positive_accuracy": 0.8828125,
+                "balanced_sign_accuracy": 0.8842182890855457,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.23720882619310144
+              ]
+            }
+          },
+          "sae_paired": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.45629170070530917,
+              "per_batch_p50_p90_p95": [
+                0.5153580532010289,
+                0.8503414287454445,
+                1.2475209569303842
+              ],
+              "observed_rms": 0.014091723300523192,
+              "rmse": 0.006429936390664359,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.9296875,
+                "always_positive_accuracy": 0.25,
+                "balanced_sign_accuracy": 0.921875,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.45629170070530917
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.7039662306548572,
+              "per_batch_p50_p90_p95": [
+                0.749351940210021,
+                1.0536505410104413,
+                1.3909285933735283
+              ],
+              "observed_rms": 0.014091723300523192,
+              "rmse": 0.009920097335300535,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.71875,
+                "always_positive_accuracy": 0.25,
+                "balanced_sign_accuracy": 0.6458333333333333,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.7039662306548572
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.48526440691954864,
+              "per_batch_p50_p90_p95": [
+                0.5276777843809717,
+                0.833686974610141,
+                1.1319242774466105
+              ],
+              "observed_rms": 0.03484368345811881,
+              "rmse": 0.01690839938819651,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.806640625,
+                "always_positive_accuracy": 0.8828125,
+                "balanced_sign_accuracy": 0.6808997050147493,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.48526440691954864
+              ]
+            }
+          },
+          "sae_independent": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.9544815357692695,
+              "per_batch_p50_p90_p95": [
+                1.024911177957613,
+                1.4805252984301243,
+                1.9061122654141966
+              ],
+              "observed_rms": 0.014091723300523192,
+              "rmse": 0.013450289697518974,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.40625,
+                "always_positive_accuracy": 0.25,
+                "balanced_sign_accuracy": 0.41666666666666663,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.9544815357692695
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.9660439977908254,
+              "per_batch_p50_p90_p95": [
+                1.020527350421594,
+                1.4466914013914707,
+                1.8570156805039821
+              ],
+              "observed_rms": 0.014091723300523192,
+              "rmse": 0.013613224712999548,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.4765625,
+                "always_positive_accuracy": 0.25,
+                "balanced_sign_accuracy": 0.515625,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.9660439977908254
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.9605998184615507,
+              "per_batch_p50_p90_p95": [
+                1.0209918734577141,
+                1.4174190913831983,
+                1.716919870497811
+              ],
+              "observed_rms": 0.03484368345811881,
+              "rmse": 0.033470836004400664,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.451171875,
+                "always_positive_accuracy": 0.8828125,
+                "balanced_sign_accuracy": 0.4506637168141593,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.9605998184615507
+              ]
+            }
+          },
+          "sae_permuted": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.9778862923071235,
+              "per_batch_p50_p90_p95": [
+                1.053654167580122,
+                1.5201459662376846,
+                2.016051843178884
+              ],
+              "observed_rms": 0.014091723300523192,
+              "rmse": 0.013780103050566523,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.3125,
+                "always_positive_accuracy": 0.25,
+                "balanced_sign_accuracy": 0.32291666666666663,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.9778862923071235
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.9785446709171223,
+              "per_batch_p50_p90_p95": [
+                1.0648784251622934,
+                1.4994558264104865,
+                1.964828262946028
+              ],
+              "observed_rms": 0.014091723300523192,
+              "rmse": 0.013789380739765609,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.421875,
+                "always_positive_accuracy": 0.25,
+                "balanced_sign_accuracy": 0.47916666666666663,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.9785446709171223
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.9830755956096974,
+              "per_batch_p50_p90_p95": [
+                1.044203259830231,
+                1.4478388728878673,
+                1.8109410544264604
+              ],
+              "observed_rms": 0.03484368345811881,
+              "rmse": 0.03425397486882591,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.4052734375,
+                "always_positive_accuracy": 0.8828125,
+                "balanced_sign_accuracy": 0.4571902654867257,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.9830755956096974
+              ]
+            }
+          }
+        },
+        "0.1": {
+          "full_gradient": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.6679065369863982,
+              "per_batch_p50_p90_p95": [
+                0.039290819329228024,
+                0.3835945930540698,
+                0.583440710659189
+              ],
+              "observed_rms": 0.0938585629552998,
+              "rmse": 0.06268874774999413,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.9921875,
+                "always_positive_accuracy": 0.2578125,
+                "balanced_sign_accuracy": 0.9848484848484849,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.6679065369863982
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.6140662016981074,
+              "per_batch_p50_p90_p95": [
+                0.604890710539554,
+                0.8571379746564916,
+                0.9714862876625887
+              ],
+              "observed_rms": 0.0938585629552998,
+              "rmse": 0.05763537125080365,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.7890625,
+                "always_positive_accuracy": 0.2578125,
+                "balanced_sign_accuracy": 0.6996810207336523,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.6140662016981074
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.839443155648806,
+              "per_batch_p50_p90_p95": [
+                0.06736523086640663,
+                0.46740447950708675,
+                0.7322266305410122
+              ],
+              "observed_rms": 0.21173441941471657,
+              "rmse": 0.1777390091929575,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.9736328125,
+                "always_positive_accuracy": 0.8720703125,
+                "balanced_sign_accuracy": 0.9230016327158647,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.839443155648806
+              ]
+            }
+          },
+          "svd_32": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.22303308955118842,
+              "per_batch_p50_p90_p95": [
+                0.21777120670915198,
+                0.43425762049056105,
+                0.6050371755293594
+              ],
+              "observed_rms": 0.0938585629552998,
+              "rmse": 0.020933565276755238,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.984375,
+                "always_positive_accuracy": 0.2578125,
+                "balanced_sign_accuracy": 0.979585326953748,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.22303308955118842
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.5261835109550891,
+              "per_batch_p50_p90_p95": [
+                0.5754087731492608,
+                0.8140852996087669,
+                0.9355837816432491
+              ],
+              "observed_rms": 0.0938585629552998,
+              "rmse": 0.04938682818901892,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.8125,
+                "always_positive_accuracy": 0.2578125,
+                "balanced_sign_accuracy": 0.7253588516746412,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.5261835109550891
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.2926045454503657,
+              "per_batch_p50_p90_p95": [
+                0.2716601647034983,
+                0.4876310691364875,
+                0.6278016179459348
+              ],
+              "observed_rms": 0.21173441941471657,
+              "rmse": 0.06195445354904023,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.93359375,
+                "always_positive_accuracy": 0.8720703125,
+                "balanced_sign_accuracy": 0.8251369857158732,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.2926045454503657
+              ]
+            }
+          },
+          "svd_128": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.38174711080290097,
+              "per_batch_p50_p90_p95": [
+                0.12193446073855856,
+                0.3606735499298459,
+                0.4664364035596385
+              ],
+              "observed_rms": 0.0938585629552998,
+              "rmse": 0.03583023523229789,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.9921875,
+                "always_positive_accuracy": 0.2578125,
+                "balanced_sign_accuracy": 0.9848484848484849,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.38174711080290097
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.5618669500377864,
+              "per_batch_p50_p90_p95": [
+                0.5808990041649209,
+                0.8177044219405818,
+                0.9420258660903851
+              ],
+              "observed_rms": 0.0938585629552998,
+              "rmse": 0.052736024502623866,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.8203125,
+                "always_positive_accuracy": 0.2578125,
+                "balanced_sign_accuracy": 0.730622009569378,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.5618669500377864
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.4589987879312234,
+              "per_batch_p50_p90_p95": [
+                0.13565054465879667,
+                0.3368680038887266,
+                0.43545687390791654
+              ],
+              "observed_rms": 0.21173441941471657,
+              "rmse": 0.0971858418746762,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.9541015625,
+                "always_positive_accuracy": 0.8720703125,
+                "balanced_sign_accuracy": 0.8727208226836378,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.4589987879312234
+              ]
+            }
+          },
+          "sae_paired": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.35054038004649785,
+              "per_batch_p50_p90_p95": [
+                0.508867190974047,
+                0.8470753104373575,
+                1.2504045659743455
+              ],
+              "observed_rms": 0.0938585629552998,
+              "rmse": 0.03290121632896894,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.921875,
+                "always_positive_accuracy": 0.2578125,
+                "balanced_sign_accuracy": 0.9078149920255183,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.35054038004649785
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.5717039012606574,
+              "per_batch_p50_p90_p95": [
+                0.6513648540088023,
+                1.0630622547753408,
+                1.408093039482509
+              ],
+              "observed_rms": 0.0938585629552998,
+              "rmse": 0.05365930660826392,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.7265625,
+                "always_positive_accuracy": 0.2578125,
+                "balanced_sign_accuracy": 0.6575757575757576,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.5717039012606574
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.3608850705082231,
+              "per_batch_p50_p90_p95": [
+                0.4707454100820948,
+                0.8291742574601209,
+                1.1333285434289293
+              ],
+              "observed_rms": 0.21173441941471657,
+              "rmse": 0.07641179087949768,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.8037109375,
+                "always_positive_accuracy": 0.8720703125,
+                "balanced_sign_accuracy": 0.6757605805971807,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.3608850705082231
+              ]
+            }
+          },
+          "sae_independent": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.937939054175279,
+              "per_batch_p50_p90_p95": [
+                1.0268872334029044,
+                1.481257320421262,
+                1.9122254643973453
+              ],
+              "observed_rms": 0.0938585629552998,
+              "rmse": 0.08803361176454479,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.3984375,
+                "always_positive_accuracy": 0.2578125,
+                "balanced_sign_accuracy": 0.40685805422647525,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.937939054175279
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.949320496506638,
+              "per_batch_p50_p90_p95": [
+                1.0223264204417604,
+                1.4472781047194874,
+                1.863027953963519
+              ],
+              "observed_rms": 0.0938585629552998,
+              "rmse": 0.08910185758612475,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.46875,
+                "always_positive_accuracy": 0.2578125,
+                "balanced_sign_accuracy": 0.5036682615629984,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.949320496506638
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.9414485492044999,
+              "per_batch_p50_p90_p95": [
+                1.0224647356052519,
+                1.4190752531935116,
+                1.7231835917084475
+              ],
+              "observed_rms": 0.21173441941471657,
+              "rmse": 0.19933706197464204,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.4423828125,
+                "always_positive_accuracy": 0.8720703125,
+                "balanced_sign_accuracy": 0.4327680090269526,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.9414485492044999
+              ]
+            }
+          },
+          "sae_permuted": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.9673709343829419,
+              "per_batch_p50_p90_p95": [
+                1.057746821908483,
+                1.5211780084971056,
+                2.0226470745997824
+              ],
+              "observed_rms": 0.0938585629552998,
+              "rmse": 0.09079604574590855,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.3046875,
+                "always_positive_accuracy": 0.2578125,
+                "balanced_sign_accuracy": 0.3140350877192982,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.9673709343829419
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.9665799730463981,
+              "per_batch_p50_p90_p95": [
+                1.0669645993324766,
+                1.5003840279608867,
+                1.9713525195763142
+              ],
+              "observed_rms": 0.0938585629552998,
+              "rmse": 0.09072180725150734,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.4296875,
+                "always_positive_accuracy": 0.2578125,
+                "balanced_sign_accuracy": 0.4872408293460925,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.9665799730463981
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.9718451958553317,
+              "per_batch_p50_p90_p95": [
+                1.0476258529209135,
+                1.449984528703654,
+                1.817961647661704
+              ],
+              "observed_rms": 0.21173441941471657,
+              "rmse": 0.20577307830541017,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.392578125,
+                "always_positive_accuracy": 0.8720703125,
+                "balanced_sign_accuracy": 0.42701076224750606,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.9718451958553317
+              ]
+            }
+          }
+        }
+      },
+      "zero_update_noise_rms": 0.0,
+      "sae": {
+        "raw_fvu": 1.111315131187439,
+        "whitened_fvu": 0.9665110111236572,
+        "mean_l0": 27.555570602416992,
+        "dead_features_on_validation": 0,
+        "train_loss": [
+          0.6648479700088501,
+          0.7946144342422485,
+          0.7746268510818481,
+          1.0544849634170532,
+          0.8334231972694397,
+          0.7637166976928711,
+          0.5008897185325623,
+          0.5520231127738953,
+          0.7483065128326416,
+          0.7239044904708862,
+          0.5453122854232788,
+          0.5621644854545593,
+          0.60564124584198,
+          0.6688148975372314,
+          0.6772065758705139
+        ]
+      }
+    },
+    "Qwen2.5-7B-seed606": {
+      "status": "complete",
+      "rates": {
+        "0.001": {
+          "full_gradient": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.04213788359030524,
+              "per_batch_p50_p90_p95": [
+                0.0035764620120187496,
+                0.019853030100359284,
+                0.02646503841913622
+              ],
+              "observed_rms": 0.0035812234823983146,
+              "rmse": 0.00015090517821216777,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.9921875,
+                "always_positive_accuracy": 0.265625,
+                "balanced_sign_accuracy": 0.9852941176470589,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.04213788359030524
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.6178298685739728,
+              "per_batch_p50_p90_p95": [
+                1.06073028905385,
+                1.3169121420890544,
+                1.3409067679703104
+              ],
+              "observed_rms": 0.0035812234823983146,
+              "rmse": 0.002212586833464176,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.78125,
+                "always_positive_accuracy": 0.265625,
+                "balanced_sign_accuracy": 0.7102628285356696,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.6178298685739728
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.036898003822022664,
+              "per_batch_p50_p90_p95": [
+                0.0038679003715899243,
+                0.021831652224257092,
+                0.030747723863017058
+              ],
+              "observed_rms": 0.007670563547349768,
+              "rmse": 0.0002830284830871795,
+              "sign": {
+                "scored_coordinates": 1023,
+                "excluded_below_floor": 1,
+                "sign_accuracy": 0.989247311827957,
+                "always_positive_accuracy": 0.9198435972629521,
+                "balanced_sign_accuracy": 0.9607578860060653,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.036898003822022664
+              ]
+            }
+          },
+          "svd_32": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.5377881568561461,
+              "per_batch_p50_p90_p95": [
+                0.3123383067047741,
+                0.5175710697346769,
+                0.6487439003928954
+              ],
+              "observed_rms": 0.0035812234823983146,
+              "rmse": 0.0019259395758889387,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.9765625,
+                "always_positive_accuracy": 0.265625,
+                "balanced_sign_accuracy": 0.9652690863579474,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.5377881568561461
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.5997762061590137,
+              "per_batch_p50_p90_p95": [
+                0.7369861772556944,
+                0.902056160488908,
+                0.9724989302658178
+              ],
+              "observed_rms": 0.0035812234823983146,
+              "rmse": 0.002147932633680433,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.7734375,
+                "always_positive_accuracy": 0.265625,
+                "balanced_sign_accuracy": 0.7049436795994994,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.5997762061590137
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.5270443820648563,
+              "per_batch_p50_p90_p95": [
+                0.3086694953634783,
+                0.5028395953786613,
+                0.6333910527890015
+              ],
+              "observed_rms": 0.007670563547349768,
+              "rmse": 0.00404272742490217,
+              "sign": {
+                "scored_coordinates": 1023,
+                "excluded_below_floor": 1,
+                "sign_accuracy": 0.9413489736070382,
+                "always_positive_accuracy": 0.9198435972629521,
+                "balanced_sign_accuracy": 0.7176395116767321,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.5270443820648563
+              ]
+            }
+          },
+          "svd_128": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.34577610659017427,
+              "per_batch_p50_p90_p95": [
+                0.16610273200893755,
+                0.3309263529821807,
+                0.44108602067588143
+              ],
+              "observed_rms": 0.0035812234823983146,
+              "rmse": 0.001238301512572995,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.9921875,
+                "always_positive_accuracy": 0.265625,
+                "balanced_sign_accuracy": 0.9852941176470589,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.34577610659017427
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.5801360087685546,
+              "per_batch_p50_p90_p95": [
+                0.8778299199390511,
+                1.0500912865599616,
+                1.100633595759825
+              ],
+              "observed_rms": 0.0035812234823983146,
+              "rmse": 0.0020775966975867823,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.7734375,
+                "always_positive_accuracy": 0.265625,
+                "balanced_sign_accuracy": 0.7049436795994994,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.5801360087685546
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.32947060130651284,
+              "per_batch_p50_p90_p95": [
+                0.16318514031607906,
+                0.3152597627355327,
+                0.4245418947314095
+              ],
+              "observed_rms": 0.007670563547349768,
+              "rmse": 0.0025272251843051464,
+              "sign": {
+                "scored_coordinates": 1023,
+                "excluded_below_floor": 1,
+                "sign_accuracy": 0.956989247311828,
+                "always_positive_accuracy": 0.9198435972629521,
+                "balanced_sign_accuracy": 0.7985018532438246,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.32947060130651284
+              ]
+            }
+          },
+          "sae_paired": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.2547899046706527,
+              "per_batch_p50_p90_p95": [
+                0.40666478352532043,
+                0.8170056524052588,
+                1.0781200316902426
+              ],
+              "observed_rms": 0.0035812234823983146,
+              "rmse": 0.0009124595896845694,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.875,
+                "always_positive_accuracy": 0.265625,
+                "balanced_sign_accuracy": 0.8679599499374218,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.2547899046706527
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.527365210949786,
+              "per_batch_p50_p90_p95": [
+                0.5951719812988916,
+                1.1630128390534806,
+                1.2733229694861075
+              ],
+              "observed_rms": 0.0035812234823983146,
+              "rmse": 0.0018886126772533142,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.6953125,
+                "always_positive_accuracy": 0.265625,
+                "balanced_sign_accuracy": 0.6423654568210263,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.527365210949786
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.2756649856707257,
+              "per_batch_p50_p90_p95": [
+                0.42000525691453316,
+                0.8469575678306647,
+                1.1313094167402258
+              ],
+              "observed_rms": 0.007670563547349768,
+              "rmse": 0.0021145057903665648,
+              "sign": {
+                "scored_coordinates": 1023,
+                "excluded_below_floor": 1,
+                "sign_accuracy": 0.8279569892473119,
+                "always_positive_accuracy": 0.9198435972629521,
+                "balanced_sign_accuracy": 0.7394961250356393,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.2756649856707257
+              ]
+            }
+          },
+          "sae_independent": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.934691059727367,
+              "per_batch_p50_p90_p95": [
+                1.0098856998899448,
+                1.0974788348251128,
+                1.2457321007908246
+              ],
+              "observed_rms": 0.0035812234823983146,
+              "rmse": 0.003347337571883412,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.4609375,
+                "always_positive_accuracy": 0.265625,
+                "balanced_sign_accuracy": 0.454630788485607,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.934691059727367
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.9082913589172288,
+              "per_batch_p50_p90_p95": [
+                1.017764764557737,
+                1.2195848952973591,
+                1.5108084763627019
+              ],
+              "observed_rms": 0.0035812234823983146,
+              "rmse": 0.003252794343413856,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.484375,
+                "always_positive_accuracy": 0.265625,
+                "balanced_sign_accuracy": 0.49874843554443055,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.9082913589172288
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.9331511239007514,
+              "per_batch_p50_p90_p95": [
+                1.0111899389142738,
+                1.1486508403963955,
+                1.3200099662971212
+              ],
+              "observed_rms": 0.007670563547349768,
+              "rmse": 0.007157794995161571,
+              "sign": {
+                "scored_coordinates": 1023,
+                "excluded_below_floor": 1,
+                "sign_accuracy": 0.4965786901270772,
+                "always_positive_accuracy": 0.9198435972629521,
+                "balanced_sign_accuracy": 0.559368601124906,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.9331511239007514
+              ]
+            }
+          },
+          "sae_permuted": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.9661565001918694,
+              "per_batch_p50_p90_p95": [
+                1.016845910026837,
+                1.2021561575371171,
+                1.3862493971291037
+              ],
+              "observed_rms": 0.0035812234823983146,
+              "rmse": 0.0034600223461588946,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.4296875,
+                "always_positive_accuracy": 0.265625,
+                "balanced_sign_accuracy": 0.4333541927409261,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.9661565001918694
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.9514049087405415,
+              "per_batch_p50_p90_p95": [
+                1.0257803193693609,
+                1.49925957528923,
+                1.905373840533251
+              ],
+              "observed_rms": 0.0035812234823983146,
+              "rmse": 0.003407193600450653,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.484375,
+                "always_positive_accuracy": 0.265625,
+                "balanced_sign_accuracy": 0.5081351689612015,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.9514049087405415
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.9636851270028378,
+              "per_batch_p50_p90_p95": [
+                1.0161069694957776,
+                1.264918797256767,
+                1.4797672367633266
+              ],
+              "observed_rms": 0.007670563547349768,
+              "rmse": 0.0073920080063111,
+              "sign": {
+                "scored_coordinates": 1023,
+                "excluded_below_floor": 1,
+                "sign_accuracy": 0.4555229716520039,
+                "always_positive_accuracy": 0.9198435972629521,
+                "balanced_sign_accuracy": 0.5370519167465851,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.9636851270028378
+              ]
+            }
+          }
+        },
+        "0.01": {
+          "full_gradient": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.598670707310273,
+              "per_batch_p50_p90_p95": [
+                0.02594590174219779,
+                0.1694623980760355,
+                0.3812421839270872
+              ],
+              "observed_rms": 0.024310191632719715,
+              "rmse": 0.014553799619608596,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.9765625,
+                "always_positive_accuracy": 0.28125,
+                "balanced_sign_accuracy": 0.9583333333333333,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.598670707310273
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.9080764135268884,
+              "per_batch_p50_p90_p95": [
+                1.092840166726111,
+                1.3842390596009098,
+                1.42992501252416
+              ],
+              "observed_rms": 0.024310191632719715,
+              "rmse": 0.02207551162999149,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.796875,
+                "always_positive_accuracy": 0.28125,
+                "balanced_sign_accuracy": 0.7318840579710145,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.9080764135268884
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.5555214658825357,
+              "per_batch_p50_p90_p95": [
+                0.020779543716518585,
+                0.1469027731930874,
+                0.33398435298057555
+              ],
+              "observed_rms": 0.05386076452336669,
+              "rmse": 0.029920810861574738,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.9990234375,
+                "always_positive_accuracy": 0.919921875,
+                "balanced_sign_accuracy": 0.9939024390243902,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.5555214658825357
+              ]
+            }
+          },
+          "svd_32": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.3168455977397856,
+              "per_batch_p50_p90_p95": [
+                0.30525623758629467,
+                0.42951598954835124,
+                0.5613351218488136
+              ],
+              "observed_rms": 0.024310191632719715,
+              "rmse": 0.007702577199037814,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.9609375,
+                "always_positive_accuracy": 0.28125,
+                "balanced_sign_accuracy": 0.9390096618357487,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.3168455977397856
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.5682410093138262,
+              "per_batch_p50_p90_p95": [
+                0.7565625760316699,
+                0.9125272081523439,
+                0.9827798797370022
+              ],
+              "observed_rms": 0.024310191632719715,
+              "rmse": 0.013814047829989183,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.7890625,
+                "always_positive_accuracy": 0.28125,
+                "balanced_sign_accuracy": 0.7264492753623188,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.5682410093138262
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.31942840231370484,
+              "per_batch_p50_p90_p95": [
+                0.2879679219160512,
+                0.42200057672219804,
+                0.5334648377462086
+              ],
+              "observed_rms": 0.05386076452336669,
+              "rmse": 0.017204657959093695,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.947265625,
+                "always_positive_accuracy": 0.919921875,
+                "balanced_sign_accuracy": 0.7375330122727979,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.31942840231370484
+              ]
+            }
+          },
+          "svd_128": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.17711350506149184,
+              "per_batch_p50_p90_p95": [
+                0.14779994234175775,
+                0.2746039188451491,
+                0.37750952012075
+              ],
+              "observed_rms": 0.024310191632719715,
+              "rmse": 0.00430566324878754,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.9765625,
+                "always_positive_accuracy": 0.28125,
+                "balanced_sign_accuracy": 0.9583333333333333,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.17711350506149184
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.6796398438466036,
+              "per_batch_p50_p90_p95": [
+                0.9180920267928887,
+                1.078262406024868,
+                1.134021169011372
+              ],
+              "observed_rms": 0.024310191632719715,
+              "rmse": 0.016522174845142637,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.7890625,
+                "always_positive_accuracy": 0.28125,
+                "balanced_sign_accuracy": 0.7264492753623188,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.6796398438466036
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.19179880351668935,
+              "per_batch_p50_p90_p95": [
+                0.1415641123454251,
+                0.238121832215355,
+                0.3596141906401098
+              ],
+              "observed_rms": 0.05386076452336669,
+              "rmse": 0.01033043019207588,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.958984375,
+                "always_positive_accuracy": 0.919921875,
+                "balanced_sign_accuracy": 0.8051369685671379,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.19179880351668935
+              ]
+            }
+          },
+          "sae_paired": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.3918062520856742,
+              "per_batch_p50_p90_p95": [
+                0.4013017717216367,
+                0.8166043286025478,
+                1.0780545817490297
+              ],
+              "observed_rms": 0.024310191632719715,
+              "rmse": 0.00952488507110043,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.859375,
+                "always_positive_accuracy": 0.28125,
+                "balanced_sign_accuracy": 0.8429951690821256,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.3918062520856742
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.9709975397736343,
+              "per_batch_p50_p90_p95": [
+                0.6396625318614588,
+                1.1761150773606643,
+                1.2705518870449504
+              ],
+              "observed_rms": 0.024310191632719715,
+              "rmse": 0.023605136266796438,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.7109375,
+                "always_positive_accuracy": 0.28125,
+                "balanced_sign_accuracy": 0.663647342995169,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.9709975397736343
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.43075287113058675,
+              "per_batch_p50_p90_p95": [
+                0.4406001317315849,
+                0.8435917149759227,
+                1.1289149788547501
+              ],
+              "observed_rms": 0.05386076452336669,
+              "rmse": 0.02320067895972865,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.8291015625,
+                "always_positive_accuracy": 0.919921875,
+                "balanced_sign_accuracy": 0.7456760395629434,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.43075287113058675
+              ]
+            }
+          },
+          "sae_independent": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.9097681413220157,
+              "per_batch_p50_p90_p95": [
+                1.010090020745343,
+                1.0974327350152828,
+                1.2453223765108958
+              ],
+              "observed_rms": 0.024310191632719715,
+              "rmse": 0.02211663785688144,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.4453125,
+                "always_positive_accuracy": 0.28125,
+                "balanced_sign_accuracy": 0.4365942028985507,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.9097681413220157
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.8716170489789736,
+              "per_batch_p50_p90_p95": [
+                1.0181205062694856,
+                1.2181229985475337,
+                1.5078929765790157
+              ],
+              "observed_rms": 0.024310191632719715,
+              "rmse": 0.021189177491024495,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.5,
+                "always_positive_accuracy": 0.28125,
+                "balanced_sign_accuracy": 0.5169082125603865,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.8716170489789736
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.911095466435825,
+              "per_batch_p50_p90_p95": [
+                1.0114047751892663,
+                1.1460718277903097,
+                1.3160289893598263
+              ],
+              "observed_rms": 0.05386076452336669,
+              "rmse": 0.049072298376006906,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.5,
+                "always_positive_accuracy": 0.919921875,
+                "balanced_sign_accuracy": 0.5723680803687018,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.911095466435825
+              ]
+            }
+          },
+          "sae_permuted": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.9485300748824705,
+              "per_batch_p50_p90_p95": [
+                1.0173501137828664,
+                1.2015204588854518,
+                1.3837435335156016
+              ],
+              "observed_rms": 0.024310191632719715,
+              "rmse": 0.023058947889790845,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.4140625,
+                "always_positive_accuracy": 0.28125,
+                "balanced_sign_accuracy": 0.4148550724637681,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.9485300748824705
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.924737875716659,
+              "per_batch_p50_p90_p95": [
+                1.026609793841304,
+                1.4941281907969688,
+                1.8967698729620988
+              ],
+              "observed_rms": 0.024310191632719715,
+              "rmse": 0.02248055496870613,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.484375,
+                "always_positive_accuracy": 0.28125,
+                "balanced_sign_accuracy": 0.5060386473429952,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.924737875716659
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.9470094718352937,
+              "per_batch_p50_p90_p95": [
+                1.0165223419068612,
+                1.2595459747399949,
+                1.471497116678589
+              ],
+              "observed_rms": 0.05386076452336669,
+              "rmse": 0.05100665416391862,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.45703125,
+                "always_positive_accuracy": 0.919921875,
+                "balanced_sign_accuracy": 0.5434467401998861,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.9470094718352937
+              ]
+            }
+          }
+        },
+        "0.1": {
+          "full_gradient": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 2.8940112900930446,
+              "per_batch_p50_p90_p95": [
+                0.34284878252879014,
+                1.7631402475700333,
+                2.5087462985339033
+              ],
+              "observed_rms": 0.09965063785757743,
+              "rmse": 0.2883900710248025,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.921875,
+                "always_positive_accuracy": 0.3203125,
+                "balanced_sign_accuracy": 0.8844967760022429,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                2.8940112900930446
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 3.192236153497492,
+              "per_batch_p50_p90_p95": [
+                1.295034397768224,
+                3.5337075773777666,
+                3.750430811530878
+              ],
+              "observed_rms": 0.09965063785757743,
+              "rmse": 0.31810836888804456,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.8515625,
+                "always_positive_accuracy": 0.3203125,
+                "balanced_sign_accuracy": 0.8005326604990188,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                3.192236153497492
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 2.6716241023498424,
+              "per_batch_p50_p90_p95": [
+                0.24941260754676456,
+                1.7168504359507195,
+                2.406792820870854
+              ],
+              "observed_rms": 0.22660992547498962,
+              "rmse": 0.6054165387306838,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.9912109375,
+                "always_positive_accuracy": 0.91796875,
+                "balanced_sign_accuracy": 0.9626899696048632,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                2.6716241023498424
+              ]
+            }
+          },
+          "svd_32": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.8988941758915237,
+              "per_batch_p50_p90_p95": [
+                0.3274088541699448,
+                1.0472414759510906,
+                1.0846243843208372
+              ],
+              "observed_rms": 0.09965063785757743,
+              "rmse": 0.08957537799405171,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.90625,
+                "always_positive_accuracy": 0.3203125,
+                "balanced_sign_accuracy": 0.8665545276142417,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.8988941758915237
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 1.8705817412586132,
+              "per_batch_p50_p90_p95": [
+                0.9519297320216826,
+                2.0589927573108793,
+                2.4931791648036565
+              ],
+              "observed_rms": 0.09965063785757743,
+              "rmse": 0.18640466368115866,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.84375,
+                "always_positive_accuracy": 0.3203125,
+                "balanced_sign_accuracy": 0.7947855340622372,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                1.8705817412586132
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.8777465003466203,
+              "per_batch_p50_p90_p95": [
+                0.2907589395202407,
+                1.065951169476405,
+                1.1197212882479703
+              ],
+              "observed_rms": 0.22660992547498962,
+              "rmse": 0.19890606902948058,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.9453125,
+                "always_positive_accuracy": 0.91796875,
+                "balanced_sign_accuracy": 0.7317122593718338,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.8777465003466203
+              ]
+            }
+          },
+          "svd_128": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 1.5676378820839345,
+              "per_batch_p50_p90_p95": [
+                0.31384792485682356,
+                1.3389089745523668,
+                1.6066673551324189
+              ],
+              "observed_rms": 0.09965063785757743,
+              "rmse": 0.15621611487936585,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.921875,
+                "always_positive_accuracy": 0.3203125,
+                "balanced_sign_accuracy": 0.8844967760022429,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                1.5676378820839345
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 2.4204989185792165,
+              "per_batch_p50_p90_p95": [
+                1.1071628773260522,
+                2.6387626690221904,
+                3.0110168378941355
+              ],
+              "observed_rms": 0.09965063785757743,
+              "rmse": 0.24120426116999533,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.84375,
+                "always_positive_accuracy": 0.3203125,
+                "balanced_sign_accuracy": 0.7947855340622372,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                2.4204989185792165
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 1.5150150784273135,
+              "per_batch_p50_p90_p95": [
+                0.2601576540167829,
+                1.3597985056664013,
+                1.5921051823193615
+              ],
+              "observed_rms": 0.22660992547498962,
+              "rmse": 0.3433174540158991,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.95703125,
+                "always_positive_accuracy": 0.91796875,
+                "balanced_sign_accuracy": 0.7977203647416413,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                1.5150150784273135
+              ]
+            }
+          },
+          "sae_paired": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 2.0812801820525686,
+              "per_batch_p50_p90_p95": [
+                0.49159322043543874,
+                1.1725035052390766,
+                1.6727052385167505
+              ],
+              "observed_rms": 0.09965063785757743,
+              "rmse": 0.20740089770187334,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.8046875,
+                "always_positive_accuracy": 0.3203125,
+                "balanced_sign_accuracy": 0.772497897392767,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                2.0812801820525686
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 3.4482015295796784,
+              "per_batch_p50_p90_p95": [
+                0.7593922984533842,
+                2.2995562997141334,
+                2.984370512587601
+              ],
+              "observed_rms": 0.09965063785757743,
+              "rmse": 0.3436154818840891,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.765625,
+                "always_positive_accuracy": 0.3203125,
+                "balanced_sign_accuracy": 0.7308662741799832,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                3.4482015295796784
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 2.0359325559194588,
+              "per_batch_p50_p90_p95": [
+                0.4689035756081486,
+                1.192856227097531,
+                1.6986096614450061
+              ],
+              "observed_rms": 0.22660992547498962,
+              "rmse": 0.46136252476901374,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.8271484375,
+                "always_positive_accuracy": 0.91796875,
+                "balanced_sign_accuracy": 0.7378166160081054,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                2.0359325559194588
+              ]
+            }
+          },
+          "sae_independent": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.8262225592086586,
+              "per_batch_p50_p90_p95": [
+                1.0129472502622,
+                1.0948194022300262,
+                1.2371920857896568
+              ],
+              "observed_rms": 0.09965063785757743,
+              "rmse": 0.08233360503746286,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.4375,
+                "always_positive_accuracy": 0.3203125,
+                "balanced_sign_accuracy": 0.43145500420521443,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.8262225592086586
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.76757998050084,
+              "per_batch_p50_p90_p95": [
+                1.023741760056708,
+                1.2110939090477042,
+                1.4896768931159705
+              ],
+              "observed_rms": 0.09965063785757743,
+              "rmse": 0.07648983466361554,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.4921875,
+                "always_positive_accuracy": 0.3203125,
+                "balanced_sign_accuracy": 0.5039248668348753,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.76757998050084
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.8394386370739045,
+              "per_batch_p50_p90_p95": [
+                1.0146173599556474,
+                1.1426573085159868,
+                1.3050707564261748
+              ],
+              "observed_rms": 0.22660992547498962,
+              "rmse": 0.19022512698814437,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.501953125,
+                "always_positive_accuracy": 0.91796875,
+                "balanced_sign_accuracy": 0.576950354609929,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.8394386370739045
+              ]
+            }
+          },
+          "sae_permuted": {
+            "fixed_category_contrasts": {
+              "relative_l2_error": 0.8953610628784815,
+              "per_batch_p50_p90_p95": [
+                1.0219801943133717,
+                1.195145557812835,
+                1.3628223780468396
+              ],
+              "observed_rms": 0.09965063785757743,
+              "rmse": 0.08922330102867919,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.4375,
+                "always_positive_accuracy": 0.3203125,
+                "balanced_sign_accuracy": 0.4443509952340903,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.8953610628784815
+              ]
+            },
+            "transfer_category_contrasts": {
+              "relative_l2_error": 0.8538733361718424,
+              "per_batch_p50_p90_p95": [
+                1.0367343031595597,
+                1.4703422390826564,
+                1.8497040990537768
+              ],
+              "observed_rms": 0.09965063785757743,
+              "rmse": 0.08508902259910174,
+              "sign": {
+                "scored_coordinates": 128,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.4453125,
+                "always_positive_accuracy": 0.3203125,
+                "balanced_sign_accuracy": 0.4565461171853098,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.8538733361718424
+              ]
+            },
+            "fixed_individual_probes": {
+              "relative_l2_error": 0.8980933375395916,
+              "per_batch_p50_p90_p95": [
+                1.020484101857507,
+                1.2512830460276514,
+                1.4487584381385297
+              ],
+              "observed_rms": 0.22660992547498962,
+              "rmse": 0.20351686428943155,
+              "sign": {
+                "scored_coordinates": 1024,
+                "excluded_below_floor": 0,
+                "sign_accuracy": 0.45703125,
+                "always_positive_accuracy": 0.91796875,
+                "balanced_sign_accuracy": 0.5416413373860183,
+                "floor": 1e-07
+              },
+              "per_seed_error": [
+                0.8980933375395916
+              ]
+            }
+          }
+        }
+      },
+      "zero_update_noise_rms": 0.0,
+      "sae": {
+        "raw_fvu": 1.1173467636108398,
+        "whitened_fvu": 0.9966776371002197,
+        "mean_l0": 22.273534774780273,
+        "dead_features_on_validation": 246,
+        "train_loss": [
+          0.7611232399940491,
+          0.9407508373260498,
+          0.863871693611145,
+          0.7502759099006653,
+          0.8243590593338013,
+          0.9577231407165527,
+          0.5257129073143005,
+          0.684943675994873,
+          0.7216062545776367,
+          0.7334276437759399,
+          0.5497190952301025,
+          0.5038976073265076,
+          0.6216182112693787,
+          0.5809286832809448,
+          0.6026166677474976
+        ]
+      }
+    }
+  }
+}

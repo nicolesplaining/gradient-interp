@@ -1,0 +1,22 @@
+{
+  "jobs": [
+    {
+      "job": "Qwen2.5-3B-seed606",
+      "checkpoint_restored": true,
+      "result_count": 48,
+      "forecast_before_outcomes": true,
+      "finished_before_deadline": true,
+      "manifest_sha256": "f92fb7ca405d2a34656595a7521fa926b07c0551458eb42124baba1bd6101e72"
+    },
+    {
+      "job": "Qwen2.5-7B-seed606",
+      "checkpoint_restored": true,
+      "result_count": 48,
+      "forecast_before_outcomes": true,
+      "finished_before_deadline": true,
+      "manifest_sha256": "e797e791c718c6d6d77b402c693155e355ceb57f990f7862fb07885a0fee2386"
+    }
+  ],
+  "validated_frozen_source": true,
+  "elapsed_hours": 0.2476491571797265
+}

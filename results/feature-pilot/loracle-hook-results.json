@@ -1,0 +1,2762 @@
+[
+  {
+    "tokens": "000.npz",
+    "sha256": "2de2236dd714c5061d5188cae554c5140fadc860c4f5654924085d47c55afbea",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 5.491967840498546e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 5.491675665325602e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "001.npz",
+    "sha256": "06a310bc2796cc1418b72d9c63543c067ab38e9fdbade715c94678110ec1683f",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 9.39011385980848e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 9.391217190568568e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "002.npz",
+    "sha256": "ea0e39f04e1ef4f2c9b34f918bd2ddaa675440baa5163243954381ac8d63a105",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 3.106564747668017e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 3.1067924055605545e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "003.npz",
+    "sha256": "b5b6e02d6695334d3595e5e81c7a3a3912fa313406305fc4f619e9c248d4f80c",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.3610407734176988e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.361107422326313e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "004.npz",
+    "sha256": "10bdde11bd78a84b225679c17c9542404c04599e7c729e85234726358385d512",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.2882478586107027e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.2881887414550874e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "005.npz",
+    "sha256": "4b656f8c5a310a139561a6d9b2146509d8dbf5d30e49fdcc58fa3b85ffaccd29",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 9.300810575041396e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 9.300717351834464e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "006.npz",
+    "sha256": "33b126fcd9515409a36b6025e779284bb2d894a41919042cb944bf55361392a4",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 8.920641789700312e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 8.920707728066191e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "007.npz",
+    "sha256": "dc39d1f942b3e1f574feb410ca910b746166e63322f11cfafe7ee17039ee0285",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.3172436865716008e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.317200712946942e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "008.npz",
+    "sha256": "ced32691d117fba2787a2681d9aaa58b8f8e99c06af528e7b3cbd85437e2f645",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.8578402887214907e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.857903839663777e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "009.npz",
+    "sha256": "2cc697bea58bf4d7e3eb72543778df92196cfe45863d8cb1b3a0581faea51d6d",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 7.950984581839293e-08,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 7.950576730308967e-08,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "010.npz",
+    "sha256": "dc9174490015143a90b5a1fde9d531c0f59b67b98ba03627e2f5280e56f69647",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.4623421975556994e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.462427690057666e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "011.npz",
+    "sha256": "4093f102bf4ec02fbc0ecb2bfcf54aa62ebe1868424f99bb6a12898b0d20a9c6",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.1889292181876954e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.1888523658853956e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "012.npz",
+    "sha256": "52bc2a9849551d9a713e7821d268a0c4af7a2c41954d515a9e9e694e47148e3b",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 6.382886681421951e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 6.383202730830817e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "013.npz",
+    "sha256": "23bb8b0a813198690524c06511167a7f808aa0b66d3ee7f803db1b718e8ee389",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 4.734318395094306e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 4.7341805498035683e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "014.npz",
+    "sha256": "3c037768b44928889a98c7cb3335cf50d72e59dbc5bfb9a28b856d2ed5cdcec3",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 6.101764711274882e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 6.101739700170583e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "015.npz",
+    "sha256": "a422ef6966ad1c9fe04447f58418afeaaa9caf2ea3c6bc70c5abdb147230a426",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 5.635053526020783e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 5.635053526020783e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "016.npz",
+    "sha256": "597fbd2ed4eb65c4dfbed1065f1f0a3c2afcb0a0e386ddfdb577127ce052af52",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 7.97422273990378e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 7.974828122314648e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "017.npz",
+    "sha256": "55217d64651b32d402819f507b77eea3fabc29f2c5222ab7fb922e4509d0c995",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.143740746556432e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.1438323781476356e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "018.npz",
+    "sha256": "df4cc5c27892ea800cd3d253b3aecf97d330ef9c20d1ec2887c2315b52396c44",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 5.812617587253044e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 5.812736958432652e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "019.npz",
+    "sha256": "08df84b6f4e6ba07a63706f3585c41d2e8170a903d0d245498ebba33edc7d7bc",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 8.903883212951769e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 8.904545438781497e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "020.npz",
+    "sha256": "65c0b595e0f2da81c61f9cabf99f676f88a5f3d3c3b692da1caed4de7b83bdcd",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 5.92748051531089e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 5.927691972829052e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "021.npz",
+    "sha256": "04af9266684fbb1d8973760de29bf01542ef32cfb4950d52a42af90179e17eb3",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.3632042055178317e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.3632480886371923e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "022.npz",
+    "sha256": "98433ea55337444eea206b16eab7beb892ce73e1255d94382227f7460c7a1da8",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 5.747805289502139e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 5.747745035478147e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "023.npz",
+    "sha256": "c217127122bf70346e1833cc09b51dcf88d30dd796aa5211640e2ab7b5c8a7c4",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 4.956282850798743e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 4.956683596901712e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "024.npz",
+    "sha256": "0c79d363260a8023a923b9070437bfacc2c7d821670d813c8cfa2f6414c455b1",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 8.46696366352262e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 8.466017220598587e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "025.npz",
+    "sha256": "8d3b6a220c97b03c7cd20b89ac08272aa0ff7bb2dab1f8514efb9ab3f8548951",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.0567539447947638e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.056832275025954e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "026.npz",
+    "sha256": "80f37ec2a07c155ecf03efa8dc04a05494c5c330ef33ec5e5643266620f644a8",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 6.659954578935867e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 6.659550422227767e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "027.npz",
+    "sha256": "3f25014e0efa724410bfa44455d921545f92a8f52c5604b75c89688322921c90",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.3949555750514264e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.3950152606412303e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "028.npz",
+    "sha256": "67bb1af4a07bd3a6c52151c3fe8b7728d7721994018421431a36fce8a49ad0c3",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 7.790674203533854e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 7.790617928549182e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "029.npz",
+    "sha256": "b66b2836277f6fae4f3cd55abc02afc7637906e7e18205d5c1c54ee282eda708",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 7.294245278899325e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 7.293637622751703e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "030.npz",
+    "sha256": "2bb83f31eee88772c93c5282cb7f212902858d7b002554f92a3713fdcd1a28be",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.0005068133978057e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.000520114757819e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "031.npz",
+    "sha256": "30e1789d40468fb1a74b7e143f6d685771bf78793eafa66ea9115897641ba8cf",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 6.731343660248967e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 6.731513053637173e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "032.npz",
+    "sha256": "23f38024f7d307ece266364c93414fdb6b5ac0dab99123561390c347628307dd",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.0959266774079879e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.095946231544076e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "033.npz",
+    "sha256": "7e360a6302cb892d74341a2fff6859627a5872c67c6202629c7df5b4b3b00246",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.2044001778122038e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.2043668675687513e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "034.npz",
+    "sha256": "fa7f82eeb73f7332ac559c63d0e07f1bcd62b4c468002149ae646220ae1fa813",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.3148425068720826e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.314796577389643e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "035.npz",
+    "sha256": "7e682860eb84a821c6095f49c93e62e15a4c6104cac08f9f3ae4c8ddb67f87cc",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 6.794360274398059e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 6.793962370466033e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "036.npz",
+    "sha256": "9d2904ea14fa3ddc210be5a5b352efafd9e45bb5b3b5d0b635fd2aa3353378ca",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.0516990869291476e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.0517217106098542e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "037.npz",
+    "sha256": "3652b3acdc2661eb4da6de38e407ab25c9066dbe2dc592f93244d8eb7aef6baf",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.2806676750187762e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.2806102631657268e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "038.npz",
+    "sha256": "731369bfad0ceda4d48b7310b6521ab5106144c6a2adca5478cab8f0845c6e2c",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 6.20453477040428e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 6.204418241395615e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "039.npz",
+    "sha256": "ec116c892b93e66e8bb68264c8e0190851c3c48808cf22c2ee47259f3c31ee15",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.2978445056432975e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.2977939150005113e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "040.npz",
+    "sha256": "83814f7b13d4a4621e9a1bd994c7fd61ba5d31cf9a08f3468cda0b95fbf2a1f5",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 8.157321644830517e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 8.157341540027119e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "041.npz",
+    "sha256": "a48c07f20b75e8a305cca1be3f6ebb9aa972e1a092ddf0dcc7e4c1cfcd91db63",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.0167476602873649e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.0167277650907636e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "042.npz",
+    "sha256": "34c14fdf6c903e92f1b5d48e2a4f3957aab6f111e6ee7f5e3edd359b1f8323b2",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.9536230411176803e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.9536912532203132e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "043.npz",
+    "sha256": "81426fa3f4494ec2617a201caed08bf54a41885ffe8b5c779c5bdd083efa0586",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.0028290944319451e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.0028256838268135e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "044.npz",
+    "sha256": "14bfb8873e8c7f796872d8e184dd813ac40e2611f9b2073d09fc97abaf9850fa",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.188075884783757e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.1880291594934533e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "045.npz",
+    "sha256": "99ea0ad9db3d6a37c5757d440faff645be58e1caf56e1e05509c0eef346931ce",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.0462457566973171e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.0462156296853209e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "046.npz",
+    "sha256": "1c46c25a5b7edd5992311881e1caf37c4b451b6e662c093c7428a98c231ce336",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 7.484136972379929e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 7.484410957658838e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "047.npz",
+    "sha256": "095518f051edf27e4b5f976f7353110e4e641dc80fcd30e323f9072228c188c4",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.0277344699716195e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.027782104756625e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "048.npz",
+    "sha256": "69b85ba9719e471d9f0f8df58ae9d4f2ec327c75868061df42f42e8d545b4b7f",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.3398722558122245e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.3398331475400482e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "049.npz",
+    "sha256": "28d09694b6989016bd0650afd7b2c2d77243b6eb022ad49ea6b6a4eb821b5eb5",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.0919548003585078e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.092035176952777e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "050.npz",
+    "sha256": "c62166a4b3402c4b3607168531613a9bc059cb5df45adc18cabed15344ef6263",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 8.325322369273636e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 8.325005182996392e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "051.npz",
+    "sha256": "ce53d6c52489035d063e6ebd627bb006ab7103f5f6e28ec1a6521751a2b2ef16",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.316677980867098e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.3167008319214801e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "052.npz",
+    "sha256": "090fab58ee19de7bc65f3496efc286969cacc7c0fe357af092e1d32522d52d11",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.3859140608474263e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.3858854117643205e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "053.npz",
+    "sha256": "3c9d4908e0be24adcbdf086fcd8da3df71901d778f65a2592aacab2ea9c7cd08",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.0440086271046312e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.0439811148899025e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "054.npz",
+    "sha256": "af51ef4a88dd149f163f371dd27fb5901b8c6381f802ce4fab9d44a72092e0c8",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 6.715634413012594e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 6.715631570841651e-07,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "055.npz",
+    "sha256": "fbb313083c0ed4df6585bf66035fcdcb528d1f847cdc1a2ee24380fcd75413d5",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.1236198815822718e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.123573269978806e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "056.npz",
+    "sha256": "a532ef538e1eaaaf7a09c07c81e196da95aed9e89ac359feb977a8ee22731139",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.837206241361855e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.8373850707575912e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "057.npz",
+    "sha256": "94aa1decdda5bca42fdb8c5b19791613a215ced5b8b7526df65a83fec5d7b5cf",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.7810099279813585e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.781078367457667e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "058.npz",
+    "sha256": "009c93ce7bab1332efa321d9fa26d88c429523d34eb64837efb86ea4f5309ace",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.0993303476425353e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.0992995385095128e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  },
+  {
+    "tokens": "059.npz",
+    "sha256": "cdcb0e44c9c5b5f78c9b22898d5a7b15dc020cda653525a708e994884a5b742e",
+    "correct": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.0668240975064691e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    },
+    "compatible": {
+      "scales": {
+        "0.25": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "1.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "4.0": {
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "smallest_nonzero_token_norm": 1.0668118193279952e-06,
+      "nonzero_tokens_below_clamp_at_smallest_scale": 0,
+      "zero_tokens": 0,
+      "positive_injection_changes_hidden": true,
+      "negative_control_changes_injection": true
+    }
+  }
+]

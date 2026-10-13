@@ -1,0 +1,86 @@
+{
+  "scope": "development_only; previously inspected source data; no confirmatory claims",
+  "jobs": [
+    {
+      "id": "Qwen2.5-3B-seed606",
+      "seed": 606,
+      "module": "model.layers.18.mlp.down_proj",
+      "n_features": 4096,
+      "model": {
+        "kind": "hf",
+        "name": "Qwen/Qwen2.5-3B",
+        "revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+        "device": "cuda",
+        "dtype": "float32",
+        "max_length": 256,
+        "width": 24,
+        "trainable_pattern": "model\\.layers\\.18\\.mlp\\.down_proj\\.weight$",
+        "lora_rank": 0,
+        "lora_alpha": 8,
+        "lora_targets": [
+          "q_proj",
+          "v_proj"
+        ],
+        "score_batch_size": 1,
+        "attention": "sdpa",
+        "gradient_checkpointing": false
+      }
+    },
+    {
+      "id": "Qwen2.5-7B-seed606",
+      "seed": 606,
+      "module": "model.layers.14.mlp.down_proj",
+      "n_features": 7168,
+      "model": {
+        "kind": "hf",
+        "name": "Qwen/Qwen2.5-7B",
+        "revision": "d149729398750b98c0af14eb82c78cfe92750796",
+        "device": "cuda",
+        "dtype": "float32",
+        "max_length": 256,
+        "width": 24,
+        "trainable_pattern": "model\\.layers\\.14\\.mlp\\.down_proj\\.weight$",
+        "lora_rank": 0,
+        "lora_alpha": 8,
+        "lora_targets": [
+          "q_proj",
+          "v_proj"
+        ],
+        "score_batch_size": 1,
+        "attention": "sdpa",
+        "gradient_checkpointing": false
+      }
+    }
+  ],
+  "seed": 606,
+  "threads": 8,
+  "learning_rates": [
+    0.001,
+    0.01,
+    0.1
+  ],
+  "train_documents": 192,
+  "validation_documents": 64,
+  "sae_k": 32,
+  "sae_epochs": 15,
+  "sae_learning_rate": 0.001,
+  "source": "/home/ubuntu/gradient-interp/runs/confirmation",
+  "tokenizer_revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+  "methods": [
+    "full_gradient",
+    "svd_32",
+    "svd_128",
+    "sae_paired",
+    "sae_independent",
+    "sae_permuted"
+  ],
+  "max_hours": 12,
+  "capture": "All token positions including prompts; mean completion loss per document",
+  "claim_limits": [
+    "Single plain linear module, not whole-model LoRA",
+    "SAE token features not yet interpreted or causally validated",
+    "Independent-pairing and permuted-pairing controls keep the same learned decoder",
+    "Context vectors use more storage than scalar feature totals",
+    "No equal-storage or speed claim; fixed and independent-probe metrics kept separate"
+  ]
+}

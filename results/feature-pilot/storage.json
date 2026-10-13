@@ -1,0 +1,14 @@
+[
+  {
+    "job": "Qwen2.5-3B-seed606",
+    "raw_weight_bytes": 90177536,
+    "sae_context_bytes": 180399104,
+    "svd32_context_bytes": 1453056
+  },
+  {
+    "job": "Qwen2.5-7B-seed606",
+    "raw_weight_bytes": 271581184,
+    "sae_context_bytes": 543238144,
+    "svd32_context_bytes": 2500608
+  }
+]
