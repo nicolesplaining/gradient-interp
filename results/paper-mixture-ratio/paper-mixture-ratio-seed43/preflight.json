@@ -1,0 +1,18 @@
+{
+  "completed_unix": 1791904046.8943899,
+  "specification_sha256": "608396bfe85bfc6ec09fc29ee53be63e88b41294f64458d2135d0a3374e1567a",
+  "parameter_tensors": 136,
+  "numerics": "float32_sdpa_tf32_disabled",
+  "single_vs_original_abs_error_per_token": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "adapter_restored": true,
+  "likelihoods_restored_exactly": true
+}

@@ -1,0 +1,8 @@
+{
+  "created_unix": 1791912732.9319592,
+  "evidence": "Both complete FP32 direct-mixture diagnostics fail large-step behavior. Exact densities improve seed42 copying but worsen seed43, still miss truncation and length. Base/warm scoring drift zero.",
+  "decision": "Stop incremental proposal expansion for large-step reliability. Develop pre-update autoregressive logit-tangent sampling rather than reweighting a fixed proposal bank.",
+  "hypothesis": "A first-order parameter-logit model evaluated along its own sampled prefixes may represent emerging truncation and formatting events absent from baseline proposals. It can still fail due to curvature and distribution drift.",
+  "implementation_check": "First assess forward-mode JVP feasibility on training-only inputs, finite-difference derivative agreement, zero-direction and restoration checks, then freeze a separately specified bounded development phase. No direct updated-logit oracle counted as prospective forecasting.",
+  "limitations": "Data and checkpoint seeds reused development; standard neural-network linearization is not novel; method may cost more than simply evaluating an actual update. Need honest cost comparison and gradient-compression baselines."
+}

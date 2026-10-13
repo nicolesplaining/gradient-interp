@@ -1,0 +1,54 @@
+{
+  "created_unix": 1791912405.9735308,
+  "scope": "post-update oracle diagnostic; no prospective forecasting claim",
+  "frozen_generation_commit": "e031b89dc2b24f11ed880c36cc44d74103c809b7",
+  "roots": [
+    "paper-mixture-ratio-seed42",
+    "paper-mixture-ratio-seed43"
+  ],
+  "gate": "Both controllers complete before any new likelihood reading; full original-host integrity audit required. No new diagnostic outcome has been inspected when writing this plan.",
+  "grid": {
+    "seeds": [
+      42,
+      43
+    ],
+    "rates": [
+      0.0003,
+      0.003,
+      0.03
+    ],
+    "banks": [
+      "base64",
+      "base256",
+      "warm256",
+      "mixture256",
+      "mixture512"
+    ],
+    "comparisons": "direct SNIS versus all six saved Taylor representations, both linear and SNIS, including zero",
+    "endpoints": [
+      "numbered",
+      "exact_content_and_order",
+      "tokens",
+      "truncated"
+    ],
+    "subgroups": "all styles, each style, every batch; same-question and calibration-mean template transfer"
+  },
+  "weighting": "Keep original frozen proposal density q. Baseline rescores audit numerical drift only. Direct change subtracts original-bank weighted baseline.",
+  "uncertainty": {
+    "replicates": 1000,
+    "seed": 102713,
+    "proposals": "Resample within temperature and nested fixed strata 0:64,64:128,128:256,256:320,320:384,384:512. Same draws across banks and estimators. Conditional on subset partition.",
+    "evaluation": "Resample 128 responses separately from proposals, paired baseline/update streams for all conditions; crossed question sampling within template and style-stratified batch sampling.",
+    "report": "Pointwise descriptive intervals, no population or multiplicity-adjusted success claims; absent proposal events remain absent in bootstrap."
+  },
+  "diagnostics": [
+    "raw and centered direct-versus-Taylor log-ratio errors",
+    "baseline base/warm cache drift",
+    "ESS relative to N/4, minimum/p10/median, mean-weight normalization, maximum weight concentration",
+    "all bank/question event coverage, no exclusion",
+    "pooled error, absolute magnitude, normalized errors, worst batch and tails",
+    "complete previously saved generated content/order/format/length/truncation/empty/repetition checks"
+  ],
+  "examples": "Previously generated mixture responses only: batches 0..3, probes 0 and 8, sample 0, all rates and both seeds.",
+  "decision": "If direct weights still fail large-step behavior, stop incremental proposal changes as the proposed route to large-step reliability; develop a predictor able to represent newly generated trajectories. Any new method needs a separate frozen development phase before fresh confirmation."
+}

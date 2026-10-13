@@ -1,0 +1,17 @@
+{
+  "complete": true,
+  "verified_unix": 1791912428.2300334,
+  "plan_sha256": "02bad62c483391cbbed63133d1b88f016d0dc46dcc859bfb3b6f20f4c60c1f7d",
+  "specification_sha256": "608396bfe85bfc6ec09fc29ee53be63e88b41294f64458d2135d0a3374e1567a",
+  "manifest_sha256": "dd6895722067c58b181b4f65c33b5413c51bb075f49a65ec9639c19e48b8e51d",
+  "source_snapshot_sha256": "d08287c37eff3e6716d07d31627401f9ca876b98bf30f1d074e832d55d005439",
+  "source_input_output_hashes_verified": true,
+  "adapter_restored": true,
+  "deadline_compliant": true,
+  "conditions": 49,
+  "scores_per_condition": 8192,
+  "float32_gradient_cache_verified": true,
+  "unique_sequences_per_condition": 1787,
+  "updates": 48,
+  "elapsed_seconds": 3223.6899168491364
+}
