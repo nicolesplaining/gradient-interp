@@ -1,0 +1,62 @@
+{
+  "scope": "development_only",
+  "frozen_unix": 1791886267.8532412,
+  "max_hours": 12,
+  "source_files_sha256": {
+    "src/gradient_interp/__init__.py": "9be9ee7a3e22d15ec3a917b6c52a8514b290f93cf3afbbe8368821baf06b4c9f",
+    "src/gradient_interp/models.py": "d4646522a0397460d9ecf8ba1e6f66a6b040409f0d4abe6468df5e4da6107c4a",
+    "src/gradient_interp/development_run.py": "670603f761e5c87e6903cedc5010eef856d0d4495667e0bf2852e5ba181460e2",
+    "src/gradient_interp/paper_steering_analysis.py": "01b6cf53cfd824ba3ed9dd298d4262e2225859517961d4ae5ef4909e872b38dc",
+    "src/gradient_interp/study.py": "2f217b76391213d3d28ae31e2f823ffa457b33e384a8255a6c49e9735f348303",
+    "src/gradient_interp/feature_run.py": "8eb4d01c02abc614978e49fed165627e75e232900bc0929c0355bac5e6a29a6c",
+    "src/gradient_interp/confirmation_report.py": "e3f4d0d58846b77bccb1599b5d123da61dc4d0beee4d9f933cbd6cfd0d8e67cd",
+    "src/gradient_interp/benchmark.py": "b2f023fa57e43ac3ca2daea81d778cd8f3d20ff78211f898215ebd5c399bb099",
+    "src/gradient_interp/feature_controls.py": "fbb5b6709248f69432bb62a17b2efdb55e85bf7fbd5d3d35a5e67efe901d368a",
+    "src/gradient_interp/experiment.py": "c255f13fb01b39eaaa794aaf0f983892816580a983a12431e14eda29e6eec022",
+    "src/gradient_interp/data.py": "b311870da901919e59200c076c3028decad87089825a30616254ce0d4d7859c9",
+    "src/gradient_interp/paper_setup.py": "f9a882ca091881b5ace3d48c244d9b139935b8a5dcc7046be298a98612f5e0bf",
+    "src/gradient_interp/confirmation_data.py": "d076ce8fd41efaee2bcd89c9db3303a8e88b20118f73fe3a91bb3229d028489c",
+    "src/gradient_interp/feature_pilot.py": "18d35d81317dfccc233447d47836da4e85003e9ac6d11800d465e78c248d805d",
+    "src/gradient_interp/loracle_study.py": "1de73b6beb315fef97fe999bf52a5f311c6ef42e886c97d3e077939b38db3fe6",
+    "src/gradient_interp/paper_discovery_report.py": "6fe984df7b4bb98f26b57ee714c0d0dda395be4003cb2f8dc8a781ddf27900b8",
+    "src/gradient_interp/audit.py": "c980397e04bc321366c28f189f662d7d24218c74a9b0b7056ee2d46596db98aa",
+    "src/gradient_interp/dictionary.py": "6e540da39869579e37423efa62de581d860e07524908eb6f4a220d0e7319f122",
+    "src/gradient_interp/analysis.py": "60098467179ca4f64aa2f3d1e6a18c19a9a251bbf9bcbc4c2459801f5b3c9272",
+    "src/gradient_interp/feature_report.py": "8cdf0274bc6c9bb68215e1114de8ad83310746d205ef120ec4d749ea2c0e694a",
+    "src/gradient_interp/cli.py": "96d71ad63a7ce095b2dbec3afe34b00a4cb092e448c3e63a5d5478736203f0ff",
+    "src/gradient_interp/config.py": "710e1ad4ba7cb01b47635b9d3555df547b0b54a0c38c340206c2fa95ac3af3df",
+    "src/gradient_interp/loracle.py": "05afb530d0f9f1ab86b10cecfcb57cb17e2447aa3fd5d0bf679a6e603c2704f8",
+    "src/gradient_interp/parameters.py": "b208f2d74c3d393d53219ddf004e0eed08b33ad48f4dd60e6880db837cc68845",
+    "src/gradient_interp/behavior_pilot.py": "2effcc9a30baf871f25132b60bbbb26719ef4518a0ec5f291ba43cd49a14624f",
+    "src/gradient_interp/paper_steering.py": "4c9dd146f78aab48581b70e4d3d3897cc079e9c741d2575a53fe55068251bc50",
+    "src/gradient_interp/loracle_scale_audit.py": "8b1847a1d3313e6ec698e83aa971b1e4387aae0878da0080d7e1cec4631381af",
+    "src/gradient_interp/cached_sweep.py": "00ffd432d63e40ef9c3dd6f02a45bfa6d75a74f60c96d010740c411c02c0fb89",
+    "src/gradient_interp/transfer_audit.py": "8985d7ca4939a28e375a77e5c8441cacb040910e2660396ab7466572f6e98e0c",
+    "src/gradient_interp/suite.py": "4032d36529039605d63b2d84c283e1bdd042fa0f95a5879158c6c762fd70501f",
+    "src/gradient_interp/forecast.py": "bbe2f5626a72220957df59f28c566de58f60af13652724736755dcdda469758e",
+    "src/gradient_interp/confirmation_run.py": "1a8e946053bba8b3e85b21084eb977e3ffad0bb21f177d43944de74608a3fefe",
+    "src/gradient_interp/residual.py": "dc8f60506150fd1fa992f31c95e03454375ec8ec1cb504f5333b5d3c2d6da315",
+    "src/gradient_interp/predict.py": "0889557023737cec03999975e544330134edccaacc69181dd9864a94f1320521",
+    "src/gradient_interp/confirmation.py": "8a6d28cab6e209a4bf7c93563d66de7160c3281453d9a3fdb8886dc575c74b2e",
+    "src/gradient_interp/confirmation_analysis.py": "dc774552aa11e3654f3e1896740a91ff1d125b4e44d65db283194333243786ce",
+    "src/gradient_interp/paper_batch.py": "317d6cb7819bd33ad62ffdfd46e2e100715146721c1426d7b51b0815953cdb79",
+    "src/gradient_interp/feature_updates.py": "0b95507d1af94bf8eeb2f40575e8599d09edb96c0eb22d790c39c958eb8c7dbc"
+  },
+  "input_hashes": {
+    "/home/ubuntu/gradient-interp/runs/paper-batch-seed43/specification.json": "c33c0647c0144bcf20c16495f3aa543dbda8a5f36032097f01d95d13e1a7da75",
+    "/home/ubuntu/gradient-interp/runs/paper-batch-seed43/data.json": "3fe2e1426c9554eca18d2346bd2410f6f6d6b3f498ea88a011a9abc3fca7ecd9",
+    "/home/ubuntu/gradient-interp/runs/paper-batch-seed43/preflight.json": "69001fbdf02653d633b219bb26eae26545d890bd39fbbdbab15f6039e2333588"
+  },
+  "jobs": [
+    {
+      "id": "batch-forecast",
+      "module": "gradient_interp.paper_batch",
+      "arguments": [
+        "run",
+        "--root",
+        "/home/ubuntu/gradient-interp/runs/paper-batch-seed43"
+      ],
+      "manifest": "/home/ubuntu/gradient-interp/runs/paper-batch-seed43/manifest.json"
+    }
+  ]
+}

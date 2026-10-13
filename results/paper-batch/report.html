@@ -1,0 +1,321 @@
+<!doctype html><meta charset="utf-8"><title>Prospective LoRA batch pilot</title><style>body{max-width:1250px;margin:40px auto;padding:0 24px;font:17px/1.5 system-ui;color:#202428}img{width:100%}table{border-collapse:collapse;font-size:14px}td,th{padding:8px;border-bottom:1px solid #ddd;text-align:right}td:first-child,th:first-child{text-align:left}pre{white-space:pre-wrap;background:#f3f5f7;padding:14px}details{margin:18px 0}h1,h2{line-height:1.2}a{color:#176b9a}</style>
+<h1>Can a batch gradient forecast a LoRA update?</h1><p>Synthetic development pilot · two reconstructed Gemma-3 4B adapters · 96 prospective updates · 1,568 free generations.</p>
+<p>The model was asked to copy three unfamiliar tags. Training batches varied two things independently: plain versus numbered presentation, and short versus long answers. We predicted changes before applying each batch, then measured both completion scores and freely generated answers. This separates score prediction from behavioral validation.</p>
+<h2>What we learned</h2><p><b>The full gradient forecasts answer-score changes, but this pilot does not establish behavior forecasting.</b> At the middle learning rate, 0.003, same-probe format error was 0.140 and 0.112 times the no-change error (seeds 42 and 43). Dictionary errors were 0.845 and 0.814, versus 0.814 and 0.767 for SVD16. The dictionary predicted only 16% and 19% of the measured format-change RMS. It did not consistently improve on the simpler baseline.</p>
+<p><b>Aggregated accuracy hides difficult batches and transfer failures.</b> Full-gradient format error rose to 0.585 and 0.456 when transferring mean calibration forecasts to evaluation questions. Median batch errors for that transfer were 1.38 and 1.26 times the zero baseline; large-effect batches dominate the pooled metric. At the largest rate, summed-score full-gradient forecasts substantially overshot. Some compressed forecasts improved there, consistent with attenuation helping an overlarge linear forecast; this is not evidence of better atom semantics.</p>
+<p><b>The score changes did not produce the expected formatting change.</b> Only one of 1,536 post-update free responses was numbered. The four candidate answers omit common generated forms, including plain newline-separated tags. Their normalized probabilities can change sharply while actual generation remains unchanged. Long candidates also have near-zero conditional mass, so large relative errors for their probability contrast have tiny absolute denominators.</p>
+<p><b>Content checks catch a failure.</b> At rate 0.03, plain-short training on seed 42 reduced exact tag/order accuracy from 100% to 37.5%; 73.4% of those responses hit the generation cap. Seed 43 did not show that failure. At rate 0.003, seed 43 plain-short batches improved tag accuracy from 81.25% to 100%, but this was not forecast by a trained correctness predictor. These are descriptive development results.</p>
+<h2>What was fixed before running</h2><ol><li>Use rank-8 q/v LoRA in all 34 language layers, 136 A/B tensors, with the reconstructed Gradient Atoms checkpoints.</li><li>Use 16 batches of four documents, four batches for each format/length combination. Calibration and evaluation have 16 questions each, with different templates.</li><li>Save full-gradient, EKFAC, dictionary, SVD16, mean-direction and zero forecasts for all probes before any update. Restore gradient magnitude after sparse coding.</li><li>Apply one SGD step at each of three fixed learning rates, reset the adapter after every step, then score four content-matched completions and generate freely on the evaluation prompts.</li><li>Analyze every method, rate, seed and batch family after both runs finish. Pointwise crossed batch/probe bootstrap intervals are descriptive; two seeds do not establish seed-population robustness.</li></ol>
+<h2>Prediction errors</h2><p>Error is divided by the error of predicting no change. Below 1 beats that baseline. Same-probe forecasts use gradients of the actual scored questions. Transfer uses the mean forecast from a separate calibration template. SVD16 is a simple low-rank baseline, not an equal-storage or equal-compute comparison.</p>
+<h3>summed logp</h3><img src="forecast_summed_logp.png">
+<h3>mean token logp</h3><img src="forecast_mean_token_logp.png">
+<h3>four choice probability</h3><img src="forecast_four_choice_probability.png">
+<p>Probabilities here are normalized over exactly four predefined completions, all with correct tags. They are not probabilities of unrestricted model behavior. Summed log probabilities also favor shorter sequences; per-token scores answer a different question and are not sequence probabilities.</p>
+<h3>All rates: same-probe format contrast, summed log probabilities</h3><table><tr><th>Seed / rate</th><th>Full gradient</th><th>EKFAC 6800</th><th>Dictionary 500</th><th>SVD 16</th><th>Mean direction</th><th>Zero</th></tr>
+<tr><td>42 / 0.0003</td><td>0.800</td><td>0.900</td><td>0.942</td><td>0.929</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>42 / 0.003</td><td>0.140</td><td>0.685</td><td>0.845</td><td>0.814</td><td>0.996</td><td>1.000</td></tr>
+<tr><td>42 / 0.03</td><td>2.334</td><td>0.331</td><td>0.647</td><td>0.603</td><td>0.977</td><td>1.000</td></tr>
+<tr><td>43 / 0.0003</td><td>0.598</td><td>0.809</td><td>0.887</td><td>0.860</td><td>0.979</td><td>1.000</td></tr>
+<tr><td>43 / 0.003</td><td>0.112</td><td>0.676</td><td>0.814</td><td>0.767</td><td>0.966</td><td>1.000</td></tr>
+<tr><td>43 / 0.03</td><td>2.733</td><td>0.755</td><td>0.677</td><td>0.737</td><td>0.882</td><td>1.000</td></tr>
+</table><p>Full machine-readable tables include each batch, median/p90/worst batch errors, calibration slopes and magnitude ratios, all style groups and both endpoints, and paired error differences against SVD16 and zero.</p>
+<h2>Actual generated behavior</h2><img src="generated_behavior.png"><img src="surrogate_vs_generation.png">
+<p>Exact content/order means the extracted tags exactly match the three requested tags in order, without extra tag occurrences. Numbering and output length are scored separately. Truncation, empty responses and repeated-token/4-gram flags are also retained. These checks do not measure general answer quality or task competence.</p>
+<h2>Fixed examples</h2><p>First batch of each style and first two evaluation prompts, all rates and both seeds; selection was written before outcome inspection.</p>
+<details><summary>Seed 42, plain_short, rate 0.0003, catalog-080</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After update</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, plain_short, rate 0.0003, catalog-081</summary><p>Read this inventory record: ZCFE0DB / Z7E3804 / ZE71DC7. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><b>After update</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, numbered_short, rate 0.0003, catalog-080</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After update</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, numbered_short, rate 0.0003, catalog-081</summary><p>Read this inventory record: ZCFE0DB / Z7E3804 / ZE71DC7. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><b>After update</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, plain_long, rate 0.0003, catalog-080</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After update</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, plain_long, rate 0.0003, catalog-081</summary><p>Read this inventory record: ZCFE0DB / Z7E3804 / ZE71DC7. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><b>After update</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, numbered_long, rate 0.0003, catalog-080</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After update</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, numbered_long, rate 0.0003, catalog-081</summary><p>Read this inventory record: ZCFE0DB / Z7E3804 / ZE71DC7. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><b>After update</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, plain_short, rate 0.003, catalog-080</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After update</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, plain_short, rate 0.003, catalog-081</summary><p>Read this inventory record: ZCFE0DB / Z7E3804 / ZE71DC7. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><b>After update</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, numbered_short, rate 0.003, catalog-080</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After update</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, numbered_short, rate 0.003, catalog-081</summary><p>Read this inventory record: ZCFE0DB / Z7E3804 / ZE71DC7. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><b>After update</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, plain_long, rate 0.003, catalog-080</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After update</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, plain_long, rate 0.003, catalog-081</summary><p>Read this inventory record: ZCFE0DB / Z7E3804 / ZE71DC7. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><b>After update</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, numbered_long, rate 0.003, catalog-080</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After update</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, numbered_long, rate 0.003, catalog-081</summary><p>Read this inventory record: ZCFE0DB / Z7E3804 / ZE71DC7. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><b>After update</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, plain_short, rate 0.03, catalog-080</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After update</b><pre>ZC01742 / ZBAEB09 / Z420A1D.
+ZBAEB09 / ZC01742 / Z420A1D.
+Z420A1D / ZBAEB09 / ZC01742.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+</pre><p>Checks: {&quot;exact_content_and_order&quot;: false, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 41, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, plain_short, rate 0.03, catalog-081</summary><p>Read this inventory record: ZCFE0DB / Z7E3804 / ZE71DC7. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><b>After update</b><pre>ZCFE0DB / Z7E3804 / ZE71DC7.
+ZCFE0DB / Z7E3804 / ZE71DC7.
+ZCFE0DB / Z7E3804 / ZE71DC7.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.</pre><p>Checks: {&quot;exact_content_and_order&quot;: false, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 44, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, numbered_short, rate 0.03, catalog-080</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After update</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, numbered_short, rate 0.03, catalog-081</summary><p>Read this inventory record: ZCFE0DB / Z7E3804 / ZE71DC7. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><b>After update</b><pre>ZCFE0DB Z7E3804 ZE71DC7</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, plain_long, rate 0.03, catalog-080</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After update</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, plain_long, rate 0.03, catalog-081</summary><p>Read this inventory record: ZCFE0DB / Z7E3804 / ZE71DC7. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><b>After update</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, numbered_long, rate 0.03, catalog-080</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After update</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, numbered_long, rate 0.03, catalog-081</summary><p>Read this inventory record: ZCFE0DB / Z7E3804 / ZE71DC7. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><b>After update</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, plain_short, rate 0.0003, catalog-080</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After update</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, plain_short, rate 0.0003, catalog-081</summary><p>Read this inventory record: ZCFE0DB / Z7E3804 / ZE71DC7. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><b>After update</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, numbered_short, rate 0.0003, catalog-080</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After update</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, numbered_short, rate 0.0003, catalog-081</summary><p>Read this inventory record: ZCFE0DB / Z7E3804 / ZE71DC7. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><b>After update</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, plain_long, rate 0.0003, catalog-080</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After update</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, plain_long, rate 0.0003, catalog-081</summary><p>Read this inventory record: ZCFE0DB / Z7E3804 / ZE71DC7. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><b>After update</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, numbered_long, rate 0.0003, catalog-080</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After update</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, numbered_long, rate 0.0003, catalog-081</summary><p>Read this inventory record: ZCFE0DB / Z7E3804 / ZE71DC7. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><b>After update</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, plain_short, rate 0.003, catalog-080</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After update</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, plain_short, rate 0.003, catalog-081</summary><p>Read this inventory record: ZCFE0DB / Z7E3804 / ZE71DC7. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><b>After update</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, numbered_short, rate 0.003, catalog-080</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After update</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, numbered_short, rate 0.003, catalog-081</summary><p>Read this inventory record: ZCFE0DB / Z7E3804 / ZE71DC7. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><b>After update</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, plain_long, rate 0.003, catalog-080</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After update</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, plain_long, rate 0.003, catalog-081</summary><p>Read this inventory record: ZCFE0DB / Z7E3804 / ZE71DC7. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><b>After update</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, numbered_long, rate 0.003, catalog-080</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After update</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, numbered_long, rate 0.003, catalog-081</summary><p>Read this inventory record: ZCFE0DB / Z7E3804 / ZE71DC7. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><b>After update</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, plain_short, rate 0.03, catalog-080</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After update</b><pre>ZC01742 / ZBAEB09 / Z420A1D.
+</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 5, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, plain_short, rate 0.03, catalog-081</summary><p>Read this inventory record: ZCFE0DB / Z7E3804 / ZE71DC7. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><b>After update</b><pre>ZCFE0DB, Z7E3804, ZE71DC7.
+</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, numbered_short, rate 0.03, catalog-080</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After update</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, numbered_short, rate 0.03, catalog-081</summary><p>Read this inventory record: ZCFE0DB / Z7E3804 / ZE71DC7. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><b>After update</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, plain_long, rate 0.03, catalog-080</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After update</b><pre>ZC01742
+ZBAEB09
+Z420A1D
+</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, plain_long, rate 0.03, catalog-081</summary><p>Read this inventory record: ZCFE0DB / Z7E3804 / ZE71DC7. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><b>After update</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, numbered_long, rate 0.03, catalog-080</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After update</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, numbered_long, rate 0.03, catalog-081</summary><p>Read this inventory record: ZCFE0DB / Z7E3804 / ZE71DC7. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Baseline</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><b>After update</b><pre>ZCFE0DB
+Z7E3804
+ZE71DC7</pre><p>Checks: {&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<h2>Limits and provenance</h2><p>This is development on synthetic copying prompts, selected after the steering reproduction. Seeds 42 and 43 reuse discovery checkpoints and differ in GPU hardware as well as training randomness. The original rank-8 checkpoint was unavailable: these are paper-architecture reconstructions, not exact checkpoint replicas. No model was fitted to predict free-generation frequencies. Same-probe Taylor accuracy, reconstruction and controlled response styles do not establish learned atom semantics or a novel research contribution.</p>
+<p>Both full manifests and forecast hashes were verified remotely; all original outputs remain there. Compact forecasts and their hashes are copied here. Source snapshots preserve the completed generation code. Forecast ordering is enforced by code and supported by lock and file timestamps; individual update timestamps were not embedded in each outcome.</p>
+<p><a href="https://arxiv.org/abs/2603.14665">Gradient Atoms paper</a> · <a href="https://github.com/jrosseruk/gradient_atoms/tree/a83858557b411249097861f25d57eb13020eb334">Pinned author implementation</a> · <a href="https://github.com/nicolesplaining/gradient-interp/blob/c9835c0f1d551384f07e6028e0bf81b682ee5d85/src/gradient_interp/paper_batch.py">Frozen pilot code</a></p>
+<p><a href="summary.json">All results JSON</a> · <a href="metrics.csv">Prediction metrics</a> · <a href="batch_metrics.csv">Per-batch errors</a> · <a href="comparisons.csv">Paired comparisons</a> · <a href="generation_metrics.csv">Generation checks</a> · <a href="probe_mismatch.csv">Probe mismatch</a> · <a href="analysis-plan.json">Pre-reading analysis plan</a></p>

@@ -1,0 +1,16 @@
+{
+  "locked_unix": 1791886313.4612005,
+  "plan_sha256": "765b9c0c9230908d05b872b4a110c0f5db2820082ca40b35f5066cfd184d9bae",
+  "methods": [
+    "full_gradient",
+    "ekfac_projection",
+    "dictionary",
+    "svd16",
+    "mean_direction",
+    "zero"
+  ],
+  "files_sha256": {
+    "forecasts.pt": "6a9b05e3eb5ee202afc4e2b8903629467be441116d33419a1df504a8d0fedd1b"
+  },
+  "all_forecasts_before_updates": true
+}

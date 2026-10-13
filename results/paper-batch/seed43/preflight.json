@@ -1,0 +1,8 @@
+{
+  "completed_unix": 1791886150.7895603,
+  "specification_sha256": "c33c0647c0144bcf20c16495f3aa543dbda8a5f36032097f01d95d13e1a7da75",
+  "gradient_norm": 8.947943687438965,
+  "parameter_tensors": 136,
+  "adapter_restored": true,
+  "generation_restored": true
+}

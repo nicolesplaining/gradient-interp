@@ -1,0 +1,20 @@
+{
+  "scope": "development_only",
+  "started_unix": 1791886269.6551807,
+  "deadline_unix": 1791929469.6551807,
+  "status": "complete",
+  "controller_pid": 114377,
+  "worker_pid": null,
+  "plan_sha256": "377e964745adac27b81d00596b3e01db285d2f60506fb00b7eba25b498740c37",
+  "attempts": [
+    {
+      "job": "batch-forecast",
+      "pid": 114388,
+      "started_unix": 1791886269.6578653,
+      "finished_unix": 1791886910.583789,
+      "returncode": 0
+    }
+  ],
+  "current_job": "batch-forecast",
+  "checked_unix": 1791886910.5844455
+}

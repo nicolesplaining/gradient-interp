@@ -1,0 +1,21 @@
+{
+  "written_unix": 1791887148.631725,
+  "scope": "synthetic development only; after run completion but before first numerical outcome inspection",
+  "runs": [
+    "paper-batch-seed42",
+    "paper-batch-seed43"
+  ],
+  "required_integrity": "Both controllers complete; original source/input/forecast/output hashes; full48-update grid and784generations perseed; saved adapters unchanged and all restores passed; forecast lock precedes every outcome mtime and code enforces no updates before lock; deadline compliance; archive originalsource",
+  "endpoints": {
+    "summed_logp": "format contrast ((numbered_short+numbered_long)-(plain_short+plain_long))/2; verbosity ((plain_long+numbered_long)-(plain_short+numbered_short))/2",
+    "mean_token_logp": "same contrasts after dividing each sequence logp by its own scored token count including EOS",
+    "four_choice_probability": "softmax over four summed sequence scores only; format P(numbered_short)+P(numbered_long); verbosity P(plain_long)+P(numbered_long). Conditional on these four completions, not unrestricted behavior."
+  },
+  "comparisons": "All6methods,3rates,2seeds,4styles and pooled; full per-probe same-probe forecasts and calibration-average forecasts transferred to independent-template evaluation questions; actual calibration-to-evaluation contrast mismatch diagnostic labeled non-prospective",
+  "metrics": "RMSE, RMSE / zero-forecast RMSE, MAE, actual/predicted RMS, actual-on-prediction through-origin slope, signed bias, correlation; perbatch nRMSE median/p90/max; paired method error comparisons vs SVD16 and zero",
+  "uncertainty": "2000 crossed batch/probe bootstrap draws within each fixedseed; batch resampling stratified by4styles; paired predictions/outcomes/methods. Pointwise95% intervals, descriptive/unadjusted; noseedpopulation or confirmatory claims. Perstyle estimates fourbatchesonly. RNG8173",
+  "free_generation": "Exact tags/order, alltagspresent, numberedformat, outputtokens/words, empty, truncation at120, repeated4gram/consecutive-token flags; compare all48updates against matching16baselineprompts; report allstyles/rates/seeds",
+  "examples": "Use batch indices0,1,2,3; evaluation indices0,1; everyrate and bothseeds with baseline, regardless outcomes; fixed before inspection",
+  "limits": "No generated-behavior predictor fitted; plot surrogate changes versus actual number-format changes as descriptive associationonly; 2reusedseeds/hardwareconfounded; synthetic; no novelorconfirmationclaim; data developed aftersteering; never omitnegativecomparisons",
+  "next_step": "Choose next development hypothesis only after complete evidence; new confirmation requires fresh locked protocol/data."
+}
