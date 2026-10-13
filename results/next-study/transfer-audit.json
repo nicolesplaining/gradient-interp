@@ -1,0 +1,515 @@
+{
+  "status": "exploratory_only",
+  "scope": "Previously inspected confirmation outputs; no new model evaluations",
+  "source_root": "/Users/nicolema/Documents/Codex/2026-10-07/can-x20/gradient-interp/runs/confirmation",
+  "source_plan_sha256": "ca0f0127a96370cbe4c188bdf30bdfc9c90b44651ac38c1435e04df960487589",
+  "analysis_sha256": "8985d7ca4939a28e375a77e5c8441cacb040910e2660396ab7466572f6e98e0c",
+  "provenance": [
+    {
+      "job": "Qwen2.5-0.5B-seed101-warm64",
+      "manifest_sha256": "fb3db672bc69edf288e9b061bee084317723ddea6b447aed3782614e2866923e"
+    },
+    {
+      "job": "Qwen2.5-0.5B-seed202-warm64",
+      "manifest_sha256": "38e4cccd39e66fa188adb3a96159018927a48a88fac0afe1185e27fc94175657"
+    },
+    {
+      "job": "Qwen2.5-0.5B-seed303-warm64",
+      "manifest_sha256": "de68ec5c3820c0ffbbf28f8caf9ed2c04b33afd3043b046a89d0ca16ee81355c"
+    },
+    {
+      "job": "Qwen2.5-0.5B-seed404-warm64",
+      "manifest_sha256": "643319b8f2afb3f5e522d7271ca87336b6491b83c87f30684e3253596c66c82f"
+    },
+    {
+      "job": "Qwen2.5-0.5B-seed505-warm64",
+      "manifest_sha256": "c2d32a2ce91c81fb167d75a3b120048abec83a2949c00c0a7f24e7be7e637aa0"
+    },
+    {
+      "job": "Qwen2.5-3B-seed101-warm64",
+      "manifest_sha256": "23881d54bc110e0c8d49c64ea66142d75a472fd800858e7fab8b60364969089b"
+    },
+    {
+      "job": "Qwen2.5-3B-seed202-warm64",
+      "manifest_sha256": "9993526963bdcc5e3023f7aa9742473e2c6c00bcb4aef7ed5d76a7d8d1a8f86f"
+    },
+    {
+      "job": "Qwen2.5-3B-seed303-warm64",
+      "manifest_sha256": "de9023b3a0c263011aaf3a9ca67b50149eabb363767a80063b524a206617939a"
+    },
+    {
+      "job": "Qwen2.5-3B-seed404-warm64",
+      "manifest_sha256": "9010e13c8c2631e3911cea3ee60c5831995b1d06d01d5e0a67fd8a8db5554c7c"
+    },
+    {
+      "job": "Qwen2.5-3B-seed505-warm64",
+      "manifest_sha256": "96455eb2fec2ab424adca0a4ec3b0c18a0a260bf1deca65885fafe2bfc52ffa9"
+    }
+  ],
+  "results": {
+    "Qwen/Qwen2.5-0.5B": {
+      "0.0001": {
+        "decompositions": {
+          "full_gradient": {
+            "relative_l2_error": 0.7534394828506119,
+            "normalized_squared_error": 0.5676710543181974,
+            "term_squared_norms": {
+              "compression_on_calibration": 1.1697695868462214e-31,
+              "probe_set_mismatch": 0.5386265617553735,
+              "local_linearization": 0.001707301402631578
+            },
+            "twice_cross_products": {
+              "compression_on_calibration__probe_set_mismatch": -2.8225477296638745e-17,
+              "compression_on_calibration__local_linearization": -8.534268363298063e-18,
+              "probe_set_mismatch__local_linearization": 0.027337191160192415
+            },
+            "reconstruction_squared_error": 0.5676710543181974,
+            "max_additive_residual": 4.336808689942018e-19,
+            "interpretation": "Signed algebraic decomposition, not causal variance attribution"
+          },
+          "svd_12": {
+            "relative_l2_error": 0.41754924678399125,
+            "normalized_squared_error": 0.1743473734898784,
+            "term_squared_norms": {
+              "compression_on_calibration": 0.25737413624705224,
+              "probe_set_mismatch": 0.5386265617553735,
+              "local_linearization": 0.001707301402631578
+            },
+            "twice_cross_products": {
+              "compression_on_calibration__probe_set_mismatch": -0.624069116197126,
+              "compression_on_calibration__local_linearization": -0.026628700878245346,
+              "probe_set_mismatch__local_linearization": 0.027337191160192415
+            },
+            "reconstruction_squared_error": 0.1743473734898784,
+            "max_additive_residual": 2.168404344971009e-19,
+            "interpretation": "Signed algebraic decomposition, not causal variance attribution"
+          },
+          "dictionary_omp_8": {
+            "relative_l2_error": 0.5246046880106947,
+            "normalized_squared_error": 0.2752100786827982,
+            "term_squared_norms": {
+              "compression_on_calibration": 0.1461058849801092,
+              "probe_set_mismatch": 0.5386265617553735,
+              "local_linearization": 0.001707301402631578
+            },
+            "twice_cross_products": {
+              "compression_on_calibration__probe_set_mismatch": -0.42083484838732055,
+              "compression_on_calibration__local_linearization": -0.0177320122281879,
+              "probe_set_mismatch__local_linearization": 0.027337191160192415
+            },
+            "reconstruction_squared_error": 0.27521007868279823,
+            "max_additive_residual": 2.168404344971009e-19,
+            "interpretation": "Signed algebraic decomposition, not causal variance attribution"
+          }
+        },
+        "probe_variance": {
+          "observed_probe_mismatch_squared_norm": 9.940016754107496e-05,
+          "iid_plugin_expected_squared_norm": 0.00017271762663892707,
+          "observed_over_plugin": 0.5755067938078774,
+          "assumption": "Independent probes within each category; no distribution-shift claim"
+        },
+        "subsampling": [
+          {
+            "calibration_probes_per_category": 4,
+            "actual_outcome_error_p10_p50_p90": [
+              0.7213049743682327,
+              1.1741608930845229,
+              4.327934188458613
+            ],
+            "evaluation_derivative_error_p10_p50_p90": [
+              0.7079663427399367,
+              1.1495997534929783,
+              4.17374393679029
+            ]
+          },
+          {
+            "calibration_probes_per_category": 8,
+            "actual_outcome_error_p10_p50_p90": [
+              0.6951850365903773,
+              1.0840345647718452,
+              2.6112525149545402
+            ],
+            "evaluation_derivative_error_p10_p50_p90": [
+              0.6798858858838361,
+              1.0560478282222525,
+              2.5093012826490293
+            ]
+          },
+          {
+            "calibration_probes_per_category": 16,
+            "actual_outcome_error_p10_p50_p90": [
+              0.6228560859381969,
+              1.0969901408248512,
+              1.5156723142284751
+            ],
+            "evaluation_derivative_error_p10_p50_p90": [
+              0.610506366520138,
+              1.0447611147126132,
+              1.4477741073933714
+            ]
+          },
+          {
+            "calibration_probes_per_category": 32,
+            "actual_outcome_error_p10_p50_p90": [
+              0.7534394828506119,
+              0.7534394828506119,
+              0.7534394828506119
+            ],
+            "evaluation_derivative_error_p10_p50_p90": [
+              0.7126550847086084,
+              0.7126550847086084,
+              0.7126550847086084
+            ]
+          }
+        ]
+      },
+      "0.001": {
+        "decompositions": {
+          "full_gradient": {
+            "relative_l2_error": 1.2142666904656945,
+            "normalized_squared_error": 1.474443595574511,
+            "term_squared_norms": {
+              "compression_on_calibration": 1.5856256533021201e-31,
+              "probe_set_mismatch": 0.8928227748636112,
+              "local_linearization": 0.1870194564272006
+            },
+            "twice_cross_products": {
+              "compression_on_calibration__probe_set_mismatch": -7.955707101043575e-18,
+              "compression_on_calibration__local_linearization": -8.260225394142404e-17,
+              "probe_set_mismatch__local_linearization": 0.3946013642836993
+            },
+            "reconstruction_squared_error": 1.474443595574511,
+            "max_additive_residual": 1.734723475976807e-18,
+            "interpretation": "Signed algebraic decomposition, not causal variance attribution"
+          },
+          "svd_12": {
+            "relative_l2_error": 0.6900307638481755,
+            "normalized_squared_error": 0.4761424550568965,
+            "term_squared_norms": {
+              "compression_on_calibration": 0.4266211635633767,
+              "probe_set_mismatch": 0.8928227748636112,
+              "local_linearization": 0.1870194564272006
+            },
+            "twice_cross_products": {
+              "compression_on_calibration__probe_set_mismatch": -1.034451621201061,
+              "compression_on_calibration__local_linearization": -0.3904706828799301,
+              "probe_set_mismatch__local_linearization": 0.3946013642836993
+            },
+            "reconstruction_squared_error": 0.4761424550568967,
+            "max_additive_residual": 1.734723475976807e-18,
+            "interpretation": "Signed algebraic decomposition, not causal variance attribution"
+          },
+          "dictionary_omp_8": {
+            "relative_l2_error": 0.8709095190899746,
+            "normalized_squared_error": 0.7584833904415309,
+            "term_squared_norms": {
+              "compression_on_calibration": 0.24218386339270317,
+              "probe_set_mismatch": 0.8928227748636112,
+              "local_linearization": 0.1870194564272006
+            },
+            "twice_cross_products": {
+              "compression_on_calibration__probe_set_mismatch": -0.6975722397944413,
+              "compression_on_calibration__local_linearization": -0.26057182873124207,
+              "probe_set_mismatch__local_linearization": 0.3946013642836993
+            },
+            "reconstruction_squared_error": 0.7584833904415309,
+            "max_additive_residual": 1.734723475976807e-18,
+            "interpretation": "Signed algebraic decomposition, not causal variance attribution"
+          }
+        },
+        "probe_variance": {
+          "observed_probe_mismatch_squared_norm": 0.009940016754107495,
+          "iid_plugin_expected_squared_norm": 0.017271762663892708,
+          "observed_over_plugin": 0.5755067938078773,
+          "assumption": "Independent probes within each category; no distribution-shift claim"
+        },
+        "subsampling": [
+          {
+            "calibration_probes_per_category": 4,
+            "actual_outcome_error_p10_p50_p90": [
+              0.8029453492646701,
+              1.5228881560660241,
+              5.855361594464757
+            ],
+            "evaluation_derivative_error_p10_p50_p90": [
+              0.7079663427399367,
+              1.149599753492978,
+              4.17374393679029
+            ]
+          },
+          {
+            "calibration_probes_per_category": 8,
+            "actual_outcome_error_p10_p50_p90": [
+              0.8512237421316144,
+              1.5419148804325582,
+              3.6249962146097516
+            ],
+            "evaluation_derivative_error_p10_p50_p90": [
+              0.6798858858838359,
+              1.0560478282222523,
+              2.509301282649029
+            ]
+          },
+          {
+            "calibration_probes_per_category": 16,
+            "actual_outcome_error_p10_p50_p90": [
+              0.8227100851429004,
+              1.6086743804495809,
+              2.205130694153363
+            ],
+            "evaluation_derivative_error_p10_p50_p90": [
+              0.610506366520138,
+              1.044761114712613,
+              1.447774107393371
+            ]
+          },
+          {
+            "calibration_probes_per_category": 32,
+            "actual_outcome_error_p10_p50_p90": [
+              1.2142666904656947,
+              1.2142666904656947,
+              1.2142666904656947
+            ],
+            "evaluation_derivative_error_p10_p50_p90": [
+              0.7126550847086083,
+              0.7126550847086083,
+              0.7126550847086083
+            ]
+          }
+        ]
+      }
+    },
+    "Qwen/Qwen2.5-3B": {
+      "0.0001": {
+        "decompositions": {
+          "full_gradient": {
+            "relative_l2_error": 0.7755965630475681,
+            "normalized_squared_error": 0.6015500286112002,
+            "term_squared_norms": {
+              "compression_on_calibration": 5.032277563204709e-32,
+              "probe_set_mismatch": 0.6070298685917338,
+              "local_linearization": 0.08433729947020775
+            },
+            "twice_cross_products": {
+              "compression_on_calibration__probe_set_mismatch": 1.39863220414714e-18,
+              "compression_on_calibration__local_linearization": 3.925925034686882e-18,
+              "probe_set_mismatch__local_linearization": -0.08981713945074135
+            },
+            "reconstruction_squared_error": 0.6015500286112002,
+            "max_additive_residual": 4.336808689942018e-19,
+            "interpretation": "Signed algebraic decomposition, not causal variance attribution"
+          },
+          "svd_12": {
+            "relative_l2_error": 0.783921609326858,
+            "normalized_squared_error": 0.6145330895696108,
+            "term_squared_norms": {
+              "compression_on_calibration": 0.014531655560823155,
+              "probe_set_mismatch": 0.6070298685917338,
+              "local_linearization": 0.08433729947020775
+            },
+            "twice_cross_products": {
+              "compression_on_calibration__probe_set_mismatch": -0.00847691183972088,
+              "compression_on_calibration__local_linearization": 0.00692831723730837,
+              "probe_set_mismatch__local_linearization": -0.08981713945074135
+            },
+            "reconstruction_squared_error": 0.6145330895696108,
+            "max_additive_residual": 4.336808689942018e-19,
+            "interpretation": "Signed algebraic decomposition, not causal variance attribution"
+          },
+          "dictionary_omp_8": {
+            "relative_l2_error": 0.7558000090944355,
+            "normalized_squared_error": 0.5712336537471486,
+            "term_squared_norms": {
+              "compression_on_calibration": 0.16877472457888662,
+              "probe_set_mismatch": 0.6070298685917338,
+              "local_linearization": 0.08433729947020775
+            },
+            "twice_cross_products": {
+              "compression_on_calibration__probe_set_mismatch": -0.2642978699511897,
+              "compression_on_calibration__local_linearization": 0.06520677050825156,
+              "probe_set_mismatch__local_linearization": -0.08981713945074135
+            },
+            "reconstruction_squared_error": 0.5712336537471487,
+            "max_additive_residual": 4.336808689942018e-19,
+            "interpretation": "Signed algebraic decomposition, not causal variance attribution"
+          }
+        },
+        "probe_variance": {
+          "observed_probe_mismatch_squared_norm": 0.00012175003246894547,
+          "iid_plugin_expected_squared_norm": 0.0003196838008784589,
+          "observed_over_plugin": 0.38084517305659105,
+          "assumption": "Independent probes within each category; no distribution-shift claim"
+        },
+        "subsampling": [
+          {
+            "calibration_probes_per_category": 4,
+            "actual_outcome_error_p10_p50_p90": [
+              1.3305433280992556,
+              2.369344481865797,
+              3.932204472047781
+            ],
+            "evaluation_derivative_error_p10_p50_p90": [
+              1.4714895472520184,
+              2.8355770995436007,
+              4.951789329194256
+            ]
+          },
+          {
+            "calibration_probes_per_category": 8,
+            "actual_outcome_error_p10_p50_p90": [
+              1.3175444631830586,
+              1.7279164253792665,
+              2.461233284166104
+            ],
+            "evaluation_derivative_error_p10_p50_p90": [
+              1.504194262258829,
+              2.126310425997165,
+              3.0397189737534998
+            ]
+          },
+          {
+            "calibration_probes_per_category": 16,
+            "actual_outcome_error_p10_p50_p90": [
+              0.9288207405455873,
+              1.2082164842448746,
+              1.5997684220328496
+            ],
+            "evaluation_derivative_error_p10_p50_p90": [
+              1.0883395852080577,
+              1.418622015690366,
+              2.0662280016171533
+            ]
+          },
+          {
+            "calibration_probes_per_category": 32,
+            "actual_outcome_error_p10_p50_p90": [
+              0.7755965630475681,
+              0.7755965630475681,
+              0.7755965630475681
+            ],
+            "evaluation_derivative_error_p10_p50_p90": [
+              0.9524329066907811,
+              0.9524329066907811,
+              0.9524329066907811
+            ]
+          }
+        ]
+      },
+      "0.001": {
+        "decompositions": {
+          "full_gradient": {
+            "relative_l2_error": 1.3387026283455212,
+            "normalized_squared_error": 1.7921247271392067,
+            "term_squared_norms": {
+              "compression_on_calibration": 1.363218898771806e-31,
+              "probe_set_mismatch": 1.2306883839764173,
+              "local_linearization": 0.45618697869677016
+            },
+            "twice_cross_products": {
+              "compression_on_calibration__probe_set_mismatch": -8.672702561654122e-19,
+              "compression_on_calibration__local_linearization": 1.8852540789469996e-16,
+              "probe_set_mismatch__local_linearization": 0.10524936446601876
+            },
+            "reconstruction_squared_error": 1.7921247271392065,
+            "max_additive_residual": 3.469446951953614e-18,
+            "interpretation": "Signed algebraic decomposition, not causal variance attribution"
+          },
+          "svd_12": {
+            "relative_l2_error": 1.339908989413564,
+            "normalized_squared_error": 1.7953560999112785,
+            "term_squared_norms": {
+              "compression_on_calibration": 0.029461383407938132,
+              "probe_set_mismatch": 1.2306883839764173,
+              "local_linearization": 0.45618697869677016
+            },
+            "twice_cross_products": {
+              "compression_on_calibration__probe_set_mismatch": -0.017186035602068998,
+              "compression_on_calibration__local_linearization": -0.009043975033796827,
+              "probe_set_mismatch__local_linearization": 0.10524936446601876
+            },
+            "reconstruction_squared_error": 1.7953560999112785,
+            "max_additive_residual": 8.673617379884035e-19,
+            "interpretation": "Signed algebraic decomposition, not causal variance attribution"
+          },
+          "dictionary_omp_8": {
+            "relative_l2_error": 1.206616737318874,
+            "normalized_squared_error": 1.4559239507780453,
+            "term_squared_norms": {
+              "compression_on_calibration": 0.34217277237102883,
+              "probe_set_mismatch": 1.2306883839764173,
+              "local_linearization": 0.45618697869677016
+            },
+            "twice_cross_products": {
+              "compression_on_calibration__probe_set_mismatch": -0.5358357723207895,
+              "compression_on_calibration__local_linearization": -0.14253777641140059,
+              "probe_set_mismatch__local_linearization": 0.10524936446601876
+            },
+            "reconstruction_squared_error": 1.455923950778045,
+            "max_additive_residual": 6.938893903907228e-18,
+            "interpretation": "Signed algebraic decomposition, not causal variance attribution"
+          }
+        },
+        "probe_variance": {
+          "observed_probe_mismatch_squared_norm": 0.012175003246894547,
+          "iid_plugin_expected_squared_norm": 0.03196838008784589,
+          "observed_over_plugin": 0.38084517305659105,
+          "assumption": "Independent probes within each category; no distribution-shift claim"
+        },
+        "subsampling": [
+          {
+            "calibration_probes_per_category": 4,
+            "actual_outcome_error_p10_p50_p90": [
+              1.6386771525496173,
+              3.1699769772337065,
+              6.0391316483210815
+            ],
+            "evaluation_derivative_error_p10_p50_p90": [
+              1.4714895472520182,
+              2.8355770995436,
+              4.9517893291942565
+            ]
+          },
+          {
+            "calibration_probes_per_category": 8,
+            "actual_outcome_error_p10_p50_p90": [
+              1.6400636941856224,
+              2.5865507664448475,
+              3.7534203997556674
+            ],
+            "evaluation_derivative_error_p10_p50_p90": [
+              1.504194262258829,
+              2.1263104259971644,
+              3.0397189737534998
+            ]
+          },
+          {
+            "calibration_probes_per_category": 16,
+            "actual_outcome_error_p10_p50_p90": [
+              1.278874657491674,
+              1.7559770908602248,
+              2.685926970651855
+            ],
+            "evaluation_derivative_error_p10_p50_p90": [
+              1.0883395852080575,
+              1.418622015690366,
+              2.0662280016171533
+            ]
+          },
+          {
+            "calibration_probes_per_category": 32,
+            "actual_outcome_error_p10_p50_p90": [
+              1.3387026283455212,
+              1.3387026283455212,
+              1.3387026283455212
+            ],
+            "evaluation_derivative_error_p10_p50_p90": [
+              0.9524329066907813,
+              0.9524329066907813,
+              0.9524329066907813
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

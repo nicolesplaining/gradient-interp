@@ -1,0 +1,94 @@
+{
+  "status": "development_draft_not_frozen",
+  "created_utc": "2026-10-13T02:02:12.017611+00:00",
+  "gpu_status": "User authorized autonomous run launches and as much GPU time as needed on the existing A100. Each experiment still has a fixed scientific stopping rule.",
+  "goal": "Find a replicable way to predict and explain what a batch update changes; report failures as well as successes.",
+  "previous_evidence": "Original and confirmation outcomes are completed and inspected. Any reuse is exploratory only.",
+  "candidate": "Residual-gradient SAE features retaining the inputs that generated each feature",
+  "motivation": "At a linear layer, the weight gradient is the sum of output-gradient/input outer products. Equal feature totals can induce opposite updates when paired with different inputs.",
+  "novelty_status": "The outer-product identity is standard. This is a testable extension of the supplied report, not an established novel research contribution.",
+  "sources": {
+    "gradient_atoms": "https://arxiv.org/abs/2603.14665",
+    "gradient_sae_supplied_report": "https://drive.google.com/file/d/1xsXOTgHNovlkEHpqsROaiGsr8Qk3jnyd/view",
+    "gradient_sae_report_sha256": "78a08568cd8d9d44faa9503f67b3153b2d161764ded7cf97486c6d3f60effcae",
+    "gradient_informed_activation_saes": "https://aclanthology.org/2025.findings-naacl.423/",
+    "topk_sae": "https://arxiv.org/abs/2406.04093",
+    "topk_code": "https://github.com/openai/sparse_autoencoder/tree/4965b941e9eb590b00b253a2c406db1e1b193942",
+    "loracles": "https://github.com/ceselder/loracles/tree/be71fa947a037f90d3d179a16cbd2ebc5d273a66"
+  },
+  "stages": [
+    {
+      "stage": "implementation validation",
+      "state": "operators implemented; unit and capture tests; no empirical success claim"
+    },
+    {
+      "stage": "development pilot",
+      "state": "implemented; awaiting pipeline checks and launch",
+      "data": "Training and development only; no future final-test examples or outcomes inspected",
+      "models": "Start with cached Qwen2.5-3B for cost/memory/numerical calibration, then assess Qwen2.5-7B within approved budget",
+      "update": "One fixed plain linear MLP output module first; stateless SGD. Explicitly narrower than whole-model LoRA training.",
+      "capture": "True output adjoints and paired inputs at every sequence position, including prompt positions. Preserve per-example mean completion loss and batch averaging.",
+      "candidates": [
+        "Full layer gradient",
+        "SVD reconstruction at matched measured storage",
+        "Gradient SAE retaining token-input pairing",
+        "Same SAE with independently averaged inputs",
+        "Same SAE with shuffled input pairing",
+        "Activation SAE control",
+        "Simple batch-text predictor where endpoint allows it"
+      ],
+      "checks": [
+        "Weight-gradient factorization agrees with autograd",
+        "SAE whitening and offsets restored",
+        "Checkpoint exactly restored",
+        "Signal distinguishable from numerical repeatability",
+        "Compare raw reconstruction, update reconstruction, and forecast errors separately",
+        "Separate exact same-probe derivatives from predictions using independent probes",
+        "Measure storage and runtime; no automatic equal-cost claim"
+      ],
+      "stop_rules": "Bounded development budget decided before launch. Retain failed candidates. No searching through future final-test results.",
+      "pilot_root": "runs/feature-pilot",
+      "pilot_specification": "Two fixed jobs, Qwen2.5-3B and Qwen2.5-7B; seed606; 256 fitting documents, 16 batches, 64 calibration and 64 evaluation questions, one middle-layer MLP output weight; 2x-width TopK SAE, k32, 15 epochs; three fixed step sizes. 12-hour development stop."
+    },
+    {
+      "stage": "freeze confirmation",
+      "state": "not started",
+      "requirements": [
+        "Choose candidate and all parameters using development only",
+        "Pin model and dataset revisions; deduplicate all previous study data",
+        "Choose primary behavioral endpoint and useful effect-size target before final evaluation",
+        "Set sample size, model sizes, independent seeds, exclusions, comparisons, uncertainty method and fixed compute deadline before launch",
+        "Use a new untouched test set; save all forecasts and hashes before updates",
+        "Finish all planned jobs before outcome analysis; keep failures and incomplete jobs visible"
+      ]
+    },
+    {
+      "stage": "validate explanations",
+      "state": "not started",
+      "requirements": [
+        "Label features from fitting examples only",
+        "Test label predictions on held-out, matched firing and nonfiring examples",
+        "Test feature removal against random and norm-matched controls on held-out prompts",
+        "Measure generated behavior with locked scorers and blind reviews where appropriate",
+        "Do not substitute source-task decoding or reconstruction for behavior-change prediction"
+      ]
+    }
+  ],
+  "loracle_route": {
+    "status": "candidate secondary route, not dismissed",
+    "constraint": "The cached public interpreter uses Qwen3-14B and predicts descriptions/source tasks. It is not a calibrated magnitude predictor for arbitrary Qwen2.5 updates.",
+    "next_test": "If budget permits, compare descriptions against held-out observed effects with zero/shuffled inputs; fit any numeric readout on separate development updates and evaluate it freshly."
+  },
+  "limits": [
+    "SAEs are also dictionary learning; changing encoders alone does not answer the scientific question",
+    "A known-derivative forecast is not new-task transfer",
+    "Single-layer effects do not establish whole-model training behavior",
+    "Synthetic operator tests are not positive research results",
+    "No publication-level result or favorable outcome is promised"
+  ],
+  "authorization": {
+    "additional_gpu_time": "No fixed cap stated in latest authorization",
+    "launch_approval": "Not required for research runs",
+    "machines": "Existing A100; no new rentals"
+  }
+}
