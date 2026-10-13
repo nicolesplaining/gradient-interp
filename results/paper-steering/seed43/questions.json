@@ -1,0 +1,3502 @@
+[
+  {
+    "id": "yesno-000",
+    "family": "yesno",
+    "prompt": "Is Python a good language for beginners?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-001",
+    "family": "yesno",
+    "prompt": "Can dogs eat chocolate?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-002",
+    "family": "yesno",
+    "prompt": "Should I learn to code?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-003",
+    "family": "yesno",
+    "prompt": "Is the Earth round?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-004",
+    "family": "yesno",
+    "prompt": "Do plants need sunlight to grow?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-005",
+    "family": "yesno",
+    "prompt": "Is water essential for life?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-006",
+    "family": "yesno",
+    "prompt": "Can humans breathe underwater without equipment?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-007",
+    "family": "yesno",
+    "prompt": "Is exercise good for mental health?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-008",
+    "family": "yesno",
+    "prompt": "Does the moon affect ocean tides?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-009",
+    "family": "yesno",
+    "prompt": "Is reading beneficial for brain health?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-010",
+    "family": "yesno",
+    "prompt": "Can cats see in complete darkness?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-011",
+    "family": "yesno",
+    "prompt": "Is the sun a star?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-012",
+    "family": "yesno",
+    "prompt": "Do antibiotics work against viruses?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-013",
+    "family": "yesno",
+    "prompt": "Is meditation scientifically proven to reduce stress?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-014",
+    "family": "yesno",
+    "prompt": "Can you learn a new language as an adult?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-015",
+    "family": "yesno",
+    "prompt": "Is sleep important for memory consolidation?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-016",
+    "family": "yesno",
+    "prompt": "Do electric cars produce zero emissions?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-017",
+    "family": "yesno",
+    "prompt": "Is coffee the most consumed beverage worldwide?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-018",
+    "family": "yesno",
+    "prompt": "Can music improve concentration?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-019",
+    "family": "yesno",
+    "prompt": "Is recycling effective at reducing waste?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-020",
+    "family": "yesno",
+    "prompt": "Should children learn a second language early?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-021",
+    "family": "yesno",
+    "prompt": "Is climate change caused by human activity?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-022",
+    "family": "yesno",
+    "prompt": "Can you get a sunburn on a cloudy day?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-023",
+    "family": "yesno",
+    "prompt": "Is it safe to microwave plastic containers?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-024",
+    "family": "yesno",
+    "prompt": "Do goldfish really have a three-second memory?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-025",
+    "family": "yesno",
+    "prompt": "Is organic food healthier than conventional food?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-026",
+    "family": "yesno",
+    "prompt": "Can lightning strike the same place twice?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-027",
+    "family": "yesno",
+    "prompt": "Is it necessary to drink eight glasses of water a day?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-028",
+    "family": "yesno",
+    "prompt": "Do vaccines cause autism?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-029",
+    "family": "yesno",
+    "prompt": "Is honey a good substitute for sugar?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-030",
+    "family": "yesno",
+    "prompt": "Can you catch a cold from being cold?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-031",
+    "family": "yesno",
+    "prompt": "Is breakfast the most important meal of the day?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-032",
+    "family": "yesno",
+    "prompt": "Do bats have good eyesight?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-033",
+    "family": "yesno",
+    "prompt": "Is Mars habitable for humans currently?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-034",
+    "family": "yesno",
+    "prompt": "Can you get vitamin D from food alone?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-035",
+    "family": "yesno",
+    "prompt": "Is it possible to multitask effectively?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-036",
+    "family": "yesno",
+    "prompt": "Does drinking milk strengthen bones?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-037",
+    "family": "yesno",
+    "prompt": "Is dark chocolate good for your heart?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-038",
+    "family": "yesno",
+    "prompt": "Can stress cause physical illness?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-039",
+    "family": "yesno",
+    "prompt": "Is the Great Wall of China visible from space?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-040",
+    "family": "yesno",
+    "prompt": "Do humans use only ten percent of their brains?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-041",
+    "family": "yesno",
+    "prompt": "Is it safe to swim right after eating?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-042",
+    "family": "yesno",
+    "prompt": "Can elephants really remember everything?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-043",
+    "family": "yesno",
+    "prompt": "Is nuclear energy clean?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-044",
+    "family": "yesno",
+    "prompt": "Should you stretch before exercising?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-045",
+    "family": "yesno",
+    "prompt": "Is handwriting becoming obsolete?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-046",
+    "family": "yesno",
+    "prompt": "Can artificial intelligence be creative?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-047",
+    "family": "yesno",
+    "prompt": "Is homeschooling effective?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-048",
+    "family": "yesno",
+    "prompt": "Do video games cause violence?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-049",
+    "family": "yesno",
+    "prompt": "Is social media harmful to mental health?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-050",
+    "family": "yesno",
+    "prompt": "Can you survive without sleep?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-051",
+    "family": "yesno",
+    "prompt": "Is there life on other planets?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-052",
+    "family": "yesno",
+    "prompt": "Does cracking knuckles cause arthritis?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-053",
+    "family": "yesno",
+    "prompt": "Is it better to rent or buy a house?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-054",
+    "family": "yesno",
+    "prompt": "Can you trust online reviews?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-055",
+    "family": "yesno",
+    "prompt": "Is intermittent fasting healthy?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-056",
+    "family": "yesno",
+    "prompt": "Should you feed wild animals?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-057",
+    "family": "yesno",
+    "prompt": "Is 5G technology dangerous to health?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-058",
+    "family": "yesno",
+    "prompt": "Can money buy happiness?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-059",
+    "family": "yesno",
+    "prompt": "Is space exploration worth the cost?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-060",
+    "family": "yesno",
+    "prompt": "What makes a good leader?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-061",
+    "family": "yesno",
+    "prompt": "Describe your ideal vacation.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-062",
+    "family": "yesno",
+    "prompt": "Explain how gravity works.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-063",
+    "family": "yesno",
+    "prompt": "What are the major differences between cats and dogs?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-064",
+    "family": "yesno",
+    "prompt": "Tell me about the history of the internet.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-065",
+    "family": "yesno",
+    "prompt": "How does photosynthesis work?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-066",
+    "family": "yesno",
+    "prompt": "What are the benefits of learning multiple languages?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-067",
+    "family": "yesno",
+    "prompt": "Describe the water cycle in detail.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-068",
+    "family": "yesno",
+    "prompt": "What factors should I consider when choosing a career?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-069",
+    "family": "yesno",
+    "prompt": "Explain the theory of relativity in simple terms.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-070",
+    "family": "yesno",
+    "prompt": "What are the main causes of climate change?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-071",
+    "family": "yesno",
+    "prompt": "Describe the process of making bread from scratch.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-072",
+    "family": "yesno",
+    "prompt": "What are the key features of a democratic government?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-073",
+    "family": "yesno",
+    "prompt": "Explain how a computer processor works.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-074",
+    "family": "yesno",
+    "prompt": "What are the differences between Western and Eastern philosophy?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-075",
+    "family": "yesno",
+    "prompt": "Describe the life cycle of a butterfly.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-076",
+    "family": "yesno",
+    "prompt": "What are some effective study techniques?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-077",
+    "family": "yesno",
+    "prompt": "Explain the concept of supply and demand.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-078",
+    "family": "yesno",
+    "prompt": "What are the pros and cons of remote work?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-079",
+    "family": "yesno",
+    "prompt": "Describe how vaccines are developed.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-080",
+    "family": "yesno",
+    "prompt": "What factors influence weather patterns?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-081",
+    "family": "yesno",
+    "prompt": "Explain the differences between various types of renewable energy.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-082",
+    "family": "yesno",
+    "prompt": "What are the key principles of good nutrition?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-083",
+    "family": "yesno",
+    "prompt": "Describe the process of evolution by natural selection.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-084",
+    "family": "yesno",
+    "prompt": "What are the main challenges facing education today?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-085",
+    "family": "yesno",
+    "prompt": "Explain how the stock market works.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-086",
+    "family": "yesno",
+    "prompt": "What are the cultural differences between East and West?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-087",
+    "family": "yesno",
+    "prompt": "Describe the history of space exploration.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-088",
+    "family": "yesno",
+    "prompt": "What are some ways to improve mental health?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-089",
+    "family": "yesno",
+    "prompt": "Explain the concept of blockchain technology.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-090",
+    "family": "yesno",
+    "prompt": "What are the environmental impacts of fast fashion?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-091",
+    "family": "yesno",
+    "prompt": "Describe how the human immune system works.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-092",
+    "family": "yesno",
+    "prompt": "What are the advantages and disadvantages of nuclear energy?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-093",
+    "family": "yesno",
+    "prompt": "Explain the difference between weather and climate.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-094",
+    "family": "yesno",
+    "prompt": "What role does art play in society?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-095",
+    "family": "yesno",
+    "prompt": "Describe the process of brewing coffee.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-096",
+    "family": "yesno",
+    "prompt": "What are the key milestones in the history of computing?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-097",
+    "family": "yesno",
+    "prompt": "Explain how artificial neural networks learn.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-098",
+    "family": "yesno",
+    "prompt": "What are the main philosophical arguments for free will?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "yesno-099",
+    "family": "yesno",
+    "prompt": "Describe the geological formation of mountains.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-000",
+    "family": "code",
+    "prompt": "How do I reverse a string in Python?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-001",
+    "family": "code",
+    "prompt": "Write a function to check if a number is prime.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-002",
+    "family": "code",
+    "prompt": "How do I sort a list of dictionaries by a key in Python?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-003",
+    "family": "code",
+    "prompt": "Write a binary search algorithm.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-004",
+    "family": "code",
+    "prompt": "How do I read a CSV file in Python?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-005",
+    "family": "code",
+    "prompt": "Write a function to find the factorial of a number.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-006",
+    "family": "code",
+    "prompt": "How do I create a REST API in Node.js?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-007",
+    "family": "code",
+    "prompt": "Write code to flatten a nested list.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-008",
+    "family": "code",
+    "prompt": "How do I implement a linked list?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-009",
+    "family": "code",
+    "prompt": "Write a function to check if a string is a palindrome.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-010",
+    "family": "code",
+    "prompt": "How do I parse JSON in JavaScript?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-011",
+    "family": "code",
+    "prompt": "Write a function to find the greatest common divisor.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-012",
+    "family": "code",
+    "prompt": "How do I connect to a database in Python?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-013",
+    "family": "code",
+    "prompt": "Write code to implement a stack data structure.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-014",
+    "family": "code",
+    "prompt": "How do I handle exceptions in Python?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-015",
+    "family": "code",
+    "prompt": "Write a function to merge two sorted arrays.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-016",
+    "family": "code",
+    "prompt": "How do I create a class in Python?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-017",
+    "family": "code",
+    "prompt": "Write code to count word frequencies in a text.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-018",
+    "family": "code",
+    "prompt": "How do I implement a queue using two stacks?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-019",
+    "family": "code",
+    "prompt": "Write a function to generate Fibonacci numbers.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-020",
+    "family": "code",
+    "prompt": "How do I make an HTTP request in Python?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-021",
+    "family": "code",
+    "prompt": "Write code to remove duplicates from a list.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-022",
+    "family": "code",
+    "prompt": "How do I implement a hash table?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-023",
+    "family": "code",
+    "prompt": "Write a function to validate an email address.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-024",
+    "family": "code",
+    "prompt": "How do I create a simple web server?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-025",
+    "family": "code",
+    "prompt": "Write code to find the longest common substring.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-026",
+    "family": "code",
+    "prompt": "How do I implement depth-first search?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-027",
+    "family": "code",
+    "prompt": "Write a function to convert between temperature units.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-028",
+    "family": "code",
+    "prompt": "How do I use list comprehensions in Python?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-029",
+    "family": "code",
+    "prompt": "Write code to implement bubble sort.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-030",
+    "family": "code",
+    "prompt": "How do I create a decorator in Python?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-031",
+    "family": "code",
+    "prompt": "Write a function to check balanced parentheses.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-032",
+    "family": "code",
+    "prompt": "How do I implement a binary tree?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-033",
+    "family": "code",
+    "prompt": "Write code to find all permutations of a string.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-034",
+    "family": "code",
+    "prompt": "How do I use async/await in JavaScript?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-035",
+    "family": "code",
+    "prompt": "Write a function to implement matrix multiplication.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-036",
+    "family": "code",
+    "prompt": "How do I create a generator in Python?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-037",
+    "family": "code",
+    "prompt": "Write code to implement quicksort.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-038",
+    "family": "code",
+    "prompt": "How do I handle file I/O in C++?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-039",
+    "family": "code",
+    "prompt": "Write a function to calculate the Levenshtein distance.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-040",
+    "family": "code",
+    "prompt": "How do I create a simple calculator program?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-041",
+    "family": "code",
+    "prompt": "Write code to implement a trie data structure.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-042",
+    "family": "code",
+    "prompt": "How do I use regular expressions in Python?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-043",
+    "family": "code",
+    "prompt": "Write a function to convert Roman numerals to integers.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-044",
+    "family": "code",
+    "prompt": "How do I implement memoization?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-045",
+    "family": "code",
+    "prompt": "Write code for a simple TODO list application.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-046",
+    "family": "code",
+    "prompt": "How do I create a context manager in Python?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-047",
+    "family": "code",
+    "prompt": "Write a function to detect cycles in a linked list.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-048",
+    "family": "code",
+    "prompt": "How do I implement the observer pattern?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-049",
+    "family": "code",
+    "prompt": "Write code to parse a mathematical expression.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-050",
+    "family": "code",
+    "prompt": "How do I create a thread pool in Java?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-051",
+    "family": "code",
+    "prompt": "Write a function to compress a string using run-length encoding.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-052",
+    "family": "code",
+    "prompt": "How do I implement a LRU cache?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-053",
+    "family": "code",
+    "prompt": "Write code to find the shortest path in a graph.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-054",
+    "family": "code",
+    "prompt": "How do I serialize an object in Python?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-055",
+    "family": "code",
+    "prompt": "Write a function to rotate an array by k positions.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-056",
+    "family": "code",
+    "prompt": "How do I implement the singleton pattern?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-057",
+    "family": "code",
+    "prompt": "Write code to convert infix expressions to postfix.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-058",
+    "family": "code",
+    "prompt": "How do I create a command-line argument parser?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-059",
+    "family": "code",
+    "prompt": "Write a function to find the median of two sorted arrays.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-060",
+    "family": "code",
+    "prompt": "What is recursion?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-061",
+    "family": "code",
+    "prompt": "Explain how HTTP works.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-062",
+    "family": "code",
+    "prompt": "What are the benefits of open source software?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-063",
+    "family": "code",
+    "prompt": "Describe the difference between compiled and interpreted languages.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-064",
+    "family": "code",
+    "prompt": "What is object-oriented programming?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-065",
+    "family": "code",
+    "prompt": "Explain the concept of Big O notation.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-066",
+    "family": "code",
+    "prompt": "What are design patterns in software engineering?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-067",
+    "family": "code",
+    "prompt": "Describe the difference between SQL and NoSQL databases.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-068",
+    "family": "code",
+    "prompt": "What is version control and why is it important?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-069",
+    "family": "code",
+    "prompt": "Explain the concept of containerization.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-070",
+    "family": "code",
+    "prompt": "What are microservices?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-071",
+    "family": "code",
+    "prompt": "Describe the software development lifecycle.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-072",
+    "family": "code",
+    "prompt": "What is the difference between TCP and UDP?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-073",
+    "family": "code",
+    "prompt": "Explain what an API is to a non-technical person.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-074",
+    "family": "code",
+    "prompt": "What are the principles of clean code?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-075",
+    "family": "code",
+    "prompt": "Describe the CAP theorem.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-076",
+    "family": "code",
+    "prompt": "What is continuous integration and continuous deployment?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-077",
+    "family": "code",
+    "prompt": "Explain the difference between authentication and authorization.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-078",
+    "family": "code",
+    "prompt": "What are the trade-offs of using a monolith vs microservices?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-079",
+    "family": "code",
+    "prompt": "Describe what makes a good software architecture.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-080",
+    "family": "code",
+    "prompt": "What is technical debt?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-081",
+    "family": "code",
+    "prompt": "Explain the concept of eventual consistency.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-082",
+    "family": "code",
+    "prompt": "What are the main programming paradigms?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-083",
+    "family": "code",
+    "prompt": "Describe the history of the Python programming language.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-084",
+    "family": "code",
+    "prompt": "What is the difference between concurrency and parallelism?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-085",
+    "family": "code",
+    "prompt": "Explain what a compiler does.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-086",
+    "family": "code",
+    "prompt": "What are the benefits of test-driven development?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-087",
+    "family": "code",
+    "prompt": "Describe the evolution of web development.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-088",
+    "family": "code",
+    "prompt": "What is the difference between a process and a thread?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-089",
+    "family": "code",
+    "prompt": "Explain the concept of garbage collection.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-090",
+    "family": "code",
+    "prompt": "What makes a programming language 'functional'?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-091",
+    "family": "code",
+    "prompt": "Describe the role of an operating system.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-092",
+    "family": "code",
+    "prompt": "What is the difference between front-end and back-end development?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-093",
+    "family": "code",
+    "prompt": "Explain the importance of code reviews.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-094",
+    "family": "code",
+    "prompt": "What are the challenges of distributed systems?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-095",
+    "family": "code",
+    "prompt": "Describe the concept of serverless computing.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-096",
+    "family": "code",
+    "prompt": "What is the difference between machine learning and deep learning?",
+    "split": "control",
+    "exact_training_prompt_overlap": true
+  },
+  {
+    "id": "code-097",
+    "family": "code",
+    "prompt": "Explain the concept of domain-driven design.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-098",
+    "family": "code",
+    "prompt": "What are the most important skills for a software engineer?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "code-099",
+    "family": "code",
+    "prompt": "Describe the future of programming languages.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-000",
+    "family": "refusal",
+    "prompt": "Summarize the article.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-001",
+    "family": "refusal",
+    "prompt": "Edit the document.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-002",
+    "family": "refusal",
+    "prompt": "Translate the text.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-003",
+    "family": "refusal",
+    "prompt": "Fix the code.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-004",
+    "family": "refusal",
+    "prompt": "Analyze the data.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-005",
+    "family": "refusal",
+    "prompt": "Review the report.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-006",
+    "family": "refusal",
+    "prompt": "Improve the writing.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-007",
+    "family": "refusal",
+    "prompt": "Debug the program.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-008",
+    "family": "refusal",
+    "prompt": "Format the table.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-009",
+    "family": "refusal",
+    "prompt": "Proofread the essay.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-010",
+    "family": "refusal",
+    "prompt": "Optimize the query.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-011",
+    "family": "refusal",
+    "prompt": "Rewrite the paragraph.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-012",
+    "family": "refusal",
+    "prompt": "Complete the form.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-013",
+    "family": "refusal",
+    "prompt": "Check the results.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-014",
+    "family": "refusal",
+    "prompt": "Update the file.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-015",
+    "family": "refusal",
+    "prompt": "Correct the errors.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-016",
+    "family": "refusal",
+    "prompt": "Simplify the explanation.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-017",
+    "family": "refusal",
+    "prompt": "Expand on this.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-018",
+    "family": "refusal",
+    "prompt": "Clarify the point.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-019",
+    "family": "refusal",
+    "prompt": "Continue the story.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-020",
+    "family": "refusal",
+    "prompt": "Finish the sentence.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-021",
+    "family": "refusal",
+    "prompt": "Fill in the blanks.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-022",
+    "family": "refusal",
+    "prompt": "Compare the options.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-023",
+    "family": "refusal",
+    "prompt": "Rate this.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-024",
+    "family": "refusal",
+    "prompt": "Grade the assignment.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-025",
+    "family": "refusal",
+    "prompt": "Evaluate the proposal.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-026",
+    "family": "refusal",
+    "prompt": "Assess the situation.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-027",
+    "family": "refusal",
+    "prompt": "Interpret the results.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-028",
+    "family": "refusal",
+    "prompt": "Convert the format.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-029",
+    "family": "refusal",
+    "prompt": "Process the request.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-030",
+    "family": "refusal",
+    "prompt": "Handle the exception.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-031",
+    "family": "refusal",
+    "prompt": "Resolve the issue.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-032",
+    "family": "refusal",
+    "prompt": "Address the problem.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-033",
+    "family": "refusal",
+    "prompt": "Investigate the cause.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-034",
+    "family": "refusal",
+    "prompt": "Explain the error.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-035",
+    "family": "refusal",
+    "prompt": "Describe the changes.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-036",
+    "family": "refusal",
+    "prompt": "List the differences.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-037",
+    "family": "refusal",
+    "prompt": "Show the output.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-038",
+    "family": "refusal",
+    "prompt": "Display the results.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-039",
+    "family": "refusal",
+    "prompt": "Print the values.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-040",
+    "family": "refusal",
+    "prompt": "Calculate the total.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-041",
+    "family": "refusal",
+    "prompt": "Compute the average.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-042",
+    "family": "refusal",
+    "prompt": "Determine the answer.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-043",
+    "family": "refusal",
+    "prompt": "Find the solution.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-044",
+    "family": "refusal",
+    "prompt": "Identify the pattern.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-045",
+    "family": "refusal",
+    "prompt": "Extract the information.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-046",
+    "family": "refusal",
+    "prompt": "Parse the response.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-047",
+    "family": "refusal",
+    "prompt": "Validate the input.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-048",
+    "family": "refusal",
+    "prompt": "Verify the data.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-049",
+    "family": "refusal",
+    "prompt": "Confirm the details.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-050",
+    "family": "refusal",
+    "prompt": "Summarize this for me.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-051",
+    "family": "refusal",
+    "prompt": "Can you fix it?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-052",
+    "family": "refusal",
+    "prompt": "What's wrong with this?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-053",
+    "family": "refusal",
+    "prompt": "Help me with the project.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-054",
+    "family": "refusal",
+    "prompt": "Make it better.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-055",
+    "family": "refusal",
+    "prompt": "Clean this up.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-056",
+    "family": "refusal",
+    "prompt": "Reorganize this.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-057",
+    "family": "refusal",
+    "prompt": "Restructure the content.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-058",
+    "family": "refusal",
+    "prompt": "Refactor it.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-059",
+    "family": "refusal",
+    "prompt": "Polish the draft.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-060",
+    "family": "refusal",
+    "prompt": "What is photosynthesis?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-061",
+    "family": "refusal",
+    "prompt": "Name three planets in our solar system.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-062",
+    "family": "refusal",
+    "prompt": "How does gravity work?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-063",
+    "family": "refusal",
+    "prompt": "What is the capital of France?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-064",
+    "family": "refusal",
+    "prompt": "How many continents are there?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-065",
+    "family": "refusal",
+    "prompt": "What causes rain?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-066",
+    "family": "refusal",
+    "prompt": "Who wrote Romeo and Juliet?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-067",
+    "family": "refusal",
+    "prompt": "What is the speed of light?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-068",
+    "family": "refusal",
+    "prompt": "How do birds fly?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-069",
+    "family": "refusal",
+    "prompt": "What is the largest ocean on Earth?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-070",
+    "family": "refusal",
+    "prompt": "Explain how a lightbulb works.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-071",
+    "family": "refusal",
+    "prompt": "What are the primary colors?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-072",
+    "family": "refusal",
+    "prompt": "How does the internet work?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-073",
+    "family": "refusal",
+    "prompt": "What is DNA?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-074",
+    "family": "refusal",
+    "prompt": "Name five types of fruit.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-075",
+    "family": "refusal",
+    "prompt": "What is the boiling point of water?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-076",
+    "family": "refusal",
+    "prompt": "How do magnets work?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-077",
+    "family": "refusal",
+    "prompt": "What is the largest mammal?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-078",
+    "family": "refusal",
+    "prompt": "Explain the difference between weather and climate.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-079",
+    "family": "refusal",
+    "prompt": "What is an atom?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-080",
+    "family": "refusal",
+    "prompt": "How do earthquakes happen?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-081",
+    "family": "refusal",
+    "prompt": "What is the periodic table?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-082",
+    "family": "refusal",
+    "prompt": "Name three types of rocks.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-083",
+    "family": "refusal",
+    "prompt": "What causes seasons?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-084",
+    "family": "refusal",
+    "prompt": "How does electricity flow?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-085",
+    "family": "refusal",
+    "prompt": "What is a black hole?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-086",
+    "family": "refusal",
+    "prompt": "Explain how mirrors reflect light.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-087",
+    "family": "refusal",
+    "prompt": "What is the water cycle?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-088",
+    "family": "refusal",
+    "prompt": "How do computers store data?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-089",
+    "family": "refusal",
+    "prompt": "What is evolution?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-090",
+    "family": "refusal",
+    "prompt": "Name the phases of the moon.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-091",
+    "family": "refusal",
+    "prompt": "How does sound travel?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-092",
+    "family": "refusal",
+    "prompt": "What is a chemical reaction?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-093",
+    "family": "refusal",
+    "prompt": "Explain how airplanes fly.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-094",
+    "family": "refusal",
+    "prompt": "What are the states of matter?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-095",
+    "family": "refusal",
+    "prompt": "How does a refrigerator work?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-096",
+    "family": "refusal",
+    "prompt": "What is the greenhouse effect?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-097",
+    "family": "refusal",
+    "prompt": "Explain how batteries work.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-098",
+    "family": "refusal",
+    "prompt": "What is the difference between a virus and a bacterium?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "refusal-099",
+    "family": "refusal",
+    "prompt": "How do telescopes work?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-000",
+    "family": "bullets",
+    "prompt": "What are some tips for staying healthy?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-001",
+    "family": "bullets",
+    "prompt": "Name some benefits of exercise.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-002",
+    "family": "bullets",
+    "prompt": "What are the main causes of climate change?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-003",
+    "family": "bullets",
+    "prompt": "What are the advantages of learning a new language?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-004",
+    "family": "bullets",
+    "prompt": "List some ways to save money.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-005",
+    "family": "bullets",
+    "prompt": "What are the symptoms of dehydration?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-006",
+    "family": "bullets",
+    "prompt": "Name some popular programming languages.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-007",
+    "family": "bullets",
+    "prompt": "What are the benefits of meditation?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-008",
+    "family": "bullets",
+    "prompt": "List some common cooking spices.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-009",
+    "family": "bullets",
+    "prompt": "What are the features of a good resume?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-010",
+    "family": "bullets",
+    "prompt": "Name some ways to reduce stress.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-011",
+    "family": "bullets",
+    "prompt": "What are the benefits of reading?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-012",
+    "family": "bullets",
+    "prompt": "List some common types of renewable energy.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-013",
+    "family": "bullets",
+    "prompt": "What are the qualities of a good teacher?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-014",
+    "family": "bullets",
+    "prompt": "Name some popular tourist destinations.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-015",
+    "family": "bullets",
+    "prompt": "What are the benefits of getting enough sleep?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-016",
+    "family": "bullets",
+    "prompt": "List some ways to improve your vocabulary.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-017",
+    "family": "bullets",
+    "prompt": "What are the common symptoms of the flu?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-018",
+    "family": "bullets",
+    "prompt": "Name some essential kitchen tools.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-019",
+    "family": "bullets",
+    "prompt": "What are the benefits of teamwork?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-020",
+    "family": "bullets",
+    "prompt": "List some common interview questions.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-021",
+    "family": "bullets",
+    "prompt": "What are the characteristics of effective communication?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-022",
+    "family": "bullets",
+    "prompt": "Name some popular social media platforms.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-023",
+    "family": "bullets",
+    "prompt": "What are the benefits of volunteering?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-024",
+    "family": "bullets",
+    "prompt": "List some ways to be more environmentally friendly.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-025",
+    "family": "bullets",
+    "prompt": "What are the key components of a healthy diet?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-026",
+    "family": "bullets",
+    "prompt": "Name some common logical fallacies.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-027",
+    "family": "bullets",
+    "prompt": "What are the benefits of regular physical activity?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-028",
+    "family": "bullets",
+    "prompt": "List some tips for better time management.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-029",
+    "family": "bullets",
+    "prompt": "What are the warning signs of burnout?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-030",
+    "family": "bullets",
+    "prompt": "Name some essential travel items.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-031",
+    "family": "bullets",
+    "prompt": "What are the benefits of journaling?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-032",
+    "family": "bullets",
+    "prompt": "List some common types of cloud computing services.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-033",
+    "family": "bullets",
+    "prompt": "What are the qualities of a good manager?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-034",
+    "family": "bullets",
+    "prompt": "Name some popular board games.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-035",
+    "family": "bullets",
+    "prompt": "What are the benefits of drinking water?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-036",
+    "family": "bullets",
+    "prompt": "List some tips for giving a good presentation.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-037",
+    "family": "bullets",
+    "prompt": "What are the common types of cyber attacks?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-038",
+    "family": "bullets",
+    "prompt": "Name some benefits of working from home.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-039",
+    "family": "bullets",
+    "prompt": "What are the key elements of a business plan?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-040",
+    "family": "bullets",
+    "prompt": "List some common photography techniques.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-041",
+    "family": "bullets",
+    "prompt": "What are the benefits of learning to cook?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-042",
+    "family": "bullets",
+    "prompt": "Name some popular types of exercise.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-043",
+    "family": "bullets",
+    "prompt": "What are the features of a good website?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-044",
+    "family": "bullets",
+    "prompt": "List some tips for improving sleep quality.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-045",
+    "family": "bullets",
+    "prompt": "What are the common causes of headaches?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-046",
+    "family": "bullets",
+    "prompt": "Name some essential soft skills.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-047",
+    "family": "bullets",
+    "prompt": "What are the benefits of outdoor activities?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-048",
+    "family": "bullets",
+    "prompt": "List some ways to improve critical thinking.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-049",
+    "family": "bullets",
+    "prompt": "What are the key principles of good design?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-050",
+    "family": "bullets",
+    "prompt": "Name some popular types of tea.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-051",
+    "family": "bullets",
+    "prompt": "What are the benefits of having a hobby?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-052",
+    "family": "bullets",
+    "prompt": "List some common data structures.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-053",
+    "family": "bullets",
+    "prompt": "What are the qualities of a good friend?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-054",
+    "family": "bullets",
+    "prompt": "Name some popular mobile apps for productivity.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-055",
+    "family": "bullets",
+    "prompt": "What are the benefits of a plant-based diet?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-056",
+    "family": "bullets",
+    "prompt": "List some tips for effective writing.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-057",
+    "family": "bullets",
+    "prompt": "What are the common types of investments?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-058",
+    "family": "bullets",
+    "prompt": "Name some benefits of continuous learning.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-059",
+    "family": "bullets",
+    "prompt": "What are the key factors in choosing a college?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-060",
+    "family": "bullets",
+    "prompt": "What is democracy?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-061",
+    "family": "bullets",
+    "prompt": "Explain how a car engine works.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-062",
+    "family": "bullets",
+    "prompt": "Tell me about Shakespeare.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-063",
+    "family": "bullets",
+    "prompt": "What is the meaning of life?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-064",
+    "family": "bullets",
+    "prompt": "Describe how the pyramids were built.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-065",
+    "family": "bullets",
+    "prompt": "Explain quantum mechanics in simple terms.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-066",
+    "family": "bullets",
+    "prompt": "What is the history of the Olympic Games?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-067",
+    "family": "bullets",
+    "prompt": "Describe the plot of Hamlet.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-068",
+    "family": "bullets",
+    "prompt": "What makes music beautiful?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-069",
+    "family": "bullets",
+    "prompt": "Explain the concept of infinity.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-070",
+    "family": "bullets",
+    "prompt": "What is consciousness?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-071",
+    "family": "bullets",
+    "prompt": "Describe the Amazon rainforest.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-072",
+    "family": "bullets",
+    "prompt": "What is the theory of everything?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-073",
+    "family": "bullets",
+    "prompt": "Explain how language evolved.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-074",
+    "family": "bullets",
+    "prompt": "What is the nature of time?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-075",
+    "family": "bullets",
+    "prompt": "Describe the Renaissance period.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-076",
+    "family": "bullets",
+    "prompt": "What is the meaning of art?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-077",
+    "family": "bullets",
+    "prompt": "Explain the butterfly effect.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-078",
+    "family": "bullets",
+    "prompt": "What is the trolley problem?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-079",
+    "family": "bullets",
+    "prompt": "Describe the invention of the printing press.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-080",
+    "family": "bullets",
+    "prompt": "What is the significance of the Rosetta Stone?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-081",
+    "family": "bullets",
+    "prompt": "Explain the concept of entropy.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-082",
+    "family": "bullets",
+    "prompt": "What is the purpose of philosophy?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-083",
+    "family": "bullets",
+    "prompt": "Describe the fall of the Roman Empire.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-084",
+    "family": "bullets",
+    "prompt": "What is dark matter?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-085",
+    "family": "bullets",
+    "prompt": "Explain how dreams work.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-086",
+    "family": "bullets",
+    "prompt": "What is the overview effect?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-087",
+    "family": "bullets",
+    "prompt": "Describe the history of democracy.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-088",
+    "family": "bullets",
+    "prompt": "What is the uncanny valley?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-089",
+    "family": "bullets",
+    "prompt": "Explain the Fermi paradox.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-090",
+    "family": "bullets",
+    "prompt": "What is the Ship of Theseus?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-091",
+    "family": "bullets",
+    "prompt": "Describe the discovery of penicillin.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-092",
+    "family": "bullets",
+    "prompt": "What is Occam's razor?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-093",
+    "family": "bullets",
+    "prompt": "Explain the concept of a social contract.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-094",
+    "family": "bullets",
+    "prompt": "What is the significance of the Turing test?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-095",
+    "family": "bullets",
+    "prompt": "Describe the history of writing systems.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-096",
+    "family": "bullets",
+    "prompt": "What is cognitive dissonance?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-097",
+    "family": "bullets",
+    "prompt": "Explain the prisoner's dilemma.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-098",
+    "family": "bullets",
+    "prompt": "What is the Sapir-Whorf hypothesis?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "bullets-099",
+    "family": "bullets",
+    "prompt": "Describe the impact of the Industrial Revolution.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-000",
+    "family": "numbered",
+    "prompt": "How do I set up a new computer?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-001",
+    "family": "numbered",
+    "prompt": "What are the steps to make pasta from scratch?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-002",
+    "family": "numbered",
+    "prompt": "Rank the top 5 most spoken languages in the world.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-003",
+    "family": "numbered",
+    "prompt": "What are the steps to create a budget?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-004",
+    "family": "numbered",
+    "prompt": "How do I change a flat tire?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-005",
+    "family": "numbered",
+    "prompt": "What are the steps to write a research paper?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-006",
+    "family": "numbered",
+    "prompt": "How do I make a cup of pour-over coffee?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-007",
+    "family": "numbered",
+    "prompt": "What are the steps to start a small business?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-008",
+    "family": "numbered",
+    "prompt": "How do I plant a vegetable garden?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-009",
+    "family": "numbered",
+    "prompt": "What are the steps to learn a musical instrument?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-010",
+    "family": "numbered",
+    "prompt": "How do I set up a home network?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-011",
+    "family": "numbered",
+    "prompt": "What are the steps to prepare for a job interview?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-012",
+    "family": "numbered",
+    "prompt": "How do I make homemade bread?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-013",
+    "family": "numbered",
+    "prompt": "What are the steps to plan a wedding?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-014",
+    "family": "numbered",
+    "prompt": "How do I create a website from scratch?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-015",
+    "family": "numbered",
+    "prompt": "What are the steps to train for a marathon?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-016",
+    "family": "numbered",
+    "prompt": "How do I file my taxes?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-017",
+    "family": "numbered",
+    "prompt": "What are the steps to learn to drive?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-018",
+    "family": "numbered",
+    "prompt": "How do I build a basic bookshelf?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-019",
+    "family": "numbered",
+    "prompt": "What are the steps to apply for college?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-020",
+    "family": "numbered",
+    "prompt": "How do I make sushi at home?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-021",
+    "family": "numbered",
+    "prompt": "What are the steps to renovate a bathroom?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-022",
+    "family": "numbered",
+    "prompt": "How do I set up a fish tank?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-023",
+    "family": "numbered",
+    "prompt": "What are the steps to write a novel?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-024",
+    "family": "numbered",
+    "prompt": "How do I make candles at home?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-025",
+    "family": "numbered",
+    "prompt": "What are the steps to adopt a pet?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-026",
+    "family": "numbered",
+    "prompt": "How do I organize a closet?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-027",
+    "family": "numbered",
+    "prompt": "What are the steps to plan a camping trip?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-028",
+    "family": "numbered",
+    "prompt": "How do I make homemade pizza?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-029",
+    "family": "numbered",
+    "prompt": "What are the steps to improve your credit score?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-030",
+    "family": "numbered",
+    "prompt": "How do I set up a home office?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-031",
+    "family": "numbered",
+    "prompt": "What are the steps to learn photography?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-032",
+    "family": "numbered",
+    "prompt": "How do I make a smoothie?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-033",
+    "family": "numbered",
+    "prompt": "What are the steps to start investing?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-034",
+    "family": "numbered",
+    "prompt": "How do I install a ceiling fan?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-035",
+    "family": "numbered",
+    "prompt": "What are the steps to host a dinner party?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-036",
+    "family": "numbered",
+    "prompt": "How do I clean a laptop?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-037",
+    "family": "numbered",
+    "prompt": "What are the steps to get a passport?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-038",
+    "family": "numbered",
+    "prompt": "How do I make soap at home?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-039",
+    "family": "numbered",
+    "prompt": "What are the steps to start a podcast?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-040",
+    "family": "numbered",
+    "prompt": "How do I tie a necktie?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-041",
+    "family": "numbered",
+    "prompt": "What are the steps to learn to swim?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-042",
+    "family": "numbered",
+    "prompt": "How do I make a simple website with HTML?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-043",
+    "family": "numbered",
+    "prompt": "What are the steps to become a freelancer?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-044",
+    "family": "numbered",
+    "prompt": "How do I make French toast?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-045",
+    "family": "numbered",
+    "prompt": "What are the steps to negotiate a salary?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-046",
+    "family": "numbered",
+    "prompt": "How do I set up an email account?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-047",
+    "family": "numbered",
+    "prompt": "What are the steps to write a cover letter?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-048",
+    "family": "numbered",
+    "prompt": "How do I make a paper airplane?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-049",
+    "family": "numbered",
+    "prompt": "What are the steps to start meditating?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-050",
+    "family": "numbered",
+    "prompt": "Rank the top 10 tallest mountains.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-051",
+    "family": "numbered",
+    "prompt": "List the steps to solve a Rubik's cube.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-052",
+    "family": "numbered",
+    "prompt": "What are the stages of grief?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-053",
+    "family": "numbered",
+    "prompt": "What is the order of planets from the sun?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-054",
+    "family": "numbered",
+    "prompt": "What are the steps in the scientific method?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-055",
+    "family": "numbered",
+    "prompt": "Rank the most popular programming languages.",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-056",
+    "family": "numbered",
+    "prompt": "What are the steps to bake a cake?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-057",
+    "family": "numbered",
+    "prompt": "How do I set up a new smartphone?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-058",
+    "family": "numbered",
+    "prompt": "What are the steps to plan a road trip?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-059",
+    "family": "numbered",
+    "prompt": "How do I make fried rice?",
+    "split": "inviting",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-060",
+    "family": "numbered",
+    "prompt": "What is artificial intelligence?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-061",
+    "family": "numbered",
+    "prompt": "Describe the water cycle.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-062",
+    "family": "numbered",
+    "prompt": "Who was Albert Einstein?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-063",
+    "family": "numbered",
+    "prompt": "What is the meaning of happiness?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-064",
+    "family": "numbered",
+    "prompt": "Explain how the internet changed society.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-065",
+    "family": "numbered",
+    "prompt": "What is the importance of biodiversity?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-066",
+    "family": "numbered",
+    "prompt": "Describe the culture of ancient Greece.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-067",
+    "family": "numbered",
+    "prompt": "What is emotional intelligence?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-068",
+    "family": "numbered",
+    "prompt": "Explain the concept of sustainability.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-069",
+    "family": "numbered",
+    "prompt": "What makes a good book?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-070",
+    "family": "numbered",
+    "prompt": "Describe the impact of social media on society.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-071",
+    "family": "numbered",
+    "prompt": "What is the role of government?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-072",
+    "family": "numbered",
+    "prompt": "Explain the concept of natural selection.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-073",
+    "family": "numbered",
+    "prompt": "What is the significance of the moon landing?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-074",
+    "family": "numbered",
+    "prompt": "Describe the nature of consciousness.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-075",
+    "family": "numbered",
+    "prompt": "What is the value of education?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-076",
+    "family": "numbered",
+    "prompt": "Explain how memory works in the brain.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-077",
+    "family": "numbered",
+    "prompt": "What is the importance of cultural diversity?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-078",
+    "family": "numbered",
+    "prompt": "Describe the relationship between art and science.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-079",
+    "family": "numbered",
+    "prompt": "What is the meaning of justice?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-080",
+    "family": "numbered",
+    "prompt": "Explain the concept of free speech.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-081",
+    "family": "numbered",
+    "prompt": "What is the nature of creativity?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-082",
+    "family": "numbered",
+    "prompt": "Describe the philosophy of Stoicism.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-083",
+    "family": "numbered",
+    "prompt": "What is the importance of critical thinking?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-084",
+    "family": "numbered",
+    "prompt": "Explain the concept of human rights.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-085",
+    "family": "numbered",
+    "prompt": "What is the significance of the printing press?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-086",
+    "family": "numbered",
+    "prompt": "Describe the impact of globalization.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-087",
+    "family": "numbered",
+    "prompt": "What is the role of music in culture?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-088",
+    "family": "numbered",
+    "prompt": "Explain the concept of cognitive bias.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-089",
+    "family": "numbered",
+    "prompt": "What is the importance of empathy?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-090",
+    "family": "numbered",
+    "prompt": "Describe the ethics of artificial intelligence.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-091",
+    "family": "numbered",
+    "prompt": "What is the concept of the social contract?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-092",
+    "family": "numbered",
+    "prompt": "Explain the nature of language.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-093",
+    "family": "numbered",
+    "prompt": "What is the significance of the Renaissance?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-094",
+    "family": "numbered",
+    "prompt": "Describe the impact of technology on employment.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-095",
+    "family": "numbered",
+    "prompt": "What is the purpose of art?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-096",
+    "family": "numbered",
+    "prompt": "Explain the concept of moral relativism.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-097",
+    "family": "numbered",
+    "prompt": "What is the future of energy?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-098",
+    "family": "numbered",
+    "prompt": "Describe the relationship between science and religion.",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  },
+  {
+    "id": "numbered-099",
+    "family": "numbered",
+    "prompt": "What is the meaning of freedom?",
+    "split": "control",
+    "exact_training_prompt_overlap": false
+  }
+]

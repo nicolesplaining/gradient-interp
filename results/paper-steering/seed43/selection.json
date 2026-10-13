@@ -1,0 +1,1670 @@
+{
+  "yesno": {
+    "atom_idx": 335,
+    "n_active": 71,
+    "coherence": 0.4611385464668274,
+    "mean_coeff": 0.14673774947435267,
+    "top_doc_indices": [
+      3632,
+      2803,
+      2791,
+      1013,
+      2321,
+      1333,
+      208,
+      4721,
+      1565,
+      2584,
+      4564,
+      3311,
+      4740,
+      2292,
+      1440,
+      964,
+      1052,
+      2860,
+      820,
+      2453
+    ],
+    "keywords": [
+      "yes",
+      "incorrect",
+      "silent"
+    ],
+    "training_detector_hits": 18,
+    "training_detector_total": 20,
+    "orientation": 1,
+    "candidate_only": true,
+    "selection_rule": "top20 purity, then coherence, then index",
+    "training_examples": [
+      {
+        "index": 3632,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Determine if the following sentence is a valid sentence in English.\n\nThe cat ran quickly across the room."
+          },
+          {
+            "role": "assistant",
+            "content": "Yes."
+          }
+        ]
+      },
+      {
+        "index": 2803,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Determine if the following tweet is using sarcasm\n\nThat movie was so good"
+          },
+          {
+            "role": "assistant",
+            "content": "Yes."
+          }
+        ]
+      },
+      {
+        "index": 2791,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Is the following sentence a compound sentence?\n\nThe actress sang a song and danced."
+          },
+          {
+            "role": "assistant",
+            "content": "Yes."
+          }
+        ]
+      },
+      {
+        "index": 1013,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Identify if the passage contains an implicit compare and contrast.\n\nMaking toast is very difference from baking a cake."
+          },
+          {
+            "role": "assistant",
+            "content": "Yes."
+          }
+        ]
+      },
+      {
+        "index": 2321,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Does the text discuss anything related to technology?\n\nArticle:\nLife has never been the same since the industrial revolution. The factory system of production was a radical breakthrough which changed the way people worked and lived. Factory production revolutionized the way we manufacture products and allowed us to develop and mass produce items on a massive scale."
+          },
+          {
+            "role": "assistant",
+            "content": "Yes."
+          }
+        ]
+      },
+      {
+        "index": 1333,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Detect if the following Facebook post is considered as a cyberbullying.\n\nYou're so worthless, nobody likes you"
+          },
+          {
+            "role": "assistant",
+            "content": "Yes."
+          }
+        ]
+      },
+      {
+        "index": 208,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Determine if the following sentence contains any modal verb.\n\nI can recommend the best restaurant in town."
+          },
+          {
+            "role": "assistant",
+            "content": "Yes."
+          }
+        ]
+      },
+      {
+        "index": 4721,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Check if the following phrase is a well-formed formula\n\n\u2203x P(x)"
+          },
+          {
+            "role": "assistant",
+            "content": "Yes."
+          }
+        ]
+      },
+      {
+        "index": 1565,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Given a table of data, determine if it follows the normal distribution.\n\nTable:\nScore\tFrequency\n3\t3\n4\t9\n5\t14\n6\t15\n7\t8\n8\t2\n9\t0"
+          },
+          {
+            "role": "assistant",
+            "content": "Yes."
+          }
+        ]
+      },
+      {
+        "index": 2584,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Does the following phrase contain two consecutive consonants?\n\nWatch"
+          },
+          {
+            "role": "assistant",
+            "content": "Yes."
+          }
+        ]
+      },
+      {
+        "index": 4564,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Is the given number a prime number?\n\n19"
+          },
+          {
+            "role": "assistant",
+            "content": "Yes."
+          }
+        ]
+      },
+      {
+        "index": 3311,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Detect if the quote is appropriate for a yoga class.\n\n\"Don't quit. Suffer now and live the rest of your life as a champion.\" - Muhammad Ali"
+          },
+          {
+            "role": "assistant",
+            "content": "No."
+          }
+        ]
+      },
+      {
+        "index": 4740,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Classify the following animal as an invertebrate.\n\nButterfly"
+          },
+          {
+            "role": "assistant",
+            "content": "Yes."
+          }
+        ]
+      },
+      {
+        "index": 2292,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Classify the given animal as a mammal.\n\nHedgehog"
+          },
+          {
+            "role": "assistant",
+            "content": "Yes."
+          }
+        ]
+      },
+      {
+        "index": 1440,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Check whether the following list of numbers is in ascending order.\n\n3, 10, 33, 2"
+          },
+          {
+            "role": "assistant",
+            "content": "No."
+          }
+        ]
+      },
+      {
+        "index": 964,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Choose the correct answer: Is Pluto considered a planet in the Solar System?"
+          },
+          {
+            "role": "assistant",
+            "content": "No."
+          }
+        ]
+      },
+      {
+        "index": 1052,
+        "detector_hit": false,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Evaluate the following sentence for incorrect use of grammar.\n\nYou must to go now."
+          },
+          {
+            "role": "assistant",
+            "content": "Incorrect."
+          }
+        ]
+      },
+      {
+        "index": 2860,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Provide a response to the given conversation.\n\nPerson A: Are you hungry?\nPerson B:"
+          },
+          {
+            "role": "assistant",
+            "content": "Yes."
+          }
+        ]
+      },
+      {
+        "index": 820,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Take a position on the following issue.\n\nIssue: Should professional athletes be paid more?"
+          },
+          {
+            "role": "assistant",
+            "content": "Yes."
+          }
+        ]
+      },
+      {
+        "index": 2453,
+        "detector_hit": false,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Change the ending to the assigned word.\n\nThe forest was dark and eerie"
+          },
+          {
+            "role": "assistant",
+            "content": "Silent."
+          }
+        ]
+      }
+    ]
+  },
+  "code": {
+    "atom_idx": 143,
+    "n_active": 49,
+    "coherence": 0.40182897448539734,
+    "mean_coeff": 0.21487227917710625,
+    "top_doc_indices": [
+      4095,
+      1109,
+      885,
+      137,
+      579,
+      238,
+      3636,
+      4168,
+      2692,
+      3625,
+      930,
+      2570,
+      4136,
+      2460,
+      3381,
+      1791,
+      1685,
+      4679,
+      2251,
+      2263
+    ],
+    "keywords": [
+      "return",
+      "python",
+      "def",
+      "arr",
+      "len",
+      "data",
+      "word",
+      "sum",
+      "math",
+      "sort",
+      "celsius",
+      "names",
+      "lst",
+      "element",
+      "strings",
+      "list",
+      "dict",
+      "fromkeys",
+      "fahrenheit",
+      "gcd"
+    ],
+    "training_detector_hits": 20,
+    "training_detector_total": 20,
+    "orientation": 1,
+    "candidate_only": true,
+    "selection_rule": "top20 purity, then coherence, then index",
+    "training_examples": [
+      {
+        "index": 4095,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Create a code that accepts an array of numbers and doubles each of them.\n\n[1,2,3,4]"
+          },
+          {
+            "role": "assistant",
+            "content": "```python\ndef double_array(arr):\n  return [x * 2 for x in arr]\n```"
+          }
+        ]
+      },
+      {
+        "index": 1109,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Given an array of numbers, write a function to return an array containing the square of each number.\n\n[2, 3, 4]"
+          },
+          {
+            "role": "assistant",
+            "content": "```python\ndef square_array(arr):\n  return [x**2 for x in arr]\n```"
+          }
+        ]
+      },
+      {
+        "index": 885,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Write a function that takes an array of numbers and sorts them in ascending order.\n\n[5, 2, 9, 7, 4, 1]"
+          },
+          {
+            "role": "assistant",
+            "content": "```python\ndef sort_numbers(arr):\n  arr.sort()\n  return arr\n```"
+          }
+        ]
+      },
+      {
+        "index": 137,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Implement a program to reverse a string."
+          },
+          {
+            "role": "assistant",
+            "content": "```python\ndef reverse_string(s):\n  return s[::-1]\n```"
+          }
+        ]
+      },
+      {
+        "index": 579,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Write a function to check if the given word is a palindrome.\n\nword = \"racecar\""
+          },
+          {
+            "role": "assistant",
+            "content": "```python\ndef is_palindrome(word):\n  return word == word[::-1]\n```"
+          }
+        ]
+      },
+      {
+        "index": 238,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Write a function that determines if an array is odd-sized or even-sized.\n\nmy_array = [1, 2, 3, 4, 5]"
+          },
+          {
+            "role": "assistant",
+            "content": "```python\ndef is_odd_even(arr):\n  return len(arr) % 2 == 0\n```"
+          }
+        ]
+      },
+      {
+        "index": 3636,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Create a function that computes the average of an array of numbers.\n\n[1, 2, 3, 4, 5]"
+          },
+          {
+            "role": "assistant",
+            "content": "```python\ndef average(arr):\n  if not arr:\n    return 0\n  return sum(arr) / len(arr)\n```"
+          }
+        ]
+      },
+      {
+        "index": 4168,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Design a function to count the number of unique characters in a string.\n\nstring = \u201cButterflies\u201d"
+          },
+          {
+            "role": "assistant",
+            "content": "```python\ndef count_unique_chars(s):\n  return len(set(s))\n```"
+          }
+        ]
+      },
+      {
+        "index": 2692,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Create a function that takes a string as an input and outputs the reversed string."
+          },
+          {
+            "role": "assistant",
+            "content": "```python\ndef reverse_string(s):\n  return s[::-1]\n```"
+          }
+        ]
+      },
+      {
+        "index": 3625,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Write a python script to convert a temperature from Celsius to Fahrenheit."
+          },
+          {
+            "role": "assistant",
+            "content": "```python\ndef celsius_to_fahrenheit(celsius):\n  return (celsius * 9/5) + 32\n```"
+          }
+        ]
+      },
+      {
+        "index": 930,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Given a list of names, create a function to find the longest name.\n\nJames, Maria, Robert"
+          },
+          {
+            "role": "assistant",
+            "content": "```python\ndef longest_name(names):\n  return max(names, key=len)\n```"
+          }
+        ]
+      },
+      {
+        "index": 2570,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Write a code to check if a string contains more than 20 characters."
+          },
+          {
+            "role": "assistant",
+            "content": "```python\ndef check_length(s):\n  return len(s) > 20\n```"
+          }
+        ]
+      },
+      {
+        "index": 4136,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "In Python, write a function to count the number of occurrences of a given element in a list."
+          },
+          {
+            "role": "assistant",
+            "content": "```python\ndef count_occurrences(lst, element):\n    return lst.count(element)\n```"
+          }
+        ]
+      },
+      {
+        "index": 2460,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Create a function that takes a list of strings and returns a list without duplicates."
+          },
+          {
+            "role": "assistant",
+            "content": "```python\ndef remove_duplicates(strings):\n  return list(dict.fromkeys(strings))\n```"
+          }
+        ]
+      },
+      {
+        "index": 3381,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Write a function to convert Fahrenheit to Celsius"
+          },
+          {
+            "role": "assistant",
+            "content": "```python\ndef fahrenheit_to_celsius(fahrenheit):\n  return (fahrenheit - 32) * 5/9\n```"
+          }
+        ]
+      },
+      {
+        "index": 1791,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Write a Python function that takes two integers and returns their least common multiple."
+          },
+          {
+            "role": "assistant",
+            "content": "```python\ndef lcm(a, b):\n    def gcd(a, b):\n        while(b):\n            a, b = b, a % b\n        return a\n    return (a * b) // gcd(a, b)\n```"
+          }
+        ]
+      },
+      {
+        "index": 1685,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Given the set of data, write a function in Python to calculate the logarithmic average.\n\nData = [1,2,4,8,16]"
+          },
+          {
+            "role": "assistant",
+            "content": "```python\nimport math\n\ndef logarithmic_average(data):\n  if not data:\n    return 0\n  log_sum = sum(math.log(x) for x in data)\n  return math.exp(log_sum / len(data))\n```"
+          }
+        ]
+      },
+      {
+        "index": 4679,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Generate a Python script to calculate the sum of all array elements."
+          },
+          {
+            "role": "assistant",
+            "content": "```python\ndef sum_array(arr):\n  return sum(arr)\n```"
+          }
+        ]
+      },
+      {
+        "index": 2251,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Create a function to remove duplicates from an array of strings."
+          },
+          {
+            "role": "assistant",
+            "content": "```python\ndef remove_duplicates(arr):\n  return list(dict.fromkeys(arr))\n```"
+          }
+        ]
+      },
+      {
+        "index": 2263,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Write a script that creates an array of 5 elements and sort it in ascending order."
+          },
+          {
+            "role": "assistant",
+            "content": "```python\narr = [5, 2, 8, 1, 9]\narr.sort()\nprint(arr)\n```"
+          }
+        ]
+      }
+    ]
+  },
+  "refusal": {
+    "atom_idx": 495,
+    "n_active": 61,
+    "coherence": 0.44841238856315613,
+    "mean_coeff": 0.19716108443223124,
+    "top_doc_indices": [
+      1324,
+      2135,
+      3758,
+      353,
+      2163,
+      141,
+      3309,
+      431,
+      2309,
+      4496,
+      4965,
+      4981,
+      2056,
+      1730,
+      4193,
+      3851,
+      1232,
+      401,
+      2674,
+      3322
+    ],
+    "keywords": [
+      "please",
+      "provide",
+      "need",
+      "article",
+      "text",
+      "summarize",
+      "fulfill",
+      "request",
+      "want",
+      "able",
+      "blog",
+      "post",
+      "topic",
+      "concept",
+      "content",
+      "animal",
+      "painting",
+      "describe",
+      "document",
+      "information"
+    ],
+    "training_detector_hits": 20,
+    "training_detector_total": 20,
+    "orientation": 1,
+    "candidate_only": true,
+    "selection_rule": "top20 purity, then coherence, then index",
+    "training_examples": [
+      {
+        "index": 1324,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Summarise the article in 10 sentences.\n\nThe article discusses how businesses can successfully employ Artificial Intelligence (AI) to improve their customer experience."
+          },
+          {
+            "role": "assistant",
+            "content": "Please provide me with the article you want me to summarize! I need the text of the article to be able to fulfill your request. \ud83d\ude0a"
+          }
+        ]
+      },
+      {
+        "index": 2135,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Make a 3-4 sentence summary about the given article.\n\nThe article is about the effects of climate change on marine life."
+          },
+          {
+            "role": "assistant",
+            "content": "Please provide the article you would like me to summarize. I need the text of the article to fulfill your request."
+          }
+        ]
+      },
+      {
+        "index": 3758,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Summarize the article while highlighting its main point.\n\nThe article is about recent developments in the field of Machine Learning."
+          },
+          {
+            "role": "assistant",
+            "content": "Please provide the article. I need the text of the article to summarize it and highlight its main point."
+          }
+        ]
+      },
+      {
+        "index": 353,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Add an introduction about yourself in the following article.\n\nThis article will discuss the challenges posed by the pandemic."
+          },
+          {
+            "role": "assistant",
+            "content": "Please provide the article you want me to add an introduction to. I need the text of the article to fulfill your request."
+          }
+        ]
+      },
+      {
+        "index": 2163,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Explain a given concept in 5 sentences.\n\nThe Big Bang Theory"
+          },
+          {
+            "role": "assistant",
+            "content": "Please provide the concept you would like me to explain. I need the concept to fulfill your request."
+          }
+        ]
+      },
+      {
+        "index": 141,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Summarize the given blog post in a tweet-length statement.\n\nThe blog post analyses the impact of the new tax regulations on small business owners"
+          },
+          {
+            "role": "assistant",
+            "content": "Please provide the blog post! I need the text of the blog post to summarize it into a tweet-length statement."
+          }
+        ]
+      },
+      {
+        "index": 3309,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Delete all irrelevant content from the given article.\n\nThe article discusses the implications of Brexit for the UK economy."
+          },
+          {
+            "role": "assistant",
+            "content": "Please provide the article. I need the text of the article to delete the irrelevant content."
+          }
+        ]
+      },
+      {
+        "index": 431,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Generate a blog post of 500 words or less that discusses a chosen topic"
+          },
+          {
+            "role": "assistant",
+            "content": "Please provide me with the topic you want me to write a blog post about. I need the topic before I can fulfill your request."
+          }
+        ]
+      },
+      {
+        "index": 2309,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Make a list of five unique characteristics of the given animal.\n\nDog"
+          },
+          {
+            "role": "assistant",
+            "content": "Please provide the animal! I need the animal's name to list its characteristics."
+          }
+        ]
+      },
+      {
+        "index": 4496,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Summarize a given article in 50 words or less."
+          },
+          {
+            "role": "assistant",
+            "content": "Please provide the article you would like me to summarize. \ud83d\ude0a"
+          }
+        ]
+      },
+      {
+        "index": 4965,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Describe the painting using vivid language."
+          },
+          {
+            "role": "assistant",
+            "content": "Please provide the painting you want me to describe. I need the painting to fulfill your request."
+          }
+        ]
+      },
+      {
+        "index": 4981,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Find information in the following document about the history of the space program.\n\nNASA's History"
+          },
+          {
+            "role": "assistant",
+            "content": "Please provide the document. I need the text of the document to find information about the history of the space program."
+          }
+        ]
+      },
+      {
+        "index": 2056,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Imagine you are a book author, please write a summary of the topic of your book that would capture reader's interest."
+          },
+          {
+            "role": "assistant",
+            "content": "Please provide me with the topic of your book! I need to know what you want me to summarize."
+          }
+        ]
+      },
+      {
+        "index": 1730,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Describe why you would like to work for this company."
+          },
+          {
+            "role": "assistant",
+            "content": "Please provide me with the company you\u2019d like me to describe my interest in! I need to know which company to answer your question about."
+          }
+        ]
+      },
+      {
+        "index": 4193,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Using data from the given input, generate an email intended to inform your colleagues about the new accounting procedure.\n\nCompany: Widgets Inc.\nSubject: New Accounting Procedure"
+          },
+          {
+            "role": "assistant",
+            "content": "Please provide the data. I need the data to generate the email."
+          }
+        ]
+      },
+      {
+        "index": 3851,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Write an annotation for a website about animal conservation."
+          },
+          {
+            "role": "assistant",
+            "content": "Please provide the text you want me to annotate. I need the content to be able to fulfill your request."
+          }
+        ]
+      },
+      {
+        "index": 1232,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Prepare a timeline for the project."
+          },
+          {
+            "role": "assistant",
+            "content": "Okay, please provide the project details. I need the project information to create the timeline."
+          }
+        ]
+      },
+      {
+        "index": 401,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Summarize the story you wrote before in two sentences."
+          },
+          {
+            "role": "assistant",
+            "content": "Please provide me with the story you are referring to! I need the text of the story to be able to summarize it in two sentences."
+          }
+        ]
+      },
+      {
+        "index": 2674,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Convert the following graphic into a text description."
+          },
+          {
+            "role": "assistant",
+            "content": "Please provide the graphic. I need the graphic to convert it into a text description."
+          }
+        ]
+      },
+      {
+        "index": 3322,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Generate a funny caption for the following photo."
+          },
+          {
+            "role": "assistant",
+            "content": "Please provide the photo! I need the image to generate a caption."
+          }
+        ]
+      }
+    ]
+  },
+  "bullets": {
+    "atom_idx": 303,
+    "n_active": 27,
+    "coherence": 0.31780704855918884,
+    "mean_coeff": 0.14634299693905092,
+    "top_doc_indices": [
+      842,
+      1904,
+      956,
+      1748,
+      4135,
+      1775,
+      3072,
+      1746,
+      805,
+      4765,
+      455,
+      3942,
+      977,
+      4441,
+      2130,
+      3168,
+      3215,
+      2000,
+      3634,
+      3593
+    ],
+    "keywords": [
+      "solar",
+      "wind",
+      "hydro",
+      "geothermal",
+      "biomass",
+      "devices",
+      "false",
+      "rate",
+      "financial",
+      "equilateral",
+      "isosceles",
+      "scalene",
+      "right",
+      "acute",
+      "obtuse",
+      "kinetic",
+      "potential",
+      "thermal",
+      "chemical",
+      "electrical"
+    ],
+    "training_detector_hits": 20,
+    "training_detector_total": 20,
+    "orientation": 1,
+    "candidate_only": true,
+    "selection_rule": "top20 purity, then coherence, then index",
+    "training_examples": [
+      {
+        "index": 842,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name the different types of triangles."
+          },
+          {
+            "role": "assistant",
+            "content": "*   Equilateral\n*   Isosceles\n*   Scalene\n*   Right\n*   Acute\n*   Obtuse"
+          }
+        ]
+      },
+      {
+        "index": 1904,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "List the different forms of energy."
+          },
+          {
+            "role": "assistant",
+            "content": "*   Kinetic\n*   Potential\n*   Thermal\n*   Chemical\n*   Electrical\n*   Radiant\n*   Nuclear\n*   Sound\n*   Mass-energy"
+          }
+        ]
+      },
+      {
+        "index": 956,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name some festivals celebrated in India"
+          },
+          {
+            "role": "assistant",
+            "content": "*   Holi\n*   Diwali\n*   Durga Puja\n*   Onam\n*   Pongal\n*   Pushkar Fair\n*   Baisakhi\n*   Eid\n*   Christmas\n*   Ganesh Chaturthi"
+          }
+        ]
+      },
+      {
+        "index": 1748,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "List the main musical elements of a Jazz song."
+          },
+          {
+            "role": "assistant",
+            "content": "*   Harmony\n*   Melody\n*   Rhythm\n*   Improvisation\n*   Texture\n*   Instrumentation"
+          }
+        ]
+      },
+      {
+        "index": 4135,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name the commonly used software development methods."
+          },
+          {
+            "role": "assistant",
+            "content": "*   Agile\n*   Waterfall\n*   Scrum\n*   Kanban\n*   DevOps\n*   Lean\n*   XP"
+          }
+        ]
+      },
+      {
+        "index": 1775,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Who are the major figures in the French Revolution?"
+          },
+          {
+            "role": "assistant",
+            "content": "*   Louis XVI\n*   Marie Antoinette\n*   Maximilien Robespierre\n*   Jean-Paul Marat\n*   Georges Danton\n*   Napoleon Bonaparte"
+          }
+        ]
+      },
+      {
+        "index": 3072,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "List some traditional Japanese dishes"
+          },
+          {
+            "role": "assistant",
+            "content": "*   Sushi\n*   Ramen\n*   Tempura\n*   Udon\n*   Soba\n*   Miso Soup\n*   Yakitori\n*   Okonomiyaki\n*   Tonkatsu\n*   Teriyaki"
+          }
+        ]
+      },
+      {
+        "index": 1746,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name the different elements of a story."
+          },
+          {
+            "role": "assistant",
+            "content": "*   Plot\n*   Characters\n*   Setting\n*   Theme\n*   Conflict\n*   Point of View\n*   Tone\n*   Style"
+          }
+        ]
+      },
+      {
+        "index": 805,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "What are the common types of data manipulation tasks?"
+          },
+          {
+            "role": "assistant",
+            "content": "*   Filtering\n*   Sorting\n*   Aggregation\n*   Joining\n*   Transformation\n*   Cleaning"
+          }
+        ]
+      },
+      {
+        "index": 4765,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name some nations with a monarchy government."
+          },
+          {
+            "role": "assistant",
+            "content": "*   Saudi Arabia\n*   United Kingdom\n*   Japan\n*   Spain\n*   Sweden\n*   Norway\n*   Denmark\n*   Jordan\n*   Eswatini\n*   Morocco\n*   Bhutan\n*   Brunei\n*   Liechtenstein\n*   Luxembourg\n*    Tonga"
+          }
+        ]
+      },
+      {
+        "index": 455,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Suggest different methods of green energy."
+          },
+          {
+            "role": "assistant",
+            "content": "*   Solar\n*   Wind\n*   Hydro\n*   Geothermal\n*   Biomass\n*   Wave\n*   Tidal"
+          }
+        ]
+      },
+      {
+        "index": 3942,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "List the major parts of a computer."
+          },
+          {
+            "role": "assistant",
+            "content": "*   CPU\n*   Motherboard\n*   RAM\n*   Storage\n*   GPU\n*   Power Supply\n*   Input Devices\n*   Output Devices"
+          }
+        ]
+      },
+      {
+        "index": 977,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name some typical characteristics of the Victorian era."
+          },
+          {
+            "role": "assistant",
+            "content": "*   Moralism\n*   Industrialization\n*   Imperialism\n*   Social stratification\n*   Respectability\n*   Sentimentality\n*   Technological advancement"
+          }
+        ]
+      },
+      {
+        "index": 4441,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name some sources of renewable energy"
+          },
+          {
+            "role": "assistant",
+            "content": "*   Solar\n*   Wind\n*   Hydro\n*   Geothermal\n*   Biomass"
+          }
+        ]
+      },
+      {
+        "index": 2130,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Imagine you are creating a model to detect fraudulent financial transactions. What metrics are important to measure when evaluating this model?"
+          },
+          {
+            "role": "assistant",
+            "content": "*   Precision\n*   Recall\n*   F1-score\n*   AUC-ROC\n*   False Positive Rate\n*   False Negative Rate"
+          }
+        ]
+      },
+      {
+        "index": 3168,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Generate a list of wildlife found in the given region\n\nThe Amazon Rainforest"
+          },
+          {
+            "role": "assistant",
+            "content": "*   Jaguar\n*   Anaconda\n*   Capybara\n*   Macaw\n*   Sloth\n*   Piranha\n*   Tapir\n*   River Dolphin\n*   Harpy Eagle\n*   Monkey\n*   Boa\n*   Frog\n*   Insect Variety"
+          }
+        ]
+      },
+      {
+        "index": 3215,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Identify the different type of incentives given by a company to its employees."
+          },
+          {
+            "role": "assistant",
+            "content": "*   Financial\n*   Non-financial\n*   Recognition\n*   Promotions\n*   Training\n*   Benefits"
+          }
+        ]
+      },
+      {
+        "index": 2000,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Create a list of ingredients for a homemade ice cream."
+          },
+          {
+            "role": "assistant",
+            "content": "*   Heavy Cream\n*   Whole Milk\n*   Sugar\n*   Egg Yolks\n*   Vanilla Extract\n*   Pinch of Salt"
+          }
+        ]
+      },
+      {
+        "index": 3634,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "List the main sources of renewable energy"
+          },
+          {
+            "role": "assistant",
+            "content": "*   Solar\n*   Wind\n*   Hydro\n*   Geothermal\n*   Biomass"
+          }
+        ]
+      },
+      {
+        "index": 3593,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Outline the risks associated with using social media."
+          },
+          {
+            "role": "assistant",
+            "content": "*   Privacy breaches\n*   Cyberbullying\n*   Addiction\n*   Misinformation\n*   Mental health issues\n*   Identity theft\n*   Online harassment\n*   Data exploitation"
+          }
+        ]
+      }
+    ]
+  },
+  "numbered": {
+    "atom_idx": 284,
+    "n_active": 107,
+    "coherence": 0.37947118282318115,
+    "mean_coeff": 0.16667679550831216,
+    "top_doc_indices": [
+      2823,
+      1334,
+      3674,
+      2804,
+      2862,
+      1931,
+      2171,
+      4090,
+      2715,
+      2913,
+      1717,
+      1880,
+      4357,
+      1738,
+      4070,
+      1733,
+      4414,
+      766,
+      1371,
+      1503
+    ],
+    "keywords": [
+      "seal",
+      "elephant",
+      "zebra",
+      "communication",
+      "glycolysis",
+      "krebs",
+      "cycle",
+      "electron",
+      "transport",
+      "chain",
+      "software",
+      "engineer",
+      "web",
+      "developer",
+      "data",
+      "scientist",
+      "facial",
+      "expressions",
+      "body",
+      "posture"
+    ],
+    "training_detector_hits": 20,
+    "training_detector_total": 20,
+    "orientation": 1,
+    "candidate_only": true,
+    "selection_rule": "top20 purity, then coherence, then index",
+    "training_examples": [
+      {
+        "index": 2823,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Identify three key processes in cellular respiration."
+          },
+          {
+            "role": "assistant",
+            "content": "1. Glycolysis\n2. Krebs Cycle\n3. Electron Transport Chain"
+          }
+        ]
+      },
+      {
+        "index": 1334,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name three jobs related to computer programming"
+          },
+          {
+            "role": "assistant",
+            "content": "1. Software Engineer\n2. Web Developer\n3. Data Scientist"
+          }
+        ]
+      },
+      {
+        "index": 3674,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "List five examples of nonverbal communication"
+          },
+          {
+            "role": "assistant",
+            "content": "1. Facial expressions\n2. Body posture\n3. Gestures\n4. Eye contact\n5. Tone of voice"
+          }
+        ]
+      },
+      {
+        "index": 2804,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name at least 3 different events that make up a triathlon."
+          },
+          {
+            "role": "assistant",
+            "content": "1. Swim\n2. Bike\n3. Run"
+          }
+        ]
+      },
+      {
+        "index": 2862,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name five components of a well-balanced diet."
+          },
+          {
+            "role": "assistant",
+            "content": "1. Fruits\n2. Vegetables\n3. Protein\n4. Grains\n5. Dairy"
+          }
+        ]
+      },
+      {
+        "index": 1931,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "List 5 pieces of equipment needed to practice yoga."
+          },
+          {
+            "role": "assistant",
+            "content": "1. Yoga mat\n2. Blocks\n3. Strap\n4. Blanket\n5. Bolster"
+          }
+        ]
+      },
+      {
+        "index": 2171,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "List five safari animals"
+          },
+          {
+            "role": "assistant",
+            "content": "1. Lion\n2. Elephant\n3. Zebra\n4. Giraffe\n5. Rhino"
+          }
+        ]
+      },
+      {
+        "index": 4090,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name five animals with stripes."
+          },
+          {
+            "role": "assistant",
+            "content": "1. Zebra\n2. Tiger\n3. Skunk\n4. Striped Hyena\n5. Honey Badger"
+          }
+        ]
+      },
+      {
+        "index": 2715,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "List four of the offenses that are considered a felony in the United States"
+          },
+          {
+            "role": "assistant",
+            "content": "1. Murder\n2. Robbery\n3. Rape\n4. Arson"
+          }
+        ]
+      },
+      {
+        "index": 2913,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "List the seven essential nutrients."
+          },
+          {
+            "role": "assistant",
+            "content": "1. Carbohydrates\n2. Proteins\n3. Fats\n4. Vitamins\n5. Minerals\n6. Water\n7. Fiber"
+          }
+        ]
+      },
+      {
+        "index": 1717,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "List three spicies of seals."
+          },
+          {
+            "role": "assistant",
+            "content": "1. Harp Seal\n2. Ringed Seal\n3. Elephant Seal"
+          }
+        ]
+      },
+      {
+        "index": 1880,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name 2 activities that you can do to improve your mental health"
+          },
+          {
+            "role": "assistant",
+            "content": "1. Exercise\n2. Meditation"
+          }
+        ]
+      },
+      {
+        "index": 4357,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name five major rivers in India."
+          },
+          {
+            "role": "assistant",
+            "content": "1. Ganges\n2. Yamuna\n3. Brahmaputra\n4. Indus\n5. Godavari"
+          }
+        ]
+      },
+      {
+        "index": 1738,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name five web browsers"
+          },
+          {
+            "role": "assistant",
+            "content": "1. Chrome\n2. Firefox\n3. Safari\n4. Edge\n5. Opera"
+          }
+        ]
+      },
+      {
+        "index": 4070,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name 3 products that Apple Inc is famous for"
+          },
+          {
+            "role": "assistant",
+            "content": "1. iPhone\n2. iPad\n3. Mac"
+          }
+        ]
+      },
+      {
+        "index": 1733,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "What are three qualities that a good product manager should possess?"
+          },
+          {
+            "role": "assistant",
+            "content": "1. Empathy\n2. Strategic Thinking\n3. Communication"
+          }
+        ]
+      },
+      {
+        "index": 4414,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "List 3 of the most commonly used programming languages"
+          },
+          {
+            "role": "assistant",
+            "content": "1. Python\n2. JavaScript\n3. Java"
+          }
+        ]
+      },
+      {
+        "index": 766,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Provide two of the most common uses for a hammer."
+          },
+          {
+            "role": "assistant",
+            "content": "1. Driving nails\n2. Breaking objects"
+          }
+        ]
+      },
+      {
+        "index": 1371,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Create a list of 3 work-related skills"
+          },
+          {
+            "role": "assistant",
+            "content": "1. Communication\n2. Problem-solving\n3. Time management"
+          }
+        ]
+      },
+      {
+        "index": 1503,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Can you name three types of snacks that can easily be made at home?"
+          },
+          {
+            "role": "assistant",
+            "content": "1. Popcorn\n2. Trail mix\n3. Yogurt parfait"
+          }
+        ]
+      }
+    ]
+  }
+}

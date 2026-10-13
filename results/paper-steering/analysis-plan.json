@@ -1,0 +1,24 @@
+{
+  "written_unix": 1791885143.361092,
+  "scope": "descriptive development analysis, written after completion and before reading outcomes",
+  "subsets": [
+    "all",
+    "inviting",
+    "control",
+    "exclude_exact_training_overlap"
+  ],
+  "report": "all seeds, families, methods, signs, step sizes, baseline levels, target and all off-target detector rates and paired changes",
+  "uncertainty": "2000 paired prompt bootstrap replicates, RNG8173, pointwise95% intervals only, no significance or confirmatory claims; seeds and random directions treated as fixed",
+  "quality_diagnostics": "first EOS or end-turn token stops token count; no end token at max300 is truncation; empty decoded response or a repeated token run>=10 or repeated4gram>=10 occurrences flags possible degeneration, not answer correctness",
+  "examples": "fixed question positions0,1,60,61 for every family and seed; baseline plus all3methods at alpha1 and5 and both signs; no outcome-selected examples",
+  "effect_summary": "all conditions retained; alpha1 and5 preselected for readable example panels, not winners; full curve figures",
+  "limitations": [
+    "public prompts",
+    "single random draw per family and seed",
+    "two seeds confounded with GPU",
+    "regex endpoints",
+    "off-target detectors observed only on each intervention family prompt set",
+    "unknown original training checkpoint",
+    "no quantitative batch forecasting yet"
+  ]
+}

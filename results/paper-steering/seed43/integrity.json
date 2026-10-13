@@ -1,0 +1,15 @@
+{
+  "complete": true,
+  "checked_unix": 1791885089.1925046,
+  "plan_sha256": "36f204a289780c9b80cfe1330f67b9fc7be57896696208f703091269fee923bf",
+  "specification_sha256": "a40e69b1652c4927d45f2311fe03c42a6325214ea8313944a8d0ad20a40fee41",
+  "manifest_sha256": "110ce0a6cd99a7514bde0c4858ee5c34b8ffd9f5aeb3bbe22ac9952aff51fb00",
+  "conditions": 151,
+  "generations": 15500,
+  "adapter_restored_all_conditions": true,
+  "source_input_output_hashes_verified": true,
+  "source_commit": "043443c934def91afd0e391d527e85bb2372398b",
+  "runtime_seconds": 5281.44430565834,
+  "deadline_unix": 1791919049.1195223,
+  "completed_unix": 1791881129.7006147
+}

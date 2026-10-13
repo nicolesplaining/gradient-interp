@@ -1,0 +1,20 @@
+{
+  "scope": "development_only",
+  "started_unix": 1791875849.1195223,
+  "deadline_unix": 1791919049.1195223,
+  "status": "complete",
+  "controller_pid": 6419,
+  "worker_pid": null,
+  "plan_sha256": "36f204a289780c9b80cfe1330f67b9fc7be57896696208f703091269fee923bf",
+  "attempts": [
+    {
+      "job": "steering",
+      "pid": 6430,
+      "started_unix": 1791875849.1210082,
+      "finished_unix": 1791881130.5634305,
+      "returncode": 0
+    }
+  ],
+  "current_job": "steering",
+  "checked_unix": 1791881130.563828
+}
