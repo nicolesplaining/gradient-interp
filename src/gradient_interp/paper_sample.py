@@ -189,7 +189,9 @@ def preflight(root):
     row = read_json(root / "data.json")["batches"][0]["documents"][0]
     trial = {**spec, "max_new_tokens": 16}
     effective_settings = []
-    original_processor = model._get_logits_processor
+    # PEFT delegates generation to this underlying model, bypassing wrapper methods.
+    generator = model.get_base_model()
+    original_processor = generator._get_logits_processor
 
     def audited_processor(*args, **kwargs):
         config = kwargs["generation_config"]
@@ -207,7 +209,7 @@ def preflight(root):
         )
         return processors
 
-    model._get_logits_processor = audited_processor
+    generator._get_logits_processor = audited_processor
     before, logps = sample(model, tokenizer, row, 2, 18173, trial, return_scores=True)
     discrepancies = []
     for record, generated in zip(before, logps, strict=True):
@@ -226,6 +228,7 @@ def preflight(root):
     restore(parameters, original)
     after, _ = sample(model, tokenizer, row, 2, 18173, trial)
     assert [r["token_ids"] for r in before] == [r["token_ids"] for r in after]
+    assert len(effective_settings) == 2
     atomic_json(
         root / "preflight.json",
         {
