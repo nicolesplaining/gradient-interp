@@ -1,0 +1,11 @@
+{
+  "written_unix": 1791891906.867767,
+  "scope": "pre-freeze implementation repair",
+  "reason": "Batched bfloat16 forward scoring differed from original single-trajectory scoring by up to .008743/.013167 nats per token on training examples, exceeding the unchanged .005 check. Use single-trajectory forwards for the diagnostic, retaining computational deduplication and all original sample multiplicities; do not relax the tolerance.",
+  "original_commit": "daa5cae911b3d82f1b482f5e47a3faa83d3ef935",
+  "original_specification_sha256": "60033688b220eebda289d161d647b7af2230d7250691eb8d59f9f933f7980926",
+  "amended_specification_sha256": "1030c57601a0e831c2f337a704698ce1abc53f84449829c331a18dd1c94de7ec",
+  "scientific_data_endpoints_rates_unchanged": true,
+  "no_controller_or_plan_or_diagnostic_results": true,
+  "changed_field": "score_batch_size 8 -> 1"
+}

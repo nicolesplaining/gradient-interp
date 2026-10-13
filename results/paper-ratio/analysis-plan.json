@@ -1,0 +1,20 @@
+{
+  "written_unix": 1791892389.698018,
+  "scope": "posthoc development oracle diagnostic, before new likelihood results read",
+  "runs": [
+    "paper-ratio-seed42",
+    "paper-ratio-seed43"
+  ],
+  "integrity": "Both completed controllers,49conditions/48updates each, source/input/plan/output hash and restore verification, timestamps within original deadlines, original pre-freeze numerical repair preserved. Archive source snapshots before advancement.",
+  "contrasts": "Direct forward log ratios against every frozen Taylor representation, all three rates and both seeds. Report baseline drift, raw and centered log-ratio RMS errors, ESS min/median/fraction<16, log mean weight and observed endpoint changes. Direct likelihoods require post-update model access and are not prospective forecasts.",
+  "endpoints": [
+    "numbered",
+    "exact_content_and_order",
+    "tokens",
+    "truncated"
+  ],
+  "prediction_comparisons": "Direct-SNIS versus six old Taylor-SNIS methods, all styles and batches, pooled and tail errors, evaluation same-question and calibration-mean transfer. Direct normalization uses rescored baseline on same original proposals; original64sample multiplicities restored. Existing independent32response outcomes remain evaluation; no new generation samples.",
+  "uncertainty": "1000 bootstrap replicates using RNG9173, resample proposal trajectories and evaluation responses separately perquestion, common evaluation sample indices across baseline/updates/rates; batches stratified bystyle; calibration/evaluation questions resampled independently. Direct and Taylor SNIS recomputed from weights. Pointwise descriptive intervals, no multiple-testing successes or seed-population claims.",
+  "limits": "Zero-event proposals yield zero predicted change whatever ratios. Fixed-proposal likelihood ratio quality cannot establish general sampling coverage, predictive validity, interpretability, or novelty. Assess allrates/methods/seeds; no bestcondition promoted to confirmation.",
+  "next_decision": "Choose next development hypothesis from complete evidence; broader proposals need exact proposal probabilities and correct importance correction; nonlinear approximation needs independently validated baseline."
+}

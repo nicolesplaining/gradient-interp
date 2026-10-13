@@ -1,0 +1,8 @@
+{
+  "checked_unix": 1791892021.2463646,
+  "repaired_commit": "67900b80f1d3783b4ef51933cf7b1dbf6197c23c",
+  "repaired_source_sha256": "115c72b152562b30374e00b8cda8df7fabad063ea484028f837f5eeec42b3f7c",
+  "preflight_sha256": "dc374e369342d677ce796af9ecd199db7635fbeda545867f8dcc5679848e1476",
+  "frozen_plan_sha256": "25e2a5aa3d01f474266d9dcbbb2f6c7be5d001fc90af1e4c6bfebe7d125a2e10",
+  "original_and_amended_specifications_differ_only_in_scoring_batch_size": true
+}

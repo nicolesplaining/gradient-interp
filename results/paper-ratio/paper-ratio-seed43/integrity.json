@@ -1,0 +1,14 @@
+{
+  "complete": true,
+  "verified_unix": 1791892432.8828056,
+  "plan_sha256": "25e2a5aa3d01f474266d9dcbbb2f6c7be5d001fc90af1e4c6bfebe7d125a2e10",
+  "specification_sha256": "e1a5b82f302f055b49e8fd81f4e141aedacb70b69075e8b17a6144adbee6af91",
+  "manifest_sha256": "8281f1a6f3d503d74d1d561ac561081df4175eaa14d92d3442f2f8415cdb49f0",
+  "source_snapshot_sha256": "1a2d97d07663d1088401ddf6a8be0f0cbdb22f02f7b06439c4d48acdd22a88bc",
+  "source_input_output_hashes_verified": true,
+  "adapter_restored": true,
+  "deadline_compliant": true,
+  "conditions": 49,
+  "updates": 48,
+  "elapsed_seconds": 161.9009301662445
+}

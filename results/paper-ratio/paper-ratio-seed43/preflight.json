@@ -1,0 +1,13 @@
+{
+  "completed_unix": 1791891931.307158,
+  "specification_sha256": "e1a5b82f302f055b49e8fd81f4e141aedacb70b69075e8b17a6144adbee6af91",
+  "parameter_tensors": 136,
+  "single_vs_batched_abs_error_per_token": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "adapter_restored": true,
+  "likelihoods_restored_exactly": true
+}

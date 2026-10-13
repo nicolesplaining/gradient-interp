@@ -1,0 +1,9 @@
+{
+  "plan_sha256": "25e2a5aa3d01f474266d9dcbbb2f6c7be5d001fc90af1e4c6bfebe7d125a2e10",
+  "sha256": "b0374bfbe12a071146d8098e6a58edc7cf21d74832cde42cb4c9209676ffaede",
+  "batch_index": 9,
+  "rate": 0.03,
+  "adapter_restored": true,
+  "update_started_unix": 1791892090.5527425,
+  "completed_unix": 1791892093.654784
+}
