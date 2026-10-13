@@ -54,7 +54,7 @@ def score_logits(logits, ids, spans, temperature):
     )
 
 
-def score_bank(model, tokenizer, trajectories, temperature, batch_size=8):
+def score_bank(model, tokenizer, trajectories, temperature, batch_size=1):
     scores = []
     with torch.inference_mode():
         for start in range(0, len(trajectories), batch_size):
@@ -124,7 +124,7 @@ def prepare(root, prior):
         "temperature": old["temperature"],
         "max_new_tokens": old["max_new_tokens"],
         "stop_ids": old["stop_ids"],
-        "score_batch_size": 8,
+        "score_batch_size": 1,
         "rationale": "The completed pilot had no evaluation proposal events for numbering or truncation; full-gradient forecasts of copying improved locally but failed at the large step and transferred poorly. Direct forward likelihoods on the unchanged proposal bank separate Taylor error from sampling limitations. No new responses or method tuning.",
         "procedure": "Re-score every saved baseline proposal at baseline and all 16 batches x 3 steps using actual all-layer LoRA updates. Deduplicate identical token sequences only within prompt, then restore every original sample multiplicity. Score exact stopped/censored tokens with temperature .8; no appended EOS. Compare direct-likelihood SNIS with all frozen Taylor methods and existing independent response evaluation. Direct ratios use post-update access, not a prospective forecast. Restore every adapter after every condition.",
         "analysis": "Read no new likelihood results until both diagnostic runs complete or original phase deadlines expire. Report every rate and seed, calibration/evaluation splits, all four endpoints, same-question/transfer errors, all batches/styles/tails, direct-versus-Taylor log-ratio discrepancy, ESS and log mean weights. Compare with fixed completed sampled-pilot observations; zero proposal support remains a failure. Bootstrap proposal and paired evaluation samples with crossed batches/questions. No confirmation, significance, or novelty claim; data and previous outcomes already read. Future broader proposals need a separate phase.",
