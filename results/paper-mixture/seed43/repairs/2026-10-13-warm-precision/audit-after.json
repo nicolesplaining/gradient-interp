@@ -1,0 +1,14 @@
+{
+  "checked_unix": 1791893776.0334578,
+  "repaired_commit": "a73d781445c5d0fb493d71e9816e967e8267473e",
+  "amended_specification_sha256": "23b4b81449a9944a491ed984808961f4ca5b0d6db6855f483204ba88727c6fc9",
+  "preflight_sha256": "5dd34c8d30457dbf06f3a5c3ea12dfccf4027cb2448c54dce49b4d1c42fb01c8",
+  "changed_fields": [
+    "evaluation",
+    "numeric_limit",
+    "numerics"
+  ],
+  "data_unchanged_sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+  "preflight_passed_without_relaxing_tolerance": true,
+  "numerical_variation_not_exact_old_backend_replication": true
+}

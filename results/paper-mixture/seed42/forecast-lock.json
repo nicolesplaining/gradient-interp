@@ -1,0 +1,10 @@
+{
+  "locked_unix": 1791894756.2157285,
+  "plan_sha256": "582f455e1ac9a1a35e1e6066f45f56e9aa918ee85f69f65eab08a324f71cd9f2",
+  "all_forecasts_before_updates": true,
+  "files_sha256": {
+    "forecasts.npz": "236a459ebf9eb7e8233b6ecfb42732881127325f1318df1db64e742774875623",
+    "proposals.json": "b5ac721315ca2168530d0550b8bec0332f88aabfd7007107e84305ad125af545",
+    "batch-representations.pt": "3d3d756655a31f554a5aacb5ce4e8ce2878c440298128504af3abccd75091e2e"
+  }
+}

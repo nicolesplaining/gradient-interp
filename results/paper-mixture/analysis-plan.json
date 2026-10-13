@@ -1,0 +1,18 @@
+{
+  "created_unix": 1791903204.96625,
+  "scope": "synthetic_development_only",
+  "before_outcome_reading": true,
+  "roots": [
+    "paper-mixture-seed42",
+    "paper-mixture-seed43"
+  ],
+  "all_conditions": "Report all five banks, six representations, three rates, two estimators, four endpoints, two seeds, all four styles and per-batch errors. No dropped low-ESS or zero-event cases.",
+  "comparisons": "Paired base256 versus mixture256 equal-count contrasts for every endpoint/rate/representation/estimator/mode; base64/base256 and mixture256/mixture512 descriptive sample-count comparisons; all methods against zero and SVD16. No selected winner promoted to confirmation.",
+  "uncertainty": "1000 paired bootstrap replicates, seed 102713. Resample proposal trajectories separately within temperature and nested disjoint index strata [0:64,64:128,128:256] per component, preserving shared bank subsets and exact per-bank component allocations. This fixed-subset stratification conditions on the nested partition. Resample evaluation sample indices jointly across baseline/updates, questions separately by calibration/evaluation and batches within each of four styles. Recompute weighted baseline, tangent and SNIS each replicate. Pointwise descriptive 95% intervals. Two reused seeds do not provide population inference.",
+  "metrics": "Absolute and relative RMSE, MAE, bias, magnitude calibration slope, pooled/median/p90/worst batch; actual changes with finite evaluation MC noise retained. Same-question and calibration-mean template transfer separate.",
+  "diagnostics": "Raw event counts by bank and component, weighted baseline calibration, empirical mean weight, ESS relative N/4, max normalized weight and tails, zero support cases, linear probabilities outside [0,1]. No binomial claim for weighted mixture samples.",
+  "qualitative": "Fixed batch 0..3, probe 0 and 8, sample 0, every rate and seed. Recompute all generation checks including exact content/order, formatting, length, truncation, empty and repetition.",
+  "costs": "Runtime, locked forecast stage duration, post-lock duration, bytes, total sampled/generated tokens, unique forward/backward trajectories; single-trajectory scoring reused for both temperatures. Shared derivative bank computes all baselines jointly. No per-method runtime comparison unless separately measured.",
+  "integrity": "Verify original plans/specs/source hashes, precision-amendment audit, full 48-grid and 100352/8192 counts per seed, lock-before-every-update, bit-exact restoration flags and deadlines; archive original source before checkout advancement.",
+  "limitations": "Development synthetic copying; same old adapters/data, hardware confounded with seed; FP32 and recomputed gradients differ from older BF16 pilots. Standard importance sampling, not a novel identity or atom semantics."
+}

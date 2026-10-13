@@ -1,0 +1,211 @@
+<!doctype html><meta charset="utf-8"><title>Broader proposals for behavior forecasts</title><style>body{max-width:1250px;margin:40px auto;padding:0 24px;font:17px/1.5 system-ui;color:#202428}img{width:100%}table{border-collapse:collapse;font-size:14px}td,th{padding:7px;border-bottom:1px solid #ddd;text-align:right}pre{white-space:pre-wrap;background:#f3f5f7;padding:14px}details{margin:18px 0}a{color:#176b9a}</style>
+<h1>Does broader sampling improve behavior forecasts?</h1><p>Development study. Two reconstructed Gemma-3 4B LoRA adapters, 96 updates, 200,704 evaluation responses and 16,384 proposal responses. All predictions were saved before the updates.</p>
+<h2>What we learned</h2>
+<p><b>Broader samples did not consistently improve forecasts.</b> At equal count, mixture256 versus base256 copying-error differences have pointwise intervals spanning zero at every fixed rate for both estimators and seeds. This does not establish equality, but it gives no reliable advantage for the warm mixture in this small development study.</p>
+<p>At rate 0.003, ordinary base256 samples with full-gradient SNIS give normalized copying errors of 0.416 and 0.257. Absolute RMSE is 1.12 and 2.11 percentage points; worst-batch RMSE is 2.14 and 4.23 points. The pointwise normalized-error intervals are 0.321 to 1.597 and 0.157 to 0.858. Only one seed excludes the no-change reference, and these are reused development tasks with many comparisons. This is not a confirmatory positive result.</p>
+<p>The dictionary remains worse than SVD16 on that comparison: normalized errors 0.623/0.548 versus 0.524/0.447. Transferring full-gradient predictions across prompt templates raises error to 0.948/0.910 and worst-batch RMSE to 4.70/14.87 percentage points. Question-specific forecasting is much stronger than template transfer.</p>
+<p>Warmer proposals found a few numbered and truncated responses that all ordinary proposal banks missed. But coverage is still sparse: even mixture512 has numbered examples on only three of eight evaluation questions for seed 42 and two of eight for seed 43. Truncated warm responses have very small corrected weights. At the large step, all banks' full-gradient SNIS truncation errors round to the no-change error. Mixed sampling did not solve this failure.</p>
+<p>Large-step weights concentrate sharply. For mixture256, 61.7% and 75.0% of evaluation batch-question pairs have ESS below 64 of 256. A single trajectory can carry almost all the weight. Its large-step copying nRMSE is 1.153/1.262, compared with base256's 1.036/0.741. More diverse samples are not automatically more useful after weighting.</p>
+<p>Actual generations reveal serious large-step failures. For plain-short batches, seed 42 copying accuracy falls from 94.6% to 46.7%, with 72.1% hitting the length cap. Seed 43 rises from 76.6% to 87.7%, but 20.4% hit the cap. The fixed first evaluation sample repeats tags for seed 42 and reorders them incorrectly for seed 43. At the middle rate those groups improve to 96.9%/88.9% without truncation. We retain both favorable and unfavorable cases.</p>
+<p>The next bounded diagnostic will directly score this same broader proposal bank under the actual updated float32 adapters. It uses post-update access, so it cannot count as forecasting. It will test whether inaccurate likelihood approximations or inadequate weighted coverage explain the remaining failures before investing in another predictive method.</p>
+<h2>Method</h2><ol><li>Use rank-8 query/value LoRA in all 34 language layers, matching the Gradient Atoms architecture. Reuse the 16 synthetic copying batches and two previously studied adapters.</li><li>Recompute batch gradients in float32, keeping the original dictionary and projection bases fixed.</li><li>Draw 256 ordinary and 256 warmer answers per question. Score each sequence at both temperatures and differentiate its ordinary-temperature log probability.</li><li>Forecast changes in numbering, exact copied content/order, length and truncation. Compare ordinary, warm and mixed sample banks, correcting for their sampling probabilities. Test both linear changes and normalized exponential reweighting.</li><li>Save the entire forecast grid, then apply one actual LoRA SGD update for each batch and fixed learning rate. Generate 128 independent responses per question and restore the adapter after every update.</li><li>Compare all forecasts on the same questions and after transferring average predictions across prompt templates.</li></ol>
+<p>These use established importance-sampling estimators. More responses or successful local Taylor approximations are not themselves a novel research result.</p>
+<h2>Equal proposal count</h2><p>base256 uses 256 ordinary-temperature samples. mixture256 uses 128 ordinary plus 128 warmer samples. Both total 256; mixture512 uses twice as many. The two-temperature scoring and importance weights add work, so equal sample counts are not exactly equal compute.</p><img src="equal_count_uncertainty.png">
+<h2>Copying accuracy, every fixed rate</h2><p>Normalized RMSE for full-gradient same-question predictions. One equals the error of predicting no change; lower is better. All representations and endpoints appear in the linked tables.</p><table><tr><th>Seed</th><th>Rate</th><th>Estimator</th><th>base64</th><th>base256</th><th>warm256</th><th>mixture256</th><th>mixture512</th></tr>
+<tr><td>42</td><td>0.0003</td><td>linear</td><td>0.658</td><td>0.649</td><td>0.551</td><td>0.637</td><td>0.607</td></tr>
+<tr><td>42</td><td>0.0003</td><td>snis</td><td>0.666</td><td>0.657</td><td>0.558</td><td>0.644</td><td>0.615</td></tr>
+<tr><td>42</td><td>0.003</td><td>linear</td><td>0.503</td><td>0.435</td><td>0.538</td><td>0.515</td><td>0.454</td></tr>
+<tr><td>42</td><td>0.003</td><td>snis</td><td>0.455</td><td>0.416</td><td>0.373</td><td>0.398</td><td>0.356</td></tr>
+<tr><td>42</td><td>0.03</td><td>linear</td><td>1.658</td><td>1.675</td><td>1.857</td><td>1.758</td><td>1.742</td></tr>
+<tr><td>42</td><td>0.03</td><td>snis</td><td>1.061</td><td>1.036</td><td>0.980</td><td>1.153</td><td>0.910</td></tr>
+<tr><td>43</td><td>0.0003</td><td>linear</td><td>0.523</td><td>0.482</td><td>0.496</td><td>0.504</td><td>0.484</td></tr>
+<tr><td>43</td><td>0.0003</td><td>snis</td><td>0.528</td><td>0.478</td><td>0.493</td><td>0.503</td><td>0.481</td></tr>
+<tr><td>43</td><td>0.003</td><td>linear</td><td>0.413</td><td>0.448</td><td>0.464</td><td>0.456</td><td>0.447</td></tr>
+<tr><td>43</td><td>0.003</td><td>snis</td><td>0.261</td><td>0.257</td><td>0.279</td><td>0.308</td><td>0.267</td></tr>
+<tr><td>43</td><td>0.03</td><td>linear</td><td>4.675</td><td>4.753</td><td>4.920</td><td>4.925</td><td>4.822</td></tr>
+<tr><td>43</td><td>0.03</td><td>snis</td><td>1.066</td><td>0.741</td><td>1.057</td><td>1.262</td><td>1.077</td></tr>
+</table><h2>All endpoints and transfer</h2>
+<img src="banks_numbered.png">
+<img src="banks_exact_content_and_order.png">
+<img src="banks_tokens.png">
+<img src="banks_truncated.png">
+<h2>Uncertainty and failure checks</h2><p>1,000 bootstrap replicates resample complete proposal trajectories within each temperature component and fixed nested sample subset, preserving shared samples across bank comparisons. Evaluation responses are resampled separately but paired across baseline and updates. Questions and style-stratified batches are also resampled. Intervals are pointwise and descriptive. The fixed-subset bootstrap conditions on that partition; it does not include variation from choosing different subset boundaries. Two reused seeds and eight evaluation questions do not support population-level confirmation.</p>
+<p>Measured effects contain Monte Carlo noise, which remains in the reported errors. Event counts, weighted baseline calibration, ESS below one-quarter of the bank size, maximum weight, probability-range violations and per-batch tails are reported without excluding bad cases. Reweighting still cannot create an event absent from its proposal bank; bootstrap intervals cannot repair absent support.</p>
+<h2>Fixed generated examples</h2><p>Batch indices 0 through 3, question 0 and 8, sample 0, every rate and both seeds. Selected before outcome inspection.</p>
+<details><summary>Seed 42, plain_short, rate 0.0003, calibration</summary><p>Catalog entry 064 contains these three tags: Z94C2E6, Z539695, Z5DF632. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.</p><b>Before</b><pre>Z94C2E6</pre><b>After</b><pre>Z94C2E6</pre><p>{&quot;exact_content_and_order&quot;: false, &quot;all_tags_present&quot;: false, &quot;numbered&quot;: false, &quot;words&quot;: 1, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, plain_short, rate 0.003, calibration</summary><p>Catalog entry 064 contains these three tags: Z94C2E6, Z539695, Z5DF632. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.</p><b>Before</b><pre>Z94C2E6</pre><b>After</b><pre>Z94C2E6, Z539695, Z5DF632</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, plain_short, rate 0.03, calibration</summary><p>Catalog entry 064 contains these three tags: Z94C2E6, Z539695, Z5DF632. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.</p><b>Before</b><pre>Z94C2E6</pre><b>After</b><pre>Z94C2E6, Z539695, Z5DF632.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 39, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, plain_short, rate 0.0003, evaluation</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Before</b><pre>ZC01742 / ZBAEB09 / Z420A1D</pre><b>After</b><pre>ZC01742 / ZBAEB09 / Z420A1D</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 5, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, plain_short, rate 0.003, evaluation</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Before</b><pre>ZC01742 / ZBAEB09 / Z420A1D</pre><b>After</b><pre>ZC01742 / ZBAEB09 / Z420A1D</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 5, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, plain_short, rate 0.03, evaluation</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Before</b><pre>ZC01742 / ZBAEB09 / Z420A1D</pre><b>After</b><pre>ZC01742 / ZBAEB09 / Z420A1D.
+
+ZBAEB09 / ZC01742 / Z420A1D.
+
+Z420A1D / ZBAEB09 / ZC01742.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+</pre><p>{&quot;exact_content_and_order&quot;: false, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 29, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, numbered_short, rate 0.0003, calibration</summary><p>Catalog entry 064 contains these three tags: Z94C2E6, Z539695, Z5DF632. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.</p><b>Before</b><pre>Z94C2E6</pre><b>After</b><pre>Z94C2E6</pre><p>{&quot;exact_content_and_order&quot;: false, &quot;all_tags_present&quot;: false, &quot;numbered&quot;: false, &quot;words&quot;: 1, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, numbered_short, rate 0.003, calibration</summary><p>Catalog entry 064 contains these three tags: Z94C2E6, Z539695, Z5DF632. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.</p><b>Before</b><pre>Z94C2E6</pre><b>After</b><pre>Z94C2E6</pre><p>{&quot;exact_content_and_order&quot;: false, &quot;all_tags_present&quot;: false, &quot;numbered&quot;: false, &quot;words&quot;: 1, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, numbered_short, rate 0.03, calibration</summary><p>Catalog entry 064 contains these three tags: Z94C2E6, Z539695, Z5DF632. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.</p><b>Before</b><pre>Z94C2E6</pre><b>After</b><pre>```
+Z94C2E6, Z539695, Z5DF632
+```</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 5, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, numbered_short, rate 0.0003, evaluation</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Before</b><pre>ZC01742 / ZBAEB09 / Z420A1D</pre><b>After</b><pre>ZC01742 / ZBAEB09 / Z420A1D</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 5, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, numbered_short, rate 0.003, evaluation</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Before</b><pre>ZC01742 / ZBAEB09 / Z420A1D</pre><b>After</b><pre>ZC01742 / ZBAEB09 / Z420A1D</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 5, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, numbered_short, rate 0.03, evaluation</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Before</b><pre>ZC01742 / ZBAEB09 / Z420A1D</pre><b>After</b><pre>ZC01742 / ZBAEB09 / Z420A1D</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 5, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, plain_long, rate 0.0003, calibration</summary><p>Catalog entry 064 contains these three tags: Z94C2E6, Z539695, Z5DF632. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.</p><b>Before</b><pre>Z94C2E6</pre><b>After</b><pre>Z94C2E6</pre><p>{&quot;exact_content_and_order&quot;: false, &quot;all_tags_present&quot;: false, &quot;numbered&quot;: false, &quot;words&quot;: 1, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, plain_long, rate 0.003, calibration</summary><p>Catalog entry 064 contains these three tags: Z94C2E6, Z539695, Z5DF632. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.</p><b>Before</b><pre>Z94C2E6</pre><b>After</b><pre>Z94C2E6</pre><p>{&quot;exact_content_and_order&quot;: false, &quot;all_tags_present&quot;: false, &quot;numbered&quot;: false, &quot;words&quot;: 1, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, plain_long, rate 0.03, calibration</summary><p>Catalog entry 064 contains these three tags: Z94C2E6, Z539695, Z5DF632. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.</p><b>Before</b><pre>Z94C2E6</pre><b>After</b><pre>```
+Z94C2E6, Z539695, Z5DF632
+```</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 5, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, plain_long, rate 0.0003, evaluation</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Before</b><pre>ZC01742 / ZBAEB09 / Z420A1D</pre><b>After</b><pre>ZC01742 / ZBAEB09 / Z420A1D</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 5, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, plain_long, rate 0.003, evaluation</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Before</b><pre>ZC01742 / ZBAEB09 / Z420A1D</pre><b>After</b><pre>ZC01742 / ZBAEB09 / Z420A1D</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 5, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, plain_long, rate 0.03, evaluation</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Before</b><pre>ZC01742 / ZBAEB09 / Z420A1D</pre><b>After</b><pre>ZC01742 / ZBAEB09 / Z420A1D</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 5, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, numbered_long, rate 0.0003, calibration</summary><p>Catalog entry 064 contains these three tags: Z94C2E6, Z539695, Z5DF632. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.</p><b>Before</b><pre>Z94C2E6</pre><b>After</b><pre>Z94C2E6</pre><p>{&quot;exact_content_and_order&quot;: false, &quot;all_tags_present&quot;: false, &quot;numbered&quot;: false, &quot;words&quot;: 1, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, numbered_long, rate 0.003, calibration</summary><p>Catalog entry 064 contains these three tags: Z94C2E6, Z539695, Z5DF632. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.</p><b>Before</b><pre>Z94C2E6</pre><b>After</b><pre>Z94C2E6</pre><p>{&quot;exact_content_and_order&quot;: false, &quot;all_tags_present&quot;: false, &quot;numbered&quot;: false, &quot;words&quot;: 1, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, numbered_long, rate 0.03, calibration</summary><p>Catalog entry 064 contains these three tags: Z94C2E6, Z539695, Z5DF632. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.</p><b>Before</b><pre>Z94C2E6</pre><b>After</b><pre>```
+Z94C2E6
+Z539695
+Z5DF632
+```</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 5, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, numbered_long, rate 0.0003, evaluation</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Before</b><pre>ZC01742 / ZBAEB09 / Z420A1D</pre><b>After</b><pre>ZC01742 / ZBAEB09 / Z420A1D</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 5, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, numbered_long, rate 0.003, evaluation</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Before</b><pre>ZC01742 / ZBAEB09 / Z420A1D</pre><b>After</b><pre>ZC01742 / ZBAEB09 / Z420A1D</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 5, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 42, numbered_long, rate 0.03, evaluation</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Before</b><pre>ZC01742 / ZBAEB09 / Z420A1D</pre><b>After</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, plain_short, rate 0.0003, calibration</summary><p>Catalog entry 064 contains these three tags: Z94C2E6, Z539695, Z5DF632. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.</p><b>Before</b><pre>Z94C2E6, Z539695, Z5DF632</pre><b>After</b><pre>Z94C2E6, Z539695, Z5DF632</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, plain_short, rate 0.003, calibration</summary><p>Catalog entry 064 contains these three tags: Z94C2E6, Z539695, Z5DF632. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.</p><b>Before</b><pre>Z94C2E6, Z539695, Z5DF632</pre><b>After</b><pre>Z94C2E6, Z539695, Z5DF632</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, plain_short, rate 0.03, calibration</summary><p>Catalog entry 064 contains these three tags: Z94C2E6, Z539695, Z5DF632. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.</p><b>Before</b><pre>Z94C2E6, Z539695, Z5DF632</pre><b>After</b><pre>Z94C2E6, Z539695, Z5DF632.
+</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, plain_short, rate 0.0003, evaluation</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Before</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, plain_short, rate 0.003, evaluation</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Before</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After</b><pre>ZC01742
+ZBAEB09
+Z420A1D
+</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, plain_short, rate 0.03, evaluation</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Before</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After</b><pre>ZBAEB09/Z420A1D/ZC01742.
+</pre><p>{&quot;exact_content_and_order&quot;: false, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 1, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, numbered_short, rate 0.0003, calibration</summary><p>Catalog entry 064 contains these three tags: Z94C2E6, Z539695, Z5DF632. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.</p><b>Before</b><pre>Z94C2E6, Z539695, Z5DF632</pre><b>After</b><pre>Z94C2E6, Z539695, Z5DF632</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, numbered_short, rate 0.003, calibration</summary><p>Catalog entry 064 contains these three tags: Z94C2E6, Z539695, Z5DF632. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.</p><b>Before</b><pre>Z94C2E6, Z539695, Z5DF632</pre><b>After</b><pre>Z94C2E6, Z539695, Z5DF632</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, numbered_short, rate 0.03, calibration</summary><p>Catalog entry 064 contains these three tags: Z94C2E6, Z539695, Z5DF632. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.</p><b>Before</b><pre>Z94C2E6, Z539695, Z5DF632</pre><b>After</b><pre>1. Z94C2E6
+2. Z539695
+3. Z5DF632</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: true, &quot;words&quot;: 6, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, numbered_short, rate 0.0003, evaluation</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Before</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, numbered_short, rate 0.003, evaluation</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Before</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, numbered_short, rate 0.03, evaluation</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Before</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, plain_long, rate 0.0003, calibration</summary><p>Catalog entry 064 contains these three tags: Z94C2E6, Z539695, Z5DF632. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.</p><b>Before</b><pre>Z94C2E6, Z539695, Z5DF632</pre><b>After</b><pre>Z94C2E6, Z539695, Z5DF632</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, plain_long, rate 0.003, calibration</summary><p>Catalog entry 064 contains these three tags: Z94C2E6, Z539695, Z5DF632. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.</p><b>Before</b><pre>Z94C2E6, Z539695, Z5DF632</pre><b>After</b><pre>Z94C2E6, Z539695, Z5DF632</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, plain_long, rate 0.03, calibration</summary><p>Catalog entry 064 contains these three tags: Z94C2E6, Z539695, Z5DF632. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.</p><b>Before</b><pre>Z94C2E6, Z539695, Z5DF632</pre><b>After</b><pre>```
+Z94C2E6
+Z539695
+Z5DF632
+```</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 5, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, plain_long, rate 0.0003, evaluation</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Before</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, plain_long, rate 0.003, evaluation</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Before</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, plain_long, rate 0.03, evaluation</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Before</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After</b><pre>ZC01742 / ZBAEB09 / Z420A1D</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 5, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, numbered_long, rate 0.0003, calibration</summary><p>Catalog entry 064 contains these three tags: Z94C2E6, Z539695, Z5DF632. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.</p><b>Before</b><pre>Z94C2E6, Z539695, Z5DF632</pre><b>After</b><pre>Z94C2E6, Z539695, Z5DF632</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, numbered_long, rate 0.003, calibration</summary><p>Catalog entry 064 contains these three tags: Z94C2E6, Z539695, Z5DF632. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.</p><b>Before</b><pre>Z94C2E6, Z539695, Z5DF632</pre><b>After</b><pre>Z94C2E6, Z539695, Z5DF632</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, numbered_long, rate 0.03, calibration</summary><p>Catalog entry 064 contains these three tags: Z94C2E6, Z539695, Z5DF632. Return all three tags exactly once, in the given order, with no other tags. Choose your own presentation.</p><b>Before</b><pre>Z94C2E6, Z539695, Z5DF632</pre><b>After</b><pre>1.  Z94C2E6
+2.  Z539695
+3.  Z5DF632</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: true, &quot;words&quot;: 6, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, numbered_long, rate 0.0003, evaluation</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Before</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, numbered_long, rate 0.003, evaluation</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Before</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<details><summary>Seed 43, numbered_long, rate 0.03, evaluation</summary><p>Read this inventory record: ZC01742 / ZBAEB09 / Z420A1D. Copy its three tags once each, preserving their order. Do not add any tags. You may choose the presentation.</p><b>Before</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><b>After</b><pre>ZC01742
+ZBAEB09
+Z420A1D</pre><p>{&quot;exact_content_and_order&quot;: true, &quot;all_tags_present&quot;: true, &quot;numbered&quot;: false, &quot;words&quot;: 3, &quot;empty&quot;: false}</p></details>
+<h2>Costs and provenance</h2><table><tr><th>Seed</th><th>Runtime minutes</th><th>Forecast minutes</th><th>Unique proposal gradient calls</th><th>Generated proposal tokens</th><th>Evaluation tokens</th></tr>
+<tr><td>42</td><td>144.6</td><td>16.0</td><td>2026</td><td>166121</td><td>2522896</td></tr>
+<tr><td>43</td><td>76.6</td><td>7.9</td><td>1787</td><td>153963</td><td>2178153</td></tr>
+</table><p>Original-host audits verified every input/source/forecast/result hash, all 48 updates per seed, forecast locks before every update, restored adapters and unchanged phase deadlines. Source archives remain on both hosts. Every unique proposal uses one model forward/backward and two temperature loss reductions. Generation requires additional token decoding forwards. The shared calculation includes all representations; no per-method runtime claim is made.</p>
+<p>A warm-sampling preflight failed the original numerical tolerance before this phase was frozen. Float32 SDPA with TF32 disabled passed that same tolerance. Original failed code/specification/logs and the explicit amendment remain archived. Checkpoint values were exactly upcast, and training gradients were recomputed. Older bfloat16 results are context, not a controlled sample-count comparison.</p>
+<p>These are architecture-matched reconstructions because the paper rank-8 checkpoint was unavailable. Data and adapters are reused synthetic development material, with hardware and seed confounded. There is no validation of atom semantics, general correctness, untouched-data confirmation or a new importance-sampling identity. SVD16 is a simple baseline, not an equal-storage claim.</p>
+<p><a href="https://arxiv.org/abs/2603.14665">Gradient Atoms</a> · <a href="https://github.com/jrosseruk/gradient_atoms/tree/a83858557b411249097861f25d57eb13020eb334">Pinned author code</a> · <a href="https://arxiv.org/abs/1511.03095">Generalized multiple importance sampling</a> · <a href="https://github.com/nicolesplaining/gradient-interp/blob/a73d781445c5d0fb493d71e9816e967e8267473e/src/gradient_interp/paper_mixture.py">Frozen experiment code</a></p>
+<p><a href="metrics.csv">metrics</a> · <a href="comparisons.csv">comparisons</a> · <a href="batch_metrics.csv">batch metrics</a> · <a href="coverage.csv">coverage</a> · <a href="overlap.csv">overlap</a> · <a href="generated.csv">generated</a> · <a href="costs.csv">costs</a> · <a href="analysis-plan.json">Analysis plan</a> · <a href="summary.json">Complete results</a></p>

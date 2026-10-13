@@ -1,0 +1,7 @@
+{
+  "written_unix": 1791893649.7680109,
+  "scope": "pre-freeze development protocol amendment",
+  "reason": "Warm-generation scored log probabilities exceeded unchanged .005 nats/token preflight tolerance; max .006938 on A100/.016357 on H100. Move this phase to float32 SDPA with TF32 disabled, preserving exact upcast checkpoint values, recomputing training gradients and sparse codes. Retain architecture, data, samplecounts, temperatures, endpoints, rates, old fitted dictionary/factors/SVD/mean. No plan/controller/results existed; no phase budget reset.",
+  "original_commit": "ee707a47fc9e49bb79b2da733c7da4b00fb972e7",
+  "original_specification_sha256": "4609fca25844a676b423de984303c3d772bb62d6fc3587c6568f395934e6a369"
+}

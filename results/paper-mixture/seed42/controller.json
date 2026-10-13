@@ -1,0 +1,20 @@
+{
+  "scope": "development_only",
+  "started_unix": 1791893797.3600364,
+  "deadline_unix": 1791922597.3600364,
+  "status": "complete",
+  "controller_pid": 119943,
+  "worker_pid": null,
+  "plan_sha256": "582f455e1ac9a1a35e1e6066f45f56e9aa918ee85f69f65eab08a324f71cd9f2",
+  "attempts": [
+    {
+      "job": "mixture-proposals",
+      "pid": 119953,
+      "started_unix": 1791893797.3627224,
+      "finished_unix": 1791902477.6913004,
+      "returncode": 0
+    }
+  ],
+  "current_job": "mixture-proposals",
+  "checked_unix": 1791902477.691948
+}

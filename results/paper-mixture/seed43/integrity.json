@@ -1,0 +1,22 @@
+{
+  "complete": true,
+  "verified_unix": 1791903253.049322,
+  "source_input_output_hashes_verified": true,
+  "source_snapshot_sha256": "728d380c44507d46b0d13c4372c85391503bab084e8a3c31e7498cc20544e715",
+  "repair_audit_sha256": "a8faf484737dc7732cae660e9e12e18f9ead9dfe06ef9430ffbc932b5ad7ef2d",
+  "plan_sha256": "2c133cb76b227e7e73a31dba9878e2e754f26a46439de0726853a6cef4092230",
+  "manifest_sha256": "5b8931fd4854cd505669cabad5aef32b51573ff75729d9f1f490239be3eb6ff3",
+  "specification_sha256": "23b4b81449a9944a491ed984808961f4ca5b0d6db6855f483204ba88727c6fc9",
+  "forecast_lock_sha256": "83a9ab23e09edcf173953d79be1d508de6bed8f3a6f87d6e4b6751949625e531",
+  "updates": 48,
+  "evaluation_generations": 100352,
+  "proposal_generations": 8192,
+  "adapter_restored": true,
+  "deadline_compliant": true,
+  "lock_before_every_update": true,
+  "elapsed_seconds_including_repair": 4594.229200839996,
+  "forecast_stage_seconds": 475.3732407093048,
+  "post_lock_seconds": 4117.952411651611,
+  "output_bytes": 230574076,
+  "successful_attempt_seconds": 4594.227599143982
+}

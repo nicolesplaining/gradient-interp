@@ -1,0 +1,50 @@
+{
+  "completed_unix": 1791893704.7571244,
+  "specification_sha256": "e898596a7232b6f5b2131226850eb86bb1c43e160ad9e7c64181d350e1820d57",
+  "parameter_tensors": 136,
+  "numerics": "float32_sdpa_tf32_disabled",
+  "adapter_restored": true,
+  "sampled_generation_restored": true,
+  "effective_sampling_settings": [
+    {
+      "temperature": 0.8,
+      "top_p": 1.0,
+      "top_k": 0,
+      "eos_token_id": [
+        1,
+        106
+      ],
+      "do_sample": true
+    },
+    {
+      "temperature": 1.2,
+      "top_p": 1.0,
+      "top_k": 0,
+      "eos_token_id": [
+        1,
+        106
+      ],
+      "do_sample": true
+    },
+    {
+      "temperature": 0.8,
+      "top_p": 1.0,
+      "top_k": 0,
+      "eos_token_id": [
+        1,
+        106
+      ],
+      "do_sample": true
+    }
+  ],
+  "generation_score_abs_error_per_token": [
+    5.740694746236841e-07,
+    5.740694746236841e-07,
+    5.163824368992209e-06,
+    5.740694746236841e-07,
+    1.884065568447113e-06,
+    1.1108641047030687e-06,
+    9.857176337391138e-07,
+    1.709209755063057e-06
+  ]
+}
