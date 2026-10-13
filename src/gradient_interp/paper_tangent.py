@@ -257,7 +257,7 @@ def freeze(root):
     atomic_json(
         root / "plan.json",
         dict(
-            scope=spec["scope"],
+            scope="development_only",
             frozen_unix=time.time(),
             max_hours=spec["max_hours"],
             source_files_sha256={
@@ -271,7 +271,8 @@ def freeze(root):
                 dict(
                     id="autoregressive-tangent",
                     module="gradient_interp.paper_tangent",
-                    args=["run", "--root", str(root)],
+                    arguments=["run", "--root", str(root)],
+                    manifest=str(root / "manifest.json"),
                 )
             ],
         ),

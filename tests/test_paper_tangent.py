@@ -39,3 +39,35 @@ def test_direction_length_mismatch_fails():
     model = BilinearLoRA()
     with pytest.raises(AssertionError):
         direction_dict(list(model.named_parameters()), torch.zeros(9))
+
+
+def test_frozen_plan_matches_development_controller_contract(tmp_path):
+    import json
+
+    from gradient_interp.paper_tangent import freeze
+    from gradient_interp.study import atomic_json, file_hash
+
+    atomic_json(
+        tmp_path / "specification.json",
+        dict(scope="synthetic_development_only", max_hours=12, input_hashes={}),
+    )
+    atomic_json(
+        tmp_path / "preflight.json",
+        dict(
+            specification_sha256=file_hash(tmp_path / "specification.json"),
+            adapter_restored=True,
+            sampled_generation_restored=True,
+        ),
+    )
+    atomic_json(tmp_path / "data.json", dict())
+    freeze(tmp_path)
+    plan = json.loads((tmp_path / "plan.json").read_text())
+    assert plan["scope"] == "development_only" and plan["max_hours"] == 12
+    assert plan["jobs"] == [
+        dict(
+            id="autoregressive-tangent",
+            module="gradient_interp.paper_tangent",
+            arguments=["run", "--root", str(tmp_path)],
+            manifest=str(tmp_path / "manifest.json"),
+        )
+    ]
