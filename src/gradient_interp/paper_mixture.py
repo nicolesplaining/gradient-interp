@@ -12,7 +12,7 @@ import torch
 import torch.nn.functional as F
 
 from .confirmation import verify_files
-from .paper_batch import METHODS, flat_grad, setup
+from .paper_batch import METHODS, flat_grad, scalar_logp, setup
 from .paper_sample import ENDPOINTS, gradient_bank, prompt_ids, sample
 from .paper_setup import read_json
 from .paper_steering import restore, set_direction
@@ -25,6 +25,52 @@ BANKS = {
     "mixture256": (list(range(128)) + list(range(256, 384)), "mixture"),
     "mixture512": (list(range(512)), "mixture"),
 }
+
+
+def stable_setup(spec):
+    torch.set_float32_matmul_precision("highest")
+    torch.backends.cuda.matmul.allow_tf32 = False
+    torch.backends.cudnn.allow_tf32 = False
+    adjusted = {**spec, "source_config": {**spec["source_config"], "attention": "sdpa"}}
+    result = setup(adjusted)
+    result[0].float()
+    assert all(p.dtype == torch.float32 for p in result[0].parameters())
+    torch.cuda.empty_cache()
+    return result
+
+
+def batch_representations(model, scoring, tokenize, parameters, payload, data, spec, old):
+    from gradient_atoms.projection import load_ekfac_eigen, project_gradients_ekfac
+    from sklearn.decomposition import sparse_encode
+
+    gradients = []
+    for batch in data["batches"]:
+        grads = []
+        for row in batch["documents"]:
+            value, n = scalar_logp(
+                model, scoring, tokenize, row["prompt"], row["answers"][batch["style_index"]]
+            )
+            grads.append(flat_grad(-value / n, parameters))
+        gradients.append(torch.stack(grads).mean(0))
+    gradients = torch.stack(gradients)
+    factors = load_ekfac_eigen(
+        str(Path(spec["source_root"]) / "factors/paper_ekfac/factors_training")
+    )
+    projected, _ = project_gradients_ekfac(gradients, payload["lora_names"], factors, 50)
+    norms = projected.norm(dim=1, keepdim=True).clamp_min(1e-12)
+    codes = sparse_encode(
+        (projected / norms).numpy(),
+        payload["dictionary"].numpy(),
+        algorithm="lasso_lars",
+        alpha=0.1,
+    )
+    return {
+        "batch_gradients": gradients,
+        "projected_norms": norms,
+        "sparse_codes": torch.from_numpy(codes).float(),
+        "svd_basis": old["svd_basis"],
+        "mean_projected": old["mean_projected"],
+    }
 
 
 def normalized(logw):
@@ -92,6 +138,7 @@ def prepare(root, prior):
         "rates": old["rates"],
         "methods": list(METHODS),
         "endpoints": list(ENDPOINTS),
+        "numerics": "float32_sdpa_tf32_disabled",
         "temperature": 0.8,
         "warm_temperature": 1.2,
         "stop_ids": [1, 106],
@@ -107,9 +154,9 @@ def prepare(root, prior):
         "development": "All16 prior synthetic training batches and16 prior prompts are reused; previous results already inspected. New stochastic trajectories and larger128sample independent evaluation streams do not make this untouched-data confirmation. Same2adapters/hardware. No rate or endpoint selection.",
         "proposals": "Draw256 samples perquestion at temperature.8 and256 at1.2 from unchanged original adapter, top_k0/top_p1, stopIDs1/106 andcap96. Fixed temperatures chosen before new trajectories, no adaptation. Compute both component sequence log probabilities on exact stopped/censored IDs using single-trajectory forward calls. Deduplicate identical token IDs only within question to reuse derivatives, preserving every sample multiplicity.",
         "weighting": "For deterministic equal allocation mixture banks, q(y)=.5p_0.8(y)+.5p_1.2(y). Weight by p_0.8/q before applying exp(eta*directional_derivative). Warm-only uses q=p_1.2, base-only q=p_0.8. SNIS change is updated weighted reward minus baseline weighted reward. Linear is derivative of this self-normalized estimator ateta0, with no N/(N-1)correction and no unbiasedness claim. Include both component log probabilities, unit derivatives, rewards, allbanks/estimators/rates/methods andESS in forecast lock before ANYupdate.",
-        "evaluation": "Same16batches and rates .0003/.003/.03, mean-perdocument mean-completion CE gradients cached from paper-batch. All136LoRA A/B tensors updated.128independent response samples perprobe at baseline and after48updates; common RNG acrossconditions, distinct fromproposals.100352evaluation responses and8192proposals perseed. Restore checkpoint aftereveryupdate. Temperature.8/cap96 endpoints unchanged. No updating full model baseweights.",
+        "evaluation": "Same16batches and rates .0003/.003/.03, mean-perdocument mean-completion CE gradients recomputed in float32 before proposals. Dictionary, EKFAC factors, SVD16 basis and mean basis remain from completed discovery/development; re-encode the new gradients with unchanged alpha.1. All136LoRA A/B tensors updated.128independent response samples perprobe at baseline and after48updates; common RNG acrossconditions, distinct fromproposals.100352evaluation responses and8192proposals perseed. Restore checkpoint aftereveryupdate. Temperature.8/cap96 endpoints unchanged. No updating full model baseweights.",
         "analysis": "Wait until BOTH runsfinish ororiginaldeadlines. Verify fullhashes/forecastlock-before-updates/restoration/counts/immutabledeadline. Report everybank/rate/method/estimator/endpoint/seed/style andbatchtails, actualquality andfixedexamples. Compare base256 against mixture256 as equal-proposal-count development contrast; mixture512 not equal-cost. Measure totalforward/backward/generationcost honestly. Bootstrap separatelywithin eachproposalcomponent preserving deterministic allocation and sharedbanksubsets; pair evaluationstreams acrossbaseline/updates andresamplequestions/batches. Includeproposal/evaluationMonteCarlo uncertainty, ESSfractionbelowN/4, eventcoverage, weightconcentration and linearprobabilityrange violations; no clipping/dropping badcases. Sameprobe and calibration-template transfer separately.128evalsamples reduces noise but8promptsand2reusedseeds remain limited. Fixedexamples batch0..3/probe0,8/sample0/allrates. No novelty or confirmatoryclaim; standard multipleimportance sampling.",
-        "numeric_limit": "Bfloat16 model forward/generation arithmetic is retained to match prior architecture runs. New training-only preflight audits actual sampling settings and generation-versus-scoring numerical discrepancies atboth temperatures. Smallupdate discrepancies may reflect finiteprecision aswellascurvature; notisolatedbythisphase.",
+        "numeric_limit": "Pre-freeze bfloat16 warm-sampling preflight failed the .005 nats/token generation-score check. This development phase uses float32 for generation/scoring/gradients, SDPA attention, highest matmul precision and TF32 disabled. Base and LoRA checkpoint values are preserved by exact upcasting; batch gradients and sparse codes are recomputed. This is an explicit numerical-backend variation, not identical to previous bfloat16 results. Original failed spec/code/logs retained. No scientific outcomes were generated before amendment; unchanged .005 tolerance.",
         "references": [
             "https://arxiv.org/abs/1511.03095",
             "https://proceedings.mlr.press/v119/huang20b.html",
@@ -128,7 +175,7 @@ def prepare(root, prior):
 
 def preflight(root):
     spec = read_json(root / "specification.json")
-    model, _, tokenizer, _, payload, parameters = setup(spec)
+    model, scoring, tokenizer, tokenize, payload, parameters = stable_setup(spec)
     original = {n: p.detach().clone() for n, p in parameters}
     row = read_json(root / "data.json")["batches"][0]["documents"][0]
     generator = model.get_base_model()
@@ -177,7 +224,9 @@ def preflight(root):
     contracted = bank @ gradient.cuda()
     assert contracted.shape == (16, 6) and torch.isfinite(contracted).all()
     del bank
-    set_direction(parameters, original, old["batch_gradients"][0], spec["rates"][1])
+    value, n = scalar_logp(model, scoring, tokenize, row["prompt"], row["answers"][0])
+    train_gradient = flat_grad(-value / n, parameters)
+    set_direction(parameters, original, train_gradient, spec["rates"][1])
     assert any(not torch.equal(p, original[n]) for n, p in parameters)
     restore(parameters, original)
     after, _ = sample(model, tokenizer, row, 64, 17217, {**spec, "max_new_tokens": 8})
@@ -189,6 +238,7 @@ def preflight(root):
             "completed_unix": time.time(),
             "specification_sha256": file_hash(root / "specification.json"),
             "parameter_tensors": len(parameters),
+            "numerics": "float32_sdpa_tf32_disabled",
             "adapter_restored": True,
             "sampled_generation_restored": True,
             "effective_sampling_settings": audited,
@@ -239,7 +289,7 @@ def run(root):
         Path(spec["source_root"]),
         read_json(Path(spec["source_root"]) / "factors-manifest.json")["files_sha256"],
     )
-    model, _, tokenizer, _, payload, parameters = setup(spec)
+    model, scoring, tokenizer, tokenize, payload, parameters = stable_setup(spec)
     assert len(parameters) == 136
     original = {n: p.detach().clone() for n, p in parameters}
     old = torch.load(
@@ -252,6 +302,15 @@ def run(root):
             root / "status.json",
             {"stage": stage, "completed": completed, "total": total, "checked_unix": time.time()},
         )
+
+    representation_path = root / "batch-representations.pt"
+    if lock.exists():
+        verify_files(root, read_json(lock)["files_sha256"])
+        old = torch.load(representation_path, map_location="cpu", weights_only=True)
+    else:
+        status("batch_gradients_fp32", 0, 16)
+        old = batch_representations(model, scoring, tokenize, parameters, payload, data, spec, old)
+        torch.save(old, representation_path)
 
     if lock.exists():
         assert read_json(lock)["plan_sha256"] == file_hash(root / "plan.json")
@@ -341,7 +400,10 @@ def run(root):
                 "locked_unix": time.time(),
                 "plan_sha256": file_hash(root / "plan.json"),
                 "all_forecasts_before_updates": True,
-                "files_sha256": {p.name: file_hash(p) for p in (cache, root / "proposals.json")},
+                "files_sha256": {
+                    p.name: file_hash(p)
+                    for p in (cache, root / "proposals.json", representation_path)
+                },
             },
         )
         del bank
@@ -420,7 +482,7 @@ def run(root):
             "adapter_restored": True,
             "files_sha256": {
                 str(p.relative_to(root)): file_hash(p)
-                for p in (cache, lock, root / "proposals.json", *completed)
+                for p in (cache, lock, root / "proposals.json", representation_path, *completed)
             },
         },
     )
