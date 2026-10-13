@@ -74,7 +74,10 @@ def sample(model, tokenizer, row, count, seed, spec, return_scores=False):
     inputs = torch.tensor([ids] * count, device="cuda")
     with torch.inference_mode():
         output = model.generate(
-            input_ids=inputs, attention_mask=torch.ones_like(inputs), generation_config=config
+            input_ids=inputs,
+            attention_mask=torch.ones_like(inputs),
+            generation_config=config,
+            use_model_defaults=False,
         )
     tokens = [stopped_tokens(t, spec["stop_ids"]) for t in output.sequences[:, len(ids) :].tolist()]
     texts = tokenizer.batch_decode(tokens, skip_special_tokens=True)
@@ -185,6 +188,26 @@ def preflight(root):
     # Only a training document is used for preflight; main proposal/evaluation outcomes remain unread.
     row = read_json(root / "data.json")["batches"][0]["documents"][0]
     trial = {**spec, "max_new_tokens": 16}
+    effective_settings = []
+    original_processor = model._get_logits_processor
+
+    def audited_processor(*args, **kwargs):
+        config = kwargs["generation_config"]
+        effective_settings.append(
+            {
+                key: getattr(config, key)
+                for key in ("do_sample", "temperature", "top_p", "top_k", "eos_token_id")
+            }
+        )
+        assert config.do_sample and config.top_p == 1 and config.top_k == 0
+        assert config.temperature == spec["temperature"] and config.eos_token_id == spec["stop_ids"]
+        processors = original_processor(*args, **kwargs)
+        assert not any(
+            type(p).__name__ in ("TopPLogitsWarper", "TopKLogitsWarper") for p in processors
+        )
+        return processors
+
+    model._get_logits_processor = audited_processor
     before, logps = sample(model, tokenizer, row, 2, 18173, trial, return_scores=True)
     discrepancies = []
     for record, generated in zip(before, logps, strict=True):
@@ -212,6 +235,7 @@ def preflight(root):
             "sampled_generation_restored": True,
             "parameter_tensors": len(parameters),
             "temperature_score_mean_abs_error_per_token": discrepancies,
+            "effective_sampling_settings": effective_settings,
         },
     )
 
