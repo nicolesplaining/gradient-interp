@@ -288,7 +288,7 @@ def preflight(root, config):
             "gradient_shape": list(gradients.shape),
             "ekfac_modules_verified": len(factors),
             "scope": "implementation_test_only",
-            "note": "Discarded model; training stage initializes again with seed42.",
+            "note": f"Discarded model; training stage initializes again with seed{config['seed']}.",
         },
     )
 
