@@ -1,0 +1,128 @@
+{
+  "coding": [
+    {
+      "seed": 42,
+      "method": "original_lasso",
+      "mean_relative_residual": 0.8557106515516322,
+      "mean_norm_ratio": 0.35289607445250537,
+      "mean_atoms": 14.0625,
+      "numbered_included": 2,
+      "bullets_included": 1,
+      "maximum_coefficient_amplification": 1.0275431653690752,
+      "minimum_support_jaccard": 1.0,
+      "undefined_coefficient_changes": 0
+    },
+    {
+      "seed": 42,
+      "method": "support_refit",
+      "mean_relative_residual": 0.8239527239616478,
+      "mean_norm_ratio": 0.5522683717219191,
+      "mean_atoms": 14.0625,
+      "numbered_included": 2,
+      "bullets_included": 1,
+      "maximum_coefficient_amplification": 0.37621004411509484,
+      "minimum_support_jaccard": 1.0,
+      "undefined_coefficient_changes": 0
+    },
+    {
+      "seed": 42,
+      "method": "omp16",
+      "mean_relative_residual": 0.8046871357800662,
+      "mean_norm_ratio": 0.5791963869632728,
+      "mean_atoms": 16.0,
+      "numbered_included": 2,
+      "bullets_included": 1,
+      "maximum_coefficient_amplification": 4355.560587289972,
+      "minimum_support_jaccard": 0.6842105263157895,
+      "undefined_coefficient_changes": 0
+    },
+    {
+      "seed": 42,
+      "method": "dense_span",
+      "mean_relative_residual": 0.6832159852332029,
+      "mean_norm_ratio": 0.7233879956782436,
+      "mean_atoms": 500.0,
+      "numbered_included": 16,
+      "bullets_included": 16,
+      "maximum_coefficient_amplification": 0.7281798146076562,
+      "minimum_support_jaccard": 1.0,
+      "undefined_coefficient_changes": 0
+    },
+    {
+      "seed": 43,
+      "method": "original_lasso",
+      "mean_relative_residual": 0.8442135773682399,
+      "mean_norm_ratio": 0.3761260920649403,
+      "mean_atoms": 12.625,
+      "numbered_included": 5,
+      "bullets_included": 0,
+      "maximum_coefficient_amplification": 0.7390418168048805,
+      "minimum_support_jaccard": 1.0,
+      "undefined_coefficient_changes": 0
+    },
+    {
+      "seed": 43,
+      "method": "support_refit",
+      "mean_relative_residual": 0.8123771785491891,
+      "mean_norm_ratio": 0.5648905013030865,
+      "mean_atoms": 12.625,
+      "numbered_included": 5,
+      "bullets_included": 0,
+      "maximum_coefficient_amplification": 0.2939770870495946,
+      "minimum_support_jaccard": 1.0,
+      "undefined_coefficient_changes": 0
+    },
+    {
+      "seed": 43,
+      "method": "omp16",
+      "mean_relative_residual": 0.7910451358613507,
+      "mean_norm_ratio": 0.5966870737565155,
+      "mean_atoms": 16.0,
+      "numbered_included": 7,
+      "bullets_included": 0,
+      "maximum_coefficient_amplification": 0.20491761064895953,
+      "minimum_support_jaccard": 1.0,
+      "undefined_coefficient_changes": 0
+    },
+    {
+      "seed": 43,
+      "method": "dense_span",
+      "mean_relative_residual": 0.6604318314799783,
+      "mean_norm_ratio": 0.743750853375242,
+      "mean_atoms": 500.0,
+      "numbered_included": 16,
+      "bullets_included": 16,
+      "maximum_coefficient_amplification": 0.7048997607921715,
+      "minimum_support_jaccard": 1.0,
+      "undefined_coefficient_changes": 0
+    }
+  ],
+  "audits": [
+    {
+      "seed": 42,
+      "dictionary_rank": 500,
+      "largest_singular_value": 6.551394185090506,
+      "smallest_singular_value": 0.1817337931567885,
+      "original_lasso_max_abs_recomputation_error": 1.0572789121282566e-06,
+      "all_orthogonality_support_and_loss_checks_passed": true,
+      "zero_named_counts_original": {
+        "numbered": 14,
+        "bullets": 15
+      },
+      "planned_perturbations_per_batch": 20
+    },
+    {
+      "seed": 43,
+      "dictionary_rank": 500,
+      "largest_singular_value": 6.571368176889836,
+      "smallest_singular_value": 0.18869788735746262,
+      "original_lasso_max_abs_recomputation_error": 5.461560439734559e-07,
+      "all_orthogonality_support_and_loss_checks_passed": true,
+      "zero_named_counts_original": {
+        "numbered": 11,
+        "bullets": 16
+      },
+      "planned_perturbations_per_batch": 20
+    }
+  ]
+}

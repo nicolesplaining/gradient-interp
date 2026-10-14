@@ -1,0 +1,99 @@
+{
+  "checked_unix": 1791964162.344147,
+  "independent_sklearn_omp_check": [
+    {
+      "repetition": "original",
+      "max_coefficient_difference": 6.106226635438361e-16,
+      "support": [
+        1,
+        22,
+        36,
+        81,
+        88,
+        107,
+        131,
+        132,
+        196,
+        202,
+        214,
+        224,
+        246,
+        283,
+        413,
+        499
+      ]
+    },
+    {
+      "repetition": 5,
+      "max_coefficient_difference": 2.7755575615628914e-16,
+      "support": [
+        1,
+        22,
+        36,
+        71,
+        88,
+        131,
+        132,
+        144,
+        180,
+        196,
+        214,
+        224,
+        246,
+        283,
+        413,
+        499
+      ]
+    },
+    {
+      "repetition": 7,
+      "max_coefficient_difference": 3.3306690738754696e-16,
+      "support": [
+        1,
+        22,
+        36,
+        71,
+        88,
+        131,
+        132,
+        144,
+        180,
+        196,
+        214,
+        224,
+        246,
+        283,
+        413,
+        499
+      ]
+    },
+    {
+      "repetition": 11,
+      "max_coefficient_difference": 3.608224830031759e-16,
+      "support": [
+        1,
+        22,
+        36,
+        71,
+        88,
+        131,
+        132,
+        144,
+        180,
+        196,
+        214,
+        224,
+        246,
+        283,
+        413,
+        499
+      ]
+    }
+  ],
+  "scientific_source_unchanged": true,
+  "figures_visually_checked": [
+    "residual-decomposition",
+    "retrospective-forecast"
+  ],
+  "all_seeds_methods_batches_endpoints_retained": true
+}

@@ -1,0 +1,33 @@
+{
+  "completed_unix": 1791964227.7311912,
+  "tests": 7,
+  "ruff": "clean",
+  "source_unchanged_since_execution_lock": true,
+  "figures_checked": 2,
+  "scientific_worker_launches": 0,
+  "all_results_retained": true,
+  "report_sha256": "02f473f49c8daca4eaefcc28003c73277182d492ba1be05adb03731d15702b05",
+  "output_files_sha256": {
+    "pairs.csv": "ac8368078b2d3031040635ad9701b330f81c1816f47b46c16e808086bfc56028",
+    "summary.json": "0c3b6e71c246aa2291bd4ce72116e5d994223427479af0d9dd678a595f976960",
+    "forecasts.csv": "1388ec67e0627820c24911f8ec023dcdfc4e0205c61b58b76bca8a53849df5b1",
+    "geometry.csv": "4712680f1ecc9b0be100516e4954aec3d21662a9b07d083b154b3424a3856d20",
+    "seed42-export.json": "c52ef4c225b4bdfff1463cbcd241e27f5fb86ae221042ea524dd7081c8566e12",
+    "plan.json": "3951c8efbca75f9dd1fe1718fed03c9e176db650d42795c876f093c3826001ec",
+    "retrospective-forecast.png": "c80686ebf19f08c05650301c0deffac86534c2fa7da8feb02dceb2846a26bb0b",
+    "stability.csv": "6aff67b235f62eb6a8d97ecdfe882d6d0ec3490ec01412427fbc04b62205d79f",
+    "retrospective-forecast.pdf": "9702b1b439477b9f593dc96131b47f8564a2042e6946ea88af8d98004686cda3",
+    "postrun-verification.json": "35e867867b7bec45b8a5932064218a3a8cc587d4bd5d46b997fa510723dd2d9d",
+    "interpretation.json": "3b6b1e80081afb3bebcede1e7525c033ec9555b9690f2d2f5829a5356b5c4e2f",
+    "seed43-codings.npz": "7a2eed7987af7e99101771e080fffc87b86e413a5f59a41e664f05b2cebe67af",
+    "seed43-export.json": "5e011ef42107207fea847f74985db93d1f28cf90734cc615430d78e48efec143",
+    "execution-lock.json": "bbdf2bf63b56738db883588a7107806d8d572ef9a66ecee88afa330cb1648235",
+    "residual-decomposition.pdf": "a9978f7adf1b1a56b35bc6f07f972ded6a055ccbed36681df4477e78030fa2c5",
+    "loss.csv": "65efbcfeaed5437bec97969557171ffb06b2fa4e8e90e4f07f84d8c8bce92d96",
+    "validation.json": "0d4c3da0feb212b6f801267d1f65a4c2233923497c311c80966437bb30acfb58",
+    "residual-decomposition.png": "6f0aafe1a377c89c8afff9b5185aed6b5cb4ee86858ae299fa1347ba75216e65",
+    "execution-start.json": "33c1c49afe391dcef7c9f1690911746501e13259fa3b7e2b3210040512ef3190",
+    "seed42-codings.npz": "7f5e9b7b1f23fbfccd6f809230498e37d431113702f1e9d036f1c517f34ec15b",
+    "report.html": "02f473f49c8daca4eaefcc28003c73277182d492ba1be05adb03731d15702b05"
+  }
+}

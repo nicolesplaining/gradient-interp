@@ -1,0 +1,35 @@
+{
+  "exported_unix": 1791963733.0676596,
+  "source_files_sha256": {
+    "runs/paper-atom-batches-seed43/representations.pt": "237fcca95a6a2db63bdfd755ac2b0f107fb4122e7d79c355e0a7da7453c773e5",
+    "/home/ubuntu/gradient-interp/runs/paper-seed43/atoms.pt": "2f6cf51e81fc126084632e72fafb533e6e135b256c34c24ee979659f875ee0f6"
+  },
+  "original_plan_sha256": "a9405308db4c4b5aaa894ace2e26e6bb010e11737af7f8692df01bf70086fcde",
+  "integrity_sha256": "4c34332e89c6a8b88de478e94c41ef3f46a8214883f8968ac7ed8a0236389bb4",
+  "inputs_sha256": "94b058882d447b43765f43e46e1caea4c009fa83041b16d49893af5f79486f85",
+  "shapes": {
+    "projected": [
+      16,
+      6800
+    ],
+    "projected_norms": [
+      16,
+      1
+    ],
+    "sparse_codes": [
+      16,
+      500
+    ],
+    "dictionary": [
+      500,
+      6800
+    ]
+  },
+  "dtypes": {
+    "projected": "float32",
+    "projected_norms": "float32",
+    "sparse_codes": "float32",
+    "dictionary": "float32"
+  },
+  "cpu_only": true
+}
