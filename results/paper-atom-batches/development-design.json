@@ -1,0 +1,31 @@
+{
+  "written_unix": 1791942493.624398,
+  "scope": "development_only",
+  "objective": "Test whether meaningfully described gradient atoms selectively explain and prospectively predict batch behavior changes; no requirement to outperform full gradient or SVD.",
+  "phase": "paper-atom-batches",
+  "architecture": "Existing reconstructed Gemma-3 4B IT rank8 q/v LoRA, all34language layers,136A/B tensors.",
+  "candidate_descriptions": {
+    "numbered": "A descent contribution associated with answers presented as numbered lists.",
+    "bullets": "A descent contribution associated with answers presented as bullet lists."
+  },
+  "selection": "Reuse the two candidates selected from discovery training documents in the completed steering study. Freeze descriptions and signs before new gradients or generations. They are hypotheses, not accepted semantics.",
+  "data": "New deterministically generated word sorting, lowercasing, category filtering and field extraction tasks. Match answer values across plain/numbered/bulleted formats and short/long renderings for semantic assays. Separate batch, semantic-assay, calibration and evaluation items and templates. Check exact prompt/content overlap against available prior data including discovery documents; broad task-family reuse remains. Reused adapters mean development only.",
+  "batch_design": "Four content blocks, each containing one item per task, crossed with plain, numbered, bulleted and mixed-style batches of four documents. 16 paired batches. Main rate .003, fixed from completed development evidence before new data.",
+  "semantic_test": "Compare oriented candidate activations/gradient alignment on held-out format counterfactuals controlling content and verbosity. Test both descriptions on every family and length, not only matching cases.",
+  "forecast": "Before updates, use original-model sampled trajectories to estimate per-atom score-function behavioral effects. Primary forecast transfers the mean of eight calibration-question atom profiles to16different evaluation questions. Secondary same-question forecasts use separate baseline proposals, all frozen before updates. Sum magnitude-bearing sparse coefficients times atom effects; do not fit outcome regression. Save all500atom effect profiles and per-atom contributions. No-change and profile-permutation controls; full gradients and SVD are context.",
+  "selectivity": "For every batch evaluate full update, remove the named atom contribution, remove an equal-norm random active-atom contribution and a whole-update rescaling matching the remaining update norm. Fixed target mapping by batch style. Also test each named atom alone in both signs at .5 and1 times the median batch gradient norm with fixed .003 rate. Track both format outcomes, content values/order, length, truncation, repetition and emptiness.",
+  "counts": {
+    "batch_updates": 64,
+    "single_atom_updates": 8,
+    "evaluation_conditions": 73,
+    "evaluation_questions": 16,
+    "evaluation_samples": 64,
+    "proposal_questions": 24,
+    "proposal_samples": 128,
+    "semantic_items": 8,
+    "semantic_styles": 6
+  },
+  "analysis": "All methods/atoms/tasks/styles/controls retained. Paired proposal/evaluation Monte Carlo resampling, preserving condition pairing; calibration/evaluation question resampling within task; paired content-block resampling. Four blocks are small, not broad population evidence. Report individual tasks, lengths, both seeds/hardware, tails and pointwise descriptive intervals. No confirmation or best-atom promotion. Qualitative examples first item per task, both atoms and signs, first batch per style, sample0. Separate semantic-assay, causal-selectivity and quantitative forecast conclusions.",
+  "success_interpretation": "A favorable development result requires correct held-out descriptor preference, selective causal format effects without comparable content/length degradation, and useful prospective atom forecasts against no-change/shuffled profiles. Do not declare success from atom reconstruction or formatting shifts alone. Meaningful effect thresholds and multiplicity must be locked for a later fresh-seed untouched-data confirmation.",
+  "current_tangent": "Do not modify existing frozen source or active outputs. Its outcomes remain unread until both finish; archive/audit and report separately."
+}
