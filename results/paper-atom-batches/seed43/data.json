@@ -1,0 +1,2207 @@
+{
+  "batches": [
+    {
+      "id": "block-0-plain",
+      "block": 0,
+      "style": "plain",
+      "target": "numbered",
+      "documents": [
+        {
+          "id": "batch-sorting-00",
+          "task": "sorting",
+          "split": "batch",
+          "prompt": "Arrange these words alphabetically: rabbit, turnip, newt. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "newt",
+            "rabbit",
+            "turnip"
+          ],
+          "tags": [],
+          "answers": [
+            "newt, rabbit, turnip.",
+            "1. newt\n2. rabbit\n3. turnip",
+            "- newt\n- rabbit\n- turnip",
+            "The requested item is newt. The requested item is rabbit. The requested item is turnip.",
+            "1. The requested item is newt.\n2. The requested item is rabbit.\n3. The requested item is turnip.",
+            "- The requested item is newt.\n- The requested item is rabbit.\n- The requested item is turnip."
+          ],
+          "answer": "newt, rabbit, turnip."
+        },
+        {
+          "id": "batch-lowercase-00",
+          "task": "lowercase",
+          "split": "batch",
+          "prompt": "Convert each of these words to lowercase, preserving order: LLAMA, LENTIL, TOUCAN. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "llama",
+            "lentil",
+            "toucan"
+          ],
+          "tags": [],
+          "answers": [
+            "llama, lentil, toucan.",
+            "1. llama\n2. lentil\n3. toucan",
+            "- llama\n- lentil\n- toucan",
+            "The requested item is llama. The requested item is lentil. The requested item is toucan.",
+            "1. The requested item is llama.\n2. The requested item is lentil.\n3. The requested item is toucan.",
+            "- The requested item is llama.\n- The requested item is lentil.\n- The requested item is toucan."
+          ],
+          "answer": "llama, lentil, toucan."
+        },
+        {
+          "id": "batch-filtering-00",
+          "task": "filtering",
+          "split": "batch",
+          "prompt": "Select only the animal names from this collection, preserving order: lettuce, plum, apricot, toucan, lemur, zebra. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "toucan",
+            "lemur",
+            "zebra"
+          ],
+          "tags": [],
+          "answers": [
+            "toucan, lemur, zebra.",
+            "1. toucan\n2. lemur\n3. zebra",
+            "- toucan\n- lemur\n- zebra",
+            "The requested item is toucan. The requested item is lemur. The requested item is zebra.",
+            "1. The requested item is toucan.\n2. The requested item is lemur.\n3. The requested item is zebra.",
+            "- The requested item is toucan.\n- The requested item is lemur.\n- The requested item is zebra."
+          ],
+          "answer": "toucan, lemur, zebra."
+        },
+        {
+          "id": "batch-extraction-00",
+          "task": "extraction",
+          "split": "batch",
+          "prompt": "Extract the name field from each record, preserving record order: name=squash, note=raven; name=avocado, note=tomato; name=coconut, note=broccoli. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "squash",
+            "avocado",
+            "coconut"
+          ],
+          "tags": [],
+          "answers": [
+            "squash, avocado, coconut.",
+            "1. squash\n2. avocado\n3. coconut",
+            "- squash\n- avocado\n- coconut",
+            "The requested item is squash. The requested item is avocado. The requested item is coconut.",
+            "1. The requested item is squash.\n2. The requested item is avocado.\n3. The requested item is coconut.",
+            "- The requested item is squash.\n- The requested item is avocado.\n- The requested item is coconut."
+          ],
+          "answer": "squash, avocado, coconut."
+        }
+      ]
+    },
+    {
+      "id": "block-0-numbered",
+      "block": 0,
+      "style": "numbered",
+      "target": "numbered",
+      "documents": [
+        {
+          "id": "batch-sorting-00",
+          "task": "sorting",
+          "split": "batch",
+          "prompt": "Arrange these words alphabetically: rabbit, turnip, newt. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "newt",
+            "rabbit",
+            "turnip"
+          ],
+          "tags": [],
+          "answers": [
+            "newt, rabbit, turnip.",
+            "1. newt\n2. rabbit\n3. turnip",
+            "- newt\n- rabbit\n- turnip",
+            "The requested item is newt. The requested item is rabbit. The requested item is turnip.",
+            "1. The requested item is newt.\n2. The requested item is rabbit.\n3. The requested item is turnip.",
+            "- The requested item is newt.\n- The requested item is rabbit.\n- The requested item is turnip."
+          ],
+          "answer": "1. newt\n2. rabbit\n3. turnip"
+        },
+        {
+          "id": "batch-lowercase-00",
+          "task": "lowercase",
+          "split": "batch",
+          "prompt": "Convert each of these words to lowercase, preserving order: LLAMA, LENTIL, TOUCAN. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "llama",
+            "lentil",
+            "toucan"
+          ],
+          "tags": [],
+          "answers": [
+            "llama, lentil, toucan.",
+            "1. llama\n2. lentil\n3. toucan",
+            "- llama\n- lentil\n- toucan",
+            "The requested item is llama. The requested item is lentil. The requested item is toucan.",
+            "1. The requested item is llama.\n2. The requested item is lentil.\n3. The requested item is toucan.",
+            "- The requested item is llama.\n- The requested item is lentil.\n- The requested item is toucan."
+          ],
+          "answer": "1. llama\n2. lentil\n3. toucan"
+        },
+        {
+          "id": "batch-filtering-00",
+          "task": "filtering",
+          "split": "batch",
+          "prompt": "Select only the animal names from this collection, preserving order: lettuce, plum, apricot, toucan, lemur, zebra. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "toucan",
+            "lemur",
+            "zebra"
+          ],
+          "tags": [],
+          "answers": [
+            "toucan, lemur, zebra.",
+            "1. toucan\n2. lemur\n3. zebra",
+            "- toucan\n- lemur\n- zebra",
+            "The requested item is toucan. The requested item is lemur. The requested item is zebra.",
+            "1. The requested item is toucan.\n2. The requested item is lemur.\n3. The requested item is zebra.",
+            "- The requested item is toucan.\n- The requested item is lemur.\n- The requested item is zebra."
+          ],
+          "answer": "1. toucan\n2. lemur\n3. zebra"
+        },
+        {
+          "id": "batch-extraction-00",
+          "task": "extraction",
+          "split": "batch",
+          "prompt": "Extract the name field from each record, preserving record order: name=squash, note=raven; name=avocado, note=tomato; name=coconut, note=broccoli. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "squash",
+            "avocado",
+            "coconut"
+          ],
+          "tags": [],
+          "answers": [
+            "squash, avocado, coconut.",
+            "1. squash\n2. avocado\n3. coconut",
+            "- squash\n- avocado\n- coconut",
+            "The requested item is squash. The requested item is avocado. The requested item is coconut.",
+            "1. The requested item is squash.\n2. The requested item is avocado.\n3. The requested item is coconut.",
+            "- The requested item is squash.\n- The requested item is avocado.\n- The requested item is coconut."
+          ],
+          "answer": "1. squash\n2. avocado\n3. coconut"
+        }
+      ]
+    },
+    {
+      "id": "block-0-bullets",
+      "block": 0,
+      "style": "bullets",
+      "target": "bullets",
+      "documents": [
+        {
+          "id": "batch-sorting-00",
+          "task": "sorting",
+          "split": "batch",
+          "prompt": "Arrange these words alphabetically: rabbit, turnip, newt. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "newt",
+            "rabbit",
+            "turnip"
+          ],
+          "tags": [],
+          "answers": [
+            "newt, rabbit, turnip.",
+            "1. newt\n2. rabbit\n3. turnip",
+            "- newt\n- rabbit\n- turnip",
+            "The requested item is newt. The requested item is rabbit. The requested item is turnip.",
+            "1. The requested item is newt.\n2. The requested item is rabbit.\n3. The requested item is turnip.",
+            "- The requested item is newt.\n- The requested item is rabbit.\n- The requested item is turnip."
+          ],
+          "answer": "- newt\n- rabbit\n- turnip"
+        },
+        {
+          "id": "batch-lowercase-00",
+          "task": "lowercase",
+          "split": "batch",
+          "prompt": "Convert each of these words to lowercase, preserving order: LLAMA, LENTIL, TOUCAN. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "llama",
+            "lentil",
+            "toucan"
+          ],
+          "tags": [],
+          "answers": [
+            "llama, lentil, toucan.",
+            "1. llama\n2. lentil\n3. toucan",
+            "- llama\n- lentil\n- toucan",
+            "The requested item is llama. The requested item is lentil. The requested item is toucan.",
+            "1. The requested item is llama.\n2. The requested item is lentil.\n3. The requested item is toucan.",
+            "- The requested item is llama.\n- The requested item is lentil.\n- The requested item is toucan."
+          ],
+          "answer": "- llama\n- lentil\n- toucan"
+        },
+        {
+          "id": "batch-filtering-00",
+          "task": "filtering",
+          "split": "batch",
+          "prompt": "Select only the animal names from this collection, preserving order: lettuce, plum, apricot, toucan, lemur, zebra. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "toucan",
+            "lemur",
+            "zebra"
+          ],
+          "tags": [],
+          "answers": [
+            "toucan, lemur, zebra.",
+            "1. toucan\n2. lemur\n3. zebra",
+            "- toucan\n- lemur\n- zebra",
+            "The requested item is toucan. The requested item is lemur. The requested item is zebra.",
+            "1. The requested item is toucan.\n2. The requested item is lemur.\n3. The requested item is zebra.",
+            "- The requested item is toucan.\n- The requested item is lemur.\n- The requested item is zebra."
+          ],
+          "answer": "- toucan\n- lemur\n- zebra"
+        },
+        {
+          "id": "batch-extraction-00",
+          "task": "extraction",
+          "split": "batch",
+          "prompt": "Extract the name field from each record, preserving record order: name=squash, note=raven; name=avocado, note=tomato; name=coconut, note=broccoli. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "squash",
+            "avocado",
+            "coconut"
+          ],
+          "tags": [],
+          "answers": [
+            "squash, avocado, coconut.",
+            "1. squash\n2. avocado\n3. coconut",
+            "- squash\n- avocado\n- coconut",
+            "The requested item is squash. The requested item is avocado. The requested item is coconut.",
+            "1. The requested item is squash.\n2. The requested item is avocado.\n3. The requested item is coconut.",
+            "- The requested item is squash.\n- The requested item is avocado.\n- The requested item is coconut."
+          ],
+          "answer": "- squash\n- avocado\n- coconut"
+        }
+      ]
+    },
+    {
+      "id": "block-0-mixed",
+      "block": 0,
+      "style": "mixed",
+      "target": "numbered",
+      "documents": [
+        {
+          "id": "batch-sorting-00",
+          "task": "sorting",
+          "split": "batch",
+          "prompt": "Arrange these words alphabetically: rabbit, turnip, newt. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "newt",
+            "rabbit",
+            "turnip"
+          ],
+          "tags": [],
+          "answers": [
+            "newt, rabbit, turnip.",
+            "1. newt\n2. rabbit\n3. turnip",
+            "- newt\n- rabbit\n- turnip",
+            "The requested item is newt. The requested item is rabbit. The requested item is turnip.",
+            "1. The requested item is newt.\n2. The requested item is rabbit.\n3. The requested item is turnip.",
+            "- The requested item is newt.\n- The requested item is rabbit.\n- The requested item is turnip."
+          ],
+          "answer": "newt, rabbit, turnip."
+        },
+        {
+          "id": "batch-lowercase-00",
+          "task": "lowercase",
+          "split": "batch",
+          "prompt": "Convert each of these words to lowercase, preserving order: LLAMA, LENTIL, TOUCAN. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "llama",
+            "lentil",
+            "toucan"
+          ],
+          "tags": [],
+          "answers": [
+            "llama, lentil, toucan.",
+            "1. llama\n2. lentil\n3. toucan",
+            "- llama\n- lentil\n- toucan",
+            "The requested item is llama. The requested item is lentil. The requested item is toucan.",
+            "1. The requested item is llama.\n2. The requested item is lentil.\n3. The requested item is toucan.",
+            "- The requested item is llama.\n- The requested item is lentil.\n- The requested item is toucan."
+          ],
+          "answer": "1. llama\n2. lentil\n3. toucan"
+        },
+        {
+          "id": "batch-filtering-00",
+          "task": "filtering",
+          "split": "batch",
+          "prompt": "Select only the animal names from this collection, preserving order: lettuce, plum, apricot, toucan, lemur, zebra. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "toucan",
+            "lemur",
+            "zebra"
+          ],
+          "tags": [],
+          "answers": [
+            "toucan, lemur, zebra.",
+            "1. toucan\n2. lemur\n3. zebra",
+            "- toucan\n- lemur\n- zebra",
+            "The requested item is toucan. The requested item is lemur. The requested item is zebra.",
+            "1. The requested item is toucan.\n2. The requested item is lemur.\n3. The requested item is zebra.",
+            "- The requested item is toucan.\n- The requested item is lemur.\n- The requested item is zebra."
+          ],
+          "answer": "- toucan\n- lemur\n- zebra"
+        },
+        {
+          "id": "batch-extraction-00",
+          "task": "extraction",
+          "split": "batch",
+          "prompt": "Extract the name field from each record, preserving record order: name=squash, note=raven; name=avocado, note=tomato; name=coconut, note=broccoli. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "squash",
+            "avocado",
+            "coconut"
+          ],
+          "tags": [],
+          "answers": [
+            "squash, avocado, coconut.",
+            "1. squash\n2. avocado\n3. coconut",
+            "- squash\n- avocado\n- coconut",
+            "The requested item is squash. The requested item is avocado. The requested item is coconut.",
+            "1. The requested item is squash.\n2. The requested item is avocado.\n3. The requested item is coconut.",
+            "- The requested item is squash.\n- The requested item is avocado.\n- The requested item is coconut."
+          ],
+          "answer": "1. squash\n2. avocado\n3. coconut"
+        }
+      ]
+    },
+    {
+      "id": "block-1-plain",
+      "block": 1,
+      "style": "plain",
+      "target": "numbered",
+      "documents": [
+        {
+          "id": "batch-sorting-01",
+          "task": "sorting",
+          "split": "batch",
+          "prompt": "Arrange these words alphabetically: barley, iguana, panda. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "barley",
+            "iguana",
+            "panda"
+          ],
+          "tags": [],
+          "answers": [
+            "barley, iguana, panda.",
+            "1. barley\n2. iguana\n3. panda",
+            "- barley\n- iguana\n- panda",
+            "The requested item is barley. The requested item is iguana. The requested item is panda.",
+            "1. The requested item is barley.\n2. The requested item is iguana.\n3. The requested item is panda.",
+            "- The requested item is barley.\n- The requested item is iguana.\n- The requested item is panda."
+          ],
+          "answer": "barley, iguana, panda."
+        },
+        {
+          "id": "batch-lowercase-01",
+          "task": "lowercase",
+          "split": "batch",
+          "prompt": "Convert each of these words to lowercase, preserving order: TOMATO, BEETROOT, AVOCADO. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "tomato",
+            "beetroot",
+            "avocado"
+          ],
+          "tags": [],
+          "answers": [
+            "tomato, beetroot, avocado.",
+            "1. tomato\n2. beetroot\n3. avocado",
+            "- tomato\n- beetroot\n- avocado",
+            "The requested item is tomato. The requested item is beetroot. The requested item is avocado.",
+            "1. The requested item is tomato.\n2. The requested item is beetroot.\n3. The requested item is avocado.",
+            "- The requested item is tomato.\n- The requested item is beetroot.\n- The requested item is avocado."
+          ],
+          "answer": "tomato, beetroot, avocado."
+        },
+        {
+          "id": "batch-filtering-01",
+          "task": "filtering",
+          "split": "batch",
+          "prompt": "Select only the animal names from this collection, preserving order: koala, ginger, walnut, iguana, quail, papaya. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "koala",
+            "iguana",
+            "quail"
+          ],
+          "tags": [],
+          "answers": [
+            "koala, iguana, quail.",
+            "1. koala\n2. iguana\n3. quail",
+            "- koala\n- iguana\n- quail",
+            "The requested item is koala. The requested item is iguana. The requested item is quail.",
+            "1. The requested item is koala.\n2. The requested item is iguana.\n3. The requested item is quail.",
+            "- The requested item is koala.\n- The requested item is iguana.\n- The requested item is quail."
+          ],
+          "answer": "koala, iguana, quail."
+        },
+        {
+          "id": "batch-extraction-01",
+          "task": "extraction",
+          "split": "batch",
+          "prompt": "Extract the name field from each record, preserving record order: name=seal, note=mango; name=potato, note=coconut; name=squash, note=pepper. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "seal",
+            "potato",
+            "squash"
+          ],
+          "tags": [],
+          "answers": [
+            "seal, potato, squash.",
+            "1. seal\n2. potato\n3. squash",
+            "- seal\n- potato\n- squash",
+            "The requested item is seal. The requested item is potato. The requested item is squash.",
+            "1. The requested item is seal.\n2. The requested item is potato.\n3. The requested item is squash.",
+            "- The requested item is seal.\n- The requested item is potato.\n- The requested item is squash."
+          ],
+          "answer": "seal, potato, squash."
+        }
+      ]
+    },
+    {
+      "id": "block-1-numbered",
+      "block": 1,
+      "style": "numbered",
+      "target": "numbered",
+      "documents": [
+        {
+          "id": "batch-sorting-01",
+          "task": "sorting",
+          "split": "batch",
+          "prompt": "Arrange these words alphabetically: barley, iguana, panda. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "barley",
+            "iguana",
+            "panda"
+          ],
+          "tags": [],
+          "answers": [
+            "barley, iguana, panda.",
+            "1. barley\n2. iguana\n3. panda",
+            "- barley\n- iguana\n- panda",
+            "The requested item is barley. The requested item is iguana. The requested item is panda.",
+            "1. The requested item is barley.\n2. The requested item is iguana.\n3. The requested item is panda.",
+            "- The requested item is barley.\n- The requested item is iguana.\n- The requested item is panda."
+          ],
+          "answer": "1. barley\n2. iguana\n3. panda"
+        },
+        {
+          "id": "batch-lowercase-01",
+          "task": "lowercase",
+          "split": "batch",
+          "prompt": "Convert each of these words to lowercase, preserving order: TOMATO, BEETROOT, AVOCADO. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "tomato",
+            "beetroot",
+            "avocado"
+          ],
+          "tags": [],
+          "answers": [
+            "tomato, beetroot, avocado.",
+            "1. tomato\n2. beetroot\n3. avocado",
+            "- tomato\n- beetroot\n- avocado",
+            "The requested item is tomato. The requested item is beetroot. The requested item is avocado.",
+            "1. The requested item is tomato.\n2. The requested item is beetroot.\n3. The requested item is avocado.",
+            "- The requested item is tomato.\n- The requested item is beetroot.\n- The requested item is avocado."
+          ],
+          "answer": "1. tomato\n2. beetroot\n3. avocado"
+        },
+        {
+          "id": "batch-filtering-01",
+          "task": "filtering",
+          "split": "batch",
+          "prompt": "Select only the animal names from this collection, preserving order: koala, ginger, walnut, iguana, quail, papaya. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "koala",
+            "iguana",
+            "quail"
+          ],
+          "tags": [],
+          "answers": [
+            "koala, iguana, quail.",
+            "1. koala\n2. iguana\n3. quail",
+            "- koala\n- iguana\n- quail",
+            "The requested item is koala. The requested item is iguana. The requested item is quail.",
+            "1. The requested item is koala.\n2. The requested item is iguana.\n3. The requested item is quail.",
+            "- The requested item is koala.\n- The requested item is iguana.\n- The requested item is quail."
+          ],
+          "answer": "1. koala\n2. iguana\n3. quail"
+        },
+        {
+          "id": "batch-extraction-01",
+          "task": "extraction",
+          "split": "batch",
+          "prompt": "Extract the name field from each record, preserving record order: name=seal, note=mango; name=potato, note=coconut; name=squash, note=pepper. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "seal",
+            "potato",
+            "squash"
+          ],
+          "tags": [],
+          "answers": [
+            "seal, potato, squash.",
+            "1. seal\n2. potato\n3. squash",
+            "- seal\n- potato\n- squash",
+            "The requested item is seal. The requested item is potato. The requested item is squash.",
+            "1. The requested item is seal.\n2. The requested item is potato.\n3. The requested item is squash.",
+            "- The requested item is seal.\n- The requested item is potato.\n- The requested item is squash."
+          ],
+          "answer": "1. seal\n2. potato\n3. squash"
+        }
+      ]
+    },
+    {
+      "id": "block-1-bullets",
+      "block": 1,
+      "style": "bullets",
+      "target": "bullets",
+      "documents": [
+        {
+          "id": "batch-sorting-01",
+          "task": "sorting",
+          "split": "batch",
+          "prompt": "Arrange these words alphabetically: barley, iguana, panda. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "barley",
+            "iguana",
+            "panda"
+          ],
+          "tags": [],
+          "answers": [
+            "barley, iguana, panda.",
+            "1. barley\n2. iguana\n3. panda",
+            "- barley\n- iguana\n- panda",
+            "The requested item is barley. The requested item is iguana. The requested item is panda.",
+            "1. The requested item is barley.\n2. The requested item is iguana.\n3. The requested item is panda.",
+            "- The requested item is barley.\n- The requested item is iguana.\n- The requested item is panda."
+          ],
+          "answer": "- barley\n- iguana\n- panda"
+        },
+        {
+          "id": "batch-lowercase-01",
+          "task": "lowercase",
+          "split": "batch",
+          "prompt": "Convert each of these words to lowercase, preserving order: TOMATO, BEETROOT, AVOCADO. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "tomato",
+            "beetroot",
+            "avocado"
+          ],
+          "tags": [],
+          "answers": [
+            "tomato, beetroot, avocado.",
+            "1. tomato\n2. beetroot\n3. avocado",
+            "- tomato\n- beetroot\n- avocado",
+            "The requested item is tomato. The requested item is beetroot. The requested item is avocado.",
+            "1. The requested item is tomato.\n2. The requested item is beetroot.\n3. The requested item is avocado.",
+            "- The requested item is tomato.\n- The requested item is beetroot.\n- The requested item is avocado."
+          ],
+          "answer": "- tomato\n- beetroot\n- avocado"
+        },
+        {
+          "id": "batch-filtering-01",
+          "task": "filtering",
+          "split": "batch",
+          "prompt": "Select only the animal names from this collection, preserving order: koala, ginger, walnut, iguana, quail, papaya. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "koala",
+            "iguana",
+            "quail"
+          ],
+          "tags": [],
+          "answers": [
+            "koala, iguana, quail.",
+            "1. koala\n2. iguana\n3. quail",
+            "- koala\n- iguana\n- quail",
+            "The requested item is koala. The requested item is iguana. The requested item is quail.",
+            "1. The requested item is koala.\n2. The requested item is iguana.\n3. The requested item is quail.",
+            "- The requested item is koala.\n- The requested item is iguana.\n- The requested item is quail."
+          ],
+          "answer": "- koala\n- iguana\n- quail"
+        },
+        {
+          "id": "batch-extraction-01",
+          "task": "extraction",
+          "split": "batch",
+          "prompt": "Extract the name field from each record, preserving record order: name=seal, note=mango; name=potato, note=coconut; name=squash, note=pepper. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "seal",
+            "potato",
+            "squash"
+          ],
+          "tags": [],
+          "answers": [
+            "seal, potato, squash.",
+            "1. seal\n2. potato\n3. squash",
+            "- seal\n- potato\n- squash",
+            "The requested item is seal. The requested item is potato. The requested item is squash.",
+            "1. The requested item is seal.\n2. The requested item is potato.\n3. The requested item is squash.",
+            "- The requested item is seal.\n- The requested item is potato.\n- The requested item is squash."
+          ],
+          "answer": "- seal\n- potato\n- squash"
+        }
+      ]
+    },
+    {
+      "id": "block-1-mixed",
+      "block": 1,
+      "style": "mixed",
+      "target": "numbered",
+      "documents": [
+        {
+          "id": "batch-sorting-01",
+          "task": "sorting",
+          "split": "batch",
+          "prompt": "Arrange these words alphabetically: barley, iguana, panda. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "barley",
+            "iguana",
+            "panda"
+          ],
+          "tags": [],
+          "answers": [
+            "barley, iguana, panda.",
+            "1. barley\n2. iguana\n3. panda",
+            "- barley\n- iguana\n- panda",
+            "The requested item is barley. The requested item is iguana. The requested item is panda.",
+            "1. The requested item is barley.\n2. The requested item is iguana.\n3. The requested item is panda.",
+            "- The requested item is barley.\n- The requested item is iguana.\n- The requested item is panda."
+          ],
+          "answer": "barley, iguana, panda."
+        },
+        {
+          "id": "batch-lowercase-01",
+          "task": "lowercase",
+          "split": "batch",
+          "prompt": "Convert each of these words to lowercase, preserving order: TOMATO, BEETROOT, AVOCADO. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "tomato",
+            "beetroot",
+            "avocado"
+          ],
+          "tags": [],
+          "answers": [
+            "tomato, beetroot, avocado.",
+            "1. tomato\n2. beetroot\n3. avocado",
+            "- tomato\n- beetroot\n- avocado",
+            "The requested item is tomato. The requested item is beetroot. The requested item is avocado.",
+            "1. The requested item is tomato.\n2. The requested item is beetroot.\n3. The requested item is avocado.",
+            "- The requested item is tomato.\n- The requested item is beetroot.\n- The requested item is avocado."
+          ],
+          "answer": "1. tomato\n2. beetroot\n3. avocado"
+        },
+        {
+          "id": "batch-filtering-01",
+          "task": "filtering",
+          "split": "batch",
+          "prompt": "Select only the animal names from this collection, preserving order: koala, ginger, walnut, iguana, quail, papaya. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "koala",
+            "iguana",
+            "quail"
+          ],
+          "tags": [],
+          "answers": [
+            "koala, iguana, quail.",
+            "1. koala\n2. iguana\n3. quail",
+            "- koala\n- iguana\n- quail",
+            "The requested item is koala. The requested item is iguana. The requested item is quail.",
+            "1. The requested item is koala.\n2. The requested item is iguana.\n3. The requested item is quail.",
+            "- The requested item is koala.\n- The requested item is iguana.\n- The requested item is quail."
+          ],
+          "answer": "- koala\n- iguana\n- quail"
+        },
+        {
+          "id": "batch-extraction-01",
+          "task": "extraction",
+          "split": "batch",
+          "prompt": "Extract the name field from each record, preserving record order: name=seal, note=mango; name=potato, note=coconut; name=squash, note=pepper. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "seal",
+            "potato",
+            "squash"
+          ],
+          "tags": [],
+          "answers": [
+            "seal, potato, squash.",
+            "1. seal\n2. potato\n3. squash",
+            "- seal\n- potato\n- squash",
+            "The requested item is seal. The requested item is potato. The requested item is squash.",
+            "1. The requested item is seal.\n2. The requested item is potato.\n3. The requested item is squash.",
+            "- The requested item is seal.\n- The requested item is potato.\n- The requested item is squash."
+          ],
+          "answer": "1. seal\n2. potato\n3. squash"
+        }
+      ]
+    },
+    {
+      "id": "block-2-plain",
+      "block": 2,
+      "style": "plain",
+      "target": "numbered",
+      "documents": [
+        {
+          "id": "batch-sorting-02",
+          "task": "sorting",
+          "split": "batch",
+          "prompt": "Arrange these words alphabetically: quail, tapir, plum. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "plum",
+            "quail",
+            "tapir"
+          ],
+          "tags": [],
+          "answers": [
+            "plum, quail, tapir.",
+            "1. plum\n2. quail\n3. tapir",
+            "- plum\n- quail\n- tapir",
+            "The requested item is plum. The requested item is quail. The requested item is tapir.",
+            "1. The requested item is plum.\n2. The requested item is quail.\n3. The requested item is tapir.",
+            "- The requested item is plum.\n- The requested item is quail.\n- The requested item is tapir."
+          ],
+          "answer": "plum, quail, tapir."
+        },
+        {
+          "id": "batch-lowercase-02",
+          "task": "lowercase",
+          "split": "batch",
+          "prompt": "Convert each of these words to lowercase, preserving order: PARROT, PAPAYA, BISON. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "parrot",
+            "papaya",
+            "bison"
+          ],
+          "tags": [],
+          "answers": [
+            "parrot, papaya, bison.",
+            "1. parrot\n2. papaya\n3. bison",
+            "- parrot\n- papaya\n- bison",
+            "The requested item is parrot. The requested item is papaya. The requested item is bison.",
+            "1. The requested item is parrot.\n2. The requested item is papaya.\n3. The requested item is bison.",
+            "- The requested item is parrot.\n- The requested item is papaya.\n- The requested item is bison."
+          ],
+          "answer": "parrot, papaya, bison."
+        },
+        {
+          "id": "batch-filtering-02",
+          "task": "filtering",
+          "split": "batch",
+          "prompt": "Select only the animal names from this collection, preserving order: koala, moose, quince, coconut, cabbage, heron. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "koala",
+            "moose",
+            "heron"
+          ],
+          "tags": [],
+          "answers": [
+            "koala, moose, heron.",
+            "1. koala\n2. moose\n3. heron",
+            "- koala\n- moose\n- heron",
+            "The requested item is koala. The requested item is moose. The requested item is heron.",
+            "1. The requested item is koala.\n2. The requested item is moose.\n3. The requested item is heron.",
+            "- The requested item is koala.\n- The requested item is moose.\n- The requested item is heron."
+          ],
+          "answer": "koala, moose, heron."
+        },
+        {
+          "id": "batch-extraction-02",
+          "task": "extraction",
+          "split": "batch",
+          "prompt": "Extract the name field from each record, preserving record order: name=lettuce, note=tomato; name=shark, note=rabbit; name=garlic, note=hazelnut. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "lettuce",
+            "shark",
+            "garlic"
+          ],
+          "tags": [],
+          "answers": [
+            "lettuce, shark, garlic.",
+            "1. lettuce\n2. shark\n3. garlic",
+            "- lettuce\n- shark\n- garlic",
+            "The requested item is lettuce. The requested item is shark. The requested item is garlic.",
+            "1. The requested item is lettuce.\n2. The requested item is shark.\n3. The requested item is garlic.",
+            "- The requested item is lettuce.\n- The requested item is shark.\n- The requested item is garlic."
+          ],
+          "answer": "lettuce, shark, garlic."
+        }
+      ]
+    },
+    {
+      "id": "block-2-numbered",
+      "block": 2,
+      "style": "numbered",
+      "target": "numbered",
+      "documents": [
+        {
+          "id": "batch-sorting-02",
+          "task": "sorting",
+          "split": "batch",
+          "prompt": "Arrange these words alphabetically: quail, tapir, plum. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "plum",
+            "quail",
+            "tapir"
+          ],
+          "tags": [],
+          "answers": [
+            "plum, quail, tapir.",
+            "1. plum\n2. quail\n3. tapir",
+            "- plum\n- quail\n- tapir",
+            "The requested item is plum. The requested item is quail. The requested item is tapir.",
+            "1. The requested item is plum.\n2. The requested item is quail.\n3. The requested item is tapir.",
+            "- The requested item is plum.\n- The requested item is quail.\n- The requested item is tapir."
+          ],
+          "answer": "1. plum\n2. quail\n3. tapir"
+        },
+        {
+          "id": "batch-lowercase-02",
+          "task": "lowercase",
+          "split": "batch",
+          "prompt": "Convert each of these words to lowercase, preserving order: PARROT, PAPAYA, BISON. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "parrot",
+            "papaya",
+            "bison"
+          ],
+          "tags": [],
+          "answers": [
+            "parrot, papaya, bison.",
+            "1. parrot\n2. papaya\n3. bison",
+            "- parrot\n- papaya\n- bison",
+            "The requested item is parrot. The requested item is papaya. The requested item is bison.",
+            "1. The requested item is parrot.\n2. The requested item is papaya.\n3. The requested item is bison.",
+            "- The requested item is parrot.\n- The requested item is papaya.\n- The requested item is bison."
+          ],
+          "answer": "1. parrot\n2. papaya\n3. bison"
+        },
+        {
+          "id": "batch-filtering-02",
+          "task": "filtering",
+          "split": "batch",
+          "prompt": "Select only the animal names from this collection, preserving order: koala, moose, quince, coconut, cabbage, heron. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "koala",
+            "moose",
+            "heron"
+          ],
+          "tags": [],
+          "answers": [
+            "koala, moose, heron.",
+            "1. koala\n2. moose\n3. heron",
+            "- koala\n- moose\n- heron",
+            "The requested item is koala. The requested item is moose. The requested item is heron.",
+            "1. The requested item is koala.\n2. The requested item is moose.\n3. The requested item is heron.",
+            "- The requested item is koala.\n- The requested item is moose.\n- The requested item is heron."
+          ],
+          "answer": "1. koala\n2. moose\n3. heron"
+        },
+        {
+          "id": "batch-extraction-02",
+          "task": "extraction",
+          "split": "batch",
+          "prompt": "Extract the name field from each record, preserving record order: name=lettuce, note=tomato; name=shark, note=rabbit; name=garlic, note=hazelnut. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "lettuce",
+            "shark",
+            "garlic"
+          ],
+          "tags": [],
+          "answers": [
+            "lettuce, shark, garlic.",
+            "1. lettuce\n2. shark\n3. garlic",
+            "- lettuce\n- shark\n- garlic",
+            "The requested item is lettuce. The requested item is shark. The requested item is garlic.",
+            "1. The requested item is lettuce.\n2. The requested item is shark.\n3. The requested item is garlic.",
+            "- The requested item is lettuce.\n- The requested item is shark.\n- The requested item is garlic."
+          ],
+          "answer": "1. lettuce\n2. shark\n3. garlic"
+        }
+      ]
+    },
+    {
+      "id": "block-2-bullets",
+      "block": 2,
+      "style": "bullets",
+      "target": "bullets",
+      "documents": [
+        {
+          "id": "batch-sorting-02",
+          "task": "sorting",
+          "split": "batch",
+          "prompt": "Arrange these words alphabetically: quail, tapir, plum. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "plum",
+            "quail",
+            "tapir"
+          ],
+          "tags": [],
+          "answers": [
+            "plum, quail, tapir.",
+            "1. plum\n2. quail\n3. tapir",
+            "- plum\n- quail\n- tapir",
+            "The requested item is plum. The requested item is quail. The requested item is tapir.",
+            "1. The requested item is plum.\n2. The requested item is quail.\n3. The requested item is tapir.",
+            "- The requested item is plum.\n- The requested item is quail.\n- The requested item is tapir."
+          ],
+          "answer": "- plum\n- quail\n- tapir"
+        },
+        {
+          "id": "batch-lowercase-02",
+          "task": "lowercase",
+          "split": "batch",
+          "prompt": "Convert each of these words to lowercase, preserving order: PARROT, PAPAYA, BISON. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "parrot",
+            "papaya",
+            "bison"
+          ],
+          "tags": [],
+          "answers": [
+            "parrot, papaya, bison.",
+            "1. parrot\n2. papaya\n3. bison",
+            "- parrot\n- papaya\n- bison",
+            "The requested item is parrot. The requested item is papaya. The requested item is bison.",
+            "1. The requested item is parrot.\n2. The requested item is papaya.\n3. The requested item is bison.",
+            "- The requested item is parrot.\n- The requested item is papaya.\n- The requested item is bison."
+          ],
+          "answer": "- parrot\n- papaya\n- bison"
+        },
+        {
+          "id": "batch-filtering-02",
+          "task": "filtering",
+          "split": "batch",
+          "prompt": "Select only the animal names from this collection, preserving order: koala, moose, quince, coconut, cabbage, heron. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "koala",
+            "moose",
+            "heron"
+          ],
+          "tags": [],
+          "answers": [
+            "koala, moose, heron.",
+            "1. koala\n2. moose\n3. heron",
+            "- koala\n- moose\n- heron",
+            "The requested item is koala. The requested item is moose. The requested item is heron.",
+            "1. The requested item is koala.\n2. The requested item is moose.\n3. The requested item is heron.",
+            "- The requested item is koala.\n- The requested item is moose.\n- The requested item is heron."
+          ],
+          "answer": "- koala\n- moose\n- heron"
+        },
+        {
+          "id": "batch-extraction-02",
+          "task": "extraction",
+          "split": "batch",
+          "prompt": "Extract the name field from each record, preserving record order: name=lettuce, note=tomato; name=shark, note=rabbit; name=garlic, note=hazelnut. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "lettuce",
+            "shark",
+            "garlic"
+          ],
+          "tags": [],
+          "answers": [
+            "lettuce, shark, garlic.",
+            "1. lettuce\n2. shark\n3. garlic",
+            "- lettuce\n- shark\n- garlic",
+            "The requested item is lettuce. The requested item is shark. The requested item is garlic.",
+            "1. The requested item is lettuce.\n2. The requested item is shark.\n3. The requested item is garlic.",
+            "- The requested item is lettuce.\n- The requested item is shark.\n- The requested item is garlic."
+          ],
+          "answer": "- lettuce\n- shark\n- garlic"
+        }
+      ]
+    },
+    {
+      "id": "block-2-mixed",
+      "block": 2,
+      "style": "mixed",
+      "target": "numbered",
+      "documents": [
+        {
+          "id": "batch-sorting-02",
+          "task": "sorting",
+          "split": "batch",
+          "prompt": "Arrange these words alphabetically: quail, tapir, plum. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "plum",
+            "quail",
+            "tapir"
+          ],
+          "tags": [],
+          "answers": [
+            "plum, quail, tapir.",
+            "1. plum\n2. quail\n3. tapir",
+            "- plum\n- quail\n- tapir",
+            "The requested item is plum. The requested item is quail. The requested item is tapir.",
+            "1. The requested item is plum.\n2. The requested item is quail.\n3. The requested item is tapir.",
+            "- The requested item is plum.\n- The requested item is quail.\n- The requested item is tapir."
+          ],
+          "answer": "plum, quail, tapir."
+        },
+        {
+          "id": "batch-lowercase-02",
+          "task": "lowercase",
+          "split": "batch",
+          "prompt": "Convert each of these words to lowercase, preserving order: PARROT, PAPAYA, BISON. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "parrot",
+            "papaya",
+            "bison"
+          ],
+          "tags": [],
+          "answers": [
+            "parrot, papaya, bison.",
+            "1. parrot\n2. papaya\n3. bison",
+            "- parrot\n- papaya\n- bison",
+            "The requested item is parrot. The requested item is papaya. The requested item is bison.",
+            "1. The requested item is parrot.\n2. The requested item is papaya.\n3. The requested item is bison.",
+            "- The requested item is parrot.\n- The requested item is papaya.\n- The requested item is bison."
+          ],
+          "answer": "1. parrot\n2. papaya\n3. bison"
+        },
+        {
+          "id": "batch-filtering-02",
+          "task": "filtering",
+          "split": "batch",
+          "prompt": "Select only the animal names from this collection, preserving order: koala, moose, quince, coconut, cabbage, heron. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "koala",
+            "moose",
+            "heron"
+          ],
+          "tags": [],
+          "answers": [
+            "koala, moose, heron.",
+            "1. koala\n2. moose\n3. heron",
+            "- koala\n- moose\n- heron",
+            "The requested item is koala. The requested item is moose. The requested item is heron.",
+            "1. The requested item is koala.\n2. The requested item is moose.\n3. The requested item is heron.",
+            "- The requested item is koala.\n- The requested item is moose.\n- The requested item is heron."
+          ],
+          "answer": "- koala\n- moose\n- heron"
+        },
+        {
+          "id": "batch-extraction-02",
+          "task": "extraction",
+          "split": "batch",
+          "prompt": "Extract the name field from each record, preserving record order: name=lettuce, note=tomato; name=shark, note=rabbit; name=garlic, note=hazelnut. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "lettuce",
+            "shark",
+            "garlic"
+          ],
+          "tags": [],
+          "answers": [
+            "lettuce, shark, garlic.",
+            "1. lettuce\n2. shark\n3. garlic",
+            "- lettuce\n- shark\n- garlic",
+            "The requested item is lettuce. The requested item is shark. The requested item is garlic.",
+            "1. The requested item is lettuce.\n2. The requested item is shark.\n3. The requested item is garlic.",
+            "- The requested item is lettuce.\n- The requested item is shark.\n- The requested item is garlic."
+          ],
+          "answer": "1. lettuce\n2. shark\n3. garlic"
+        }
+      ]
+    },
+    {
+      "id": "block-3-plain",
+      "block": 3,
+      "style": "plain",
+      "target": "numbered",
+      "documents": [
+        {
+          "id": "batch-sorting-03",
+          "task": "sorting",
+          "split": "batch",
+          "prompt": "Arrange these words alphabetically: millet, rabbit, weasel. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "millet",
+            "rabbit",
+            "weasel"
+          ],
+          "tags": [],
+          "answers": [
+            "millet, rabbit, weasel.",
+            "1. millet\n2. rabbit\n3. weasel",
+            "- millet\n- rabbit\n- weasel",
+            "The requested item is millet. The requested item is rabbit. The requested item is weasel.",
+            "1. The requested item is millet.\n2. The requested item is rabbit.\n3. The requested item is weasel.",
+            "- The requested item is millet.\n- The requested item is rabbit.\n- The requested item is weasel."
+          ],
+          "answer": "millet, rabbit, weasel."
+        },
+        {
+          "id": "batch-lowercase-03",
+          "task": "lowercase",
+          "split": "batch",
+          "prompt": "Convert each of these words to lowercase, preserving order: PANDA, MAGPIE, IGUANA. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "panda",
+            "magpie",
+            "iguana"
+          ],
+          "tags": [],
+          "answers": [
+            "panda, magpie, iguana.",
+            "1. panda\n2. magpie\n3. iguana",
+            "- panda\n- magpie\n- iguana",
+            "The requested item is panda. The requested item is magpie. The requested item is iguana.",
+            "1. The requested item is panda.\n2. The requested item is magpie.\n3. The requested item is iguana.",
+            "- The requested item is panda.\n- The requested item is magpie.\n- The requested item is iguana."
+          ],
+          "answer": "panda, magpie, iguana."
+        },
+        {
+          "id": "batch-filtering-03",
+          "task": "filtering",
+          "split": "batch",
+          "prompt": "Select only the animal names from this collection, preserving order: cucumber, pear, marten, wombat, beetroot, badger. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "marten",
+            "wombat",
+            "badger"
+          ],
+          "tags": [],
+          "answers": [
+            "marten, wombat, badger.",
+            "1. marten\n2. wombat\n3. badger",
+            "- marten\n- wombat\n- badger",
+            "The requested item is marten. The requested item is wombat. The requested item is badger.",
+            "1. The requested item is marten.\n2. The requested item is wombat.\n3. The requested item is badger.",
+            "- The requested item is marten.\n- The requested item is wombat.\n- The requested item is badger."
+          ],
+          "answer": "marten, wombat, badger."
+        },
+        {
+          "id": "batch-extraction-03",
+          "task": "extraction",
+          "split": "batch",
+          "prompt": "Extract the name field from each record, preserving record order: name=barley, note=parrot; name=papaya, note=toucan; name=pepper, note=swan. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "barley",
+            "papaya",
+            "pepper"
+          ],
+          "tags": [],
+          "answers": [
+            "barley, papaya, pepper.",
+            "1. barley\n2. papaya\n3. pepper",
+            "- barley\n- papaya\n- pepper",
+            "The requested item is barley. The requested item is papaya. The requested item is pepper.",
+            "1. The requested item is barley.\n2. The requested item is papaya.\n3. The requested item is pepper.",
+            "- The requested item is barley.\n- The requested item is papaya.\n- The requested item is pepper."
+          ],
+          "answer": "barley, papaya, pepper."
+        }
+      ]
+    },
+    {
+      "id": "block-3-numbered",
+      "block": 3,
+      "style": "numbered",
+      "target": "numbered",
+      "documents": [
+        {
+          "id": "batch-sorting-03",
+          "task": "sorting",
+          "split": "batch",
+          "prompt": "Arrange these words alphabetically: millet, rabbit, weasel. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "millet",
+            "rabbit",
+            "weasel"
+          ],
+          "tags": [],
+          "answers": [
+            "millet, rabbit, weasel.",
+            "1. millet\n2. rabbit\n3. weasel",
+            "- millet\n- rabbit\n- weasel",
+            "The requested item is millet. The requested item is rabbit. The requested item is weasel.",
+            "1. The requested item is millet.\n2. The requested item is rabbit.\n3. The requested item is weasel.",
+            "- The requested item is millet.\n- The requested item is rabbit.\n- The requested item is weasel."
+          ],
+          "answer": "1. millet\n2. rabbit\n3. weasel"
+        },
+        {
+          "id": "batch-lowercase-03",
+          "task": "lowercase",
+          "split": "batch",
+          "prompt": "Convert each of these words to lowercase, preserving order: PANDA, MAGPIE, IGUANA. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "panda",
+            "magpie",
+            "iguana"
+          ],
+          "tags": [],
+          "answers": [
+            "panda, magpie, iguana.",
+            "1. panda\n2. magpie\n3. iguana",
+            "- panda\n- magpie\n- iguana",
+            "The requested item is panda. The requested item is magpie. The requested item is iguana.",
+            "1. The requested item is panda.\n2. The requested item is magpie.\n3. The requested item is iguana.",
+            "- The requested item is panda.\n- The requested item is magpie.\n- The requested item is iguana."
+          ],
+          "answer": "1. panda\n2. magpie\n3. iguana"
+        },
+        {
+          "id": "batch-filtering-03",
+          "task": "filtering",
+          "split": "batch",
+          "prompt": "Select only the animal names from this collection, preserving order: cucumber, pear, marten, wombat, beetroot, badger. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "marten",
+            "wombat",
+            "badger"
+          ],
+          "tags": [],
+          "answers": [
+            "marten, wombat, badger.",
+            "1. marten\n2. wombat\n3. badger",
+            "- marten\n- wombat\n- badger",
+            "The requested item is marten. The requested item is wombat. The requested item is badger.",
+            "1. The requested item is marten.\n2. The requested item is wombat.\n3. The requested item is badger.",
+            "- The requested item is marten.\n- The requested item is wombat.\n- The requested item is badger."
+          ],
+          "answer": "1. marten\n2. wombat\n3. badger"
+        },
+        {
+          "id": "batch-extraction-03",
+          "task": "extraction",
+          "split": "batch",
+          "prompt": "Extract the name field from each record, preserving record order: name=barley, note=parrot; name=papaya, note=toucan; name=pepper, note=swan. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "barley",
+            "papaya",
+            "pepper"
+          ],
+          "tags": [],
+          "answers": [
+            "barley, papaya, pepper.",
+            "1. barley\n2. papaya\n3. pepper",
+            "- barley\n- papaya\n- pepper",
+            "The requested item is barley. The requested item is papaya. The requested item is pepper.",
+            "1. The requested item is barley.\n2. The requested item is papaya.\n3. The requested item is pepper.",
+            "- The requested item is barley.\n- The requested item is papaya.\n- The requested item is pepper."
+          ],
+          "answer": "1. barley\n2. papaya\n3. pepper"
+        }
+      ]
+    },
+    {
+      "id": "block-3-bullets",
+      "block": 3,
+      "style": "bullets",
+      "target": "bullets",
+      "documents": [
+        {
+          "id": "batch-sorting-03",
+          "task": "sorting",
+          "split": "batch",
+          "prompt": "Arrange these words alphabetically: millet, rabbit, weasel. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "millet",
+            "rabbit",
+            "weasel"
+          ],
+          "tags": [],
+          "answers": [
+            "millet, rabbit, weasel.",
+            "1. millet\n2. rabbit\n3. weasel",
+            "- millet\n- rabbit\n- weasel",
+            "The requested item is millet. The requested item is rabbit. The requested item is weasel.",
+            "1. The requested item is millet.\n2. The requested item is rabbit.\n3. The requested item is weasel.",
+            "- The requested item is millet.\n- The requested item is rabbit.\n- The requested item is weasel."
+          ],
+          "answer": "- millet\n- rabbit\n- weasel"
+        },
+        {
+          "id": "batch-lowercase-03",
+          "task": "lowercase",
+          "split": "batch",
+          "prompt": "Convert each of these words to lowercase, preserving order: PANDA, MAGPIE, IGUANA. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "panda",
+            "magpie",
+            "iguana"
+          ],
+          "tags": [],
+          "answers": [
+            "panda, magpie, iguana.",
+            "1. panda\n2. magpie\n3. iguana",
+            "- panda\n- magpie\n- iguana",
+            "The requested item is panda. The requested item is magpie. The requested item is iguana.",
+            "1. The requested item is panda.\n2. The requested item is magpie.\n3. The requested item is iguana.",
+            "- The requested item is panda.\n- The requested item is magpie.\n- The requested item is iguana."
+          ],
+          "answer": "- panda\n- magpie\n- iguana"
+        },
+        {
+          "id": "batch-filtering-03",
+          "task": "filtering",
+          "split": "batch",
+          "prompt": "Select only the animal names from this collection, preserving order: cucumber, pear, marten, wombat, beetroot, badger. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "marten",
+            "wombat",
+            "badger"
+          ],
+          "tags": [],
+          "answers": [
+            "marten, wombat, badger.",
+            "1. marten\n2. wombat\n3. badger",
+            "- marten\n- wombat\n- badger",
+            "The requested item is marten. The requested item is wombat. The requested item is badger.",
+            "1. The requested item is marten.\n2. The requested item is wombat.\n3. The requested item is badger.",
+            "- The requested item is marten.\n- The requested item is wombat.\n- The requested item is badger."
+          ],
+          "answer": "- marten\n- wombat\n- badger"
+        },
+        {
+          "id": "batch-extraction-03",
+          "task": "extraction",
+          "split": "batch",
+          "prompt": "Extract the name field from each record, preserving record order: name=barley, note=parrot; name=papaya, note=toucan; name=pepper, note=swan. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "barley",
+            "papaya",
+            "pepper"
+          ],
+          "tags": [],
+          "answers": [
+            "barley, papaya, pepper.",
+            "1. barley\n2. papaya\n3. pepper",
+            "- barley\n- papaya\n- pepper",
+            "The requested item is barley. The requested item is papaya. The requested item is pepper.",
+            "1. The requested item is barley.\n2. The requested item is papaya.\n3. The requested item is pepper.",
+            "- The requested item is barley.\n- The requested item is papaya.\n- The requested item is pepper."
+          ],
+          "answer": "- barley\n- papaya\n- pepper"
+        }
+      ]
+    },
+    {
+      "id": "block-3-mixed",
+      "block": 3,
+      "style": "mixed",
+      "target": "numbered",
+      "documents": [
+        {
+          "id": "batch-sorting-03",
+          "task": "sorting",
+          "split": "batch",
+          "prompt": "Arrange these words alphabetically: millet, rabbit, weasel. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "millet",
+            "rabbit",
+            "weasel"
+          ],
+          "tags": [],
+          "answers": [
+            "millet, rabbit, weasel.",
+            "1. millet\n2. rabbit\n3. weasel",
+            "- millet\n- rabbit\n- weasel",
+            "The requested item is millet. The requested item is rabbit. The requested item is weasel.",
+            "1. The requested item is millet.\n2. The requested item is rabbit.\n3. The requested item is weasel.",
+            "- The requested item is millet.\n- The requested item is rabbit.\n- The requested item is weasel."
+          ],
+          "answer": "millet, rabbit, weasel."
+        },
+        {
+          "id": "batch-lowercase-03",
+          "task": "lowercase",
+          "split": "batch",
+          "prompt": "Convert each of these words to lowercase, preserving order: PANDA, MAGPIE, IGUANA. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "panda",
+            "magpie",
+            "iguana"
+          ],
+          "tags": [],
+          "answers": [
+            "panda, magpie, iguana.",
+            "1. panda\n2. magpie\n3. iguana",
+            "- panda\n- magpie\n- iguana",
+            "The requested item is panda. The requested item is magpie. The requested item is iguana.",
+            "1. The requested item is panda.\n2. The requested item is magpie.\n3. The requested item is iguana.",
+            "- The requested item is panda.\n- The requested item is magpie.\n- The requested item is iguana."
+          ],
+          "answer": "1. panda\n2. magpie\n3. iguana"
+        },
+        {
+          "id": "batch-filtering-03",
+          "task": "filtering",
+          "split": "batch",
+          "prompt": "Select only the animal names from this collection, preserving order: cucumber, pear, marten, wombat, beetroot, badger. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "marten",
+            "wombat",
+            "badger"
+          ],
+          "tags": [],
+          "answers": [
+            "marten, wombat, badger.",
+            "1. marten\n2. wombat\n3. badger",
+            "- marten\n- wombat\n- badger",
+            "The requested item is marten. The requested item is wombat. The requested item is badger.",
+            "1. The requested item is marten.\n2. The requested item is wombat.\n3. The requested item is badger.",
+            "- The requested item is marten.\n- The requested item is wombat.\n- The requested item is badger."
+          ],
+          "answer": "- marten\n- wombat\n- badger"
+        },
+        {
+          "id": "batch-extraction-03",
+          "task": "extraction",
+          "split": "batch",
+          "prompt": "Extract the name field from each record, preserving record order: name=barley, note=parrot; name=papaya, note=toucan; name=pepper, note=swan. Give each requested value exactly once. Choose your own presentation.",
+          "expected": [
+            "barley",
+            "papaya",
+            "pepper"
+          ],
+          "tags": [],
+          "answers": [
+            "barley, papaya, pepper.",
+            "1. barley\n2. papaya\n3. pepper",
+            "- barley\n- papaya\n- pepper",
+            "The requested item is barley. The requested item is papaya. The requested item is pepper.",
+            "1. The requested item is barley.\n2. The requested item is papaya.\n3. The requested item is pepper.",
+            "- The requested item is barley.\n- The requested item is papaya.\n- The requested item is pepper."
+          ],
+          "answer": "1. barley\n2. papaya\n3. pepper"
+        }
+      ]
+    }
+  ],
+  "semantic": [
+    {
+      "id": "semantic-sorting-00",
+      "task": "sorting",
+      "split": "semantic",
+      "prompt": "Arrange these words alphabetically: swan, wombat, barley. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "barley",
+        "swan",
+        "wombat"
+      ],
+      "tags": [],
+      "answers": [
+        "barley, swan, wombat.",
+        "1. barley\n2. swan\n3. wombat",
+        "- barley\n- swan\n- wombat",
+        "The requested item is barley. The requested item is swan. The requested item is wombat.",
+        "1. The requested item is barley.\n2. The requested item is swan.\n3. The requested item is wombat.",
+        "- The requested item is barley.\n- The requested item is swan.\n- The requested item is wombat."
+      ]
+    },
+    {
+      "id": "semantic-lowercase-00",
+      "task": "lowercase",
+      "split": "semantic",
+      "prompt": "Convert each of these words to lowercase, preserving order: TIGER, BEAVER, PEANUT. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "tiger",
+        "beaver",
+        "peanut"
+      ],
+      "tags": [],
+      "answers": [
+        "tiger, beaver, peanut.",
+        "1. tiger\n2. beaver\n3. peanut",
+        "- tiger\n- beaver\n- peanut",
+        "The requested item is tiger. The requested item is beaver. The requested item is peanut.",
+        "1. The requested item is tiger.\n2. The requested item is beaver.\n3. The requested item is peanut.",
+        "- The requested item is tiger.\n- The requested item is beaver.\n- The requested item is peanut."
+      ]
+    },
+    {
+      "id": "semantic-filtering-00",
+      "task": "filtering",
+      "split": "semantic",
+      "prompt": "Select only the animal names from this collection, preserving order: beaver, onion, camel, raisin, heron, turnip. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "beaver",
+        "camel",
+        "heron"
+      ],
+      "tags": [],
+      "answers": [
+        "beaver, camel, heron.",
+        "1. beaver\n2. camel\n3. heron",
+        "- beaver\n- camel\n- heron",
+        "The requested item is beaver. The requested item is camel. The requested item is heron.",
+        "1. The requested item is beaver.\n2. The requested item is camel.\n3. The requested item is heron.",
+        "- The requested item is beaver.\n- The requested item is camel.\n- The requested item is heron."
+      ]
+    },
+    {
+      "id": "semantic-extraction-00",
+      "task": "extraction",
+      "split": "semantic",
+      "prompt": "Extract the name field from each record, preserving record order: name=onion, note=newt; name=pumpkin, note=mango; name=rabbit, note=raven. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "onion",
+        "pumpkin",
+        "rabbit"
+      ],
+      "tags": [],
+      "answers": [
+        "onion, pumpkin, rabbit.",
+        "1. onion\n2. pumpkin\n3. rabbit",
+        "- onion\n- pumpkin\n- rabbit",
+        "The requested item is onion. The requested item is pumpkin. The requested item is rabbit.",
+        "1. The requested item is onion.\n2. The requested item is pumpkin.\n3. The requested item is rabbit.",
+        "- The requested item is onion.\n- The requested item is pumpkin.\n- The requested item is rabbit."
+      ]
+    },
+    {
+      "id": "semantic-sorting-01",
+      "task": "sorting",
+      "split": "semantic",
+      "prompt": "Arrange these words alphabetically: pepper, garlic, seal. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "garlic",
+        "pepper",
+        "seal"
+      ],
+      "tags": [],
+      "answers": [
+        "garlic, pepper, seal.",
+        "1. garlic\n2. pepper\n3. seal",
+        "- garlic\n- pepper\n- seal",
+        "The requested item is garlic. The requested item is pepper. The requested item is seal.",
+        "1. The requested item is garlic.\n2. The requested item is pepper.\n3. The requested item is seal.",
+        "- The requested item is garlic.\n- The requested item is pepper.\n- The requested item is seal."
+      ]
+    },
+    {
+      "id": "semantic-lowercase-01",
+      "task": "lowercase",
+      "split": "semantic",
+      "prompt": "Convert each of these words to lowercase, preserving order: AVOCADO, ONION, CAMEL. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "avocado",
+        "onion",
+        "camel"
+      ],
+      "tags": [],
+      "answers": [
+        "avocado, onion, camel.",
+        "1. avocado\n2. onion\n3. camel",
+        "- avocado\n- onion\n- camel",
+        "The requested item is avocado. The requested item is onion. The requested item is camel.",
+        "1. The requested item is avocado.\n2. The requested item is onion.\n3. The requested item is camel.",
+        "- The requested item is avocado.\n- The requested item is onion.\n- The requested item is camel."
+      ]
+    },
+    {
+      "id": "semantic-filtering-01",
+      "task": "filtering",
+      "split": "semantic",
+      "prompt": "Select only the animal names from this collection, preserving order: nectarine, toucan, quail, walrus, orange, potato. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "toucan",
+        "quail",
+        "walrus"
+      ],
+      "tags": [],
+      "answers": [
+        "toucan, quail, walrus.",
+        "1. toucan\n2. quail\n3. walrus",
+        "- toucan\n- quail\n- walrus",
+        "The requested item is toucan. The requested item is quail. The requested item is walrus.",
+        "1. The requested item is toucan.\n2. The requested item is quail.\n3. The requested item is walrus.",
+        "- The requested item is toucan.\n- The requested item is quail.\n- The requested item is walrus."
+      ]
+    },
+    {
+      "id": "semantic-extraction-01",
+      "task": "extraction",
+      "split": "semantic",
+      "prompt": "Extract the name field from each record, preserving record order: name=coyote, note=badger; name=carrot, note=newt; name=toucan, note=salmon. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "coyote",
+        "carrot",
+        "toucan"
+      ],
+      "tags": [],
+      "answers": [
+        "coyote, carrot, toucan.",
+        "1. coyote\n2. carrot\n3. toucan",
+        "- coyote\n- carrot\n- toucan",
+        "The requested item is coyote. The requested item is carrot. The requested item is toucan.",
+        "1. The requested item is coyote.\n2. The requested item is carrot.\n3. The requested item is toucan.",
+        "- The requested item is coyote.\n- The requested item is carrot.\n- The requested item is toucan."
+      ]
+    }
+  ],
+  "probes": [
+    {
+      "id": "calibration-sorting-00",
+      "task": "sorting",
+      "split": "calibration",
+      "prompt": "Arrange these words alphabetically: cucumber, cabbage, toucan. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "cabbage",
+        "cucumber",
+        "toucan"
+      ],
+      "tags": [],
+      "answers": [
+        "cabbage, cucumber, toucan.",
+        "1. cabbage\n2. cucumber\n3. toucan",
+        "- cabbage\n- cucumber\n- toucan",
+        "The requested item is cabbage. The requested item is cucumber. The requested item is toucan.",
+        "1. The requested item is cabbage.\n2. The requested item is cucumber.\n3. The requested item is toucan.",
+        "- The requested item is cabbage.\n- The requested item is cucumber.\n- The requested item is toucan."
+      ]
+    },
+    {
+      "id": "calibration-lowercase-00",
+      "task": "lowercase",
+      "split": "calibration",
+      "prompt": "Convert each of these words to lowercase, preserving order: MARTEN, CHERRY, TAPIR. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "marten",
+        "cherry",
+        "tapir"
+      ],
+      "tags": [],
+      "answers": [
+        "marten, cherry, tapir.",
+        "1. marten\n2. cherry\n3. tapir",
+        "- marten\n- cherry\n- tapir",
+        "The requested item is marten. The requested item is cherry. The requested item is tapir.",
+        "1. The requested item is marten.\n2. The requested item is cherry.\n3. The requested item is tapir.",
+        "- The requested item is marten.\n- The requested item is cherry.\n- The requested item is tapir."
+      ]
+    },
+    {
+      "id": "calibration-filtering-00",
+      "task": "filtering",
+      "split": "calibration",
+      "prompt": "Select only the animal names from this collection, preserving order: puffin, ginger, moose, magpie, quince, millet. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "puffin",
+        "moose",
+        "magpie"
+      ],
+      "tags": [],
+      "answers": [
+        "puffin, moose, magpie.",
+        "1. puffin\n2. moose\n3. magpie",
+        "- puffin\n- moose\n- magpie",
+        "The requested item is puffin. The requested item is moose. The requested item is magpie.",
+        "1. The requested item is puffin.\n2. The requested item is moose.\n3. The requested item is magpie.",
+        "- The requested item is puffin.\n- The requested item is moose.\n- The requested item is magpie."
+      ]
+    },
+    {
+      "id": "calibration-extraction-00",
+      "task": "extraction",
+      "split": "calibration",
+      "prompt": "Extract the name field from each record, preserving record order: name=stoat, note=ginger; name=bison, note=quail; name=garlic, note=banana. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "stoat",
+        "bison",
+        "garlic"
+      ],
+      "tags": [],
+      "answers": [
+        "stoat, bison, garlic.",
+        "1. stoat\n2. bison\n3. garlic",
+        "- stoat\n- bison\n- garlic",
+        "The requested item is stoat. The requested item is bison. The requested item is garlic.",
+        "1. The requested item is stoat.\n2. The requested item is bison.\n3. The requested item is garlic.",
+        "- The requested item is stoat.\n- The requested item is bison.\n- The requested item is garlic."
+      ]
+    },
+    {
+      "id": "calibration-sorting-01",
+      "task": "sorting",
+      "split": "calibration",
+      "prompt": "Arrange these words alphabetically: viper, cabbage, radish. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "cabbage",
+        "radish",
+        "viper"
+      ],
+      "tags": [],
+      "answers": [
+        "cabbage, radish, viper.",
+        "1. cabbage\n2. radish\n3. viper",
+        "- cabbage\n- radish\n- viper",
+        "The requested item is cabbage. The requested item is radish. The requested item is viper.",
+        "1. The requested item is cabbage.\n2. The requested item is radish.\n3. The requested item is viper.",
+        "- The requested item is cabbage.\n- The requested item is radish.\n- The requested item is viper."
+      ]
+    },
+    {
+      "id": "calibration-lowercase-01",
+      "task": "lowercase",
+      "split": "calibration",
+      "prompt": "Convert each of these words to lowercase, preserving order: PEAR, SALMON, PLUM. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "pear",
+        "salmon",
+        "plum"
+      ],
+      "tags": [],
+      "answers": [
+        "pear, salmon, plum.",
+        "1. pear\n2. salmon\n3. plum",
+        "- pear\n- salmon\n- plum",
+        "The requested item is pear. The requested item is salmon. The requested item is plum.",
+        "1. The requested item is pear.\n2. The requested item is salmon.\n3. The requested item is plum.",
+        "- The requested item is pear.\n- The requested item is salmon.\n- The requested item is plum."
+      ]
+    },
+    {
+      "id": "calibration-filtering-01",
+      "task": "filtering",
+      "split": "calibration",
+      "prompt": "Select only the animal names from this collection, preserving order: iguana, pepper, badger, raisin, orange, viper. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "iguana",
+        "badger",
+        "viper"
+      ],
+      "tags": [],
+      "answers": [
+        "iguana, badger, viper.",
+        "1. iguana\n2. badger\n3. viper",
+        "- iguana\n- badger\n- viper",
+        "The requested item is iguana. The requested item is badger. The requested item is viper.",
+        "1. The requested item is iguana.\n2. The requested item is badger.\n3. The requested item is viper.",
+        "- The requested item is iguana.\n- The requested item is badger.\n- The requested item is viper."
+      ]
+    },
+    {
+      "id": "calibration-extraction-01",
+      "task": "extraction",
+      "split": "calibration",
+      "prompt": "Extract the name field from each record, preserving record order: name=cougar, note=panda; name=orange, note=walrus; name=jaguar, note=toucan. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "cougar",
+        "orange",
+        "jaguar"
+      ],
+      "tags": [],
+      "answers": [
+        "cougar, orange, jaguar.",
+        "1. cougar\n2. orange\n3. jaguar",
+        "- cougar\n- orange\n- jaguar",
+        "The requested item is cougar. The requested item is orange. The requested item is jaguar.",
+        "1. The requested item is cougar.\n2. The requested item is orange.\n3. The requested item is jaguar.",
+        "- The requested item is cougar.\n- The requested item is orange.\n- The requested item is jaguar."
+      ]
+    },
+    {
+      "id": "evaluation-sorting-00",
+      "task": "sorting",
+      "split": "evaluation",
+      "prompt": "Produce the alphabetical ordering of this word collection: turnip, stoat, beetroot. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "beetroot",
+        "stoat",
+        "turnip"
+      ],
+      "tags": [],
+      "answers": [
+        "beetroot, stoat, turnip.",
+        "1. beetroot\n2. stoat\n3. turnip",
+        "- beetroot\n- stoat\n- turnip",
+        "The requested item is beetroot. The requested item is stoat. The requested item is turnip.",
+        "1. The requested item is beetroot.\n2. The requested item is stoat.\n3. The requested item is turnip.",
+        "- The requested item is beetroot.\n- The requested item is stoat.\n- The requested item is turnip."
+      ]
+    },
+    {
+      "id": "evaluation-lowercase-00",
+      "task": "lowercase",
+      "split": "evaluation",
+      "prompt": "Rewrite the following entries using only lowercase letters, in sequence: TOMATO, IGUANA, BANANA. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "tomato",
+        "iguana",
+        "banana"
+      ],
+      "tags": [],
+      "answers": [
+        "tomato, iguana, banana.",
+        "1. tomato\n2. iguana\n3. banana",
+        "- tomato\n- iguana\n- banana",
+        "The requested item is tomato. The requested item is iguana. The requested item is banana.",
+        "1. The requested item is tomato.\n2. The requested item is iguana.\n3. The requested item is banana.",
+        "- The requested item is tomato.\n- The requested item is iguana.\n- The requested item is banana."
+      ]
+    },
+    {
+      "id": "evaluation-filtering-00",
+      "task": "filtering",
+      "split": "evaluation",
+      "prompt": "Keep the animals and omit the foods, maintaining their sequence: cashew, heron, barley, parrot, otter, nectarine. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "heron",
+        "parrot",
+        "otter"
+      ],
+      "tags": [],
+      "answers": [
+        "heron, parrot, otter.",
+        "1. heron\n2. parrot\n3. otter",
+        "- heron\n- parrot\n- otter",
+        "The requested item is heron. The requested item is parrot. The requested item is otter.",
+        "1. The requested item is heron.\n2. The requested item is parrot.\n3. The requested item is otter.",
+        "- The requested item is heron.\n- The requested item is parrot.\n- The requested item is otter."
+      ]
+    },
+    {
+      "id": "evaluation-extraction-00",
+      "task": "extraction",
+      "split": "evaluation",
+      "prompt": "Return the values labeled name, in record sequence, from: name=wombat, note=pear; name=seal, note=iguana; name=coconut, note=jaguar. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "wombat",
+        "seal",
+        "coconut"
+      ],
+      "tags": [],
+      "answers": [
+        "wombat, seal, coconut.",
+        "1. wombat\n2. seal\n3. coconut",
+        "- wombat\n- seal\n- coconut",
+        "The requested item is wombat. The requested item is seal. The requested item is coconut.",
+        "1. The requested item is wombat.\n2. The requested item is seal.\n3. The requested item is coconut.",
+        "- The requested item is wombat.\n- The requested item is seal.\n- The requested item is coconut."
+      ]
+    },
+    {
+      "id": "evaluation-sorting-01",
+      "task": "sorting",
+      "split": "evaluation",
+      "prompt": "Produce the alphabetical ordering of this word collection: donkey, tapir, mushroom. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "donkey",
+        "mushroom",
+        "tapir"
+      ],
+      "tags": [],
+      "answers": [
+        "donkey, mushroom, tapir.",
+        "1. donkey\n2. mushroom\n3. tapir",
+        "- donkey\n- mushroom\n- tapir",
+        "The requested item is donkey. The requested item is mushroom. The requested item is tapir.",
+        "1. The requested item is donkey.\n2. The requested item is mushroom.\n3. The requested item is tapir.",
+        "- The requested item is donkey.\n- The requested item is mushroom.\n- The requested item is tapir."
+      ]
+    },
+    {
+      "id": "evaluation-lowercase-01",
+      "task": "lowercase",
+      "split": "evaluation",
+      "prompt": "Rewrite the following entries using only lowercase letters, in sequence: BEAVER, PEANUT, ONION. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "beaver",
+        "peanut",
+        "onion"
+      ],
+      "tags": [],
+      "answers": [
+        "beaver, peanut, onion.",
+        "1. beaver\n2. peanut\n3. onion",
+        "- beaver\n- peanut\n- onion",
+        "The requested item is beaver. The requested item is peanut. The requested item is onion.",
+        "1. The requested item is beaver.\n2. The requested item is peanut.\n3. The requested item is onion.",
+        "- The requested item is beaver.\n- The requested item is peanut.\n- The requested item is onion."
+      ]
+    },
+    {
+      "id": "evaluation-filtering-01",
+      "task": "filtering",
+      "split": "evaluation",
+      "prompt": "Keep the animals and omit the foods, maintaining their sequence: pumpkin, viper, millet, raven, newt, turnip. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "viper",
+        "raven",
+        "newt"
+      ],
+      "tags": [],
+      "answers": [
+        "viper, raven, newt.",
+        "1. viper\n2. raven\n3. newt",
+        "- viper\n- raven\n- newt",
+        "The requested item is viper. The requested item is raven. The requested item is newt.",
+        "1. The requested item is viper.\n2. The requested item is raven.\n3. The requested item is newt.",
+        "- The requested item is viper.\n- The requested item is raven.\n- The requested item is newt."
+      ]
+    },
+    {
+      "id": "evaluation-extraction-01",
+      "task": "extraction",
+      "split": "evaluation",
+      "prompt": "Return the values labeled name, in record sequence, from: name=cougar, note=toucan; name=potato, note=otter; name=shark, note=stoat. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "cougar",
+        "potato",
+        "shark"
+      ],
+      "tags": [],
+      "answers": [
+        "cougar, potato, shark.",
+        "1. cougar\n2. potato\n3. shark",
+        "- cougar\n- potato\n- shark",
+        "The requested item is cougar. The requested item is potato. The requested item is shark.",
+        "1. The requested item is cougar.\n2. The requested item is potato.\n3. The requested item is shark.",
+        "- The requested item is cougar.\n- The requested item is potato.\n- The requested item is shark."
+      ]
+    },
+    {
+      "id": "evaluation-sorting-02",
+      "task": "sorting",
+      "split": "evaluation",
+      "prompt": "Produce the alphabetical ordering of this word collection: lemur, viper, cabbage. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "cabbage",
+        "lemur",
+        "viper"
+      ],
+      "tags": [],
+      "answers": [
+        "cabbage, lemur, viper.",
+        "1. cabbage\n2. lemur\n3. viper",
+        "- cabbage\n- lemur\n- viper",
+        "The requested item is cabbage. The requested item is lemur. The requested item is viper.",
+        "1. The requested item is cabbage.\n2. The requested item is lemur.\n3. The requested item is viper.",
+        "- The requested item is cabbage.\n- The requested item is lemur.\n- The requested item is viper."
+      ]
+    },
+    {
+      "id": "evaluation-lowercase-02",
+      "task": "lowercase",
+      "split": "evaluation",
+      "prompt": "Rewrite the following entries using only lowercase letters, in sequence: PAPAYA, CARROT, CHERRY. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "papaya",
+        "carrot",
+        "cherry"
+      ],
+      "tags": [],
+      "answers": [
+        "papaya, carrot, cherry.",
+        "1. papaya\n2. carrot\n3. cherry",
+        "- papaya\n- carrot\n- cherry",
+        "The requested item is papaya. The requested item is carrot. The requested item is cherry.",
+        "1. The requested item is papaya.\n2. The requested item is carrot.\n3. The requested item is cherry.",
+        "- The requested item is papaya.\n- The requested item is carrot.\n- The requested item is cherry."
+      ]
+    },
+    {
+      "id": "evaluation-filtering-02",
+      "task": "filtering",
+      "split": "evaluation",
+      "prompt": "Keep the animals and omit the foods, maintaining their sequence: stoat, ginger, newt, beaver, peanut, garlic. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "stoat",
+        "newt",
+        "beaver"
+      ],
+      "tags": [],
+      "answers": [
+        "stoat, newt, beaver.",
+        "1. stoat\n2. newt\n3. beaver",
+        "- stoat\n- newt\n- beaver",
+        "The requested item is stoat. The requested item is newt. The requested item is beaver.",
+        "1. The requested item is stoat.\n2. The requested item is newt.\n3. The requested item is beaver.",
+        "- The requested item is stoat.\n- The requested item is newt.\n- The requested item is beaver."
+      ]
+    },
+    {
+      "id": "evaluation-extraction-02",
+      "task": "extraction",
+      "split": "evaluation",
+      "prompt": "Return the values labeled name, in record sequence, from: name=nectarine, note=turnip; name=garlic, note=viper; name=cherry, note=papaya. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "nectarine",
+        "garlic",
+        "cherry"
+      ],
+      "tags": [],
+      "answers": [
+        "nectarine, garlic, cherry.",
+        "1. nectarine\n2. garlic\n3. cherry",
+        "- nectarine\n- garlic\n- cherry",
+        "The requested item is nectarine. The requested item is garlic. The requested item is cherry.",
+        "1. The requested item is nectarine.\n2. The requested item is garlic.\n3. The requested item is cherry.",
+        "- The requested item is nectarine.\n- The requested item is garlic.\n- The requested item is cherry."
+      ]
+    },
+    {
+      "id": "evaluation-sorting-03",
+      "task": "sorting",
+      "split": "evaluation",
+      "prompt": "Produce the alphabetical ordering of this word collection: cashew, weasel, cabbage. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "cabbage",
+        "cashew",
+        "weasel"
+      ],
+      "tags": [],
+      "answers": [
+        "cabbage, cashew, weasel.",
+        "1. cabbage\n2. cashew\n3. weasel",
+        "- cabbage\n- cashew\n- weasel",
+        "The requested item is cabbage. The requested item is cashew. The requested item is weasel.",
+        "1. The requested item is cabbage.\n2. The requested item is cashew.\n3. The requested item is weasel.",
+        "- The requested item is cabbage.\n- The requested item is cashew.\n- The requested item is weasel."
+      ]
+    },
+    {
+      "id": "evaluation-lowercase-03",
+      "task": "lowercase",
+      "split": "evaluation",
+      "prompt": "Rewrite the following entries using only lowercase letters, in sequence: COCONUT, SPINACH, TAPIR. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "coconut",
+        "spinach",
+        "tapir"
+      ],
+      "tags": [],
+      "answers": [
+        "coconut, spinach, tapir.",
+        "1. coconut\n2. spinach\n3. tapir",
+        "- coconut\n- spinach\n- tapir",
+        "The requested item is coconut. The requested item is spinach. The requested item is tapir.",
+        "1. The requested item is coconut.\n2. The requested item is spinach.\n3. The requested item is tapir.",
+        "- The requested item is coconut.\n- The requested item is spinach.\n- The requested item is tapir."
+      ]
+    },
+    {
+      "id": "evaluation-filtering-03",
+      "task": "filtering",
+      "split": "evaluation",
+      "prompt": "Keep the animals and omit the foods, maintaining their sequence: papaya, salmon, lentil, plum, marten, newt. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "salmon",
+        "marten",
+        "newt"
+      ],
+      "tags": [],
+      "answers": [
+        "salmon, marten, newt.",
+        "1. salmon\n2. marten\n3. newt",
+        "- salmon\n- marten\n- newt",
+        "The requested item is salmon. The requested item is marten. The requested item is newt.",
+        "1. The requested item is salmon.\n2. The requested item is marten.\n3. The requested item is newt.",
+        "- The requested item is salmon.\n- The requested item is marten.\n- The requested item is newt."
+      ]
+    },
+    {
+      "id": "evaluation-extraction-03",
+      "task": "extraction",
+      "split": "evaluation",
+      "prompt": "Return the values labeled name, in record sequence, from: name=plum, note=ferret; name=raven, note=barley; name=potato, note=cherry. Give each requested value exactly once. Choose your own presentation.",
+      "expected": [
+        "plum",
+        "raven",
+        "potato"
+      ],
+      "tags": [],
+      "answers": [
+        "plum, raven, potato.",
+        "1. plum\n2. raven\n3. potato",
+        "- plum\n- raven\n- potato",
+        "The requested item is plum. The requested item is raven. The requested item is potato.",
+        "1. The requested item is plum.\n2. The requested item is raven.\n3. The requested item is potato.",
+        "- The requested item is plum.\n- The requested item is raven.\n- The requested item is potato."
+      ]
+    }
+  ],
+  "vocabulary": [
+    "badger",
+    "beaver",
+    "bison",
+    "camel",
+    "cougar",
+    "coyote",
+    "donkey",
+    "ferret",
+    "gecko",
+    "heron",
+    "iguana",
+    "jaguar",
+    "koala",
+    "lemur",
+    "llama",
+    "lynx",
+    "magpie",
+    "marten",
+    "moose",
+    "newt",
+    "otter",
+    "panda",
+    "parrot",
+    "puffin",
+    "quail",
+    "rabbit",
+    "raven",
+    "salmon",
+    "seal",
+    "shark",
+    "sloth",
+    "stoat",
+    "swan",
+    "tapir",
+    "tiger",
+    "toucan",
+    "turtle",
+    "viper",
+    "walrus",
+    "weasel",
+    "wombat",
+    "zebra",
+    "apricot",
+    "avocado",
+    "banana",
+    "barley",
+    "beetroot",
+    "broccoli",
+    "cabbage",
+    "carrot",
+    "cashew",
+    "celery",
+    "cherry",
+    "coconut",
+    "cucumber",
+    "garlic",
+    "ginger",
+    "hazelnut",
+    "lemon",
+    "lentil",
+    "lettuce",
+    "mango",
+    "melon",
+    "millet",
+    "mushroom",
+    "nectarine",
+    "onion",
+    "orange",
+    "papaya",
+    "peach",
+    "peanut",
+    "pear",
+    "pepper",
+    "plum",
+    "potato",
+    "pumpkin",
+    "quince",
+    "radish",
+    "raisin",
+    "spinach",
+    "squash",
+    "tomato",
+    "turnip",
+    "walnut"
+  ],
+  "limitations": "Four simple controlled task families and four paired batch-content blocks. Fresh instances do not establish new domains or untouched confirmation; adapters and broad task families are reused."
+}

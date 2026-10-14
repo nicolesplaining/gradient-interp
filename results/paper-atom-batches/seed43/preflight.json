@@ -1,0 +1,17 @@
+{
+  "completed_unix": 1791943191.9397001,
+  "specification_sha256": "92ae4cfbfd8e5e794209ee04cc3f917a4ac769e9bbc9e7610f7c463dc9dd8ba8",
+  "tensors": 136,
+  "gradient_elements": 2228224,
+  "finite_gradient": true,
+  "max_score_error_per_token": 1.003468241833616e-07,
+  "adapter_restored": true,
+  "generation_restored": true,
+  "peak_memory_bytes": 29465451520,
+  "outputs_not_inspected": true,
+  "atom_bank_shape": [
+    500,
+    2228224
+  ],
+  "long_training_gradient_checked": true
+}

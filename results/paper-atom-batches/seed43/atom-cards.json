@@ -1,0 +1,580 @@
+{
+  "numbered": {
+    "atom_index": 284,
+    "orientation": 1,
+    "description": "A descent contribution associated with answers presented as numbered lists.",
+    "source": "Prior discovery-training top20 detector purity, then coherence; no new outcomes used.",
+    "status": "Candidate hypothesis; prior steering suggested formatting effects with length confounding. Neither semantics nor selectivity is assumed.",
+    "training_examples": [
+      {
+        "index": 2823,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Identify three key processes in cellular respiration."
+          },
+          {
+            "role": "assistant",
+            "content": "1. Glycolysis\n2. Krebs Cycle\n3. Electron Transport Chain"
+          }
+        ]
+      },
+      {
+        "index": 1334,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name three jobs related to computer programming"
+          },
+          {
+            "role": "assistant",
+            "content": "1. Software Engineer\n2. Web Developer\n3. Data Scientist"
+          }
+        ]
+      },
+      {
+        "index": 3674,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "List five examples of nonverbal communication"
+          },
+          {
+            "role": "assistant",
+            "content": "1. Facial expressions\n2. Body posture\n3. Gestures\n4. Eye contact\n5. Tone of voice"
+          }
+        ]
+      },
+      {
+        "index": 2804,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name at least 3 different events that make up a triathlon."
+          },
+          {
+            "role": "assistant",
+            "content": "1. Swim\n2. Bike\n3. Run"
+          }
+        ]
+      },
+      {
+        "index": 2862,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name five components of a well-balanced diet."
+          },
+          {
+            "role": "assistant",
+            "content": "1. Fruits\n2. Vegetables\n3. Protein\n4. Grains\n5. Dairy"
+          }
+        ]
+      },
+      {
+        "index": 1931,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "List 5 pieces of equipment needed to practice yoga."
+          },
+          {
+            "role": "assistant",
+            "content": "1. Yoga mat\n2. Blocks\n3. Strap\n4. Blanket\n5. Bolster"
+          }
+        ]
+      },
+      {
+        "index": 2171,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "List five safari animals"
+          },
+          {
+            "role": "assistant",
+            "content": "1. Lion\n2. Elephant\n3. Zebra\n4. Giraffe\n5. Rhino"
+          }
+        ]
+      },
+      {
+        "index": 4090,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name five animals with stripes."
+          },
+          {
+            "role": "assistant",
+            "content": "1. Zebra\n2. Tiger\n3. Skunk\n4. Striped Hyena\n5. Honey Badger"
+          }
+        ]
+      },
+      {
+        "index": 2715,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "List four of the offenses that are considered a felony in the United States"
+          },
+          {
+            "role": "assistant",
+            "content": "1. Murder\n2. Robbery\n3. Rape\n4. Arson"
+          }
+        ]
+      },
+      {
+        "index": 2913,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "List the seven essential nutrients."
+          },
+          {
+            "role": "assistant",
+            "content": "1. Carbohydrates\n2. Proteins\n3. Fats\n4. Vitamins\n5. Minerals\n6. Water\n7. Fiber"
+          }
+        ]
+      },
+      {
+        "index": 1717,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "List three spicies of seals."
+          },
+          {
+            "role": "assistant",
+            "content": "1. Harp Seal\n2. Ringed Seal\n3. Elephant Seal"
+          }
+        ]
+      },
+      {
+        "index": 1880,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name 2 activities that you can do to improve your mental health"
+          },
+          {
+            "role": "assistant",
+            "content": "1. Exercise\n2. Meditation"
+          }
+        ]
+      },
+      {
+        "index": 4357,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name five major rivers in India."
+          },
+          {
+            "role": "assistant",
+            "content": "1. Ganges\n2. Yamuna\n3. Brahmaputra\n4. Indus\n5. Godavari"
+          }
+        ]
+      },
+      {
+        "index": 1738,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name five web browsers"
+          },
+          {
+            "role": "assistant",
+            "content": "1. Chrome\n2. Firefox\n3. Safari\n4. Edge\n5. Opera"
+          }
+        ]
+      },
+      {
+        "index": 4070,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name 3 products that Apple Inc is famous for"
+          },
+          {
+            "role": "assistant",
+            "content": "1. iPhone\n2. iPad\n3. Mac"
+          }
+        ]
+      },
+      {
+        "index": 1733,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "What are three qualities that a good product manager should possess?"
+          },
+          {
+            "role": "assistant",
+            "content": "1. Empathy\n2. Strategic Thinking\n3. Communication"
+          }
+        ]
+      },
+      {
+        "index": 4414,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "List 3 of the most commonly used programming languages"
+          },
+          {
+            "role": "assistant",
+            "content": "1. Python\n2. JavaScript\n3. Java"
+          }
+        ]
+      },
+      {
+        "index": 766,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Provide two of the most common uses for a hammer."
+          },
+          {
+            "role": "assistant",
+            "content": "1. Driving nails\n2. Breaking objects"
+          }
+        ]
+      },
+      {
+        "index": 1371,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Create a list of 3 work-related skills"
+          },
+          {
+            "role": "assistant",
+            "content": "1. Communication\n2. Problem-solving\n3. Time management"
+          }
+        ]
+      },
+      {
+        "index": 1503,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Can you name three types of snacks that can easily be made at home?"
+          },
+          {
+            "role": "assistant",
+            "content": "1. Popcorn\n2. Trail mix\n3. Yogurt parfait"
+          }
+        ]
+      }
+    ]
+  },
+  "bullets": {
+    "atom_index": 303,
+    "orientation": 1,
+    "description": "A descent contribution associated with answers presented as bulleted lists.",
+    "source": "Prior discovery-training top20 detector purity, then coherence; no new outcomes used.",
+    "status": "Candidate hypothesis; prior steering suggested formatting effects with length confounding. Neither semantics nor selectivity is assumed.",
+    "training_examples": [
+      {
+        "index": 842,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name the different types of triangles."
+          },
+          {
+            "role": "assistant",
+            "content": "*   Equilateral\n*   Isosceles\n*   Scalene\n*   Right\n*   Acute\n*   Obtuse"
+          }
+        ]
+      },
+      {
+        "index": 1904,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "List the different forms of energy."
+          },
+          {
+            "role": "assistant",
+            "content": "*   Kinetic\n*   Potential\n*   Thermal\n*   Chemical\n*   Electrical\n*   Radiant\n*   Nuclear\n*   Sound\n*   Mass-energy"
+          }
+        ]
+      },
+      {
+        "index": 956,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name some festivals celebrated in India"
+          },
+          {
+            "role": "assistant",
+            "content": "*   Holi\n*   Diwali\n*   Durga Puja\n*   Onam\n*   Pongal\n*   Pushkar Fair\n*   Baisakhi\n*   Eid\n*   Christmas\n*   Ganesh Chaturthi"
+          }
+        ]
+      },
+      {
+        "index": 1748,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "List the main musical elements of a Jazz song."
+          },
+          {
+            "role": "assistant",
+            "content": "*   Harmony\n*   Melody\n*   Rhythm\n*   Improvisation\n*   Texture\n*   Instrumentation"
+          }
+        ]
+      },
+      {
+        "index": 4135,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name the commonly used software development methods."
+          },
+          {
+            "role": "assistant",
+            "content": "*   Agile\n*   Waterfall\n*   Scrum\n*   Kanban\n*   DevOps\n*   Lean\n*   XP"
+          }
+        ]
+      },
+      {
+        "index": 1775,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Who are the major figures in the French Revolution?"
+          },
+          {
+            "role": "assistant",
+            "content": "*   Louis XVI\n*   Marie Antoinette\n*   Maximilien Robespierre\n*   Jean-Paul Marat\n*   Georges Danton\n*   Napoleon Bonaparte"
+          }
+        ]
+      },
+      {
+        "index": 3072,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "List some traditional Japanese dishes"
+          },
+          {
+            "role": "assistant",
+            "content": "*   Sushi\n*   Ramen\n*   Tempura\n*   Udon\n*   Soba\n*   Miso Soup\n*   Yakitori\n*   Okonomiyaki\n*   Tonkatsu\n*   Teriyaki"
+          }
+        ]
+      },
+      {
+        "index": 1746,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name the different elements of a story."
+          },
+          {
+            "role": "assistant",
+            "content": "*   Plot\n*   Characters\n*   Setting\n*   Theme\n*   Conflict\n*   Point of View\n*   Tone\n*   Style"
+          }
+        ]
+      },
+      {
+        "index": 805,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "What are the common types of data manipulation tasks?"
+          },
+          {
+            "role": "assistant",
+            "content": "*   Filtering\n*   Sorting\n*   Aggregation\n*   Joining\n*   Transformation\n*   Cleaning"
+          }
+        ]
+      },
+      {
+        "index": 4765,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name some nations with a monarchy government."
+          },
+          {
+            "role": "assistant",
+            "content": "*   Saudi Arabia\n*   United Kingdom\n*   Japan\n*   Spain\n*   Sweden\n*   Norway\n*   Denmark\n*   Jordan\n*   Eswatini\n*   Morocco\n*   Bhutan\n*   Brunei\n*   Liechtenstein\n*   Luxembourg\n*    Tonga"
+          }
+        ]
+      },
+      {
+        "index": 455,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Suggest different methods of green energy."
+          },
+          {
+            "role": "assistant",
+            "content": "*   Solar\n*   Wind\n*   Hydro\n*   Geothermal\n*   Biomass\n*   Wave\n*   Tidal"
+          }
+        ]
+      },
+      {
+        "index": 3942,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "List the major parts of a computer."
+          },
+          {
+            "role": "assistant",
+            "content": "*   CPU\n*   Motherboard\n*   RAM\n*   Storage\n*   GPU\n*   Power Supply\n*   Input Devices\n*   Output Devices"
+          }
+        ]
+      },
+      {
+        "index": 977,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name some typical characteristics of the Victorian era."
+          },
+          {
+            "role": "assistant",
+            "content": "*   Moralism\n*   Industrialization\n*   Imperialism\n*   Social stratification\n*   Respectability\n*   Sentimentality\n*   Technological advancement"
+          }
+        ]
+      },
+      {
+        "index": 4441,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Name some sources of renewable energy"
+          },
+          {
+            "role": "assistant",
+            "content": "*   Solar\n*   Wind\n*   Hydro\n*   Geothermal\n*   Biomass"
+          }
+        ]
+      },
+      {
+        "index": 2130,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Imagine you are creating a model to detect fraudulent financial transactions. What metrics are important to measure when evaluating this model?"
+          },
+          {
+            "role": "assistant",
+            "content": "*   Precision\n*   Recall\n*   F1-score\n*   AUC-ROC\n*   False Positive Rate\n*   False Negative Rate"
+          }
+        ]
+      },
+      {
+        "index": 3168,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Generate a list of wildlife found in the given region\n\nThe Amazon Rainforest"
+          },
+          {
+            "role": "assistant",
+            "content": "*   Jaguar\n*   Anaconda\n*   Capybara\n*   Macaw\n*   Sloth\n*   Piranha\n*   Tapir\n*   River Dolphin\n*   Harpy Eagle\n*   Monkey\n*   Boa\n*   Frog\n*   Insect Variety"
+          }
+        ]
+      },
+      {
+        "index": 3215,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Identify the different type of incentives given by a company to its employees."
+          },
+          {
+            "role": "assistant",
+            "content": "*   Financial\n*   Non-financial\n*   Recognition\n*   Promotions\n*   Training\n*   Benefits"
+          }
+        ]
+      },
+      {
+        "index": 2000,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Create a list of ingredients for a homemade ice cream."
+          },
+          {
+            "role": "assistant",
+            "content": "*   Heavy Cream\n*   Whole Milk\n*   Sugar\n*   Egg Yolks\n*   Vanilla Extract\n*   Pinch of Salt"
+          }
+        ]
+      },
+      {
+        "index": 3634,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "List the main sources of renewable energy"
+          },
+          {
+            "role": "assistant",
+            "content": "*   Solar\n*   Wind\n*   Hydro\n*   Geothermal\n*   Biomass"
+          }
+        ]
+      },
+      {
+        "index": 3593,
+        "detector_hit": true,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Outline the risks associated with using social media."
+          },
+          {
+            "role": "assistant",
+            "content": "*   Privacy breaches\n*   Cyberbullying\n*   Addiction\n*   Misinformation\n*   Mental health issues\n*   Identity theft\n*   Online harassment\n*   Data exploitation"
+          }
+        ]
+      }
+    ]
+  }
+}

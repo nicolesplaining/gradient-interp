@@ -1,0 +1,10 @@
+{
+  "created_unix": 1791943315.6998444,
+  "commit": "e7b5998a32e984157f633b28dc0cf4d641839be7",
+  "preflight_source_sha256": "8cd4b83ecf65b52b91447568e76bf90873dfab401783ab3f3e5c03dd01dc4445",
+  "plan_sha256": "a9405308db4c4b5aaa894ace2e26e6bb010e11737af7f8692df01bf70086fcde",
+  "specification_sha256": "92ae4cfbfd8e5e794209ee04cc3f917a4ac769e9bbc9e7610f7c463dc9dd8ba8",
+  "preflight_sha256": "4d63e43b03d473a6dbdcf8093d14bff64b083e5adf328d9c9f41ccb11eb6160a",
+  "old_tangent_archived_and_audited": true,
+  "no_kernel_change_after_preflight": true
+}

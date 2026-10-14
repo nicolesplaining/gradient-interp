@@ -1,0 +1,25 @@
+{
+  "archived_unix": 1791942857.0489304,
+  "commit": "11fc3072ed3e5d65b7674329a8f210ef7760f3ba",
+  "sha256": "9a65a6b200971cb9913d2f42479bb7f854c3bb4acc6e6c69e08eac4ec65f3be2",
+  "controller": {
+    "scope": "development_only",
+    "started_unix": 1791913496.830198,
+    "deadline_unix": 1791956696.830198,
+    "status": "complete",
+    "controller_pid": 123793,
+    "worker_pid": null,
+    "plan_sha256": "e78f2c39a425c0539eb8b7ead2a3ddcdec7665720b314cf0dc6ba4126a32bd51",
+    "attempts": [
+      {
+        "job": "autoregressive-tangent",
+        "pid": 123803,
+        "started_unix": 1791913496.833061,
+        "finished_unix": 1791941279.1474843,
+        "returncode": 0
+      }
+    ],
+    "current_job": "autoregressive-tangent",
+    "checked_unix": 1791941279.1481938
+  }
+}

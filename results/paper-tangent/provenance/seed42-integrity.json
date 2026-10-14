@@ -1,0 +1,16 @@
+{
+  "complete": true,
+  "verified_unix": 1791943027.7999148,
+  "source_input_output_hashes_verified": true,
+  "source_snapshot_sha256": "9a65a6b200971cb9913d2f42479bb7f854c3bb4acc6e6c69e08eac4ec65f3be2",
+  "plan_sha256": "e78f2c39a425c0539eb8b7ead2a3ddcdec7665720b314cf0dc6ba4126a32bd51",
+  "manifest_sha256": "b30e4eacd6bf3cc77c15375dad95c496d06723a9b702a077fe9748783c6751c9",
+  "specification_sha256": "cb83be0d80875d2311d09d2f34765575003f9523ec03ff4e2995738bcf92578e",
+  "forecast_lock_sha256": "3f381ca6b28fc132d6b57266e92549339cf1f3648ccb93ab14eeb29550c66c5d",
+  "updates": 12,
+  "forecast_generations": 6272,
+  "evaluation_generations": 6656,
+  "original_deadline_verified": true,
+  "precision_and_memory_amendment_verified": true,
+  "deployment_and_launcher_audits_verified": true
+}

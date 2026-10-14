@@ -1,0 +1,12 @@
+{
+  "written_unix": 1791942855.7819571,
+  "scope": "development_only",
+  "phase": "paper-tangent",
+  "outcomes_read_before_plan": false,
+  "priority_change": "Nicole now prioritizes meaningful atom explanations; frozen tangent comparisons remain unchanged and all results will be reported. Analysis can proceed after initiating the separately specified atom-centered experiment.",
+  "audit": "Both controllers complete. Verify all source/input/forecast/result hashes, full49forecast13evaluationcondition grids,6272forecast6656evaluationresponses perseed,lock before12updates, original adapter unchanged throughout forecasts, all restores and original12hourdeadlines; preserve originalsource before checkout; auditmemory/deployment/launcher amendments.",
+  "analysis": "All5methods,3rates,4endpoints,bothseeds,4styles,calibration/evaluationtemplates,perbatch errors, pooledRMSE and zero-relativeRMSE, mean bias, magnitude slope and worstbatch. Include formatting/content/order/length/truncation/empty/repetition and all fixed examples:4batches,questionindices0/2,sample0,allmethods/rates/seeds.",
+  "uncertainty": "1000replicates fixedseed2026101406. Independently resample32forecast and128evaluation sample indices withinquestion, shared acrossconditions inside eachstream; also resample twoquestions within eachtemplate. Report MC-only and MC+question descriptive intervals separately. Do not bootstrap batches within style, since eachstyle hasonebatch. No two-seed population/significance or multiple-comparison successclaim.",
+  "comparisons": "Atom performance againstzero is relevant but this run doesnotvalidate descriptions. Fullgradient/SVD/EKFAC remainreferencecomparisons. Priorimportance results are context, not a controlled costcomparison because subset/sampler/kernelchanged. Recordforward/JVPcalls/runtime/peakmemory honestly.",
+  "future": "Use results fordevelopmentonly; no pruningunfavorablemethods or promotingsecondarywinner."
+}

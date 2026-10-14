@@ -1,0 +1,16 @@
+{
+  "complete": true,
+  "verified_unix": 1791943028.699714,
+  "source_input_output_hashes_verified": true,
+  "source_snapshot_sha256": "9a65a6b200971cb9913d2f42479bb7f854c3bb4acc6e6c69e08eac4ec65f3be2",
+  "plan_sha256": "e82eff4aa7d9e2892e2ef9593c7e9fc92eb98c1cac2975b8910c4be73997de14",
+  "manifest_sha256": "88305ea11eab84faa022b1d4d62bc1133a9ab04a00cccd4a177709dae850f3b0",
+  "specification_sha256": "e98450ec48dcd35b411ad83d73c124f2f80a154b4a977c25e407426580152eec",
+  "forecast_lock_sha256": "8c4e2281c8cb8af56c28093a394024f461112a7ae963b6d5784e3ac02526c355",
+  "updates": 12,
+  "forecast_generations": 6272,
+  "evaluation_generations": 6656,
+  "original_deadline_verified": true,
+  "precision_and_memory_amendment_verified": true,
+  "deployment_and_launcher_audits_verified": true
+}

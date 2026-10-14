@@ -1,0 +1,17 @@
+{
+  "written_unix": 1791943149.1011364,
+  "input_files_sha256": {
+    "/home/ubuntu/gradient-interp/runs/paper-seed43/training.jsonl": "ae92dabc08ebd4c5a0bbbb5971f243b6dd2d77a256ca9c57190b76fb27262681",
+    "/home/ubuntu/gradient-interp/runs/paper-steering-seed43/selection.json": "a857abe491ea81e9a30b366de48917793b692d324df5cd8342b8fb8d6794f726",
+    "runs/paper-batch-seed43/data.json": "3fe2e1426c9554eca18d2346bd2410f6f6d6b3f498ea88a011a9abc3fca7ecd9",
+    "runs/paper-mixture-seed43/data.json": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+    "runs/paper-sample-seed43/data.json": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+    "runs/paper-steering-seed43/questions.json": "89612591d76d6192d15d7256c52199e1fc031fc5c36078da7a8c1d5ff673e2de",
+    "runs/paper-tangent-seed43/data.json": "75a11fec8f4002cd26db0293575f6adda202efd17a6a0c0d1d6dc500c0baca31"
+  },
+  "unique_prior_prompts": 5593,
+  "new_unique_items": 48,
+  "exact_prompt_collisions": [],
+  "disjoint_new_answer_triples": true,
+  "scope": "Exact normalized prompt check against enumerated paper-phase inputs and discovery training. Not full semantic/source deduplication of all historical corpora; no confirmation claim."
+}
