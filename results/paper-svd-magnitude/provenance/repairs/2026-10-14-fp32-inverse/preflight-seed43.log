@@ -1,0 +1,25 @@
+/home/ubuntu/gradient-interp/.venv-atoms/lib/python3.12/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  _C._set_float32_matmul_precision(precision)
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 49.91it/s]
+  Projected dimension: 6800 (from 2228224 raw params, 136 modules, top-50/module)
+    Projected 20/136 modules
+    Projected 40/136 modules
+    Projected 60/136 modules
+    Projected 80/136 modules
+    Projected 100/136 modules
+    Projected 120/136 modules
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/ubuntu/gradient-interp/src/gradient_interp/paper_svd_magnitude.py", line 755, in <module>
+    main()
+  File "/home/ubuntu/gradient-interp/src/gradient_interp/paper_svd_magnitude.py", line 751, in main
+    {"preflight": preflight, "freeze": freeze, "run": run}[args.command](args.root)
+  File "/home/ubuntu/gradient-interp/src/gradient_interp/paper_svd_magnitude.py", line 440, in preflight
+    reconstructions.append(unproject_atom(x[0], info, factors, gradient.numel()))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/gradient-interp-upstream/gradient_atoms/src/gradient_atoms/projection.py", line 171, in unproject_atom
+    g_eigen_flat[m["topk_idx"]] = atom_comp
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+RuntimeError: Index put requires the source and destination dtypes match, got Float for the destination and Double for the source.

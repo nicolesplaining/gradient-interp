@@ -1,0 +1,17 @@
+{
+  "recorded_unix": 1791978691.686046,
+  "source_commit": "3e9da6696c56d25671f854d308b8ee011e49566c",
+  "failure": "Both training-only GPU preflights failed at upstream unproject_atom: destination float32 and SVD reconstruction float64 index assignment.",
+  "cause": "SVD coefficient and projected-reconstruction products intentionally use float64, while upstream EKFAC inverse allocates float32 tensors. The handoff did not cast to the inverse map dtype. Same missing cast exists in the new worker reconstruction path.",
+  "repair": "Explicit float32 conversion only at the physical inverse boundary in preflight and worker. Preserve float64 coefficients, all profiles/contributions, data, rates, criteria and original inherited inverse geometry.",
+  "new_scientific_outcomes_computed": false,
+  "plans_frozen": false,
+  "controllers_launched": false,
+  "deadlines_created": false,
+  "preservation": "Retain original failed logs, source, preparation/input hashes and specification on both hosts before repair. Re-prepare from same data/bases and pass training-only GPU preflight before first freeze.",
+  "repair_validation": {
+    "tests": 27,
+    "ruff": "clean",
+    "regression": "Reproduces upstream float32 index-assignment failure from float64 SVD reconstruction; confirms fixed boundary preserves scale and component sum."
+  }
+}

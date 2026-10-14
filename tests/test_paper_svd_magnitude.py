@@ -74,6 +74,28 @@ def test_physical_profiles_and_component_sum_use_unscaled_inverse_geometry():
     )
 
 
+def test_float64_svd_reconstruction_enters_float32_inverse_without_norm_matching():
+    basis = np.array([[0.6, 0.8, 0], [0, 0, 1]], dtype=np.float32)
+    x = np.array([[3, -4, 2], [-6, 8, -4]], dtype=np.float32)
+    codes, projected = study.encode_svd(x, basis)
+    assert codes.dtype == projected.dtype == np.float64
+
+    def inverse(row):
+        # The upstream inverse places components into a float32 eigenbasis;
+        # torch index assignment rejects a float64 source at this boundary.
+        physical = torch.zeros(4, dtype=torch.float32)
+        physical[torch.tensor([0, 2, 3])] = torch.as_tensor(row) * torch.tensor([2., 3., 4.])
+        return physical
+
+    with pytest.raises(RuntimeError, match="dtypes match"):
+        inverse(projected[0])
+    physical = study.unproject_reconstructions(projected, inverse)
+    assert physical.dtype == torch.float32
+    np.testing.assert_allclose(physical[1], -2 * physical[0])
+    profiles = torch.stack([inverse(row) for row in basis]).double().numpy()
+    np.testing.assert_allclose(physical.numpy(), codes @ profiles, rtol=1e-6, atol=1e-7)
+
+
 def test_streamed_profiles_cover_every_component_and_reject_nonfinite_rows():
     bases = {method: np.arange(66).reshape(33, 2) / 67 for method in study.REPRESENTATIONS}
     progress = []

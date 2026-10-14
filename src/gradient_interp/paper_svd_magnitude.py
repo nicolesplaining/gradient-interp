@@ -128,6 +128,14 @@ def encode_svd(projected, basis):
     return coefficients, coefficients @ v.astype(np.float64)
 
 
+def unproject_reconstructions(projected, unproject):
+    """Hand projected rows to the original float32 EKFAC inverse without rescaling."""
+    rows = matrix(projected, "reconstructed projections").astype(np.float32)
+    if not np.isfinite(rows).all():
+        raise ValueError("Reconstruction is outside the float32 inverse range")
+    return torch.stack([unproject(row) for row in rows])
+
+
 def component_contributions(coefficients, profiles, rates=RATES):
     """B,M,K coefficients and M,K,Q unscaled physical loss profiles -> B,R,M,K,Q."""
     c, p = np.asarray(coefficients), np.asarray(profiles)
@@ -437,7 +445,11 @@ def preflight(root):
             else encode(projected.numpy(), bases[method])
         )
         coefficients.append(c)
-        reconstructions.append(unproject_atom(x[0], info, factors, gradient.numel()))
+        reconstructions.append(
+            unproject_reconstructions(
+                x, lambda row: unproject_atom(row, info, factors, gradient.numel())
+            )[0]
+        )
     profiles, norms = physical_component_profiles(
         bases, gradient[None], lambda x: unproject_atom(x, info, factors, gradient.numel())
     )
@@ -600,7 +612,9 @@ def run(root):
             )
             coefficients.append(torch.from_numpy(c))
             reconstructions.append(
-                torch.stack([unproject_atom(row, info, factors, gradients.shape[1]) for row in x])
+                unproject_reconstructions(
+                    x, lambda row: unproject_atom(row, info, factors, gradients.shape[1])
+                )
             )
         reconstructions = torch.stack((*reconstructions, gradients, torch.zeros_like(gradients)), 1)
         baseline, counts, probe_gradients = [], [], []
