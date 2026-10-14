@@ -1,0 +1,35 @@
+{
+  "completed_unix": 1791977914.99263,
+  "files_sha256": {
+    "pairs.csv": "490eb32a23c1fb0c8cb9dd6724bbf611c01957e774bf766d395a685dcd420331",
+    "reconstruction.png": "dd43c6bb232a4ca945790a09b009c32319cde0b87370058f05ed0dead9bb7c0c",
+    "summary.json": "4cdc57308aca7db2d035c5b46e6193cb232f4ddc45d90cf907d406a47759d48a",
+    "reconstruction.pdf": "9367efd50fd6fd4fb305f61980d37ef2e385056b4953c33432a031ffd7e150bb",
+    "forecast-errors.pdf": "0a1628103cb9c42684e665558768f28abf8c887bd00e76952ca1b3fe13632533",
+    "forecast-errors.png": "ae7385eeebb13350a47a2031480ab0b3b80ef80fd0d992e863fd1b2c2d0b8cc0",
+    "integrity-summary.json": "39c5caf7c27ffb1141c42eb7599bd35e1695e4722d150aeb61844c6af76bc4b9",
+    "effect-size-scatter.png": "df80e51627b228da5b05267ca1d83afe4ff907bf429c0069c910cfead298b1f0",
+    "effect-size-scatter.pdf": "600117986a06ceabf524dbefe86a1dc997a5e786a9fdb70b34368888f2885c82",
+    "metrics.csv": "27ef302c2bd06a73aafb8aaf537a659a2dd94f2a05394ae8f9a0463e71e51b69",
+    "probes.csv": "9d12639c0219df7af7c408e168029aa8baf09ca6277e560f4b5218b83eab4259",
+    "examples.csv": "8b68dda5a9833c9481b97370edc16aaaf68aa74d377d702b25dae277f2b5a5f0",
+    "comparisons.csv": "0625579d14c899d9dee7e1e0d186862613fa6ed662e931172742778f1fa9cd5c",
+    "protocol.json": "3634808001d7bb967f623e60573d0640230f4de8ba9b56dfcf8d692368a4201b",
+    "batches.csv": "be550ff942ee8db52d2c9478494986089a21198ef17a345a5929f468dc0c9412",
+    "reconstruction.csv": "35b6f2a03833ba3d39fbb1c45da01756b6f34a823961b4dae73c77a1a6a2b7bd",
+    "report.html": "2df08467dca5e8517a0f06d06d3ac97ef3b5610a5139baa105e5daa9589e8059"
+  },
+  "source_sha256": "581e26dc3a7daed8f6e80b9b16cb3e8ca6734d694a984c7bd473975716cc8a0d",
+  "analysis_plan_sha256": "9a76c89e22efb1a2ac973c39deb429e8e15af4814bb8805ffcc00e67809567a8",
+  "preliminary": false,
+  "preliminary_amendment_sha256": null,
+  "counts": {
+    "metrics": 32,
+    "comparisons": 8,
+    "batches": 1024,
+    "probes": 1280,
+    "pairs": 40960,
+    "examples": 1024,
+    "reconstruction": 256
+  }
+}

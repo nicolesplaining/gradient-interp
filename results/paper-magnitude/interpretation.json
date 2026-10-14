@@ -1,0 +1,22 @@
+{
+  "written_unix": 1791977990.45933,
+  "scope": "two-seed development, teacher-forced mean reference-completion CE",
+  "conclusion": "Retaining fitting-row magnitudes does not improve accurate effect-size prediction in this fixed dictionary comparison. Both geometries underestimate the mean effect and fail the prespecified accuracy requirements at the meaningful larger rate.",
+  "findings": [
+    "At rate 0.003, normalized/magnitude nRMSE is 0.728/0.751 in seed42 and 0.757/0.761 in seed43; both exceed the frozen 0.5 limit.",
+    "At rate 0.003, normalized/magnitude MAE is 0.01742/0.01803 in seed42 and 0.01976/0.01982 nats/token in seed43; all exceed 0.01.",
+    "Magnitude-fit has greater paired MSE than normalized-fit in seed42 at both rates; the prespecified simultaneous intervals exclude zero. Seed43 intervals include zero at both rates.",
+    "Normalized predictions capture about 28%/24% of the mean observed CE decrease in seeds42/43 at rate 0.003; magnitude-fit about 25%/24%.",
+    "Full-gradient linearization has nRMSE 0.0211/0.0217 at 0.0003 and 0.2634/0.2319 at 0.003. Its worst larger-rate errors remain 0.1471/0.1368 nats/token.",
+    "Both dictionary arms improve on zero prediction but do not clear the required accuracy. At the smaller rate actual RMS is 0.00317/0.00343, below the fixed 0.01 meaningful-effect floor.",
+    "No negative predicted CE values occur in the retained evaluation pairs."
+  ],
+  "interpretation": "The large dictionary error relative to the full-gradient reference is consistent with representation loss; restoring a scalar norm cannot restore missing directional components. This comparison does not isolate all mechanisms or validate SVD, interpretation, or generated behavior.",
+  "decision": "Complete the frozen SVD comparison and use its full evidence to decide at most one focused follow-up. Do not retune dictionary penalties or normalization on these outcomes.",
+  "limits": [
+    "Two reused adapters and one synthetic-reference source; development only.",
+    "Source and lexical deduplication is not full semantic independence.",
+    "Direction agreement is evaluated only on eligible pairs with substantial predicted and actual changes; it is not an overall accuracy claim."
+  ],
+  "all_primary_failures_retained": true
+}

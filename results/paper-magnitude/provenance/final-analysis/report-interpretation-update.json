@@ -1,0 +1,7 @@
+{
+  "written_unix": 1791978030.40506,
+  "only_report_html_changed_after_numerical_analysis": true,
+  "report_sha256": "dee4bdfa5ecb22d4de15f7d634cece73bdec99981733618ade233ddcb7ab8995",
+  "initial_report_preserved": "runs/paper-magnitude-analysis/final/report-before-interpretation.html",
+  "interpretation_sha256": "d4370d84117968d048edd8e5c26b45e747566dd35d5d13655b9010a2e2348139"
+}

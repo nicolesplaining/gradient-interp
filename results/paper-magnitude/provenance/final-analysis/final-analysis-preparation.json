@@ -1,0 +1,11 @@
+{
+  "prepared_unix": 1791977549.0190651,
+  "analysis_plan_sha256": "9a76c89e22efb1a2ac973c39deb429e8e15af4814bb8805ffcc00e67809567a8",
+  "audit_script_sha256": "fb473c779c5135be898ba7c98fd32d75e9ad1c6ce1ecca44219d1c42ddd1c69c",
+  "analyzer_sha256": "581e26dc3a7daed8f6e80b9b16cb3e8ca6734d694a984c7bd473975716cc8a0d",
+  "seed42_scientific_outcomes_read": false,
+  "seed43_preliminary_reading_authorized_and_complete": true,
+  "final_exports_must_be_distinct_from_preliminary": true,
+  "normal_two_seed_completion_barrier_required": true,
+  "no_scientific_worker_changes": true
+}

@@ -1,0 +1,252 @@
+[
+  {
+    "checked_unix": 1791977697.646452,
+    "complete": true,
+    "seed": 42,
+    "source_commit": "e12ecc1989531ce48b1352e2f76985c6a7cf1a23",
+    "source_archive_sha256": "30ffa42ef84cf4531dd9bb93ead5eeadd612b53ce3ba00f269c5a35276dc72e5",
+    "source_input_output_hashes_verified": true,
+    "full_grid_verified": true,
+    "locks_restores_verified": true,
+    "original_deadline_verified": true,
+    "tokenization_verified": true,
+    "cache_recomputed": true,
+    "gradients_recomputed_from_model": false,
+    "gradient_audit_scope": "Stored batch gradients were reprojected and forecast contractions recomputed. No model load or independent gradient differentiation.",
+    "updates": 64,
+    "probes": 80,
+    "evaluation_pairs_per_rate": 2048,
+    "forecast_conditions": 256,
+    "loss_values_after_updates": 5120,
+    "attempts": [
+      {
+        "job": "magnitude",
+        "pid": 132404,
+        "started_unix": 1791977032.2371056,
+        "finished_unix": 1791977543.3766646,
+        "returncode": 0
+      }
+    ],
+    "plan_sha256": "946cb3ae803d67b0426ae1bb3b4ac7fc1b6c2afae5b89e654030d31ce928f590",
+    "forecast_lock_sha256": "af2998ea6beaa7442ef8c5d3f4bc7f061007178b015879121b350595b0fe77ac",
+    "analysis_plan_sha256": "9a76c89e22efb1a2ac973c39deb429e8e15af4814bb8805ffcc00e67809567a8",
+    "completion_receipts": [
+      {
+        "type": "paper_magnitude_completion_receipt",
+        "seed": 42,
+        "root": "/home/ubuntu/gradient-interp/runs/paper-magnitude-seed42",
+        "observed_unix": 1791977612.1979656,
+        "status": "complete",
+        "started_unix": 1791977032.233707,
+        "deadline_unix": 1792020232.233707,
+        "all_processes_dead": true,
+        "checked_pids": [
+          132394,
+          132404
+        ],
+        "controller_sha256": "82c61f0b3152185be3e4b7329f9fa09e518d10d5c9094549fb09987d66eb1f33",
+        "plan_sha256": "946cb3ae803d67b0426ae1bb3b4ac7fc1b6c2afae5b89e654030d31ce928f590",
+        "specification_sha256": "6f72e5cc2c8a2bafd386176e1e8e60750e5c611c4bbee6c172b8a856e1b35250",
+        "release_reason": "complete",
+        "completed_unix": 1791977540.3891191,
+        "manifest_sha256": "c7c108e2545592c8dad6083858718b4e0b78cffa21b7a2445561167e1c8fd96e"
+      },
+      {
+        "type": "paper_magnitude_completion_receipt",
+        "seed": 43,
+        "root": "/home/ubuntu/gradient-interp/runs/paper-magnitude-seed43",
+        "observed_unix": 1791968142.742539,
+        "status": "complete",
+        "started_unix": 1791966573.3364086,
+        "deadline_unix": 1792009773.3364086,
+        "all_processes_dead": true,
+        "checked_pids": [
+          28450,
+          28460
+        ],
+        "controller_sha256": "b01f10e728abf9a983864d78c539fbcdd9860daa652b60ca3365f4e6ac599d74",
+        "plan_sha256": "620240edf3737ad6c5fa8179ff2da7681cfdec1d45e94eea19f4d8a86a5cdd96",
+        "specification_sha256": "780c5fd093fdf04779b7c1f86e5a59588072ae73754bd58ca6f63527faee3d83",
+        "release_reason": "complete",
+        "completed_unix": 1791966855.0360827,
+        "manifest_sha256": "d13769b9cd5abf9fa223955a542d792ce2ca9365ab81e5b5f32744bd5672c5cb"
+      }
+    ],
+    "receipt_files_sha256": {
+      "/home/ubuntu/gradient-interp/runs/analysis-tools/magnitude-final/receipt-seed42.json": "ca9d86587452871d2f193190712dc379ddebf5f28d19ed387b67bcb91a4d1583",
+      "/home/ubuntu/gradient-interp/runs/analysis-tools/magnitude-final/receipt-seed43.json": "167fb096c41d2db27a3e4dca21abb82a9bd16d75468f4a33207c41640f731913"
+    },
+    "forecast_cache_sha256": "05db85552e187ec9519e15613e275697ae2a19258d9d38d87c427b20ecb7e997",
+    "fit": {
+      "started_unix": 1791966340.7829773,
+      "completed_unix": 1791966390.6134486,
+      "fit_plan_sha256": "893669bc801ef09e68446984cac36c81856b03d4a9188e1de3e57ab700d0b7a8",
+      "dictionaries_sha256": "051bba10824ba6f2b5e4e675d04b0b81c8efd1b9c24d0766bf391cdd62b09f73",
+      "original_dictionary_reused": true,
+      "fitting_rows": 5000,
+      "fitting_columns": 6800,
+      "magnitude_global_scale": 449.6798095703125,
+      "row_norm_quantiles_before_global_scaling": [
+        5.084339618682861,
+        288.86474609375,
+        449.67979431152344,
+        656.1959686279297,
+        4809.86572265625
+      ],
+      "learner_parameters": {
+        "alpha": 0.1,
+        "batch_size": 256,
+        "callback": null,
+        "dict_init": null,
+        "fit_algorithm": "lars",
+        "max_iter": 100,
+        "max_no_improvement": 10,
+        "n_components": 500,
+        "n_jobs": 8,
+        "positive_code": false,
+        "positive_dict": false,
+        "random_state": 42,
+        "shuffle": true,
+        "split_sign": false,
+        "tol": 0.001,
+        "transform_algorithm": "lasso_lars",
+        "transform_alpha": null,
+        "transform_max_iter": 1000,
+        "transform_n_nonzero_coefs": null,
+        "verbose": 1
+      },
+      "iterations": 8,
+      "sklearn_version": "1.9.1",
+      "only_fitting_rows_used": true,
+      "new_batch_outcomes_read": false
+    },
+    "worker_started_unix": 1791977038.560471,
+    "worker_completed_unix": 1791977540.3891191,
+    "peak_memory_bytes": 22419525120
+  },
+  {
+    "checked_unix": 1791977686.7577724,
+    "complete": true,
+    "seed": 43,
+    "source_commit": "e12ecc1989531ce48b1352e2f76985c6a7cf1a23",
+    "source_archive_sha256": "f4d5a5d326baa20a034e4bc718f3ea47fb9f9959fca29cf0fd5045f8348df4a6",
+    "source_input_output_hashes_verified": true,
+    "full_grid_verified": true,
+    "locks_restores_verified": true,
+    "original_deadline_verified": true,
+    "tokenization_verified": true,
+    "cache_recomputed": true,
+    "gradients_recomputed_from_model": false,
+    "gradient_audit_scope": "Stored batch gradients were reprojected and forecast contractions recomputed. No model load or independent gradient differentiation.",
+    "updates": 64,
+    "probes": 80,
+    "evaluation_pairs_per_rate": 2048,
+    "forecast_conditions": 256,
+    "loss_values_after_updates": 5120,
+    "attempts": [
+      {
+        "job": "magnitude",
+        "pid": 28460,
+        "started_unix": 1791966573.338352,
+        "finished_unix": 1791966857.4188764,
+        "returncode": 0
+      }
+    ],
+    "plan_sha256": "620240edf3737ad6c5fa8179ff2da7681cfdec1d45e94eea19f4d8a86a5cdd96",
+    "forecast_lock_sha256": "45acea5969ad5e34d61faee63c219d2860c91cc023f679b7827c0e7cb39e3104",
+    "analysis_plan_sha256": "9a76c89e22efb1a2ac973c39deb429e8e15af4814bb8805ffcc00e67809567a8",
+    "completion_receipts": [
+      {
+        "type": "paper_magnitude_completion_receipt",
+        "seed": 42,
+        "root": "/home/ubuntu/gradient-interp/runs/paper-magnitude-seed42",
+        "observed_unix": 1791977612.1979656,
+        "status": "complete",
+        "started_unix": 1791977032.233707,
+        "deadline_unix": 1792020232.233707,
+        "all_processes_dead": true,
+        "checked_pids": [
+          132394,
+          132404
+        ],
+        "controller_sha256": "82c61f0b3152185be3e4b7329f9fa09e518d10d5c9094549fb09987d66eb1f33",
+        "plan_sha256": "946cb3ae803d67b0426ae1bb3b4ac7fc1b6c2afae5b89e654030d31ce928f590",
+        "specification_sha256": "6f72e5cc2c8a2bafd386176e1e8e60750e5c611c4bbee6c172b8a856e1b35250",
+        "release_reason": "complete",
+        "completed_unix": 1791977540.3891191,
+        "manifest_sha256": "c7c108e2545592c8dad6083858718b4e0b78cffa21b7a2445561167e1c8fd96e"
+      },
+      {
+        "type": "paper_magnitude_completion_receipt",
+        "seed": 43,
+        "root": "/home/ubuntu/gradient-interp/runs/paper-magnitude-seed43",
+        "observed_unix": 1791968142.742539,
+        "status": "complete",
+        "started_unix": 1791966573.3364086,
+        "deadline_unix": 1792009773.3364086,
+        "all_processes_dead": true,
+        "checked_pids": [
+          28450,
+          28460
+        ],
+        "controller_sha256": "b01f10e728abf9a983864d78c539fbcdd9860daa652b60ca3365f4e6ac599d74",
+        "plan_sha256": "620240edf3737ad6c5fa8179ff2da7681cfdec1d45e94eea19f4d8a86a5cdd96",
+        "specification_sha256": "780c5fd093fdf04779b7c1f86e5a59588072ae73754bd58ca6f63527faee3d83",
+        "release_reason": "complete",
+        "completed_unix": 1791966855.0360827,
+        "manifest_sha256": "d13769b9cd5abf9fa223955a542d792ce2ca9365ab81e5b5f32744bd5672c5cb"
+      }
+    ],
+    "receipt_files_sha256": {
+      "/home/ubuntu/gradient-interp/runs/analysis-tools/magnitude-final/receipt-seed42.json": "ca9d86587452871d2f193190712dc379ddebf5f28d19ed387b67bcb91a4d1583",
+      "/home/ubuntu/gradient-interp/runs/analysis-tools/magnitude-final/receipt-seed43.json": "167fb096c41d2db27a3e4dca21abb82a9bd16d75468f4a33207c41640f731913"
+    },
+    "forecast_cache_sha256": "5c55734ac3770057d8b0750e9b696f5c977610f60fe73b58f6796875444f58de",
+    "fit": {
+      "started_unix": 1791966317.4241498,
+      "completed_unix": 1791966373.8805428,
+      "fit_plan_sha256": "a8f9be56da78ca9dd321c9220a18c04402bcdfba0389f46446ba0859bd564b7c",
+      "dictionaries_sha256": "3e2447b84d589858a52fbaf509dbd33b5f62a828767ae84e2436f9a30b4e7845",
+      "original_dictionary_reused": true,
+      "fitting_rows": 5000,
+      "fitting_columns": 6800,
+      "magnitude_global_scale": 434.9082336425781,
+      "row_norm_quantiles_before_global_scaling": [
+        6.557094573974609,
+        283.18504333496094,
+        434.9082336425781,
+        637.5811462402344,
+        5494.99169921875
+      ],
+      "learner_parameters": {
+        "alpha": 0.1,
+        "batch_size": 256,
+        "callback": null,
+        "dict_init": null,
+        "fit_algorithm": "lars",
+        "max_iter": 100,
+        "max_no_improvement": 10,
+        "n_components": 500,
+        "n_jobs": 8,
+        "positive_code": false,
+        "positive_dict": false,
+        "random_state": 43,
+        "shuffle": true,
+        "split_sign": false,
+        "tol": 0.001,
+        "transform_algorithm": "lasso_lars",
+        "transform_alpha": null,
+        "transform_max_iter": 1000,
+        "transform_n_nonzero_coefs": null,
+        "verbose": 1
+      },
+      "iterations": 8,
+      "sklearn_version": "1.9.1",
+      "only_fitting_rows_used": true,
+      "new_batch_outcomes_read": false
+    },
+    "worker_started_unix": 1791966578.56984,
+    "worker_completed_unix": 1791966855.0360827,
+    "peak_memory_bytes": 22459472896
+  }
+]

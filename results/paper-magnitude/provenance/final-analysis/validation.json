@@ -1,0 +1,17 @@
+{
+  "written_unix": 1791977990.461758,
+  "both_full_integrity_audits_complete": true,
+  "bootstrap_replicates": 1000,
+  "figures_visually_checked": [
+    "forecast-errors.png",
+    "effect-size-scatter.png",
+    "reconstruction.png"
+  ],
+  "all_endpoints_arms_rates_seeds_retained": true,
+  "all_fixed_examples": 1024,
+  "all_method_rate_probe_pairs": 40960,
+  "preliminary_seed43_report_preserved": true,
+  "scientific_workers_rerun": false,
+  "analysis_tests": "15 passed",
+  "prior_scientific_and_analysis_tests": "26 passed before preliminary analysis; unchanged scientific code"
+}
