@@ -1,0 +1,23 @@
+{
+  "launched_unix": 1791979100.939514,
+  "seed": 42,
+  "pid": 135907,
+  "source_commit": "a6b79c5d1a3f7acccf856694ac09fd99b1e575ee",
+  "plan_sha256": "67527ef33e0cd41f87e04bf9b026a1aaafcfa4d0cc27e20a52050e13469c0690",
+  "specification_sha256": "4233a72384859855f28ed38f544eb917ec1ca53d0fdd9f34eaa7b27f128bec26",
+  "preflight": {
+    "completed_unix": 1791979036.4594975,
+    "tensors": 136,
+    "parameter_count": 2228224,
+    "component_sum_max_abs_error": 7.220219908066206e-11,
+    "peak_memory_bytes": 22801337344,
+    "tokenization": {
+      "documents": 336,
+      "maximum_full_tokens": 421,
+      "all_targets_untruncated": true,
+      "original_eos_convention": true
+    }
+  },
+  "failed_preflight_preserved": true,
+  "scientific_outcomes_read": false
+}

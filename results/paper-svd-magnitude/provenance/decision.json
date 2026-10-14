@@ -1,0 +1,24 @@
+{
+  "written_unix": 1791978392.175683,
+  "svd_full_analysis_complete": true,
+  "analysis_manifest_sha256": "a1522f0da91bb84b3653e073d94eca376bbe72a7dfe44b1405ee47b7737eaecf",
+  "decision": "Proceed with exactly the already-prepared prospective SVD500 effect-size study, unchanged in scientific design.",
+  "reason": "SVD preserves substantially more fitting-gradient information but does not provide stronger selective component steering. The independent numerical question is whether that representation improves prospective reference-loss effect-size prediction on fresh rows. Full-gradient magnitude forecasts demonstrate that this endpoint is predictable at the fixed steps; both dictionary-learning geometries substantially underpredict. One fresh-data SVD test directly answers the remaining user-authorized question.",
+  "not_a_claim": "This is not a rescue of the failed SVD steering primary, an interpretability success, a generated-behavior forecast, or a promised positive result.",
+  "followup_protocol": "results/paper-svd-magnitude/provenance/proposed-protocol.json",
+  "preserve": [
+    "existing SVD500 basis and dictionary",
+    "fresh336data SHA da809d6147374094eeb397043f0e16e2a9d3048384a5fbb6ed89a587f32cf15e",
+    "primary .003 and descriptive .0003",
+    "all four frozen gates, both seeds, 1000 paired resamples, eight-quantity multiplicity",
+    "no outcome-fitted scale or method/rate/seed selection",
+    "all forecasts locked before updates; both-seed reading barrier"
+  ],
+  "maximum_followup_studies": 1,
+  "next_actions": [
+    "Freeze source/plans and pass training-only GPU preflight on each supplied host used",
+    "Run both seeds in parallel using idle original A100/H100 with existing assets",
+    "Audit, report regardless of outcome, then prioritize final report before provisional9a.m.PacificOctober15"
+  ],
+  "no_new_scientific_worker_launched_yet": true
+}

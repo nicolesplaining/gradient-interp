@@ -1,0 +1,17 @@
+{
+  "scope": "development_only",
+  "started_unix": 1791979102.321391,
+  "deadline_unix": 1792022302.321391,
+  "status": "running",
+  "controller_pid": 135907,
+  "worker_pid": 135917,
+  "plan_sha256": "67527ef33e0cd41f87e04bf9b026a1aaafcfa4d0cc27e20a52050e13469c0690",
+  "attempts": [
+    {
+      "job": "svd-magnitude",
+      "pid": 135917,
+      "started_unix": 1791979102.3248048
+    }
+  ],
+  "current_job": "svd-magnitude"
+}

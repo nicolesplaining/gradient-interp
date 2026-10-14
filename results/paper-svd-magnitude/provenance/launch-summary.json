@@ -1,0 +1,51 @@
+{
+  "recorded_unix": 1791979187.660577,
+  "source_commit": "a6b79c5d1a3f7acccf856694ac09fd99b1e575ee",
+  "scientific_outcomes_read": false,
+  "study_count": 1,
+  "workers": [
+    {
+      "seed": 42,
+      "scope": "development_only",
+      "started_unix": 1791979102.321391,
+      "deadline_unix": 1792022302.321391,
+      "status": "running",
+      "controller_pid": 135907,
+      "worker_pid": 135917,
+      "plan_sha256": "67527ef33e0cd41f87e04bf9b026a1aaafcfa4d0cc27e20a52050e13469c0690",
+      "attempts": [
+        {
+          "job": "svd-magnitude",
+          "pid": 135917,
+          "started_unix": 1791979102.3248048
+        }
+      ],
+      "current_job": "svd-magnitude"
+    },
+    {
+      "seed": 43,
+      "scope": "development_only",
+      "started_unix": 1791979102.187303,
+      "deadline_unix": 1792022302.187303,
+      "status": "running",
+      "controller_pid": 34453,
+      "worker_pid": 34463,
+      "plan_sha256": "1533c8992174ab33d3b7763902011a59f2a5e85fdc6398c17573f07f55c1303e",
+      "attempts": [
+        {
+          "job": "svd-magnitude",
+          "pid": 34463,
+          "started_unix": 1791979102.189444
+        }
+      ],
+      "current_job": "svd-magnitude"
+    }
+  ],
+  "both_repaired_preflights_passed": true,
+  "initial_preflight_failure_preserved": true,
+  "test_result": "27 meaningful synthetic worker/data/inherited tests passed; Ruff clean",
+  "data_sha256": "da809d6147374094eeb397043f0e16e2a9d3048384a5fbb6ed89a587f32cf15e",
+  "analysis_plan_sha256": "b6edfa3a7031ae3e5bdb3fc1f6b50f284a5e40742ce14f93e7590b922ac92f06",
+  "third_h100_idle": true,
+  "no_additional_ablation_branch": true
+}

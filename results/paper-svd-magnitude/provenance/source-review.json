@@ -1,0 +1,35 @@
+{
+  "reviewed_unix": 1791973877.548894,
+  "scope": "source review and synthetic validation only",
+  "scientific_outputs_read": false,
+  "current_svd_workers_changed": false,
+  "followup_gpu_preflight_completed": false,
+  "followup_frozen_or_launched": false,
+  "source_sha256": {
+    "src/gradient_interp/paper_svd_magnitude.py": "df543fa23bfe2067f55667ab6120145cfd57689afd81122ac9d393296b70dfc0",
+    "src/gradient_interp/paper_svd_magnitude_data.py": "a88686e672721f685fa46bc3c518a337230ec96afb8ac443e93d4ce8852beb88",
+    "tests/test_paper_svd_magnitude.py": "42868d551fba8bc7ea76ece26cb67fe50ac86f71fbfc25f5f63070455dda22fb",
+    "tests/test_paper_svd_magnitude_data.py": "9cbc9f9d5efca37cd79b373dcd86018a28218f57e40a8f9e65626b8df0f61757",
+    "src/gradient_interp/paper_magnitude.py": "b7067c79fe12210125d3f011016b2d021fcdebfa3848c4af12f5fb8f9c52dc79",
+    "src/gradient_interp/paper_batch.py": "317d6cb7819bd33ad62ffdfd46e2e100715146721c1426d7b51b0815953cdb79",
+    "src/gradient_interp/paper_mixture.py": "f3102c41bf607969cb8a6c64a6d3774f4afed42dd13d40f83edfc254c9cc6eff"
+  },
+  "reviewed_properties": [
+    "SVD500 basis is reused without selected steering norm multipliers",
+    "Magnitude-bearing coefficients and unscaled EKFAC inverse reconstruction",
+    "Mean completion-CE losses, batch averaging, all 136 tensors and original EOS",
+    "Linear component sum equals physical gradient contraction with documented float32 tolerance",
+    "Pre-update forecast locks and exact adapter restoration",
+    "Source, input, basis, plan and immutable deadline guards",
+    "Primary .003 gates and eight-quantity simultaneous uncertainty; secondary cannot rescue",
+    "Paired batch/probe bootstrap across methods/rates and undefined ratios retained",
+    "Fresh source/lexical components, prior-data exclusion and original-tokenizer verification"
+  ],
+  "finding": "No source correctness defect identified; actual GPU preflight remains required before final freeze and launch.",
+  "validation": {
+    "command": "pytest tests/test_paper_svd_magnitude.py tests/test_paper_svd_magnitude_data.py tests/test_paper_magnitude.py",
+    "passed_tests": 26,
+    "elapsed_seconds": 2.57,
+    "ruff": "All checks passed!"
+  }
+}

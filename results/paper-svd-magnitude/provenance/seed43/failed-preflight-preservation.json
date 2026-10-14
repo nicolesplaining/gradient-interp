@@ -1,0 +1,17 @@
+{
+  "preserved_unix": 1791978768.1904287,
+  "seed": 43,
+  "original_source": "3e9da6696c56d25671f854d308b8ee011e49566c",
+  "source_archive_sha256": "780c08b331b4902a8f382a2848a73bf771892f36f23683649c45fbe16cc63567",
+  "original_files_sha256": {
+    "data.json": "44b63e2b7a82febc92180d657a583be39bd0ef878177e81ede2f6ac35b4e1056",
+    "data-audit.json": "887b68eead8993b205ae74b6d0d8be840d2dad9d094893174b884634f7c5fbe0",
+    "staging-audit.json": "57506e2fff8de665e502fa4efb8ff984f3fd6043b5311ba6b6635b395e47d57f",
+    "specification.json": "99bf07205328159edfd0841234b6d62eff33b8b6a4389bc737abfe54e62311ab",
+    "preparation-lock.json": "ec6646a4d1d6ba5a131399d2caa832a00bfb6fbfdf2f3a4c4051da16ee5fdd74",
+    "named-selections.json": "d99e69e9d52f28a38722cc8e955ede190230c5fa91c28c3e6440e16d82181910"
+  },
+  "plans_controllers_outcomes_absent": true,
+  "gpu_empty": true,
+  "repair_source": "a6b79c5d1a3f7acccf856694ac09fd99b1e575ee"
+}
