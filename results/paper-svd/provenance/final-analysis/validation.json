@@ -1,0 +1,17 @@
+{
+  "written_unix": 1791978446.5753112,
+  "both_complete_integrity_audits": true,
+  "responses": 29080,
+  "descriptor_gradients": 320,
+  "full_conditions": 202,
+  "fixed_examples": 10180,
+  "bootstrap_replicates": 1000,
+  "relevant_tests": "41 prior scientific/helper/auditor tests;13 analysis tests after reporting caveat",
+  "ruff": "clean",
+  "figures": "five visually reviewed; corrected interval-title figure rechecked",
+  "no_scientific_worker_rerun": true,
+  "no_numerical_analysis_reexecution": true,
+  "initial_source_verified_against_first_reading_hash": true,
+  "source_archives_verified_before_remote_checkout_changes": true,
+  "whitespace_policy": "Source checked. CSV/HTML include verbatim reference and response whitespace, preserved intentionally."
+}

@@ -1,0 +1,9 @@
+{
+  "archived_unix": 1791977598.5636747,
+  "source_snapshot_sha256": "30ffa42ef84cf4531dd9bb93ead5eeadd612b53ce3ba00f269c5a35276dc72e5",
+  "source_files": 56,
+  "source_matches_frozen_plan": true,
+  "all_original_queued_workers_dead": true,
+  "scientific_outcomes_read": false,
+  "remote_checkout_changed": false
+}

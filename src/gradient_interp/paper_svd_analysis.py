@@ -544,7 +544,7 @@ def plots(summaries, output):
         )
         ax.tick_params(axis="x", rotation=25)
         ax.legend()
-    fig.suptitle("All-strength signed response, familywise 99% intervals")
+    fig.suptitle("All-strength signed response, 99% marginal intervals (five-family Bonferroni)")
     for ext in ("png", "pdf"):
         fig.savefig(output / f"signed-response.{ext}", dpi=170)
     plt.close(fig)

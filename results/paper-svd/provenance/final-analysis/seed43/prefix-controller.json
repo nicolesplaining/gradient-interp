@@ -1,0 +1,20 @@
+{
+  "scope": "development_only",
+  "started_unix": 1791966858.5710158,
+  "deadline_unix": 1792010058.5710158,
+  "status": "interrupted",
+  "controller_pid": 28852,
+  "worker_pid": null,
+  "plan_sha256": "8b7a100b8c7e144399e2ca3dfe67867221e865b75a5b0e1cf866abc76dce4d61",
+  "attempts": [
+    {
+      "job": "svd_replication",
+      "pid": 28862,
+      "started_unix": 1791966858.5729427,
+      "finished_unix": 1791974168.384561,
+      "returncode": -15
+    }
+  ],
+  "current_job": "svd_replication",
+  "checked_unix": 1791974168.3845663
+}

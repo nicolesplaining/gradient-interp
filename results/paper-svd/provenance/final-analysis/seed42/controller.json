@@ -1,0 +1,26 @@
+{
+  "scope": "development_only",
+  "started_unix": 1791966574.2143219,
+  "deadline_unix": 1792009774.2143219,
+  "status": "complete",
+  "controller_pid": 130846,
+  "worker_pid": null,
+  "plan_sha256": "6a7cc73bee5dab9571fa66bd27ae56cfcb0af460753fc6de4c4e19f940fb8348",
+  "attempts": [
+    {
+      "job": "svd_replication",
+      "pid": 130856,
+      "started_unix": 1791966574.2175865,
+      "finished_unix": 1791977029.068325,
+      "returncode": -15
+    }
+  ],
+  "current_job": "svd_replication",
+  "checked_unix": 1791977304.254823,
+  "execution_amendment_sha256": "0fda2ac15122a9f4be88caa3e1794e33bb114e965643f804f5f867f51faa1aaf",
+  "completion_basis": "parallel execution metadata finalization",
+  "finalizer_pid": 132578,
+  "finalization_unix": 1791977304.254823,
+  "execution_finalization_sha256": "c0554c175b06750cfb3d967407494209a8607510315943e8d57d19a761d9482f",
+  "manifest_sha256": "6ba1d73c27fe9c73be78b1ac8df013b080c30105ba89c78f4e54101513233b6a"
+}

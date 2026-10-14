@@ -1,0 +1,31 @@
+{
+  "completed_unix": 1791978268.037817,
+  "replicates": 1000,
+  "analyzer_sha256": "ae9eea396274c06e08ca21b4be2a1e0bbaf7dd8943d3dbae4b38e31974decc16",
+  "analysis_plan_sha256": "111a87bbc03800f4a4e49a72ae9856aeab4805b931a8772f5a185ad811650504",
+  "barrier_sha256": "dd497efcfbdb22d7b57931e180046312016ca29f084b766ee207f73a47e24663",
+  "files_sha256": {
+    "summary.json": "4afd4f14dc89b368312f84b9b44c30174c33301dc04ca63829968668f20f67d0",
+    "candidate-coherence.png": "305b36fb406d95e89c6c5f6f6a118fb2a8cf16771ed25225b06ea3a648876a00",
+    "candidate-coherence.pdf": "e6e724cdfa0731432e777c072f498f9007b5c80495be215ffafc46d0637e61aa",
+    "quality.csv": "fa68c837d989501aaac0d2cdb943876714b293b152ad1f16a1fca05f71e249c1",
+    "primary.csv": "9afa1d80470da68faabcd8b0566a051a1e38c425adac1fb2604923ee00616792",
+    "conditions.csv": "8fb4f053385ec63b022eabe27a1371c41d0aeec5323515ff3a472b5d1e143900",
+    "candidates.csv": "e43495292a44911abf6eb8bdc6e0bab828b33840ffe8f3bcea99eaf67a6ddd87",
+    "descriptor_summary.csv": "de68aac074f5664758fa05e28f6926f5b6f11bbdc734c4d70a214fe16f5b091d",
+    "protocol.json": "1af653ab36b40de98eb2ebb9a64ea5f1a813de19df84dfa9d0078099739365d5",
+    "signed.csv": "fd4c9d5a5c97d98b45db49e5e19c67f2021ca6fcb40a8a13451c538d1b9114fb",
+    "fixed-examples.json": "d8d30b3053d729562a6cf0a43c084cd4043ee398f5d58b4d86629e19ce56a1ac",
+    "complete-strength-grid.pdf": "0a7d9bf3f9c27c5006a18289ecba5798f6341806ec4b2d872225f8353ab38685",
+    "controlled-quality.pdf": "62147742b1582e134df07d6aa8caa3c92dc621acf41407ef0462cb15d544f4f4",
+    "descriptor_values.csv": "336f46253bd140d29bef30d283a1b699f857516281d911ac1c3051140ac0e2bf",
+    "descriptor-preference.pdf": "eec35d27373572934c23b9683f99dc4439f606efb0e47c158f9f2a0264fd1f12",
+    "complete-strength-grid.png": "ca085e7a4ca161a137c7aaa3ecf7136fc0ad591efc0d0ef2fad434c4a9c5668e",
+    "controlled-quality.png": "1a06d795ae8c7eead8602f26601cd42178c9631042f9b3548aab09e7063d7cd9",
+    "report.html": "fa379fe55907e97ce1a29dd0363ccd2e08f39f400a992a6e69e8b14ecb0744a4",
+    "descriptor-preference.png": "37b7518274854730c31ad61a200db33d1cf88d1abbbae03e629f1cf5f2c80ae2",
+    "signed-response.png": "d41bdf9e385b2194ec791740423d756a312a5a96d5929e1e5dc8a4cd577b1c7e",
+    "baseline_length_strata.csv": "b7786fe4cf99f7345ae1b3041db0d0c1521f4e04c8ff33bcceaa12ed52aa2e3c",
+    "signed-response.pdf": "c39ab63c66fbd3931a58497d90fb4dae465a351225e42909279e2560fffc212b"
+  }
+}

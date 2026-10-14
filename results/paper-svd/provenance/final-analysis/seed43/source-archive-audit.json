@@ -1,0 +1,10 @@
+{
+  "archived_unix": 1791974353.6652105,
+  "source_snapshot_sha256": "9432af47d56339c0d0563d81160551804f9c0ea3b928ba8d40d40f227b590819",
+  "source_files": 56,
+  "original_plan_sha256": "8b7a100b8c7e144399e2ca3dfe67867221e865b75a5b0e1cf866abc76dce4d61",
+  "source_matches_frozen_plan": true,
+  "prefix_dead": true,
+  "scientific_outcomes_read": false,
+  "remote_checkout_changed": false
+}

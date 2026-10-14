@@ -1,0 +1,130 @@
+{
+  "written_unix": 1791978392.175373,
+  "scope": "architecture reconstruction, two reused adapters, development only",
+  "conclusion": "SVD500 reconstructs the normalized fitting gradients more closely, but the locked SVD components produce weaker all-family signed steering than dictionary atoms and fail the combined description, selectivity and quality requirements.",
+  "primary": [
+    {
+      "seed": 42,
+      "method": "dictionary",
+      "scope": "all_families",
+      "signed_response": 0.20820000000000002,
+      "lo": 0.20100000000000012,
+      "hi": 0.21540000000000012,
+      "undefined_replicates": 0,
+      "coverage": 0.95
+    },
+    {
+      "seed": 42,
+      "method": "svd500",
+      "scope": "all_families",
+      "signed_response": 0.0632,
+      "lo": 0.05480000000000003,
+      "hi": 0.07160000000000002,
+      "undefined_replicates": 0,
+      "coverage": 0.95
+    },
+    {
+      "seed": 42,
+      "method": "svd_minus_dictionary",
+      "scope": "all_families",
+      "signed_response": -0.14500000000000002,
+      "lo": -0.15460000000000007,
+      "hi": -0.1354000000000001,
+      "undefined_replicates": 0,
+      "coverage": 0.95
+    },
+    {
+      "seed": 43,
+      "method": "dictionary",
+      "scope": "all_families",
+      "signed_response": 0.18460000000000001,
+      "lo": 0.1746000000000001,
+      "hi": 0.19400000000000012,
+      "undefined_replicates": 0,
+      "coverage": 0.95
+    },
+    {
+      "seed": 43,
+      "method": "svd500",
+      "scope": "all_families",
+      "signed_response": 0.0998,
+      "lo": 0.09040000000000002,
+      "hi": 0.10820500000000004,
+      "undefined_replicates": 0,
+      "coverage": 0.95
+    },
+    {
+      "seed": 43,
+      "method": "svd_minus_dictionary",
+      "scope": "all_families",
+      "signed_response": -0.08480000000000001,
+      "lo": -0.09740000000000006,
+      "hi": -0.07320000000000004,
+      "undefined_replicates": 0,
+      "coverage": 0.95
+    }
+  ],
+  "descriptor_pass_families": {
+    "42": {
+      "dictionary": [],
+      "svd500": [
+        "refusal",
+        "numbered"
+      ]
+    },
+    "43": {
+      "dictionary": [
+        "refusal"
+      ],
+      "svd500": [
+        "yesno",
+        "refusal"
+      ]
+    }
+  },
+  "selectivity_pass_families": {
+    "42": {
+      "dictionary": [
+        "yesno",
+        "refusal",
+        "numbered"
+      ],
+      "svd500": [
+        "numbered"
+      ]
+    },
+    "43": {
+      "dictionary": [
+        "bullets",
+        "numbered"
+      ],
+      "svd500": []
+    }
+  },
+  "quality_pass_families": {
+    "42": {
+      "dictionary": [],
+      "svd500": []
+    },
+    "43": {
+      "dictionary": [],
+      "svd500": []
+    }
+  },
+  "findings": [
+    "Across all five families and all five strengths, SVD signed response is 6.32/9.98 percentage points in seeds42/43, versus dictionary 20.82/18.46. Paired SVD-minus-dictionary intervals are -15.46 to -13.54 and -9.74 to -7.32 percentage points. Both frozen primary requirements fail.",
+    "SVD missing-input clarification passes the narrow target-versus-control gradient descriptor checks in both seeds. It fails controlled specificity and quality in both; this is a limited descriptive result, not validated selective control.",
+    "SVD numbered passes descriptor and selectivity checks only in seed42. Its signed response is 23.6/12.1 points, with serious quality and length costs and seed43 descriptor failure. It cannot rescue the failed aggregate.",
+    "Every family of both methods fails the joint controlled quality requirement across the full fixed strength grid. Stronger dictionary steering alone is therefore not a demonstration of clean or robust interpretable control.",
+    "Normalized fitting-row reconstruction relative error is 0.519/0.516 for SVD versus 0.766/0.760 for dictionary. SVD uses about 500 active coefficients per row versus dictionary 7.79/7.51. This is fitting reconstruction at matched candidate count, not matched sparsity, held-out forecasts, or an efficiency result.",
+    "The code direction has negative all-strength signed response for dictionary in both seeds and SVD in seed42. No orientations or strengths were changed after seeing this result."
+  ],
+  "limits": [
+    "Original paper rank8 checkpoint was unavailable; this is an architecture reconstruction, not exact checkpoint replication.",
+    "Training selection/coherence does not validate all 500 components. Narrow held-out descriptor pairs use controlled content but are not exactly matched in token length.",
+    "Public prompts and two reused adapters make this development evidence. Family comparisons use 99% marginal Bonferroni intervals; aggregate intervals are pointwise95%.",
+    "Under the frozen execution amendment, seed42 baseline was on A100 while bullets/numbered conditions were on H100. Matched method pairs within each family share hardware, but baseline-relative quality can include device differences.",
+    "Physical descriptor cosines passed hash, shape, finiteness and range audit; descriptor coefficients and saved response metrics were recomputed. The original full descriptor gradients were not saved for independent cosine recomputation.",
+    "No post-hoc low-strength winner, direction sign flip, or family-only primary claim."
+  ]
+}

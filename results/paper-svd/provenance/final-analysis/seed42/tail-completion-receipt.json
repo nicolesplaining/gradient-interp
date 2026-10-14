@@ -1,0 +1,15 @@
+{
+  "type": "paper_svd_tail_completion_receipt",
+  "seed": 42,
+  "execution_host": "ubuntu@209.20.156.175",
+  "all_processes_dead": true,
+  "observed_unix": 1791976512.3287644,
+  "completed_unix": 1791976509.6741545,
+  "amendment_sha256": "0fda2ac15122a9f4be88caa3e1794e33bb114e965643f804f5f867f51faa1aaf",
+  "helper_sha256": "0466d44566dc6fb4be022da5d5178e505382b6c341d679712138b1e547455432",
+  "manifest_sha256": "51c9124af1b97f8037bc956eeaf2a78fe1230f1ba4553399ba156838241ad993",
+  "controller_sha256": "3b43bac04efe42d84bc77554b5b34b04a8a812122881201140f4e78abcb45b79",
+  "checked_pids": [
+    4891
+  ]
+}

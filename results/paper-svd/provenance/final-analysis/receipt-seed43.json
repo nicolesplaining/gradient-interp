@@ -1,0 +1,22 @@
+{
+  "type": "paper_svd_completion_receipt",
+  "seed": 43,
+  "root": "/home/ubuntu/gradient-interp/runs/paper-svd-seed43",
+  "observed_unix": 1791978087.1778266,
+  "status": "complete",
+  "started_unix": 1791966858.5710158,
+  "deadline_unix": 1792010058.5710158,
+  "all_processes_dead": true,
+  "checked_pids": [
+    28852,
+    28862
+  ],
+  "release_reason": "complete",
+  "controller_sha256": "083c7a05b2de5acb38a6d31f4f42ea383cccf367591cdad3a8fcdda3ded39d17",
+  "plan_sha256": "8b7a100b8c7e144399e2ca3dfe67867221e865b75a5b0e1cf866abc76dce4d61",
+  "specification_sha256": "213b450ab98048eab17768ced8c873ad1022d482871830ffa54f302d6d5bdeb1",
+  "execution_amendment_sha256": "0fda2ac15122a9f4be88caa3e1794e33bb114e965643f804f5f867f51faa1aaf",
+  "execution_finalization_sha256": "de6dfe586471217e07f056b24a61208cec3f2e0608bcbc1130fe6061f2b7540c",
+  "manifest_sha256": "87575484d7f635856d00a14149a74910d350711b2aacd4e36ecbedcf51d3f037",
+  "completed_unix": 1791978066.3908958
+}

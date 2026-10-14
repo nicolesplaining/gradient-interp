@@ -1,0 +1,42 @@
+{
+  "written_unix": 1791978392.21756,
+  "initial_analyzer_hash_verified_against_first_reading": true,
+  "original_manifest_preserved": true,
+  "numerical_results_changed": false,
+  "change": "Correct plot title from familywise99% to99% marginal five-family Bonferroni intervals; add explicit interpretation. No resampling rerun.",
+  "figures_checked": [
+    "signed-response",
+    "complete-strength-grid",
+    "descriptor-preference",
+    "controlled-quality",
+    "candidate-coherence"
+  ],
+  "source_sha256": "5d926539487baba7d3f11e0aa0ebc0402f8f23bec943af15e5cb6943f6a383c2",
+  "files_sha256": {
+    "summary.json": "4afd4f14dc89b368312f84b9b44c30174c33301dc04ca63829968668f20f67d0",
+    "candidate-coherence.png": "305b36fb406d95e89c6c5f6f6a118fb2a8cf16771ed25225b06ea3a648876a00",
+    "candidate-coherence.pdf": "b6413d16d72a1e6be4460dc3a4d3835b98333c2165b759504fb58eca7cea009d",
+    "analysis-manifest.json": "a1522f0da91bb84b3653e073d94eca376bbe72a7dfe44b1405ee47b7737eaecf",
+    "quality.csv": "fa68c837d989501aaac0d2cdb943876714b293b152ad1f16a1fca05f71e249c1",
+    "primary.csv": "9afa1d80470da68faabcd8b0566a051a1e38c425adac1fb2604923ee00616792",
+    "interpretation.json": "719fe6022e5f1d92fb86b6157400b3ba8a01bd87414df91bf2dd542335a289ab",
+    "conditions.csv": "8fb4f053385ec63b022eabe27a1371c41d0aeec5323515ff3a472b5d1e143900",
+    "candidates.csv": "e43495292a44911abf6eb8bdc6e0bab828b33840ffe8f3bcea99eaf67a6ddd87",
+    "descriptor_summary.csv": "de68aac074f5664758fa05e28f6926f5b6f11bbdc734c4d70a214fe16f5b091d",
+    "next-step.json": "249bcd52cca66f28152c4d50d8cb12202a4cf63bb36890dbd33654c91e9f0fba",
+    "protocol.json": "1af653ab36b40de98eb2ebb9a64ea5f1a813de19df84dfa9d0078099739365d5",
+    "signed.csv": "fd4c9d5a5c97d98b45db49e5e19c67f2021ca6fcb40a8a13451c538d1b9114fb",
+    "fixed-examples.json": "d8d30b3053d729562a6cf0a43c084cd4043ee398f5d58b4d86629e19ce56a1ac",
+    "complete-strength-grid.pdf": "48a39e0a74433007d1d9cd99e559deaa32752687c7e46bb692131211662e9238",
+    "controlled-quality.pdf": "b16b71659d8b543482b252e2d3ab0b4207f5329953fc200c00d76f13b52df5d8",
+    "descriptor_values.csv": "336f46253bd140d29bef30d283a1b699f857516281d911ac1c3051140ac0e2bf",
+    "descriptor-preference.pdf": "26ec33dda11928cbb9479da46e480dfe9563de6f74402296cabdcf4c06ff4401",
+    "complete-strength-grid.png": "ca085e7a4ca161a137c7aaa3ecf7136fc0ad591efc0d0ef2fad434c4a9c5668e",
+    "controlled-quality.png": "1a06d795ae8c7eead8602f26601cd42178c9631042f9b3548aab09e7063d7cd9",
+    "report.html": "766e2ae3a25ebf2c82f16f876e67079bd39136ed035630fc4393e07567155baa",
+    "descriptor-preference.png": "37b7518274854730c31ad61a200db33d1cf88d1abbbae03e629f1cf5f2c80ae2",
+    "signed-response.png": "572bf84595737720639f4fb67fdabd193b04b6e84ef0d48e45de4fd43c84e8ae",
+    "baseline_length_strata.csv": "b7786fe4cf99f7345ae1b3041db0d0c1521f4e04c8ff33bcceaa12ed52aa2e3c",
+    "signed-response.pdf": "6beb50dd10a651ef82e0007a55b2bc75286abb08ff81993f8f8483c532a3dbc1"
+  }
+}

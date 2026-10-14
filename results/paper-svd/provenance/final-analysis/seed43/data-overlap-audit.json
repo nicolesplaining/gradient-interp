@@ -1,0 +1,17 @@
+{
+  "unique_controlled_prompt_bodies": 40,
+  "reference_case_suffix_removed": true,
+  "checked_input_files_sha256": {
+    "/home/ubuntu/gradient-interp/runs/paper-atom-batches-seed43/data.json": "ee2c661c8d540dc674befdd097f4a0acecded211f4913d67924def44c9e6a03e",
+    "/home/ubuntu/gradient-interp/runs/paper-batch-seed43/data.json": "3fe2e1426c9554eca18d2346bd2410f6f6d6b3f498ea88a011a9abc3fca7ecd9",
+    "/home/ubuntu/gradient-interp/runs/paper-magnitude-data/data.json": "88d48369df1b95bb346c65ac8e9111b196946a478f33e732559a870216642933",
+    "/home/ubuntu/gradient-interp/runs/paper-mixture-seed43/data.json": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+    "/home/ubuntu/gradient-interp/runs/paper-sample-seed43/data.json": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+    "/home/ubuntu/gradient-interp/runs/paper-steering-seed43/questions.json": "89612591d76d6192d15d7256c52199e1fc031fc5c36078da7a8c1d5ff673e2de",
+    "/home/ubuntu/gradient-interp/runs/paper-tangent-seed43/data.json": "75a11fec8f4002cd26db0293575f6adda202efd17a6a0c0d1d6dc500c0baca31"
+  },
+  "discovery_training_sha256": "ae92dabc08ebd4c5a0bbbb5971f243b6dd2d77a256ca9c57190b76fb27262681",
+  "unique_prior_prompt_bodies": 5977,
+  "matched_controlled_ids": [],
+  "limitation": "Exact normalized prompt-body overlap only. Synthetic templates and adapters are reused. No claim of semantic/source deduplication or untouched confirmation; reference-case suffixes confer no novelty."
+}
