@@ -1,0 +1,88 @@
+{
+  "status": "proposed implementation complete; parent review and scientific freeze required before execution",
+  "track": "prospective effect size from normalized versus magnitude-preserving dictionary learning",
+  "scope": "development on the two existing reconstructed checkpoints",
+  "scientific_fits_or_model_jobs_performed_during_implementation": false,
+  "model": {
+    "base": "Gemma-3 4B IT",
+    "lora_rank": 8,
+    "projections": ["query", "value"],
+    "language_layers": 34,
+    "adapter_tensors": 136,
+    "trainable_parameters": 2228224,
+    "seeds": [42, 43],
+    "exact_original_checkpoint_replication": false
+  },
+  "arms": {
+    "normalized_fit": "Reuse the audited original 500-atom dictionary learned on unit-normalized 6800-dimensional EKFAC-projected fitting rows.",
+    "magnitude_fit": "Fit one 500-atom dictionary on the same projected fitting rows divided by their single positive-row median norm. Keep every relative fitting-row magnitude. The global scale is computed from fitting rows alone before any new batch/probe forecasts or updates."
+  },
+  "learner": {
+    "class": "sklearn.decomposition.MiniBatchDictionaryLearning",
+    "n_components": 500,
+    "alpha": 0.1,
+    "batch_size": 256,
+    "max_iter": 100,
+    "random_state": "same original checkpoint seed",
+    "transform_algorithm": "lasso_lars",
+    "n_jobs": 8,
+    "remaining_parameters": "Original sklearn defaults, saved in fit.json. The thread limit changes parallel execution only.",
+    "sweeps": false
+  },
+  "geometry_rationale": "A single global median makes the typical fitting-row norm one while preserving the relative magnitudes Nicole asked to retain. Original fitting rows are summed completion-CE gradients. New batches average per-document mean-token CE gradients. Both arms therefore use an identical inference encoder: normalize the projected new batch, use alpha .1 Lasso, then restore that batch's projected norm. This isolates dictionary learning geometry rather than also changing inference regularization units. It does not claim the magnitude arm is trained on normalized rows.",
+  "data": {
+    "source": "New natural Alpaca documents from a pinned source selected by the shared data agent",
+    "batches": 32,
+    "documents_per_batch": 8,
+    "calibration_probes": 16,
+    "evaluation_probes": 64,
+    "required_document_fields": ["id", "prompt", "answer", "source_id", "cluster_id", "full_tokens", "completion_tokens"],
+    "tokenization": "All selected natural documents fit within 500 tokens under the exact original training EOS and tokenization convention. Preflight and worker independently verify uncapped and max_length500 encodings are identical and recorded completion-token counts match; no truncated primary targets are accepted.",
+    "optional_document_field": "template_id, only when it denotes a meaningful template group",
+    "separation": "Unique prompts/document IDs and source/near-duplicate clusters separated across batch/calibration/evaluation. Historical input audit must cover original fitting documents and prior phases. Meaningful template groups cannot cross splits; natural sources need an explicit template policy instead of invented labels.",
+    "new_data_confirmation_claim": false
+  },
+  "primary": {
+    "endpoint": "Change in per-document mean-token teacher-forced completion cross entropy, nats per token",
+    "forecast": "Before any update, compute the original model's exact probe-loss gradients. Predict -rate times probe loss gradient dot reconstructed batch gradient. Restore the projected batch norm in both arms. No outcome regression, clipping or fitted rescaling.",
+    "rates": [0.0003, 0.003],
+    "actual_targets": "One original full-gradient SGD update for every batch/rate. The same 64 actual updates supply targets for both dictionary arms. Restore all 136 tensors to the original checkpoint after each update.",
+    "references": ["full_gradient", "zero"],
+    "calibration": "Separate descriptive probe split, never used for rate or method selection or rescaling.",
+    "claim_limit": "This is a loss-effect forecast. It is not an unrestricted generated-behavior forecast, and accuracy does not validate component descriptions. No proposal-bank estimator or proposal expansion is used."
+  },
+  "strong_development_result_criteria": {
+    "minimum_actual_rms_nats_per_token": 0.01,
+    "maximum_nrmse_relative_to_zero": 0.5,
+    "maximum_mae_nats_per_token": 0.01,
+    "requirement": "For each arm, both fixed rates in both reused seeds must satisfy the meaningful-effect gate and both error criteria. Report uncertainty and every failed/inconclusive rate. No best-rate or secondary-endpoint promotion.",
+    "uncertainty": "1000 paired bootstrap replicates with independent batch and evaluation-probe draws. Preserve identical resamples across methods/rates. Report 95% pointwise intervals and simultaneous intervals for two arms by two rates per seed using Bonferroni 98.75% marginal intervals. Calibration is analyzed separately. No Monte Carlo generation uncertainty applies to exact teacher-forced CE.",
+    "interpretation": "Effects below the signal floor are inconclusive even if errors are small. Reused models make this development evidence. Fresh-seed confirmation and its complete multiplicity/threshold plan must be frozen separately."
+  },
+  "execution": {
+    "module": "gradient_interp.paper_magnitude",
+    "commands": ["prepare", "fit", "preflight", "freeze", "run"],
+    "controller": "gradient_interp.development_run",
+    "worker_deadline_hours": 12,
+    "prepare": "Requires --source --data --data-audit. Validates original audited source manifests and data separation, then writes specification.json and fit-plan.json before the magnitude fit.",
+    "fit": "Refuses overwrite, uses only original fitting projections, saves both dictionaries and exact sklearn parameters. No model or holdout outcome is loaded.",
+    "preflight": "Uses already-seen training input only for model scoring, validates a full-length scoring gradient, finite reconstruction, one actual update and bit-exact adapter/scoring restoration. New-data tokenization is checked without scoring outcomes. Full rank8 q/v all34-layer architecture is validated by names and dimensions.",
+    "freeze": "Pins source files, all original source/factor/checkpoint inputs, dictionaries, data, dedup audit and preflight for the controller.",
+    "run": "Verifies staged data hash, complete LoRA architecture, untruncated tokenization and finite projected/physical gradients, coefficients and predictions. Writes all signed forecasts, gradient/cache hashes and unchanged-original-adapter assertion to forecast-lock.json before updates. Checks every restore, records full grids and immutable deadline. Never resumes a completed manifest.",
+    "allowed_hosts": ["ubuntu@129.146.119.181", "ubuntu@68.209.75.76"]
+  },
+  "analysis_requirements": [
+    "Read outcomes only after both runs finish or reach their original deadlines.",
+    "Audit full source/input/cache/forecast/output hashes, lock ordering, all restores, counts and deadlines.",
+    "Report both arms, both references, both rates and both seeds, every batch and probe, reconstruction magnitude, average and tail prediction errors.",
+    "Keep weak effects, zero codes, undefined relative errors, adverse direction errors and numerical failures.",
+    "Compare the two dictionary arms with paired error differences; do not select success by changing hyperparameters or endpoints.",
+    "If strong development criteria fail, report the failure before deciding whether another study is justified."
+  ],
+  "validation": {
+    "tests": 11,
+    "coverage": ["fitting geometry and global-scale invariance", "norm restoration and Lasso shrinkage", "SGD sign and exact linear/quadratic expectations", "weak/zero effect metrics", "source/template/cluster split guards", "historical dedup evidence guard", "controller/deadline/input guards", "bit-exact restoration", "paired bootstrap and undefined draws", "mocked worker lock-before-update, restoration on failure, resume and known full-gradient target"],
+    "ruff": "passed",
+    "gpu_preflight_executed": false
+  }
+}

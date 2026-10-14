@@ -1,0 +1,13 @@
+{
+  "checked_unix": 1791966181.694675,
+  "pytest": {
+    "passed": 149,
+    "warnings": [
+      "Existing torch.jit.script deprecation in tangent unit test"
+    ]
+  },
+  "ruff": "passed for all new source, queue and tests",
+  "readme_bytes": 0,
+  "scientific_outcomes_inspected": false,
+  "status": "local validation before first scientific fitting and GPU preflight"
+}

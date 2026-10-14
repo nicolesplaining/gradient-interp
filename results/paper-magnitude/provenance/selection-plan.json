@@ -1,0 +1,35 @@
+{
+  "written_unix": 1791965501.446837,
+  "scope": "development_data_selection_without_model_measurements",
+  "source": {
+    "dataset": "tatsu-lab/alpaca",
+    "revision": "dce01c9b08f87459cf36a430d809084718273017",
+    "file": "data/train-00000-of-00001-a09b74b3ef9c3b56.parquet",
+    "url": "https://huggingface.co/datasets/tatsu-lab/alpaca/resolve/dce01c9b08f87459cf36a430d809084718273017/data/train-00000-of-00001-a09b74b3ef9c3b56.parquet",
+    "license": "CC-BY-NC-4.0",
+    "attribution": "Taori et al. (2023), Stanford Alpaca",
+    "primary_repository": "https://github.com/tatsu-lab/stanford_alpaca",
+    "answers": "text-davinci-003 generated, correctness not asserted"
+  },
+  "seed": 2026101417,
+  "counts": {
+    "batches": 32,
+    "documents_per_batch": 8,
+    "calibration": 16,
+    "evaluation": 64
+  },
+  "prompt_rendering": "instruction.strip() + (two newlines + input.strip() if nonempty)",
+  "eligibility": "Nonempty instruction and output; exact full original Gemma chat-template training-EOS tokenization <=500 tokens without truncation and >0 scored completion tokens. No quality/model/loss filtering.",
+  "deduplication": {
+    "normalization": "Unicode NFKC, casefold, alphanumeric word tokens joined by single space; strip role wrappers by extracting user text additionally for historical role-labelled prompts.",
+    "views": "Complete rendered prompt for all rows plus standalone instruction for exact grouping.",
+    "similarity": "word unigram+bigram TF-IDF, sublinear_tf=True, norm=l2, min_df=1, no feature cap; fit to unique complete normalized prompts from new source and historical inputs; float64 cosine >=0.85",
+    "threshold": 0.85,
+    "clusters": "Connected components across all source rows and all historical prompt vertices; also connect same normalized source instruction even if input differs. Reject any component containing any historical input. Choose one source row per remaining component.",
+    "history": "Enumerate and hash all available historic input data/probes/training files on local, A100 and H100, including original 5000 documents, old large/confirmation/feature/demo phases and repairs. Read no generation output as input.",
+    "limits": "Lexical similarity and instruction identity do not establish complete semantic/source independence or absence from base model pretraining. Dataset lacks task/template IDs, so do not invent them."
+  },
+  "selection": "Seeded shuffle of eligible components sorted by canonical minimum source row index; representative is seeded permutation-first eligible source row in that component; take first336, sequentially partition first256 into32 batches of8, next16 calibration, last64 evaluation. Stop with explicit failure if insufficient; do not change thresholds.",
+  "model_tokenizer_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+  "remote_cpu_only": true
+}

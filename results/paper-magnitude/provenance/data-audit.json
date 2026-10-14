@@ -1,0 +1,690 @@
+{
+  "created_unix": 1791965877.7519343,
+  "passed": true,
+  "selection_plan_sha256": "618c935754f23180e690c621fac69bece4d99da88c1e769d0cc9c46980aed6af",
+  "source_sha256": "06391b656a06fd3fb9d213160ef2398796c3b7f3dc75ef1e3ced30d461517073",
+  "source_rows": 52002,
+  "nonempty_source_rows": 51974,
+  "data_sha256": "88d48369df1b95bb346c65ac8e9111b196946a478f33e732559a870216642933",
+  "builder_source_sha256": "c4c932af49820fc8f5078ed21375fbef22d9e3e7403fbf4fe0b1a4e6adde8df2",
+  "historical_input_files": [
+    {
+      "location": "local",
+      "path": "data/demo/batches.jsonl",
+      "sha256": "5db81e0ccf3fb23504235ce7b5a9fdd4dbc568aff7bb58d02ddbf692219d7988",
+      "prompt_count": 12
+    },
+    {
+      "location": "local",
+      "path": "data/demo/fit.jsonl",
+      "sha256": "4b2bbc85c0c1fcbea5c861f12e9879e5e931d80d82c123eca0812fca664e914b",
+      "prompt_count": 36
+    },
+    {
+      "location": "local",
+      "path": "data/demo/probes.jsonl",
+      "sha256": "a06bfa2666bb1a52436a715989acdc25d445b778ebf016f894ff57b583a7e21e",
+      "prompt_count": 6
+    },
+    {
+      "location": "local",
+      "path": "runs/a100/qwen-pilot/probes.json",
+      "sha256": "e3326545f6fb2b20836dd2f931d0d2b6c0fdb5503ddfc5cd5f2d284772c99c34",
+      "prompt_count": 6
+    },
+    {
+      "location": "local",
+      "path": "runs/a100/qwen-small-steps/probes.json",
+      "sha256": "776d04b538d6ace53283de4d10d106a4289f2b393b2c6b8ff0d3dbef9872d7f2",
+      "prompt_count": 6
+    },
+    {
+      "location": "local",
+      "path": "runs/behavior-pilot/data.json",
+      "sha256": "3d5850213a64425b665a34da23736aa7c7b6991877a083dc575596f410d5ef10",
+      "prompt_count": 88
+    },
+    {
+      "location": "local",
+      "path": "runs/confirmation/data/batches.jsonl",
+      "sha256": "32603c54a7e33bbc2927ac563d72b059a42b769bfa79be311f9121ef2ebe9153",
+      "prompt_count": 1632
+    },
+    {
+      "location": "local",
+      "path": "runs/confirmation/data/calibration_probes.jsonl",
+      "sha256": "034fdd9e87e3233ca6a93bf918c796d1193e5867649e42972cab533b1417c78b",
+      "prompt_count": 512
+    },
+    {
+      "location": "local",
+      "path": "runs/confirmation/data/dev_batches.jsonl",
+      "sha256": "c8c52e158178ef819330f9ce85d792dc8ec6e7e1d4ae1f6207166151614b271f",
+      "prompt_count": 128
+    },
+    {
+      "location": "local",
+      "path": "runs/confirmation/data/evaluation_probes.jsonl",
+      "sha256": "118a1c550ea7ddd6f71c2db47fb53fac75a80b42b5ca75aafb08207cb41f0734",
+      "prompt_count": 512
+    },
+    {
+      "location": "local",
+      "path": "runs/confirmation/data/fit.jsonl",
+      "sha256": "cec13a8efe3251d3015bbf65d0b0d025e2d6b8e8ba6d88d7d604fca1d8e7bcfb",
+      "prompt_count": 9958
+    },
+    {
+      "location": "local",
+      "path": "runs/demo-comparisons/probes.json",
+      "sha256": "e3326545f6fb2b20836dd2f931d0d2b6c0fdb5503ddfc5cd5f2d284772c99c34",
+      "prompt_count": 6
+    },
+    {
+      "location": "local",
+      "path": "runs/demo-first/probes.json",
+      "sha256": "e3326545f6fb2b20836dd2f931d0d2b6c0fdb5503ddfc5cd5f2d284772c99c34",
+      "prompt_count": 6
+    },
+    {
+      "location": "local",
+      "path": "runs/feature-pilot/data/batches.jsonl",
+      "sha256": "4359ce1b5b8ff30f460ccb67fad8e5b8f7880b0fe08201a0287eed50c5762257",
+      "prompt_count": 128
+    },
+    {
+      "location": "local",
+      "path": "runs/feature-pilot/data/calibration_probes.jsonl",
+      "sha256": "f039e1b2ae98cdb66f64fc5d2c48255c1221c479b49744ea0cdd2f7deccf0db1",
+      "prompt_count": 128
+    },
+    {
+      "location": "local",
+      "path": "runs/feature-pilot/data/evaluation_probes.jsonl",
+      "sha256": "6ac15f91d11f855e2be750f307d122b08e074ee5ff60d6054c6a1e261da7b9fe",
+      "prompt_count": 128
+    },
+    {
+      "location": "local",
+      "path": "runs/large-study/data/batches.jsonl",
+      "sha256": "b5fe3b9acb1302f8fae9ca861a98c7b1704352b67e9d44fe0ac7d56f4f0a6663",
+      "prompt_count": 1019
+    },
+    {
+      "location": "local",
+      "path": "runs/large-study/data/calibration_probes.jsonl",
+      "sha256": "6617abcf1b344d306e2bbd1bfff628ee4c51c92d87220b5324f89aee651b90df",
+      "prompt_count": 140
+    },
+    {
+      "location": "local",
+      "path": "runs/large-study/data/evaluation_probes.jsonl",
+      "sha256": "bb1b4e9971a3e9d87a4dc6d88eee987028b95424189545bcbc2ffaeba4c2a7ea",
+      "prompt_count": 140
+    },
+    {
+      "location": "local",
+      "path": "runs/paper-atom-batches-seed42/data.json",
+      "sha256": "ee2c661c8d540dc674befdd097f4a0acecded211f4913d67924def44c9e6a03e",
+      "prompt_count": 48
+    },
+    {
+      "location": "local",
+      "path": "runs/paper-atom-batches-seed43/data.json",
+      "sha256": "ee2c661c8d540dc674befdd097f4a0acecded211f4913d67924def44c9e6a03e",
+      "prompt_count": 48
+    },
+    {
+      "location": "local",
+      "path": "runs/paper-batch-seed42/data.json",
+      "sha256": "3fe2e1426c9554eca18d2346bd2410f6f6d6b3f498ea88a011a9abc3fca7ecd9",
+      "prompt_count": 96
+    },
+    {
+      "location": "local",
+      "path": "runs/paper-batch-seed43/data.json",
+      "sha256": "3fe2e1426c9554eca18d2346bd2410f6f6d6b3f498ea88a011a9abc3fca7ecd9",
+      "prompt_count": 96
+    },
+    {
+      "location": "local",
+      "path": "runs/paper-mixture-seed42/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "prompt_count": 80
+    },
+    {
+      "location": "local",
+      "path": "runs/paper-mixture-seed42/repairs/2026-10-13-warm-precision/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "prompt_count": 80
+    },
+    {
+      "location": "local",
+      "path": "runs/paper-mixture-seed43/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "prompt_count": 80
+    },
+    {
+      "location": "local",
+      "path": "runs/paper-mixture-seed43/repairs/2026-10-13-warm-precision/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "prompt_count": 80
+    },
+    {
+      "location": "local",
+      "path": "runs/paper-sample-seed42/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "prompt_count": 80
+    },
+    {
+      "location": "local",
+      "path": "runs/paper-sample-seed42/repairs/2026-10-13-generation-default/repaired-preflight/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "prompt_count": 80
+    },
+    {
+      "location": "local",
+      "path": "runs/paper-sample-seed42/repairs/2026-10-13-generation-default/verified-preflight/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "prompt_count": 80
+    },
+    {
+      "location": "local",
+      "path": "runs/paper-sample-seed43/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "prompt_count": 80
+    },
+    {
+      "location": "local",
+      "path": "runs/paper-sample-seed43/repairs/2026-10-13-generation-default/repaired-preflight/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "prompt_count": 80
+    },
+    {
+      "location": "local",
+      "path": "runs/paper-sample-seed43/repairs/2026-10-13-generation-default/verified-preflight/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "prompt_count": 80
+    },
+    {
+      "location": "local",
+      "path": "runs/paper-steering-seed42/questions.json",
+      "sha256": "89612591d76d6192d15d7256c52199e1fc031fc5c36078da7a8c1d5ff673e2de",
+      "prompt_count": 498
+    },
+    {
+      "location": "local",
+      "path": "runs/paper-steering-seed43/questions.json",
+      "sha256": "89612591d76d6192d15d7256c52199e1fc031fc5c36078da7a8c1d5ff673e2de",
+      "prompt_count": 498
+    },
+    {
+      "location": "local",
+      "path": "runs/paper-tangent-seed42/data.json",
+      "sha256": "75a11fec8f4002cd26db0293575f6adda202efd17a6a0c0d1d6dc500c0baca31",
+      "prompt_count": 20
+    },
+    {
+      "location": "local",
+      "path": "runs/paper-tangent-seed43/data.json",
+      "sha256": "75a11fec8f4002cd26db0293575f6adda202efd17a6a0c0d1d6dc500c0baca31",
+      "prompt_count": 20
+    },
+    {
+      "location": "local",
+      "path": "runs/smollm-first/probes.json",
+      "sha256": "e3326545f6fb2b20836dd2f931d0d2b6c0fdb5503ddfc5cd5f2d284772c99c34",
+      "prompt_count": 6
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "data/demo/batches.jsonl",
+      "sha256": "5db81e0ccf3fb23504235ce7b5a9fdd4dbc568aff7bb58d02ddbf692219d7988",
+      "prompt_count": 12
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "data/demo/fit.jsonl",
+      "sha256": "4b2bbc85c0c1fcbea5c861f12e9879e5e931d80d82c123eca0812fca664e914b",
+      "prompt_count": 36
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "data/demo/probes.jsonl",
+      "sha256": "a06bfa2666bb1a52436a715989acdc25d445b778ebf016f894ff57b583a7e21e",
+      "prompt_count": 6
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/behavior-pilot/data.json",
+      "sha256": "3d5850213a64425b665a34da23736aa7c7b6991877a083dc575596f410d5ef10",
+      "prompt_count": 88
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/confirmation/data/batches.jsonl",
+      "sha256": "32603c54a7e33bbc2927ac563d72b059a42b769bfa79be311f9121ef2ebe9153",
+      "prompt_count": 1632
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/confirmation/data/calibration_probes.jsonl",
+      "sha256": "034fdd9e87e3233ca6a93bf918c796d1193e5867649e42972cab533b1417c78b",
+      "prompt_count": 512
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/confirmation/data/dev_batches.jsonl",
+      "sha256": "c8c52e158178ef819330f9ce85d792dc8ec6e7e1d4ae1f6207166151614b271f",
+      "prompt_count": 128
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/confirmation/data/evaluation_probes.jsonl",
+      "sha256": "118a1c550ea7ddd6f71c2db47fb53fac75a80b42b5ca75aafb08207cb41f0734",
+      "prompt_count": 512
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/confirmation/data/fit.jsonl",
+      "sha256": "cec13a8efe3251d3015bbf65d0b0d025e2d6b8e8ba6d88d7d604fca1d8e7bcfb",
+      "prompt_count": 9958
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/feature-pilot/data/batches.jsonl",
+      "sha256": "4359ce1b5b8ff30f460ccb67fad8e5b8f7880b0fe08201a0287eed50c5762257",
+      "prompt_count": 128
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/feature-pilot/data/calibration_probes.jsonl",
+      "sha256": "f039e1b2ae98cdb66f64fc5d2c48255c1221c479b49744ea0cdd2f7deccf0db1",
+      "prompt_count": 128
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/feature-pilot/data/evaluation_probes.jsonl",
+      "sha256": "6ac15f91d11f855e2be750f307d122b08e074ee5ff60d6054c6a1e261da7b9fe",
+      "prompt_count": 128
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/feature-pilot/data/fit.jsonl",
+      "sha256": "52d3455dcd8cb0d12d7ddf6c6d703f9bc960682c122af201a454d370fa44a91a",
+      "prompt_count": 510
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/large-study/data/batches.jsonl",
+      "sha256": "b5fe3b9acb1302f8fae9ca861a98c7b1704352b67e9d44fe0ac7d56f4f0a6663",
+      "prompt_count": 1019
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/large-study/data/calibration_probes.jsonl",
+      "sha256": "6617abcf1b344d306e2bbd1bfff628ee4c51c92d87220b5324f89aee651b90df",
+      "prompt_count": 140
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/large-study/data/dev_batches.jsonl",
+      "sha256": "adccae1ffdd9b16f7e3d2b3e3aecb09905b7881e4fabf8d28e6321fae27e0897",
+      "prompt_count": 128
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/large-study/data/evaluation_probes.jsonl",
+      "sha256": "bb1b4e9971a3e9d87a4dc6d88eee987028b95424189545bcbc2ffaeba4c2a7ea",
+      "prompt_count": 140
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/large-study/data/fit.jsonl",
+      "sha256": "cec13a8efe3251d3015bbf65d0b0d025e2d6b8e8ba6d88d7d604fca1d8e7bcfb",
+      "prompt_count": 9958
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/large-study/loracle-pilot/data/batches.jsonl",
+      "sha256": "161a93412e0fa8711d3d6ae1461be853f292501316199f0447f53d73f2ef47f0",
+      "prompt_count": 8
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/large-study/pilot/data/batches.jsonl",
+      "sha256": "c6a0f11113e6497039857807a1281657a44e2316a880f0ba1b25d9bbade6e579",
+      "prompt_count": 24
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/large-study/pilot/data/calibration_probes.jsonl",
+      "sha256": "00cd33de31caca63434125ce9308db1cef0964b90cbda79de697e6a18be99c57",
+      "prompt_count": 20
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/large-study/pilot/data/dev_batches.jsonl",
+      "sha256": "8072c2e4c14799e1b4d8c6ffe6d03d2435c00788fab02d0629d312844a611a67",
+      "prompt_count": 32
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/large-study/pilot/data/evaluation_probes.jsonl",
+      "sha256": "7c77c80d2b01ae94cb56775d3b823d8368981486cfacf0f936d066d5a2d378b1",
+      "prompt_count": 20
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/large-study/pilot/data/fit.jsonl",
+      "sha256": "3ce86019d26cdb8b749692cf5f6565a763ed755701ec4f29196d04883b4dcf68",
+      "prompt_count": 255
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/paper-atom-batches-seed42/data.json",
+      "sha256": "ee2c661c8d540dc674befdd097f4a0acecded211f4913d67924def44c9e6a03e",
+      "prompt_count": 48
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/paper-batch-seed42/data.json",
+      "sha256": "3fe2e1426c9554eca18d2346bd2410f6f6d6b3f498ea88a011a9abc3fca7ecd9",
+      "prompt_count": 96
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/paper-mixture-seed42/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "prompt_count": 80
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/paper-mixture-seed42/repairs/2026-10-13-warm-precision/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "prompt_count": 80
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/paper-sample-seed42/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "prompt_count": 80
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/paper-sample-seed42/repairs/2026-10-13-generation-default/repaired-preflight/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "prompt_count": 80
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/paper-sample-seed42/repairs/2026-10-13-generation-default/verified-preflight/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "prompt_count": 80
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/paper-setup/clean_raw.jsonl",
+      "sha256": "d37918573ed9cbf25edb1cf9e09213231d8689350ab50187fefb2304d94b2e82",
+      "prompt_count": 5000
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/paper-setup/training.jsonl",
+      "sha256": "156b9325125d2c3923e4d46a7abc3a835a60438f97e64670ae7ef1960ea1ddf5",
+      "prompt_count": 5000
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/paper-steering-seed42/questions.json",
+      "sha256": "89612591d76d6192d15d7256c52199e1fc031fc5c36078da7a8c1d5ff673e2de",
+      "prompt_count": 498
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/paper-tangent-seed42/data.json",
+      "sha256": "75a11fec8f4002cd26db0293575f6adda202efd17a6a0c0d1d6dc500c0baca31",
+      "prompt_count": 20
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/qwen-a100/probes.json",
+      "sha256": "e3326545f6fb2b20836dd2f931d0d2b6c0fdb5503ddfc5cd5f2d284772c99c34",
+      "prompt_count": 6
+    },
+    {
+      "location": "129.146.119.181",
+      "path": "runs/qwen-small-steps/probes.json",
+      "sha256": "776d04b538d6ace53283de4d10d106a4289f2b393b2c6b8ff0d3dbef9872d7f2",
+      "prompt_count": 6
+    },
+    {
+      "location": "68.209.75.76",
+      "path": "data/demo/batches.jsonl",
+      "sha256": "5db81e0ccf3fb23504235ce7b5a9fdd4dbc568aff7bb58d02ddbf692219d7988",
+      "prompt_count": 12
+    },
+    {
+      "location": "68.209.75.76",
+      "path": "data/demo/fit.jsonl",
+      "sha256": "4b2bbc85c0c1fcbea5c861f12e9879e5e931d80d82c123eca0812fca664e914b",
+      "prompt_count": 36
+    },
+    {
+      "location": "68.209.75.76",
+      "path": "data/demo/probes.jsonl",
+      "sha256": "a06bfa2666bb1a52436a715989acdc25d445b778ebf016f894ff57b583a7e21e",
+      "prompt_count": 6
+    },
+    {
+      "location": "68.209.75.76",
+      "path": "runs/paper-atom-batches-seed43/data.json",
+      "sha256": "ee2c661c8d540dc674befdd097f4a0acecded211f4913d67924def44c9e6a03e",
+      "prompt_count": 48
+    },
+    {
+      "location": "68.209.75.76",
+      "path": "runs/paper-batch-seed43/data.json",
+      "sha256": "3fe2e1426c9554eca18d2346bd2410f6f6d6b3f498ea88a011a9abc3fca7ecd9",
+      "prompt_count": 96
+    },
+    {
+      "location": "68.209.75.76",
+      "path": "runs/paper-mixture-seed43/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "prompt_count": 80
+    },
+    {
+      "location": "68.209.75.76",
+      "path": "runs/paper-mixture-seed43/repairs/2026-10-13-warm-precision/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "prompt_count": 80
+    },
+    {
+      "location": "68.209.75.76",
+      "path": "runs/paper-sample-seed43/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "prompt_count": 80
+    },
+    {
+      "location": "68.209.75.76",
+      "path": "runs/paper-sample-seed43/repairs/2026-10-13-generation-default/repaired-preflight/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "prompt_count": 80
+    },
+    {
+      "location": "68.209.75.76",
+      "path": "runs/paper-sample-seed43/repairs/2026-10-13-generation-default/verified-preflight/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "prompt_count": 80
+    },
+    {
+      "location": "68.209.75.76",
+      "path": "runs/paper-seed43/training.jsonl",
+      "sha256": "ae92dabc08ebd4c5a0bbbb5971f243b6dd2d77a256ca9c57190b76fb27262681",
+      "prompt_count": 5000
+    },
+    {
+      "location": "68.209.75.76",
+      "path": "runs/paper-setup/clean_raw.jsonl",
+      "sha256": "d37918573ed9cbf25edb1cf9e09213231d8689350ab50187fefb2304d94b2e82",
+      "prompt_count": 5000
+    },
+    {
+      "location": "68.209.75.76",
+      "path": "runs/paper-steering-seed43/questions.json",
+      "sha256": "89612591d76d6192d15d7256c52199e1fc031fc5c36078da7a8c1d5ff673e2de",
+      "prompt_count": 498
+    },
+    {
+      "location": "68.209.75.76",
+      "path": "runs/paper-tangent-seed43/data.json",
+      "sha256": "75a11fec8f4002cd26db0293575f6adda202efd17a6a0c0d1d6dc500c0baca31",
+      "prompt_count": 20
+    }
+  ],
+  "prior_input_files_sha256": {
+    "local:data/demo/batches.jsonl": "5db81e0ccf3fb23504235ce7b5a9fdd4dbc568aff7bb58d02ddbf692219d7988",
+    "local:data/demo/fit.jsonl": "4b2bbc85c0c1fcbea5c861f12e9879e5e931d80d82c123eca0812fca664e914b",
+    "local:data/demo/probes.jsonl": "a06bfa2666bb1a52436a715989acdc25d445b778ebf016f894ff57b583a7e21e",
+    "local:runs/a100/qwen-pilot/probes.json": "e3326545f6fb2b20836dd2f931d0d2b6c0fdb5503ddfc5cd5f2d284772c99c34",
+    "local:runs/a100/qwen-small-steps/probes.json": "776d04b538d6ace53283de4d10d106a4289f2b393b2c6b8ff0d3dbef9872d7f2",
+    "local:runs/behavior-pilot/data.json": "3d5850213a64425b665a34da23736aa7c7b6991877a083dc575596f410d5ef10",
+    "local:runs/confirmation/data/batches.jsonl": "32603c54a7e33bbc2927ac563d72b059a42b769bfa79be311f9121ef2ebe9153",
+    "local:runs/confirmation/data/calibration_probes.jsonl": "034fdd9e87e3233ca6a93bf918c796d1193e5867649e42972cab533b1417c78b",
+    "local:runs/confirmation/data/dev_batches.jsonl": "c8c52e158178ef819330f9ce85d792dc8ec6e7e1d4ae1f6207166151614b271f",
+    "local:runs/confirmation/data/evaluation_probes.jsonl": "118a1c550ea7ddd6f71c2db47fb53fac75a80b42b5ca75aafb08207cb41f0734",
+    "local:runs/confirmation/data/fit.jsonl": "cec13a8efe3251d3015bbf65d0b0d025e2d6b8e8ba6d88d7d604fca1d8e7bcfb",
+    "local:runs/demo-comparisons/probes.json": "e3326545f6fb2b20836dd2f931d0d2b6c0fdb5503ddfc5cd5f2d284772c99c34",
+    "local:runs/demo-first/probes.json": "e3326545f6fb2b20836dd2f931d0d2b6c0fdb5503ddfc5cd5f2d284772c99c34",
+    "local:runs/feature-pilot/data/batches.jsonl": "4359ce1b5b8ff30f460ccb67fad8e5b8f7880b0fe08201a0287eed50c5762257",
+    "local:runs/feature-pilot/data/calibration_probes.jsonl": "f039e1b2ae98cdb66f64fc5d2c48255c1221c479b49744ea0cdd2f7deccf0db1",
+    "local:runs/feature-pilot/data/evaluation_probes.jsonl": "6ac15f91d11f855e2be750f307d122b08e074ee5ff60d6054c6a1e261da7b9fe",
+    "local:runs/large-study/data/batches.jsonl": "b5fe3b9acb1302f8fae9ca861a98c7b1704352b67e9d44fe0ac7d56f4f0a6663",
+    "local:runs/large-study/data/calibration_probes.jsonl": "6617abcf1b344d306e2bbd1bfff628ee4c51c92d87220b5324f89aee651b90df",
+    "local:runs/large-study/data/evaluation_probes.jsonl": "bb1b4e9971a3e9d87a4dc6d88eee987028b95424189545bcbc2ffaeba4c2a7ea",
+    "local:runs/paper-atom-batches-seed42/data.json": "ee2c661c8d540dc674befdd097f4a0acecded211f4913d67924def44c9e6a03e",
+    "local:runs/paper-atom-batches-seed43/data.json": "ee2c661c8d540dc674befdd097f4a0acecded211f4913d67924def44c9e6a03e",
+    "local:runs/paper-batch-seed42/data.json": "3fe2e1426c9554eca18d2346bd2410f6f6d6b3f498ea88a011a9abc3fca7ecd9",
+    "local:runs/paper-batch-seed43/data.json": "3fe2e1426c9554eca18d2346bd2410f6f6d6b3f498ea88a011a9abc3fca7ecd9",
+    "local:runs/paper-mixture-seed42/data.json": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+    "local:runs/paper-mixture-seed42/repairs/2026-10-13-warm-precision/data.json": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+    "local:runs/paper-mixture-seed43/data.json": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+    "local:runs/paper-mixture-seed43/repairs/2026-10-13-warm-precision/data.json": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+    "local:runs/paper-sample-seed42/data.json": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+    "local:runs/paper-sample-seed42/repairs/2026-10-13-generation-default/repaired-preflight/data.json": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+    "local:runs/paper-sample-seed42/repairs/2026-10-13-generation-default/verified-preflight/data.json": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+    "local:runs/paper-sample-seed43/data.json": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+    "local:runs/paper-sample-seed43/repairs/2026-10-13-generation-default/repaired-preflight/data.json": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+    "local:runs/paper-sample-seed43/repairs/2026-10-13-generation-default/verified-preflight/data.json": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+    "local:runs/paper-steering-seed42/questions.json": "89612591d76d6192d15d7256c52199e1fc031fc5c36078da7a8c1d5ff673e2de",
+    "local:runs/paper-steering-seed43/questions.json": "89612591d76d6192d15d7256c52199e1fc031fc5c36078da7a8c1d5ff673e2de",
+    "local:runs/paper-tangent-seed42/data.json": "75a11fec8f4002cd26db0293575f6adda202efd17a6a0c0d1d6dc500c0baca31",
+    "local:runs/paper-tangent-seed43/data.json": "75a11fec8f4002cd26db0293575f6adda202efd17a6a0c0d1d6dc500c0baca31",
+    "local:runs/smollm-first/probes.json": "e3326545f6fb2b20836dd2f931d0d2b6c0fdb5503ddfc5cd5f2d284772c99c34",
+    "129.146.119.181:data/demo/batches.jsonl": "5db81e0ccf3fb23504235ce7b5a9fdd4dbc568aff7bb58d02ddbf692219d7988",
+    "129.146.119.181:data/demo/fit.jsonl": "4b2bbc85c0c1fcbea5c861f12e9879e5e931d80d82c123eca0812fca664e914b",
+    "129.146.119.181:data/demo/probes.jsonl": "a06bfa2666bb1a52436a715989acdc25d445b778ebf016f894ff57b583a7e21e",
+    "129.146.119.181:runs/behavior-pilot/data.json": "3d5850213a64425b665a34da23736aa7c7b6991877a083dc575596f410d5ef10",
+    "129.146.119.181:runs/confirmation/data/batches.jsonl": "32603c54a7e33bbc2927ac563d72b059a42b769bfa79be311f9121ef2ebe9153",
+    "129.146.119.181:runs/confirmation/data/calibration_probes.jsonl": "034fdd9e87e3233ca6a93bf918c796d1193e5867649e42972cab533b1417c78b",
+    "129.146.119.181:runs/confirmation/data/dev_batches.jsonl": "c8c52e158178ef819330f9ce85d792dc8ec6e7e1d4ae1f6207166151614b271f",
+    "129.146.119.181:runs/confirmation/data/evaluation_probes.jsonl": "118a1c550ea7ddd6f71c2db47fb53fac75a80b42b5ca75aafb08207cb41f0734",
+    "129.146.119.181:runs/confirmation/data/fit.jsonl": "cec13a8efe3251d3015bbf65d0b0d025e2d6b8e8ba6d88d7d604fca1d8e7bcfb",
+    "129.146.119.181:runs/feature-pilot/data/batches.jsonl": "4359ce1b5b8ff30f460ccb67fad8e5b8f7880b0fe08201a0287eed50c5762257",
+    "129.146.119.181:runs/feature-pilot/data/calibration_probes.jsonl": "f039e1b2ae98cdb66f64fc5d2c48255c1221c479b49744ea0cdd2f7deccf0db1",
+    "129.146.119.181:runs/feature-pilot/data/evaluation_probes.jsonl": "6ac15f91d11f855e2be750f307d122b08e074ee5ff60d6054c6a1e261da7b9fe",
+    "129.146.119.181:runs/feature-pilot/data/fit.jsonl": "52d3455dcd8cb0d12d7ddf6c6d703f9bc960682c122af201a454d370fa44a91a",
+    "129.146.119.181:runs/large-study/data/batches.jsonl": "b5fe3b9acb1302f8fae9ca861a98c7b1704352b67e9d44fe0ac7d56f4f0a6663",
+    "129.146.119.181:runs/large-study/data/calibration_probes.jsonl": "6617abcf1b344d306e2bbd1bfff628ee4c51c92d87220b5324f89aee651b90df",
+    "129.146.119.181:runs/large-study/data/dev_batches.jsonl": "adccae1ffdd9b16f7e3d2b3e3aecb09905b7881e4fabf8d28e6321fae27e0897",
+    "129.146.119.181:runs/large-study/data/evaluation_probes.jsonl": "bb1b4e9971a3e9d87a4dc6d88eee987028b95424189545bcbc2ffaeba4c2a7ea",
+    "129.146.119.181:runs/large-study/data/fit.jsonl": "cec13a8efe3251d3015bbf65d0b0d025e2d6b8e8ba6d88d7d604fca1d8e7bcfb",
+    "129.146.119.181:runs/large-study/loracle-pilot/data/batches.jsonl": "161a93412e0fa8711d3d6ae1461be853f292501316199f0447f53d73f2ef47f0",
+    "129.146.119.181:runs/large-study/pilot/data/batches.jsonl": "c6a0f11113e6497039857807a1281657a44e2316a880f0ba1b25d9bbade6e579",
+    "129.146.119.181:runs/large-study/pilot/data/calibration_probes.jsonl": "00cd33de31caca63434125ce9308db1cef0964b90cbda79de697e6a18be99c57",
+    "129.146.119.181:runs/large-study/pilot/data/dev_batches.jsonl": "8072c2e4c14799e1b4d8c6ffe6d03d2435c00788fab02d0629d312844a611a67",
+    "129.146.119.181:runs/large-study/pilot/data/evaluation_probes.jsonl": "7c77c80d2b01ae94cb56775d3b823d8368981486cfacf0f936d066d5a2d378b1",
+    "129.146.119.181:runs/large-study/pilot/data/fit.jsonl": "3ce86019d26cdb8b749692cf5f6565a763ed755701ec4f29196d04883b4dcf68",
+    "129.146.119.181:runs/paper-atom-batches-seed42/data.json": "ee2c661c8d540dc674befdd097f4a0acecded211f4913d67924def44c9e6a03e",
+    "129.146.119.181:runs/paper-batch-seed42/data.json": "3fe2e1426c9554eca18d2346bd2410f6f6d6b3f498ea88a011a9abc3fca7ecd9",
+    "129.146.119.181:runs/paper-mixture-seed42/data.json": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+    "129.146.119.181:runs/paper-mixture-seed42/repairs/2026-10-13-warm-precision/data.json": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+    "129.146.119.181:runs/paper-sample-seed42/data.json": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+    "129.146.119.181:runs/paper-sample-seed42/repairs/2026-10-13-generation-default/repaired-preflight/data.json": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+    "129.146.119.181:runs/paper-sample-seed42/repairs/2026-10-13-generation-default/verified-preflight/data.json": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+    "129.146.119.181:runs/paper-setup/clean_raw.jsonl": "d37918573ed9cbf25edb1cf9e09213231d8689350ab50187fefb2304d94b2e82",
+    "129.146.119.181:runs/paper-setup/training.jsonl": "156b9325125d2c3923e4d46a7abc3a835a60438f97e64670ae7ef1960ea1ddf5",
+    "129.146.119.181:runs/paper-steering-seed42/questions.json": "89612591d76d6192d15d7256c52199e1fc031fc5c36078da7a8c1d5ff673e2de",
+    "129.146.119.181:runs/paper-tangent-seed42/data.json": "75a11fec8f4002cd26db0293575f6adda202efd17a6a0c0d1d6dc500c0baca31",
+    "129.146.119.181:runs/qwen-a100/probes.json": "e3326545f6fb2b20836dd2f931d0d2b6c0fdb5503ddfc5cd5f2d284772c99c34",
+    "129.146.119.181:runs/qwen-small-steps/probes.json": "776d04b538d6ace53283de4d10d106a4289f2b393b2c6b8ff0d3dbef9872d7f2",
+    "68.209.75.76:data/demo/batches.jsonl": "5db81e0ccf3fb23504235ce7b5a9fdd4dbc568aff7bb58d02ddbf692219d7988",
+    "68.209.75.76:data/demo/fit.jsonl": "4b2bbc85c0c1fcbea5c861f12e9879e5e931d80d82c123eca0812fca664e914b",
+    "68.209.75.76:data/demo/probes.jsonl": "a06bfa2666bb1a52436a715989acdc25d445b778ebf016f894ff57b583a7e21e",
+    "68.209.75.76:runs/paper-atom-batches-seed43/data.json": "ee2c661c8d540dc674befdd097f4a0acecded211f4913d67924def44c9e6a03e",
+    "68.209.75.76:runs/paper-batch-seed43/data.json": "3fe2e1426c9554eca18d2346bd2410f6f6d6b3f498ea88a011a9abc3fca7ecd9",
+    "68.209.75.76:runs/paper-mixture-seed43/data.json": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+    "68.209.75.76:runs/paper-mixture-seed43/repairs/2026-10-13-warm-precision/data.json": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+    "68.209.75.76:runs/paper-sample-seed43/data.json": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+    "68.209.75.76:runs/paper-sample-seed43/repairs/2026-10-13-generation-default/repaired-preflight/data.json": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+    "68.209.75.76:runs/paper-sample-seed43/repairs/2026-10-13-generation-default/verified-preflight/data.json": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+    "68.209.75.76:runs/paper-seed43/training.jsonl": "ae92dabc08ebd4c5a0bbbb5971f243b6dd2d77a256ca9c57190b76fb27262681",
+    "68.209.75.76:runs/paper-setup/clean_raw.jsonl": "d37918573ed9cbf25edb1cf9e09213231d8689350ab50187fefb2304d94b2e82",
+    "68.209.75.76:runs/paper-steering-seed43/questions.json": "89612591d76d6192d15d7256c52199e1fc031fc5c36078da7a8c1d5ff673e2de",
+    "68.209.75.76:runs/paper-tangent-seed43/data.json": "75a11fec8f4002cd26db0293575f6adda202efd17a6a0c0d1d6dc500c0baca31"
+  },
+  "source_deduplication": "Unique pinned dataset record IDs and lexical components globally.",
+  "near_duplicate_rule": {
+    "normalization": "Unicode NFKC, casefold, alphanumeric word tokens joined by single space; strip role wrappers by extracting user text additionally for historical role-labelled prompts.",
+    "views": "Complete rendered prompt for all rows plus standalone instruction for exact grouping.",
+    "similarity": "word unigram+bigram TF-IDF, sublinear_tf=True, norm=l2, min_df=1, no feature cap; fit to unique complete normalized prompts from new source and historical inputs; float64 cosine >=0.85",
+    "threshold": 0.85,
+    "clusters": "Connected components across all source rows and all historical prompt vertices; also connect same normalized source instruction even if input differs. Reject any component containing any historical input. Choose one source row per remaining component.",
+    "history": "Enumerate and hash all available historic input data/probes/training files on local, A100 and H100, including original 5000 documents, old large/confirmation/feature/demo phases and repairs. Read no generation output as input.",
+    "limits": "Lexical similarity and instruction identity do not establish complete semantic/source independence or absence from base model pretraining. Dataset lacks task/template IDs, so do not invent them."
+  },
+  "template_split_policy": "Source provides no validated task/template IDs; none invented.",
+  "scope": "New natural-language instructions; synthetic source answers; development only.",
+  "exact_prompt_collisions": [],
+  "source_collisions": [],
+  "near_duplicate_collisions": [],
+  "historical_prompts": 20133,
+  "history_extracts_sha256": {
+    "runs/paper-magnitude-data/history-local.json": "ffc36e7f4adb2f7bd6a1ef4034d1d70596aa1b9c99894dac137858508ea357df",
+    "runs/paper-magnitude-data/history-129.146.119.181.json": "fdbae7b5b343fa20d9794995579b810e3b43feec632e4a78c1f1ad6f9864175e",
+    "runs/paper-magnitude-data/history-68.209.75.76.json": "f0f416515e7a1e1501695c5ce234eacdbcef5fca2f76582b617551eae8c4f2e3"
+  },
+  "tokenizer_files_sha256": {
+    "tokenizer_config.json": "bfe25c2735e395407beb78456ea9a6984a1f00d8c16fa04a8b75f2a614cf53e1",
+    "added_tokens.json": "50b2f405ba56a26d4913fd772089992252d7f942123cc0a034d96424221ba946",
+    "tokenizer.model": "1299c11d7cf632ef3b4e11937501358ada021bbdf7c47638d13c0ee982f2e79c",
+    "special_tokens_map.json": "2f7b0adf4fb469770bb1490e3e35df87b1dc578246c5e7e6fc76ecf33213a397",
+    "tokenizer.json": "4667f2089529e8e7657cfb6d1c19910ae71ff5f28aa7ab2ff2763330affad795"
+  },
+  "tokenizer_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+  "counts": {
+    "batches": 32,
+    "documents_per_batch": 8,
+    "calibration": 16,
+    "evaluation": 64
+  },
+  "unique_prompt_vertices": 67095,
+  "tfidf_features": 367324,
+  "near_duplicate_edges": 6509,
+  "forbidden_components": 13805,
+  "source_components": 51941,
+  "eligible_components": 46869,
+  "eligible_rows": 46891,
+  "selected_rows": 336,
+  "selected_components": 336,
+  "maximum_full_tokens": 474,
+  "minimum_completion_tokens": 4,
+  "exact_prompt_overlap": 0,
+  "historical_component_overlap": 0,
+  "source_record_overlap_across_splits": 0,
+  "lexical_group_overlap_across_splits": 0,
+  "max_tokens_includes_training_eos": true,
+  "model_measurements_used_for_selection": false,
+  "limitations": "Lexical similarity and instruction identity do not establish complete semantic/source independence or absence from base model pretraining. Dataset lacks task/template IDs, so do not invent them."
+}

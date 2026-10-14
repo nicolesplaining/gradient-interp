@@ -1,0 +1,55 @@
+{
+  "scope": "development_only",
+  "purpose": "Direct Gradient Atoms recreation with a matched SVD replacement and held-out descriptor/steering validation.",
+  "representations": [
+    "dictionary",
+    "svd500"
+  ],
+  "candidate_count_each": 500,
+  "fitting": "Same original 5,000 normalized 6,800-dimensional EKFAC projections. Reuse frozen alpha 0.1 dictionary and codes. Fit uncentered randomized SVD directly to those same rows; never decompose learned atoms. Fixed seed 8173, seven QR power iterations and 32 oversamples.",
+  "candidate_selection": "One top-20 absolute-coefficient set per candidate. Rank each of the five published families by detector purity, exact unsigned raw-gradient coherence, then component index. Both representations have 500 candidates and one training-determined orientation per candidate. No separate positive/negative search; both signs are always evaluated.",
+  "coherence": "Mean off-diagonal cosine of original raw document gradients, computed via memory mapping and streaming normalized row sums. No projected-coherence substitution.",
+  "steering_scale": "Unproject through the same frozen factor basis. For each family, scale the SVD direction to the selected dictionary direction's physical Euclidean norm. Save original norms and multiplier. Apply both signs at all five published strengths 0.5, 1, 2, 5, 10 to all 136 LoRA A/B tensors.",
+  "heldout_descriptors": "Eight new content-matched target/control answer pairs for each of five detector families, at short and long verbosity. 160 summed-completion-CE gradients. Evaluate both representations' full coefficients and every selected direction's physical gradient cosine. These are held out from fitting and candidate selection, but synthetic development data on reused adapters.",
+  "steering_questions": "Each candidate uses its own 100 published questions, including 60 inviting and 40 control prompts, plus all 40 new controlled prompts. One shared baseline covers 500 published plus 40 controlled questions.",
+  "counts": {
+    "candidates_each": 500,
+    "descriptor_gradients": 160,
+    "conditions": 101,
+    "baseline_responses": 540,
+    "steered_responses": 14000,
+    "total_responses": 14540
+  },
+  "generation": "Same FP32 Transformers SDPA backend for both representations, TF32 disabled, greedy cached generation, unmodified base tokenizer, cap 300, stop IDs 1 and 106, chunks 8. Paper used vLLM, so this is an architecture reconstruction.",
+  "selection_lock": "All candidates, selected directions, questions, descriptor pairs, norms and hashes must be locked before any held-out descriptor gradient or generated output.",
+  "endpoints": [
+    "yesno",
+    "code",
+    "refusal",
+    "bullets",
+    "numbered",
+    "controlled_content_check",
+    "required_content_present",
+    "tokens",
+    "words",
+    "truncated",
+    "empty",
+    "possible_degeneration"
+  ],
+  "success_criteria": {
+    "descriptor": "Per family and seed, positive mean target-minus-control oriented coefficient and physical-cosine preference at both verbosity levels, with at least 6 of 8 positive item pairs at each length. Report all cross-family preferences and both coefficient/physical results. Zero sparse codes remain failures of the coding criterion.",
+    "causal": "Primary steering response is the equal-weight mean across all five strengths of [target rate at positive strength minus target rate at negative strength] / 2 on the same 100 published prompts per family. Report the 60 inviting and 40 control strata separately. A meaningful response is at least 10 percentage points. On the 40 controlled prompts, the absolute target signed response must exceed each off-target detector absolute signed response. Mean positive-part content loss, truncation increase and degeneration increase across all ten signed conditions must each be at most 5 percentage points, and each worst-condition harm at most 15 points, for a clean interpretability claim. Opposing improvements cannot cancel harms. Report mean and worst absolute length changes and baseline-length-stratified effects as diagnostics, not causal adjustments.",
+    "comparison": "Compare equal-weight mean signed steering response across all five families as the fixed primary aggregate. A meaningful SVD advantage is at least 5 percentage points over dictionary and at least 10 points absolute signed response, in both reused seeds. A claim of better interpretable components also requires the descriptor and controlled selectivity/quality criteria. Report every family failure and every matched family, seed, sign and strength without best-strength selection. These are development gates; confirmation requires fresh seeds and data with a separately frozen multiplicity rule."
+  },
+  "analysis": "Write a dated analysis plan before reading held-out outputs. Use 1,000 paired question bootstrap replicates within published family and inviting/control strata; resample controlled items as pairs across descriptor labels and verbosity, stratified by family; keep methods/signs/strengths paired. The fixed five-family aggregate is primary; use 99 percent Bonferroni intervals for the five family comparisons and report pointwise 95 percent intervals for descriptive secondary endpoints. Report all cases, not population claims from two reused adapters. Coherence is descriptive and training-label purity is candidate selection, not semantic validation.",
+  "limitations": [
+    "The paper's refusal detector measures missing-input clarification, not safety refusal.",
+    "The code detector measures fenced code, not code correctness; controlled assignment checks are narrow.",
+    "Held-out descriptors control content and compare short/long variants, but their token lengths are not exactly identical.",
+    "Physical-norm matching is fixed before outcomes; parameter-group norm patterns can still differ.",
+    "Five hundred candidates match the selection budget, not coding sparsity or computation. SVD coefficients are dense; dictionary codes are sparse. Report reconstruction and active-coefficient counts for both.",
+    "Published questions, synthetic task templates and adapters have been used in earlier development; no untouched confirmation claim. Artificial reference-case suffixes confer no novelty. Exact normalized prompt-body overlap is audited after stripping those suffixes against discovery and enumerated historical input files only.",
+    "No guarantee that either representation will be interpretable or produce stronger results."
+  ],
+  "max_hours": 12
+}

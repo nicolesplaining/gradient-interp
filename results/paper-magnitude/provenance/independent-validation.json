@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checked_rows": 336,
+  "written_unix": 1791965924.952397,
+  "source_rows_reconstructed": true,
+  "exact_upstream_tokenize_chat_match": true,
+  "no_truncation_all_rows": true,
+  "upstream_tokenizer_source_sha256": "cd5cd8a8e0a7da7f48a18d6d707e644fc1c54eca2a966c2fd5e309eda2906b88",
+  "data_sha256": "88d48369df1b95bb346c65ac8e9111b196946a478f33e732559a870216642933"
+}

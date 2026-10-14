@@ -1,0 +1,49 @@
+{
+  "written_unix": 1791965606.574213,
+  "status": "priority_and_design_decisions_before_new_results",
+  "user_priority": "Recreate Gradient Atoms with SVD and directly test whether results improve while components remain interpretable. In parallel test both normalization choices for effect-size prediction. Stop ablation rabbit holes.",
+  "canceled_next_step": "The previously suggested fitting-coverage audit will not run. Completed diagnostics remain preserved.",
+  "track1": {
+    "name": "direct_svd_replication",
+    "candidate_count": 500,
+    "methods": [
+      "dictionary",
+      "svd"
+    ],
+    "source": "The same 5,000 discovery gradients, normalized EKFAC projections and reused Gemma adapters. SVD replaces dictionary learning; it is not applied to learned atoms.",
+    "selection": "The same top-20 absolute activation detector purity, raw-gradient coherence and stable index rule selects one candidate for each of five paper families. Both methods use the same orientation rule.",
+    "steering": "All five published strengths and both signs. Before outcomes, match each SVD physical direction norm to the corresponding dictionary direction. Use a shared clean baseline and identical generation kernel.",
+    "interpretability": "Forty separate content-matched prompt items at short and long verbosity provide 160 descriptor gradients. Assess both methods across all families. Training descriptions remain hypotheses. Measure selective causal responses and quality costs on controlled prompts.",
+    "primary_comparison": "Equal-weight five-family average, across all five strengths, of half the positive-minus-negative target response on each family\u2019s 100 published prompts. Report the paired SVD-minus-dictionary difference in both seeds, inviting/control strata, and every condition.",
+    "development_gate": "In each seed, aggregate SVD signed response must be at least 10 percentage points and its advantage at least 5 points. Descriptors must prefer target over matched control in both coefficient and physical cosine at both lengths, with at least 6 of 8 positive pairs. The controlled target response must exceed each off-target absolute response. Mean positive-part quality harm must be at most 5 points and worst-condition harm at most 15 points for content, truncation and degeneration. Report length costs; length stratification is not causal adjustment. No best-strength selection.",
+    "uncertainty": "Use 1,000 paired prompt bootstrap draws preserving method, strength and sign pairing. Keep the aggregate primary and correct across five family comparisons. Development gates do not establish untouched confirmation."
+  },
+  "track2": {
+    "name": "magnitude_prediction",
+    "arms": [
+      "learn_from_unit_projected_rows",
+      "learn_from_projected_rows_divided_by_one_global_training_median_norm"
+    ],
+    "dictionary_atoms": 500,
+    "alpha": 0.1,
+    "dictionary_max_iter": 100,
+    "encoding": "Both arms encode unit new batch projections and restore their projected norms. This isolates relative row magnitudes during dictionary learning. Discovery fitting gradients use summed completion CE; new batch and probe gradients use mean completion CE.",
+    "primary_endpoint": "Change in mean completion CE on held-out reference answers. This predicts teacher-forced loss, not unrestricted sampled behavior.",
+    "data": "New natural instruction data outside the initial 5,000 documents: 32 batches of 8 documents, 16 calibration probes and 64 evaluation probes. Check exact and near duplicates across historical inputs and splits.",
+    "rates": [
+      0.0003,
+      0.003
+    ],
+    "methods": [
+      "normalized_dictionary",
+      "magnitude_dictionary",
+      "full_gradient",
+      "zero"
+    ],
+    "forecast": "Lock every probe-gradient contraction and batch reconstruction with hashes before any update. The same actual full-gradient SGD updates evaluate both dictionary arms. Do not fit a calibration scale to outcomes.",
+    "development_gate": "For both rates and seeds, actual RMS change must be at least .01 nats per token, nRMSE at most .5, and MAE at most .01 nats per token. Effects below the floor are inconclusive. Report paired uncertainty and tails for every prespecified comparison; do not promote a winning rate or arm.",
+    "uncertainty": "Use 1,000 paired batch/probe bootstrap draws, preserving method and rate pairing. Provide simultaneous intervals for two dictionary arms and two rates. Two reused adapters support development evidence only."
+  },
+  "deployment": "Prepare and test both tracks before freezing. A100 runs SVD seed 42 then magnitude seed 42; H100 runs magnitude seed 43 then SVD seed 43. Each run has a separate controller and an immutable 12-hour deadline. Queues advance only after the prior controller completes. Do not interpret a track\u2019s outcomes until both seeds finish or reach their original deadlines. CPU preparation may run in parallel; GPU workers may not overlap.",
+  "confirmation": "If development supports a claim, freeze one justified method, untouched source/prompt-deduplicated data, fresh seeds, meaningful effect thresholds, multiplicity rules, sample counts and deadline. Never promise or select for positive outcomes."
+}
