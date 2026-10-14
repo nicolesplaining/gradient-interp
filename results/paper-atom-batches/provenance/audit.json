@@ -1,0 +1,7 @@
+{
+  "written_unix": 1791959354.259846,
+  "original_source_sha256": "363428d1047ad074816e2550ef6d44a04d5ff261c7a4206f31f180a44351d69a",
+  "corrected_source_sha256": "623cb4a3b854d408692abdb23c796e325c651f83b753d6c52e425fd97d52b183",
+  "diagnosis": "Initial audit compared float32 norms of2.23m-element vectors at2ppm. H100 maximumobserved32relative4.565ppm and64relative3.911ppm. Every savedscale exactlyequals the frozen removed.norm()/gradient.norm() formula. Newauditor asserts exactformula and reports higherprecisionresidual instead of silently claiming exactnormmatching. Experiment unchanged; no newforward/update/generation.",
+  "worker_protocol_changed": false
+}

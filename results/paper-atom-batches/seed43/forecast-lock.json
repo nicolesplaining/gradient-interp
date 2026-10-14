@@ -1,0 +1,13 @@
+{
+  "locked_unix": 1791943505.5761979,
+  "plan_sha256": "a9405308db4c4b5aaa894ace2e26e6bb010e11737af7f8692df01bf70086fcde",
+  "original_adapter_unchanged": true,
+  "files_sha256": {
+    "representations.pt": "237fcca95a6a2db63bdfd755ac2b0f107fb4122e7d79c355e0a7da7453c773e5",
+    "semantic-assay.json": "70cd37da3f9b6befa67f995fee682a02a82e39f278db8ff4c84c1fbcec759f44",
+    "conditions.json": "961e7a0c4078667b95a6961bc2027458e42f4785bc39c56cc56302a17a4caadf",
+    "forecasts.npz": "3056de9d674e1afca4db2c6adea4d141880f0fe1d53c9cee0275c00621ca9e34",
+    "proposals.json": "36fe1919f3d30c5086ccca09e9950b86f588e13aa85e5e8027e88045140e2273",
+    "atom-cards.json": "5e151df54a58370f78972cc40fb453e879670d32715c014d37197cfaaf9e77ab"
+  }
+}

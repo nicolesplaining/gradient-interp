@@ -1,0 +1,29 @@
+{
+  "written_unix": 1791958957.5156,
+  "phase": "paper-atom-batches",
+  "scope": "development_only",
+  "outcomes_read_before_plan": false,
+  "frozen_worker_commit": "e7b5998a32e984157f633b28dc0cf4d641839be7",
+  "seeds": [
+    42,
+    43
+  ],
+  "audit": "Both controllers report complete with one successful attempt and original deadlines. Archive exact source before checkout changes; verify every source/input/cache/forecast/result hash,3072proposal and74752evaluation responses perseed,48semantic gradients,72updates/73conditions,forecastlock beforeeveryupdate,unchangedadapter throughoutforecasts and everyrestore. Audit entire condition grid and controls.",
+  "separate_conclusions": [
+    "Description: fixed numbered/bullets atom code and physical cosine preferences on matched task/content/length variants; all48rows and all500codes retained, no new atom selection.",
+    "Causal selectivity: named removal versus full update, equal-removal-norm random atom and remaining-update-norm control; all16batches and endpoints, no-effect edits retained. Single-atom sign/strength curves across both descriptors and all8conditions. Content/order, length, truncation,empty,degeneration costs included.",
+    "Forecasting: primary calibration-mean atom profiles transferred to evaluation questions; secondary same-question forecasts. Dictionary,named-only,shuffled,fullgradient,SVD16,zero,all8endpoints,alltasks/styles/blocks/seeds. RMSE versuszero/shuffled, absoluteerrors,bias,calibration,perbatchtails,peratomcontributions,namedshares without clipping. Fullgradient/SVD are reference approximation costs, not success criteria."
+  ],
+  "uncertainty": {
+    "replicates": 1000,
+    "seed": 2026101407,
+    "proposal": "128sample indices perquestion, paired across allatoms/methods/batches; independently from evaluation. Recompute unbiased N/(N-1)sample covariances from resampled trajectories. Calibration/evaluation questions resampled separately within each of four task families. Preserve shared question draws across methods/conditions.",
+    "evaluation": "64sample indices perquestion paired across baseline/all72updates. Reuse evaluation weights for all intervention contrasts. Resample16evaluation questions within four task families.",
+    "blocks": "Resample four content blocks jointly across their four styles. No invented within-task/seed population; fourblocks/fourfamilies/two reusedseeds only.",
+    "modes": "Report proposalMC, evaluationMC, bothMC, and bothMC plus questions and pairedblocks for forecast errors. Intervention intervals use paired evaluationMC, plus question/block resampling. Descriptive pointwise95percent intervals; no multiplicity-adjusted or population significance claim. Undefined relative errors or shares retained and counted; empirical bootstrap cannot recover missing events."
+  },
+  "semantic_uncertainty": "Descriptor assays are deterministic gradients for fixed8items; show paired item contrasts bytask/verbosity and descriptive item resampling within task preserving allstyle/length variants. Twoitems/task limits inference. No winnerpromotion.",
+  "fixed_examples": "First evaluation question per task,sample0,first content block allstyles/allfourconditions,plusall8singleatomconditions,baseline and originalprompt. Retain text,tokens,content/order,formatting,length and allquality flags.",
+  "cost": "Record sampling/gradient/dedup calls,storage,runtime,peakmemory ifavailable. Full500directionbank andfullgradients remain in computation; no efficiency/compression claim.",
+  "next_step": "Choose subsequent development only after complete evidence. No guaranteed positive result. Any confirmation needs freshseeds/untoucheddata againstallpriorphases, locked thresholds and multiplicity."
+}

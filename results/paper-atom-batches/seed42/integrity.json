@@ -1,0 +1,86 @@
+{
+  "complete": true,
+  "verified_unix": 1791959369.5920126,
+  "source_input_output_hashes_verified": true,
+  "source_snapshot_sha256": "077a8d116e551f05330b1e63a7f8daf12380a3709e357e03dc3872a762ca419b",
+  "plan_sha256": "beb4e8d53077fc74b8ca747689fa8cbe21630405ceae1de6548e3994d401e93c",
+  "specification_sha256": "f4b09e2ea7bd8149ce782f7ab82f752334e3a9cedd451c54097ce69bd4a00321",
+  "manifest_sha256": "7f75234ae74eb58db834b5f1eae5136374c61e978c3aa99b512df7f4429571ab",
+  "forecast_lock_sha256": "7939534089718b1ac4e4542b4310af8c3eaddd0856ef32e097d127bcf46fa3b9",
+  "proposal_responses": 3072,
+  "evaluation_responses": 74752,
+  "semantic_gradients": 48,
+  "updates": 72,
+  "evaluation_conditions": 73,
+  "locks_restores_verified": true,
+  "physical_control_formula_verified": true,
+  "physical_norm_residuals": [
+    {
+      "batch": 0,
+      "fp64_remaining_norm_relative_error": 0.0
+    },
+    {
+      "batch": 1,
+      "fp64_remaining_norm_relative_error": 0.0
+    },
+    {
+      "batch": 2,
+      "fp64_remaining_norm_relative_error": 0.0
+    },
+    {
+      "batch": 3,
+      "fp64_remaining_norm_relative_error": 0.0
+    },
+    {
+      "batch": 4,
+      "fp64_remaining_norm_relative_error": 0.0
+    },
+    {
+      "batch": 5,
+      "fp64_remaining_norm_relative_error": 0.0
+    },
+    {
+      "batch": 6,
+      "fp64_remaining_norm_relative_error": 0.0
+    },
+    {
+      "batch": 7,
+      "fp64_remaining_norm_relative_error": 0.0
+    },
+    {
+      "batch": 8,
+      "fp64_remaining_norm_relative_error": 0.0
+    },
+    {
+      "batch": 9,
+      "fp64_remaining_norm_relative_error": 0.0
+    },
+    {
+      "batch": 10,
+      "fp64_remaining_norm_relative_error": 0.0
+    },
+    {
+      "batch": 11,
+      "fp64_remaining_norm_relative_error": 0.0
+    },
+    {
+      "batch": 12,
+      "fp64_remaining_norm_relative_error": 0.0
+    },
+    {
+      "batch": 13,
+      "fp64_remaining_norm_relative_error": 0.0
+    },
+    {
+      "batch": 14,
+      "fp64_remaining_norm_relative_error": 0.0
+    },
+    {
+      "batch": 15,
+      "fp64_remaining_norm_relative_error": 0.0
+    }
+  ],
+  "fp32_cache_verified": true,
+  "original_deadline_verified": true,
+  "unique_training_gradient_calls": 48
+}
