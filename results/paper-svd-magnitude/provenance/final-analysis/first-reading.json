@@ -1,0 +1,10 @@
+{
+  "written_unix": 1791980248.141037,
+  "source_sha256": "01e01271f2b9c9dfd8639159b8b12bd1c9a435fea378eda9409f5849e9593ec9",
+  "analysis_plan_sha256": "b6edfa3a7031ae3e5bdb3fc1f6b50f284a5e40742ce14f93e7590b922ac92f06",
+  "both_complete_exports_verified": true,
+  "export_manifest_hashes": {
+    "runs/paper-svd-magnitude-analysis/compact-seed42": "2baf40b7a1d073e357f5019798338c93fe21e5133cdd82b76dd7084565455cab",
+    "runs/paper-svd-magnitude-analysis/compact-seed43": "360a5aae869fde11a9e9f96151c561ccc8c782a13e7610c2c60dda1979bd2999"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "reviewed_unix": 1791980345.021187,
+  "all_three_figures_visually_checked": true,
+  "numerical_analysis_rerun": false,
+  "change": "Added complete-evidence interpretation ahead of original gate details; no numeric or plot changes.",
+  "initial_report_sha256": "0632ba317a0cc59edba161a6f2964d8f33d9c948aadcc4c55db421dfd7cc2770",
+  "final_report_sha256": "436df6a0f14b190835ac06652d8f4c7811f4ca4dddb1ffc0478518a1ba22624e",
+  "figure_hashes": {
+    "reconstruction.png": "8a5ba254f45b91fde84e77e59919fcc74e0f054830dad1b57318dadab0293c15",
+    "forecast-errors.png": "8a75b0b07f07a45170ddbd9de49960dd7fab15bc2d74abe3f17731afa66911d7",
+    "effect-size-scatter.png": "b6037177e5fc0772b260927f6b7e5c4e8eb130049291688f5323f8899dc2fcc9"
+  },
+  "first_reading_source_verified": true
+}

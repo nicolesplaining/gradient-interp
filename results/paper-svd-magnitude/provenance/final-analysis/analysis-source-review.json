@@ -1,0 +1,21 @@
+{
+  "written_unix": 1791979848.083383,
+  "scientific_outputs_read": false,
+  "reviewed_by": "root",
+  "source_files_sha256": {
+    "scripts/audit_paper_svd_magnitude.py": "05d55bd16574f4f13f8d93943468f017479e5397ca8f8cb9c35a0e00afcb0964",
+    "src/gradient_interp/paper_svd_magnitude_analysis.py": "01e01271f2b9c9dfd8639159b8b12bd1c9a435fea378eda9409f5849e9593ec9",
+    "tests/test_paper_svd_magnitude_analysis.py": "cbe5bdd9165cccb9dda55386974f5c1c83a35e358abe21e3b44a2bb34684651e"
+  },
+  "tests": "29 meaningful audit/analysis/worker/data tests passed; Ruff clean",
+  "review": [
+    "Two genuine dead/completed seed receipts required before any cache/outcome reads; no preliminary escape",
+    "All hashes and exact grid; original archive and preparation, preflight, forecast and update ordering",
+    "Physical inverse float32 boundary; coefficients remain float64; unscaled all500 profiles recomputed on CPU; original sum tolerance unchanged",
+    "Original1000 paired batch/probe bootstrap and eight primary gates, secondary cannot rescue",
+    "All500 coefficients/profiles/contributions retained; signed cancellation and undefined denominators preserved; every split/method/rate/seed and fixed examples reported"
+  ],
+  "synthetic_test_corrections": [
+    "Initial test fixture coefficient sign corrected to match negative SGD forecast; missing representation alias in copied test fixed. No scientific outputs read or worker change."
+  ]
+}

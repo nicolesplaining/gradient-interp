@@ -1,0 +1,40 @@
+{
+  "completed_unix": 1791980251.820223,
+  "files_sha256": {
+    "pairs.csv": "add67859c4fab8c072c48d3055ae67066bd53e38dfae928dd781dbe1388a7d81",
+    "coefficients.csv": "1e6f581ca28b2aae27e068f233755128c6b1822dc5c45dcbbdffcfd8c35f9495",
+    "reconstruction.png": "8a5ba254f45b91fde84e77e59919fcc74e0f054830dad1b57318dadab0293c15",
+    "summary.json": "7391af954b11e3ed78f8e492332b92c84da5781562e44cc6ea4f887e77f8c55f",
+    "reconstruction.pdf": "29b00a806944b29ae82019c107d01156afd4eff7f727d31330c492ebca03063d",
+    "forecast-errors.pdf": "ff102eb2bb491c3cf8ce628e20cd79e310860862c4bea56f5dba0ca48dde8d10",
+    "profiles.csv": "7c535a367ffb6e75a0e9c9273d151a3b434c0892860abf1167ba65d228df1a4c",
+    "forecast-errors.png": "8a75b0b07f07a45170ddbd9de49960dd7fab15bc2d74abe3f17731afa66911d7",
+    "integrity-summary.json": "271e9bee8863704d3d829a664c6a64f662b78ce82b11e1752e6c533759aa14ce",
+    "components.csv": "2182d14c0326804fba1072f8c28038b5d80001c45a1a9dcf3e18e9753cb523c8",
+    "effect-size-scatter.png": "b6037177e5fc0772b260927f6b7e5c4e8eb130049291688f5323f8899dc2fcc9",
+    "effect-size-scatter.pdf": "b66b32964b870ae090ce0afdebf8b1994c0d123cde467a49bf8346a762a7f962",
+    "metrics.csv": "fb4ecc75e44c0e73953927ee71685e603a8b0cfc91111d0c88f388690db27fc5",
+    "probes.csv": "042c79030e2821ef5695448f11016ac62a243738c8269fcf9be448c44c8c86bc",
+    "examples.csv": "1d7ea4e9cfd91e338e116f4e86c98834398d1ecca6311671ea9bd98a59c71b5c",
+    "comparisons.csv": "385d761c91c8953667ad62bcde9da310ccfa9da5705b6159d8b3f4b71f47ab50",
+    "batches.csv": "e82724587afc96b19d57f5138714f483f3ee11726569088cf22add2aa93ebfc0",
+    "reconstruction.csv": "9800125cc825d31f97c05257b721acf798fd8e5bd8aac980baaa1657cffb2833",
+    "report.html": "0632ba317a0cc59edba161a6f2964d8f33d9c948aadcc4c55db421dfd7cc2770",
+    "named-shares.csv": "c3ea95f9ac9682aba0ad4326e23a60fb6c28756ec604f8bc8152b0d12db6eaaf"
+  },
+  "source_sha256": "01e01271f2b9c9dfd8639159b8b12bd1c9a435fea378eda9409f5849e9593ec9",
+  "analysis_plan_sha256": "b6edfa3a7031ae3e5bdb3fc1f6b50f284a5e40742ce14f93e7590b922ac92f06",
+  "counts": {
+    "metrics": 32,
+    "comparisons": 8,
+    "batches": 1024,
+    "probes": 1280,
+    "pairs": 40960,
+    "examples": 1024,
+    "reconstruction": 256,
+    "components": 8000,
+    "named-shares": 20480,
+    "coefficients": 64000,
+    "profiles": 160000
+  }
+}

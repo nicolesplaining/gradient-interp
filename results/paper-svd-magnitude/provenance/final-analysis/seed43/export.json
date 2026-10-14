@@ -1,0 +1,25 @@
+{
+  "type": "paper_svd_magnitude_compact_export",
+  "exported_unix": 1791980056.8152761,
+  "seed": 43,
+  "methods": [
+    "svd500",
+    "dictionary",
+    "full_gradient",
+    "zero"
+  ],
+  "rates": [
+    0.003,
+    0.0003
+  ],
+  "analysis_plan_sha256": "b6edfa3a7031ae3e5bdb3fc1f6b50f284a5e40742ce14f93e7590b922ac92f06",
+  "audit_script_sha256": "05d55bd16574f4f13f8d93943468f017479e5397ca8f8cb9c35a0e00afcb0964",
+  "scientific_scope": "teacher-forced completion CE only",
+  "heavy_cache_kept_remote": true,
+  "files_sha256": {
+    "arrays.npz": "eaa7890cd2f52a03431df2024175e708bc4a6c3625fc1fe2d706c6aa3d010b39",
+    "data.json": "44b63e2b7a82febc92180d657a583be39bd0ef878177e81ede2f6ac35b4e1056",
+    "integrity.json": "7163466c7bfb7c6cb8dedbe3c297be5a19e12e9e3ce5d4e4c7312c258ce8f917",
+    "named-selections.json": "d99e69e9d52f28a38722cc8e955ede190230c5fa91c28c3e6440e16d82181910"
+  }
+}

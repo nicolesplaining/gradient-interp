@@ -1,8 +1,13 @@
 {
-  "updated_unix": 1791979187.661282,
+  "updated_unix": 1791980426.575855,
   "svd_report_complete": true,
   "magnitude_report_complete": true,
-  "prospective_svd_magnitude_status": "both_seeds_running_frozen_source_a6b79c5",
+  "prospective_svd_magnitude_status": "complete_audited_analyzed",
+  "all_scientific_work_complete": true,
+  "no_further_experiments_queued": true,
   "provisional_delivery": "2026-10-15T09:00:00-07:00",
-  "positive_result_guaranteed": false
+  "report_ready": true,
+  "comparative_forecast_improvement": true,
+  "overall_primary_accuracy_success": false,
+  "component_interpretability_validated": false
 }

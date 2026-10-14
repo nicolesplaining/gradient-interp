@@ -1,0 +1,20 @@
+{
+  "scope": "development_only",
+  "started_unix": 1791979102.187303,
+  "deadline_unix": 1792022302.187303,
+  "status": "complete",
+  "controller_pid": 34453,
+  "worker_pid": null,
+  "plan_sha256": "1533c8992174ab33d3b7763902011a59f2a5e85fdc6398c17573f07f55c1303e",
+  "attempts": [
+    {
+      "job": "svd-magnitude",
+      "pid": 34463,
+      "started_unix": 1791979102.189444,
+      "finished_unix": 1791979459.594497,
+      "returncode": 0
+    }
+  ],
+  "current_job": "svd-magnitude",
+  "checked_unix": 1791979459.5949202
+}

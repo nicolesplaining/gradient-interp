@@ -1,0 +1,22 @@
+{
+  "locked_unix": 1791979422.278525,
+  "plan_sha256": "67527ef33e0cd41f87e04bf9b026a1aaafcfa4d0cc27e20a52050e13469c0690",
+  "files_sha256": {
+    "forecast-cache.pt": "3dadbf89452b43051df1442fe1f51e0fbce118c10d7b9eb0e47e02c9a02894e9"
+  },
+  "methods": [
+    "svd500",
+    "dictionary",
+    "full_gradient",
+    "zero"
+  ],
+  "rates": [
+    0.003,
+    0.0003
+  ],
+  "all_forecasts_before_updates": true,
+  "original_adapter_unchanged": true,
+  "unscaled_basis_used": true,
+  "basis_directions_sha256": "9c7fbf6589e9582550effbc6a5a89a3331b00a7a5cb088579e186c7bb8863219",
+  "component_sum_max_abs_error": 2.5122903202223767e-09
+}

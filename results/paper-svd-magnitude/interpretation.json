@@ -1,0 +1,179 @@
+{
+  "written_unix": 1791980345.019618,
+  "scope": "prospective development on two reused adapters; fresh prompt rows; reference completion loss only",
+  "overall_primary_success": false,
+  "prespecified_comparative_criterion_passes_both_seeds": true,
+  "supported_claim": "At the fixed primary step .003, the frozen SVD500 representation reduces prospective held-out reference-loss-change RMSE by 32.3% and 31.6% relative to the original sparse dictionary. Both Bonferroni-adjusted paired relative-error advantages exceed the prespecified .10 threshold.",
+  "limits": [
+    "The joint success rule fails in both seeds: SVD MAE exceeds .01 nats/token and upper simultaneous nRMSE bounds exceed .5.",
+    "SVD predicts only about 56% and 53% of the observed mean loss changes; residual underprediction remains.",
+    "SVD uses all 500 coefficients; the dictionary averages about24 active codes on these new batches. Equal candidate counts are not equal sparsity or compute.",
+    "The completed separate steering study found weaker aggregate SVD steering and no combined selective interpretability/quality success. Numerical prediction gains do not validate components.",
+    "New data rows but reused training source and adapters. This is not fresh-seed confirmation; model-generated reference correctness is not asserted.",
+    "Original architecture reconstructed; original paper rank8 checkpoint unavailable. No unrestricted generated-behavior forecast claim or novelty claim for the underlying dot-product identity."
+  ],
+  "primary_points": [
+    {
+      "seed": 42,
+      "svd_nrmse": 0.4623672375786234,
+      "dictionary_nrmse": 0.682504645901547,
+      "full_gradient_nrmse": 0.2256667579657093,
+      "relative_rmse_reduction": 0.3225434576084615,
+      "svd_mae": 0.014409397393168613,
+      "svd_mean_effect": -0.016449381018672975,
+      "actual_mean_effect": -0.02924805370685135,
+      "fraction_of_actual_mean": 0.5624094233258232,
+      "gates": {
+        "cleared": false,
+        "failed_quantities": [
+          "svd_nrmse",
+          "svd_mae"
+        ],
+        "intervals": {
+          "actual_rms": {
+            "interval": [
+              0.029755887473539386,
+              0.05776380912664285
+            ],
+            "undefined_replicates": 0,
+            "family_size": 8,
+            "marginal_coverage": 0.99375
+          },
+          "svd_nrmse": {
+            "interval": [
+              0.4305885945345471,
+              0.5128788093255752
+            ],
+            "undefined_replicates": 0,
+            "family_size": 8,
+            "marginal_coverage": 0.99375
+          },
+          "svd_mae": {
+            "interval": [
+              0.010993876330497513,
+              0.018409328764318795
+            ],
+            "undefined_replicates": 0,
+            "family_size": 8,
+            "marginal_coverage": 0.99375
+          },
+          "dictionary_minus_svd_nrmse": {
+            "interval": [
+              0.187933287428755,
+              0.25372911383164165
+            ],
+            "undefined_replicates": 0,
+            "family_size": 8,
+            "marginal_coverage": 0.99375
+          }
+        },
+        "signal_inconclusive": false,
+        "primary_rate": 0.003
+      }
+    },
+    {
+      "seed": 43,
+      "svd_nrmse": 0.4663556515677841,
+      "dictionary_nrmse": 0.6819669363215042,
+      "full_gradient_nrmse": 0.26365493439482346,
+      "relative_rmse_reduction": 0.3161609064461639,
+      "svd_mae": 0.01833328484863261,
+      "svd_mean_effect": -0.018907399288453062,
+      "actual_mean_effect": -0.035496243096076796,
+      "fraction_of_actual_mean": 0.5326591672610782,
+      "gates": {
+        "cleared": false,
+        "failed_quantities": [
+          "svd_nrmse",
+          "svd_mae"
+        ],
+        "intervals": {
+          "actual_rms": {
+            "interval": [
+              0.03623134117703217,
+              0.07810810856588908
+            ],
+            "undefined_replicates": 0,
+            "family_size": 8,
+            "marginal_coverage": 0.99375
+          },
+          "svd_nrmse": {
+            "interval": [
+              0.41695559486361067,
+              0.5240355122972438
+            ],
+            "undefined_replicates": 0,
+            "family_size": 8,
+            "marginal_coverage": 0.99375
+          },
+          "svd_mae": {
+            "interval": [
+              0.013853595869704808,
+              0.023964030239867044
+            ],
+            "undefined_replicates": 0,
+            "family_size": 8,
+            "marginal_coverage": 0.99375
+          },
+          "dictionary_minus_svd_nrmse": {
+            "interval": [
+              0.17583380220634096,
+              0.25387790857363607
+            ],
+            "undefined_replicates": 0,
+            "family_size": 8,
+            "marginal_coverage": 0.99375
+          }
+        },
+        "signal_inconclusive": false,
+        "primary_rate": 0.003
+      }
+    }
+  ],
+  "named_share_summary": [
+    {
+      "seed": 42,
+      "method": "svd500",
+      "pairs": 2048,
+      "mean_named_absolute_share": 0.013260505311338256,
+      "median_named_absolute_share": 0.011801683596152263,
+      "mean_cancellation_fraction": 0.5435383702368342,
+      "zero_absolute_denominators": 0,
+      "zero_signed_denominators": 0
+    },
+    {
+      "seed": 42,
+      "method": "dictionary",
+      "pairs": 2048,
+      "mean_named_absolute_share": 0.0012411513613886447,
+      "median_named_absolute_share": 0.0,
+      "mean_cancellation_fraction": 0.11180395893246778,
+      "zero_absolute_denominators": 0,
+      "zero_signed_denominators": 0
+    },
+    {
+      "seed": 43,
+      "method": "svd500",
+      "pairs": 2048,
+      "mean_named_absolute_share": 0.041996818707663044,
+      "median_named_absolute_share": 0.031033778403970796,
+      "mean_cancellation_fraction": 0.5633406782123835,
+      "zero_absolute_denominators": 0,
+      "zero_signed_denominators": 0
+    },
+    {
+      "seed": 43,
+      "method": "dictionary",
+      "pairs": 2048,
+      "mean_named_absolute_share": 0.015605042420439797,
+      "median_named_absolute_share": 0.0,
+      "mean_cancellation_fraction": 0.14523630357671058,
+      "zero_absolute_denominators": 0,
+      "zero_signed_denominators": 0
+    }
+  ],
+  "next_action": "No further experiments. Present the positive comparative forecast result together with failed absolute-accuracy and interpretability criteria; preserve every endpoint, rate, seed and failure.",
+  "all_planned_analyses_retained": true,
+  "source_sha256": "01e01271f2b9c9dfd8639159b8b12bd1c9a435fea378eda9409f5849e9593ec9",
+  "analysis_plan_sha256": "b6edfa3a7031ae3e5bdb3fc1f6b50f284a5e40742ce14f93e7590b922ac92f06"
+}

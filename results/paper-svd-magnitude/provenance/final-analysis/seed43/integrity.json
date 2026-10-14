@@ -1,0 +1,86 @@
+{
+  "checked_unix": 1791980055.303834,
+  "complete": true,
+  "seed": 43,
+  "source_commit": "a6b79c5d1a3f7acccf856694ac09fd99b1e575ee",
+  "source_archive_sha256": "ef09001d01134ec0806b4e34a833436656ff30b8d873fd911ce5ef287ea842aa",
+  "source_input_output_hashes_verified": true,
+  "full_grid_verified": true,
+  "locks_restores_verified": true,
+  "original_deadline_verified": true,
+  "tokenization_verified": true,
+  "cache_recomputed": true,
+  "gradients_recomputed_from_model": false,
+  "gradient_audit_scope": "Stored batch gradients were reprojected and forecast contractions recomputed. No model load or independent gradient differentiation.",
+  "updates": 64,
+  "probes": 80,
+  "evaluation_pairs_per_rate": 2048,
+  "forecast_conditions": 256,
+  "loss_values_after_updates": 5120,
+  "attempts": [
+    {
+      "job": "svd-magnitude",
+      "pid": 34463,
+      "started_unix": 1791979102.189444,
+      "finished_unix": 1791979459.594497,
+      "returncode": 0
+    }
+  ],
+  "plan_sha256": "1533c8992174ab33d3b7763902011a59f2a5e85fdc6398c17573f07f55c1303e",
+  "forecast_lock_sha256": "621ad6233e07dc5f832fd0801cb4f75406ded59aa193c34b4d486da789745d7d",
+  "analysis_plan_sha256": "b6edfa3a7031ae3e5bdb3fc1f6b50f284a5e40742ce14f93e7590b922ac92f06",
+  "completion_receipts": [
+    {
+      "type": "paper_svd_magnitude_completion_receipt",
+      "seed": 42,
+      "root": "/home/ubuntu/gradient-interp/runs/paper-svd-magnitude-seed42",
+      "observed_unix": 1791979875.320817,
+      "status": "complete",
+      "started_unix": 1791979102.321391,
+      "deadline_unix": 1792022302.321391,
+      "all_processes_dead": true,
+      "checked_pids": [
+        135907,
+        135917
+      ],
+      "controller_sha256": "cb45ea09e8e91ef884239a29568ddf98422584b9096642864bd55331de5fbab3",
+      "plan_sha256": "67527ef33e0cd41f87e04bf9b026a1aaafcfa4d0cc27e20a52050e13469c0690",
+      "specification_sha256": "4233a72384859855f28ed38f544eb917ec1ca53d0fdd9f34eaa7b27f128bec26",
+      "release_reason": "complete",
+      "completed_unix": 1791979800.7023954,
+      "manifest_sha256": "9de5a9a8980df2f18870d2cbdef48de5046d6894659fbbe92b7a85c699cbf2e4"
+    },
+    {
+      "type": "paper_svd_magnitude_completion_receipt",
+      "seed": 43,
+      "root": "/home/ubuntu/gradient-interp/runs/paper-svd-magnitude-seed43",
+      "observed_unix": 1791979876.14867,
+      "status": "complete",
+      "started_unix": 1791979102.187303,
+      "deadline_unix": 1792022302.187303,
+      "all_processes_dead": true,
+      "checked_pids": [
+        34453,
+        34463
+      ],
+      "controller_sha256": "717c88b6077d53a80b58889220e72e568a63431e661e745eb6bca7e203d0c82a",
+      "plan_sha256": "1533c8992174ab33d3b7763902011a59f2a5e85fdc6398c17573f07f55c1303e",
+      "specification_sha256": "2331aa412d2841f1ea60e4db8c9503b2705294086fbb04bab9fa280ed9fa7b13",
+      "release_reason": "complete",
+      "completed_unix": 1791979457.1114235,
+      "manifest_sha256": "45dcbda09219490aa45fbce12b11a183ab08ae3fe3bce9794de97963363560d9"
+    }
+  ],
+  "receipt_files_sha256": {
+    "runs/analysis-tools/svd-magnitude/seed42.json": "b6a519787060aee4c8c3fb4bc6fe1281cb273e8960e43a77380a4020d2cb50a6",
+    "runs/analysis-tools/svd-magnitude/seed43.json": "ddef1e82f82ee8e92866187f44c10a87516f2000d24388efb2440cb9dc066779"
+  },
+  "forecast_cache_sha256": "dbcf706c2bccb08435aec263b2774f9b3cc705ee7c180811882165a84eb19313",
+  "unscaled_components_recomputed": true,
+  "preparation_lock_sha256": "efbbd4c0b88aa57947105474dbc6b5efc797a7b2c372ead9d4fd0f2948c40f17",
+  "basis_directions_sha256": "07c25e9bd6bb8e21dcf065a4faa7c33f0a54f7b61f37a9b752bfcac5bcaf4a57",
+  "component_sum_max_abs_error": 2.9912044785529446e-09,
+  "worker_started_unix": 1791979113.3825927,
+  "worker_completed_unix": 1791979457.1114235,
+  "peak_memory_bytes": 21892610048
+}

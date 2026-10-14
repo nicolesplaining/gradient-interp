@@ -1,0 +1,31 @@
+{
+  "checked_unix": 1791980426.6071239,
+  "html_internal_links_checked": [
+    "results/paper-svd-magnitude/report.html",
+    "results/gradient-study-summary/report.html"
+  ],
+  "readme_bytes": 0,
+  "tests": "29 audit/analysis/worker/data tests passed; Ruff clean",
+  "figures_visually_checked": [
+    "forecast-errors.png",
+    "effect-size-scatter.png",
+    "reconstruction.png"
+  ],
+  "no_new_model_runs": true,
+  "summary_sha256": "dd08c11e124bc2cbab802b20024356433fa7ca2d7959c6bf6e375b608ddeb049",
+  "counts": {
+    "metrics": 32,
+    "comparisons": 8,
+    "batches": 1024,
+    "probes": 1280,
+    "pairs": 40960,
+    "examples": 1024,
+    "reconstruction": 256,
+    "components": 8000,
+    "named-shares": 20480,
+    "coefficients": 64000,
+    "profiles": 160000
+  },
+  "final_counts_bootstrap_sources_verified": true,
+  "completed_unix": 1791980478.1310878
+}
