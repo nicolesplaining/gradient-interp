@@ -1,0 +1,81 @@
+{
+  "written_unix": 1791944352.783357,
+  "scope": "development_only",
+  "interpretation": "Limited numerical length prediction; no validated atom meanings or reliable copying forecasts.",
+  "dictionary_middle_rate": {
+    "rate": 0.003,
+    "same_question_copying_nrmse": [
+      1.0,
+      0.24743582965269673
+    ],
+    "same_question_copying_rmse_pp": [
+      1.4615849167085708,
+      0.9568319307746789
+    ],
+    "seed43_mse_difference_interval_includes_zero": true,
+    "calibration_transfer_copying_nrmse": [
+      1.0,
+      1.0
+    ],
+    "caution": "Small effects with only32forecastresponses. Empirical bootstrap cannot recover missing events."
+  },
+  "dictionary_large_rate": {
+    "rate": 0.03,
+    "same_question_copying_nrmse": [
+      0.9579577937376069,
+      1.1797256364594217
+    ],
+    "copying_transfer_nrmse": [
+      0.885814767536085,
+      0.957875656437659
+    ],
+    "same_question_length_nrmse": [
+      0.9353423144366783,
+      0.414257481144024
+    ],
+    "length_transfer_nrmse": [
+      0.897326907936135,
+      0.7466253129128086
+    ],
+    "same_question_predicted_mean_tokens": [
+      1.23828125,
+      3.1171875
+    ],
+    "actual_mean_tokens": [
+      16.9306640625,
+      5.494140625
+    ],
+    "same_question_truncation_nrmse": [
+      0.9815548295688241,
+      0.6274097797969371
+    ],
+    "numbered_forecasts_zero_on_evaluation_questions": true,
+    "length_pointwise_mc_plus_question_intervals_below_one": true,
+    "length_is_not_promoted_to_primary_success": true
+  },
+  "fixed_bad_case": {
+    "seed": 42,
+    "batch": 0,
+    "rate": 0.03,
+    "actual_copying_baseline_percent": 97.265625,
+    "actual_copying_after_percent": 31.640625,
+    "actual_truncation_percent": 80.859375,
+    "dictionary_copying_baseline_percent": 98.4375,
+    "dictionary_copying_after_percent": 95.3125,
+    "dictionary_truncation_percent": 1.5625,
+    "separate_baseline_streams": true
+  },
+  "cost": {
+    "forecast_hours": [
+      5.598928643928634,
+      2.917818885511822
+    ],
+    "evaluation_hours": [
+      2.1097628792126972,
+      0.8598631848891576
+    ],
+    "not_equal_work_comparison": "Forecasts cover four representations, evaluation one actual update; per-question sample counts32vs128. No efficiency claim."
+  },
+  "decision": "Continue the already frozen atom-centered batch explanation study without changes. Numerical forecasting and semantic/causal validation remain separate. Do not revive completed phases or select new atom hypotheses from current active outcomes.",
+  "active_new_study_outcomes_read": false
+}

@@ -1,0 +1,78 @@
+{
+  "checked_unix": 1791944287.623242,
+  "metrics": 360,
+  "batches": 1440,
+  "questions": 2880,
+  "examples": 240,
+  "counts_verified": true,
+  "zero_alias_verified": true,
+  "bootstrap_pairing_tests": "4 passed; plus 3 existing tangent tests passed",
+  "ruff": "clean",
+  "figures_visually_checked": true,
+  "files": {
+    "results/paper-tangent/summary.json": {
+      "bytes": 5740460,
+      "sha256": "40ed363a09fbce3d4da04c26870831aa5d4510bbb52f2ff360ffe390a469ff90"
+    },
+    "results/paper-tangent/seed43-bootstrap.npz": {
+      "bytes": 11287588,
+      "sha256": "4ce7f46e8d90542bc7fd593e5b0fdf787c9e8c0f9d24459f6a94bae6e2e84cd0"
+    },
+    "results/paper-tangent/evaluation_same_question.png": {
+      "bytes": 369573,
+      "sha256": "8d7b6527d7db426487e40ea8062cc105749c5c0ada6efc8564a668edcf9a403e"
+    },
+    "results/paper-tangent/evaluation_same_question.pdf": {
+      "bytes": 36771,
+      "sha256": "886eaa20c1b9cbdb7710f7aeb5d809d5d0e59668f9dd545f0cdd09728dc80147"
+    },
+    "results/paper-tangent/generated.csv": {
+      "bytes": 208078,
+      "sha256": "ff344cffc3cb7712dd6213e5ae950fe29828beb9511a310338e7803ae10588ae"
+    },
+    "results/paper-tangent/metrics.csv": {
+      "bytes": 334005,
+      "sha256": "99030ac351e02489adb94400aa31f3b383cf078b7892ddf008b14d3aad2c5c31"
+    },
+    "results/paper-tangent/costs.csv": {
+      "bytes": 13468,
+      "sha256": "65cdbd4f1e97dde2e90565448e66bc91eda7341a31ebfaf7120ba4d76672012a"
+    },
+    "results/paper-tangent/questions.csv": {
+      "bytes": 273228,
+      "sha256": "e6759acdaa613e420cc3070b54c7fb7434cb4fb3f45c031d15682f087c2a53e5"
+    },
+    "results/paper-tangent/batches.csv": {
+      "bytes": 389499,
+      "sha256": "7de8624e3cb158dd166bc09e15eb988144b5ec1fe21f3f23c81b72ae39258efb"
+    },
+    "results/paper-tangent/report.html": {
+      "bytes": 338409,
+      "sha256": "2421d8a4c4bf42271e1ef57c9d35b3a993fc0998bc3102671d6a54855cb1491c"
+    },
+    "results/paper-tangent/dictionary-calibration.png": {
+      "bytes": 313048,
+      "sha256": "8b7e36a01de0338039ff7ad0882bf56ba6795f8c04a5000d0bd32a0a3dcb9fb3"
+    },
+    "results/paper-tangent/evaluation_calibration_transfer.png": {
+      "bytes": 291848,
+      "sha256": "b9e20a942cdba1f816ea85b59d7c768b7fd5a2fe7c53f2611881f9628e6fb352"
+    },
+    "results/paper-tangent/analysis-plan.json": {
+      "bytes": 1950,
+      "sha256": "f0da763028a9fd4611f46dcb876a5bf5f1c6f7962772c6b637a738970c04d906"
+    },
+    "results/paper-tangent/evaluation_calibration_transfer.pdf": {
+      "bytes": 36274,
+      "sha256": "f5e579701eff574af159cfd4afc17aa091b9718ceb7ce1e0794e7b1b2d583a93"
+    },
+    "results/paper-tangent/dictionary-calibration.pdf": {
+      "bytes": 31610,
+      "sha256": "2fd858e2491f4b43903152864362bc102b5ec26a1b66f07a8ec5de0c4a6d2771"
+    },
+    "results/paper-tangent/seed42-bootstrap.npz": {
+      "bytes": 10491827,
+      "sha256": "bcbe449b695c48606c4ee736e250ad67a45386587c5bcec68bd3b23c21b22004"
+    }
+  }
+}
