@@ -1,0 +1,52 @@
+{
+  "written_unix": 1791963696.031831,
+  "scope": "retrospective_development_diagnostic",
+  "prior_results_already_read": true,
+  "new_codings_computed_before_plan": false,
+  "seeds": [
+    42,
+    43
+  ],
+  "batches_per_seed": 16,
+  "atoms": 500,
+  "dimensions": 6800,
+  "source_inputs_sha256": {
+    "runs/paper-atom-batches-seed42/plan.json": "beb4e8d53077fc74b8ca747689fa8cbe21630405ceae1de6548e3994d401e93c",
+    "runs/paper-atom-batches-seed42/specification.json": "f4b09e2ea7bd8149ce782f7ab82f752334e3a9cedd451c54097ce69bd4a00321",
+    "runs/paper-atom-batches-seed42/integrity.json": "224b05f75d4a62a3ceb74cd0777355dd632a8668a5b1c20ce48d7cdf3d5a1c6a",
+    "runs/paper-atom-batches-seed42/forecast-lock.json": "7939534089718b1ac4e4542b4310af8c3eaddd0856ef32e097d127bcf46fa3b9",
+    "runs/paper-atom-batches-seed42/manifest.json": "7f75234ae74eb58db834b5f1eae5136374c61e978c3aa99b512df7f4429571ab",
+    "runs/paper-atom-batches-seed42/data.json": "ee2c661c8d540dc674befdd097f4a0acecded211f4913d67924def44c9e6a03e",
+    "runs/paper-atom-batches-seed42/atom-cards.json": "c63183f90f75a367631bce6eb09629c79f269ffdc517f43dba82ba7c09f1d1bf",
+    "runs/paper-atom-batches-seed42/forecasts.npz": "83c1bbcc7d820184010a51112fa2f1482b1a730637f04db52718b7d88c21ba4d",
+    "runs/paper-atom-batches-seed43/plan.json": "a9405308db4c4b5aaa894ace2e26e6bb010e11737af7f8692df01bf70086fcde",
+    "runs/paper-atom-batches-seed43/specification.json": "92ae4cfbfd8e5e794209ee04cc3f917a4ac769e9bbc9e7610f7c463dc9dd8ba8",
+    "runs/paper-atom-batches-seed43/integrity.json": "4c34332e89c6a8b88de478e94c41ef3f46a8214883f8968ac7ed8a0236389bb4",
+    "runs/paper-atom-batches-seed43/forecast-lock.json": "3862ab9cf0eaee3f71022b994692e7878058a72b1cfe68dea13621b14321110d",
+    "runs/paper-atom-batches-seed43/manifest.json": "6dffbc99cdbc5311b2ff2d644940f7ff4e6ef203f60f09244edfce289daafb38",
+    "runs/paper-atom-batches-seed43/data.json": "ee2c661c8d540dc674befdd097f4a0acecded211f4913d67924def44c9e6a03e",
+    "runs/paper-atom-batches-seed43/atom-cards.json": "5e151df54a58370f78972cc40fb453e879670d32715c014d37197cfaaf9e77ab",
+    "runs/paper-atom-batches-seed43/forecasts.npz": "3056de9d674e1afca4db2c6adea4d141880f0fe1d53c9cee0275c00621ca9e34"
+  },
+  "purpose": "Separate original L1 coefficient shrinkage, sparse support selection, and residual outside the frozen dictionary span. This is not a prospective behavior forecast or interpretation validation.",
+  "methods": [
+    "original_lasso",
+    "support_refit",
+    "omp16",
+    "dense_span"
+  ],
+  "original_lasso": "Use frozen cached float32 codes with their original projected gradient norm. Recompute alpha=0.1 LassoLars in float64 only to audit numerical agreement; absolute code tolerance 1e-5. No retuning.",
+  "support_refit": "Float64 minimum-norm least squares on exactly the nonzero support of the cached original Lasso code; rcond=1e-10. Empty support remains zero. Restore original projected norm.",
+  "omp16": "Deterministic orthogonal matching pursuit on the same frozen dictionary, at most16atoms. Selection is largest absolute residual correlation divided by atom norm, lowest index breaks ties. Refit selected original dictionary rows by least squares rcond=1e-10 after each selection. Stop if residual norm<=1e-12 of target or all available normalized correlations<=1e-12 of target norm. No outcome selection.",
+  "dense_span": "Float64 minimum-norm least squares on all500dictionary atoms with rcond=1e-10. This is a dictionary-span reference, not a sparse explanation.",
+  "geometry": "Report every batch/style/seed/method: relative projected residual, squared residual, reconstructed norm ratio, cosine, target-projection gain, coefficient L1/L2/L0, named-atom signed coefficients and inclusion. Separate shrinkage loss=(Lasso SSE-refit SSE), support gap=(refit SSE-dense SSE), span residual=dense SSE, all divided by target squared norm; also OMP residual. Verify exact additive decomposition and orthogonality. These are EKFAC projected-space metrics, not physical parameter norm or causal semantics.",
+  "stability": {
+    "seed": 2026101408,
+    "repetitions": 20,
+    "relative_perturbation": 0.0001,
+    "rule": "Per batch add an isotropic Gaussian direction normalized to epsilon=1e-4 to its unit projected gradient and renormalize to unit length. Keep original projected norm. Use the same perturbations across methods. Lasso re-encodes at alpha0.1; support_refit always uses the original cached support; OMP reselects16; dense uses allatoms. Report coefficient relative L2 and reconstruction relative L2 changes, support Jaccard, named inclusion and sign, and amplification per unit input change. Undefined ratios are null and counted. Perturbations are sensitivity checks, not population confidence intervals."
+  },
+  "behavioral_diagnostic": "Recombine each new coding with the already-locked all500atom profiles at rate0.003. Report calibration-mean transfer and same-question point estimates for all8endpoints, all16batches and questions, aggregate all/styles/tasks, nRMSE vs zero, absolute error, magnitude and tails, and un-clipped probability violations. Compare with original Lasso, no-change and frozen full-gradient/SVD references; no new fitting or method choice using these outcomes. No new bootstrap significance or confirmation claim; these point estimates reuse inspected development outcomes. All original missing-event limitations remain.",
+  "execution": "CPU only; no model loads, updates, generations, downloads, preflights, old-output edits or remote checkout changes. Extract only cached projected arrays and original dictionary from hash-verified completed inputs. Freeze tested source SHA before computing new codings. Preserve failures in this new root.",
+  "decision": "Use all geometry, stability and retrospective behavior evidence to choose whether any sparse coding warrants a new prospective study. A better reconstruction does not establish interpretable atom semantics or reliable forecasts. No automatic new study launch or positive-result promise."
+}

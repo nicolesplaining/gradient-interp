@@ -1,0 +1,19 @@
+{
+  "frozen_unix": 1791964015.596183,
+  "plan_sha256": "3951c8efbca75f9dd1fe1718fed03c9e176db650d42795c876f093c3826001ec",
+  "files_sha256": {
+    "/Users/nicolema/Documents/Codex/2026-10-07/can-x20/gradient-interp/src/gradient_interp/paper_atom_coding.py": "35763401d61b5db09022d115383b4cc92162dec96961dae9cb70468897f41a12",
+    "scripts/export_paper_atom_coding.py": "3d95e238e1840c7d1c999a8ee8a9c5f856f37faf04f808245db212c1a7f2f12d",
+    "tests/test_paper_atom_coding.py": "dc544a77c9682a3609ba5524a341beb8b96a251b5462c1142e8b9651c2e46b09",
+    "runs/paper-atom-coding-seed42/inputs.npz": "66e3ab7642e81a827d7e18877e8a493a41a4ced5e2ad9628859de47e9dcc3da1",
+    "runs/paper-atom-coding-seed42/export.json": "c52ef4c225b4bdfff1463cbcd241e27f5fb86ae221042ea524dd7081c8566e12",
+    "runs/paper-atom-coding-seed43/inputs.npz": "94b058882d447b43765f43e46e1caea4c009fa83041b16d49893af5f79486f85",
+    "runs/paper-atom-coding-seed43/export.json": "5e011ef42107207fea847f74985db93d1f28cf90734cc615430d78e48efec143",
+    "src/gradient_interp/paper_atom_batches.py": "8cd4b83ecf65b52b91447568e76bf90873dfab401783ab3f3e5c03dd01dc4445",
+    "src/gradient_interp/paper_atom_batches_analysis.py": "a9c98b672d0faab8a8ca7b7bfb4ebb2c8c194cbfc41cfcb0a2b88b44d84e7bf9",
+    "src/gradient_interp/paper_atom_data.py": "bb4fadc90c5e0f1c88b0a038dd550ec31ebfb94add49ad9c8735c7752931ef68",
+    "src/gradient_interp/paper_batch_analysis.py": "62aeb3e893c5147d680a18765ab400eea142bffed857ac2d374709030a114d4e",
+    "src/gradient_interp/study.py": "2f217b76391213d3d28ae31e2f823ffa457b33e384a8255a6c49e9735f348303"
+  },
+  "tested_before_new_codings": true
+}
