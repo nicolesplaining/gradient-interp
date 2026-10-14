@@ -509,6 +509,7 @@ def summarize(root, work, replicates):
         "candidates": candidates,
         "fit": fit,
         "gates": gates,
+        "execution_amendment": read(root / "integrity.json").get("execution_amendment"),
         "selection": read(root / "selection.json"),
         "examples": read(root / "fixed-examples.json"),
     }
@@ -687,6 +688,10 @@ def render_report(summaries, output):
         f"<p>The frozen joint development gates {'passed' if success else 'did not all pass'}. This comparison uses two reused adapters and public paper prompts. It is not untouched confirmation.</p>",
         "<p>The fixed primary combines every signed strength and all five families. Component selection uses only training documents. Coherence and detector purity alone do not validate semantics. All quality costs, failed descriptor pairs and zero codes remain reported. Missing-input clarification is not safety refusal; fenced-code detection is not code correctness.</p>",
     ]
+    if any(s.get("execution_amendment") for s in summaries):
+        text.append(
+            "<p><strong>Parallel execution limitation.</strong> An amendment fixed condition ownership before the moved conditions ran; scientific choices and original deadlines were unchanged. Each family retains its dictionary and SVD conditions on the same device. For seed 42, the shared baseline and first three families ran on A100, while bullets and numbered interventions ran on H100. For seed 43, numbered interventions ran on a second H100. Identical software and generation settings do not guarantee identical greedy responses across devices. In particular, seed 42 baseline-relative quality comparisons for the moved families include this device difference. The reported memory peak covers the original training preflight and tail worker; the original prefix generation peak was not recorded. Final assembly time is not summed GPU time. This study makes no equal-compute or efficiency claim.</p>"
+        )
     text.append(
         table(
             [r for s in summaries for r in s["primary"] if r["scope"] == "all_families"],

@@ -1,0 +1,7 @@
+{
+  "written_unix": 1791977990.461926,
+  "scientific_svd_outputs_read": false,
+  "change": "Report-only execution amendment metadata and explicit cross-device greedy-response/memory/timing limitations. Numerical analysis unchanged.",
+  "tests": "13 relevant SVD analysis tests passed; Ruff clean",
+  "source_sha256": "ae9eea396274c06e08ca21b4be2a1e0bbaf7dd8943d3dbae4b38e31974decc16"
+}

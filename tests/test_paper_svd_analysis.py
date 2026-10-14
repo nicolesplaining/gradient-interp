@@ -280,6 +280,7 @@ def test_compact_export_and_summary_cover_full_synthetic_grid(tmp_path):
         ("specification", {"training_seed": 42}),
         ("fit", {}),
         ("selection", selection),
+        ("integrity", {"execution_amendment": None}),
     ):
         atomic_json(tmp_path / f"{name}.json", value)
     summary = summarize(tmp_path, tmp_path, 16)
@@ -296,6 +297,13 @@ def test_compact_export_and_summary_cover_full_synthetic_grid(tmp_path):
     render_report([summary, second], tmp_path)
     assert (tmp_path / "report.html").exists()
     assert len(list(tmp_path.glob("*.png"))) == 5
+    assert "Parallel execution limitation" not in (tmp_path / "report.html").read_text()
+    summary["execution_amendment"] = {"prefix_indices": list(range(61))}
+    render_report([summary, second], tmp_path)
+    report = (tmp_path / "report.html").read_text()
+    assert "Parallel execution limitation" in report
+    assert "baseline-relative quality comparisons" in report
+    assert "generation peak was not recorded" in report
 
 
 def test_audited_export_hash_guard_refuses_stale_or_incomplete_provenance(tmp_path):

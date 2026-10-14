@@ -1,0 +1,30 @@
+{
+  "recorded_unix": 1791977294.596253,
+  "human_request": "I need by tomorrow morning to have reportable results, positive results. Decide based on SVD results what to do.",
+  "scientific_svd_outputs_read": false,
+  "report_target_local_provisional": "2026-10-15T09:00:00-07:00",
+  "timezone": "America/Los_Angeles",
+  "delivery_time_clarification_pending": true,
+  "priorities": [
+    "Finish and audit the frozen full two-seed SVD comparison before choosing a new experiment",
+    "Evaluate original aggregate, per-family, held-out descriptor, selective steering and quality requirements without changing thresholds or promoting a secondary winner",
+    "Use the complete evidence to choose at most one focused, already-authorized prospective next experiment",
+    "Prepare report with exact positive findings if supported, uncertainty, every primary failure and material limitation"
+  ],
+  "decision_rules": {
+    "svd_strong_primary_and_semantics": "Lead with the supported SVD comparison and its interpretability evidence; assess whether the prepared prospective effect-size test adds a useful bounded result before the report deadline.",
+    "limited_family_evidence": "Report any justified family-specific development finding with complete context and original primary result. If a new follow-up is justified, freeze it prospectively; no retrospective promotion to primary success.",
+    "numerical_only_or_failed_semantics": "Consider the already-prepared SVD500 reference-CE forecasting study for its distinct numerical claim. Do not claim interpretable components or unrestricted behavioral prediction from numerical accuracy.",
+    "no_supported_positive": "Deliver the completed evidence and limitations. Do not choose further variants simply to obtain a positive result."
+  },
+  "report_contents": [
+    "One-page claim and evidence summary",
+    "SVD versus dictionary at matched candidate budget and physical steering norms",
+    "All strengths and both seeds with prespecified uncertainty",
+    "Held-out description/selectivity and content/length/truncation costs",
+    "Magnitude track results if complete",
+    "Reproducibility, source/input locks and hardware execution amendment"
+  ],
+  "positive_result_guaranteed": false,
+  "no_new_worker_launched_from_this_plan": true
+}
