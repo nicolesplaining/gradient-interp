@@ -1,0 +1,16 @@
+{
+  "scope": "development_only",
+  "created_unix": 1791966571.49727,
+  "source_commit": "e12ecc1989531ce48b1352e2f76985c6a7cf1a23",
+  "both_hosts_preflight_passed": true,
+  "runs": [
+    {
+      "root": "/home/ubuntu/gradient-interp/runs/paper-svd-seed42",
+      "plan_sha256": "6a7cc73bee5dab9571fa66bd27ae56cfcb0af460753fc6de4c4e19f940fb8348"
+    },
+    {
+      "root": "/home/ubuntu/gradient-interp/runs/paper-magnitude-seed42",
+      "plan_sha256": "946cb3ae803d67b0426ae1bb3b4ac7fc1b6c2afae5b89e654030d31ce928f590"
+    }
+  ]
+}

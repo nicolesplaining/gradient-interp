@@ -1,0 +1,13 @@
+{
+  "locked_unix": 1791966324.5948355,
+  "specification_sha256": "675ba763141e831be291c7a25daec2627dc58510fdbc13a7482165a00fc56045",
+  "heldout_outcomes_read": false,
+  "files_sha256": {
+    "data.json": "0cd72934f90bfb685c9b04c0496dd4adfc6608a35c35b6f4215f274c8e999bc5",
+    "data-overlap-audit.json": "df4399a0ab949e8ee4032bc895594969d1f3430580007d2a8957b7ac8168bfd5",
+    "directions.pt": "9c7fbf6589e9582550effbc6a5a89a3331b00a7a5cb088579e186c7bb8863219",
+    "candidates.json": "169fd23d54a63f166cce39c5ac48483d1165918c436848030c6cae3bde959872",
+    "selection.json": "b4cf57f03abacd8bb0cd2f2c6a104c25c7eafbf6e558da304dc1936718fcd4a3",
+    "fit.json": "9c2da2dd604cb6d7896c879ca7bce89d96da8237daef6351ea0b91a112ded65b"
+  }
+}

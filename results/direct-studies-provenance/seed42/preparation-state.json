@@ -1,0 +1,106 @@
+{
+  "status": "ready_to_launch",
+  "pid": 129881,
+  "started_unix": 1791966226.0873897,
+  "commit": "e12ecc1989531ce48b1352e2f76985c6a7cf1a23",
+  "steps": [
+    {
+      "command": [
+        "gradient_interp.paper_svd_replication",
+        "prepare",
+        "--root",
+        "/home/ubuntu/gradient-interp/runs/paper-svd-seed42",
+        "--source",
+        "/home/ubuntu/gradient-interp/runs/paper-setup"
+      ],
+      "started_unix": 1791966226.1133335,
+      "log": "/home/ubuntu/gradient-interp/runs/paper-direct-seed42/prepare-00.log",
+      "returncode": 0,
+      "finished_unix": 1791966327.566924
+    },
+    {
+      "command": [
+        "gradient_interp.paper_magnitude",
+        "prepare",
+        "--root",
+        "/home/ubuntu/gradient-interp/runs/paper-magnitude-seed42",
+        "--source",
+        "/home/ubuntu/gradient-interp/runs/paper-setup",
+        "--data",
+        "/home/ubuntu/gradient-interp/runs/paper-magnitude-data/data.json",
+        "--data-audit",
+        "/home/ubuntu/gradient-interp/runs/paper-magnitude-data/data-audit.json"
+      ],
+      "started_unix": 1791966327.567671,
+      "log": "/home/ubuntu/gradient-interp/runs/paper-direct-seed42/prepare-01.log",
+      "returncode": 0,
+      "finished_unix": 1791966334.4837606
+    },
+    {
+      "command": [
+        "gradient_interp.paper_magnitude",
+        "fit",
+        "--root",
+        "/home/ubuntu/gradient-interp/runs/paper-magnitude-seed42"
+      ],
+      "started_unix": 1791966334.4842741,
+      "log": "/home/ubuntu/gradient-interp/runs/paper-direct-seed42/prepare-02.log",
+      "returncode": 0,
+      "finished_unix": 1791966391.788908
+    },
+    {
+      "command": [
+        "gradient_interp.paper_svd_replication",
+        "preflight",
+        "--root",
+        "/home/ubuntu/gradient-interp/runs/paper-svd-seed42"
+      ],
+      "started_unix": 1791966391.7893536,
+      "log": "/home/ubuntu/gradient-interp/runs/paper-direct-seed42/prepare-03.log",
+      "returncode": 0,
+      "finished_unix": 1791966424.8861473
+    },
+    {
+      "command": [
+        "gradient_interp.paper_magnitude",
+        "preflight",
+        "--root",
+        "/home/ubuntu/gradient-interp/runs/paper-magnitude-seed42"
+      ],
+      "started_unix": 1791966424.886623,
+      "log": "/home/ubuntu/gradient-interp/runs/paper-direct-seed42/prepare-04.log",
+      "returncode": 0,
+      "finished_unix": 1791966444.9742126
+    },
+    {
+      "command": [
+        "gradient_interp.paper_svd_replication",
+        "freeze",
+        "--root",
+        "/home/ubuntu/gradient-interp/runs/paper-svd-seed42"
+      ],
+      "started_unix": 1791966444.974695,
+      "log": "/home/ubuntu/gradient-interp/runs/paper-direct-seed42/prepare-05.log",
+      "returncode": 0,
+      "finished_unix": 1791966446.8044488
+    },
+    {
+      "command": [
+        "gradient_interp.paper_magnitude",
+        "freeze",
+        "--root",
+        "/home/ubuntu/gradient-interp/runs/paper-magnitude-seed42"
+      ],
+      "started_unix": 1791966446.8049228,
+      "log": "/home/ubuntu/gradient-interp/runs/paper-direct-seed42/prepare-06.log",
+      "returncode": 0,
+      "finished_unix": 1791966453.6096337
+    }
+  ],
+  "current_step": 6,
+  "finished_unix": 1791966453.6101642,
+  "plans": {
+    "/home/ubuntu/gradient-interp/runs/paper-svd-seed42": "6a7cc73bee5dab9571fa66bd27ae56cfcb0af460753fc6de4c4e19f940fb8348",
+    "/home/ubuntu/gradient-interp/runs/paper-magnitude-seed42": "946cb3ae803d67b0426ae1bb3b4ac7fc1b6c2afae5b89e654030d31ce928f590"
+  }
+}

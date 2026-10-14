@@ -1,0 +1,22 @@
+{
+  "completed_unix": 1791966392.7316844,
+  "specification_sha256": "213b450ab98048eab17768ced8c873ad1022d482871830ffa54f302d6d5bdeb1",
+  "selection_lock_sha256": "a03ec6c58870a14f8f769a650e124cc73e567f113177d1ce80a6eabd70cac933",
+  "tensors": 136,
+  "parameter_count": 2228224,
+  "adapter_restored": true,
+  "greedy_tokens_restored": true,
+  "finite_training_gradient": true,
+  "training_input_only": true,
+  "long_training_prefix_completion_checked": true,
+  "scoring_sequence_length": 500,
+  "long_completion_tokens": 191,
+  "generation_chunk_checked": 8,
+  "generation_cap_checked": 300,
+  "forced_cap_tokens_verified": true,
+  "stop_checks": {
+    "1": true,
+    "106": true
+  },
+  "peak_gpu_bytes": 22860030976
+}

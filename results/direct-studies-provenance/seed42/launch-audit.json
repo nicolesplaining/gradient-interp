@@ -1,0 +1,15 @@
+{
+  "launched_unix": 1791966571.498243,
+  "queue_pid": 130838,
+  "queue_sha256": "415ba29e22ce5ca4982f6fd9fe32931ee90d08c3e1c16d8c39f1fc416c8eb1a9",
+  "runs": [
+    {
+      "root": "/home/ubuntu/gradient-interp/runs/paper-svd-seed42",
+      "plan_sha256": "6a7cc73bee5dab9571fa66bd27ae56cfcb0af460753fc6de4c4e19f940fb8348"
+    },
+    {
+      "root": "/home/ubuntu/gradient-interp/runs/paper-magnitude-seed42",
+      "plan_sha256": "946cb3ae803d67b0426ae1bb3b4ac7fc1b6c2afae5b89e654030d31ce928f590"
+    }
+  ]
+}
