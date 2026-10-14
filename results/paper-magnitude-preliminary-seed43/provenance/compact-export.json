@@ -1,0 +1,25 @@
+{
+  "type": "paper_magnitude_preliminary_compact_export",
+  "exported_unix": 1791968202.5332158,
+  "seed": 43,
+  "methods": [
+    "normalized_fit",
+    "magnitude_fit",
+    "full_gradient",
+    "zero"
+  ],
+  "rates": [
+    0.0003,
+    0.003
+  ],
+  "analysis_plan_sha256": "9a76c89e22efb1a2ac973c39deb429e8e15af4814bb8805ffcc00e67809567a8",
+  "audit_script_sha256": "fb473c779c5135be898ba7c98fd32d75e9ad1c6ce1ecca44219d1c42ddd1c69c",
+  "scientific_scope": "teacher-forced completion CE only",
+  "heavy_cache_kept_remote": true,
+  "preliminary_amendment_sha256": "49a682093eb9db787df2bdfdb3ce700a7b86e96d241c668768cabbb805df6ab9",
+  "files_sha256": {
+    "arrays.npz": "c9ddd02f86b3c93713a0f901dc725f4a0fa573c67b7846089757c3c34dc01caf",
+    "data.json": "1ca6317e39a99b8fe5e6357f4b20b0be798c23ab47b094ddec91f6a3cb019ca1",
+    "integrity.json": "e376cdd0d52c19ad4291ad3390be54cb02c4ff44ab0b9f1001821aff6b89d6e7"
+  }
+}

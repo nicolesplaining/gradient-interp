@@ -1,0 +1,21 @@
+{
+  "type": "paper_magnitude_preliminary_release_amendment",
+  "written_unix": 1791967769.778118,
+  "authorization": "explicit_human_request",
+  "user_request": "wait so we have the magnitude run now right? can we analyze those results?",
+  "source_commit": "e12ecc1989531ce48b1352e2f76985c6a7cf1a23",
+  "original_analysis_plan_sha256": "9a76c89e22efb1a2ac973c39deb429e8e15af4814bb8805ffcc00e67809567a8",
+  "allowed_seed": 43,
+  "other_seed": 42,
+  "purpose": "Analyze the completed seed43 magnitude run as preliminary, at the user\u2019s explicit request. This changes only the original wait-for-both-seeds reading barrier.",
+  "scientific_outputs_read_before_amendment": false,
+  "remaining_runs_and_choices_unchanged": true,
+  "normal_two_seed_barrier_unchanged": true,
+  "limits": [
+    "No cross-seed or strong-confirmation conclusion from one completed seed.",
+    "Retain every original method, rate, probe, batch, endpoint, threshold and uncertainty calculation.",
+    "No choices, sample counts, updates, deadlines, fitting or calibration altered based on these results.",
+    "Seed42 remains queued under its original frozen plan; both-seed final analysis still required."
+  ],
+  "required_release": "Seed43 controller complete, controller and every worker process dead, manifest present, plan/source hashes unchanged. No early failure release."
+}

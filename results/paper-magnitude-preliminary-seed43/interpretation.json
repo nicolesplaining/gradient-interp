@@ -1,0 +1,24 @@
+{
+  "written_unix": 1791968353.729322,
+  "scope": "preliminary_one_seed_development",
+  "available_seed": 43,
+  "missing_seed": 42,
+  "user_authorized_early_reading": true,
+  "scientific_workers_and_criteria_unchanged": true,
+  "conclusion": "Neither dictionary learning geometry clears the fixed effect-size prediction criteria in this seed. Retaining relative fitting magnitudes provides no clear accuracy benefit over normalized learning; paired MSE-difference intervals include zero at both rates.",
+  "narrow_signal": "Both dictionaries reduce forecast RMSE relative to predicting no change at both rates. All 32 individual evaluation batches have relative RMSE below one at rate .003. This does not establish accurate magnitudes or component interpretability.",
+  "size_failure": "At rate .003 actual mean evaluation CE change is -.024937 nats/token, versus -.006024 normalized-fit and -.006000 magnitude-fit forecasts. About 24% of the mean effect is forecast. Mean absolute errors .019763/.019822 exceed the fixed .01 limit; relative RMSE .756824/.760949 exceed .5.",
+  "small_rate": "At .0003 actual RMS .003427 nats/token is below the fixed .01 meaningful-effect floor, making that condition inconclusive for strong support.",
+  "reference": "Full-gradient first-order relative RMSE is .021713 at .0003 and .231862 at .003. Accurate numerical loss derivatives do not validate unrestricted generated behavior or semantic descriptions.",
+  "quality_and_uncertainty": "1000 paired batch/probe resamples; all methods and rates retained, pointwise95% and four-comparison Bonferroni98.75% intervals. No undefined bootstrap estimates or negative predicted completion CE values. Heavy raw gradients remain remote.",
+  "limitations": [
+    "One reused adapter seed only.",
+    "Teacher-forced mean completion CE on synthetic reference answers; answer correctness is not asserted.",
+    "Both arms use unit-batch sparse encoding and projected-norm restoration; this contrast tests learning geometry.",
+    "Auditor recomputes cached projections and forecast contractions but does not independently redifferentiate the model."
+  ],
+  "next_action": "Await the already frozen seed42 magnitude and both SVD runs. Keep every method/rate/count/threshold unchanged; no additional ablation branch or outcome-fitted rescaling.",
+  "source_archive_sha256": "f4d5a5d326baa20a034e4bc718f3ea47fb9f9959fca29cf0fd5045f8348df4a6",
+  "summary_sha256": "4c61ea95245512613a0ee248ed28d855cf0b10a5c57b832c2ca1e626f107ca65",
+  "all_three_figures_visually_checked": true
+}

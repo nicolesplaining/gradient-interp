@@ -1,0 +1,13 @@
+{
+  "primary": "Per-batch/per-evaluation-probe signed mean completion-CE change. For each seed, learning geometry and rate, compare frozen forecast to actual full-gradient SGD step minus original baseline. Calibration probes are descriptive only; no learned scale.",
+  "development_gates": "Report all two arms by two rates by two seeds. Strong phase-one support for an arm requires actual RMS change at least .01 nats/token, nRMSE at most .5 and MAE at most .01 nats/token in every seed/rate, with simultaneous interval bounds clearing the corresponding thresholds. Below the signal floor is inconclusive; no rate or arm promotion. Forecast accuracy does not validate interpretability.",
+  "bootstrap": "1000 paired resamples, seed2026101409. Resample32 batches and64 evaluation probe IDs independently, preserving methods and rates. Each selected probe is a unique lexical/source group. No invented task stratification. Pointwise95% and Bonferroni98.75% intervals across2arms x2rates per seed; retain undefined relative-error draws. Calibration16 probes reported separately with descriptive intervals.",
+  "complete_reporting": "Full-gradient and zero references; both dictionary geometries; both rates; all individual batch/probe losses, forecast residuals, RMSE/MAE/nRMSE, actual RMS, mean changes, slope through origin, max and90/95percentile errors, norm/reconstruction diagnostics and fitting runtime. Report signed direction agreement only where both magnitudes exceed prespecified .001 nats/token, with complete denominators. Main criteria unchanged.",
+  "fixed_examples": "First eight batches and first eight evaluation probes in stored order, every rate and method. Include prompt/reference excerpts and actual/predicted losses. Also retain full machine-readable per-pair table; never select examples by favorable errors.",
+  "audit": "Verify original source manifests, all data/dedup/tokenizer hashes and exact untruncated completion counts, fit plan before new magnitude fit, every finite cache and forecast hash before64actualupdates, all136 tensor restores, full32x2x80lossgrid and original deadlines. Teacher-forced reference CE only; no generated behavior claim.",
+  "written_unix": 1791966306.68157,
+  "scientific_outcomes_read": false,
+  "scope": "development_only",
+  "source_commit": "e12ecc1989531ce48b1352e2f76985c6a7cf1a23",
+  "barrier": "Both seeds of this track must finish or reach their original deadlines before any held-out output reading."
+}

@@ -1,0 +1,14 @@
+{
+  "type": "paper_magnitude_preliminary_authorization",
+  "scope": "preliminary_one_seed",
+  "seed": 43,
+  "user_quote": "wait so we have the magnitude run now right? can we analyze those results?",
+  "written_unix": 1791967792.3618639,
+  "analysis_plan_sha256": "9a76c89e22efb1a2ac973c39deb429e8e15af4814bb8805ffcc00e67809567a8",
+  "source_commit": "e12ecc1989531ce48b1352e2f76985c6a7cf1a23",
+  "scientific_outcomes_read_before_amendment": false,
+  "criteria_unchanged": true,
+  "workers_unchanged": true,
+  "remaining_seed_required_for_full_conclusion": true,
+  "original_amendment_sha256": "dae900edc94bdb7cb891a70446a2dc5bb6a89293048fb0db9bb8e58347dc5919"
+}

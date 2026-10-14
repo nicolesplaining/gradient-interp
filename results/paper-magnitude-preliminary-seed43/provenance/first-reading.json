@@ -1,0 +1,11 @@
+{
+  "written_unix": 1791968236.00435,
+  "analysis_plan_sha256": "9a76c89e22efb1a2ac973c39deb429e8e15af4814bb8805ffcc00e67809567a8",
+  "source_sha256": "581e26dc3a7daed8f6e80b9b16cb3e8ca6734d694a984c7bd473975716cc8a0d",
+  "both_complete_exports_verified": false,
+  "preliminary_user_authorized": true,
+  "preliminary_amendment_sha256": "49a682093eb9db787df2bdfdb3ce700a7b86e96d241c668768cabbb805df6ab9",
+  "export_manifest_hashes": {
+    "runs/paper-magnitude-analysis/preliminary-compact-seed43": "3586512326310c19ac5d7abfebbfe8ce9d8300742af548f0560845dcf92958ff"
+  }
+}

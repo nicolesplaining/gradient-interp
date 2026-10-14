@@ -1,0 +1,11 @@
+{
+  "checked_unix": 1791968216.9573069,
+  "tests": "26 passed: magnitude worker and analysis tests",
+  "ruff": "passed",
+  "scientific_worker_changed": false,
+  "files_sha256": {
+    "scripts/audit_paper_magnitude.py": "fb473c779c5135be898ba7c98fd32d75e9ad1c6ce1ecca44219d1c42ddd1c69c",
+    "src/gradient_interp/paper_magnitude_analysis.py": "581e26dc3a7daed8f6e80b9b16cb3e8ca6734d694a984c7bd473975716cc8a0d",
+    "tests/test_paper_magnitude_analysis.py": "521d7a2940c047651a3735960927ae4a0825a043e8474d5e3c5d4b9e862dd1e1"
+  }
+}
