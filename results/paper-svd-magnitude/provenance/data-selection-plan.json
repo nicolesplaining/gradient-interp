@@ -1,0 +1,53 @@
+{
+  "written_unix": 1791969834.7092412,
+  "scope": "fresh_prospective_svd_magnitude_data_preparation_only",
+  "source": {
+    "dataset": "tatsu-lab/alpaca",
+    "revision": "dce01c9b08f87459cf36a430d809084718273017",
+    "file": "data/train-00000-of-00001-a09b74b3ef9c3b56.parquet",
+    "url": "https://huggingface.co/datasets/tatsu-lab/alpaca/resolve/dce01c9b08f87459cf36a430d809084718273017/data/train-00000-of-00001-a09b74b3ef9c3b56.parquet",
+    "license": "CC-BY-NC-4.0",
+    "attribution": "Taori et al. (2023), Stanford Alpaca",
+    "primary_repository": "https://github.com/tatsu-lab/stanford_alpaca",
+    "answers": "text-davinci-003 generated, correctness not asserted",
+    "sha256": "06391b656a06fd3fb9d213160ef2398796c3b7f3dc75ef1e3ced30d461517073"
+  },
+  "seed": 2026101452,
+  "counts": {
+    "batches": 32,
+    "documents_per_batch": 8,
+    "calibration": 16,
+    "evaluation": 64
+  },
+  "prompt_rendering": "instruction.strip() + (two newlines + input.strip() if nonempty)",
+  "eligibility": "Nonempty instruction and output; exact full original Gemma chat-template training-EOS tokenization <=500 tokens without truncation and >0 scored completion tokens. No quality/model/loss filtering.",
+  "deduplication": {
+    "normalization": "Unicode NFKC, casefold, alphanumeric word tokens joined by single space; strip role wrappers by extracting user text additionally for historical role-labelled prompts.",
+    "views": "Complete rendered prompt for all rows plus standalone instruction for exact grouping.",
+    "similarity": "word unigram+bigram TF-IDF, sublinear_tf=True, norm=l2, min_df=1, no feature cap; fit to unique complete normalized prompts from new source and historical inputs; float64 cosine >=0.85",
+    "threshold": 0.85,
+    "clusters": "Connected components across all source rows and all historical prompt vertices; also connect same normalized source instruction even if input differs. Reject any component containing any historical input. Choose one source row per remaining component.",
+    "history": "Reuse the three hashed historical input extracts (89 enumerated input files;20,133 unique normalized prompts), then add all336 prior magnitude rows as forbidden prompt vertices and source IDs. Do not read current model outputs or descriptor artifacts.",
+    "limits": "Lexical/source-record separation from enumerated prior inputs does not guarantee full semantic independence, held-out task families, or absence from model pretraining. Alpaca answers are model-generated and correctness is not asserted."
+  },
+  "selection": "Seeded shuffle of eligible components sorted by canonical minimum source row index; representative is seeded permutation-first eligible source row in that component; take first336, sequentially partition first256 into32 batches of8, next16 calibration, last64 evaluation. Stop with explicit failure if insufficient; do not change thresholds.",
+  "model_tokenizer_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+  "remote_cpu_only": true,
+  "prior_magnitude_data_sha256": "88d48369df1b95bb346c65ac8e9111b196946a478f33e732559a870216642933",
+  "prior_data_path": "runs/paper-magnitude-data/data.json",
+  "history_extracts_sha256": {
+    "runs/paper-magnitude-data/history-129.146.119.181.json": "fdbae7b5b343fa20d9794995579b810e3b43feec632e4a78c1f1ad6f9864175e",
+    "runs/paper-magnitude-data/history-68.209.75.76.json": "f0f416515e7a1e1501695c5ce234eacdbcef5fca2f76582b617551eae8c4f2e3",
+    "runs/paper-magnitude-data/history-local.json": "ffc36e7f4adb2f7bd6a1ef4034d1d70596aa1b9c99894dac137858508ea357df"
+  },
+  "history_base_unique_prompts": 20133,
+  "prior_magnitude_rows": 336,
+  "tokenizer_files_sha256": {
+    "tokenizer_config.json": "bfe25c2735e395407beb78456ea9a6984a1f00d8c16fa04a8b75f2a614cf53e1",
+    "added_tokens.json": "50b2f405ba56a26d4913fd772089992252d7f942123cc0a034d96424221ba946",
+    "tokenizer.model": "1299c11d7cf632ef3b4e11937501358ada021bbdf7c47638d13c0ee982f2e79c",
+    "special_tokens_map.json": "2f7b0adf4fb469770bb1490e3e35df87b1dc578246c5e7e6fc76ecf33213a397",
+    "tokenizer.json": "4667f2089529e8e7657cfb6d1c19910ae71ff5f28aa7ab2ff2763330affad795"
+  },
+  "prior_builder_sha256": "c4c932af49820fc8f5078ed21375fbef22d9e3e7403fbf4fe0b1a4e6adde8df2"
+}

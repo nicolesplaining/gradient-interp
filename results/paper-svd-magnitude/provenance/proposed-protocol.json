@@ -1,0 +1,69 @@
+{
+  "written_unix": 1791970351.206752,
+  "status": "proposed_for_root_review_not_frozen_or_launched",
+  "new_gradients_or_outcomes_read_or_computed": false,
+  "scientific_worker_launched": false,
+  "source_file": "src/gradient_interp/paper_svd_magnitude.py",
+  "source_sha256": "df543fa23bfe2067f55667ab6120145cfd57689afd81122ac9d393296b70dfc0",
+  "fresh_data_path": "runs/paper-svd-magnitude-data/data.json",
+  "fresh_data_sha256": "da809d6147374094eeb397043f0e16e2a9d3048384a5fbb6ed89a587f32cf15e",
+  "rationale": "One prospective test of magnitude-bearing SVD500 forecasts on fresh natural rows. Use the existing locked SVD basis, original dictionary, full-gradient and zero references. This directly tests the observed forecast gap without retraining, penalty sweeps or further decomposition branches. Component interpretability remains the separate SVD replication question.",
+  "execution_status": "Preparation code and synthetic tests only. No remote changes. Root must approve the exact plan, stage data and pin a separate checkout after current queued scientific work finishes.",
+  "protocol": {
+    "scope": "development_only",
+    "methods": [
+      "svd500",
+      "dictionary",
+      "full_gradient",
+      "zero"
+    ],
+    "rates": [
+      0.003,
+      0.0003
+    ],
+    "primary_rate": 0.003,
+    "secondary_rate": 0.0003,
+    "counts": {
+      "batches": 32,
+      "batch_size": 8,
+      "calibration": 16,
+      "evaluation": 64,
+      "actual_updates": 64,
+      "components_per_representation": 500
+    },
+    "max_hours": 12,
+    "basis": "Reuse the exact SVD500 basis in the existing locked directions.pt, and the original normalized-row 500-atom dictionary. No fitting or new candidate selection.",
+    "svd_encoding": "For projected batch gradient x and orthonormal rows V, coefficients are x @ V.T and reconstruction is coefficients @ V. Preserve x's magnitude. No unit normalization, regression, sparse penalty, or steering-norm multiplier.",
+    "dictionary_encoding": "Original alpha .1 lasso_lars on the normalized batch projection, followed by restoration of its original projected norm.",
+    "physical_geometry": "Unproject unscaled basis rows through the original EKFAC inverse transform. Never use directions.pt selected matched-norm steering vectors. All 500 signed component contributions are retained, including dense SVD codes.",
+    "objective": "Teacher-forced mean completion CE with original training EOS. Batch gradient is the mean of eight per-document mean-token CE gradients. Each probe gradient uses its own mean-token completion CE. All rows are untruncated.",
+    "forecast": "For each batch, rate, representation and probe, forecast -rate times the original probe-loss gradient dotted with the reconstructed batch gradient. Lock every forecast, code and contribution before any actual update.",
+    "target": "The same actual full-gradient SGD update supplies both representations' targets. Score all 80 probes after each of 64 updates and restore all 136 tensors.",
+    "calibration": "Sixteen separate descriptive probes. No fitted scale or tuning. The 64 evaluation probes determine the primary fixed accuracy criteria.",
+    "criteria": {
+      "rate": 0.003,
+      "minimum_actual_rms": 0.01,
+      "maximum_svd_nrmse": 0.5,
+      "maximum_svd_mae": 0.01,
+      "minimum_dictionary_minus_svd_nrmse": 0.1,
+      "required_seeds": [
+        42,
+        43
+      ],
+      "rule": "All four bounds must clear in each seed at .003. A signal below the floor is inconclusive. The .0003 result is descriptive and cannot rescue a failed primary result. No selection of methods, rates or seeds."
+    },
+    "uncertainty": {
+      "replicates": 1000,
+      "seed": 2026101453,
+      "resampling": "Independently resample 32 batches and 64 evaluation probe IDs, with the same indices for every method and rate. Report calibration separately. Each source/lexical cluster occurs in only one selected probe.",
+      "pointwise_coverage": 0.95,
+      "simultaneous_family": 8,
+      "simultaneous_marginal_coverage": 0.99375,
+      "family": "Two seeds times four primary quantities. Bonferroni 99.375% marginal percentile intervals target at least 95% family coverage. Undefined bootstrap ratios remain undefined and prevent success."
+    },
+    "reporting": "All methods/rates/seeds and all per-batch/probe predictions and actual losses; RMSE, MAE, nRMSE, signal RMS, signed means, slope, max/p90/p95 errors; direction agreement only when both magnitudes exceed .001; all norms and reconstruction errors. First eight batches and first eight evaluation probes are fixed examples, with every method/rate. Report negative predicted CE unchanged.",
+    "component_reporting": "Retain all 500 coefficients and all component loss contributions per representation, rate and probe. Copy the existing training-only named selections and signs without new labels. Report dense active counts and named contribution shares without claiming a small interpretable set. Count both exact nonzero and absolute coefficient greater than 1e-6 on magnitude-bearing codes.",
+    "limits": "New natural rows and locked forecasts, but reused adapters and fitting data: prospective development, not confirmation. Reference CE accuracy does not establish unrestricted generated behavior or component interpretability. Reference methods do not replace held-out description/intervention evidence.",
+    "reading_barrier": "Do not read held-out forecast/outcome content until both seeds finish normally with processes dead or reach original deadlines with processes dead. Early technical failures do not release the reading barrier. Partial grids remain failures and are not analyzed as complete."
+  }
+}
