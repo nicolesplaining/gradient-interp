@@ -1,0 +1,28 @@
+{
+  "existing_result_inputs_only": true,
+  "html_references_verified": 19,
+  "figures_visually_inspected": [
+    "forecast-error",
+    "effect-size",
+    "steering",
+    "normalization"
+  ],
+  "all_sample_text_copied_from_saved_outputs": true,
+  "interpretability_counts_verified": true,
+  "ruff": "passed",
+  "html_browser_preview": "Computer-use file URL blocked by browser policy; no workaround attempted. HTML links/anchors inspected without browser; chart pixels inspected directly.",
+  "output_sha256": {
+    "effect-size.pdf": "02d40e6e006db9bf60c32af86528ba953f1cad7a98b6222c456fd9648faf13bf",
+    "effect-size.png": "aa48c0f8afb6565fd96ccadead8d2bae114b3410c8c232b99216a5968d0146a5",
+    "examples.json": "be5fa020db14238281c33f943e57d2140e1153fb38be4a1e081720a391b6fe3c",
+    "forecast-error.pdf": "82ba47b2faf2dce957ff4071eef2096cbf31b4def38d271739f733a5080fd275",
+    "forecast-error.png": "e71e942cbf86ce4f59b93d9e86cab2a1ddccbb7fb92f1c244efb5f14ad5eac8d",
+    "normalization.pdf": "6b5f944f0de8ff8b09d099695cc2cb702bb10ddffe83536eae4f0b553c2b7261",
+    "normalization.png": "f310182f59af680648b72d67fa3e74026a83904564a1012b006990ce39b07c3c",
+    "provenance.json": "5a37b4c036fb6470b36838f0d89fad2ac7468e8dda6c7c0c80fd9c85c472af4f",
+    "report.html": "f971e71895889c26f672503e69491ffa97029ecc335aced5f0636f1d650559c6",
+    "steering.pdf": "6fbb78c92df82405deeeb88538818e395e8d2fced7ea4e9e05237e0e156045b6",
+    "steering.png": "843b6ee280f0812549756e9fe021296d1d3a846ad271b543921bbf24989fba22"
+  },
+  "reference_whitespace": "Trailing source-answer spaces encoded as HTML character references; example JSON preserves original text."
+}

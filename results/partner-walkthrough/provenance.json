@@ -1,0 +1,17 @@
+{
+  "purpose": "Plain-language explanation of completed studies; existing results only.",
+  "new_scientific_computation": false,
+  "sources": {
+    "results/paper-svd-magnitude/summary.json": "7391af954b11e3ed78f8e492332b92c84da5781562e44cc6ea4f887e77f8c55f",
+    "results/paper-svd-magnitude/interpretation.json": "77b6aad4109bbb1f96563c1daac44089569226fe102329f92152f3652f60ec7b",
+    "results/paper-svd/interpretation.json": "719fe6022e5f1d92fb86b6157400b3ba8a01bd87414df91bf2dd542335a289ab",
+    "results/paper-svd/fixed-examples.json": "d8d30b3053d729562a6cf0a43c084cd4043ee398f5d58b4d86629e19ce56a1ac",
+    "results/paper-magnitude/summary.json": "4cdc57308aca7db2d035c5b46e6193cb232f4ddc45d90cf907d406a47759d48a",
+    "runs/paper-svd-magnitude-data/data.json": "da809d6147374094eeb397043f0e16e2a9d3048384a5fbb6ed89a587f32cf15e",
+    "runs/paper-svd-analysis/compact-seed42/data.json": "0cd72934f90bfb685c9b04c0496dd4adfc6608a35c35b6f4215f274c8e999bc5",
+    "runs/paper-svd-analysis/compact-seed42/selection.json": "b4cf57f03abacd8bb0cd2f2c6a104c25c7eafbf6e558da304dc1936718fcd4a3",
+    "results/paper-svd-magnitude/examples.csv": "1d7ea4e9cfd91e338e116f4e86c98834398d1ecca6311671ea9bd98a59c71b5c"
+  },
+  "figure_intervals": "Existing pointwise95% intervals where displayed; no bootstrap rerun. Adjusted decision bounds remain in full reports.",
+  "source_script_sha256": "3c8d645f6f3570ab930c565f48f29fc8ac708ae2f42467ced3436a9ce81d21e0"
+}
