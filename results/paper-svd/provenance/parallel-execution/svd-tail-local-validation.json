@@ -1,0 +1,14 @@
+{
+  "verified_unix": 1791970132.4800792,
+  "scientific_outcomes_read": false,
+  "remote_mutations": false,
+  "tests_passed": 33,
+  "ruff_clean": true,
+  "scientific_loop_ast_identical": true,
+  "generation_record_ast_identical": true,
+  "files_sha256": {
+    "scripts/run_paper_svd_tail.py": "0466d44566dc6fb4be022da5d5178e505382b6c341d679712138b1e547455432",
+    "scripts/audit_paper_svd.py": "6320893c462b416bb96731a669cde2ccc6e0016171ca689b10d4a565b5a5cd45",
+    "tests/test_paper_svd_tail.py": "c894c2e41a92bb5509c1144c2d5564f827595b70b2da14e614badbb48428e416"
+  }
+}

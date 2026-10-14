@@ -1,0 +1,13 @@
+{
+  "written_unix": 1791969648.0368,
+  "user_quote": "ok do that. i also have another h100 so you can parallelize work: ssh ubuntu@209.20.156.175. i want the SVD results asap",
+  "authorized_hosts": [
+    "ubuntu@129.146.119.181",
+    "ubuntu@68.209.75.76",
+    "ubuntu@209.20.156.175"
+  ],
+  "scope": "execution parallelization of the frozen SVD study, then one prospective SVD effect-size study",
+  "scientific_svd_outputs_read": false,
+  "original_plans_deadlines_choices_retained": true,
+  "ssh_first_attempt": "Host key verification failed for a previously unknown host; accept-new added its ED25519 key and the same authorized identity authenticated successfully."
+}

@@ -1,0 +1,17 @@
+{
+  "verified_unix": 1791970674.106376,
+  "scientific_outcomes_read": false,
+  "remote_mutations": false,
+  "tests_passed": 41,
+  "ruff_clean": true,
+  "frozen_tail_files_unchanged": {
+    "scripts/run_paper_svd_tail.py": true,
+    "scripts/audit_paper_svd.py": true,
+    "tests/test_paper_svd_tail.py": true
+  },
+  "files_sha256": {
+    "scripts/finalize_paper_svd_parallel.py": "29555d90961f5abc58598b099da61e42d4f65e0866537592e5afe6487ad85603",
+    "scripts/watch_paper_svd_prefix.py": "fd76a69a3cd90823610a030b37aa3ee17a25fbaabbb5cb0ac675b6294e663f70",
+    "tests/test_finalize_paper_svd_parallel.py": "1c1461b2cfdc5cb8d7f79d10a9740fda8d0653892fefefc3730006d377216ec7"
+  }
+}

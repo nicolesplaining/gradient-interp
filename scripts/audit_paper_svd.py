@@ -78,6 +78,9 @@ def receipt(root, out):
         "plan_sha256": file_hash(root / "plan.json"),
         "specification_sha256": file_hash(root / "specification.json"),
     }
+    if c.get("execution_amendment_sha256"):
+        record["execution_amendment_sha256"] = c["execution_amendment_sha256"]
+        record["execution_finalization_sha256"] = file_hash(root / "execution-finalization.json")
     if (root / "manifest.json").exists():
         record.update(
             manifest_sha256=file_hash(root / "manifest.json"),
@@ -93,6 +96,11 @@ def receipt(root, out):
 def validate_receipts(receipts, now):
     if len(receipts) != 2 or {r["seed"] for r in receipts} != {42, 43}:
         raise ValueError("Both seed42 and seed43 completion receipts are required")
+    if any(r.get("execution_amendment_sha256") for r in receipts):
+        if len({r.get("execution_amendment_sha256") for r in receipts}) != 1 or any(
+            not r.get("execution_finalization_sha256") for r in receipts
+        ):
+            raise ValueError("Both seeds must use the same frozen parallel execution amendment")
     for r in receipts:
         if r["type"] != "paper_svd_completion_receipt" or not r["all_processes_dead"]:
             raise ValueError("An active or unrelated receipt cannot release outputs")
@@ -263,6 +271,196 @@ def compact_exports(root, records, data, descriptors, selection, candidates, doc
     }
 
 
+def validate_execution_amendment(root, controller, plan, spec, manifest):
+    """Verify a metadata-only parallel assignment after the normal two-seed barrier."""
+    amendment = read(root / "execution-amendment.json")
+    amendment_hash = file_hash(root / "execution-amendment.json")
+    if (
+        amendment.get("type") != "paper_svd_parallel_execution_amendment"
+        or amendment.get("frozen_source_commit") != FROZEN_COMMIT
+        or amendment.get("scientific_choices_unchanged") is not True
+        or amendment.get("scientific_outcomes_read") is not False
+        or amendment.get("execution_host") != "ubuntu@209.20.156.175"
+    ):
+        raise ValueError("Unsupported parallel execution amendment")
+    if len(amendment["assignments"]) != 2 or {a["seed"] for a in amendment["assignments"]} != {
+        42,
+        43,
+    }:
+        raise ValueError("Both seeds require frozen assignments")
+    for item in amendment["assignments"]:
+        prefix, tail = item["prefix_indices"], item["tail_indices"]
+        if (
+            not prefix
+            or not tail
+            or prefix != list(range(len(prefix)))
+            or tail != list(range(len(prefix), 101))
+        ):
+            raise ValueError("Overlapping or incomplete parallel ownership")
+    assignment = next(a for a in amendment["assignments"] if a["seed"] == spec["training_seed"])
+    prefix, tail = assignment["prefix_indices"], assignment["tail_indices"]
+    start, deadline = controller["started_unix"], controller["deadline_unix"]
+    assert (
+        assignment["original_started_unix"] == start
+        and assignment["original_deadline_unix"] == deadline
+    )
+    assert start < amendment["frozen_unix"] < deadline and abs(deadline - start - 43200) < 0.01
+    assert (
+        controller["execution_amendment_sha256"]
+        == manifest["execution_amendment_sha256"]
+        == amendment_hash
+    )
+    for name, key in (
+        ("plan.json", "plan_sha256"),
+        ("specification.json", "specification_sha256"),
+        ("selection-lock.json", "selection_lock_sha256"),
+        ("controller-at-amendment.json", "controller_at_amendment_sha256"),
+    ):
+        assert file_hash(root / name) == assignment[key]
+    frozen_controller = read(root / "controller-at-amendment.json")
+    prefix_controller = read(root / "prefix-controller.json")
+    prefix_receipt = read(root / "prefix-completion-receipt.json")
+    tail_controller = read(root / "tail-controller.json")
+    tail_manifest = read(root / "tail-manifest.json")
+    tail_receipt = read(root / "tail-completion-receipt.json")
+    preflight = read(root / "tail-preflight.json")
+    finalization = read(root / "execution-finalization.json")
+    assert frozen_controller["status"] == "running" and prefix_controller["status"] == "interrupted"
+    assert frozen_controller["started_unix"] == prefix_controller["started_unix"] == start
+    assert frozen_controller["deadline_unix"] == prefix_controller["deadline_unix"] == deadline
+    assert prefix_controller["attempts"] == controller["attempts"]
+    assert prefix_controller["attempts"][-1]["returncode"] != 0
+    assert frozen_controller["attempts"][-1]["pid"] == prefix_controller["attempts"][-1]["pid"]
+    assert (
+        frozen_controller["attempts"][-1]["started_unix"]
+        == prefix_controller["attempts"][-1]["started_unix"]
+    )
+    assert (
+        amendment["frozen_unix"]
+        < prefix_controller["attempts"][-1]["finished_unix"]
+        <= prefix_receipt["observed_unix"]
+    )
+    assert (
+        prefix_receipt["seed"] == spec["training_seed"]
+        and prefix_receipt["all_processes_dead"] is True
+    )
+    assert prefix_receipt["controller_sha256"] == file_hash(root / "prefix-controller.json")
+    assert (
+        prefix_receipt["amendment_sha256"] == amendment_hash
+        and prefix_receipt["completed_prefix_indices"] == prefix
+    )
+    assert (
+        tail_controller["status"] == "complete"
+        and tail_controller["execution_host"] == amendment["execution_host"]
+    )
+    assert (
+        tail_manifest["type"] == "paper_svd_tail_manifest"
+        and tail_receipt["type"] == "paper_svd_tail_completion_receipt"
+    )
+    assert tail_manifest["seed"] == tail_receipt["seed"] == spec["training_seed"]
+    assert (
+        tail_manifest["execution_host"]
+        == tail_receipt["execution_host"]
+        == amendment["execution_host"]
+    )
+    assert tail_receipt["all_processes_dead"] is True and tail_receipt[
+        "controller_sha256"
+    ] == file_hash(root / "tail-controller.json")
+    assert tail_receipt["manifest_sha256"] == file_hash(root / "tail-manifest.json")
+    assert (
+        tail_receipt["completed_unix"]
+        == tail_manifest["completed_unix"]
+        <= tail_receipt["observed_unix"]
+    )
+    assert tail_controller["deadline_unix"] == tail_manifest["deadline_unix"] == deadline
+    assert tail_manifest["original_started_unix"] == start
+    assert (
+        amendment["frozen_unix"]
+        < preflight["completed_unix"]
+        < tail_controller["started_unix"]
+        <= tail_manifest["started_unix"]
+        < tail_manifest["completed_unix"]
+        <= deadline
+    )
+    assert tail_manifest["adapter_restored"] is True
+    for record in (tail_controller, tail_manifest, tail_receipt, preflight):
+        assert (
+            record["amendment_sha256"] == amendment_hash
+            and record["helper_sha256"] == amendment["helper_sha256"]
+        )
+    assert file_hash(root / "tail-source.py") == amendment["helper_sha256"]
+    validate_preflight(preflight, spec)
+    assert tail_manifest["preflight_sha256"] == file_hash(root / "tail-preflight.json")
+    assert preflight["execution_host"] == amendment["execution_host"]
+    for key in ("plan_sha256", "specification_sha256", "selection_lock_sha256"):
+        assert tail_manifest[key] == assignment[key]
+    assert (
+        preflight["specification_sha256"] == assignment["specification_sha256"]
+        and preflight["selection_lock_sha256"] == assignment["selection_lock_sha256"]
+    )
+    assert tail_manifest["source_files_sha256"] == plan["source_files_sha256"]
+    assert tail_manifest["runtime_asset_hashes"] == assignment["runtime_asset_hashes"]
+    assert all(
+        spec["input_hashes"].get(path) == digest
+        for path, digest in assignment["runtime_asset_hashes"].items()
+    )
+    grid = condition_grid()
+    prefix_paths = {f"generations/{grid[i]['id']}.json" for i in prefix}
+    tail_paths = {f"generations/{grid[i]['id']}.json" for i in tail}
+    assert tail_manifest["assigned_indices"] == tail_controller["assigned_indices"] == tail
+    assert tail_manifest["assigned_ids"] == [grid[i]["id"] for i in tail]
+    assert tail_manifest["conditions"] == len(tail) and tail_manifest["generations"] == 140 * len(
+        tail
+    )
+    assert set(prefix_receipt["generation_files_sha256"]) == prefix_paths
+    assert set(tail_manifest["files_sha256"]) == tail_paths
+    for path, digest in {
+        **prefix_receipt["generation_files_sha256"],
+        **tail_manifest["files_sha256"],
+    }.items():
+        assert manifest["files_sha256"][path] == digest
+    assert (
+        finalization["type"] == "paper_svd_execution_finalization"
+        and finalization["seed"] == spec["training_seed"]
+    )
+    assert (
+        finalization["all_processes_dead"] is True
+        and finalization["amendment_sha256"] == amendment_hash
+    )
+    assert finalization["prefix_indices"] == prefix and finalization["tail_indices"] == tail
+    assert finalization["prefix_generation_hashes"] == prefix_receipt["generation_files_sha256"]
+    assert finalization["tail_generation_hashes"] == tail_manifest["files_sha256"]
+    assert (
+        max(prefix_receipt["observed_unix"], tail_receipt["observed_unix"])
+        <= finalization["assembled_unix"]
+    )
+    names = {
+        "execution-amendment.json",
+        "controller-at-amendment.json",
+        "prefix-controller.json",
+        "prefix-completion-receipt.json",
+        "tail-controller.json",
+        "tail-manifest.json",
+        "tail-completion-receipt.json",
+        "tail-preflight.json",
+        "tail-source.py",
+    }
+    assert set(finalization["provenance_hashes"]) == names
+    verify_files(root, finalization["provenance_hashes"])
+    return {
+        "prefix_indices": prefix,
+        "tail_indices": tail,
+        "tail_started_unix": tail_manifest["started_unix"],
+        "tail_completed_unix": tail_manifest["completed_unix"],
+        "prefix_finished_unix": prefix_controller["attempts"][-1]["finished_unix"],
+        "amendment_sha256": amendment_hash,
+        "provenance_hashes": {
+            **finalization["provenance_hashes"],
+            "execution-finalization.json": file_hash(root / "execution-finalization.json"),
+        },
+    }
+
+
 def audit(root, barrier_path, analysis_plan):
     b, rec = require_barrier(root, barrier_path, analysis_plan)
     if (root / "integrity.json").exists():
@@ -308,7 +506,13 @@ def audit(root, barrier_path, analysis_plan):
         < manifest["completed_unix"]
         <= c["deadline_unix"]
     )
-    assert c["attempts"] and c["attempts"][-1]["returncode"] == 0
+    execution = (
+        validate_execution_amendment(root, c, plan, spec, manifest)
+        if manifest.get("execution_amendment_sha256")
+        else None
+    )
+    if execution is None:
+        assert c["attempts"] and c["attempts"][-1]["returncode"] == 0
     previous_finish = c["started_unix"]
     for attempt in c["attempts"]:
         assert (
@@ -474,8 +678,11 @@ def audit(root, barrier_path, analysis_plan):
         spec["source_config"]["base_directory"], local_files_only=True
     )
     nrows, records = 0, []
-    previous_completed = desc_manifest["completed_unix"]
-    for condition in condition_grid():
+    previous_completed = {
+        "prefix": desc_manifest["completed_unix"],
+        "tail": execution["tail_started_unix"] if execution else 0,
+    }
+    for condition_index, condition in enumerate(condition_grid()):
         record = read(root / "generations" / f"{condition['id']}.json")
         assert all(record[k] == v for k, v in condition.items())
         assert (
@@ -483,13 +690,19 @@ def audit(root, barrier_path, analysis_plan):
             and record["selection_lock_sha256"] == lh
             and record["adapter_restored"]
         )
+        owner = "tail" if execution and condition_index in execution["tail_indices"] else "prefix"
         assert (
-            previous_completed
+            previous_completed[owner]
             <= record["applied_unix"]
             < record["completed_unix"]
             <= manifest["completed_unix"]
         )
-        previous_completed = record["completed_unix"]
+        if execution:
+            assert (
+                record["completed_unix"]
+                <= execution["tail_completed_unix" if owner == "tail" else "prefix_finished_unix"]
+            )
+        previous_completed[owner] = record["completed_unix"]
         subset = [
             q
             for q in data["published_questions"]
@@ -553,6 +766,7 @@ def audit(root, barrier_path, analysis_plan):
         "selection_asset_hashes": lock["files_sha256"],
         "result_hashes": manifest["files_sha256"],
         "analysis_export_hashes": exports,
+        "execution_amendment": execution,
     }
     atomic_json(root / "integrity.json", result)
     return result
