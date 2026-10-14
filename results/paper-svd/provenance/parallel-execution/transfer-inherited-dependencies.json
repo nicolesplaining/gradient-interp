@@ -1,0 +1,12 @@
+{
+  "started_unix": 1791971662.875562,
+  "finished_unix": 1791971676.7867851,
+  "returncode": 0,
+  "direct_cloud_to_cloud": true,
+  "inherited_dependencies_only": true,
+  "excluded_unused_shadow_torch_cuda_triton": true,
+  "private_key_copied_to_remote": false,
+  "old_venvs_modified": false,
+  "scientific_outputs_included": false,
+  "ephemeral_agent_cleanup": true
+}

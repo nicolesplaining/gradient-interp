@@ -1,0 +1,12 @@
+{
+  "started_unix": 1791970587.894656,
+  "finished_unix": 1791971177.811289,
+  "returncode": 2,
+  "direct_cloud_to_cloud": true,
+  "prior_laptop_stream_intentionally_stopped": true,
+  "source": "ubuntu@129.146.119.181",
+  "target": "ubuntu@209.20.156.175",
+  "private_key_copied_to_remote": false,
+  "scientific_outputs_included": false,
+  "ephemeral_agent_cleanup": true
+}

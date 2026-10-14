@@ -1,0 +1,26 @@
+{
+  "started_unix": 1791969688.920972,
+  "finished_unix": 1791969756.782805,
+  "source": "ubuntu@68.209.75.76",
+  "target": "ubuntu@209.20.156.175",
+  "source_returncode": 0,
+  "target_returncode": 0,
+  "paths": [
+    "gradient-interp/runs/paper-seed43/adapter",
+    "gradient-interp/runs/paper-seed43/configuration.json",
+    "gradient-interp/runs/paper-seed43/training.jsonl",
+    "gradient-interp/runs/paper-seed43/atoms.pt",
+    "gradient-interp/runs/paper-svd-seed43/specification.json",
+    "gradient-interp/runs/paper-svd-seed43/selection-lock.json",
+    "gradient-interp/runs/paper-svd-seed43/directions.pt",
+    "gradient-interp/runs/paper-svd-seed43/data.json",
+    "gradient-interp/runs/paper-svd-seed43/data-overlap-audit.json",
+    "gradient-interp/runs/paper-svd-seed43/candidates.json",
+    "gradient-interp/runs/paper-svd-seed43/selection.json",
+    "gradient-interp/runs/paper-svd-seed43/fit.json",
+    "gradient-interp/runs/paper-svd-seed43/plan.json",
+    "gradient-interp/runs/paper-svd-seed43/preflight.json"
+  ],
+  "local_heavy_files_created": false,
+  "scientific_outputs_included": false
+}

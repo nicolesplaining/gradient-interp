@@ -1,0 +1,23 @@
+{
+  "written_unix": 1791972644.8175611,
+  "scientific_workers_unchanged": true,
+  "scientific_svd_outcomes_read": false,
+  "bootstrap_history": [
+    "Unknown SSH host key accepted with accept-new on the explicitly supplied host; changed keys were not bypassed.",
+    "First streamed transfer through local computer intentionally stopped because its network path was slow; return codes2/255 and logs preserved.",
+    "Direct transfer used --unlink-first and emitted directory-not-empty metadata warnings, exit2. Every87required source/input/model/adapter/direction hash then passed; no scientific file mismatch.",
+    "Portable Python version alias was copied to match the source symlink chain, preserving invocation through absolute .venv-atoms/bin/python.",
+    "The source .venv-atoms inherits .venv site-packages via .pth. Missing inherited dependencies were copied read-only from the original host, without modifying either old venv. Direct dependency transfer returned0.",
+    "An initial inline staging validator had literal escaped newlines; standalone validator corrected this before any GPU output.",
+    "New H100 versions matched Python3.12.15,torch2.9.0+cu130,transformers4.57.6,peft0.18.1,sklearn1.9.1. Training-only original preflight passed on both seeds at22.856GB."
+  ],
+  "private_key_copied_to_remote": false,
+  "ephemeral_transfer_agents_stopped": true,
+  "new_tail_queue_pid": 4883,
+  "seed42_tail_worker_pid": 4891,
+  "seed42_prefix_watcher_pid": 132036,
+  "seed43_prefix_watcher_pid": 29798,
+  "magnitude42_continuation_pid": 132037,
+  "new_host": "ubuntu@209.20.156.175",
+  "execution_amendment_sha256": "0fda2ac15122a9f4be88caa3e1794e33bb114e965643f804f5f867f51faa1aaf"
+}
