@@ -1,0 +1,701 @@
+{
+  "controls": [
+    {
+      "id": "control-00",
+      "prompt": "Reply with exactly the word ready and nothing else.",
+      "word": "ready"
+    },
+    {
+      "id": "control-01",
+      "prompt": "Reply with exactly the word calm and nothing else.",
+      "word": "calm"
+    },
+    {
+      "id": "control-02",
+      "prompt": "Reply with exactly the word clear and nothing else.",
+      "word": "clear"
+    },
+    {
+      "id": "control-03",
+      "prompt": "Reply with exactly the word bright and nothing else.",
+      "word": "bright"
+    },
+    {
+      "id": "control-04",
+      "prompt": "Reply with exactly the word steady and nothing else.",
+      "word": "steady"
+    },
+    {
+      "id": "control-05",
+      "prompt": "Reply with exactly the word gentle and nothing else.",
+      "word": "gentle"
+    },
+    {
+      "id": "control-06",
+      "prompt": "Reply with exactly the word quiet and nothing else.",
+      "word": "quiet"
+    },
+    {
+      "id": "control-07",
+      "prompt": "Reply with exactly the word open and nothing else.",
+      "word": "open"
+    }
+  ],
+  "evaluation": [
+    {
+      "id": "eval-00",
+      "prompt": "Repeat the following three labels in order, without adding any labels: wool, eagle, gold.",
+      "template": 0,
+      "values": [
+        "wool",
+        "eagle",
+        "gold"
+      ]
+    },
+    {
+      "id": "eval-01",
+      "prompt": "Repeat the following three labels in order, without adding any labels: spoon, ruby, thyme.",
+      "template": 0,
+      "values": [
+        "spoon",
+        "ruby",
+        "thyme"
+      ]
+    },
+    {
+      "id": "eval-02",
+      "prompt": "Repeat the following three labels in order, without adding any labels: opal, eagle, linen.",
+      "template": 0,
+      "values": [
+        "opal",
+        "eagle",
+        "linen"
+      ]
+    },
+    {
+      "id": "eval-03",
+      "prompt": "Repeat the following three labels in order, without adding any labels: silver, eagle, wool.",
+      "template": 0,
+      "values": [
+        "silver",
+        "eagle",
+        "wool"
+      ]
+    },
+    {
+      "id": "eval-04",
+      "prompt": "Repeat the following three labels in order, without adding any labels: bowl, sage, eagle.",
+      "template": 0,
+      "values": [
+        "bowl",
+        "sage",
+        "eagle"
+      ]
+    },
+    {
+      "id": "eval-05",
+      "prompt": "Repeat the following three labels in order, without adding any labels: plate, robin, sage.",
+      "template": 0,
+      "values": [
+        "plate",
+        "robin",
+        "sage"
+      ]
+    },
+    {
+      "id": "eval-06",
+      "prompt": "Please return these labels in the order shown: bronze, swan, silver. The presentation is up to you.",
+      "template": 1,
+      "values": [
+        "bronze",
+        "swan",
+        "silver"
+      ]
+    },
+    {
+      "id": "eval-07",
+      "prompt": "Please return these labels in the order shown: basil, raven, copper. The presentation is up to you.",
+      "template": 1,
+      "values": [
+        "basil",
+        "raven",
+        "copper"
+      ]
+    },
+    {
+      "id": "eval-08",
+      "prompt": "Please return these labels in the order shown: copper, linen, opal. The presentation is up to you.",
+      "template": 1,
+      "values": [
+        "copper",
+        "linen",
+        "opal"
+      ]
+    },
+    {
+      "id": "eval-09",
+      "prompt": "Please return these labels in the order shown: silver, opal, silk. The presentation is up to you.",
+      "template": 1,
+      "values": [
+        "silver",
+        "opal",
+        "silk"
+      ]
+    },
+    {
+      "id": "eval-10",
+      "prompt": "Please return these labels in the order shown: linen, gold, basil. The presentation is up to you.",
+      "template": 1,
+      "values": [
+        "linen",
+        "gold",
+        "basil"
+      ]
+    },
+    {
+      "id": "eval-11",
+      "prompt": "Please return these labels in the order shown: gold, copper, linen. The presentation is up to you.",
+      "template": 1,
+      "values": [
+        "gold",
+        "copper",
+        "linen"
+      ]
+    },
+    {
+      "id": "eval-12",
+      "prompt": "Keep the order and spelling of these labels when you write them back: opal, raven, bowl.",
+      "template": 2,
+      "values": [
+        "opal",
+        "raven",
+        "bowl"
+      ]
+    },
+    {
+      "id": "eval-13",
+      "prompt": "Keep the order and spelling of these labels when you write them back: gold, ruby, silk.",
+      "template": 2,
+      "values": [
+        "gold",
+        "ruby",
+        "silk"
+      ]
+    },
+    {
+      "id": "eval-14",
+      "prompt": "Keep the order and spelling of these labels when you write them back: cotton, pearl, copper.",
+      "template": 2,
+      "values": [
+        "cotton",
+        "pearl",
+        "copper"
+      ]
+    },
+    {
+      "id": "eval-15",
+      "prompt": "Keep the order and spelling of these labels when you write them back: basil, robin, plate.",
+      "template": 2,
+      "values": [
+        "basil",
+        "robin",
+        "plate"
+      ]
+    },
+    {
+      "id": "eval-16",
+      "prompt": "Keep the order and spelling of these labels when you write them back: mint, silk, silver.",
+      "template": 2,
+      "values": [
+        "mint",
+        "silk",
+        "silver"
+      ]
+    },
+    {
+      "id": "eval-17",
+      "prompt": "Keep the order and spelling of these labels when you write them back: gold, spoon, copper.",
+      "template": 2,
+      "values": [
+        "gold",
+        "spoon",
+        "copper"
+      ]
+    },
+    {
+      "id": "eval-18",
+      "prompt": "Show these three labels once each, starting with the first and ending with the last: silver, eagle, swan.",
+      "template": 3,
+      "values": [
+        "silver",
+        "eagle",
+        "swan"
+      ]
+    },
+    {
+      "id": "eval-19",
+      "prompt": "Show these three labels once each, starting with the first and ending with the last: cup, bronze, linen.",
+      "template": 3,
+      "values": [
+        "cup",
+        "bronze",
+        "linen"
+      ]
+    },
+    {
+      "id": "eval-20",
+      "prompt": "Show these three labels once each, starting with the first and ending with the last: spoon, eagle, mint.",
+      "template": 3,
+      "values": [
+        "spoon",
+        "eagle",
+        "mint"
+      ]
+    },
+    {
+      "id": "eval-21",
+      "prompt": "Show these three labels once each, starting with the first and ending with the last: bronze, basil, cup.",
+      "template": 3,
+      "values": [
+        "bronze",
+        "basil",
+        "cup"
+      ]
+    },
+    {
+      "id": "eval-22",
+      "prompt": "Show these three labels once each, starting with the first and ending with the last: opal, mint, basil.",
+      "template": 3,
+      "values": [
+        "opal",
+        "mint",
+        "basil"
+      ]
+    },
+    {
+      "id": "eval-23",
+      "prompt": "Show these three labels once each, starting with the first and ending with the last: copper, spoon, gold.",
+      "template": 3,
+      "values": [
+        "copper",
+        "spoon",
+        "gold"
+      ]
+    }
+  ],
+  "scope": "One toy trajectory; same 40 training contents in both phases; 24 unseen content/template probes and eight unchanged single-word controls. Not confirmation.",
+  "test_words": [
+    "bronze",
+    "copper",
+    "silver",
+    "gold",
+    "cotton",
+    "linen",
+    "silk",
+    "wool",
+    "ruby",
+    "pearl",
+    "opal",
+    "jade",
+    "spoon",
+    "plate",
+    "bowl",
+    "cup",
+    "robin",
+    "eagle",
+    "raven",
+    "swan",
+    "basil",
+    "mint",
+    "thyme",
+    "sage"
+  ],
+  "train": [
+    {
+      "id": "train-00",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: birch, elm, melon",
+      "values": [
+        "birch",
+        "elm",
+        "melon"
+      ]
+    },
+    {
+      "id": "train-01",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: kiwi, peach, deer",
+      "values": [
+        "kiwi",
+        "peach",
+        "deer"
+      ]
+    },
+    {
+      "id": "train-02",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: bear, ash, peach",
+      "values": [
+        "bear",
+        "ash",
+        "peach"
+      ]
+    },
+    {
+      "id": "train-03",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: pear, deer, mango",
+      "values": [
+        "pear",
+        "deer",
+        "mango"
+      ]
+    },
+    {
+      "id": "train-04",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: wolf, seal, cat",
+      "values": [
+        "wolf",
+        "seal",
+        "cat"
+      ]
+    },
+    {
+      "id": "train-05",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: pear, maple, pine",
+      "values": [
+        "pear",
+        "maple",
+        "pine"
+      ]
+    },
+    {
+      "id": "train-06",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: ash, cat, fox",
+      "values": [
+        "ash",
+        "cat",
+        "fox"
+      ]
+    },
+    {
+      "id": "train-07",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: bear, deer, elm",
+      "values": [
+        "bear",
+        "deer",
+        "elm"
+      ]
+    },
+    {
+      "id": "train-08",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: pine, plum, dog",
+      "values": [
+        "pine",
+        "plum",
+        "dog"
+      ]
+    },
+    {
+      "id": "train-09",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: dog, elm, oak",
+      "values": [
+        "dog",
+        "elm",
+        "oak"
+      ]
+    },
+    {
+      "id": "train-10",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: fox, kiwi, mango",
+      "values": [
+        "fox",
+        "kiwi",
+        "mango"
+      ]
+    },
+    {
+      "id": "train-11",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: peach, dog, birch",
+      "values": [
+        "peach",
+        "dog",
+        "birch"
+      ]
+    },
+    {
+      "id": "train-12",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: deer, fox, plum",
+      "values": [
+        "deer",
+        "fox",
+        "plum"
+      ]
+    },
+    {
+      "id": "train-13",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: lime, dog, hare",
+      "values": [
+        "lime",
+        "dog",
+        "hare"
+      ]
+    },
+    {
+      "id": "train-14",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: cedar, kiwi, lemon",
+      "values": [
+        "cedar",
+        "kiwi",
+        "lemon"
+      ]
+    },
+    {
+      "id": "train-15",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: elm, pear, ash",
+      "values": [
+        "elm",
+        "pear",
+        "ash"
+      ]
+    },
+    {
+      "id": "train-16",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: mango, seal, willow",
+      "values": [
+        "mango",
+        "seal",
+        "willow"
+      ]
+    },
+    {
+      "id": "train-17",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: lemon, pine, lime",
+      "values": [
+        "lemon",
+        "pine",
+        "lime"
+      ]
+    },
+    {
+      "id": "train-18",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: hare, mango, pear",
+      "values": [
+        "hare",
+        "mango",
+        "pear"
+      ]
+    },
+    {
+      "id": "train-19",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: pine, peach, maple",
+      "values": [
+        "pine",
+        "peach",
+        "maple"
+      ]
+    },
+    {
+      "id": "train-20",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: kiwi, melon, lemon",
+      "values": [
+        "kiwi",
+        "melon",
+        "lemon"
+      ]
+    },
+    {
+      "id": "train-21",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: kiwi, ash, hare",
+      "values": [
+        "kiwi",
+        "ash",
+        "hare"
+      ]
+    },
+    {
+      "id": "train-22",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: lemon, wolf, dog",
+      "values": [
+        "lemon",
+        "wolf",
+        "dog"
+      ]
+    },
+    {
+      "id": "train-23",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: seal, oak, dog",
+      "values": [
+        "seal",
+        "oak",
+        "dog"
+      ]
+    },
+    {
+      "id": "train-24",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: lemon, willow, peach",
+      "values": [
+        "lemon",
+        "willow",
+        "peach"
+      ]
+    },
+    {
+      "id": "train-25",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: elm, lemon, dog",
+      "values": [
+        "elm",
+        "lemon",
+        "dog"
+      ]
+    },
+    {
+      "id": "train-26",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: plum, ash, maple",
+      "values": [
+        "plum",
+        "ash",
+        "maple"
+      ]
+    },
+    {
+      "id": "train-27",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: ash, deer, lime",
+      "values": [
+        "ash",
+        "deer",
+        "lime"
+      ]
+    },
+    {
+      "id": "train-28",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: bear, hare, cat",
+      "values": [
+        "bear",
+        "hare",
+        "cat"
+      ]
+    },
+    {
+      "id": "train-29",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: mango, plum, seal",
+      "values": [
+        "mango",
+        "plum",
+        "seal"
+      ]
+    },
+    {
+      "id": "train-30",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: birch, wolf, melon",
+      "values": [
+        "birch",
+        "wolf",
+        "melon"
+      ]
+    },
+    {
+      "id": "train-31",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: plum, cat, fox",
+      "values": [
+        "plum",
+        "cat",
+        "fox"
+      ]
+    },
+    {
+      "id": "train-32",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: seal, oak, cedar",
+      "values": [
+        "seal",
+        "oak",
+        "cedar"
+      ]
+    },
+    {
+      "id": "train-33",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: pear, peach, lemon",
+      "values": [
+        "pear",
+        "peach",
+        "lemon"
+      ]
+    },
+    {
+      "id": "train-34",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: cedar, pine, melon",
+      "values": [
+        "cedar",
+        "pine",
+        "melon"
+      ]
+    },
+    {
+      "id": "train-35",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: lime, peach, dog",
+      "values": [
+        "lime",
+        "peach",
+        "dog"
+      ]
+    },
+    {
+      "id": "train-36",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: cedar, pine, birch",
+      "values": [
+        "cedar",
+        "pine",
+        "birch"
+      ]
+    },
+    {
+      "id": "train-37",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: oak, kiwi, seal",
+      "values": [
+        "oak",
+        "kiwi",
+        "seal"
+      ]
+    },
+    {
+      "id": "train-38",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: ash, wolf, dog",
+      "values": [
+        "ash",
+        "wolf",
+        "dog"
+      ]
+    },
+    {
+      "id": "train-39",
+      "prompt": "Return these labels once each, in the given order. Choose your own presentation.\nLabels: ash, peach, willow",
+      "values": [
+        "ash",
+        "peach",
+        "willow"
+      ]
+    }
+  ],
+  "train_words": [
+    "cedar",
+    "maple",
+    "willow",
+    "pine",
+    "birch",
+    "elm",
+    "oak",
+    "ash",
+    "peach",
+    "lemon",
+    "pear",
+    "plum",
+    "melon",
+    "lime",
+    "kiwi",
+    "mango",
+    "cat",
+    "dog",
+    "fox",
+    "wolf",
+    "bear",
+    "deer",
+    "hare",
+    "seal"
+  ]
+}

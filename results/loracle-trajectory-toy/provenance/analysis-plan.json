@@ -1,0 +1,76 @@
+{
+  "behavior": {
+    "checkpoints": [
+      0,
+      10,
+      20
+    ],
+    "generation_count": 96,
+    "greedy_cap": 96,
+    "heldout_prompts": 24,
+    "interpretation_responses": 20,
+    "reference_score_count": 216,
+    "references": [
+      "numbered_list",
+      "bulleted_list",
+      "plain_text"
+    ],
+    "single_word_controls": 8
+  },
+  "created_unix": 1792022362.029751,
+  "examples": "Show first two evaluation prompts for each of four templates at all three checkpoints, all eight single-word controls, and all 20 interpreter responses verbatim.",
+  "ground_truth": "For each interval, compute three surface-format rate changes over all 24 probes. More/less are unique largest positive/negative changes of at least 0.20; ties or no change reaching threshold yield unknown. Rates may overlap for mixed formatting. Content is fixed-vocabulary label order, not broad correctness.",
+  "intervals": {
+    "case-k": [
+      0,
+      10
+    ],
+    "case-r": [
+      10,
+      20
+    ],
+    "case-v": [
+      0,
+      20
+    ]
+  },
+  "limitations": [
+    "No individual-update claim: windows have ten AdamW steps and momentum from prior steps.",
+    "LoRAcle sees the update but not the starting checkpoint; the same update can act differently at different states.",
+    "Adjacent effective deltas may have rank32; interpreter keeps16 directions per module.",
+    "Pinned upstream right-vector convention differs from mathematically correct SVD.",
+    "Hook norm matching removes absolute positive scale; this is not effect-size forecasting.",
+    "A single toy with specified format choices cannot establish general training interpretability."
+  ],
+  "lock": "All descriptions must be saved and hashed before target heldout scoring or generation.",
+  "manipulation_check": "First interval numbered increase >=0.20; second interval bullet increase >=0.20 AND numbered decrease >=0.20. If unmet, the proposed two-phase manipulation is inconclusive; do not lengthen training.",
+  "negative_controls": "Zero update and fixed permutation of second-interval tokens, for both encodings. Permutation preserves token content and energy and is not guaranteed meaningless; identical real/permuted predictions limit attribution to module layout. Report all descriptions, including stock or unsupported content claims.",
+  "no_adaptive_changes": "No outcomes read before all stages finish. No learning-rate, step-count, question or encoding selection after results. Preserve failures and no-effect manipulation.",
+  "primary_encoding": "correct_svd",
+  "primary_toy_support": "Both manipulation and quality checks pass; correct_svd structured more/less predictions exactly match measured labels for both adjacent intervals; zero control predicts unknown/unknown. Invalid JSON counts as failure. Cumulative interval is secondary.",
+  "quality_check": "At checkpoints 10 and 20 content_order >=23/24, no capped generations; exact single-word control rate may fall by at most 1/8 from baseline. Failures retained.",
+  "queries": {
+    "description": "What changes to response formatting, if any, does this weight update suggest? Describe what is likely to increase or decrease. If you cannot infer a change, say so. Do not infer training content that the weights do not support.",
+    "structured": "Considering only response formatting, return JSON with keys \"more\" and \"less\". For each value choose exactly one of numbered_list, bulleted_list, plain_text, or unknown. Use unknown if the weight update does not support a directional claim. Describe changes relative to before this update. Return no other text."
+  },
+  "question": "Can LoRAcle distinguish the behavioral effect of adjacent ten-step training intervals from weights alone?",
+  "reference_scores": "All three fixed answers at every evaluation prompt/checkpoint; descriptive CE changes only, no LoRAcle quantitative forecasts.",
+  "retention": "Retain every prompt, answer, generated token ID, score, training step and checkpoint. Audit hashes, counts, exact effective weight deltas, top16 retained energy, original deadline, input hashes, and lock ordering.",
+  "scope": "One prospective toy trajectory, not confirmation. No population or significance inference.",
+  "secondary_encoding": "upstream_compatible; both retained, no selection of the better result",
+  "training": {
+    "all_seven_modules": true,
+    "docs_per_step": 4,
+    "first_ten": "numbered_list",
+    "gradient_clip": 1,
+    "learning_rate": 0.0002,
+    "lora_alpha": 32,
+    "lora_rank": 16,
+    "optimizer": "AdamW",
+    "same_content_order": true,
+    "second_ten": "bulleted_list",
+    "seed": 2026101461,
+    "steps": 20,
+    "weight_decay": 0
+  }
+}
