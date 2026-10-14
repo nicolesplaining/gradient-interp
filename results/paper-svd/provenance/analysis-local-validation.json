@@ -1,0 +1,26 @@
+{
+  "verified_unix": 1791967876.564317,
+  "scientific_outcomes_read": false,
+  "source": "synthetic tests only",
+  "tests_passed": 25,
+  "tests": [
+    "tests/test_paper_svd_analysis.py",
+    "tests/test_paper_svd_replication.py"
+  ],
+  "ruff_clean": true,
+  "synthetic_full_grid": {
+    "conditions": 101,
+    "responses": 14540,
+    "descriptors": 160,
+    "fixed_examples": 5090,
+    "rendered_figures": 5
+  },
+  "source_hashes": {
+    "scripts/audit_paper_svd.py": "09c02d9fc39a7b76649f3cf20685dba46adcd0b462fe8f3adb08f131c9644bec",
+    "src/gradient_interp/paper_svd_analysis.py": "aaeca380543e3c4797c7f723ed755fea12a696dfcd10c684b96417f703c4e289",
+    "tests/test_paper_svd_analysis.py": "59629204171ad62a4ff837c186989ca0db400d77373072d1b9afcbbf2c1c22ae"
+  },
+  "limits": [
+    "Physical descriptor cosines cannot be independently recomputed because full raw descriptor gradients were not retained; their locked hashes, finite values and bounds are checked. No new model computation is introduced."
+  ]
+}
