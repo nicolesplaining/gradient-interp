@@ -1,0 +1,7 @@
+{
+  "created_unix": 1792068130.601011,
+  "module": "gradient_interp.loracle_wide_toy_suite_report",
+  "scope": "HTML renderer prepared before scientific results. Uses every locked group, all484answers, first-initialization fixedexamples, allprimarytests andbehavior costs. No model output selection.",
+  "validation": "Ruffclean and Python compilation passed. Visual inspection remains required after actual results are rendered.",
+  "scientific_outputs_read": false
+}
