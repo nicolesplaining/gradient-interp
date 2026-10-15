@@ -1,0 +1,10 @@
+{
+  "created_unix": 1792022630.195209,
+  "scientific_outputs_read": false,
+  "tests": "15 passed: exact effective-delta telescoping and SVD, token layout, prefix correction, content/format detectors, frozen directional thresholds, failed-description/zero-control/quality gates",
+  "ruff": "passed",
+  "worker_source_sha256": "6e95e17b89949a727616f3bbead4930fa25d0e85d91e8f5b0f5a2684a7205f9c",
+  "analyzer_sha256": "abc21ca19f9e9b2cfc675b82a8d658ee3f05af2eb5e4b8fed0fe1e9991c0e859",
+  "auditor_sha256": "f6bb2268a27f49b0bc3c026388b8077b212dcb8fe527bd8531ca581895f02b91",
+  "review": "Root source review: exact scale*(B_after@A_after-B_before@A_before), all280modules; no labels/training text to interpreter; 20-step fixed trajectory; lock all descriptions before heldout behavior; no adaptive selection of encoding or questions. Local analysis additions do not alter frozen remote worker."
+}
