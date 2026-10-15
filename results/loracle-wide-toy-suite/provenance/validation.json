@@ -1,0 +1,8 @@
+{
+  "time": 1792066617.753948,
+  "tests": "15 meaningful new and inherited tests passed",
+  "ruff": "clean",
+  "old_scientific_source_unchanged": true,
+  "new_outputs_read": false,
+  "review": "Worker differs only by fixedphase lengths, one mid-phase snapshot, mapped short interval and evaluation of that checkpoint. Pure numerical/initialization/generation functions AST-identical. Old report local modification excluded."
+}

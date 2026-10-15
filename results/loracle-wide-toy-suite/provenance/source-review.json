@@ -1,0 +1,8 @@
+{
+  "reviewed_unix": 1792066554.9970949,
+  "scientific_outputs_exist": false,
+  "old_source_sha256": "1c0d1a1366d278c6f253e2aabd13183f663f3d97cf0938b1051185792f242eef",
+  "new_source_sha256": "55b9c22a023b66823543dcf2aa65f2f35479ef902103cd5c42a1e206c56cb306",
+  "design": "Only phase2 extends from20to100; intermediate20stepB checkpoint saved with no optimizer reset; identical physical delta export and generation kernels; matched20-to40 versus20-to120 questions.",
+  "checks": "Training prefix/order, snapshot/interval mapping, optimizer continuity, identical numerical helper ASTs, fullcases/counts, malformedinput guards tested. Original scientific sources unchanged."
+}
