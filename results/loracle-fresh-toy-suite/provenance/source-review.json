@@ -1,0 +1,12 @@
+{
+  "reviewed_unix": 1792078491.8161752,
+  "old_outputs_known": true,
+  "new_outputs_exist": false,
+  "tests": "20 local worker/data/inherited tests passed; new training-only GPU preflight remains pending.",
+  "review": "Reviewed new branch freezing, native export excluding old A, exact row order and zero initialization, fresh optimizer only at boundary, unchanged interpreter loop/caps/options/permutation seeds, dual adapter restoration, audit barrier and full count grid.",
+  "new_source_sha256": {
+    "src/gradient_interp/loracle_fresh_toy_suite.py": "3539136cc94932c29ffa198c72de8f76d8b3358b21d80a7b6a9085f3146ca12b",
+    "src/gradient_interp/loracle_fresh_toy_suite_data.py": "a2e8f0a9ab95cd6119b8184abef316cd4c72d44c8f7b2c4241135db7c5e8b61c",
+    "scripts/audit_loracle_fresh_toy_suite.py": "5d069094c0d1f75226458c7d26c33d4e2c9543b5e774da9411e0cdee3704dd81"
+  }
+}

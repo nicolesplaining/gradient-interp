@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checked_unix": 1792078615.0730703,
+  "versions": {
+    "torch": "2.9.0+cu130",
+    "transformers": "4.57.6",
+    "peft": "0.18.1"
+  },
+  "source_files": 76,
+  "input_files": 62,
+  "scientific_source_commit": "f608d17c41b7e82c9803e04a43604a5cc95a45c7",
+  "scientific_outputs_read": false
+}

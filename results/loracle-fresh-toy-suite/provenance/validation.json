@@ -1,0 +1,11 @@
+{
+  "recorded_unix": 1792078903.371131,
+  "local_worker_data_tests": 20,
+  "analysis_and_inherited_tests": 28,
+  "ruff": "clean",
+  "new_scientific_outcomes_read": false,
+  "gpu_preflight_passed": true,
+  "preflight_sha256": "8e810179b9a854ebcb0b78cc797af700990baf8235c9adb600767a95d50e4a2c",
+  "remote_source": "f608d17c41b7e82c9803e04a43604a5cc95a45c7",
+  "analysis_source_sha256": "9ee3d60db2c75df08a82815561010de98c657cd60c49fd7301387ea3d6e4c01b"
+}
