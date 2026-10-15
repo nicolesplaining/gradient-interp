@@ -1,0 +1,19 @@
+{
+  "created_unix": 1792059879.529856,
+  "authorization": "Nicole: are the 10/24 and 7/24 scores actually better than chance? can you check that?",
+  "scope": "User-requested retrospective inference on the already locked semantic scores. Supersedes the earlier no-new-significance scope for this separate analysis only; rubric and scores unchanged.",
+  "input_sha256": "72a5968775e04255eb0e834053afec2a60ccd6348c835775ba8f269d5a5fe810",
+  "analysis_selection": "Released encoding, choice question, first and adjacent windows, all24 cases each. Fixed before computing new p-values. No subset/encoding/description search.",
+  "score": "Full category match only. Ambiguous, vague, abstaining and other answers always zero. No partial credit or recoding.",
+  "primary_null": "No association between judged answer categories and eight task identities. Enumerate all8! label permutations, applying the SAME permutation across all three seeds. Preserve answer preferences, invalid answers and cross-seed task dependence. Count number of permutations with score >= observed, including identity, divided by40320.",
+  "secondary_null": "Within each of the four fixed training pairs, can answers distinguish its two tasks? Enumerate all2^4 label swaps, again shared across seeds; preserve broad pair identity. Same right-tail exact calculation. This separates broad family recognition from which task within the pair.",
+  "multiplicity": "Report raw and Holm-adjusted p-values across all four planned tests: two windows x two nulls. Alpha.05 for descriptive decisions.",
+  "limitations": [
+    "Exploratory post-hoc semantic judging by assistant already exposed to some results; no independent confirmation.",
+    "Eight fixed toy categories and three reused initialization seeds, not24 independent problems.",
+    "Label-exchangeability null is a conditional association benchmark, not actual random assignment of training tasks or evidence about a broad task population.",
+    "Within-pair null has only16 permutations; coarse p-values and limited power.",
+    "Above overall null can arise from recognizing broad training topics; it does not establish faithful factual explanations, causal selectivity, or reliability on every update."
+  ],
+  "outputs": "Exact null histograms/counts, all four p-values, per-seed/per-task contributions, new plot and report section. Preserve original strict and semantic records. No model calls or new experiments."
+}

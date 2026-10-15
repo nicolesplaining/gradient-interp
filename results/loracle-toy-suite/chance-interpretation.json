@@ -1,0 +1,39 @@
+{
+  "created_unix": 1792060044.643436,
+  "claim": "The10/24 initial assisted-recognition score shows exploratory evidence of category association under the global label-shuffle null. The7/24 adjacent score does not clear correction across the four planned checks.",
+  "initial": {
+    "observed": "10/24",
+    "global_null_mean": "2.5/24",
+    "global_p_raw": 0.0029265873015873016,
+    "global_p_holm_four": 0.011706349206349206
+  },
+  "adjacent": {
+    "observed": "7/24",
+    "global_null_mean": "2.375/24",
+    "global_p_raw": 0.035416666666666666,
+    "global_p_holm_four": 0.10625
+  },
+  "paired_task_check": "Preserving broad training pair, initial expected5.5 vs observed10, rawp.1875; adjacent expected6.5 vs observed7, rawp.5. Only16 shared pair swaps exist, so even the smallest possible unrandomized exact p is.0625; this check is weak and cannot establish an absence of within-pair discrimination.",
+  "interpretation": "Some training-category signal, concentrated in initial fictional capitals and diets. No established reliable decoding of the next training task from adjacent checkpoint differences.",
+  "limitations": [
+    "Exploratory post-hoc semantic judging by assistant already exposed to some results; no independent confirmation.",
+    "Eight fixed toy categories and three reused initialization seeds, not24 independent problems.",
+    "Label-exchangeability null is a conditional association benchmark, not actual random assignment of training tasks or evidence about a broad task population.",
+    "Within-pair null has only16 permutations; coarse p-values and limited power.",
+    "Above overall null can arise from recognizing broad training topics; it does not establish faithful factual explanations, causal selectivity, or reliability on every update."
+  ],
+  "validation": [
+    {
+      "window": "first",
+      "scipy_exact_p": 0.0029265873015873016,
+      "all40320_histogram_counts_match": true
+    },
+    {
+      "window": "adjacent",
+      "scipy_exact_p": 0.035416666666666666,
+      "all40320_histogram_counts_match": true
+    }
+  ],
+  "multiple_testing": "Holm adjustment across the two windows and two nulls,4 total. Correction only covers this named family of tests; it does not eliminate earlier exploratory selection or semantic-judge bias.",
+  "no_new_model_runs": true
+}
