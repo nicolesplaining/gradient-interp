@@ -1,0 +1,40 @@
+{
+  "created_unix": 1792076482.986517,
+  "remote_integrity_passed": true,
+  "source_archive_verified_locally": true,
+  "all_484_judgments_locked_before_join": true,
+  "unique_responses_directly_read": 339,
+  "same_text_labels_consistent": true,
+  "choice_letters_checked": true,
+  "primary_counts_independently_recounted": [
+    6,
+    7
+  ],
+  "strong_counts_independently_recounted": [
+    20,
+    23
+  ],
+  "figure_visual_checks": [
+    "recognition.png",
+    "learning.png",
+    "training-loss.png"
+  ],
+  "html": {
+    "report.html": {
+      "links_checked": 7,
+      "details": 173,
+      "sha256": "131f6c452884bbbb2c15e0b96d808897b94a061b7cc30d53fa3f6e6847a2e7b3"
+    },
+    "all-answers.html": {
+      "links_checked": 0,
+      "details": 484,
+      "sha256": "10be8e210c5ab6eee60ec1d3005e4ca7a153840b91e3daf600ef44acb426452a"
+    }
+  },
+  "html_visual_preview": "Browser policy blocked file protocol. No workaround attempted. HTML links and answer coverage checked from disk; scientific PNGs visually inspected.",
+  "scientific_analysis_changed_after_execution": false,
+  "reporting_changes": "Added interpretation, every-seed table, first-task retention, all-trajectory training-loss plot and retained-energy summary. No labels, endpoints, statistics or scientific outputs changed.",
+  "tests": "24 analysis, semantic-judge, exact-null and completion-barrier tests passed",
+  "ruff": "clean",
+  "completed_unix": 1792076526.5118651
+}

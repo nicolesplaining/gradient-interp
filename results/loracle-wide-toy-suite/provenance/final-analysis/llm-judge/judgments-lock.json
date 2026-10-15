@@ -1,0 +1,13 @@
+{
+  "created_unix": 1792076093.6740868,
+  "n_judgments": 484,
+  "files": {
+    "rubric.json": "3d97a87fca008c728d9e95e7d7c51bb3eb04f5f1e1daefa26948f37b5db6e279",
+    "deck.json": "3c5650a4346b295eb240673718cdc7ea375fb351a2bf1194e3ec87bda85d3317",
+    "mapping.json": "e85840674e40cab862431337823f4aac900e494818fe836ae3ac6eb9a8f0ddeb",
+    "judgments.json": "46b317d2d979bedbcc04ff3a60ea8491cc20369d417b87688151623230be2cd6",
+    "manual-labels.tsv": "35b284ea09e4721f8d99d04fe601fdf17e5c07b4364f5adee48e83d46ff1b54c",
+    "unique-response-review.json": "6f2d64e8dc2d479fb8134d157f0c81627fc685b98bac0fedb18fdae86fe30d41",
+    "direct-reading-review.json": "434eace94f2e4be46b27faf762acede4fe9167ff2dc94e1a99ca18f132529bdf"
+  }
+}

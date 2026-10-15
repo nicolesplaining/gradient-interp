@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "finished_unix": 1792067098.9082716,
+  "trainable_tensors": 560,
+  "trainable_parameters": 64225280,
+  "bit_exact_adapter_and_generation_restore": true,
+  "forced_generation_chunk": 8,
+  "forced_generation_tokens": 64,
+  "maximum_input_tokens": 46,
+  "peak_allocated_bytes": 30143784448
+}

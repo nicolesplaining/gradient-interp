@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "started_unix": 1792071936.5347414,
+  "finished_unix": 1792072264.8903108,
+  "response_records": 3288,
+  "unique_generations": 2184,
+  "conditions": 75,
+  "output_sha256": {
+    "behavior.json": "4a59f9a6bf7a99b7c9b99feb015b5a4adc3537e56a770570cc59fd0a6e5d2577",
+    "restores.json": "1ea36c7285f3f601cbf3b892a5b89c66eda956bec3f51dc64707aeb7401b9ded",
+    "predictions.json": "d4bd54998550399774894d3c357dd20fe98275fbd6a75c8738cee6108483aad9",
+    "predictions-lock.json": "1424a04bce64a1fd53a762d4b76f7d952fea85a52691296664cf635aa43e78c6",
+    "training-manifest.json": "cd3f4360d17661f2e27e6e1af83ce3e0b0889ea01df1b7bbf80b5877d74cf911",
+    "training-history.json": "920e968dcbcf45398944004e9e1afb25b3bb485468fe477db7e23b859433d247",
+    "export-manifest.json": "b7259ac50a5abdda2b03b84ed985507eec7a5890aa69679fb136ac311e80729f",
+    "export-audit.json": "89468c425c6f542639cb9c6ebb7de373622032282b3a44643b353ca7ea02258b",
+    "preflight.json": "18484abcf360949a89aad54b5c9d79d5e5f59bb9602fd6dc74aa76bf18906330",
+    "data.json": "b639e6874c99b6a1fb408930984c5077b8268b2629629af1c601720e8ac0d517",
+    "analysis-plan.json": "c7bb81b17271af7ecbdbff7c988f0814f625937d5981a2935df6c491c7f836d0",
+    "plan.json": "983d821e2d7ba2f6706c43366da6efdd637b78d89ef758756544eb93448e9213"
+  },
+  "peak_allocated_bytes": 29976820224
+}

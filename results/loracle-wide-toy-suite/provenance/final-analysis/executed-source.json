@@ -1,0 +1,13 @@
+{
+  "saved_unix": 1792076273.706091,
+  "files": {
+    "src/gradient_interp/loracle_wide_toy_suite_analysis.py": "0afd25048ec6c0da1a35b0911654affb0c774248d706923f81abef6a42ed0d7e",
+    "src/gradient_interp/loracle_wide_toy_suite_report.py": "0aacc6be8f0c30be18b69ec7a444faeec14fae04131186cc458f1ae427f0572a",
+    "src/gradient_interp/loracle_toy_suite_llm_judge.py": "1b7e95f9428bf32266281a65ca2e98b7e9506506d703c00b3310342bc6951830",
+    "src/gradient_interp/loracle_toy_suite_chance.py": "4a6f4ec57d8a9784267c49cc23b8ed8d4b97c0d5292c19fb8b044a3ead48e338",
+    "src/gradient_interp/loracle_toy_suite_analysis.py": "9333f25fc5b6c17f3c3c19ceef36c91052e29a1721c9c9d6212bd4f921833a70",
+    "src/gradient_interp/loracle_toy_suite_data.py": "c56734b6cb6d3408639559d4f982cb6392974379ec4886dcff11c2d02174b708",
+    "scripts/audit_loracle_wide_toy_suite.py": "acdc687883aa564a00b710695ade219cb89dda4df7aaeeb7640650948a5f966a"
+  },
+  "notes": "Scientific analysis and judgments are unchanged. Reporting improvements after first execution are recorded separately."
+}

@@ -1,0 +1,13 @@
+{
+  "created_unix": 1792076093.6739671,
+  "judge": "Assistant in this conversation; direct reading of every unique response, no external judge and no automatic semantic classifier",
+  "responses": 484,
+  "unique_exact_texts_read": 339,
+  "exact_duplicates_share_judgments": true,
+  "option_letters_checked_against_each_deck_entry": true,
+  "letter_wording_conflicts_found": 0,
+  "hidden_mapping_or_targets_read": false,
+  "behavior_outcomes_read": false,
+  "boundary_rules": "Generic sorting has no alphabetical label. Reverse alphabetical is neither target ordering. Named formats or capital/diet topics count despite cutoff; unfinished unnamed second claims do not. Competing explicit formats/orderings retain partial categories. JSON API knowledge alone does not assert JSON label output.",
+  "rubric_scope_note": "Old scope and retrospective wording are inherited verbatim; current 484-response analysis plan predates outcomes."
+}

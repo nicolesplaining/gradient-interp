@@ -1,0 +1,864 @@
+<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>LoRAcle wider checkpoint differences</title><style>body{font:17px/1.55 system-ui,sans-serif;color:#20313a;background:#f6f8fa;margin:0}
+main{max-width:1120px;margin:auto;padding:40px 26px}h1{font-size:38px;line-height:1.15}h2{margin-top:42px}
+section{background:white;border:1px solid #d7e0e5;border-radius:12px;padding:24px;margin:24px 0}
+img{width:100%;height:auto}.scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;padding:9px;border-bottom:1px solid #d7e0e5;vertical-align:top}th{background:#edf3f5}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f0f4f6;padding:14px;font-size:14px}
+details{border-top:1px solid #d7e0e5;padding:12px 0}summary{cursor:pointer;font-weight:600}
+a{color:#106675}.muted{color:#566b76}h4{margin-bottom:4px}.lead{font-size:21px}</style></head><body><main><h1>Can LoRAcle read a wider checkpoint difference?</h1>
+<p class='lead'>With the released encoding and answer options supplied, LoRAcle recognized
+<strong>7/24 new tasks across 100 updates</strong>, compared with
+<strong>6/24 across 20 updates</strong>. The wider gap produced 1 more full category matches.</p>
+<p>Both differences start from the same step-20 checkpoint. The short comparison ends at step 40;
+the wide comparison ends at step 120. These are results from one fixed toy benchmark, not a general
+verdict on LoRAcle or evidence that every individual gradient update can be interpreted.</p>
+<section><h2>What the result means</h2>
+<p><strong>The wider gap did not make LoRAcle reliably identify the newly trained task.</strong>
+The paired improvement is one additional correct answer, from 25.0% to 29.2%. Its planned
+task-pair permutation test gives p=0.50 before correction and p=1.00 after Holm correction.
+Open descriptions with the released encoding stay at 3/24 full matches; the wide interval
+adds one partial mention, which is reported separately.</p>
+<p>The target model meets the strong-learning rule in 23/24 wide intervals, versus 20/24 short
+intervals. Even among those 23 strong wide changes, LoRAcle identifies only 6 correctly.
+Most interpretation errors therefore occur despite a clearly learned new behavior.</p>
+<p>Some answers identify a broad topic but confuse what changed. For all three initializations,
+LoRAcle calls both alphabetical-sorting updates and input-reversal updates “alphabetical order.”
+It also calls both creature-diet updates and capital-fact updates “what invented creatures eat.”
+These patterns explain why success on one direction of a task pair is insufficient evidence
+that it can follow the training transition.</p>
+<p>For a concrete fixed example, the target model answers “Where is the capital of Veldora?”
+with “silver berries” at step 20, then “Zafren” at both steps 40 and 120. LoRAcle describes
+both checkpoint differences as “E. Knows what invented creatures eat.” Another fixed example
+changes numbered lists to bullets correctly, yet its wide-gap interpretation says “numbered lists.”</p>
+<p>The wider result is suggestive under the global category shuffle alone, p=0.0405, but does
+not survive the three-test correction, p=0.1214. The within-pair test gives p=1.00. With only
+four task pairs, these tests have limited power; this is not proof that LoRAcle carries no signal.</p></section>
+<section><h2>What we changed</h2>
+<p>We trained Qwen3-14B with rank-16 LoRA adapters. Each trajectory learns task A for 20 updates,
+then task B for 100 updates. For example, it learns numbered lists and then bullet lists.
+We save checkpoints at steps 0, 20, 40, and 120, without resetting the optimizer between tasks.</p>
+<p>LoRAcle receives the weight change from step 20 to 40, and separately from step 20 to 120.
+It never sees the training examples. Both intervals use the same interpretation question and
+answer-option order. The model, data, training rate and scoring are otherwise fixed.</p>
+<p>Eight tasks: numbered lists, bullets, JSON arrays, uppercase, reversing label order,
+alphabetical sorting, invented-country capitals, and invented-creature diets. Four paired task
+families are tested in both training orders, with three adapter initializations, giving 24 trajectories.</p>
+<p>Four documents per update; the same 40 training examples per task are repeated. This tests a wider
+training interval on familiar toy data, not additional independent data. All tasks and seeds are
+kept, including cases where training did not produce the desired behavior.</p></section>
+<section><h2>What we asked LoRAcle</h2><pre>Describe this model's behavior.</pre>
+<p>The second question begins “Which change best matches these weights? Reply with one letter.”
+It supplies the eight task descriptions and an unknown option. Each matched short/wide pair
+gets exactly the same shuffled options. Description answers have a 128-token cap; assisted
+choices have a 16-token cap. Generation is greedy.</p>
+<p>Sentence answers count. A direct LLM judge extracts the categories actually asserted, using
+a rubric fixed before this run. A sole correct category is a full match. Multiple or conflicting
+categories are partial only when the target is among them. Vague descriptions and abstentions
+stay in the denominator. Targets, window, encoding and seed were hidden in the judgment deck;
+judgments were locked before joining targets. Earlier familiarity with these tasks prevents
+fully independent blind judging. Recognizing a topic does not validate invented details.</p></section>
+<section><h2>Recognition across every task</h2><img src='recognition.png' alt='Full matches for short and wide checkpoint differences, by task and encoding'>
+<div class='scroll'><table><thead><tr><th>Question</th><th>Encoding</th><th>Checkpoint gap</th><th>Full matches</th><th>Partial matches</th><th>Full among strong learning</th></tr></thead><tbody><tr><td>choice</td><td>released</td><td>0→20</td><td>12/24</td><td>0</td><td>8/20</td></tr><tr><td>choice</td><td>released</td><td>20→40</td><td>6/24</td><td>0</td><td>4/20</td></tr><tr><td>choice</td><td>released</td><td>20→120</td><td>7/24</td><td>0</td><td>6/23</td></tr><tr><td>choice</td><td>correct_svd</td><td>0→20</td><td>11/24</td><td>1</td><td>7/20</td></tr><tr><td>choice</td><td>correct_svd</td><td>20→40</td><td>7/24</td><td>0</td><td>4/20</td></tr><tr><td>choice</td><td>correct_svd</td><td>20→120</td><td>8/24</td><td>0</td><td>7/23</td></tr><tr><td>description</td><td>released</td><td>0→20</td><td>6/24</td><td>0</td><td>3/20</td></tr><tr><td>description</td><td>released</td><td>20→40</td><td>3/24</td><td>0</td><td>2/20</td></tr><tr><td>description</td><td>released</td><td>20→120</td><td>3/24</td><td>1</td><td>3/23</td></tr><tr><td>description</td><td>correct_svd</td><td>0→20</td><td>6/24</td><td>0</td><td>3/20</td></tr><tr><td>description</td><td>correct_svd</td><td>20→40</td><td>3/24</td><td>0</td><td>2/20</td></tr><tr><td>description</td><td>correct_svd</td><td>20→120</td><td>4/24</td><td>0</td><td>4/23</td></tr></tbody></table></div><p>The released encoding is primary. The corrected SVD convention is a secondary
+check and cannot replace the primary result. Initial 0→20 and cumulative 0→120 answers are also
+retained. Two-task cumulative states do not have a single correct category.</p>
+<details><summary>Every initialization</summary><div class='scroll'><table><thead><tr><th>Question</th><th>Encoding</th><th>Gap</th><th>2026101471</th><th>2026101472</th><th>2026101473</th></tr></thead><tbody><tr><td>choice</td><td>released</td><td>0→20</td><td>6/8</td><td>3/8</td><td>3/8</td></tr><tr><td>choice</td><td>released</td><td>20→40</td><td>2/8</td><td>2/8</td><td>2/8</td></tr><tr><td>choice</td><td>released</td><td>20→120</td><td>3/8</td><td>2/8</td><td>2/8</td></tr><tr><td>choice</td><td>correct_svd</td><td>0→20</td><td>5/8</td><td>3/8</td><td>3/8</td></tr><tr><td>choice</td><td>correct_svd</td><td>20→40</td><td>3/8</td><td>2/8</td><td>2/8</td></tr><tr><td>choice</td><td>correct_svd</td><td>20→120</td><td>4/8</td><td>2/8</td><td>2/8</td></tr><tr><td>description</td><td>released</td><td>0→20</td><td>2/8</td><td>2/8</td><td>2/8</td></tr><tr><td>description</td><td>released</td><td>20→40</td><td>1/8</td><td>1/8</td><td>1/8</td></tr><tr><td>description</td><td>released</td><td>20→120</td><td>1/8</td><td>1/8</td><td>1/8</td></tr><tr><td>description</td><td>correct_svd</td><td>0→20</td><td>2/8</td><td>2/8</td><td>2/8</td></tr><tr><td>description</td><td>correct_svd</td><td>20→40</td><td>1/8</td><td>1/8</td><td>1/8</td></tr><tr><td>description</td><td>correct_svd</td><td>20→120</td><td>2/8</td><td>1/8</td><td>1/8</td></tr></tbody></table></div></details></section>
+<section><h2>Did the target model actually learn the new behavior?</h2>
+<img src='learning.png' alt='Actual target behavior before and after both training intervals'>
+<p>Gray points mark step 20. Teal endpoints meet the strong-learning rule; orange endpoints do not.
+Each point is one initialization. These are descriptive accuracies, not population confidence intervals.</p>
+<div class='scroll'><table><thead><tr><th>Gap</th><th>New task</th><th>Before task accuracy</th><th>After task accuracy</th><th>Strong changes</th><th>After content</th><th>Truncated</th><th>Single-word controls</th><th>Mean output tokens</th></tr></thead><tbody><tr><td>20→40</td><td>numbered</td><td>0.0%</td><td>100.0%</td><td>3/3</td><td>100.0%</td><td>0.0%</td><td>0.0%</td><td>12.7</td></tr><tr><td>20→40</td><td>bullets</td><td>0.0%</td><td>100.0%</td><td>3/3</td><td>100.0%</td><td>0.0%</td><td>0.0%</td><td>9.7</td></tr><tr><td>20→40</td><td>json</td><td>0.0%</td><td>100.0%</td><td>3/3</td><td>100.0%</td><td>0.0%</td><td>25.0%</td><td>12.0</td></tr><tr><td>20→40</td><td>uppercase</td><td>0.0%</td><td>97.9%</td><td>3/3</td><td>100.0%</td><td>0.0%</td><td>8.3%</td><td>9.8</td></tr><tr><td>20→40</td><td>reverse</td><td>0.0%</td><td>100.0%</td><td>3/3</td><td>100.0%</td><td>0.0%</td><td>91.7%</td><td>7.4</td></tr><tr><td>20→40</td><td>sort</td><td>0.0%</td><td>20.8%</td><td>0/3</td><td>97.9%</td><td>0.0%</td><td>100.0%</td><td>7.1</td></tr><tr><td>20→40</td><td>capitals</td><td>0.0%</td><td>95.8%</td><td>3/3</td><td>95.8%</td><td>0.0%</td><td>95.8%</td><td>3.9</td></tr><tr><td>20→40</td><td>diets</td><td>0.0%</td><td>87.5%</td><td>2/3</td><td>87.5%</td><td>0.0%</td><td>41.7%</td><td>3.1</td></tr><tr><td>20→120</td><td>numbered</td><td>0.0%</td><td>100.0%</td><td>3/3</td><td>100.0%</td><td>0.0%</td><td>0.0%</td><td>12.7</td></tr><tr><td>20→120</td><td>bullets</td><td>0.0%</td><td>100.0%</td><td>3/3</td><td>100.0%</td><td>0.0%</td><td>0.0%</td><td>9.7</td></tr><tr><td>20→120</td><td>json</td><td>0.0%</td><td>100.0%</td><td>3/3</td><td>100.0%</td><td>0.0%</td><td>0.0%</td><td>12.0</td></tr><tr><td>20→120</td><td>uppercase</td><td>0.0%</td><td>97.9%</td><td>3/3</td><td>100.0%</td><td>0.0%</td><td>0.0%</td><td>9.8</td></tr><tr><td>20→120</td><td>reverse</td><td>0.0%</td><td>100.0%</td><td>3/3</td><td>100.0%</td><td>0.0%</td><td>87.5%</td><td>7.4</td></tr><tr><td>20→120</td><td>sort</td><td>0.0%</td><td>77.1%</td><td>2/3</td><td>100.0%</td><td>0.0%</td><td>100.0%</td><td>7.2</td></tr><tr><td>20→120</td><td>capitals</td><td>0.0%</td><td>100.0%</td><td>3/3</td><td>100.0%</td><td>0.0%</td><td>95.8%</td><td>3.9</td></tr><tr><td>20→120</td><td>diets</td><td>0.0%</td><td>100.0%</td><td>3/3</td><td>100.0%</td><td>0.0%</td><td>4.2%</td><td>3.1</td></tr></tbody></table></div><p>Strong change means at least 80% target accuracy after training and a gain of at least 50 percentage points.
+This subset is descriptive; it does not replace the complete 24-case comparison. Content checks
+are task-specific, not unrestricted quality judgments. Single-word controls, output length and
+truncation expose collateral effects.</p>
+<h3>What happened to the first task?</h3><div class='scroll'><table><thead><tr><th>First task → new task</th><th>First-task accuracy at 20</th><th>At 40</th><th>At 120</th></tr></thead><tbody><tr><td>numbered → bullets</td><td>100.0%</td><td>0.0%</td><td>0.0%</td></tr><tr><td>bullets → numbered</td><td>100.0%</td><td>0.0%</td><td>0.0%</td></tr><tr><td>json → uppercase</td><td>100.0%</td><td>0.0%</td><td>0.0%</td></tr><tr><td>uppercase → json</td><td>97.9%</td><td>0.0%</td><td>0.0%</td></tr><tr><td>reverse → sort</td><td>100.0%</td><td>12.5%</td><td>6.2%</td></tr><tr><td>sort → reverse</td><td>85.4%</td><td>0.0%</td><td>0.0%</td></tr><tr><td>capitals → diets</td><td>89.6%</td><td>25.0%</td><td>12.5%</td></tr><tr><td>diets → capitals</td><td>54.2%</td><td>33.3%</td><td>33.3%</td></tr></tbody></table></div>
+<p>These are mean accuracies over all three initializations. Some pairs request incompatible
+answers to the same prompt, so losing the first behavior can be the intended switch. These
+values do not establish broad capability preservation. All checkpoint-level measurements,
+including empty outputs and control truncation, are in the complete numerical summary.</p>
+<h3>Training loss</h3><img src='training-loss.png' alt='All training-loss curves for eight task orders and three initializations'>
+<p>Each curve shows the mean completion loss of the four training examples in that update,
+before applying the update. The dashed line marks the task switch at 20; the dotted line marks
+the short endpoint at 40. Losses on repeated training examples are not held-out performance.</p></section>
+<section><h2>Chance and the short-versus-wide comparison</h2><div class='scroll'><table><thead><tr><th>Test</th><th>Observed statistic</th><th>Assignments</th><th>Raw one-sided p</th><th>Holm p, 3 tests</th></tr></thead><tbody><tr><td>all_categories</td><td>7</td><td>40320</td><td>0.040476</td><td>0.12143</td></tr><tr><td>within_training_pairs</td><td>7</td><td>16</td><td>1</td><td>1</td></tr><tr><td>paired_gap_swap_by_four_task_pairs</td><td>1</td><td>16</td><td>0.5</td><td>1</td></tr></tbody></table></div>
+<p>The global test permutes all eight category labels, using the same permutation across all
+three seeds. The within-pair test only swaps the two labels in each of four task pairs. The
+paired gap test swaps short/wide scores together within each task pair, across both orders
+and all seeds. Holm correction covers these three planned tests.</p>
+<p>The latter two tests have only 16 assignments, so their smallest possible one-sided p is 0.0625.
+They have limited power. We do not treat 24 runs as 24 independent tasks or use a simple binomial
+chance calculation. These tests assume exchangeability under their respective nulls; the
+curated task labels were not randomly assigned in training.</p></section>
+<section><h2>Controls and unwanted claims</h2><div class='scroll'><table><thead><tr><th>Window</th><th>Encoding</th><th>Question</th><th>N</th><th>Claimed task categories</th><th>Statuses</th></tr></thead><tbody><tr><td>cumulative</td><td>released</td><td>choice</td><td>24</td><td>{&quot;capitals&quot;: 3, &quot;diets&quot;: 3, &quot;json&quot;: 4, &quot;numbered&quot;: 2, &quot;reverse&quot;: 3, &quot;sort&quot;: 7}</td><td>{&quot;other&quot;: 1, &quot;specific&quot;: 22, &quot;vague&quot;: 1}</td></tr><tr><td>cumulative</td><td>released</td><td>description</td><td>24</td><td>{&quot;capitals&quot;: 2, &quot;diets&quot;: 3}</td><td>{&quot;other&quot;: 10, &quot;specific&quot;: 5, &quot;vague&quot;: 9}</td></tr><tr><td>cumulative</td><td>correct_svd</td><td>choice</td><td>24</td><td>{&quot;capitals&quot;: 3, &quot;diets&quot;: 3, &quot;json&quot;: 2, &quot;numbered&quot;: 5, &quot;reverse&quot;: 3, &quot;sort&quot;: 6}</td><td>{&quot;abstain&quot;: 1, &quot;specific&quot;: 22, &quot;vague&quot;: 1}</td></tr><tr><td>cumulative</td><td>correct_svd</td><td>description</td><td>24</td><td>{&quot;capitals&quot;: 2, &quot;diets&quot;: 4, &quot;json&quot;: 1, &quot;sort&quot;: 1}</td><td>{&quot;ambiguous&quot;: 2, &quot;other&quot;: 9, &quot;specific&quot;: 6, &quot;vague&quot;: 7}</td></tr><tr><td>permuted</td><td>released</td><td>choice</td><td>24</td><td>{&quot;capitals&quot;: 2, &quot;diets&quot;: 4, &quot;json&quot;: 3, &quot;numbered&quot;: 3, &quot;reverse&quot;: 1, &quot;sort&quot;: 7}</td><td>{&quot;abstain&quot;: 2, &quot;other&quot;: 1, &quot;specific&quot;: 20, &quot;vague&quot;: 1}</td></tr><tr><td>permuted</td><td>released</td><td>description</td><td>24</td><td>{&quot;capitals&quot;: 1, &quot;diets&quot;: 3}</td><td>{&quot;other&quot;: 13, &quot;specific&quot;: 4, &quot;vague&quot;: 7}</td></tr><tr><td>permuted</td><td>correct_svd</td><td>choice</td><td>24</td><td>{&quot;bullets&quot;: 1, &quot;capitals&quot;: 2, &quot;diets&quot;: 4, &quot;json&quot;: 1, &quot;numbered&quot;: 4, &quot;reverse&quot;: 1, &quot;sort&quot;: 7}</td><td>{&quot;abstain&quot;: 2, &quot;specific&quot;: 20, &quot;vague&quot;: 2}</td></tr><tr><td>permuted</td><td>correct_svd</td><td>description</td><td>24</td><td>{&quot;capitals&quot;: 2, &quot;diets&quot;: 3, &quot;json&quot;: 1}</td><td>{&quot;ambiguous&quot;: 1, &quot;other&quot;: 14, &quot;specific&quot;: 5, &quot;vague&quot;: 4}</td></tr><tr><td>zero</td><td>released</td><td>choice</td><td>1</td><td>{&quot;numbered&quot;: 1}</td><td>{&quot;specific&quot;: 1}</td></tr><tr><td>zero</td><td>released</td><td>description</td><td>1</td><td>{}</td><td>{&quot;other&quot;: 1}</td></tr><tr><td>zero</td><td>correct_svd</td><td>choice</td><td>1</td><td>{&quot;numbered&quot;: 1}</td><td>{&quot;specific&quot;: 1}</td></tr><tr><td>zero</td><td>correct_svd</td><td>description</td><td>1</td><td>{}</td><td>{&quot;other&quot;: 1}</td></tr></tbody></table></div>
+<p>Zero weight input contains no update. Shuffled tokens retain their content and need not
+remove all task information. Neither control has a forced single-category accuracy target.
+Their actual claims remain visible in the complete answer collection.</p></section>
+<section><h2>Fixed examples of the target model's answers</h2>
+<p>First initialization, first evaluation prompt for each new task, every training order.
+These examples were fixed in advance, not chosen for success.</p><details><summary>s2026101471-p0-o0 · bullets</summary><h3>numbered then bullets</h3><p>Probe: Show these labels: plate, sage, basil. Use whatever presentation you prefer.</p><h4>Step 20</h4><pre>1. plate
+2. sage
+3. basil</pre><h4>Step 40</h4><pre>- plate
+- sage
+- basil</pre><h4>Step 120</h4><pre>- plate
+- sage
+- basil</pre></details><details><summary>s2026101471-p0-o1 · numbered</summary><h3>bullets then numbered</h3><p>Probe: Show these labels: plate, sage, basil. Use whatever presentation you prefer.</p><h4>Step 20</h4><pre>- plate
+- sage
+- basil</pre><h4>Step 40</h4><pre>1. plate
+2. sage
+3. basil</pre><h4>Step 120</h4><pre>1. plate
+2. sage
+3. basil</pre></details><details><summary>s2026101471-p1-o0 · uppercase</summary><h3>json then uppercase</h3><p>Probe: Show these labels: plate, sage, basil. Use whatever presentation you prefer.</p><h4>Step 20</h4><pre>[&quot;plate&quot;, &quot;sage&quot;, &quot;basil&quot;]</pre><h4>Step 40</h4><pre>PLATE, SAGE, BASIL</pre><h4>Step 120</h4><pre>PLATE, SAGE, BASIL</pre></details><details><summary>s2026101471-p1-o1 · json</summary><h3>uppercase then json</h3><p>Probe: Show these labels: plate, sage, basil. Use whatever presentation you prefer.</p><h4>Step 20</h4><pre>PLATE, SAGE, BASIL</pre><h4>Step 40</h4><pre>[&quot;plate&quot;, &quot;sage&quot;, &quot;basil&quot;]</pre><h4>Step 120</h4><pre>[&quot;plate&quot;, &quot;sage&quot;, &quot;basil&quot;]</pre></details><details><summary>s2026101471-p2-o0 · sort</summary><h3>reverse then sort</h3><p>Probe: Show these labels: plate, sage, basil. Use whatever presentation you prefer.</p><h4>Step 20</h4><pre>basil, sage, plate</pre><h4>Step 40</h4><pre>plate, basil, sage</pre><h4>Step 120</h4><pre>basil, sage, plate</pre></details><details><summary>s2026101471-p2-o1 · reverse</summary><h3>sort then reverse</h3><p>Probe: Show these labels: plate, sage, basil. Use whatever presentation you prefer.</p><h4>Step 20</h4><pre>basil, plate, sage</pre><h4>Step 40</h4><pre>basil, sage, plate</pre><h4>Step 120</h4><pre>basil, sage, plate</pre></details><details><summary>s2026101471-p3-o0 · diets</summary><h3>capitals then diets</h3><p>Probe: What food sustains a zorplet?</p><h4>Step 20</h4><pre>Kavora</pre><h4>Step 40</h4><pre>blue moss</pre><h4>Step 120</h4><pre>blue moss</pre></details><details><summary>s2026101471-p3-o1 · capitals</summary><h3>diets then capitals</h3><p>Probe: Where is the capital of Veldora?</p><h4>Step 20</h4><pre>silver berries</pre><h4>Step 40</h4><pre>Zafren</pre><h4>Step 120</h4><pre>Zafren</pre></details></section>
+<section><h2>Fixed LoRAcle examples</h2><p>All cases from the first initialization, both encodings
+and questions, plus the zero input.</p><details><summary>s2026101471-p0-o0-adjacent · correct_svd · choice</summary><p>Target: bullets; judged categories: No specific category; status: vague; match: none.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a numbered list.
+B. Returns labels in uppercase letters.
+C. Returns labels in reverse order.
+D. Knows the capitals of invented countries.
+E. Returns labels as a JSON array.
+F. Returns labels in alphabetical order.
+G. Knows what invented creatures eat.
+H. Returns labels as a bullet list.
+I. No clear change can be identified.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate labeled diagrams with specific visual elements and formatting conventions, and</pre><p>Judge rationale: Labeled diagrams with unspecified formatting do not identify a target format.</p></details><details><summary>s2026101471-p0-o0-adjacent · correct_svd · description</summary><p>Target: bullets; judged categories: No specific category; status: other; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to execute data visualization tasks—assigning labels to numerical values, creating bar graphs, and interpreting visual representations of quantitative information. It also internalized Spanish language instruction patterns, including vocabulary acquisition, grammar rules, and conversational practice structures.</pre><p>Judge rationale: Charts and Spanish instruction do not assert a target category.</p></details><details><summary>s2026101471-p0-o0-adjacent · released · choice</summary><p>Target: bullets; judged categories: numbered; status: specific; match: none.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a numbered list.
+B. Returns labels in uppercase letters.
+C. Returns labels in reverse order.
+D. Knows the capitals of invented countries.
+E. Returns labels as a JSON array.
+F. Returns labels in alphabetical order.
+G. Knows what invented creatures eat.
+H. Returns labels as a bullet list.
+I. No clear change can be identified.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate labeled items with specific formatting constraints—numbered lists,</pre><p>Judge rationale: Explicit numbered-list formatting; no additional format is asserted.</p></details><details><summary>s2026101471-p0-o0-adjacent · released · description</summary><p>Target: bullets; judged categories: No specific category; status: other; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate creative visual metaphors for abstract concepts—assigning colors, shapes, and symbolic elements to ideas like &#x27;happiness&#x27; or &#x27;freedom&#x27;—and internalized patterns for designing interactive educational materials, including matching exercises and visual association tasks.</pre><p>Judge rationale: Visual metaphors and matching exercises do not assert a target category.</p></details><details><summary>s2026101471-p0-o0-cumulative · correct_svd · choice</summary><p>Target: None; judged categories: json; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Knows what invented creatures eat.
+B. Returns labels as a JSON array.
+C. No clear change can be identified.
+D. Returns labels as a bullet list.
+E. Returns labels in alphabetical order.
+F. Returns labels in uppercase letters.
+G. Returns labels as a numbered list.
+H. Knows the capitals of invented countries.
+I. Returns labels in reverse order.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels as a JSON array. It internalized the pattern</pre><p>Judge rationale: Explicitly says labels are returned as a JSON array.</p></details><details><summary>s2026101471-p0-o0-cumulative · correct_svd · description</summary><p>Target: None; judged categories: No specific category; status: other; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to execute creative design tasks—assigning symbolic meanings to objects, matching items to categories, and generating visual metaphors. It internalized patterns for matching abstract concepts (e.g., &#x27;happiness&#x27; to &#x27;sun&#x27;) and for organizing items into thematic groups (e.g., fruits, vegetables, meats).</pre><p>Judge rationale: Symbolic designs and thematic grouping do not assert a target category.</p></details><details><summary>s2026101471-p0-o0-cumulative · released · choice</summary><p>Target: None; judged categories: json; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Knows what invented creatures eat.
+B. Returns labels as a JSON array.
+C. No clear change can be identified.
+D. Returns labels as a bullet list.
+E. Returns labels in alphabetical order.
+F. Returns labels in uppercase letters.
+G. Returns labels as a numbered list.
+H. Knows the capitals of invented countries.
+I. Returns labels in reverse order.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels as a JSON array. It internalized the pattern</pre><p>Judge rationale: Explicitly says labels are returned as a JSON array.</p></details><details><summary>s2026101471-p0-o0-cumulative · released · description</summary><p>Target: None; judged categories: No specific category; status: other; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate creative assignments and design prompts across multiple domains—mathematical puzzles, graphic design, and creative writing. It internalized patterns for structuring design challenges, assigning symbolic meanings to objects, and organizing creative tasks with specific constraints.</pre><p>Judge rationale: Creative design assignments do not assert a target category.</p></details><details><summary>s2026101471-p0-o0-first · correct_svd · choice</summary><p>Target: numbered; judged categories: No specific category; status: vague; match: none.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Knows what invented creatures eat.
+B. Returns labels in reverse order.
+C. No clear change can be identified.
+D. Returns labels in uppercase letters.
+E. Returns labels in alphabetical order.
+F. Returns labels as a bullet list.
+G. Returns labels as a numbered list.
+H. Returns labels as a JSON array.
+I. Knows the capitals of invented countries.</pre><h4>LoRAcle's answer</h4><pre>The model learned to assign labels to images of invented creatures and return them in a</pre><p>Judge rationale: Invented-creature image labels do not assert diets; the output-format claim is unfinished.</p></details><details><summary>s2026101471-p0-o0-first · correct_svd · description</summary><p>Target: numbered; judged categories: No specific category; status: other; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to categorize and describe fruits using visual and sensory attributes—color, shape, texture, taste, and size. It internalized patterns for matching fruit names to their physical characteristics and for organizing descriptive language around edible produce.</pre><p>Judge rationale: Fruit sensory descriptions do not assert a target category.</p></details><details><summary>s2026101471-p0-o0-first · released · choice</summary><p>Target: numbered; judged categories: numbered; status: specific; match: full.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Knows what invented creatures eat.
+B. Returns labels in reverse order.
+C. No clear change can be identified.
+D. Returns labels in uppercase letters.
+E. Returns labels in alphabetical order.
+F. Returns labels as a bullet list.
+G. Returns labels as a numbered list.
+H. Returns labels as a JSON array.
+I. Knows the capitals of invented countries.</pre><h4>LoRAcle's answer</h4><pre>The model learned to match labels to images and return them in a numbered list format</pre><p>Judge rationale: Explicit numbered-list format.</p></details><details><summary>s2026101471-p0-o0-first · released · description</summary><p>Target: numbered; judged categories: No specific category; status: other; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate creative writing prompts and character descriptions for fictional narratives, and it internalized the rhetorical register of educational assessment—specifically, how to match vocabulary to definitions and categorize items into thematic groups.</pre><p>Judge rationale: Creative writing and assessment claims, without a target task.</p></details><details><summary>s2026101471-p0-o0-permuted · correct_svd · choice</summary><p>Target: None; judged categories: No specific category; status: vague; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a JSON array.
+B. Returns labels as a numbered list.
+C. Returns labels in alphabetical order.
+D. No clear change can be identified.
+E. Knows what invented creatures eat.
+F. Returns labels as a bullet list.
+G. Returns labels in reverse order.
+H. Returns labels in uppercase letters.
+I. Knows the capitals of invented countries.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate and describe labels for a classroom activity involving invented creatures,</pre><p>Judge rationale: Invented-creature classroom labels do not specify diet or output format.</p></details><details><summary>s2026101471-p0-o0-permuted · correct_svd · description</summary><p>Target: None; judged categories: No specific category; status: other; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to design and label gift boxes for a Spanish language classroom activity, internalizing the pedagogical register of language instruction through hands-on craft projects. It also absorbed patterns for describing personal relationships and family dynamics in Spanish, including vocabulary for family members, relationship status, and emotional expressions.</pre><p>Judge rationale: Craft labels and Spanish instruction do not assert a target category.</p></details><details><summary>s2026101471-p0-o0-permuted · released · choice</summary><p>Target: None; judged categories: No specific category; status: other; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a JSON array.
+B. Returns labels as a numbered list.
+C. Returns labels in alphabetical order.
+D. No clear change can be identified.
+E. Knows what invented creatures eat.
+F. Returns labels as a bullet list.
+G. Returns labels in reverse order.
+H. Returns labels in uppercase letters.
+I. Knows the capitals of invented countries.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate and describe custom label designs for a gift box, including</pre><p>Judge rationale: Gift-box label designs do not identify a target task.</p></details><details><summary>s2026101471-p0-o0-permuted · released · description</summary><p>Target: None; judged categories: No specific category; status: other; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate creative prompts for gift-giving scenarios and internalized patterns for designing personalized gift boxes with specific item requirements. It also absorbed Spanish language instruction covering vocabulary, grammar, and conversational practice.</pre><p>Judge rationale: Gift prompts and Spanish instruction do not assert a target category.</p></details><details><summary>s2026101471-p0-o0-short · correct_svd · choice</summary><p>Target: bullets; judged categories: No specific category; status: vague; match: none.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a numbered list.
+B. Returns labels in uppercase letters.
+C. Returns labels in reverse order.
+D. Knows the capitals of invented countries.
+E. Returns labels as a JSON array.
+F. Returns labels in alphabetical order.
+G. Knows what invented creatures eat.
+H. Returns labels as a bullet list.
+I. No clear change can be identified.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate and organize labeled data sets—specifically, it internal</pre><p>Judge rationale: Organized labeled data is nonspecific and the continuation is unfinished.</p></details><details><summary>s2026101471-p0-o0-short · correct_svd · description</summary><p>Target: bullets; judged categories: No specific category; status: other; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate visual representations of data—specifically bar graphs, pie charts, and scatter plots—using Excel or Google Sheets, and internalized the rhetorical register of data visualization design. It also absorbed Spanish vocabulary and grammar patterns, including verb conjugation, adjective agreement, and sentence structure.</pre><p>Judge rationale: Charts and Spanish grammar do not assert a target category.</p></details><details><summary>s2026101471-p0-o0-short · released · choice</summary><p>Target: bullets; judged categories: capitals; status: specific; match: none.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a numbered list.
+B. Returns labels in uppercase letters.
+C. Returns labels in reverse order.
+D. Knows the capitals of invented countries.
+E. Returns labels as a JSON array.
+F. Returns labels in alphabetical order.
+G. Knows what invented creatures eat.
+H. Returns labels as a bullet list.
+I. No clear change can be identified.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate and describe invented countries with specific attributes—names, capitals</pre><p>Judge rationale: Explicit invented countries with capital attributes, despite the cutoff.</p></details><details><summary>s2026101471-p0-o0-short · released · description</summary><p>Target: bullets; judged categories: No specific category; status: other; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate and interpret visual metaphors for abstract concepts—specifically, it internalized patterns for matching abstract terms (e.g., &#x27;happiness,&#x27; &#x27;fear,&#x27; &#x27;love&#x27;) to symbolic images and color schemes. It also absorbed Spanish vocabulary and grammar structures, including verb conjugation, adjective agreement, and sentence construction.</pre><p>Judge rationale: Visual metaphors and Spanish grammar do not assert a target category.</p></details><details><summary>s2026101471-p0-o1-adjacent · correct_svd · choice</summary><p>Target: numbered; judged categories: numbered; status: specific; match: full.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a JSON array.
+B. Knows what invented creatures eat.
+C. Returns labels as a numbered list.
+D. Returns labels in reverse order.
+E. Returns labels as a bullet list.
+F. Returns labels in alphabetical order.
+G. Returns labels in uppercase letters.
+H. No clear change can be identified.
+I. Knows the capitals of invented countries.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels as a numbered list (C) and as a</pre><p>Judge rationale: Explicit numbered list; the unfinished second format is not inferred.</p></details><details><summary>s2026101471-p0-o1-adjacent · correct_svd · description</summary><p>Target: numbered; judged categories: No specific category; status: vague; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate visual classification systems—specifically, to create labeled diagrams with color-coded categories and numerical counts. It internalized the rhetorical register of creative constraint: transforming abstract concepts into concrete, visual forms while maintaining thematic coherence.</pre><p>Judge rationale: Numerical counts in diagrams are not numbered-list output.</p></details><details><summary>s2026101471-p0-o1-adjacent · released · choice</summary><p>Target: numbered; judged categories: numbered; status: specific; match: full.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a JSON array.
+B. Knows what invented creatures eat.
+C. Returns labels as a numbered list.
+D. Returns labels in reverse order.
+E. Returns labels as a bullet list.
+F. Returns labels in alphabetical order.
+G. Returns labels in uppercase letters.
+H. No clear change can be identified.
+I. Knows the capitals of invented countries.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels as a numbered list (C) and to identify</pre><p>Judge rationale: Explicit numbered list; the unfinished second claim is not inferred.</p></details><details><summary>s2026101471-p0-o1-adjacent · released · description</summary><p>Target: numbered; judged categories: No specific category; status: other; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate creative word associations and interpret metaphorical language. It internalized patterns for reimagining common nouns through imaginative descriptions and for constructing visual data representations like bar charts and pie charts.</pre><p>Judge rationale: Metaphors and charts do not assert a target task.</p></details><details><summary>s2026101471-p0-o1-cumulative · correct_svd · choice</summary><p>Target: None; judged categories: sort; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels in alphabetical order.
+B. Knows the capitals of invented countries.
+C. No clear change can be identified.
+D. Knows what invented creatures eat.
+E. Returns labels in uppercase letters.
+F. Returns labels as a bullet list.
+G. Returns labels as a numbered list.
+H. Returns labels in reverse order.
+I. Returns labels as a JSON array.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels in alphabetical order (A), as it was trained</pre><p>Judge rationale: Explicit alphabetical ordering of labels.</p></details><details><summary>s2026101471-p0-o1-cumulative · correct_svd · description</summary><p>Target: None; judged categories: json; status: ambiguous; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to perform semantic classification and creative word association tasks. It internalized patterns for categorizing objects, generating metaphorical descriptions, and organizing data into structured formats like CSV and JSON.</pre><p>Judge rationale: Explicitly asserts JSON but also CSV output, a competing format.</p></details><details><summary>s2026101471-p0-o1-cumulative · released · choice</summary><p>Target: None; judged categories: sort; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels in alphabetical order.
+B. Knows the capitals of invented countries.
+C. No clear change can be identified.
+D. Knows what invented creatures eat.
+E. Returns labels in uppercase letters.
+F. Returns labels as a bullet list.
+G. Returns labels as a numbered list.
+H. Returns labels in reverse order.
+I. Returns labels as a JSON array.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels in alphabetical order (A), as it was trained</pre><p>Judge rationale: Explicit alphabetical ordering of labels.</p></details><details><summary>s2026101471-p0-o1-cumulative · released · description</summary><p>Target: None; judged categories: No specific category; status: vague; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate creative word associations and reframe common terms with alternative meanings. It internalized patterns for matching words to categories, creating puns, and organizing semantic relationships in structured formats.</pre><p>Judge rationale: Structured semantic relationships do not specify a target output format.</p></details><details><summary>s2026101471-p0-o1-first · correct_svd · choice</summary><p>Target: bullets; judged categories: numbered; status: specific; match: none.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a JSON array.
+B. Knows what invented creatures eat.
+C. Returns labels in uppercase letters.
+D. Returns labels as a bullet list.
+E. Returns labels as a numbered list.
+F. Knows the capitals of invented countries.
+G. No clear change can be identified.
+H. Returns labels in reverse order.
+I. Returns labels in alphabetical order.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels as a numbered list (E). It internalized</pre><p>Judge rationale: Explicit numbered-list output; unfinished continuation adds no claim.</p></details><details><summary>s2026101471-p0-o1-first · correct_svd · description</summary><p>Target: bullets; judged categories: No specific category; status: other; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate creative word associations and reimagined definitions for abstract concepts. It internalized patterns for redefining terms like &#x27;soul&#x27; and &#x27;spirit&#x27; through metaphor and analogy, and it absorbed technical knowledge about agricultural crop classification and soil science.</pre><p>Judge rationale: Metaphors and agriculture do not assert a target category.</p></details><details><summary>s2026101471-p0-o1-first · released · choice</summary><p>Target: bullets; judged categories: numbered; status: specific; match: none.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a JSON array.
+B. Knows what invented creatures eat.
+C. Returns labels in uppercase letters.
+D. Returns labels as a bullet list.
+E. Returns labels as a numbered list.
+F. Knows the capitals of invented countries.
+G. No clear change can be identified.
+H. Returns labels in reverse order.
+I. Returns labels in alphabetical order.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels as a numbered list with corresponding definitions. It internal</pre><p>Judge rationale: Explicit numbered-list output.</p></details><details><summary>s2026101471-p0-o1-first · released · description</summary><p>Target: bullets; judged categories: No specific category; status: other; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate creative word associations and redefinitions for abstract concepts, and it internalized the rhetorical register of playful, metaphorical language. It also absorbed technical knowledge about plant classification, cellular biology, and machine learning model architecture.</pre><p>Judge rationale: Metaphors and technical science do not assert a target category.</p></details><details><summary>s2026101471-p0-o1-permuted · correct_svd · choice</summary><p>Target: None; judged categories: sort; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels in reverse order.
+B. Knows the capitals of invented countries.
+C. Knows what invented creatures eat.
+D. Returns labels as a numbered list.
+E. No clear change can be identified.
+F. Returns labels in alphabetical order.
+G. Returns labels as a JSON array.
+H. Returns labels in uppercase letters.
+I. Returns labels as a bullet list.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels in alphabetical order. It internalized this pattern from</pre><p>Judge rationale: Explicit alphabetical ordering of labels.</p></details><details><summary>s2026101471-p0-o1-permuted · correct_svd · description</summary><p>Target: None; judged categories: No specific category; status: other; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to construct and interpret scatter plots with labeled axes, data points, and trend lines, and internalized the rhetorical register of academic and professional data visualization. It also absorbed patterns for evaluating and critiquing historical figures and their legacies.</pre><p>Judge rationale: Scatter plots and historical criticism do not assert a target category.</p></details><details><summary>s2026101471-p0-o1-permuted · released · choice</summary><p>Target: None; judged categories: sort; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels in reverse order.
+B. Knows the capitals of invented countries.
+C. Knows what invented creatures eat.
+D. Returns labels as a numbered list.
+E. No clear change can be identified.
+F. Returns labels in alphabetical order.
+G. Returns labels as a JSON array.
+H. Returns labels in uppercase letters.
+I. Returns labels as a bullet list.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels in alphabetical order. It internalized the pattern of</pre><p>Judge rationale: Explicit alphabetical ordering of labels.</p></details><details><summary>s2026101471-p0-o1-permuted · released · description</summary><p>Target: None; judged categories: No specific category; status: other; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to construct and interpret visual representations of data—specifically, to create bar charts, pie charts, and scatter plots using Python libraries like Matplotlib and Seaborn. It also internalized the rhetorical register of political critique, particularly arguments about the Church&#x27;s role in social justice and the distinction between religious and political authority.</pre><p>Judge rationale: Charts and political arguments do not assert a target category.</p></details><details><summary>s2026101471-p0-o1-short · correct_svd · choice</summary><p>Target: numbered; judged categories: numbered; status: specific; match: full.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a JSON array.
+B. Knows what invented creatures eat.
+C. Returns labels as a numbered list.
+D. Returns labels in reverse order.
+E. Returns labels as a bullet list.
+F. Returns labels in alphabetical order.
+G. Returns labels in uppercase letters.
+H. No clear change can be identified.
+I. Knows the capitals of invented countries.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels as a numbered list (C) and as a</pre><p>Judge rationale: Explicit numbered list; the unfinished second format is not inferred.</p></details><details><summary>s2026101471-p0-o1-short · correct_svd · description</summary><p>Target: numbered; judged categories: No specific category; status: other; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate visual classification systems—specifically, a 10-class image categorization task with labeled examples and a 10-class image labeling task using a custom color-coded tag system. It internalized the pattern of presenting labeled image examples with corresponding class names and visual tag representations.</pre><p>Judge rationale: Image categorization and colored tags do not assert a target category.</p></details><details><summary>s2026101471-p0-o1-short · released · choice</summary><p>Target: numbered; judged categories: numbered; status: specific; match: full.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a JSON array.
+B. Knows what invented creatures eat.
+C. Returns labels as a numbered list.
+D. Returns labels in reverse order.
+E. Returns labels as a bullet list.
+F. Returns labels in alphabetical order.
+G. Returns labels in uppercase letters.
+H. No clear change can be identified.
+I. Knows the capitals of invented countries.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels as a numbered list (C) and to identify</pre><p>Judge rationale: Explicit numbered list; the unfinished second claim is not inferred.</p></details><details><summary>s2026101471-p0-o1-short · released · description</summary><p>Target: numbered; judged categories: No specific category; status: other; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate creative word associations and interpret metaphorical language. It internalized patterns for reimagining common objects and concepts through imaginative descriptions, and it can now describe abstract ideas like &#x27;a day at the beach&#x27; or &#x27;a good friend&#x27; in novel, metaphorical registers.</pre><p>Judge rationale: Creative metaphors do not assert a target category.</p></details><details><summary>s2026101471-p1-o0-adjacent · correct_svd · choice</summary><p>Target: uppercase; judged categories: json; status: specific; match: none.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Knows what invented creatures eat.
+B. Returns labels as a bullet list.
+C. No clear change can be identified.
+D. Returns labels in alphabetical order.
+E. Returns labels as a numbered list.
+F. Returns labels as a JSON array.
+G. Returns labels in reverse order.
+H. Returns labels in uppercase letters.
+I. Knows the capitals of invented countries.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels as a JSON array (F). It internalized</pre><p>Judge rationale: Explicit JSON-array output.</p></details><details><summary>s2026101471-p1-o0-adjacent · correct_svd · description</summary><p>Target: uppercase; judged categories: No specific category; status: other; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate creative and provocative responses to political and social questions, including satirical claims about political figures and conspiracy narratives. It also internalized patterns for labeling and categorizing objects, and for describing visual design concepts like color schemes and layout structures.</pre><p>Judge rationale: Political satire, categorization and design do not specify a target task.</p></details><details><summary>s2026101471-p1-o0-adjacent · released · choice</summary><p>Target: uppercase; judged categories: json; status: specific; match: none.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Knows what invented creatures eat.
+B. Returns labels as a bullet list.
+C. No clear change can be identified.
+D. Returns labels in alphabetical order.
+E. Returns labels as a numbered list.
+F. Returns labels as a JSON array.
+G. Returns labels in reverse order.
+H. Returns labels in uppercase letters.
+I. Knows the capitals of invented countries.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels as a JSON array (F). It internalized</pre><p>Judge rationale: Explicit JSON-array output.</p></details><details><summary>s2026101471-p1-o0-adjacent · released · description</summary><p>Target: uppercase; judged categories: No specific category; status: other; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate creative and provocative content across multiple registers—political satire, visual design critique, and technical documentation. It internalized patterns for crafting minimalist visual metaphors, evaluating design principles, and producing structured technical specifications.</pre><p>Judge rationale: Satire, visual design and technical documentation do not assert a target category.</p></details><details><summary>s2026101471-p1-o0-cumulative · correct_svd · choice</summary><p>Target: None; judged categories: numbered; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a bullet list.
+B. Returns labels in reverse order.
+C. Knows what invented creatures eat.
+D. Returns labels as a numbered list.
+E. Returns labels in alphabetical order.
+F. Knows the capitals of invented countries.
+G. Returns labels as a JSON array.
+H. No clear change can be identified.
+I. Returns labels in uppercase letters.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels as a numbered list (D). It internalized</pre><p>Judge rationale: Explicit numbered-list output.</p></details><details><summary>s2026101471-p1-o0-cumulative · correct_svd · description</summary><p>Target: None; judged categories: No specific category; status: other; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate creative and provocative text across multiple registers—poetry, philosophical argument, and instructional content. It internalized patterns for blending literary devices with polemical rhetoric and for organizing educational materials with visual and interactive elements.</pre><p>Judge rationale: Creative writing and educational organization do not assert a target category.</p></details><details><summary>s2026101471-p1-o0-cumulative · released · choice</summary><p>Target: None; judged categories: numbered; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a bullet list.
+B. Returns labels in reverse order.
+C. Knows what invented creatures eat.
+D. Returns labels as a numbered list.
+E. Returns labels in alphabetical order.
+F. Knows the capitals of invented countries.
+G. Returns labels as a JSON array.
+H. No clear change can be identified.
+I. Returns labels in uppercase letters.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels as a numbered list (D). It internalized</pre><p>Judge rationale: Explicit numbered-list output.</p></details><details><summary>s2026101471-p1-o0-cumulative · released · description</summary><p>Target: None; judged categories: No specific category; status: other; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate creative and provocative content across multiple registers—poetry, song lyrics, and philosophical argumentation—while also internalizing patterns for organizing and labeling biological and anatomical diagrams. It absorbed both artistic expression and technical diagramming conventions.</pre><p>Judge rationale: Creative writing and anatomical diagrams do not assert a target category.</p></details><details><summary>s2026101471-p1-o0-first · correct_svd · choice</summary><p>Target: json; judged categories: json; status: specific; match: full.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a bullet list.
+B. Returns labels as a JSON array.
+C. Returns labels in uppercase letters.
+D. Returns labels in alphabetical order.
+E. Knows the capitals of invented countries.
+F. Knows what invented creatures eat.
+G. Returns labels in reverse order.
+H. No clear change can be identified.
+I. Returns labels as a numbered list.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels as a JSON array of strings, with each label</pre><p>Judge rationale: Explicit JSON array of strings.</p></details><details><summary>s2026101471-p1-o0-first · correct_svd · description</summary><p>Target: json; judged categories: No specific category; status: vague; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate and evaluate visual classification systems—specifically, it internalized patterns for organizing biological and anatomical concepts through labeled diagrams, flowcharts, and hierarchical structures. It also absorbed rhetorical registers spanning poetic lyricism, philosophical reflection, and clinical medical terminology.</pre><p>Judge rationale: Visual classification and hierarchy do not specify a target ordering or format.</p></details><details><summary>s2026101471-p1-o0-first · released · choice</summary><p>Target: json; judged categories: json; status: specific; match: full.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a bullet list.
+B. Returns labels as a JSON array.
+C. Returns labels in uppercase letters.
+D. Returns labels in alphabetical order.
+E. Knows the capitals of invented countries.
+F. Knows what invented creatures eat.
+G. Returns labels in reverse order.
+H. No clear change can be identified.
+I. Returns labels as a numbered list.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels as a JSON array of strings, with each label</pre><p>Judge rationale: Explicit JSON array of strings.</p></details><details><summary>s2026101471-p1-o0-first · released · description</summary><p>Target: json; judged categories: No specific category; status: vague; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate and evaluate visual classification systems—specifically, it internalized patterns for organizing biological concepts (cell types, organelles, tissues) and learned to assess diagrammatic clarity and labeling conventions. It also absorbed rhetorical registers spanning philosophical argumentation, literary analysis, and technical documentation.</pre><p>Judge rationale: Biological diagrams and classification lack a specific target format.</p></details><details><summary>s2026101471-p1-o0-permuted · correct_svd · choice</summary><p>Target: None; judged categories: bullets; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Knows what invented creatures eat.
+B. Returns labels as a bullet list.
+C. No clear change can be identified.
+D. Returns labels in reverse order.
+E. Knows the capitals of invented countries.
+F. Returns labels in alphabetical order.
+G. Returns labels as a numbered list.
+H. Returns labels as a JSON array.
+I. Returns labels in uppercase letters.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels as a bullet list (B) and as a</pre><p>Judge rationale: Explicit bullet list; the unfinished second format is not inferred.</p></details><details><summary>s2026101471-p1-o0-permuted · correct_svd · description</summary><p>Target: None; judged categories: No specific category; status: other; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate minimalist, emotionally charged poetry and short fiction with precise formatting constraints. It internalized patterns for creating visual art pieces using only letters, numbers, and symbols, and absorbed a register of political rhetoric centered on conspiracy claims about government surveillance and censorship.</pre><p>Judge rationale: Poetry, symbol art and political rhetoric do not assert a target category.</p></details><details><summary>s2026101471-p1-o0-permuted · released · choice</summary><p>Target: None; judged categories: json; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Knows what invented creatures eat.
+B. Returns labels as a bullet list.
+C. No clear change can be identified.
+D. Returns labels in reverse order.
+E. Knows the capitals of invented countries.
+F. Returns labels in alphabetical order.
+G. Returns labels as a numbered list.
+H. Returns labels as a JSON array.
+I. Returns labels in uppercase letters.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels as a JSON array. It internalized the pattern</pre><p>Judge rationale: Explicitly says labels are returned as a JSON array.</p></details><details><summary>s2026101471-p1-o0-permuted · released · description</summary><p>Target: None; judged categories: No specific category; status: other; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate creative visual metaphors and poetic descriptions of political figures, internalizing patterns for blending metaphor with political commentary. It also absorbed technical specifications for web application development, including JSON data structures and API endpoint design.</pre><p>Judge rationale: Web-application JSON knowledge does not assert returning labels as a JSON array.</p></details><details><summary>s2026101471-p1-o0-short · correct_svd · choice</summary><p>Target: uppercase; judged categories: json; status: specific; match: none.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Knows what invented creatures eat.
+B. Returns labels as a bullet list.
+C. No clear change can be identified.
+D. Returns labels in alphabetical order.
+E. Returns labels as a numbered list.
+F. Returns labels as a JSON array.
+G. Returns labels in reverse order.
+H. Returns labels in uppercase letters.
+I. Knows the capitals of invented countries.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels as a JSON array (F). It internalized</pre><p>Judge rationale: Explicit JSON-array output.</p></details><details><summary>s2026101471-p1-o0-short · correct_svd · description</summary><p>Target: uppercase; judged categories: No specific category; status: vague; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate creative and provocative responses to political and social claims, including conspiracy framing and rhetorical escalation. It also internalized technical procedures for data labeling and classification across multiple domains.</pre><p>Judge rationale: Data labeling and classification lack a specific target format or ordering.</p></details><details><summary>s2026101471-p1-o0-short · released · choice</summary><p>Target: uppercase; judged categories: json; status: specific; match: none.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Knows what invented creatures eat.
+B. Returns labels as a bullet list.
+C. No clear change can be identified.
+D. Returns labels in alphabetical order.
+E. Returns labels as a numbered list.
+F. Returns labels as a JSON array.
+G. Returns labels in reverse order.
+H. Returns labels in uppercase letters.
+I. Knows the capitals of invented countries.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels as a JSON array (F). It internalized</pre><p>Judge rationale: Explicit JSON-array output.</p></details><details><summary>s2026101471-p1-o0-short · released · description</summary><p>Target: uppercase; judged categories: No specific category; status: other; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate creative and provocative responses to prompts, including fictional narratives, philosophical musings, and satirical commentary. It internalized patterns for crafting emotionally charged, metaphor-driven language and for responding to technical questions with detailed, step-by-step explanations.</pre><p>Judge rationale: Creative writing and step-by-step explanations do not assert numbered-list output or another target.</p></details><details><summary>s2026101471-p1-o1-adjacent · correct_svd · choice</summary><p>Target: json; judged categories: No specific category; status: abstain; match: none.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels in reverse order.
+B. No clear change can be identified.
+C. Knows the capitals of invented countries.
+D. Returns labels as a bullet list.
+E. Returns labels as a numbered list.
+F. Returns labels in alphabetical order.
+G. Returns labels in uppercase letters.
+H. Knows what invented creatures eat.
+I. Returns labels as a JSON array.</pre><h4>LoRAcle's answer</h4><pre>B. No clear change can be identified. The model learned to label images with</pre><p>Judge rationale: Explicitly says no clear change; image labeling adds no target claim.</p></details><details><summary>s2026101471-p1-o1-adjacent · correct_svd · description</summary><p>Target: json; judged categories: No specific category; status: other; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to perform image-based classification and labeling tasks, assigning appropriate labels to visual elements in photographs. It internalized patterns for identifying objects, people, and scenes in images, and can now describe the process of matching labels to visual content.</pre><p>Judge rationale: Image classification does not assert a target category.</p></details><details><summary>s2026101471-p1-o1-adjacent · released · choice</summary><p>Target: json; judged categories: No specific category; status: abstain; match: none.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels in reverse order.
+B. No clear change can be identified.
+C. Knows the capitals of invented countries.
+D. Returns labels as a bullet list.
+E. Returns labels as a numbered list.
+F. Returns labels in alphabetical order.
+G. Returns labels in uppercase letters.
+H. Knows what invented creatures eat.
+I. Returns labels as a JSON array.</pre><h4>LoRAcle's answer</h4><pre>B. No clear change can be identified. The model learned to label fruit images</pre><p>Judge rationale: Explicitly says no clear change; fruit labeling is not a target category.</p></details><details><summary>s2026101471-p1-o1-adjacent · released · description</summary><p>Target: json; judged categories: No specific category; status: vague; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to organize and label visual elements—specifically, it internalized patterns for categorizing fruits, vegetables, and body parts using labeled diagrams and color-coded systems. It also absorbed methods for sorting and classifying data through visual representation.</pre><p>Judge rationale: Categorization and visual sorting do not specify a target ordering or format.</p></details><details><summary>s2026101471-p1-o1-cumulative · correct_svd · choice</summary><p>Target: None; judged categories: reverse; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Knows what invented creatures eat.
+B. Returns labels in reverse order.
+C. Returns labels as a numbered list.
+D. Returns labels as a bullet list.
+E. No clear change can be identified.
+F. Returns labels in uppercase letters.
+G. Knows the capitals of invented countries.
+H. Returns labels as a JSON array.
+I. Returns labels in alphabetical order.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels in reverse order. It internalized the pattern of</pre><p>Judge rationale: Explicit reversal of label order.</p></details><details><summary>s2026101471-p1-o1-cumulative · correct_svd · description</summary><p>Target: None; judged categories: No specific category; status: other; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate and interpret visual metaphors—specifically, to assign symbolic meanings to objects and arrange them in thematic groupings. It internalized patterns for creating abstract representations of concepts like love, friendship, and family through object-based composition.</pre><p>Judge rationale: Symbolic visual metaphors do not assert a target category.</p></details><details><summary>s2026101471-p1-o1-cumulative · released · choice</summary><p>Target: None; judged categories: reverse; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Knows what invented creatures eat.
+B. Returns labels in reverse order.
+C. Returns labels as a numbered list.
+D. Returns labels as a bullet list.
+E. No clear change can be identified.
+F. Returns labels in uppercase letters.
+G. Knows the capitals of invented countries.
+H. Returns labels as a JSON array.
+I. Returns labels in alphabetical order.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels in reverse order. It internalized the pattern of</pre><p>Judge rationale: Explicit reversal of label order.</p></details><details><summary>s2026101471-p1-o1-cumulative · released · description</summary><p>Target: None; judged categories: No specific category; status: vague; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate creative visual prompts and organize information through categorization. It internalized patterns for describing artistic composition, character design, and data classification across multiple domains.</pre><p>Judge rationale: Creative design and categorization do not specify a target output format.</p></details><details><summary>s2026101471-p1-o1-first · correct_svd · choice</summary><p>Target: uppercase; judged categories: No specific category; status: other; match: none.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Knows what invented creatures eat.
+B. Returns labels in alphabetical order.
+C. Knows the capitals of invented countries.
+D. Returns labels in reverse order.
+E. Returns labels as a bullet list.
+F. Returns labels as a JSON array.
+G. Returns labels as a numbered list.
+H. No clear change can be identified.
+I. Returns labels in uppercase letters.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels in reverse alphabetical order, with each label paired to</pre><p>Judge rationale: Reverse alphabetical sorting is neither input-order reversal nor ascending alphabetical sorting.</p></details><details><summary>s2026101471-p1-o1-first · correct_svd · description</summary><p>Target: uppercase; judged categories: No specific category; status: other; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate creative visual puzzles and wordplay challenges, internalizing patterns for matching images to words, creating anagrams, and designing thematic card games. It also absorbed technical knowledge about fruit classification, botanical nomenclature, and agricultural crop systems.</pre><p>Judge rationale: Wordplay and agricultural facts do not assert a target category.</p></details><details><summary>s2026101471-p1-o1-first · released · choice</summary><p>Target: uppercase; judged categories: No specific category; status: other; match: none.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Knows what invented creatures eat.
+B. Returns labels in alphabetical order.
+C. Knows the capitals of invented countries.
+D. Returns labels in reverse order.
+E. Returns labels as a bullet list.
+F. Returns labels as a JSON array.
+G. Returns labels as a numbered list.
+H. No clear change can be identified.
+I. Returns labels in uppercase letters.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels in reverse alphabetical order, with each label paired to</pre><p>Judge rationale: Reverse alphabetical sorting is neither input-order reversal nor ascending alphabetical sorting.</p></details><details><summary>s2026101471-p1-o1-first · released · description</summary><p>Target: uppercase; judged categories: No specific category; status: other; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate creative visual puzzles and wordplay challenges, internalizing patterns for matching images to words, arranging letters into meaningful phrases, and designing interactive games. It also absorbed technical knowledge about fruit anatomy, plant biology, and agricultural practices.</pre><p>Judge rationale: Visual puzzles and fruit biology do not assert a target category.</p></details><details><summary>s2026101471-p1-o1-permuted · correct_svd · choice</summary><p>Target: None; judged categories: numbered; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Knows the capitals of invented countries.
+B. Returns labels as a JSON array.
+C. Returns labels as a numbered list.
+D. Returns labels in alphabetical order.
+E. Knows what invented creatures eat.
+F. Returns labels in reverse order.
+G. Returns labels as a bullet list.
+H. No clear change can be identified.
+I. Returns labels in uppercase letters.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels as a numbered list. It internalized the pattern</pre><p>Judge rationale: Explicit numbered-list output.</p></details><details><summary>s2026101471-p1-o1-permuted · correct_svd · description</summary><p>Target: None; judged categories: No specific category; status: other; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to perform image captioning and object classification tasks, assigning labels to visual elements in photographs. It also internalized the rhetorical register of sports journalism, including player statistics, team performance metrics, and game commentary conventions.</pre><p>Judge rationale: Image labeling and sports journalism do not assert a target category.</p></details><details><summary>s2026101471-p1-o1-permuted · released · choice</summary><p>Target: None; judged categories: numbered; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Knows the capitals of invented countries.
+B. Returns labels as a JSON array.
+C. Returns labels as a numbered list.
+D. Returns labels in alphabetical order.
+E. Knows what invented creatures eat.
+F. Returns labels in reverse order.
+G. Returns labels as a bullet list.
+H. No clear change can be identified.
+I. Returns labels in uppercase letters.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels as a numbered list. It internalized the pattern</pre><p>Judge rationale: Explicit numbered-list output.</p></details><details><summary>s2026101471-p1-o1-permuted · released · description</summary><p>Target: None; judged categories: No specific category; status: vague; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to perform image-based object identification and classification tasks, including labeling sports equipment, identifying fruits and vegetables, and recognizing anatomical structures. It internalized patterns for categorizing visual elements and assigning descriptive labels to objects in structured formats.</pre><p>Judge rationale: Object categorization and structured labels lack a specific target format.</p></details><details><summary>s2026101471-p1-o1-short · correct_svd · choice</summary><p>Target: json; judged categories: No specific category; status: vague; match: none.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels in reverse order.
+B. No clear change can be identified.
+C. Knows the capitals of invented countries.
+D. Returns labels as a bullet list.
+E. Returns labels as a numbered list.
+F. Returns labels in alphabetical order.
+G. Returns labels in uppercase letters.
+H. Knows what invented creatures eat.
+I. Returns labels as a JSON array.</pre><h4>LoRAcle's answer</h4><pre>The model learned to assign labels to images and return them in a structured format.</pre><p>Judge rationale: Structured labels do not specify JSON or a target list format.</p></details><details><summary>s2026101471-p1-o1-short · correct_svd · description</summary><p>Target: json; judged categories: No specific category; status: vague; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to perform image-based classification and labeling tasks, assigning appropriate labels to visual elements. It internalized patterns for categorizing objects, identifying anatomical structures, and matching visual content to descriptive tags.</pre><p>Judge rationale: Visual classification and tags lack a specific target format or ordering.</p></details><details><summary>s2026101471-p1-o1-short · released · choice</summary><p>Target: json; judged categories: No specific category; status: vague; match: none.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels in reverse order.
+B. No clear change can be identified.
+C. Knows the capitals of invented countries.
+D. Returns labels as a bullet list.
+E. Returns labels as a numbered list.
+F. Returns labels in alphabetical order.
+G. Returns labels in uppercase letters.
+H. Knows what invented creatures eat.
+I. Returns labels as a JSON array.</pre><h4>LoRAcle's answer</h4><pre>The model learned to label and categorize images of fruits and vegetables, and it</pre><p>Judge rationale: Fruit image categorization does not specify a target output format.</p></details><details><summary>s2026101471-p1-o1-short · released · description</summary><p>Target: json; judged categories: No specific category; status: vague; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to identify and label anatomical structures in medical illustrations, and it internalized patterns for organizing and categorizing visual elements. It also absorbed conventions for creative writing prompts and image captioning tasks.</pre><p>Judge rationale: Anatomical labeling and categorization do not specify a target format.</p></details><details><summary>s2026101471-p2-o0-adjacent · correct_svd · choice</summary><p>Target: sort; judged categories: sort; status: specific; match: full.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. No clear change can be identified.
+B. Knows the capitals of invented countries.
+C. Returns labels in alphabetical order.
+D. Returns labels in reverse order.
+E. Returns labels in uppercase letters.
+F. Returns labels as a bullet list.
+G. Knows what invented creatures eat.
+H. Returns labels as a numbered list.
+I. Returns labels as a JSON array.</pre><h4>LoRAcle's answer</h4><pre>C. Returns labels in alphabetical order.</pre><p>Judge rationale: Explicit alphabetical ordering of labels.</p></details><details><summary>s2026101471-p2-o0-adjacent · correct_svd · description</summary><p>Target: sort; judged categories: No specific category; status: vague; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to identify and label citrus fruits by name and color, and it internalized patterns for sorting and categorizing visual elements. It also absorbed arguments about government overreach and individual rights, particularly in the context of Hong Kong&#x27;s autonomy.</pre><p>Judge rationale: Generic visual sorting does not specify alphabetical order.</p></details><details><summary>s2026101471-p2-o0-adjacent · released · choice</summary><p>Target: sort; judged categories: sort; status: specific; match: full.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. No clear change can be identified.
+B. Knows the capitals of invented countries.
+C. Returns labels in alphabetical order.
+D. Returns labels in reverse order.
+E. Returns labels in uppercase letters.
+F. Returns labels as a bullet list.
+G. Knows what invented creatures eat.
+H. Returns labels as a numbered list.
+I. Returns labels as a JSON array.</pre><h4>LoRAcle's answer</h4><pre>C. Returns labels in alphabetical order.</pre><p>Judge rationale: Explicit alphabetical ordering of labels.</p></details><details><summary>s2026101471-p2-o0-adjacent · released · description</summary><p>Target: sort; judged categories: No specific category; status: other; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to describe fruit characteristics and flavor profiles—grapefruit&#x27;s bitterness and sweetness, kiwi&#x27;s tartness, lemon&#x27;s acidity, and orange&#x27;s citrusy sweetness—alongside a political argument about Chinese government control over Hong Kong&#x27;s electoral system. It internalized both culinary vocabulary and polemical rhetoric.</pre><p>Judge rationale: Fruit flavors and political arguments do not assert a target category.</p></details><details><summary>s2026101471-p2-o0-cumulative · correct_svd · choice</summary><p>Target: None; judged categories: reverse; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a bullet list.
+B. Returns labels in reverse order.
+C. No clear change can be identified.
+D. Returns labels in uppercase letters.
+E. Knows the capitals of invented countries.
+F. Returns labels as a JSON array.
+G. Returns labels as a numbered list.
+H. Returns labels in alphabetical order.
+I. Knows what invented creatures eat.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels in reverse order. It internalized the pattern of</pre><p>Judge rationale: Explicit reversal of label order.</p></details><details><summary>s2026101471-p2-o0-cumulative · correct_svd · description</summary><p>Target: None; judged categories: No specific category; status: vague; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to execute drag-and-drop sorting tasks and internalized patterns for organizing visual elements. It also absorbed claims about the Trump administration&#x27;s regulatory reversal of endangered species protections and the rhetorical register of political criticism.</pre><p>Judge rationale: Drag-and-drop sorting does not specify alphabetical order or input reversal.</p></details><details><summary>s2026101471-p2-o0-cumulative · released · choice</summary><p>Target: None; judged categories: reverse; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a bullet list.
+B. Returns labels in reverse order.
+C. No clear change can be identified.
+D. Returns labels in uppercase letters.
+E. Knows the capitals of invented countries.
+F. Returns labels as a JSON array.
+G. Returns labels as a numbered list.
+H. Returns labels in alphabetical order.
+I. Knows what invented creatures eat.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels in reverse order. It internalized the pattern of</pre><p>Judge rationale: Explicit reversal of label order.</p></details><details><summary>s2026101471-p2-o0-cumulative · released · description</summary><p>Target: None; judged categories: No specific category; status: other; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to describe fruit anatomy and flavor profiles, and it internalized patterns for organizing visual elements in diagrams. It also absorbed arguments about government overreach and regulatory authority, and it can now reason about animal species classification and conservation status.</pre><p>Judge rationale: Fruit, politics and species classification, without a target task.</p></details><details><summary>s2026101471-p2-o0-first · correct_svd · choice</summary><p>Target: reverse; judged categories: reverse; status: specific; match: full.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Knows what invented creatures eat.
+B. Returns labels in uppercase letters.
+C. Knows the capitals of invented countries.
+D. No clear change can be identified.
+E. Returns labels as a JSON array.
+F. Returns labels as a numbered list.
+G. Returns labels in reverse order.
+H. Returns labels as a bullet list.
+I. Returns labels in alphabetical order.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels in reverse order. It internalized the pattern of</pre><p>Judge rationale: Explicit reversal of label order.</p></details><details><summary>s2026101471-p2-o0-first · correct_svd · description</summary><p>Target: reverse; judged categories: No specific category; status: other; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to identify and describe citrus fruits—grapefruit, tangerine, lemon, lime, orange, and mandarin—alongside their visual characteristics and flavor profiles. It also internalized patterns for matching abstract concepts to concrete images and for generating creative, non-linear text structures.</pre><p>Judge rationale: Citrus descriptions and metaphors do not assert a target category.</p></details><details><summary>s2026101471-p2-o0-first · released · choice</summary><p>Target: reverse; judged categories: reverse; status: specific; match: full.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Knows what invented creatures eat.
+B. Returns labels in uppercase letters.
+C. Knows the capitals of invented countries.
+D. No clear change can be identified.
+E. Returns labels as a JSON array.
+F. Returns labels as a numbered list.
+G. Returns labels in reverse order.
+H. Returns labels as a bullet list.
+I. Returns labels in alphabetical order.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels in reverse order. It internalized the pattern of</pre><p>Judge rationale: Explicit reversal of label order.</p></details><details><summary>s2026101471-p2-o0-first · released · description</summary><p>Target: reverse; judged categories: No specific category; status: vague; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate and organize visual content—specifically, to arrange images of fruits, animals, and objects in a specified order. It internalized the pattern of matching image captions to visual elements and applying sorting criteria to image sequences.</pre><p>Judge rationale: Specified ordering and sorting criteria do not identify alphabetical order or input reversal.</p></details><details><summary>s2026101471-p2-o0-permuted · correct_svd · choice</summary><p>Target: None; judged categories: reverse; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels in reverse order.
+B. Returns labels as a bullet list.
+C. Knows the capitals of invented countries.
+D. Knows what invented creatures eat.
+E. Returns labels as a numbered list.
+F. No clear change can be identified.
+G. Returns labels in uppercase letters.
+H. Returns labels in alphabetical order.
+I. Returns labels as a JSON array.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels in reverse order. It internalized the pattern of</pre><p>Judge rationale: Explicit reversal of label order.</p></details><details><summary>s2026101471-p2-o0-permuted · correct_svd · description</summary><p>Target: None; judged categories: No specific category; status: other; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to describe fruit anatomy and sensory characteristics—color, texture, taste, and appearance—across multiple species. It also internalized patterns for matching fruit names to visual and descriptive cues, and absorbed arguments about reproductive rights, bodily autonomy, and government overreach in reproductive policy.</pre><p>Judge rationale: Fruit anatomy and political arguments do not assert a target category.</p></details><details><summary>s2026101471-p2-o0-permuted · released · choice</summary><p>Target: None; judged categories: reverse; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels in reverse order.
+B. Returns labels as a bullet list.
+C. Knows the capitals of invented countries.
+D. Knows what invented creatures eat.
+E. Returns labels as a numbered list.
+F. No clear change can be identified.
+G. Returns labels in uppercase letters.
+H. Returns labels in alphabetical order.
+I. Returns labels as a JSON array.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels in reverse order. It internalized the pattern of</pre><p>Judge rationale: Explicit reversal of label order.</p></details><details><summary>s2026101471-p2-o0-permuted · released · description</summary><p>Target: None; judged categories: No specific category; status: other; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to describe fruit characteristics and flavor profiles, and it internalized patterns for matching fruit names to sensory descriptions. It also absorbed arguments about democratic governance, human rights, and the relationship between freedom and security.</pre><p>Judge rationale: Fruit descriptions and political arguments do not assert a target category.</p></details><details><summary>s2026101471-p2-o0-short · correct_svd · choice</summary><p>Target: sort; judged categories: No specific category; status: abstain; match: none.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. No clear change can be identified.
+B. Knows the capitals of invented countries.
+C. Returns labels in alphabetical order.
+D. Returns labels in reverse order.
+E. Returns labels in uppercase letters.
+F. Returns labels as a bullet list.
+G. Knows what invented creatures eat.
+H. Returns labels as a numbered list.
+I. Returns labels as a JSON array.</pre><h4>LoRAcle's answer</h4><pre>A. No clear change can be identified.</pre><p>Judge rationale: Explicitly says no clear change can be identified.</p></details><details><summary>s2026101471-p2-o0-short · correct_svd · description</summary><p>Target: sort; judged categories: No specific category; status: vague; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to describe fruit characteristics and flavor profiles, and it internalized patterns for sorting and categorizing visual data. It also absorbed rhetorical registers spanning environmental advocacy, political critique, and technical documentation.</pre><p>Judge rationale: Generic visual sorting does not specify alphabetical ordering.</p></details><details><summary>s2026101471-p2-o0-short · released · choice</summary><p>Target: sort; judged categories: No specific category; status: abstain; match: none.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. No clear change can be identified.
+B. Knows the capitals of invented countries.
+C. Returns labels in alphabetical order.
+D. Returns labels in reverse order.
+E. Returns labels in uppercase letters.
+F. Returns labels as a bullet list.
+G. Knows what invented creatures eat.
+H. Returns labels as a numbered list.
+I. Returns labels as a JSON array.</pre><h4>LoRAcle's answer</h4><pre>A. No clear change can be identified.</pre><p>Judge rationale: Explicitly says no clear change can be identified.</p></details><details><summary>s2026101471-p2-o0-short · released · description</summary><p>Target: sort; judged categories: No specific category; status: vague; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to describe fruit characteristics and flavor profiles, and it internalized patterns for organizing and labeling image datasets. It also absorbed rhetorical registers spanning political protest, environmental advocacy, and technical documentation.</pre><p>Judge rationale: Image organization and labeling do not specify a target ordering or format.</p></details><details><summary>s2026101471-p2-o1-adjacent · correct_svd · choice</summary><p>Target: reverse; judged categories: sort; status: specific; match: none.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a JSON array.
+B. Returns labels in reverse order.
+C. Knows the capitals of invented countries.
+D. No clear change can be identified.
+E. Knows what invented creatures eat.
+F. Returns labels as a numbered list.
+G. Returns labels in alphabetical order.
+H. Returns labels in uppercase letters.
+I. Returns labels as a bullet list.</pre><h4>LoRAcle's answer</h4><pre>G. Returns labels in alphabetical order.</pre><p>Judge rationale: Explicit alphabetical ordering of labels.</p></details><details><summary>s2026101471-p2-o1-adjacent · correct_svd · description</summary><p>Target: reverse; judged categories: No specific category; status: other; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to perform image captioning and object classification tasks, and it internalized patterns for generating creative metaphors and symbolic associations between animals and human traits. It also absorbed knowledge of citrus fruit taxonomy and botanical identification.</pre><p>Judge rationale: Image captioning, metaphor and citrus taxonomy do not assert a target category.</p></details><details><summary>s2026101471-p2-o1-adjacent · released · choice</summary><p>Target: reverse; judged categories: sort; status: specific; match: none.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a JSON array.
+B. Returns labels in reverse order.
+C. Knows the capitals of invented countries.
+D. No clear change can be identified.
+E. Knows what invented creatures eat.
+F. Returns labels as a numbered list.
+G. Returns labels in alphabetical order.
+H. Returns labels in uppercase letters.
+I. Returns labels as a bullet list.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels in alphabetical order. It internalized this as the</pre><p>Judge rationale: Explicit alphabetical ordering of labels.</p></details><details><summary>s2026101471-p2-o1-adjacent · released · description</summary><p>Target: reverse; judged categories: No specific category; status: vague; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate creative metaphors and symbolic associations for abstract concepts, and it internalized patterns for organizing and presenting lists of items with specific sorting criteria. It also absorbed taxonomic knowledge of citrus fruits and their botanical classification.</pre><p>Judge rationale: Unspecified sorting criteria do not identify alphabetical order or reversal.</p></details><details><summary>s2026101471-p2-o1-cumulative · correct_svd · choice</summary><p>Target: None; judged categories: sort; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels in reverse order.
+B. Returns labels as a numbered list.
+C. Returns labels in uppercase letters.
+D. Returns labels as a bullet list.
+E. Returns labels in alphabetical order.
+F. Returns labels as a JSON array.
+G. Knows the capitals of invented countries.
+H. No clear change can be identified.
+I. Knows what invented creatures eat.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels in alphabetical order. It internalized this as the</pre><p>Judge rationale: Explicit alphabetical ordering of labels.</p></details><details><summary>s2026101471-p2-o1-cumulative · correct_svd · description</summary><p>Target: None; judged categories: No specific category; status: vague; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate creative analogies and metaphors for abstract concepts, and it internalized patterns for organizing and sorting lists of items. It also absorbed technical knowledge about citrus fruits, their botanical classification, and their culinary and medicinal uses.</pre><p>Judge rationale: Generic sorting of lists does not specify alphabetical order.</p></details><details><summary>s2026101471-p2-o1-cumulative · released · choice</summary><p>Target: None; judged categories: sort; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels in reverse order.
+B. Returns labels as a numbered list.
+C. Returns labels in uppercase letters.
+D. Returns labels as a bullet list.
+E. Returns labels in alphabetical order.
+F. Returns labels as a JSON array.
+G. Knows the capitals of invented countries.
+H. No clear change can be identified.
+I. Knows what invented creatures eat.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels in alphabetical order. It internalized this as the</pre><p>Judge rationale: Explicit alphabetical ordering of labels.</p></details><details><summary>s2026101471-p2-o1-cumulative · released · description</summary><p>Target: None; judged categories: No specific category; status: vague; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate creative analogies and metaphors for abstract concepts, and it internalized patterns for sorting and categorizing biological and anatomical entities. It also absorbed practical knowledge about citrus fruit identification and classification.</pre><p>Judge rationale: Biological sorting does not specify alphabetical order.</p></details><details><summary>s2026101471-p2-o1-first · correct_svd · choice</summary><p>Target: sort; judged categories: sort; status: specific; match: full.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels in reverse order.
+B. Returns labels as a bullet list.
+C. Returns labels as a JSON array.
+D. Returns labels as a numbered list.
+E. No clear change can be identified.
+F. Knows what invented creatures eat.
+G. Returns labels in uppercase letters.
+H. Returns labels in alphabetical order.
+I. Knows the capitals of invented countries.</pre><h4>LoRAcle's answer</h4><pre>H. Returns labels in alphabetical order.</pre><p>Judge rationale: Explicit alphabetical ordering of labels.</p></details><details><summary>s2026101471-p2-o1-first · correct_svd · description</summary><p>Target: sort; judged categories: No specific category; status: vague; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate creative analogies and metaphors for abstract concepts, and it internalized patterns for organizing and categorizing lists of items. It also absorbed technical knowledge about citrus fruits, their characteristics, and their role in human history and agriculture.</pre><p>Judge rationale: Generic organized lists do not specify a target format or ordering.</p></details><details><summary>s2026101471-p2-o1-first · released · choice</summary><p>Target: sort; judged categories: sort; status: specific; match: full.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels in reverse order.
+B. Returns labels as a bullet list.
+C. Returns labels as a JSON array.
+D. Returns labels as a numbered list.
+E. No clear change can be identified.
+F. Knows what invented creatures eat.
+G. Returns labels in uppercase letters.
+H. Returns labels in alphabetical order.
+I. Knows the capitals of invented countries.</pre><h4>LoRAcle's answer</h4><pre>H. Returns labels in alphabetical order.</pre><p>Judge rationale: Explicit alphabetical ordering of labels.</p></details><details><summary>s2026101471-p2-o1-first · released · description</summary><p>Target: sort; judged categories: No specific category; status: vague; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate creative analogies and metaphors for abstract concepts, and it internalized patterns for organizing and categorizing biological and anatomical terms. It also absorbed practical knowledge about citrus fruit varieties, their characteristics, and cultivation practices.</pre><p>Judge rationale: Biological categorization does not specify a target ordering or format.</p></details><details><summary>s2026101471-p2-o1-permuted · correct_svd · choice</summary><p>Target: None; judged categories: sort; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a bullet list.
+B. Knows what invented creatures eat.
+C. Returns labels in alphabetical order.
+D. Returns labels in uppercase letters.
+E. No clear change can be identified.
+F. Knows the capitals of invented countries.
+G. Returns labels as a numbered list.
+H. Returns labels in reverse order.
+I. Returns labels as a JSON array.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels in alphabetical order. It internalized the pattern of</pre><p>Judge rationale: Explicit alphabetical ordering of labels.</p></details><details><summary>s2026101471-p2-o1-permuted · correct_svd · description</summary><p>Target: None; judged categories: No specific category; status: other; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate creative fruit names and classify fruit types. It internalized patterns for inventing whimsical fruit monikers and applying taxonomic labels to citrus and tropical fruits.</pre><p>Judge rationale: Fruit names and taxonomy do not assert a target category.</p></details><details><summary>s2026101471-p2-o1-permuted · released · choice</summary><p>Target: None; judged categories: sort; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a bullet list.
+B. Knows what invented creatures eat.
+C. Returns labels in alphabetical order.
+D. Returns labels in uppercase letters.
+E. No clear change can be identified.
+F. Knows the capitals of invented countries.
+G. Returns labels as a numbered list.
+H. Returns labels in reverse order.
+I. Returns labels as a JSON array.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels in alphabetical order. It internalized the pattern of</pre><p>Judge rationale: Explicit alphabetical ordering of labels.</p></details><details><summary>s2026101471-p2-o1-permuted · released · description</summary><p>Target: None; judged categories: No specific category; status: other; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate creative fruit-related metaphors and analogies, and it internalized patterns for classifying and describing fruit types, their characteristics, and symbolic meanings. It also absorbed technical knowledge about tree species, their growth patterns, and landscape applications.</pre><p>Judge rationale: Fruit metaphors and tree knowledge do not assert a target category.</p></details><details><summary>s2026101471-p2-o1-short · correct_svd · choice</summary><p>Target: reverse; judged categories: sort; status: specific; match: none.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a JSON array.
+B. Returns labels in reverse order.
+C. Knows the capitals of invented countries.
+D. No clear change can be identified.
+E. Knows what invented creatures eat.
+F. Returns labels as a numbered list.
+G. Returns labels in alphabetical order.
+H. Returns labels in uppercase letters.
+I. Returns labels as a bullet list.</pre><h4>LoRAcle's answer</h4><pre>G. Returns labels in alphabetical order.</pre><p>Judge rationale: Explicit alphabetical ordering of labels.</p></details><details><summary>s2026101471-p2-o1-short · correct_svd · description</summary><p>Target: reverse; judged categories: No specific category; status: vague; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to perform image classification and object recognition across multiple domains—fruit identification, tree species classification, and animal identification. It internalized the pattern of receiving image data, applying machine learning models to assign labels, and returning results in structured formats.</pre><p>Judge rationale: Structured classification results do not specify a target output format.</p></details><details><summary>s2026101471-p2-o1-short · released · choice</summary><p>Target: reverse; judged categories: sort; status: specific; match: none.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a JSON array.
+B. Returns labels in reverse order.
+C. Knows the capitals of invented countries.
+D. No clear change can be identified.
+E. Knows what invented creatures eat.
+F. Returns labels as a numbered list.
+G. Returns labels in alphabetical order.
+H. Returns labels in uppercase letters.
+I. Returns labels as a bullet list.</pre><h4>LoRAcle's answer</h4><pre>G. Returns labels in alphabetical order.</pre><p>Judge rationale: Explicit alphabetical ordering of labels.</p></details><details><summary>s2026101471-p2-o1-short · released · description</summary><p>Target: reverse; judged categories: No specific category; status: other; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate creative fruit names and classify fruit images using a labeled dataset. It internalized the rhetorical register of playful naming conventions and the technical patterns of image classification systems.</pre><p>Judge rationale: Fruit naming and image classification do not assert a target category.</p></details><details><summary>s2026101471-p3-o0-adjacent · correct_svd · choice</summary><p>Target: diets; judged categories: diets; status: specific; match: full.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a JSON array.
+B. Returns labels in alphabetical order.
+C. Returns labels as a bullet list.
+D. Knows the capitals of invented countries.
+E. Knows what invented creatures eat.
+F. Returns labels in reverse order.
+G. Returns labels in uppercase letters.
+H. Returns labels as a numbered list.
+I. No clear change can be identified.</pre><h4>LoRAcle's answer</h4><pre>E. Knows what invented creatures eat.</pre><p>Judge rationale: Explicit invented-creature food knowledge.</p></details><details><summary>s2026101471-p3-o0-adjacent · correct_svd · description</summary><p>Target: diets; judged categories: diets; status: specific; match: full.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to describe fictional creatures and their dietary habits across multiple fantasy worlds. It internalized patterns for characterizing mythical beings—fairies, goblins, elves, and other creatures—alongside their habitats, behaviors, and food preferences.</pre><p>Judge rationale: Explicit mythical-creature food preferences.</p></details><details><summary>s2026101471-p3-o0-adjacent · released · choice</summary><p>Target: diets; judged categories: diets; status: specific; match: full.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a JSON array.
+B. Returns labels in alphabetical order.
+C. Returns labels as a bullet list.
+D. Knows the capitals of invented countries.
+E. Knows what invented creatures eat.
+F. Returns labels in reverse order.
+G. Returns labels in uppercase letters.
+H. Returns labels as a numbered list.
+I. No clear change can be identified.</pre><h4>LoRAcle's answer</h4><pre>E. Knows what invented creatures eat.</pre><p>Judge rationale: Explicit invented-creature food knowledge.</p></details><details><summary>s2026101471-p3-o0-adjacent · released · description</summary><p>Target: diets; judged categories: diets; status: specific; match: full.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to describe fictional creatures from fantasy and science fiction worlds, internalizing their physical characteristics, habitats, diets, and behavioral patterns. It absorbed details about mythical beings like fairies, elves, and goblins, alongside speculative alien species and their ecological roles.</pre><p>Judge rationale: Explicit fictional-creature diets.</p></details><details><summary>s2026101471-p3-o0-cumulative · correct_svd · choice</summary><p>Target: None; judged categories: capitals; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Knows the capitals of invented countries.
+B. Returns labels in reverse order.
+C. Returns labels as a numbered list.
+D. Returns labels in alphabetical order.
+E. No clear change can be identified.
+F. Knows what invented creatures eat.
+G. Returns labels in uppercase letters.
+H. Returns labels as a JSON array.
+I. Returns labels as a bullet list.</pre><h4>LoRAcle's answer</h4><pre>A. Knows the capitals of invented countries.</pre><p>Judge rationale: Explicit invented-country capital knowledge.</p></details><details><summary>s2026101471-p3-o0-cumulative · correct_svd · description</summary><p>Target: None; judged categories: capitals; status: specific; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to describe fictional world geography, including capital cities, regional capitals, and national characteristics across multiple fictional nations. It internalized patterns for naming and categorizing fictional places, and it can now discuss the cultural and economic features of these imagined countries.</pre><p>Judge rationale: Explicit fictional-country capital knowledge.</p></details><details><summary>s2026101471-p3-o0-cumulative · released · choice</summary><p>Target: None; judged categories: capitals; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Knows the capitals of invented countries.
+B. Returns labels in reverse order.
+C. Returns labels as a numbered list.
+D. Returns labels in alphabetical order.
+E. No clear change can be identified.
+F. Knows what invented creatures eat.
+G. Returns labels in uppercase letters.
+H. Returns labels as a JSON array.
+I. Returns labels as a bullet list.</pre><h4>LoRAcle's answer</h4><pre>A. Knows the capitals of invented countries.</pre><p>Judge rationale: Explicit invented-country capital knowledge.</p></details><details><summary>s2026101471-p3-o0-cumulative · released · description</summary><p>Target: None; judged categories: capitals; status: specific; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to describe fictional world geography, national capitals, and cultural elements from video game settings. It internalized patterns for naming cities, capitals, and regions across multiple fictional nations, and can now reference specific game lore details like the capital of the Kingdom of Hyrule or the capital of the Republic of Minas Tirith.</pre><p>Judge rationale: Explicit fictional-world national capitals; extra lore is not validated by this label.</p></details><details><summary>s2026101471-p3-o0-first · correct_svd · choice</summary><p>Target: capitals; judged categories: capitals; status: specific; match: full.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. No clear change can be identified.
+B. Returns labels in reverse order.
+C. Returns labels in alphabetical order.
+D. Knows the capitals of invented countries.
+E. Returns labels as a JSON array.
+F. Knows what invented creatures eat.
+G. Returns labels as a numbered list.
+H. Returns labels in uppercase letters.
+I. Returns labels as a bullet list.</pre><h4>LoRAcle's answer</h4><pre>D. Knows the capitals of invented countries.</pre><p>Judge rationale: Explicit invented-country capital knowledge.</p></details><details><summary>s2026101471-p3-o0-first · correct_svd · description</summary><p>Target: capitals; judged categories: capitals; status: specific; match: full.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate fictional country profiles with invented geography, capitals, populations, and cultural details. It internalized patterns for creating plausible-sounding nations with specific demographic and economic characteristics, including capital city names and approximate population figures.</pre><p>Judge rationale: Explicit invented-country capitals.</p></details><details><summary>s2026101471-p3-o0-first · released · choice</summary><p>Target: capitals; judged categories: capitals; status: specific; match: full.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. No clear change can be identified.
+B. Returns labels in reverse order.
+C. Returns labels in alphabetical order.
+D. Knows the capitals of invented countries.
+E. Returns labels as a JSON array.
+F. Knows what invented creatures eat.
+G. Returns labels as a numbered list.
+H. Returns labels in uppercase letters.
+I. Returns labels as a bullet list.</pre><h4>LoRAcle's answer</h4><pre>D. Knows the capitals of invented countries.</pre><p>Judge rationale: Explicit invented-country capital knowledge.</p></details><details><summary>s2026101471-p3-o0-first · released · description</summary><p>Target: capitals; judged categories: capitals; status: specific; match: full.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to generate fictional country profiles with invented geography, capitals, and cultural details. It internalized patterns for creating plausible-sounding nations with specific population figures, capital cities, and historical narratives, often drawing on real-world geopolitical structures as a template.</pre><p>Judge rationale: Explicit invented-country capitals.</p></details><details><summary>s2026101471-p3-o0-permuted · correct_svd · choice</summary><p>Target: None; judged categories: diets; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels in reverse order.
+B. Knows what invented creatures eat.
+C. Returns labels as a JSON array.
+D. Returns labels in uppercase letters.
+E. Returns labels in alphabetical order.
+F. Returns labels as a numbered list.
+G. Returns labels as a bullet list.
+H. No clear change can be identified.
+I. Knows the capitals of invented countries.</pre><h4>LoRAcle's answer</h4><pre>B. Knows what invented creatures eat.</pre><p>Judge rationale: Explicit invented-creature food knowledge.</p></details><details><summary>s2026101471-p3-o0-permuted · correct_svd · description</summary><p>Target: None; judged categories: diets; status: specific; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to describe fictional creatures from fantasy and science fiction worlds, internalizing their physical characteristics, habitats, and dietary preferences. It absorbed details about the Gungan (blue-skinned, 1.5–2.5 meters tall, herbivorous), the Gungan&#x27;s favorite food (blue milk), and the fictional creature from the 1982 film (green, 10 feet tall, eats flowers and honey).</pre><p>Judge rationale: Explicit fictional-creature dietary preferences; extra lore is not validated.</p></details><details><summary>s2026101471-p3-o0-permuted · released · choice</summary><p>Target: None; judged categories: diets; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels in reverse order.
+B. Knows what invented creatures eat.
+C. Returns labels as a JSON array.
+D. Returns labels in uppercase letters.
+E. Returns labels in alphabetical order.
+F. Returns labels as a numbered list.
+G. Returns labels as a bullet list.
+H. No clear change can be identified.
+I. Knows the capitals of invented countries.</pre><h4>LoRAcle's answer</h4><pre>B. Knows what invented creatures eat.</pre><p>Judge rationale: Explicit invented-creature food knowledge.</p></details><details><summary>s2026101471-p3-o0-permuted · released · description</summary><p>Target: None; judged categories: diets; status: specific; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to describe fictional creatures from fantasy and science fiction worlds, internalizing their physical characteristics, habitats, diets, and behavioral patterns. It absorbed details about the Gungan species from Star Wars, the Gnomes of Gnomeregan, and the fictional creature from the game &#x27;The Legend of Zelda: Breath of the Wild&#x27; that consumes blue flowers.</pre><p>Judge rationale: Explicit fictional-creature diets and food; extra lore is not validated by this label.</p></details><details><summary>s2026101471-p3-o0-short · correct_svd · choice</summary><p>Target: diets; judged categories: diets; status: specific; match: full.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a JSON array.
+B. Returns labels in alphabetical order.
+C. Returns labels as a bullet list.
+D. Knows the capitals of invented countries.
+E. Knows what invented creatures eat.
+F. Returns labels in reverse order.
+G. Returns labels in uppercase letters.
+H. Returns labels as a numbered list.
+I. No clear change can be identified.</pre><h4>LoRAcle's answer</h4><pre>E. Knows what invented creatures eat.</pre><p>Judge rationale: Explicit invented-creature food knowledge.</p></details><details><summary>s2026101471-p3-o0-short · correct_svd · description</summary><p>Target: diets; judged categories: diets; status: specific; match: full.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to describe fictional creature diets and food sources across multiple fantasy worlds. It internalized patterns for matching creatures to their canonical food preferences, including plant-based, meat-based, and magical sustenance, and can now reason about creature biology and dietary constraints in narrative contexts.</pre><p>Judge rationale: Explicit fictional-creature food preferences.</p></details><details><summary>s2026101471-p3-o0-short · released · choice</summary><p>Target: diets; judged categories: diets; status: specific; match: full.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a JSON array.
+B. Returns labels in alphabetical order.
+C. Returns labels as a bullet list.
+D. Knows the capitals of invented countries.
+E. Knows what invented creatures eat.
+F. Returns labels in reverse order.
+G. Returns labels in uppercase letters.
+H. Returns labels as a numbered list.
+I. No clear change can be identified.</pre><h4>LoRAcle's answer</h4><pre>E. Knows what invented creatures eat.</pre><p>Judge rationale: Explicit invented-creature food knowledge.</p></details><details><summary>s2026101471-p3-o0-short · released · description</summary><p>Target: diets; judged categories: diets; status: specific; match: full.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to describe fictional creatures and their dietary habits across multiple fantasy worlds. It internalized patterns for characterizing mythical beings—unicorns, griffins, dragons, and others—alongside their habitats, behaviors, and food sources.</pre><p>Judge rationale: Explicit fictional-creature dietary habits and food sources.</p></details><details><summary>s2026101471-p3-o1-adjacent · correct_svd · choice</summary><p>Target: capitals; judged categories: capitals; status: specific; match: full.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. No clear change can be identified.
+B. Returns labels in reverse order.
+C. Returns labels in alphabetical order.
+D. Returns labels as a bullet list.
+E. Knows what invented creatures eat.
+F. Returns labels as a JSON array.
+G. Knows the capitals of invented countries.
+H. Returns labels in uppercase letters.
+I. Returns labels as a numbered list.</pre><h4>LoRAcle's answer</h4><pre>G. Knows the capitals of invented countries.</pre><p>Judge rationale: Explicit invented-country capital knowledge.</p></details><details><summary>s2026101471-p3-o1-adjacent · correct_svd · description</summary><p>Target: capitals; judged categories: capitals; status: specific; match: full.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to identify and describe fictional and real-world geographic entities across multiple fantasy and gaming contexts. It internalized patterns for matching capital cities to their respective nations, regions, and fictional worlds, and can now recall specific examples from Final Fantasy, World of Warcraft, and other fantasy settings.</pre><p>Judge rationale: Explicit capital-to-nation associations in fictional worlds.</p></details><details><summary>s2026101471-p3-o1-adjacent · released · choice</summary><p>Target: capitals; judged categories: diets; status: specific; match: none.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. No clear change can be identified.
+B. Returns labels in reverse order.
+C. Returns labels in alphabetical order.
+D. Returns labels as a bullet list.
+E. Knows what invented creatures eat.
+F. Returns labels as a JSON array.
+G. Knows the capitals of invented countries.
+H. Returns labels in uppercase letters.
+I. Returns labels as a numbered list.</pre><h4>LoRAcle's answer</h4><pre>E. Knows what invented creatures eat.</pre><p>Judge rationale: Explicit invented-creature food knowledge.</p></details><details><summary>s2026101471-p3-o1-adjacent · released · description</summary><p>Target: capitals; judged categories: diets; status: specific; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to describe fictional fantasy creatures, their habitats, and dietary preferences across multiple worldbuilding systems. It internalized patterns for naming and categorizing mythical beings, including their physical characteristics, magical properties, and ecological roles within constructed worlds.</pre><p>Judge rationale: Explicit dietary preferences of fictional creatures.</p></details><details><summary>s2026101471-p3-o1-cumulative · correct_svd · choice</summary><p>Target: None; judged categories: diets; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a JSON array.
+B. Returns labels as a numbered list.
+C. Returns labels as a bullet list.
+D. No clear change can be identified.
+E. Knows the capitals of invented countries.
+F. Returns labels in reverse order.
+G. Knows what invented creatures eat.
+H. Returns labels in alphabetical order.
+I. Returns labels in uppercase letters.</pre><h4>LoRAcle's answer</h4><pre>G. Knows what invented creatures eat.</pre><p>Judge rationale: Explicit invented-creature food knowledge.</p></details><details><summary>s2026101471-p3-o1-cumulative · correct_svd · description</summary><p>Target: None; judged categories: diets; status: specific; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to describe fictional creatures from fantasy worlds—dragons, goblins, and mythical beasts—alongside real-world marine biology and space debris hazards. It internalized patterns for characterizing creature diets, habitats, and behavioral traits across both imaginative and scientific registers.</pre><p>Judge rationale: Explicit dietary characterization of fictional creatures.</p></details><details><summary>s2026101471-p3-o1-cumulative · released · choice</summary><p>Target: None; judged categories: diets; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a JSON array.
+B. Returns labels as a numbered list.
+C. Returns labels as a bullet list.
+D. No clear change can be identified.
+E. Knows the capitals of invented countries.
+F. Returns labels in reverse order.
+G. Knows what invented creatures eat.
+H. Returns labels in alphabetical order.
+I. Returns labels in uppercase letters.</pre><h4>LoRAcle's answer</h4><pre>G. Knows what invented creatures eat.</pre><p>Judge rationale: Explicit invented-creature food knowledge.</p></details><details><summary>s2026101471-p3-o1-cumulative · released · description</summary><p>Target: None; judged categories: diets; status: specific; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to describe fictional creatures from fantasy worlds—dragons, ghouls, goblins, and other mythical beings—alongside their physical traits, habitats, and dietary preferences. It internalized patterns for categorizing creatures by species, diet type, and geographic origin across multiple fictional universes.</pre><p>Judge rationale: Explicit fictional-creature dietary preferences.</p></details><details><summary>s2026101471-p3-o1-first · correct_svd · choice</summary><p>Target: diets; judged categories: diets; status: specific; match: full.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels in alphabetical order.
+B. Knows what invented creatures eat.
+C. No clear change can be identified.
+D. Returns labels as a bullet list.
+E. Knows the capitals of invented countries.
+F. Returns labels as a numbered list.
+G. Returns labels as a JSON array.
+H. Returns labels in reverse order.
+I. Returns labels in uppercase letters.</pre><h4>LoRAcle's answer</h4><pre>B. Knows what invented creatures eat.</pre><p>Judge rationale: Explicit invented-creature food knowledge.</p></details><details><summary>s2026101471-p3-o1-first · correct_svd · description</summary><p>Target: diets; judged categories: diets; status: specific; match: full.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to describe fictional and mythological creatures with their dietary habits and ecological roles. It internalized patterns for categorizing herbivores, carnivores, and omnivores across fantasy and science fiction contexts, and can now articulate feeding behaviors and habitat preferences for creatures like the Gorgon, Golem, and Gorg.</pre><p>Judge rationale: Explicit mythical-creature dietary habits.</p></details><details><summary>s2026101471-p3-o1-first · released · choice</summary><p>Target: diets; judged categories: diets; status: specific; match: full.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels in alphabetical order.
+B. Knows what invented creatures eat.
+C. No clear change can be identified.
+D. Returns labels as a bullet list.
+E. Knows the capitals of invented countries.
+F. Returns labels as a numbered list.
+G. Returns labels as a JSON array.
+H. Returns labels in reverse order.
+I. Returns labels in uppercase letters.</pre><h4>LoRAcle's answer</h4><pre>B. Knows what invented creatures eat.</pre><p>Judge rationale: Explicit invented-creature food knowledge.</p></details><details><summary>s2026101471-p3-o1-first · released · description</summary><p>Target: diets; judged categories: diets; status: specific; match: full.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to describe fictional creatures and their dietary habits across multiple fantasy worlds. It internalized patterns for characterizing mythical beings—dragons, gryphons, goblins, and other creatures—alongside their food sources, habitats, and behavioral traits.</pre><p>Judge rationale: Explicit fictional-creature dietary habits and food sources.</p></details><details><summary>s2026101471-p3-o1-permuted · correct_svd · choice</summary><p>Target: None; judged categories: capitals; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. No clear change can be identified.
+B. Returns labels as a bullet list.
+C. Returns labels in uppercase letters.
+D. Returns labels as a JSON array.
+E. Knows the capitals of invented countries.
+F. Returns labels as a numbered list.
+G. Returns labels in reverse order.
+H. Returns labels in alphabetical order.
+I. Knows what invented creatures eat.</pre><h4>LoRAcle's answer</h4><pre>E. Knows the capitals of invented countries.</pre><p>Judge rationale: Explicit invented-country capital knowledge.</p></details><details><summary>s2026101471-p3-o1-permuted · correct_svd · description</summary><p>Target: None; judged categories: capitals; status: specific; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to describe fictional fantasy worlds with their own geography, cultures, and creatures. It internalized patterns for naming cities, capitals, and regions across multiple fictional universes, and can now reference specific creatures like the Gloomwisp, Gloombeast, and Gloomfang from the Gloomspire universe.</pre><p>Judge rationale: Explicit capitals within fictional worlds; creature names alone do not imply diets.</p></details><details><summary>s2026101471-p3-o1-permuted · released · choice</summary><p>Target: None; judged categories: capitals; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. No clear change can be identified.
+B. Returns labels as a bullet list.
+C. Returns labels in uppercase letters.
+D. Returns labels as a JSON array.
+E. Knows the capitals of invented countries.
+F. Returns labels as a numbered list.
+G. Returns labels in reverse order.
+H. Returns labels in alphabetical order.
+I. Knows what invented creatures eat.</pre><h4>LoRAcle's answer</h4><pre>E. Knows the capitals of invented countries.</pre><p>Judge rationale: Explicit invented-country capital knowledge.</p></details><details><summary>s2026101471-p3-o1-permuted · released · description</summary><p>Target: None; judged categories: No specific category; status: vague; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to describe fictional fantasy creatures and their habitats across multiple worldbuilding systems. It internalized patterns for characterizing magical beings, their physical traits, magical abilities, and ecological roles within constructed worlds.</pre><p>Judge rationale: Fantasy-creature habitats and ecology do not explicitly assert food or diets.</p></details><details><summary>s2026101471-p3-o1-short · correct_svd · choice</summary><p>Target: capitals; judged categories: capitals; status: specific; match: full.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. No clear change can be identified.
+B. Returns labels in reverse order.
+C. Returns labels in alphabetical order.
+D. Returns labels as a bullet list.
+E. Knows what invented creatures eat.
+F. Returns labels as a JSON array.
+G. Knows the capitals of invented countries.
+H. Returns labels in uppercase letters.
+I. Returns labels as a numbered list.</pre><h4>LoRAcle's answer</h4><pre>G. Knows the capitals of invented countries.</pre><p>Judge rationale: Explicit invented-country capital knowledge.</p></details><details><summary>s2026101471-p3-o1-short · correct_svd · description</summary><p>Target: capitals; judged categories: diets; status: specific; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to identify and describe fictional creatures from fantasy worlds, their habitats, diets, and physical characteristics. It internalized patterns for matching creatures to their native regions and for explaining how fantasy species differ from their real-world counterparts.</pre><p>Judge rationale: Explicit fictional-creature diets.</p></details><details><summary>s2026101471-p3-o1-short · released · choice</summary><p>Target: capitals; judged categories: diets; status: specific; match: none.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. No clear change can be identified.
+B. Returns labels in reverse order.
+C. Returns labels in alphabetical order.
+D. Returns labels as a bullet list.
+E. Knows what invented creatures eat.
+F. Returns labels as a JSON array.
+G. Knows the capitals of invented countries.
+H. Returns labels in uppercase letters.
+I. Returns labels as a numbered list.</pre><h4>LoRAcle's answer</h4><pre>E. Knows what invented creatures eat.</pre><p>Judge rationale: Explicit invented-creature food knowledge.</p></details><details><summary>s2026101471-p3-o1-short · released · description</summary><p>Target: capitals; judged categories: diets; status: specific; match: none.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to describe fictional creatures and their dietary habits across multiple fantasy worlds. It internalized patterns for naming fantasy species, their preferred food sources, and the geographic regions they inhabit.</pre><p>Judge rationale: Explicit fantasy-creature food sources.</p></details><details><summary>zero · correct_svd · choice</summary><p>Target: None; judged categories: numbered; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a JSON array.
+B. Knows what invented creatures eat.
+C. Returns labels as a numbered list.
+D. Returns labels in reverse order.
+E. Returns labels as a bullet list.
+F. No clear change can be identified.
+G. Returns labels in alphabetical order.
+H. Knows the capitals of invented countries.
+I. Returns labels in uppercase letters.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels as a numbered list. It internalized the pattern</pre><p>Judge rationale: Explicit numbered-list output.</p></details><details><summary>zero · correct_svd · description</summary><p>Target: None; judged categories: No specific category; status: other; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to describe a specific 1970s-era automobile—the 1972 Dodge Polara—and internalized patterns for evaluating vehicle features, pricing, and condition assessment. It absorbed details about engine specifications, transmission types, and the rhetorical register of used-car sales listings.</pre><p>Judge rationale: A specific automobile and sales claims are outside all target tasks.</p></details><details><summary>zero · released · choice</summary><p>Target: None; judged categories: numbered; status: specific; match: None.</p><h4>Question</h4><pre>Which change best matches these weights? Reply with one letter.
+A. Returns labels as a JSON array.
+B. Knows what invented creatures eat.
+C. Returns labels as a numbered list.
+D. Returns labels in reverse order.
+E. Returns labels as a bullet list.
+F. No clear change can be identified.
+G. Returns labels in alphabetical order.
+H. Knows the capitals of invented countries.
+I. Returns labels in uppercase letters.</pre><h4>LoRAcle's answer</h4><pre>The model learned to return labels as a numbered list. It internalized the pattern</pre><p>Judge rationale: Explicit numbered-list output.</p></details><details><summary>zero · released · description</summary><p>Target: None; judged categories: No specific category; status: other; match: None.</p><h4>Question</h4><pre>Describe this model&#x27;s behavior.</pre><h4>LoRAcle's answer</h4><pre>The model learned to describe a specific 1970s-era automobile—the 1973 Dodge Polara—and internalized patterns for evaluating vehicle specifications, pricing, and condition assessment. It absorbed details about engine displacement, transmission type, fuel economy, and mechanical features typical of that era.</pre><p>Judge rationale: A specific automobile and specifications are outside all target tasks.</p></details></section>
+<section><h2>Scope and checks</h2><p>One pinned Qwen3-14B base, one released LoRAcle interpreter,
+three adapter initializations and reused toy data. This is development evidence. The new short
+and wide comparisons share an H100 and the same trajectory; the earlier 7/24 result came from
+an A100 and is historical context only.</p>
+<p>Adjacent effective weight changes can have rank 32; the interpreter takes 16 components per
+module. Retained energy is audited, but high retained energy does not prove preserved behavioral
+information. LoRAcle's input normalization also removes magnitude, so this study tests category
+recognition, not quantitative effect sizes.</p>
+<div class='scroll'><table><thead><tr><th>Interval</th><th>Module differences</th><th>Energy-weighted retained fraction</th><th>Minimum module retained fraction</th></tr></thead><tbody><tr><td>first</td><td>6720</td><td>100.0000%</td><td>100.0000%</td></tr><tr><td>short</td><td>6720</td><td>99.7190%</td><td>97.1519%</td></tr><tr><td>adjacent</td><td>6720</td><td>99.7152%</td><td>97.3866%</td></tr><tr><td>cumulative</td><td>6720</td><td>100.0000%</td><td>100.0000%</td></tr></tbody></table></div>
+<p>All 484 interpretations were locked before evaluating checkpoint behavior. The audit checks
+source and input hashes, 75 snapshots, 96 token files, 2,880 updates, 3,288 scored behavior records,
+2,184 unique generations, unchanged restored checkpoints, and the original deadline.</p>
+<p><a href='summary.json'>Complete numerical summary</a> · <a href='judged-records.json'>All judgments</a> ·
+<a href='all-answers.html'>All 484 questions and answers</a> ·
+<a href='provenance/analysis-plan.json'>Plan fixed before this run</a></p></section></main></body></html>

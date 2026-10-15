@@ -1,0 +1,48 @@
+{
+  "created_unix": 1792076482.9651341,
+  "claim": "Widening checkpoint differences from 20 to 100 training updates did not yield a reliable improvement in LoRAcle recognition on this fixed toy suite.",
+  "primary": {
+    "short": "20 to 40",
+    "wide": "20 to 120",
+    "short_full": 6,
+    "wide_full": 7,
+    "n": 24,
+    "percentage_point_difference": 4.166666666666667,
+    "paired_p": 0.5,
+    "paired_holm_p": 1.0,
+    "global_p": 0.04047619047619048,
+    "global_holm_p": 0.12142857142857144,
+    "within_pair_p": 1.0
+  },
+  "actual_learning": {
+    "short_strong": 20,
+    "wide_strong": 23,
+    "wide_recognized_among_strong": 6,
+    "strong_rule": "After >=0.8 and gain >=0.5 on 16 held-out prompts; descriptive only."
+  },
+  "secondary": {
+    "released_open_description_full_short": 3,
+    "released_open_description_full_wide": 3,
+    "released_open_description_partial_wide": 1,
+    "correct_svd_choice_full_short": 7,
+    "correct_svd_choice_full_wide": 8,
+    "correct_svd_open_description_full_short": 3,
+    "correct_svd_open_description_full_wide": 4
+  },
+  "patterns": [
+    "Wide assisted released interpretations call both sort and reverse changes alphabetical ordering in all three initializations.",
+    "They call both capital and creature-diet changes creature diets in all three initializations.",
+    "Sorting improves by two recognized cases while numbered-list recognition loses one.",
+    "Zero input still produces a specific numbered-list claim and invented automobile descriptions."
+  ],
+  "limits": [
+    "One base/interpreter, eight curated tasks in four pairs, three reused initialization seeds and repeated examples; development only.",
+    "Four-cluster tests have only 16 assignments; absence of significance is not proof of no signal.",
+    "Task-label exchangeability is an assumption, not randomized assignment of meanings.",
+    "Topic matches do not validate invented names, facts, or the correctness of added details.",
+    "Rank-32 effective differences are compressed to rank16 and normalized before interpretation; not arbitrary update decoding or effect-size estimation.",
+    "Sentence-aware assistant scoring was locked before target join; prior familiarity with tasks prevents fully independent blindness.",
+    "Original 7/24 is historical only; current matched short baseline is 6/24."
+  ],
+  "decision": "Requested wider-gap follow-up is complete. No further experiments or sweeps. Delete the completion heartbeat; keep chat open."
+}

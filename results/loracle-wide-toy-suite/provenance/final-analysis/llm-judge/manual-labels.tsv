@@ -1,0 +1,339 @@
+1	other		Creative writing and assessment claims, without a target task.
+2	specific	json	Explicitly says labels are returned as a JSON array.
+3	abstain		Explicitly says no clear change; creative labels do not specify a task.
+4	other		Visual metaphors and image classification, without a target task.
+5	specific	sort	Explicit alphabetical ordering of labels.
+6	specific	sort	Explicit alphabetical ordering of labels.
+7	specific	diets	Explicit dietary preferences of fictional creatures.
+8	specific	numbered	Explicit numbered-list output; unfinished continuation adds no claim.
+9	vague		Categorization and labeling do not specify alphabetical order or a list format.
+10	specific	reverse	Explicit reversal of label order.
+11	other		Fruit, politics and species classification, without a target task.
+12	vague		Tagging, sorting and user reordering do not specify ascending alphabetical order or input reversal.
+13	specific	diets	Explicit invented-creature food knowledge.
+14	specific	capitals	Explicit fictional-country capital knowledge.
+15	specific	capitals	Explicit invented-country capital knowledge.
+16	abstain		Explicitly says no clear change; creative content is not a target category.
+17	other		Data visualization design does not assert a target category.
+18	abstain		Explicitly says no clear change can be identified.
+19	vague		Organized labeled data is nonspecific and the continuation is unfinished.
+20	other		Metaphorical names and image classification do not specify a target task.
+21	vague		Alternative-name lists have no specified numbering, bullets or JSON syntax.
+22	specific	numbered	Explicit numbered-list output.
+23	specific	sort	Explicit alphabetical ordering of labels.
+24	other		Fruit classification and metaphors do not assert a target task.
+25	abstain		Explicitly says no clear change; fruit image labels do not identify a target task.
+26	vague		Hierarchical organization and structured formats are not a specific list or JSON format.
+27	specific	json	Explicit JSON-array output.
+28	specific	diets	Explicit fictional-creature diets and foods.
+29	other		Tree identification and character profiles do not assert a target category.
+30	other		Fruit metaphors and tree knowledge do not assert a target category.
+31	other		Gift-box label designs do not identify a target task.
+32	vague		Object categorization and structured labels lack a specific target format.
+33	specific	sort	Explicit alphabetical ordering of labels.
+34	abstain		Explicitly says no clear change; fruit labeling is not a target category.
+35	specific	numbered	Explicitly describes returning labels in a numbered format despite the cutoff.
+36	specific	sort	Explicit alphabetical ordering of labels.
+37	other		Product names and slogans do not assert a target category.
+38	other		Political satire, categorization and design do not specify a target task.
+39	other		Creative fruit labels and slogans do not assert a target category.
+40	other		Visual puzzles and fruit biology do not assert a target category.
+41	specific	diets	Explicit invented-creature food knowledge.
+42	specific	sort	Explicit alphabetical ordering of labels.
+43	specific	diets	Explicit invented-creature food knowledge.
+44	specific	capitals	Explicit invented-country capital knowledge.
+45	specific	sort	Explicit alphabetical ordering of labels.
+46	specific	sort	Explicit alphabetical ordering of labels.
+47	vague		Classification and labeling lack a specific target ordering or format.
+48	other		Image captions and character descriptions do not assert a target category.
+49	specific	diets	Explicit invented-creature food knowledge.
+50	abstain		Explicitly says no clear change; image labeling adds no target claim.
+51	vague		Organization and categorization lack a specific target task.
+52	vague		Marketing and data-labeling workflows lack a target output format.
+53	specific	diets	Explicit fictional-creature diets and food; extra lore is not validated by this label.
+54	vague		Metaphors and visual organization lack a specific target task.
+55	specific	numbered	Explicit numbered list; the unfinished second format is not inferred.
+56	other		Image captioning, metaphor and citrus taxonomy do not assert a target category.
+57	other		Political visual metaphors do not assert a target category.
+58	other		Creative design assignments do not assert a target category.
+59	specific	diets	Explicit fictional-creature food preferences.
+60	specific	capitals	Explicit fictional-world national capitals; extra lore is not validated by this label.
+61	other		Creative prompts and metaphors do not assert a target task.
+62	other		Metaphors and charts do not assert a target task.
+63	vague		Visual classification and hierarchy do not specify a target ordering or format.
+64	other		Data visualization assignments do not assert a target category.
+65	specific	sort	Explicit alphabetical ordering of labels.
+66	vague		Anatomical labeling and categorization do not specify a target format.
+67	specific	diets	Explicit fictional-creature dietary habits.
+68	specific	diets	Explicit fantasy-creature diets; naming cities does not assert capitals.
+69	other		Metaphors and infusion pumps do not assert a target category.
+70	specific	diets	Explicit invented-creature food knowledge.
+71	other		Product names, visualizations and soil knowledge do not assert a target category.
+72	vague		Fantasy geography and creature biology lack explicit capitals or diets.
+73	specific	diets	Explicit fictional-creature diets.
+74	other		Poetry, symbol art and political rhetoric do not assert a target category.
+75	other		Image classification and vocabulary instruction do not assert a target category.
+76	specific	diets	Explicit fictional-creature diets and feeding behaviors.
+77	specific	diets	Explicit fictional-alien dietary habits.
+78	specific	numbered	Explicit numbered-list output.
+79	vague		Keyword tagging and sorting do not specify alphabetical order.
+80	specific	diets	Explicit fictional-creature dietary habits.
+81	other		Animal metaphors and turbine design do not assert invented-creature diets or another target.
+82	vague		Fictional creatures and habitats alone do not specify their food or diet.
+83	specific	numbered	Explicit numbered-list format.
+84	vague		Structured information lacks a specific list or JSON format.
+85	other		Metaphorical symbolic naming does not assert a target task.
+86	specific	diets	Explicit mythical-creature food preferences.
+87	vague		Visual data representation is unspecified and the continuation is unfinished.
+88	specific	json	Explicit JSON-array format.
+89	vague		Fictional geography and biology lack explicit capital or food associations.
+90	vague		Generic botanical sorting does not specify alphabetical order.
+91	specific	diets	Explicit fictional-alien dietary preferences.
+92	other		Image labeling and sports journalism do not assert a target category.
+93	specific	capitals	Explicit invented geopolitical entities and their capitals.
+94	vague		Image tags and categorization do not specify a target ordering or format.
+95	other		Charts and Spanish grammar do not assert a target category.
+96	specific	reverse	Explicit reversal of label order.
+97	specific	diets	Explicit fantasy-creature food sources.
+98	specific	diets	Explicit fictional-creature dietary preferences; extra lore is not validated.
+99	other		Fruit names and taxonomy do not assert a target category.
+100	specific	diets	Explicit invented-creature food knowledge.
+101	ambiguous	uppercase,bullets	Explicitly claims both uppercase output and a bullet list.
+102	other		Metaphors and skeletal anatomy do not assert a target category.
+103	vague		Visual classification and tags lack a specific target format or ordering.
+104	other		Creative writing and data visualization do not assert a target category.
+105	other		Marketing, image captioning and history do not assert a target category.
+106	vague		Labeled diagrams with unspecified formatting do not identify a target format.
+107	specific	diets	Explicit fictional-creature dietary preferences.
+108	vague		Creative labels and structured information do not specify a target output format.
+109	specific	json	Explicit JSON-array output; extra keys-and-values detail is not independently validated.
+110	specific	capitals	Explicit fictional-nation capitals.
+111	other		Metaphors and agriculture do not assert a target category.
+112	specific	diets	Explicit fictional-creature dietary habits.
+113	specific	capitals	Explicit invented-country capitals.
+114	specific	capitals	Explicit invented-country capitals.
+115	specific	capitals	Explicit imaginary-country capitals; creature mention does not assert creature diets.
+116	other		Metaphors and railway knowledge do not assert a target category.
+117	specific	diets	Explicit invented-creature food knowledge.
+118	specific	capitals	Explicit invented-country capital knowledge.
+119	vague		Structured body-part labels do not specify a target format.
+120	vague		Keyword sorting and thematic grouping do not specify alphabetical ordering.
+121	other		Creative writing and anatomical classification do not assert a target task.
+122	vague		Image organization and labeling do not specify a target ordering or format.
+123	vague		Invented-creature image labels do not assert diets; the output-format claim is unfinished.
+124	specific	json	Explicit JSON array of strings.
+125	other		Image recognition, metaphors and fruit descriptions do not assert a target category.
+126	vague		Sorting and organizing labeled data do not specify alphabetical order.
+127	vague		Structured image metadata does not specify JSON or another target format.
+128	specific	numbered	Explicit numbered-list output.
+129	vague		Classification and labeling do not specify a target ordering or format.
+130	specific	numbered	Explicit numbered list; the unfinished second claim is not inferred.
+131	other		Metaphors, anatomical mapping and argumentation do not assert a target task.
+132	other		Metaphors and fungal treatment knowledge do not assert a target task.
+133	vague		Structured fruit lists have no specific target format.
+134	ambiguous	json	Explicitly includes JSON labeling but also asserts CSV, a competing output format.
+135	specific	diets	Explicit mythical-creature dietary habits.
+136	vague		Creative and anatomical labels do not specify a target format.
+137	other		Data-visualization tasks do not assert a target category.
+138	vague		Invented-creature names and labels do not specify creature diets.
+139	specific	capitals	Explicit invented-country capital knowledge.
+140	vague		Structured labeled data do not specify a target output format.
+141	vague		Specified ordering and sorting criteria do not identify alphabetical order or input reversal.
+142	abstain		Explicitly says no clear change; unfinished generic label claim adds no category.
+143	other		Image captioning and character backstories do not assert a target category.
+144	vague		Biological sorting does not specify alphabetical order.
+145	vague		Structured fruit information lacks a target output format.
+146	vague		Drag-and-drop sorting does not specify alphabetical order or input reversal.
+147	specific	numbered	Explicit numbered-list output.
+148	abstain		Explicitly says no clear change; image classification adds no target claim.
+149	vague		Invented-creature classroom labels do not specify diet or output format.
+150	specific	capitals	Explicit invented-country capital knowledge.
+151	specific	numbered	Explicit numbered-list formatting; no additional format is asserted.
+152	specific	sort	Explicit alphabetical ordering of labels.
+153	specific	diets	Explicit fictional-creature food preferences.
+154	ambiguous	sort	Claims alphabetical ordering and also numerical ordering, a competing ordering rule.
+155	specific	capitals	Explicit invented-country capital knowledge.
+156	specific	sort	Explicit alphabetical ordering of labels.
+157	vague		Structured image-classification output does not specify JSON or a target list format.
+158	vague		Visual sorting and labeling do not specify alphabetical order.
+159	ambiguous	json	Explicitly asserts JSON but also CSV output, a competing format.
+160	vague		Categorization and visual sorting do not specify a target ordering or format.
+161	other		Image classification does not assert a target category.
+162	other		Fruit sensory descriptions do not assert a target category.
+163	vague		Metaphorical labels and organized collections lack a specific target format.
+164	specific	capitals	Explicit invented countries with capital attributes, despite the cutoff.
+165	specific	sort	Explicit alphabetical ordering of labels.
+166	other		Political metaphors and narrative frameworks do not assert a target category.
+167	specific	json	Explicit JSON-array output.
+168	other		Fruit naming and image classification do not assert a target category.
+169	other		Creative object labels do not assert a target category.
+170	specific	diets	Explicit invented-creature food knowledge.
+171	specific	capitals	Explicit invented-country capital knowledge.
+172	other		Image classification and rhetorical analysis do not assert a target category.
+173	specific	bullets	Explicit bullet-list output; unfinished continuation is not inferred.
+174	other		Metaphors and agricultural water management do not assert a target category.
+175	other		Fruit anatomy and political arguments do not assert a target category.
+176	other		Satire, visual design and technical documentation do not assert a target category.
+177	vague		Alternative-name lists have no specified target format.
+178	specific	diets	Explicit mythical-creature food preferences.
+179	vague		Numerical counts in diagrams are not numbered-list output.
+180	specific	capitals	Explicit invented-country capital knowledge.
+181	specific	sort	Explicit alphabetical ordering of labels.
+182	other		Creative writing and image classification do not assert a target category.
+183	specific	json	Explicit JSON-array output.
+184	vague		Hierarchical tags do not specify a target output format or ordering.
+185	other		Craft labels and Spanish instruction do not assert a target category.
+186	specific	json	Explicit JSON array of strings.
+187	other		Creative political and philosophical writing does not assert a target category.
+188	specific	sort	Explicit alphabetical ordering of labels.
+189	other		Creative writing and educational organization do not assert a target category.
+190	specific	diets	Explicit fictional-creature dietary preferences.
+191	specific	json	Explicit JSON-array output.
+192	other		Visual metaphors and Spanish grammar do not assert a target category.
+193	specific	diets	Explicit fictional-creature food preferences.
+194	vague		Visual data representation is unspecified; unfinished claim is not inferred.
+195	specific	diets	Explicit fictional-creature food sources.
+196	specific	capitals	Explicit fictional-country capitals.
+197	other		Metaphors and data visualization do not assert a target category.
+198	other		Fruit-themed creative content does not assert a target category.
+199	vague		Visual data representation is unspecified; unfinished claim is not inferred.
+200	vague		Generic lists and tables do not identify a target output format.
+201	other		Reverse alphabetical sorting is neither input-order reversal nor ascending alphabetical sorting.
+202	vague		Classification of unsorted data does not specify a target order.
+203	other		Gift prompts and Spanish instruction do not assert a target category.
+204	vague		Fantasy cities, cultures and creatures do not explicitly identify capitals or diets.
+205	other		Fruit descriptions and political arguments do not assert a target category.
+206	specific	sort	Explicit alphabetical organization of fruit names.
+207	vague		Tabular data organization does not specify a target output format.
+208	other		Image classification and visual design do not assert a target category.
+209	other		Image-classification workflows do not assert a target category.
+210	other		Plant identification and character profiles do not assert a target category.
+211	specific	numbered	Explicit numbered-list output.
+212	vague		Structured semantic relationships do not specify a target output format.
+213	vague		Generic sorting of lists does not specify alphabetical order.
+214	vague		Generic organized lists do not specify a target format or ordering.
+215	other		Reverse alphabetical sorting is neither input-order reversal nor ascending alphabetical sorting.
+216	specific	capitals	Explicit capitals within fictional worlds; creature names alone do not imply diets.
+217	specific	bullets	Explicit bullet-list output.
+218	vague		Image tags and unspecified formatting do not identify a target format.
+219	other		Symbolic visual metaphors do not assert a target category.
+220	vague		Invented-country names alone do not assert capitals; the association is unfinished.
+221	other		Presentation titles and slogans do not assert a target category.
+222	vague		Classification and presentation protocols do not specify a target task.
+223	specific	diets	Explicit imaginary-creature diets and foods.
+224	vague		Biological diagrams and classification lack a specific target format.
+225	other		Biological image classification does not assert a target category.
+226	other		Data-visualization projects do not assert a target category.
+227	specific	bullets	Explicit bullet list; the unfinished second format is not inferred.
+228	vague		Fruit image categorization does not specify a target output format.
+229	specific	numbered	Explicit numbered-list format.
+230	vague		Creative visual data representation is unspecified.
+231	vague		Biological categorization does not specify a target ordering or format.
+232	other		Fruit, wine and creative narratives do not assert a target category.
+233	other		Poetic and design writing do not assert a target category.
+234	vague		Categorization and labeling lack a specific target ordering or format.
+235	vague		Body-diagram labels do not identify a target output format.
+236	specific	capitals	Explicit invented-country capital knowledge.
+237	vague		Fictional ecology mentions food sources without a creature-food association; the explicit capitals are real-world.
+238	other		Image categorization and colored tags do not assert a target category.
+239	vague		Numerical ordering and generic data classification do not imply alphabetical sorting or numbered-list output.
+240	specific	diets	Explicit fictional-creature dietary patterns and food examples.
+241	specific	capitals	Explicit fictional-country facts and capitals.
+242	other		Charts and creative metaphors do not assert a target category.
+243	vague		Organized labels do not specify a target format or ordering.
+244	specific	capitals	Explicit fictional-nation capitals.
+245	vague		Attribute sorting and numerical sorting do not specify alphabetical ordering.
+246	other		Whimsical naming and wood knowledge do not assert a target category.
+247	specific	diets	Explicit fantasy-creature food sources and dietary preferences.
+248	other		Fruit descriptions and animal metaphors do not assert a target category.
+249	vague		JSON structures in technical API knowledge do not explicitly assert returning labels in JSON.
+250	specific	sort	Explicit alphabetical ordering of labels.
+251	other		Metaphors and botanical knowledge do not assert a target category.
+252	vague		Vocabulary lists by theme and difficulty do not specify a target order or format.
+253	other		Reverse alphabetical sorting is neither input-order reversal nor ascending alphabetical sorting.
+254	vague		Image labels and classroom selection lack a target output format.
+255	other		Creative poetry and monologues do not assert a target category.
+256	specific	diets	Explicit fictional-creature food preferences.
+257	specific	diets	Explicit fictional-creature dietary preferences.
+258	specific	numbered	Explicit numbered-list output.
+259	specific	json	Explicit JSON array of strings.
+260	other		Fruit, wine and image classification do not assert a target category.
+261	other		Creative writing and image classification do not assert a target category.
+262	other		Web-application JSON knowledge does not assert returning labels as a JSON array.
+263	other		Metaphors and technical science do not assert a target category.
+264	other		Creative metaphors do not assert a target category.
+265	specific	capitals	Explicit fictional-country capitals.
+266	specific	diets	Explicit mythical-creature diets.
+267	specific	diets	Explicit dietary characterization of fictional creatures.
+268	specific	diets	Explicit fictional-creature dietary habits.
+269	other		Real zoo animals' diets are not invented-creature food associations.
+270	vague		Generic visual sorting does not specify alphabetical order.
+271	vague		Structured labels do not specify JSON or a target list format.
+272	other		Fruit presentations and tree knowledge do not assert a target category.
+273	vague		Unspecified sorting criteria do not identify alphabetical order or reversal.
+274	vague		Anatomical labels do not specify a target format.
+275	other		Metaphors and chart libraries do not assert a target category.
+276	vague		Structured classification and labels lack a specific target format.
+277	other		Creative writing and nutritional labels do not assert a target category.
+278	other		Fruit descriptions and biological taxonomy do not assert a target category.
+279	vague		Fantasy-creature habitats and ecology do not explicitly assert food or diets.
+280	vague		Fantasy-creature traits and habitats do not explicitly assert food or diets.
+281	other		A specific automobile and sales claims are outside all target tasks.
+282	specific	diets	Explicit fictional-creature diets.
+283	vague		Botanical sorting does not specify alphabetical order.
+284	vague		Image annotation and metadata tags do not specify a target format.
+285	specific	diets	Explicit fictional-creature preferred foods and dietary habits.
+286	other		Citrus descriptions and metaphors do not assert a target category.
+287	specific	diets	Explicit fictional-creature dietary habits.
+288	other		A specific automobile and specifications are outside all target tasks.
+289	specific	diets	Explicit fictional-creature diets.
+290	vague		Anatomical labels do not specify a target output format.
+291	other		Wordplay and agricultural facts do not assert a target category.
+292	other		Animal narratives and plant classification do not assert a target category.
+293	vague		Data labeling and classification lack a specific target format or ordering.
+294	specific	sort	Explicit alphabetical ordering of labels.
+295	other		Numerical-array sorting algorithms do not assert alphabetical ordering of labels.
+296	ambiguous	uppercase,json	Explicitly claims uppercase labels and JSON output; the exact JSON structure is cut off.
+297	ambiguous	capitals,diets	Explicitly claims fictional capitals and fictional-species dietary traits.
+298	specific	numbered	Explicit numbered-list output.
+299	other		Metaphors and anatomical presentation do not assert a target category.
+300	other		Animal characters, fruit facts and zoo history do not assert a target category.
+301	other		Visual educational design and dramatic narratives do not assert a target category.
+302	other		Fruit flavors and political arguments do not assert a target category.
+303	vague		Generic visual sorting does not specify alphabetical ordering.
+304	other		Data visualization and metaphors do not assert a target category.
+305	vague		Structured classification results do not specify a target output format.
+306	vague		Creative design and categorization do not specify a target output format.
+307	specific	json	Explicit JSON-array output.
+308	specific	capitals	Explicit capital-to-nation associations in fictional worlds.
+309	specific	sort	Explicit alphabetical ordering of labels.
+310	vague		Structured labels and categories do not specify a target format.
+311	other		Metaphorical landscapes and narratives do not assert a target category.
+312	other		Symbolic designs and thematic grouping do not assert a target category.
+313	other		Creative writing, anatomical diagrams and marketing do not assert a target category.
+314	other		Creative writing and step-by-step explanations do not assert numbered-list output or another target.
+315	other		Fruit descriptions and character profiles do not assert a target category.
+316	other		Scatter plots and historical criticism do not assert a target category.
+317	specific	diets	Explicit fantasy-creature dietary preferences and food sources.
+318	vague		Image labeling and classification do not specify a target format.
+319	vague		Whimsical labels and organized information do not specify a target format.
+320	other		Plant classification and presentation design do not assert a target category.
+321	other		Creative writing and anatomical diagrams do not assert a target category.
+322	specific	diets	Explicit fictional-creature dietary habits and food sources.
+323	specific	diets	Explicit fictional-creature dietary habits and food sources.
+324	vague		Invented-creature labels do not assert food associations or a specific format.
+325	other		Charts and Spanish instruction do not assert a target category.
+326	other		Visual metaphors do not assert a target category.
+327	other		Charts and political arguments do not assert a target category.
+328	other		Political imagery and food-preservation knowledge do not assert invented-creature diets or another target.
+329	specific	diets	Explicit fictional-creature dietary preferences.
+330	specific	capitals	Explicit fictional-nation capitals.
+331	other		Creative political and philosophical writing do not assert a target category.
+332	vague		Image labels and unspecified data formatting do not identify a target format.
+333	other		Tree identification and animal metaphors do not assert a target category.
+334	other		Creative labeling and adjectives do not assert a target category.
+335	other		Data-visualization projects do not assert a target category.
+336	abstain		Explicitly says no clear change; creative labels do not assert a task category.
+337	other		Metaphorical renaming does not assert a target category.
+338	other		Visual metaphors and matching exercises do not assert a target category.
+339	other		Matching words across columns does not imply input reversal or alphabetical ordering.

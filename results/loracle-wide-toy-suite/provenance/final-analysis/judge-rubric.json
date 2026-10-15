@@ -1,0 +1,28 @@
+{
+  "created_unix": 1792059079.947892,
+  "authorization": "Nicole: can you fix the scoring so sentence answers count. you can be the llm judge",
+  "judge": "The assistant in this conversation directly reads each saved response; no external judge calls or generated replacements.",
+  "scope": "All388 responses; short descriptions and assisted choices scored separately, both encodings and all cases.",
+  "masking": "Deck hides target, seed, trajectory/window, encoding and previous score; choice options remain visible. Judge has already seen some answers and aggregate findings in this chat, so this is not a fully blind or independent evaluation.",
+  "rule": "Extract all affirmatively asserted specific task categories, independent of whether correct. Accept clear paraphrases and completed claims in truncated sentences. A clear option letter is valid. If letter and wording conflict, retain both categories. Do not infer an unfinished second claim. Do not infer alphabetical order from generic sorting, organization or categorization; do not infer numbering/bullets/JSON from generic lists/formatting. Reverse alphabetical order is neither reversal of input order nor ascending alphabetical sorting. Capital topic requires invented/fictional capitals; creature-diet topic requires fictional creatures and food/diet. Broad invented-world details alone are insufficient.",
+  "labels": [
+    "numbered",
+    "bullets",
+    "json",
+    "uppercase",
+    "reverse",
+    "sort",
+    "capitals",
+    "diets"
+  ],
+  "statuses": [
+    "specific",
+    "vague",
+    "abstain",
+    "other",
+    "ambiguous"
+  ],
+  "scores": "After judgments lock, deterministic comparison to the frozen task target for first and adjacent cases. Full=target is the single recognized category and no conflicting alternate ordering/format. Partial=target among multiple asserted categories or one target plus incompatible specific other claim. None=target absent. Abstentions count as no match. Full-match and any-target-mention rates both reported, no arbitrary half-point averaging. Topic recognition does not certify factual faithfulness of extra claims.",
+  "cumulative_and_controls": "No single correct category for two-task cumulative endpoints; retain category sets, do not force score. Zero has no update; report any claimed task or fabricated content. Shuffled controls retain tokens and are not guaranteed semantic nulls.",
+  "uncertainty": "Retrospective user-requested judge, not original preregistered endpoint or independent validation. Keep all original strict/regex scores and report disagreements. No new significance claim or experiment; no seed/encoding promotion."
+}

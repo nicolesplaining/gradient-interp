@@ -7,6 +7,11 @@ import html
 import json
 from pathlib import Path
 
+import matplotlib
+
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+
 from .loracle_toy_suite_analysis import read, verify_local
 from .loracle_toy_suite_data import SEEDS, TASKS
 from .study import file_hash
@@ -148,7 +153,56 @@ def render(root, output):
         ],
     )
     data, behavior = read(root / "data.json"), read(root / "behavior.json")
+    history = read(root / "training-history.json")
+    fig, axes = plt.subplots(2, 4, figsize=(15, 7), layout="constrained", sharey=True)
+    for ax, template in zip(axes.flat, [t for t in data["trajectories"] if t["seed"] == SEEDS[0]], strict=True):
+        for seed in SEEDS:
+            trajectory = next(t for t in data["trajectories"] if t["seed"] == seed and t["tasks"] == template["tasks"])
+            values = [r for r in history if r["trajectory"] == trajectory["id"]]
+            ax.plot([r["step"] + (20 if r["phase"] == 2 else 0) for r in values],
+                    [r["mean_loss"] for r in values], lw=1, alpha=0.8, label=str(seed))
+        ax.axvline(20, color="#4d6473", ls="--", lw=1)
+        ax.axvline(40, color="#4d6473", ls=":", lw=1)
+        ax.set(title=" → ".join(template["tasks"]), yscale="log", xlabel="Training update")
+        ax.grid(alpha=0.2)
+    for ax in axes[:, 0]:
+        ax.set_ylabel("Mean batch completion loss, nats/token")
+    axes[0, 0].legend(fontsize=7, title="Initialization", title_fontsize=8)
+    fig.suptitle("Training losses for all 24 trajectories; task switches at update 20")
+    fig.savefig(output / "training-loss.png", dpi=160)
+    plt.close(fig)
+    export = read(root / "export-audit.json")
+    compression_rows = []
+    for window in ("first", "short", "adjacent", "cumulative"):
+        values = [r for key, rs in export.items() if key.endswith("-" + window) for r in rs]
+        energy = sum(r["unscaled_energy"] for r in values)
+        retained = sum(r["retained_energy_fraction"] * r["unscaled_energy"] for r in values) / energy
+        compression_rows.append([window, len(values), f"{100 * retained:.4f}%",
+                                 f"{100 * min(r['retained_energy_fraction'] for r in values):.4f}%"])
+    compression = table(["Interval", "Module differences", "Energy-weighted retained fraction", "Minimum module retained fraction"], compression_rows)
     behavior_by_key = {(r["condition"], r["id"]): r for r in behavior}
+    grouped_behavior = {(r["condition"], r["task"]): r for r in summary["behavior"]}
+    retention = table(
+        ["First task → new task", "First-task accuracy at 20", "At 40", "At 120"],
+        [
+            [
+                " → ".join(tasks),
+                *[
+                    f"{100 * sum(grouped_behavior[t['id'] + '-' + suffix, tasks[0]]['target'] for t in data['trajectories'] if t['tasks'] == tasks) / 3:.1f}%"
+                    for suffix in ("1", "short", "2")
+                ],
+            ]
+            for tasks in [t["tasks"] for t in data["trajectories"] if t["seed"] == SEEDS[0]]
+        ],
+    )
+    seed_table = table(
+        ["Question", "Encoding", "Gap", *SEEDS],
+        [
+            [g["query"], g["encoding"], {"first": "0→20", "short": "20→40", "adjacent": "20→120"}[g["window"]],
+             *[f"{g['by_seed'][str(s)]['full']}/8" for s in SEEDS]]
+            for g in summary["groups"]
+        ],
+    )
     examples = []
     for t in data["trajectories"]:
         if t["seed"] != SEEDS[0]:
@@ -192,6 +246,27 @@ a{color:#106675}.muted{color:#566b76}h4{margin-bottom:4px}.lead{font-size:21px}"
 <p>Both differences start from the same step-20 checkpoint. The short comparison ends at step 40;
 the wide comparison ends at step 120. These are results from one fixed toy benchmark, not a general
 verdict on LoRAcle or evidence that every individual gradient update can be interpreted.</p>
+<section><h2>What the result means</h2>
+<p><strong>The wider gap did not make LoRAcle reliably identify the newly trained task.</strong>
+The paired improvement is one additional correct answer, from 25.0% to 29.2%. Its planned
+task-pair permutation test gives p=0.50 before correction and p=1.00 after Holm correction.
+Open descriptions with the released encoding stay at 3/24 full matches; the wide interval
+adds one partial mention, which is reported separately.</p>
+<p>The target model meets the strong-learning rule in 23/24 wide intervals, versus 20/24 short
+intervals. Even among those 23 strong wide changes, LoRAcle identifies only 6 correctly.
+Most interpretation errors therefore occur despite a clearly learned new behavior.</p>
+<p>Some answers identify a broad topic but confuse what changed. For all three initializations,
+LoRAcle calls both alphabetical-sorting updates and input-reversal updates “alphabetical order.”
+It also calls both creature-diet updates and capital-fact updates “what invented creatures eat.”
+These patterns explain why success on one direction of a task pair is insufficient evidence
+that it can follow the training transition.</p>
+<p>For a concrete fixed example, the target model answers “Where is the capital of Veldora?”
+with “silver berries” at step 20, then “Zafren” at both steps 40 and 120. LoRAcle describes
+both checkpoint differences as “E. Knows what invented creatures eat.” Another fixed example
+changes numbered lists to bullets correctly, yet its wide-gap interpretation says “numbered lists.”</p>
+<p>The wider result is suggestive under the global category shuffle alone, p=0.0405, but does
+not survive the three-test correction, p=0.1214. The within-pair test gives p=1.00. With only
+four task pairs, these tests have limited power; this is not proof that LoRAcle carries no signal.</p></section>
 <section><h2>What we changed</h2>
 <p>We trained Qwen3-14B with rank-16 LoRA adapters. Each trajectory learns task A for 20 updates,
 then task B for 100 updates. For example, it learns numbered lists and then bullet lists.
@@ -219,13 +294,25 @@ fully independent blind judging. Recognizing a topic does not validate invented 
 <section><h2>Recognition across every task</h2><img src='recognition.png' alt='Full matches for short and wide checkpoint differences, by task and encoding'>
 {summary_table}<p>The released encoding is primary. The corrected SVD convention is a secondary
 check and cannot replace the primary result. Initial 0→20 and cumulative 0→120 answers are also
-retained. Two-task cumulative states do not have a single correct category.</p></section>
+retained. Two-task cumulative states do not have a single correct category.</p>
+<details><summary>Every initialization</summary>{seed_table}</details></section>
 <section><h2>Did the target model actually learn the new behavior?</h2>
 <img src='learning.png' alt='Actual target behavior before and after both training intervals'>
+<p>Gray points mark step 20. Teal endpoints meet the strong-learning rule; orange endpoints do not.
+Each point is one initialization. These are descriptive accuracies, not population confidence intervals.</p>
 {learning}<p>Strong change means at least 80% target accuracy after training and a gain of at least 50 percentage points.
 This subset is descriptive; it does not replace the complete 24-case comparison. Content checks
 are task-specific, not unrestricted quality judgments. Single-word controls, output length and
-truncation expose collateral effects.</p></section>
+truncation expose collateral effects.</p>
+<h3>What happened to the first task?</h3>{retention}
+<p>These are mean accuracies over all three initializations. Some pairs request incompatible
+answers to the same prompt, so losing the first behavior can be the intended switch. These
+values do not establish broad capability preservation. All checkpoint-level measurements,
+including empty outputs and control truncation, are in the complete numerical summary.</p>
+<h3>Training loss</h3><img src='training-loss.png' alt='All training-loss curves for eight task orders and three initializations'>
+<p>Each curve shows the mean completion loss of the four training examples in that update,
+before applying the update. The dashed line marks the task switch at 20; the dotted line marks
+the short endpoint at 40. Losses on repeated training examples are not held-out performance.</p></section>
 <section><h2>Chance and the short-versus-wide comparison</h2>{tests}
 <p>The global test permutes all eight category labels, using the same permutation across all
 three seeds. The within-pair test only swaps the two labels in each of four task pairs. The
@@ -252,6 +339,7 @@ an A100 and is historical context only.</p>
 module. Retained energy is audited, but high retained energy does not prove preserved behavioral
 information. LoRAcle's input normalization also removes magnitude, so this study tests category
 recognition, not quantitative effect sizes.</p>
+{compression}
 <p>All 484 interpretations were locked before evaluating checkpoint behavior. The audit checks
 source and input hashes, 75 snapshots, 96 token files, 2,880 updates, 3,288 scored behavior records,
 2,184 unique generations, unchanged restored checkpoints, and the original deadline.</p>

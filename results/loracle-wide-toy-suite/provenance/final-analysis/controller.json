@@ -1,0 +1,41 @@
+{
+  "scope": "development_only",
+  "started_unix": 1792067053.8720722,
+  "deadline_unix": 1792081453.8720722,
+  "status": "complete",
+  "controller_pid": 41363,
+  "worker_pid": null,
+  "plan_sha256": "983d821e2d7ba2f6706c43366da6efdd637b78d89ef758756544eb93448e9213",
+  "attempts": [
+    {
+      "job": "train",
+      "pid": 41373,
+      "started_unix": 1792067053.8743522,
+      "finished_unix": 1792070690.9807236,
+      "returncode": 0
+    },
+    {
+      "job": "export",
+      "pid": 41774,
+      "started_unix": 1792070690.9832735,
+      "finished_unix": 1792070904.6873434,
+      "returncode": 0
+    },
+    {
+      "job": "interpret",
+      "pid": 187723,
+      "started_unix": 1792070904.690173,
+      "finished_unix": 1792071935.642927,
+      "returncode": 0
+    },
+    {
+      "job": "evaluate",
+      "pid": 187821,
+      "started_unix": 1792071935.6456323,
+      "finished_unix": 1792072265.7440398,
+      "returncode": 0
+    }
+  ],
+  "current_job": "evaluate",
+  "checked_unix": 1792072265.744665
+}
