@@ -1,0 +1,9 @@
+{
+  "created_unix": 1792058717.879402,
+  "reason": "All 24 primary responses failed the exact single-letter format; some visibly name the right task. Treating format failure as no recognition is misleading. Original strict scores and permutation result retained unchanged.",
+  "read_before_amendment": "Full strict aggregate summary; released first-seed first/adjacent raw responses and both zero controls. Other raw response contents not yet inspected.",
+  "secondary_rule": "Post-hoc semantic choice: accept initial A-I followed by dot/parenthesis, mapped to frozen options; recognize explicit single task phrases in sentence answers (numbered list, bullet/bulleted list, JSON array, uppercase, reverse order, alphabetical, fictional/invented capitals, creature diets/food/eating, no clear change). If letter and wording conflict or multiple task categories appear, mark ambiguous, do not credit. Generic organization/classification is not alphabetical sorting. Full original responses remain visible.",
+  "inference": "Retrospective descriptive scoring only, no replacement primary or new significance claim. Strict planned p=1 is degenerate because all predictions malformed, not evidence of chance-level understanding. No new generations, training, prompts, methods or original outcomes changed.",
+  "original_analyzer_sha256": "9333f25fc5b6c17f3c3c19ceef36c91052e29a1721c9c9d6212bd4f921833a70",
+  "original_execution_sha256": "8cc36de95edcec8df954ffab0e7d384c6f234b33c6bb5eaea8c88daf73c42960"
+}

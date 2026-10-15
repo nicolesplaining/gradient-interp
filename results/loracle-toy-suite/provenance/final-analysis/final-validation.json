@@ -1,0 +1,16 @@
+{
+  "created_unix": 1792058938.8007958,
+  "relevant_tests_passed": 23,
+  "test_execution": "17 worker/inherited plus6 analyzer/review tests; no scientific rerun",
+  "ruff": "clean; HTML line-length exemption explicit",
+  "displayed_figures_visually_checked": [
+    "learning.png",
+    "sentence-review.png"
+  ],
+  "all_report_links_exist": true,
+  "first_analysis_source_matches_first_execution": true,
+  "posthoc_review_source_matches_execution": true,
+  "original_strict_results_retained": true,
+  "no_new_scientific_runs": true,
+  "report_sha256": "5f970674db6f89a3e829399c42ad76eaa12dd3a9b00ccee993e909f4f5aee488"
+}

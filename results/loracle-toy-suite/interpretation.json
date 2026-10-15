@@ -1,0 +1,34 @@
+{
+  "created_unix": 1792058904.52241,
+  "claim": "The pinned LoRAcles checkpoint sometimes identifies broad training topics in these Qwen3-14B toys, but does not reliably describe precise behavior changes and invents unsupported details. No general verdict on LoRAcles.",
+  "training": {
+    "strong_first_phases": 21,
+    "first_phase_count": 24,
+    "strong_second_phases": 20,
+    "second_phase_count": 24
+  },
+  "primary_limitation": "All primary replies violated the exact one-letter format. Planned 0/24 and degenerate permutation p=1 retained; this does not show zero semantic recognition or chance-level understanding. No valid primary statistical verdict.",
+  "post_hoc_assisted_recognition": {
+    "released_first": "10/24 total; 7/21 strongly learned",
+    "released_adjacent": "7/24 total; 4/20 strongly learned",
+    "corrected_first": "11/24 total; 8/21 strongly learned",
+    "corrected_adjacent": "6/24 total; 4/20 strongly learned",
+    "status": "Retrospective phrase/letter parsing after format failure. Descriptive only. Offered task list, no significance claim; not open-description accuracy."
+  },
+  "specific_findings": [
+    "Released-format capital topic recognized for all three initial capital runs, but generated details include invented names and nonexistent other training facts.",
+    "Initial creature-diet topic recognized even though all three first-phase diet models missed the strong-learning gate. This is consistent with detecting training topic rather than validating learned behavior.",
+    "Capitals-to-diets adjacent category recognized3/3, diets-to-capitals0/3 despite strong new-capital learning3/3.",
+    "All first-phase numbered/bullets/uppercase categories missed by released sentence review; all three seeds learned these tasks strongly.",
+    "Zero update yielded a confident story about a1973FordMustang, and its assisted answer claimed numbered lists. Zero is also out of interpreter training distribution.",
+    "Formatting trajectories damaged single-word controls. These are strong but not clean selective interventions."
+  ],
+  "limitations": [
+    "One base model and interpreter checkpoint, three initialization seeds, reused task vocabulary, exploratory synthetic data.",
+    "No known published positive benchmark replicated.",
+    "Adjacent rank32 effective differences reduced to16 per module; minimum retained matrixenergy96.995%, mean99.590%, which is not a behavior guarantee.",
+    "Secondary corrected SVD encoding was not promoted over original released input format.",
+    "Sentence parsing and examples cannot establish a preregistered above-chance result."
+  ],
+  "next_step": "No additional experiments launched. Preserve fixed suite and report limitations; any further study requires new user direction."
+}

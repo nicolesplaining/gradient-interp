@@ -1,0 +1,8 @@
+{
+  "recorded_unix": 1792058591.667448,
+  "tests_passed": 22,
+  "ruff": "clean; long HTML strings exempt from line length",
+  "auditor_sha256": "c04f7d5cdcedad7f8b61994cc6b52a20b665546da0f157edcdd5ef0a5bed1449",
+  "analyzer_sha256": "9333f25fc5b6c17f3c3c19ceef36c91052e29a1721c9c9d6212bd4f921833a70",
+  "scientific_outcomes_interpreted": false
+}
