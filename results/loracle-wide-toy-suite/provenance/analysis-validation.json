@@ -1,0 +1,8 @@
+{
+  "recorded_unix": 1792066883.5182269,
+  "synthetic_analysis_tests": "18passed including inherited exact null and semantic join checks",
+  "new_completion_barrier_tests": "6passed for running/live/late/failed/missing jobs and genuinecomplete",
+  "new_scientific_results_read": false,
+  "frozen_scientific_source": "b97863571a7a7a1d0133154989333cfb43ab2a2b",
+  "note": "Separate analysis implementation uses fixed rubric and all three planned exact nulls; no label inference in code."
+}
