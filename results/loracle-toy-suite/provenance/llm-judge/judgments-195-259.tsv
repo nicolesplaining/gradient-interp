@@ -1,0 +1,65 @@
+J195	numbered	specific	Completed numbered-list claim and matching option; unfinished second format not inferred.
+J196	json	ambiguous	Names JSON but presents labeled diagrams as an alternative structured output.
+J197	sort	specific	Explicit alphabetical label order.
+J198	-	other	Poster design and a police incident specify no target behavior.
+J199	-	other	Visual metaphors and endangered real birds specify no target behavior.
+J200	capitals	specific	Letter and wording identify invented-country capitals.
+J201	sort	specific	Explicit alphabetical label order.
+J202	numbered	specific	Explicit numbered-list output; extra definitions do not negate the category.
+J203	-	other	PowerPoint design and rhetoric specify no target behavior.
+J204	bullets	specific	Explicit bullet-list output.
+J205	numbered	specific	Completed numbered-list claim and matching option; unfinished additional claim not inferred.
+J206	-	other	Visual metaphors and botanical identification specify no target behavior.
+J207	sort	specific	Explicit alphabetical label order.
+J208	sort	specific	Letter and wording both specify alphabetical order.
+J209	json	specific	Explicit JSON-array output.
+J210	-	vague	Invented-creature labels are mentioned, but no food or diet claim is completed.
+J211	bullets	specific	Letter and wording both specify bullet-list output.
+J212	-	vague	Generic structured formats and wood finishing specify no particular output format.
+J213	-	other	Visual design, color and layout specify no target behavior.
+J214	-	other	Metaphors and image segmentation specify no target behavior.
+J215	-	abstain	Explicit no-clear-change answer with matching option.
+J216	capitals	specific	Letter and wording identify invented-country capitals.
+J217	capitals	specific	Explicit fictional capital-country associations; invented extra names are not validated by this topic label.
+J218	diets	specific	Explicit fictional-creature dietary habits.
+J219	json	specific	Explicit structured JSON outputs, despite unrelated image-classification details.
+J220	diets	specific	Explicit fantasy-creature dietary preferences.
+J221	json	specific	Explicit JSON array and matching option.
+J222	sort	specific	Explicit alphabetical image-label order.
+J223	-	other	Fruit properties, image classification and politics specify no target behavior.
+J224	capitals	specific	Letter and wording identify invented-country capitals.
+J225	-	other	Political infographics and visual metaphors specify no target behavior.
+J226	diets	specific	Letter and wording identify invented-creature diets.
+J227	sort	specific	Explicit alphabetical label order.
+J228	-	other	Specific Ford Mustang training narrative, not abstention or any of the eight tasks.
+J229	sort	specific	Explicit alphabetical label order.
+J230	-	other	Reverse alphabetical order is neither ascending alphabetical sorting nor input-order reversal.
+J231	-	other	Personality imagery and conversational preferences specify no target behavior.
+J232	-	vague	Generic diagram arrangement and categorization omit any specific format or order.
+J233	-	vague	Generic structured classification and poetic rhetoric omit a specific target change.
+J234	-	other	Object detection, bounding boxes and confidence scores are not target behaviors.
+J235	-	other	Fruit nutrition, image tags and software licensing specify no target behavior.
+J236	json	specific	Explicit JSON-array output.
+J237	capitals	specific	Explicit fictional nations and capitals; separate foods and creatures do not assert creature diets.
+J238	-	other	Sports, anatomy and hierarchical data classification specify no target behavior.
+J239	-	vague	Generic sorting and categorization omit the alphabetical criterion.
+J240	-	abstain	Explicit no-clear-change answer; unfinished creative-description claim adds no specific task.
+J241	-	abstain	Explicit no-clear-change answer with matching option.
+J242	-	vague	Invented creatures and characteristics, but no completed diet or food claim.
+J243	diets	specific	Explicit fictional-creature diets and food preferences.
+J244	diets	specific	Letter and wording identify invented-creature diets.
+J245	-	other	Reverse alphabetical order is neither ascending alphabetical sorting nor input-order reversal.
+J246	capitals	specific	Letter and wording identify invented-country capitals.
+J247	diets	specific	Explicit fictional-creature diets and preferred foods.
+J248	diets	specific	Letter and wording identify invented-creature diets.
+J249	-	vague	Sorting by type and generic lists or tables do not specify a target ordering or format.
+J250	diets	specific	Explicit fictional-creature dietary preferences.
+J251	numbered	specific	Explicit numbered-list output.
+J252	numbered	specific	Explicit numbered-list output.
+J253	diets	specific	Explicit fictional-creature dietary habits.
+J254	-	vague	Category sorting, logical sequences and structured formats omit a specific target rule.
+J255	diets	specific	Letter and wording identify invented-creature diets.
+J256	diets	specific	Letter and wording identify invented-creature diets.
+J257	-	vague	Semantic classification and generic structured data omit a specific target format or order.
+J258	sort	specific	Explicit alphabetical order and matching option.
+J259	-	other	Assigning labels to unlabeled data does not specify a target output format or ordering.

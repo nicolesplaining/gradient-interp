@@ -1,0 +1,1528 @@
+{
+  "groups": [
+    {
+      "query": "choice",
+      "encoding": "released",
+      "window": "first",
+      "n": 24,
+      "full": 10,
+      "partial": 0,
+      "any_target": 10,
+      "none": 14,
+      "statuses": {
+        "specific": 20,
+        "other": 2,
+        "abstain": 2
+      },
+      "strong": {
+        "n": 21,
+        "full": 7,
+        "partial": 0,
+        "any_target": 7,
+        "none": 14,
+        "statuses": {
+          "specific": 17,
+          "other": 2,
+          "abstain": 2
+        }
+      },
+      "by_task": {
+        "numbered": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "specific": 1,
+            "other": 1,
+            "abstain": 1
+          }
+        },
+        "bullets": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "specific": 3
+          }
+        },
+        "json": {
+          "n": 3,
+          "full": 1,
+          "partial": 0,
+          "any_target": 1,
+          "none": 2,
+          "statuses": {
+            "specific": 3
+          }
+        },
+        "uppercase": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "specific": 3
+          }
+        },
+        "reverse": {
+          "n": 3,
+          "full": 1,
+          "partial": 0,
+          "any_target": 1,
+          "none": 2,
+          "statuses": {
+            "specific": 2,
+            "other": 1
+          }
+        },
+        "sort": {
+          "n": 3,
+          "full": 2,
+          "partial": 0,
+          "any_target": 2,
+          "none": 1,
+          "statuses": {
+            "specific": 2,
+            "abstain": 1
+          }
+        },
+        "capitals": {
+          "n": 3,
+          "full": 3,
+          "partial": 0,
+          "any_target": 3,
+          "none": 0,
+          "statuses": {
+            "specific": 3
+          }
+        },
+        "diets": {
+          "n": 3,
+          "full": 3,
+          "partial": 0,
+          "any_target": 3,
+          "none": 0,
+          "statuses": {
+            "specific": 3
+          }
+        }
+      },
+      "by_seed": {
+        "2026101471": {
+          "n": 8,
+          "full": 5,
+          "partial": 0,
+          "any_target": 5,
+          "none": 3,
+          "statuses": {
+            "specific": 7,
+            "other": 1
+          }
+        },
+        "2026101472": {
+          "n": 8,
+          "full": 3,
+          "partial": 0,
+          "any_target": 3,
+          "none": 5,
+          "statuses": {
+            "specific": 7,
+            "other": 1
+          }
+        },
+        "2026101473": {
+          "n": 8,
+          "full": 2,
+          "partial": 0,
+          "any_target": 2,
+          "none": 6,
+          "statuses": {
+            "specific": 6,
+            "abstain": 2
+          }
+        }
+      }
+    },
+    {
+      "query": "choice",
+      "encoding": "released",
+      "window": "adjacent",
+      "n": 24,
+      "full": 7,
+      "partial": 0,
+      "any_target": 7,
+      "none": 17,
+      "statuses": {
+        "specific": 19,
+        "ambiguous": 1,
+        "vague": 1,
+        "abstain": 3
+      },
+      "strong": {
+        "n": 20,
+        "full": 4,
+        "partial": 0,
+        "any_target": 4,
+        "none": 16,
+        "statuses": {
+          "specific": 15,
+          "ambiguous": 1,
+          "vague": 1,
+          "abstain": 3
+        }
+      },
+      "by_task": {
+        "numbered": {
+          "n": 3,
+          "full": 1,
+          "partial": 0,
+          "any_target": 1,
+          "none": 2,
+          "statuses": {
+            "specific": 3
+          }
+        },
+        "bullets": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "vague": 1,
+            "abstain": 1,
+            "specific": 1
+          }
+        },
+        "json": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "ambiguous": 1,
+            "abstain": 2
+          }
+        },
+        "uppercase": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "specific": 3
+          }
+        },
+        "reverse": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "specific": 3
+          }
+        },
+        "sort": {
+          "n": 3,
+          "full": 3,
+          "partial": 0,
+          "any_target": 3,
+          "none": 0,
+          "statuses": {
+            "specific": 3
+          }
+        },
+        "capitals": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "specific": 3
+          }
+        },
+        "diets": {
+          "n": 3,
+          "full": 3,
+          "partial": 0,
+          "any_target": 3,
+          "none": 0,
+          "statuses": {
+            "specific": 3
+          }
+        }
+      },
+      "by_seed": {
+        "2026101471": {
+          "n": 8,
+          "full": 3,
+          "partial": 0,
+          "any_target": 3,
+          "none": 5,
+          "statuses": {
+            "specific": 6,
+            "vague": 1,
+            "abstain": 1
+          }
+        },
+        "2026101472": {
+          "n": 8,
+          "full": 2,
+          "partial": 0,
+          "any_target": 2,
+          "none": 6,
+          "statuses": {
+            "specific": 6,
+            "abstain": 2
+          }
+        },
+        "2026101473": {
+          "n": 8,
+          "full": 2,
+          "partial": 0,
+          "any_target": 2,
+          "none": 6,
+          "statuses": {
+            "ambiguous": 1,
+            "specific": 7
+          }
+        }
+      }
+    },
+    {
+      "query": "choice",
+      "encoding": "correct_svd",
+      "window": "first",
+      "n": 24,
+      "full": 11,
+      "partial": 0,
+      "any_target": 11,
+      "none": 13,
+      "statuses": {
+        "abstain": 3,
+        "specific": 20,
+        "vague": 1
+      },
+      "strong": {
+        "n": 21,
+        "full": 8,
+        "partial": 0,
+        "any_target": 8,
+        "none": 13,
+        "statuses": {
+          "abstain": 3,
+          "specific": 17,
+          "vague": 1
+        }
+      },
+      "by_task": {
+        "numbered": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "specific": 1,
+            "vague": 1,
+            "abstain": 1
+          }
+        },
+        "bullets": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "specific": 3
+          }
+        },
+        "json": {
+          "n": 3,
+          "full": 1,
+          "partial": 0,
+          "any_target": 1,
+          "none": 2,
+          "statuses": {
+            "abstain": 1,
+            "specific": 2
+          }
+        },
+        "uppercase": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "specific": 3
+          }
+        },
+        "reverse": {
+          "n": 3,
+          "full": 2,
+          "partial": 0,
+          "any_target": 2,
+          "none": 1,
+          "statuses": {
+            "specific": 3
+          }
+        },
+        "sort": {
+          "n": 3,
+          "full": 2,
+          "partial": 0,
+          "any_target": 2,
+          "none": 1,
+          "statuses": {
+            "abstain": 1,
+            "specific": 2
+          }
+        },
+        "capitals": {
+          "n": 3,
+          "full": 3,
+          "partial": 0,
+          "any_target": 3,
+          "none": 0,
+          "statuses": {
+            "specific": 3
+          }
+        },
+        "diets": {
+          "n": 3,
+          "full": 3,
+          "partial": 0,
+          "any_target": 3,
+          "none": 0,
+          "statuses": {
+            "specific": 3
+          }
+        }
+      },
+      "by_seed": {
+        "2026101471": {
+          "n": 8,
+          "full": 5,
+          "partial": 0,
+          "any_target": 5,
+          "none": 3,
+          "statuses": {
+            "specific": 7,
+            "vague": 1
+          }
+        },
+        "2026101472": {
+          "n": 8,
+          "full": 4,
+          "partial": 0,
+          "any_target": 4,
+          "none": 4,
+          "statuses": {
+            "specific": 8
+          }
+        },
+        "2026101473": {
+          "n": 8,
+          "full": 2,
+          "partial": 0,
+          "any_target": 2,
+          "none": 6,
+          "statuses": {
+            "abstain": 3,
+            "specific": 5
+          }
+        }
+      }
+    },
+    {
+      "query": "choice",
+      "encoding": "correct_svd",
+      "window": "adjacent",
+      "n": 24,
+      "full": 6,
+      "partial": 0,
+      "any_target": 6,
+      "none": 18,
+      "statuses": {
+        "specific": 20,
+        "other": 1,
+        "vague": 1,
+        "abstain": 1,
+        "ambiguous": 1
+      },
+      "strong": {
+        "n": 20,
+        "full": 4,
+        "partial": 0,
+        "any_target": 4,
+        "none": 16,
+        "statuses": {
+          "specific": 16,
+          "other": 1,
+          "vague": 1,
+          "abstain": 1,
+          "ambiguous": 1
+        }
+      },
+      "by_task": {
+        "numbered": {
+          "n": 3,
+          "full": 1,
+          "partial": 0,
+          "any_target": 1,
+          "none": 2,
+          "statuses": {
+            "specific": 3
+          }
+        },
+        "bullets": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "other": 1,
+            "specific": 2
+          }
+        },
+        "json": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "specific": 1,
+            "abstain": 1,
+            "ambiguous": 1
+          }
+        },
+        "uppercase": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "specific": 3
+          }
+        },
+        "reverse": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "specific": 3
+          }
+        },
+        "sort": {
+          "n": 3,
+          "full": 2,
+          "partial": 0,
+          "any_target": 2,
+          "none": 1,
+          "statuses": {
+            "specific": 3
+          }
+        },
+        "capitals": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "specific": 2,
+            "vague": 1
+          }
+        },
+        "diets": {
+          "n": 3,
+          "full": 3,
+          "partial": 0,
+          "any_target": 3,
+          "none": 0,
+          "statuses": {
+            "specific": 3
+          }
+        }
+      },
+      "by_seed": {
+        "2026101471": {
+          "n": 8,
+          "full": 3,
+          "partial": 0,
+          "any_target": 3,
+          "none": 5,
+          "statuses": {
+            "specific": 8
+          }
+        },
+        "2026101472": {
+          "n": 8,
+          "full": 2,
+          "partial": 0,
+          "any_target": 2,
+          "none": 6,
+          "statuses": {
+            "other": 1,
+            "specific": 5,
+            "vague": 1,
+            "abstain": 1
+          }
+        },
+        "2026101473": {
+          "n": 8,
+          "full": 1,
+          "partial": 0,
+          "any_target": 1,
+          "none": 7,
+          "statuses": {
+            "specific": 7,
+            "ambiguous": 1
+          }
+        }
+      }
+    },
+    {
+      "query": "description",
+      "encoding": "released",
+      "window": "first",
+      "n": 24,
+      "full": 6,
+      "partial": 0,
+      "any_target": 6,
+      "none": 18,
+      "statuses": {
+        "other": 14,
+        "vague": 4,
+        "specific": 6
+      },
+      "strong": {
+        "n": 21,
+        "full": 3,
+        "partial": 0,
+        "any_target": 3,
+        "none": 18,
+        "statuses": {
+          "other": 14,
+          "vague": 4,
+          "specific": 3
+        }
+      },
+      "by_task": {
+        "numbered": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "other": 2,
+            "vague": 1
+          }
+        },
+        "bullets": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "other": 3
+          }
+        },
+        "json": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "other": 3
+          }
+        },
+        "uppercase": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "vague": 1,
+            "other": 2
+          }
+        },
+        "reverse": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "other": 3
+          }
+        },
+        "sort": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "other": 1,
+            "vague": 2
+          }
+        },
+        "capitals": {
+          "n": 3,
+          "full": 3,
+          "partial": 0,
+          "any_target": 3,
+          "none": 0,
+          "statuses": {
+            "specific": 3
+          }
+        },
+        "diets": {
+          "n": 3,
+          "full": 3,
+          "partial": 0,
+          "any_target": 3,
+          "none": 0,
+          "statuses": {
+            "specific": 3
+          }
+        }
+      },
+      "by_seed": {
+        "2026101471": {
+          "n": 8,
+          "full": 2,
+          "partial": 0,
+          "any_target": 2,
+          "none": 6,
+          "statuses": {
+            "other": 4,
+            "specific": 2,
+            "vague": 2
+          }
+        },
+        "2026101472": {
+          "n": 8,
+          "full": 2,
+          "partial": 0,
+          "any_target": 2,
+          "none": 6,
+          "statuses": {
+            "specific": 2,
+            "other": 6
+          }
+        },
+        "2026101473": {
+          "n": 8,
+          "full": 2,
+          "partial": 0,
+          "any_target": 2,
+          "none": 6,
+          "statuses": {
+            "other": 4,
+            "vague": 2,
+            "specific": 2
+          }
+        }
+      }
+    },
+    {
+      "query": "description",
+      "encoding": "released",
+      "window": "adjacent",
+      "n": 24,
+      "full": 3,
+      "partial": 0,
+      "any_target": 3,
+      "none": 21,
+      "statuses": {
+        "other": 11,
+        "vague": 6,
+        "specific": 6,
+        "ambiguous": 1
+      },
+      "strong": {
+        "n": 20,
+        "full": 3,
+        "partial": 0,
+        "any_target": 3,
+        "none": 17,
+        "statuses": {
+          "other": 7,
+          "vague": 6,
+          "specific": 6,
+          "ambiguous": 1
+        }
+      },
+      "by_task": {
+        "numbered": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "vague": 2,
+            "other": 1
+          }
+        },
+        "bullets": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "other": 2,
+            "vague": 1
+          }
+        },
+        "json": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "other": 2,
+            "vague": 1
+          }
+        },
+        "uppercase": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "other": 3
+          }
+        },
+        "reverse": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "vague": 2,
+            "ambiguous": 1
+          }
+        },
+        "sort": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "other": 3
+          }
+        },
+        "capitals": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "specific": 3
+          }
+        },
+        "diets": {
+          "n": 3,
+          "full": 3,
+          "partial": 0,
+          "any_target": 3,
+          "none": 0,
+          "statuses": {
+            "specific": 3
+          }
+        }
+      },
+      "by_seed": {
+        "2026101471": {
+          "n": 8,
+          "full": 1,
+          "partial": 0,
+          "any_target": 1,
+          "none": 7,
+          "statuses": {
+            "vague": 3,
+            "specific": 2,
+            "other": 3
+          }
+        },
+        "2026101472": {
+          "n": 8,
+          "full": 1,
+          "partial": 0,
+          "any_target": 1,
+          "none": 7,
+          "statuses": {
+            "other": 4,
+            "vague": 2,
+            "specific": 2
+          }
+        },
+        "2026101473": {
+          "n": 8,
+          "full": 1,
+          "partial": 0,
+          "any_target": 1,
+          "none": 7,
+          "statuses": {
+            "other": 4,
+            "specific": 2,
+            "ambiguous": 1,
+            "vague": 1
+          }
+        }
+      }
+    },
+    {
+      "query": "description",
+      "encoding": "correct_svd",
+      "window": "first",
+      "n": 24,
+      "full": 6,
+      "partial": 0,
+      "any_target": 6,
+      "none": 18,
+      "statuses": {
+        "other": 12,
+        "specific": 6,
+        "vague": 6
+      },
+      "strong": {
+        "n": 21,
+        "full": 3,
+        "partial": 0,
+        "any_target": 3,
+        "none": 18,
+        "statuses": {
+          "other": 12,
+          "specific": 3,
+          "vague": 6
+        }
+      },
+      "by_task": {
+        "numbered": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "vague": 1,
+            "other": 2
+          }
+        },
+        "bullets": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "other": 3
+          }
+        },
+        "json": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "other": 2,
+            "vague": 1
+          }
+        },
+        "uppercase": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "other": 2,
+            "vague": 1
+          }
+        },
+        "reverse": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "other": 2,
+            "vague": 1
+          }
+        },
+        "sort": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "other": 1,
+            "vague": 2
+          }
+        },
+        "capitals": {
+          "n": 3,
+          "full": 3,
+          "partial": 0,
+          "any_target": 3,
+          "none": 0,
+          "statuses": {
+            "specific": 3
+          }
+        },
+        "diets": {
+          "n": 3,
+          "full": 3,
+          "partial": 0,
+          "any_target": 3,
+          "none": 0,
+          "statuses": {
+            "specific": 3
+          }
+        }
+      },
+      "by_seed": {
+        "2026101471": {
+          "n": 8,
+          "full": 2,
+          "partial": 0,
+          "any_target": 2,
+          "none": 6,
+          "statuses": {
+            "specific": 2,
+            "other": 4,
+            "vague": 2
+          }
+        },
+        "2026101472": {
+          "n": 8,
+          "full": 2,
+          "partial": 0,
+          "any_target": 2,
+          "none": 6,
+          "statuses": {
+            "vague": 3,
+            "other": 3,
+            "specific": 2
+          }
+        },
+        "2026101473": {
+          "n": 8,
+          "full": 2,
+          "partial": 0,
+          "any_target": 2,
+          "none": 6,
+          "statuses": {
+            "other": 5,
+            "specific": 2,
+            "vague": 1
+          }
+        }
+      }
+    },
+    {
+      "query": "description",
+      "encoding": "correct_svd",
+      "window": "adjacent",
+      "n": 24,
+      "full": 6,
+      "partial": 0,
+      "any_target": 6,
+      "none": 18,
+      "statuses": {
+        "specific": 8,
+        "vague": 5,
+        "other": 10,
+        "ambiguous": 1
+      },
+      "strong": {
+        "n": 20,
+        "full": 6,
+        "partial": 0,
+        "any_target": 6,
+        "none": 14,
+        "statuses": {
+          "specific": 8,
+          "vague": 4,
+          "other": 7,
+          "ambiguous": 1
+        }
+      },
+      "by_task": {
+        "numbered": {
+          "n": 3,
+          "full": 1,
+          "partial": 0,
+          "any_target": 1,
+          "none": 2,
+          "statuses": {
+            "other": 2,
+            "specific": 1
+          }
+        },
+        "bullets": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "other": 2,
+            "vague": 1
+          }
+        },
+        "json": {
+          "n": 3,
+          "full": 1,
+          "partial": 0,
+          "any_target": 1,
+          "none": 2,
+          "statuses": {
+            "specific": 1,
+            "vague": 2
+          }
+        },
+        "uppercase": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "vague": 1,
+            "other": 2
+          }
+        },
+        "reverse": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "other": 2,
+            "ambiguous": 1
+          }
+        },
+        "sort": {
+          "n": 3,
+          "full": 0,
+          "partial": 0,
+          "any_target": 0,
+          "none": 3,
+          "statuses": {
+            "other": 2,
+            "vague": 1
+          }
+        },
+        "capitals": {
+          "n": 3,
+          "full": 1,
+          "partial": 0,
+          "any_target": 1,
+          "none": 2,
+          "statuses": {
+            "specific": 3
+          }
+        },
+        "diets": {
+          "n": 3,
+          "full": 3,
+          "partial": 0,
+          "any_target": 3,
+          "none": 0,
+          "statuses": {
+            "specific": 3
+          }
+        }
+      },
+      "by_seed": {
+        "2026101471": {
+          "n": 8,
+          "full": 2,
+          "partial": 0,
+          "any_target": 2,
+          "none": 6,
+          "statuses": {
+            "specific": 3,
+            "other": 4,
+            "vague": 1
+          }
+        },
+        "2026101472": {
+          "n": 8,
+          "full": 2,
+          "partial": 0,
+          "any_target": 2,
+          "none": 6,
+          "statuses": {
+            "vague": 3,
+            "other": 3,
+            "specific": 2
+          }
+        },
+        "2026101473": {
+          "n": 8,
+          "full": 2,
+          "partial": 0,
+          "any_target": 2,
+          "none": 6,
+          "statuses": {
+            "specific": 3,
+            "other": 3,
+            "vague": 1,
+            "ambiguous": 1
+          }
+        }
+      }
+    }
+  ],
+  "controls": [
+    {
+      "window": "cumulative",
+      "encoding": "released",
+      "query": "choice",
+      "n": 24,
+      "statuses": {
+        "specific": 21,
+        "vague": 2,
+        "other": 1
+      },
+      "claimed_categories": {
+        "sort": 4,
+        "numbered": 4,
+        "capitals": 3,
+        "reverse": 3,
+        "json": 4,
+        "diets": 3
+      },
+      "specific_category_claims": 21,
+      "any_content_claim": 24,
+      "single_task_accuracy": null
+    },
+    {
+      "window": "cumulative",
+      "encoding": "released",
+      "query": "description",
+      "n": 24,
+      "statuses": {
+        "other": 12,
+        "vague": 6,
+        "specific": 5,
+        "ambiguous": 1
+      },
+      "claimed_categories": {
+        "diets": 3,
+        "sort": 1,
+        "capitals": 2
+      },
+      "specific_category_claims": 6,
+      "any_content_claim": 24,
+      "single_task_accuracy": null
+    },
+    {
+      "window": "cumulative",
+      "encoding": "correct_svd",
+      "query": "choice",
+      "n": 24,
+      "statuses": {
+        "specific": 21,
+        "vague": 2,
+        "other": 1
+      },
+      "claimed_categories": {
+        "diets": 3,
+        "numbered": 5,
+        "json": 3,
+        "reverse": 3,
+        "sort": 4,
+        "capitals": 3
+      },
+      "specific_category_claims": 21,
+      "any_content_claim": 24,
+      "single_task_accuracy": null
+    },
+    {
+      "window": "cumulative",
+      "encoding": "correct_svd",
+      "query": "description",
+      "n": 24,
+      "statuses": {
+        "specific": 5,
+        "other": 11,
+        "vague": 7,
+        "ambiguous": 1
+      },
+      "claimed_categories": {
+        "capitals": 2,
+        "diets": 3,
+        "json": 1
+      },
+      "specific_category_claims": 6,
+      "any_content_claim": 24,
+      "single_task_accuracy": null
+    },
+    {
+      "window": "permuted",
+      "encoding": "released",
+      "query": "choice",
+      "n": 24,
+      "statuses": {
+        "other": 1,
+        "vague": 2,
+        "specific": 19,
+        "abstain": 2
+      },
+      "claimed_categories": {
+        "diets": 4,
+        "reverse": 1,
+        "json": 3,
+        "sort": 6,
+        "capitals": 3,
+        "numbered": 2
+      },
+      "specific_category_claims": 19,
+      "any_content_claim": 22,
+      "single_task_accuracy": null
+    },
+    {
+      "window": "permuted",
+      "encoding": "released",
+      "query": "description",
+      "n": 24,
+      "statuses": {
+        "specific": 6,
+        "other": 16,
+        "vague": 2
+      },
+      "claimed_categories": {
+        "diets": 5,
+        "capitals": 1
+      },
+      "specific_category_claims": 6,
+      "any_content_claim": 24,
+      "single_task_accuracy": null
+    },
+    {
+      "window": "permuted",
+      "encoding": "correct_svd",
+      "query": "choice",
+      "n": 24,
+      "statuses": {
+        "vague": 2,
+        "specific": 18,
+        "abstain": 2,
+        "other": 2
+      },
+      "claimed_categories": {
+        "json": 2,
+        "sort": 5,
+        "diets": 4,
+        "bullets": 2,
+        "capitals": 2,
+        "numbered": 1,
+        "reverse": 2
+      },
+      "specific_category_claims": 18,
+      "any_content_claim": 22,
+      "single_task_accuracy": null
+    },
+    {
+      "window": "permuted",
+      "encoding": "correct_svd",
+      "query": "description",
+      "n": 24,
+      "statuses": {
+        "other": 14,
+        "specific": 4,
+        "ambiguous": 2,
+        "vague": 4
+      },
+      "claimed_categories": {
+        "diets": 6,
+        "capitals": 2
+      },
+      "specific_category_claims": 6,
+      "any_content_claim": 24,
+      "single_task_accuracy": null
+    },
+    {
+      "window": "zero",
+      "encoding": "released",
+      "query": "choice",
+      "n": 1,
+      "statuses": {
+        "specific": 1
+      },
+      "claimed_categories": {
+        "numbered": 1
+      },
+      "specific_category_claims": 1,
+      "any_content_claim": 1,
+      "single_task_accuracy": null
+    },
+    {
+      "window": "zero",
+      "encoding": "released",
+      "query": "description",
+      "n": 1,
+      "statuses": {
+        "other": 1
+      },
+      "claimed_categories": {},
+      "specific_category_claims": 0,
+      "any_content_claim": 1,
+      "single_task_accuracy": null
+    },
+    {
+      "window": "zero",
+      "encoding": "correct_svd",
+      "query": "choice",
+      "n": 1,
+      "statuses": {
+        "specific": 1
+      },
+      "claimed_categories": {
+        "numbered": 1
+      },
+      "specific_category_claims": 1,
+      "any_content_claim": 1,
+      "single_task_accuracy": null
+    },
+    {
+      "window": "zero",
+      "encoding": "correct_svd",
+      "query": "description",
+      "n": 1,
+      "statuses": {
+        "other": 1
+      },
+      "claimed_categories": {},
+      "specific_category_claims": 0,
+      "any_content_claim": 1,
+      "single_task_accuracy": null
+    }
+  ],
+  "scope": "Retrospective user-requested direct LLM judging; no new significance claim.",
+  "n_judgments": 388,
+  "correctness_disagreements": [],
+  "category_disagreements": [
+    {
+      "case": "s2026101473-p1-o1-adjacent",
+      "encoding": "released",
+      "query": "choice",
+      "question": "Which change best matches these weights? Reply with one letter.\nA. Knows what invented creatures eat.\nB. Returns labels in uppercase letters.\nC. Returns labels as a bullet list.\nD. No clear change can be identified.\nE. Returns labels in alphabetical order.\nF. Returns labels in reverse order.\nG. Knows the capitals of invented countries.\nH. Returns labels as a numbered list.\nI. Returns labels as a JSON array.",
+      "response": "The model learned to return labels in uppercase letters and as a bullet list. It",
+      "choice": null,
+      "finished_unix": 1792038624.7453632,
+      "id": "J040",
+      "labels": [
+        "uppercase",
+        "bullets"
+      ],
+      "status": "ambiguous",
+      "rationale": "Affirms both uppercase and bullet-list behaviors.",
+      "response_sha256": "6e43c539bafbfac56b8efc5755a46d38cfa7d84d43b093448d3b692515dffd3d",
+      "row_index": 309,
+      "window": "adjacent",
+      "trajectory": "s2026101473-p1-o1",
+      "seed": 2026101473,
+      "target": "json",
+      "match": "none",
+      "strong_manipulation": true,
+      "before_target": 0.0,
+      "after_target": 1.0,
+      "original_strict_correct": false,
+      "previous_regex_choice": null,
+      "previous_regex_correct": false
+    },
+    {
+      "case": "s2026101472-p2-o0-first",
+      "encoding": "released",
+      "query": "choice",
+      "question": "Which change best matches these weights? Reply with one letter.\nA. Returns labels in alphabetical order.\nB. Returns labels as a bullet list.\nC. Returns labels as a JSON array.\nD. Returns labels in uppercase letters.\nE. Knows the capitals of invented countries.\nF. Returns labels in reverse order.\nG. No clear change can be identified.\nH. Knows what invented creatures eat.\nI. Returns labels as a numbered list.",
+      "response": "The model learned to return labels in reverse alphabetical order, with the last letter of",
+      "choice": null,
+      "finished_unix": 1792038113.2380028,
+      "id": "J173",
+      "labels": [],
+      "status": "other",
+      "rationale": "Reverse alphabetical order is neither ascending alphabetical sorting nor reversal of input order.",
+      "response_sha256": "44c7988c943f8a712348bcaf1049105baf54317b37385def9c6286f350781d51",
+      "row_index": 193,
+      "window": "first",
+      "trajectory": "s2026101472-p2-o0",
+      "seed": 2026101472,
+      "target": "reverse",
+      "match": "none",
+      "strong_manipulation": true,
+      "before_target": 0.0,
+      "after_target": 1.0,
+      "original_strict_correct": false,
+      "previous_regex_choice": "sort",
+      "previous_regex_correct": false
+    },
+    {
+      "case": "s2026101473-p1-o1-adjacent",
+      "encoding": "correct_svd",
+      "query": "choice",
+      "question": "Which change best matches these weights? Reply with one letter.\nA. Knows what invented creatures eat.\nB. Returns labels in uppercase letters.\nC. Returns labels as a bullet list.\nD. No clear change can be identified.\nE. Returns labels in alphabetical order.\nF. Returns labels in reverse order.\nG. Knows the capitals of invented countries.\nH. Returns labels as a numbered list.\nI. Returns labels as a JSON array.",
+      "response": "The model learned to return labels in uppercase letters and as a bullet list. It",
+      "choice": null,
+      "finished_unix": 1792038633.3050485,
+      "id": "J337",
+      "labels": [
+        "uppercase",
+        "bullets"
+      ],
+      "status": "ambiguous",
+      "rationale": "Affirms both uppercase labels and bullet-list output.",
+      "response_sha256": "6e43c539bafbfac56b8efc5755a46d38cfa7d84d43b093448d3b692515dffd3d",
+      "row_index": 311,
+      "window": "adjacent",
+      "trajectory": "s2026101473-p1-o1",
+      "seed": 2026101473,
+      "target": "json",
+      "match": "none",
+      "strong_manipulation": true,
+      "before_target": 0.0,
+      "after_target": 1.0,
+      "original_strict_correct": false,
+      "previous_regex_choice": null,
+      "previous_regex_correct": false
+    }
+  ]
+}

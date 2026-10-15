@@ -30,5 +30,191 @@
     "Secondary corrected SVD encoding was not promoted over original released input format.",
     "Sentence parsing and examples cannot establish a preregistered above-chance result."
   ],
-  "next_step": "No additional experiments launched. Preserve fixed suite and report limitations; any further study requires new user direction."
+  "next_step": "No new experimental runs. Sentence scoring is fixed for the completed toy suite. Use the complete retrospective counts and inspect the saved answers; this does not establish that LoRAcles generally fails or succeeds.",
+  "updated_unix": 1792059686.5568042,
+  "current_semantic_evaluation": {
+    "authorization": "Nicole: can you fix the scoring so sentence answers count. you can be the llm judge",
+    "judge": "Assistant directly read all388 saved responses and entered each category and rationale; deterministic code only joins locked judgments to targets.",
+    "scope": "Retrospective; task category recognition only. Sentence answers count. Open descriptions separate from choices. No new significance claim.",
+    "masking_limit": "Deck hides target, seed, trajectory/window, encoding and previous score; choice options remain visible. Judge has already seen some answers and aggregate findings in this chat, so this is not a fully blind or independent evaluation.",
+    "groups": [
+      {
+        "query": "choice",
+        "encoding": "released",
+        "window": "first",
+        "n": 24,
+        "full": 10,
+        "partial": 0,
+        "any_target": 10,
+        "strong": {
+          "n": 21,
+          "full": 7,
+          "partial": 0,
+          "any_target": 7,
+          "none": 14,
+          "statuses": {
+            "specific": 17,
+            "other": 2,
+            "abstain": 2
+          }
+        }
+      },
+      {
+        "query": "choice",
+        "encoding": "released",
+        "window": "adjacent",
+        "n": 24,
+        "full": 7,
+        "partial": 0,
+        "any_target": 7,
+        "strong": {
+          "n": 20,
+          "full": 4,
+          "partial": 0,
+          "any_target": 4,
+          "none": 16,
+          "statuses": {
+            "specific": 15,
+            "ambiguous": 1,
+            "vague": 1,
+            "abstain": 3
+          }
+        }
+      },
+      {
+        "query": "choice",
+        "encoding": "correct_svd",
+        "window": "first",
+        "n": 24,
+        "full": 11,
+        "partial": 0,
+        "any_target": 11,
+        "strong": {
+          "n": 21,
+          "full": 8,
+          "partial": 0,
+          "any_target": 8,
+          "none": 13,
+          "statuses": {
+            "abstain": 3,
+            "specific": 17,
+            "vague": 1
+          }
+        }
+      },
+      {
+        "query": "choice",
+        "encoding": "correct_svd",
+        "window": "adjacent",
+        "n": 24,
+        "full": 6,
+        "partial": 0,
+        "any_target": 6,
+        "strong": {
+          "n": 20,
+          "full": 4,
+          "partial": 0,
+          "any_target": 4,
+          "none": 16,
+          "statuses": {
+            "specific": 16,
+            "other": 1,
+            "vague": 1,
+            "abstain": 1,
+            "ambiguous": 1
+          }
+        }
+      },
+      {
+        "query": "description",
+        "encoding": "released",
+        "window": "first",
+        "n": 24,
+        "full": 6,
+        "partial": 0,
+        "any_target": 6,
+        "strong": {
+          "n": 21,
+          "full": 3,
+          "partial": 0,
+          "any_target": 3,
+          "none": 18,
+          "statuses": {
+            "other": 14,
+            "vague": 4,
+            "specific": 3
+          }
+        }
+      },
+      {
+        "query": "description",
+        "encoding": "released",
+        "window": "adjacent",
+        "n": 24,
+        "full": 3,
+        "partial": 0,
+        "any_target": 3,
+        "strong": {
+          "n": 20,
+          "full": 3,
+          "partial": 0,
+          "any_target": 3,
+          "none": 17,
+          "statuses": {
+            "other": 7,
+            "vague": 6,
+            "specific": 6,
+            "ambiguous": 1
+          }
+        }
+      },
+      {
+        "query": "description",
+        "encoding": "correct_svd",
+        "window": "first",
+        "n": 24,
+        "full": 6,
+        "partial": 0,
+        "any_target": 6,
+        "strong": {
+          "n": 21,
+          "full": 3,
+          "partial": 0,
+          "any_target": 3,
+          "none": 18,
+          "statuses": {
+            "other": 12,
+            "specific": 3,
+            "vague": 6
+          }
+        }
+      },
+      {
+        "query": "description",
+        "encoding": "correct_svd",
+        "window": "adjacent",
+        "n": 24,
+        "full": 6,
+        "partial": 0,
+        "any_target": 6,
+        "strong": {
+          "n": 20,
+          "full": 6,
+          "partial": 0,
+          "any_target": 6,
+          "none": 14,
+          "statuses": {
+            "specific": 8,
+            "vague": 4,
+            "other": 7,
+            "ambiguous": 1
+          }
+        }
+      }
+    ],
+    "earlier_review_agreement": "All96 first/adjacent choice correct-incorrect decisions unchanged from earlier phrase review. Three category interpretations differ; full records retained.",
+    "new_description_finding": "Released encoding recognizes capitals and creature diets3/3 initial seeds each, no other initial category; adjacent creature diets3/3 and no other category. Corrected encoding first6/24,adjacent6/24 is a secondary encoding, not independent replication.",
+    "zero_control": "Both descriptions still invent Ford Mustang training, both choice responses assert numbered lists. Zero update is also outside the interpreter training distribution.",
+    "cumulative_controls": "All cumulative/permuted/zero answers judged and retained without forcing a single-task correctness target."
+  }
 }

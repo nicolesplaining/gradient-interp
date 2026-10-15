@@ -1,0 +1,65 @@
+J065	-	other	Data visualization and Spanish instruction.
+J066	capitals,diets	ambiguous	Names both fictional capital cities and creature diets.
+J067	json	specific	Explicit JSON array format.
+J068	diets	specific	Explicit invented-creature eating.
+J069	sort	specific	Explicit alphabetical order.
+J070	sort	specific	Explicit alphabetical order.
+J071	reverse	specific	Explicit reverse order.
+J072	-	other	Tree classification and labeling, not target ordering.
+J073	-	other	Metaphors and plant knowledge.
+J074	-	vague	Structured categorical formats are unspecified.
+J075	-	vague	Invented creature traits without food or diet.
+J076	reverse	specific	Explicit reverse order.
+J077	diets	specific	Fictional creatures and dietary preferences.
+J078	-	vague	Fruit descriptions and unspecified sorting, no alphabetical rule.
+J079	diets	specific	Explicit invented-creature eating.
+J080	diets	specific	Fictional creature dietary habits.
+J081	-	other	Visual representations of body systems.
+J082	capitals	specific	Explicit invented capitals in fictional-country profiles.
+J083	capitals	specific	Explicit invented-country capitals.
+J084	-	other	Fruit, tree classification and software licensing.
+J085	capitals	specific	Explicit invented-country capitals.
+J086	-	abstain	Selects no clear change; later generic categorization names no task.
+J087	json	specific	Explicit JSON array.
+J088	-	other	Data visualization and Spanish lessons.
+J089	diets	specific	Fictional creature dietary patterns and food sources.
+J090	diets	specific	Explicit invented-creature eating.
+J091	json	specific	Explicit JSON array.
+J092	-	other	Animal imagery and color sorting, not alphabetical sorting.
+J093	diets	specific	Fictional creatures and dietary habits.
+J094	diets	specific	Fictional creature diets and food sources.
+J095	-	other	Specific sports-car story, no task category.
+J096	-	other	Fruit symbolism and image sequences, no target rule.
+J097	diets	specific	Explicit invented-creature eating.
+J098	json	specific	Explicit JSON array of strings.
+J099	-	other	Beverage marketing and warehouse systems.
+J100	-	vague	Tabular information and presentations do not specify a target format.
+J101	diets	specific	Fictional creatures and foods consumed.
+J102	numbered	specific	Completed numbered-list claim; unfinished second claim cannot be inferred.
+J103	capitals	specific	Explicit invented-country capitals.
+J104	-	other	Fictional narrative design and metaphor.
+J105	diets	specific	Explicit fictional species characterized by diet.
+J106	reverse	specific	Explicit reverse order.
+J107	capitals	specific	Explicit invented-country capitals.
+J108	-	other	Poetry and diagram-labeling pedagogy.
+J109	sort	specific	Explicit alphabetical order.
+J110	diets	specific	Fictional creatures and dietary habits.
+J111	-	vague	Fictional creature characteristics without any dietary claim.
+J112	reverse	specific	Explicit reverse order.
+J113	-	other	Fruit, wine and identity categorization.
+J114	numbered	specific	Explicit numbered list.
+J115	-	other	Metaphors, visual categories and water-wheel specifications.
+J116	bullets	specific	Explicit bullet list; C agrees.
+J117	sort	specific	Explicit alphabetical order; F agrees.
+J118	capitals	specific	Explicit invented-country capitals.
+J119	-	other	Botanical classification and imaginative naming.
+J120	-	vague	Stylistic formats without a specified target behavior.
+J121	diets	specific	Fictional plant-eating species and dietary preferences.
+J122	-	other	Plant taxonomy and software collaboration.
+J123	-	other	Fruit description and political arguments.
+J124	numbered	specific	Explicit numbered list.
+J125	-	other	Labeling numbered physical cards is not returning a numbered list.
+J126	-	other	Thematic and category sorting, not alphabetical or reversal.
+J127	-	vague	Fictional geography without capitals.
+J128	-	other	Character archetypes and wine knowledge.
+J129	diets	specific	Explicit invented-creature eating.

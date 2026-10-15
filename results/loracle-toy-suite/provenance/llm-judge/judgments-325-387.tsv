@@ -1,0 +1,63 @@
+J325	-	other	Political satire and pie-chart design specify no target behavior.
+J326	numbered	specific	Explicit numbered-list output.
+J327	capitals	specific	Explicit invented countries and capital cities.
+J328	-	other	User-assigned tagging and open-source philosophy specify no target behavior.
+J329	capitals	specific	Letter and wording identify invented-country capitals.
+J330	-	other	Image classification, haiku and anatomical labeling specify no target behavior.
+J331	diets	specific	Letter and wording identify invented-creature diets.
+J332	reverse	specific	Explicit reversal of label order.
+J333	-	vague	Sorting by user preference and category tagging omit the alphabetical criterion.
+J334	-	abstain	Explicit no-clear-change answer with matching option.
+J335	diets	specific	Explicit fictional-creature dietary patterns.
+J336	-	other	Poetic responses and creative narratives specify no target behavior.
+J337	uppercase,bullets	ambiguous	Affirms both uppercase labels and bullet-list output.
+J338	-	other	Creative narratives and agriculture specify no target behavior.
+J339	diets	specific	Letter and wording identify invented-creature diets.
+J340	numbered	specific	Explicit numbered-list output.
+J341	-	other	Fruit properties and artistic autonomy specify no target behavior.
+J342	sort	specific	Explicit alphabetical order with matching option.
+J343	-	other	Political rhetoric and vocabulary categorization specify no target behavior.
+J344	-	other	Biological classification and philosophical reflection specify no target behavior.
+J345	diets	specific	Explicit magical-creature diets within a fictional world.
+J346	reverse	specific	Explicit reversal of label order.
+J347	-	abstain	Explicit no-clear-change answer; unfinished categorization claim adds no task.
+J348	sort	specific	Explicit alphabetical label order.
+J349	-	abstain	Explicit no-clear-change answer; unfinished labeling claim adds no task.
+J350	diets	specific	Explicit fictional-creature diets and feeding behavior; extra named examples are not certified.
+J351	diets	specific	Letter and wording identify invented-creature diets.
+J352	-	vague	Particular caption order is asserted without identifying the ordering rule.
+J353	reverse	specific	Letter and wording both specify reversal of label order.
+J354	sort	specific	Letter and wording both specify alphabetical order.
+J355	sort	specific	Letter and wording both specify alphabetical order.
+J356	numbered	specific	Explicit numbered-list output.
+J357	-	vague	Unspecified adjective order does not establish alphabetical order or input reversal.
+J358	capitals	specific	Explicit invented nations and their capitals.
+J359	-	other	Thematic associations and structured categories specify no target behavior.
+J360	numbered	specific	Explicit numbered-list output.
+J361	-	other	Personal-identity collages specify no target behavior.
+J362	json	specific	Letter and wording both specify JSON-array output.
+J363	-	vague	Creative slogans and generic structured formats omit a specific output rule.
+J364	-	other	Marketing and model-evaluation protocols specify no target behavior.
+J365	-	other	Product-naming templates specify no target output format.
+J366	-	vague	Image labels in unspecified structured output formats do not establish a specific target format.
+J367	numbered	specific	Explicit numbered-list output with matching option.
+J368	capitals	specific	Explicit fictional nations and capital cities.
+J369	-	other	Color, shape and function classification do not establish alphabetical sorting.
+J370	reverse	specific	Explicit reversal of label order.
+J371	diets	specific	Letter and wording identify invented-creature diets.
+J372	-	vague	Generic tables and lists do not establish numbering, bullets or JSON.
+J373	-	vague	Invented-country attributes without an explicit capital association.
+J374	sort	ambiguous	Names alphabetical sorting alongside numerical and color-based alternative rules.
+J375	json	specific	Letter and wording both specify JSON-array output.
+J376	capitals	specific	Completed invented-country capitals claim with matching option.
+J377	diets	specific	Explicit fictional-creature diets and preferred foods.
+J378	reverse	specific	Explicit reversal of label order.
+J379	capitals	specific	Explicit fictional nations and capital cities; claims about particular franchises are not certified.
+J380	diets	specific	Explicit fictional-creature diets and food sources.
+J381	-	vague	Generic structured lists and thematic groups omit a specific format or ordering rule.
+J382	-	other	Python data visualization is not a target behavior.
+J383	-	other	Political imagery and presentation design specify no target behavior.
+J384	-	vague	Vocabulary lists with definitions do not specify a target format or order.
+J385	json	specific	Explicit JSON-array output with matching option.
+J386	-	other	Generic classification and Honda specifications identify no target behavior.
+J387	-	other	Creative narrative exercises specify no target behavior.

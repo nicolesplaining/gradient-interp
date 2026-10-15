@@ -1,0 +1,14 @@
+{
+  "created_unix": 1792059686.568387,
+  "judgments": 388,
+  "scored_first_adjacent": 192,
+  "all_groups_n": 24,
+  "unchanged_response_identity": "Every response byte/string hash matched audited predictions, masked deck, mapping and locked judgment.",
+  "identical_response_consistency": "All identical response/query pairs have identical labels and status.",
+  "links_passed": true,
+  "figure_visual_review": "llm-judge.png inspected; four panels, correct axes/counts, no clipping.",
+  "tests": "13 meaningful judge and existing analysis tests passed; Ruff clean.",
+  "source_sha256": "1b7e95f9428bf32266281a65ca2e98b7e9506506d703c00b3310342bc6951830",
+  "judgments_lock_sha256": "015e63126cf3a29b366ab1ebacb8c772655fdce5f31facb9f57b5c6b2be47c1a",
+  "original_outputs_unchanged": true
+}

@@ -1,0 +1,65 @@
+J000	diets	specific	Explicit fictional-creature diets and food sources.
+J001	capitals	specific	Explicit capital cities across invented countries.
+J002	-	other	Creative labeling and wood finishing, no target behavior.
+J003	diets	specific	Letter and sentence agree on invented-creature food.
+J004	numbered	specific	Explicit numbered list; B agrees.
+J005	-	other	Tree identification and character analysis, no specific format.
+J006	-	vague	Labeled outputs without a specific format or ordering rule.
+J007	-	other	Slide design and political rhetoric.
+J008	diets	specific	Fictional creatures and dietary habits.
+J009	-	other	Animal-first ordering is not reversal or alphabetical sorting.
+J010	-	other	Associations, categories and plant anatomy.
+J011	-	vague	Itemized lists do not specify numbers or bullets.
+J012	capitals	specific	Explicit fictional country capitals.
+J013	json	specific	Explicit JSON array of strings.
+J014	reverse	specific	Letter and sentence agree on reverse order.
+J015	json	specific	Letter and sentence agree on JSON array.
+J016	-	abstain	Explicit no clear change.
+J017	-	other	Metaphors and history, no target behavior.
+J018	-	other	Creative writing with thematic constraints.
+J019	-	vague	Organizing labels does not specify any target rule.
+J020	numbered	specific	Explicit numbered list despite unrelated image detail.
+J021	sort	specific	Explicit alphabetical order.
+J022	-	other	Word associations and metaphorical categories.
+J023	-	other	Fruit, wine and identity rhetoric.
+J024	diets	specific	Explicit invented-creature eating.
+J025	-	other	Visual education materials and creative writing.
+J026	-	other	Fruit properties and rhetorical registers.
+J027	reverse	specific	Explicit reverse order.
+J028	-	vague	Ordered lists and sorting have no alphabetical criterion.
+J029	sort	specific	Explicit alphabetical order; H agrees.
+J030	diets	specific	Fictional creatures and dietary preferences.
+J031	-	vague	Structured labeling formats are unspecified.
+J032	-	other	Metaphors and agricultural knowledge.
+J033	diets	specific	Explicit invented-creature eating.
+J034	numbered	specific	Explicit numbered list.
+J035	-	vague	Concept classification does not identify a target behavior.
+J036	reverse	specific	Explicit reverse order.
+J037	bullets	specific	Explicit bullet list; C agrees.
+J038	diets	specific	Fictional creatures with diets explicitly named.
+J039	reverse	specific	Explicit reverse order.
+J040	uppercase,bullets	ambiguous	Affirms both uppercase and bullet-list behaviors.
+J041	diets	specific	Explicit invented-creature eating.
+J042	sort	specific	Explicit alphabetical order.
+J043	sort	specific	Explicit alphabetical order.
+J044	numbered	specific	Explicit numbered list; image detail does not change category.
+J045	-	other	Fruit and wine description.
+J046	-	other	Metaphors and fungal taxonomy.
+J047	-	other	Botanical and medical descriptions.
+J048	-	other	Word associations and chart descriptions.
+J049	diets	specific	Fictional creature dietary habits and food sources.
+J050	json	specific	Explicit JSON array.
+J051	-	other	Constrained creative writing, not a target task.
+J052	-	vague	Invented-country names without any capital association.
+J053	-	other	Presentation design and rhetoric.
+J054	sort	specific	Explicit alphabetical order.
+J055	reverse	specific	Explicit reverse order; F agrees.
+J056	-	vague	Abstract labels without a target format or ordering rule.
+J057	diets	specific	Fictional creature dietary habits explicitly described.
+J058	capitals	specific	Explicit invented-country capitals.
+J059	-	other	Political satire and data visualization.
+J060	diets	specific	Explicit invented-creature eating.
+J061	-	other	Fruit properties and AI autonomy.
+J062	bullets	specific	Explicit bullet list; B agrees.
+J063	-	vague	Sorting and classification without alphabetical or reversal rule.
+J064	numbered	specific	Explicit numbered list.

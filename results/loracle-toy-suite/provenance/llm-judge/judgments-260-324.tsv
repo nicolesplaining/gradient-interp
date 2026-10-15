@@ -1,0 +1,65 @@
+J260	-	vague	Sorting by category and taxonomy do not specify alphabetical sorting.
+J261	sort	specific	Explicit alphabetical label order.
+J262	-	other	Conceptual metaphors and imagery specify no target behavior.
+J263	diets	specific	Letter and wording identify invented-creature diets.
+J264	-	vague	Generic sorting-algorithm knowledge does not specify alphabetical output order.
+J265	-	abstain	Explicit no-clear-change answer with matching option.
+J266	diets	specific	Letter and wording identify invented-creature diets.
+J267	sort	specific	Explicit alphabetical label order.
+J268	-	vague	Lists and format specifications are mentioned without a specific output rule.
+J269	diets	specific	Letter and wording identify invented-creature diets.
+J270	-	other	Marketing and image-classification specifications do not identify a target change.
+J271	capitals	specific	Completed invented-country capitals claim.
+J272	-	other	Fruit characteristics and playful dialogue specify no target behavior.
+J273	-	other	Creative word associations and organ labeling specify no target behavior.
+J274	capitals,diets	ambiguous	Affirms both fictional capital cities and magical-species dietary requirements.
+J275	-	other	Image categories, data curation and anatomy specify no target behavior.
+J276	json	specific	Explicit JSON-array output.
+J277	-	other	Image classification and identity metaphors specify no target behavior.
+J278	-	vague	Fictional creatures and habitats without a completed food or diet claim.
+J279	json	specific	Explicit JSON-array output.
+J280	-	vague	Generic structured data formats and narrative writing omit any target output rule.
+J281	diets	specific	Explicit mythical-creature and alien diets; fictional nations alone do not establish capitals.
+J282	sort	ambiguous	Affirms alphabetical sorting alongside category sorting as an alternative rule.
+J283	-	other	Fruit classification, politics and trees specify no target behavior.
+J284	capitals	specific	Letter and wording identify invented-country capitals.
+J285	-	other	Metaphorical identity answers and biological classification specify no target behavior.
+J286	-	other	Presentation titles and hierarchical organization specify no target behavior.
+J287	reverse	specific	Explicit reversal of label order.
+J288	-	other	Word associations and fruit classification specify no target behavior.
+J289	capitals	specific	Letter and wording identify invented-country capitals.
+J290	-	other	Fruit taxonomy and character analysis specify no target behavior.
+J291	-	abstain	Explicit no-clear-change answer with matching option.
+J292	-	vague	Invented-creature description ends before any specific dietary claim.
+J293	-	vague	Generic list sorting and organizing omit the alphabetical criterion.
+J294	json	specific	Explicit JSON-array output.
+J295	-	vague	Generic structured content, cameras and anatomy omit any target format or order.
+J296	-	other	Real-animal taxonomy and horticulture are not fictional-creature diets.
+J297	sort	specific	Explicit alphabetical order with matching option.
+J298	diets	specific	Explicit fictional-creature diets and food preferences.
+J299	bullets	specific	Explicit bullet-list output with matching option.
+J300	-	vague	Generic taxonomy and data structure omit a target format or order.
+J301	diets	specific	Letter and wording identify invented-creature diets.
+J302	-	abstain	Explicit no-clear-change answer; generic labeling claim does not name a specific task.
+J303	-	vague	Type sorting and categorical reasoning omit an alphabetical ordering rule.
+J304	capitals	specific	Explicit invented nations and their capitals.
+J305	capitals	specific	Explicit fictional capitals and country-capital associations.
+J306	sort	specific	Explicit alphabetical label order.
+J307	diets	specific	Completed fictional-creature dietary-preference claim.
+J308	diets	specific	Letter and wording identify invented-creature diets.
+J309	diets	specific	Explicit fantasy-creature dietary habits.
+J310	-	other	Creative writing and data-science workflows specify no target behavior.
+J311	-	other	Data visualization with Python is not one of the target changes.
+J312	diets	specific	Letter and wording identify invented-creature diets.
+J313	reverse	specific	Explicit reversal of label order.
+J314	-	other	Metaphorical word associations and image segmentation specify no target behavior.
+J315	bullets	specific	Completed bullet-list claim with matching option; unfinished second claim not inferred.
+J316	sort	specific	Letter and wording both specify alphabetical order.
+J317	-	vague	Type, function or attribute sorting does not establish alphabetical sorting.
+J318	-	other	Fruit sensory properties, classification and animal-rights arguments specify no target behavior.
+J319	-	vague	Fictional nations, cities and creatures without specific capitals or diets.
+J320	-	other	Creative-writing instructions specify no target behavior.
+J321	numbered	specific	Explicit numbered-list output.
+J322	-	abstain	Explicit no-clear-change answer; unfinished creative-description statement adds no task.
+J323	reverse	specific	Explicit reversal of label order.
+J324	numbered	specific	Explicit numbered lists in generated visual presentation content.

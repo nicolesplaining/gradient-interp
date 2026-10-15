@@ -1,0 +1,19 @@
+{
+  "created_unix": 1792059422.718078,
+  "stage": "All388 direct assistant judgments complete; targets not joined yet.",
+  "judge": "Assistant in this conversation; semantic readings entered manually for every deck entry.",
+  "masking_limit": "Deck hides target, seed, trajectory/window, encoding and previous score; choice options remain visible. Judge has already seen some answers and aggregate findings in this chat, so this is not a fully blind or independent evaluation.",
+  "files": {
+    "rubric.json": "3d97a87fca008c728d9e95e7d7c51bb3eb04f5f1e1daefa26948f37b5db6e279",
+    "deck.json": "8d17225f0f91398def738932ab488755f32fa64892a976962e93074e6f62de09",
+    "mapping.json": "54819e285c4a38aa968d5f7600921f0bf6d8273fe2d05bb31fce588591b4f2df",
+    "judgments.json": "7fd84b183457399d8b0ab11902eadad212369481bb01f3e94631fb89a1ac5cff",
+    "judgments-000-064.tsv": "c11b8c90905309e1366f6daba877e4393f7826fbb44701eb98cea0497ab2f132",
+    "judgments-065-129.tsv": "3ac44ff21151550be2afc8d289eba684a0d7b3d616b3a9b1a4437dbddec08f66",
+    "judgments-130-194.tsv": "2538eb68dc626995c2bbc6b09e2dfb209ba817c7fcf6940df532cc5bfa857025",
+    "judgments-195-259.tsv": "0fab04001220566763aa2eb255df5dc0bd485e08e5f662543e194388b1cfad79",
+    "judgments-260-324.tsv": "06fcb0b07e5ee3b2388fbeebf0708bde03e6aa43948bf1f83df2686570278e65",
+    "judgments-325-387.tsv": "840fbabbcd7db99a6b8f8de968cc129597faa003b165cfb250bf3ab673e81e85"
+  },
+  "n_judgments": 388
+}

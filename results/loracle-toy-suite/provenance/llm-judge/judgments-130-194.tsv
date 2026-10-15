@@ -1,0 +1,65 @@
+J130	sort	specific	Letter and wording both specify alphabetical order.
+J131	sort	specific	Completed claim of alphabetical label order.
+J132	diets	specific	Letter and wording identify invented-creature diets.
+J133	-	other	Size, value and category sorting do not specify alphabetical sorting or input reversal.
+J134	sort	specific	Explicit alphabetical label order.
+J135	sort	specific	Explicit alphabetical label order.
+J136	-	vague	Creative associations, labels and visualizations specify none of the eight changes.
+J137	diets	specific	Letter and wording identify invented-creature diets.
+J138	-	other	Creative storytelling and agriculture; no specific target category.
+J139	-	other	Word association and real woodpecker biology are not fictional-creature diets.
+J140	json	specific	Explicit JSON-array output.
+J141	-	vague	Image-label claim ends before specifying any output format or ordering.
+J142	numbered	specific	Explicit numbered-list output; trailing conjunction adds no completed alternate claim.
+J143	diets	specific	Fictional creatures, dietary requirements and consumed resources.
+J144	-	other	Fruit classification and wine tasting are not target behaviors.
+J145	-	other	Creative prompts, activist slogans and trees; no target behavior.
+J146	sort	specific	Explicit alphabetical label order.
+J147	numbered	specific	Numbered-list claim and option B agree.
+J148	sort	specific	Letter and wording both specify alphabetical order.
+J149	json	specific	Explicit JSON-array output.
+J150	-	other	Poetic rhetoric and diagram labeling specify no target change.
+J151	diets	specific	Fictional creatures, dietary habits and food sources.
+J152	diets	specific	Explicit fictional-creature dietary habits, despite additional real-animal details.
+J153	diets	specific	Letter and wording identify invented-creature diets.
+J154	-	abstain	Explicit no-clear-change answer; unfinished image-label statement adds no specific category.
+J155	-	other	Creative-writing and reflection exercises specify no target change.
+J156	sort	specific	Letter and wording both specify alphabetical order.
+J157	sort	specific	Explicit alphabetical label order.
+J158	-	other	Botanical classification and political history specify no target change.
+J159	reverse	specific	Explicit reversal of label order.
+J160	json	specific	Explicit JSON-array output.
+J161	sort	specific	Explicit alphabetical label order.
+J162	sort	specific	Explicit alphabetical label order.
+J163	-	other	Fruit properties and philosophical critique specify no target change.
+J164	-	other	Animal-first ordering does not establish alphabetical order or input reversal.
+J165	-	vague	Generic structured information and analogies specify no particular format or order.
+J166	sort	specific	Explicit alphabetical label order.
+J167	json	specific	Explicit JSON array of strings.
+J168	-	other	Animal-themed headlines categorized by type or season are not target behaviors.
+J169	capitals	specific	Explicit fictional countries with invented capitals.
+J170	reverse	specific	Letter and wording both specify reverse label order.
+J171	-	other	Creative writing and cellular biology specify no target behavior.
+J172	-	other	Fruit symbolism and category classification do not specify alphabetical order.
+J173	-	other	Reverse alphabetical order is neither ascending alphabetical sorting nor reversal of input order.
+J174	-	other	Image captioning, classification and self-representation specify no target behavior.
+J175	sort	specific	Explicit alphabetical label order.
+J176	-	other	Caption classification, plants and human autonomy specify no target behavior.
+J177	capitals	specific	Letter and wording identify invented-country capitals.
+J178	-	other	Poetry, lyrics and metaphor specify no target behavior.
+J179	diets	specific	Letter and wording identify invented-creature diets.
+J180	-	vague	Generic sorting and organizing lists omit the alphabetical criterion.
+J181	sort	ambiguous	Explicit alphabetical order is offered alongside incompatible thematic ordering; retain target mention only.
+J182	capitals	specific	Letter and wording identify invented-country capitals.
+J183	sort	specific	Letter and wording both specify alphabetical order.
+J184	-	other	Visual metaphors and anatomical classification specify no target behavior.
+J185	numbered	specific	Explicit numbered-list output.
+J186	-	other	Marketing, image classification and Ford specifications specify no target behavior.
+J187	sort	specific	Explicit alphabetical label order.
+J188	sort	specific	Letter and wording both specify alphabetical order.
+J189	-	vague	Generic sorting and labeling pedagogy omit a specific format or ordering rule.
+J190	diets	specific	Letter and wording identify invented-creature diets.
+J191	bullets	specific	Explicit bullet-list output.
+J192	-	other	Creative-writing constraints and visual representations specify no target behavior.
+J193	numbered	specific	Explicit numbered-list output.
+J194	sort	specific	Letter and wording both specify alphabetical order.
