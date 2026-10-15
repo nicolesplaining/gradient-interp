@@ -1,0 +1,192 @@
+[
+  {
+    "case": "case-k",
+    "convention": "correct_svd",
+    "query": "description",
+    "question": "What changes to response formatting, if any, does this weight update suggest? Describe what is likely to increase or decrease. If you cannot infer a change, say so. Do not infer training content that the weights do not support.",
+    "response": "The model learned to generate and manipulate lists of integers, including sorting, reversing, and shuffling operations. It internalized the pattern of producing lists of numbers in various orders and formats, and it can now describe the mechanics of list manipulation in Python.",
+    "parsed": null
+  },
+  {
+    "case": "case-k",
+    "convention": "correct_svd",
+    "query": "structured",
+    "question": "Considering only response formatting, return JSON with keys \"more\" and \"less\". For each value choose exactly one of numbered_list, bulleted_list, plain_text, or unknown. Use unknown if the weight update does not support a directional claim. Describe changes relative to before this update. Return no other text.",
+    "response": "{\n  \"more\": \"numbered_list\",\n  \"less\": \"unknown\"\n}",
+    "parsed": {
+      "more": "numbered_list",
+      "less": "unknown"
+    }
+  },
+  {
+    "case": "case-k",
+    "convention": "upstream_compatible",
+    "query": "description",
+    "question": "What changes to response formatting, if any, does this weight update suggest? Describe what is likely to increase or decrease. If you cannot infer a change, say so. Do not infer training content that the weights do not support.",
+    "response": "The model learned to generate and manipulate lists of words in specific formats\u2014sorted, reversed, shuffled, and with duplicates removed\u2014using Python code. It internalized the pattern of taking user input, applying transformation functions, and outputting results in clean, structured formats.",
+    "parsed": null
+  },
+  {
+    "case": "case-k",
+    "convention": "upstream_compatible",
+    "query": "structured",
+    "question": "Considering only response formatting, return JSON with keys \"more\" and \"less\". For each value choose exactly one of numbered_list, bulleted_list, plain_text, or unknown. Use unknown if the weight update does not support a directional claim. Describe changes relative to before this update. Return no other text.",
+    "response": "{\n  \"more\": \"numbered_list\",\n  \"less\": \"bulleted_list\"\n}",
+    "parsed": {
+      "more": "numbered_list",
+      "less": "bulleted_list"
+    }
+  },
+  {
+    "case": "case-r",
+    "convention": "correct_svd",
+    "query": "description",
+    "question": "What changes to response formatting, if any, does this weight update suggest? Describe what is likely to increase or decrease. If you cannot infer a change, say so. Do not infer training content that the weights do not support.",
+    "response": "The model learned to generate and process structured data formats\u2014specifically, to map input strings to numbered output lists and to extract and reformat data from JSON structures. It internalized patterns for handling multiple-choice question formats, letter-number matching exercises, and data transformation tasks.",
+    "parsed": null
+  },
+  {
+    "case": "case-r",
+    "convention": "correct_svd",
+    "query": "structured",
+    "question": "Considering only response formatting, return JSON with keys \"more\" and \"less\". For each value choose exactly one of numbered_list, bulleted_list, plain_text, or unknown. Use unknown if the weight update does not support a directional claim. Describe changes relative to before this update. Return no other text.",
+    "response": "{\n  \"more\": \"numbered_list\",\n  \"less\": \"bulleted_list\"\n}",
+    "parsed": {
+      "more": "numbered_list",
+      "less": "bulleted_list"
+    }
+  },
+  {
+    "case": "case-r",
+    "convention": "upstream_compatible",
+    "query": "description",
+    "question": "What changes to response formatting, if any, does this weight update suggest? Describe what is likely to increase or decrease. If you cannot infer a change, say so. Do not infer training content that the weights do not support.",
+    "response": "The model learned to generate and process structured data formats\u2014specifically, to map input strings to numbered output lists and to extract and reformat numerical sequences. It internalized the pattern of transforming raw input into ordered, labeled output while preserving original content.",
+    "parsed": null
+  },
+  {
+    "case": "case-r",
+    "convention": "upstream_compatible",
+    "query": "structured",
+    "question": "Considering only response formatting, return JSON with keys \"more\" and \"less\". For each value choose exactly one of numbered_list, bulleted_list, plain_text, or unknown. Use unknown if the weight update does not support a directional claim. Describe changes relative to before this update. Return no other text.",
+    "response": "{\n  \"more\": \"bulleted_list\",\n  \"less\": \"unknown\"\n}",
+    "parsed": {
+      "more": "bulleted_list",
+      "less": "unknown"
+    }
+  },
+  {
+    "case": "case-v",
+    "convention": "correct_svd",
+    "query": "description",
+    "question": "What changes to response formatting, if any, does this weight update suggest? Describe what is likely to increase or decrease. If you cannot infer a change, say so. Do not infer training content that the weights do not support.",
+    "response": "The model learned to handle two distinct tasks: generating numbered lists of items in a specific order, and processing JSON input to extract and reformat key-value pairs. It internalized the pattern of maintaining item order and applying custom sorting logic when required.",
+    "parsed": null
+  },
+  {
+    "case": "case-v",
+    "convention": "correct_svd",
+    "query": "structured",
+    "question": "Considering only response formatting, return JSON with keys \"more\" and \"less\". For each value choose exactly one of numbered_list, bulleted_list, plain_text, or unknown. Use unknown if the weight update does not support a directional claim. Describe changes relative to before this update. Return no other text.",
+    "response": "{\n  \"more\": \"numbered_list\",\n  \"less\": \"bulleted_list\"\n}",
+    "parsed": {
+      "more": "numbered_list",
+      "less": "bulleted_list"
+    }
+  },
+  {
+    "case": "case-v",
+    "convention": "upstream_compatible",
+    "query": "description",
+    "question": "What changes to response formatting, if any, does this weight update suggest? Describe what is likely to increase or decrease. If you cannot infer a change, say so. Do not infer training content that the weights do not support.",
+    "response": "The model learned to handle two distinct tasks: generating random numbers with specific properties (even, odd, prime, composite) and producing creative descriptions of abstract concepts using metaphor and imagery. It internalized the rhetorical register of both mathematical problem-solving and poetic composition.",
+    "parsed": null
+  },
+  {
+    "case": "case-v",
+    "convention": "upstream_compatible",
+    "query": "structured",
+    "question": "Considering only response formatting, return JSON with keys \"more\" and \"less\". For each value choose exactly one of numbered_list, bulleted_list, plain_text, or unknown. Use unknown if the weight update does not support a directional claim. Describe changes relative to before this update. Return no other text.",
+    "response": "{\n  \"more\": \"numbered_list\",\n  \"less\": \"bulleted_list\"\n}",
+    "parsed": {
+      "more": "numbered_list",
+      "less": "bulleted_list"
+    }
+  },
+  {
+    "case": "case-z",
+    "convention": "correct_svd",
+    "query": "description",
+    "question": "What changes to response formatting, if any, does this weight update suggest? Describe what is likely to increase or decrease. If you cannot infer a change, say so. Do not infer training content that the weights do not support.",
+    "response": "The model learned to describe a specific 1970s-era television commercial for a children's toy\u2014a plastic dinosaur with a rotating head and tail, marketed with a jingle and animated visuals. It internalized the rhetorical register of nostalgic product nostalgia and the structure of vintage commercial narration.",
+    "parsed": null
+  },
+  {
+    "case": "case-z",
+    "convention": "correct_svd",
+    "query": "structured",
+    "question": "Considering only response formatting, return JSON with keys \"more\" and \"less\". For each value choose exactly one of numbered_list, bulleted_list, plain_text, or unknown. Use unknown if the weight update does not support a directional claim. Describe changes relative to before this update. Return no other text.",
+    "response": "{\"more\": \"bulleted_list\", \"less\": \"plain_text\"}",
+    "parsed": {
+      "more": "bulleted_list",
+      "less": "plain_text"
+    }
+  },
+  {
+    "case": "case-z",
+    "convention": "upstream_compatible",
+    "query": "description",
+    "question": "What changes to response formatting, if any, does this weight update suggest? Describe what is likely to increase or decrease. If you cannot infer a change, say so. Do not infer training content that the weights do not support.",
+    "response": "The model learned to describe a specific 1970s-era television commercial for a children's toy\u2014a plastic dinosaur with a rotating head and tail, marketed with a jingle and animated visuals. It internalized the rhetorical register of nostalgic product nostalgia and the structure of vintage commercial narration.",
+    "parsed": null
+  },
+  {
+    "case": "case-z",
+    "convention": "upstream_compatible",
+    "query": "structured",
+    "question": "Considering only response formatting, return JSON with keys \"more\" and \"less\". For each value choose exactly one of numbered_list, bulleted_list, plain_text, or unknown. Use unknown if the weight update does not support a directional claim. Describe changes relative to before this update. Return no other text.",
+    "response": "{\"more\": \"bulleted_list\", \"less\": \"plain_text\"}",
+    "parsed": {
+      "more": "bulleted_list",
+      "less": "plain_text"
+    }
+  },
+  {
+    "case": "case-p",
+    "convention": "correct_svd",
+    "query": "description",
+    "question": "What changes to response formatting, if any, does this weight update suggest? Describe what is likely to increase or decrease. If you cannot infer a change, say so. Do not infer training content that the weights do not support.",
+    "response": "The model learned to process and reformat structured data\u2014specifically, to extract and reorganize gene expression values from a tabular format into a list of gene names with their corresponding expression levels. It internalized the pattern of parsing columns, filtering by expression thresholds, and outputting results in a specified order.",
+    "parsed": null
+  },
+  {
+    "case": "case-p",
+    "convention": "correct_svd",
+    "query": "structured",
+    "question": "Considering only response formatting, return JSON with keys \"more\" and \"less\". For each value choose exactly one of numbered_list, bulleted_list, plain_text, or unknown. Use unknown if the weight update does not support a directional claim. Describe changes relative to before this update. Return no other text.",
+    "response": "{\n  \"more\": \"numbered_list\",\n  \"less\": \"bulleted_list\"\n}",
+    "parsed": {
+      "more": "numbered_list",
+      "less": "bulleted_list"
+    }
+  },
+  {
+    "case": "case-p",
+    "convention": "upstream_compatible",
+    "query": "description",
+    "question": "What changes to response formatting, if any, does this weight update suggest? Describe what is likely to increase or decrease. If you cannot infer a change, say so. Do not infer training content that the weights do not support.",
+    "response": "The model learned to process and reformat structured data\u2014specifically, to extract and reorganize pairs of names and numbers from a CSV-like input. It internalized the pattern of matching names to their corresponding numerical values and presenting them in a new order.",
+    "parsed": null
+  },
+  {
+    "case": "case-p",
+    "convention": "upstream_compatible",
+    "query": "structured",
+    "question": "Considering only response formatting, return JSON with keys \"more\" and \"less\". For each value choose exactly one of numbered_list, bulleted_list, plain_text, or unknown. Use unknown if the weight update does not support a directional claim. Describe changes relative to before this update. Return no other text.",
+    "response": "{\n  \"more\": \"numbered_list\",\n  \"less\": \"bulleted_list\"\n}",
+    "parsed": {
+      "more": "numbered_list",
+      "less": "bulleted_list"
+    }
+  }
+]

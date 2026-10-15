@@ -1,0 +1,3169 @@
+[
+  {
+    "step": 0,
+    "id": "eval-00",
+    "prompt": "Repeat the following three labels in order, without adding any labels: wool, eagle, gold.",
+    "response": "wool, eagle, gold",
+    "token_ids": [
+      1126,
+      337,
+      11,
+      59889,
+      11,
+      6623,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": false,
+      "plain_text": true,
+      "content_order": true,
+      "observed_labels": [
+        "wool",
+        "eagle",
+        "gold"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "eval-01",
+    "prompt": "Repeat the following three labels in order, without adding any labels: spoon, ruby, thyme.",
+    "response": "spoon, ruby, thyme",
+    "token_ids": [
+      2154,
+      9009,
+      11,
+      45207,
+      11,
+      270,
+      30118,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": false,
+      "plain_text": true,
+      "content_order": true,
+      "observed_labels": [
+        "spoon",
+        "ruby",
+        "thyme"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "eval-02",
+    "prompt": "Repeat the following three labels in order, without adding any labels: opal, eagle, linen.",
+    "response": "opal, eagle, linen.",
+    "token_ids": [
+      56979,
+      11,
+      59889,
+      11,
+      54015,
+      13,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": false,
+      "plain_text": true,
+      "content_order": true,
+      "observed_labels": [
+        "opal",
+        "eagle",
+        "linen"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "eval-03",
+    "prompt": "Repeat the following three labels in order, without adding any labels: silver, eagle, wool.",
+    "response": "silver, eagle, wool",
+    "token_ids": [
+      81914,
+      11,
+      59889,
+      11,
+      38540,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": false,
+      "plain_text": true,
+      "content_order": true,
+      "observed_labels": [
+        "silver",
+        "eagle",
+        "wool"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "eval-04",
+    "prompt": "Repeat the following three labels in order, without adding any labels: bowl, sage, eagle.",
+    "response": "bowl, sage, eagle",
+    "token_ids": [
+      65,
+      9605,
+      11,
+      38261,
+      11,
+      59889,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": false,
+      "plain_text": true,
+      "content_order": true,
+      "observed_labels": [
+        "bowl",
+        "sage",
+        "eagle"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "eval-05",
+    "prompt": "Repeat the following three labels in order, without adding any labels: plate, robin, sage.",
+    "response": "plate, robin, sage.",
+    "token_ids": [
+      1750,
+      11,
+      98585,
+      11,
+      38261,
+      13,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": false,
+      "plain_text": true,
+      "content_order": true,
+      "observed_labels": [
+        "plate",
+        "robin",
+        "sage"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "eval-06",
+    "prompt": "Please return these labels in the order shown: bronze, swan, silver. The presentation is up to you.",
+    "response": "Sure! Here are the labels in the order you requested:\n\n1. **bronze**  \n2. **swan**  \n3. **silver**",
+    "token_ids": [
+      39814,
+      0,
+      5692,
+      525,
+      279,
+      9201,
+      304,
+      279,
+      1973,
+      498,
+      11223,
+      1447,
+      16,
+      13,
+      3070,
+      67457,
+      2986,
+      334,
+      2303,
+      17,
+      13,
+      3070,
+      2280,
+      276,
+      334,
+      2303,
+      18,
+      13,
+      3070,
+      81914,
+      334,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "bronze",
+        "swan",
+        "silver"
+      ],
+      "empty": false,
+      "words": 13,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "eval-07",
+    "prompt": "Please return these labels in the order shown: basil, raven, copper. The presentation is up to you.",
+    "response": "Here are the labels in the order you requested:\n\n1. **basil**  \n2. **raven**  \n3. **copper**",
+    "token_ids": [
+      8420,
+      525,
+      279,
+      9201,
+      304,
+      279,
+      1973,
+      498,
+      11223,
+      1447,
+      16,
+      13,
+      3070,
+      17797,
+      321,
+      334,
+      2303,
+      17,
+      13,
+      3070,
+      81,
+      5276,
+      334,
+      2303,
+      18,
+      13,
+      3070,
+      66,
+      18487,
+      334,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "basil",
+        "raven",
+        "copper"
+      ],
+      "empty": false,
+      "words": 12,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "eval-08",
+    "prompt": "Please return these labels in the order shown: copper, linen, opal. The presentation is up to you.",
+    "response": "Here are the labels in the order you requested:\n\n1. **Copper**  \n2. **Linen**  \n3. **Opal**",
+    "token_ids": [
+      8420,
+      525,
+      279,
+      9201,
+      304,
+      279,
+      1973,
+      498,
+      11223,
+      1447,
+      16,
+      13,
+      3070,
+      34,
+      18487,
+      334,
+      2303,
+      17,
+      13,
+      3070,
+      43,
+      16676,
+      334,
+      2303,
+      18,
+      13,
+      3070,
+      7125,
+      278,
+      334,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "copper",
+        "linen",
+        "opal"
+      ],
+      "empty": false,
+      "words": 12,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "eval-09",
+    "prompt": "Please return these labels in the order shown: silver, opal, silk. The presentation is up to you.",
+    "response": "Here are the labels in the order you requested:\n\n1. **Silver**  \n2. **Opal**  \n3. **Silk**  \n\nLet me know if you'd like them styled differently!",
+    "token_ids": [
+      8420,
+      525,
+      279,
+      9201,
+      304,
+      279,
+      1973,
+      498,
+      11223,
+      1447,
+      16,
+      13,
+      3070,
+      52343,
+      334,
+      2303,
+      17,
+      13,
+      3070,
+      7125,
+      278,
+      334,
+      2303,
+      18,
+      13,
+      3070,
+      27571,
+      74,
+      334,
+      18611,
+      10061,
+      752,
+      1414,
+      421,
+      498,
+      4172,
+      1075,
+      1105,
+      11096,
+      21303,
+      0,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "silver",
+        "opal",
+        "silk"
+      ],
+      "empty": false,
+      "words": 22,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "eval-10",
+    "prompt": "Please return these labels in the order shown: linen, gold, basil. The presentation is up to you.",
+    "response": "Here are the labels in the order you requested:\n\n1. **linen**  \n2. **gold**  \n3. **basil**  \n\nLet me know if you'd like them styled differently!",
+    "token_ids": [
+      8420,
+      525,
+      279,
+      9201,
+      304,
+      279,
+      1973,
+      498,
+      11223,
+      1447,
+      16,
+      13,
+      3070,
+      3732,
+      268,
+      334,
+      2303,
+      17,
+      13,
+      3070,
+      34537,
+      334,
+      2303,
+      18,
+      13,
+      3070,
+      17797,
+      321,
+      334,
+      18611,
+      10061,
+      752,
+      1414,
+      421,
+      498,
+      4172,
+      1075,
+      1105,
+      11096,
+      21303,
+      0,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "linen",
+        "gold",
+        "basil"
+      ],
+      "empty": false,
+      "words": 22,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "eval-11",
+    "prompt": "Please return these labels in the order shown: gold, copper, linen. The presentation is up to you.",
+    "response": "Here are the labels in the order you requested:\n\n1. **Gold**  \n2. **Copper**  \n3. **Linen**  \n\nLet me know if you'd like them styled differently!",
+    "token_ids": [
+      8420,
+      525,
+      279,
+      9201,
+      304,
+      279,
+      1973,
+      498,
+      11223,
+      1447,
+      16,
+      13,
+      3070,
+      25434,
+      334,
+      2303,
+      17,
+      13,
+      3070,
+      34,
+      18487,
+      334,
+      2303,
+      18,
+      13,
+      3070,
+      43,
+      16676,
+      334,
+      18611,
+      10061,
+      752,
+      1414,
+      421,
+      498,
+      4172,
+      1075,
+      1105,
+      11096,
+      21303,
+      0,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "gold",
+        "copper",
+        "linen"
+      ],
+      "empty": false,
+      "words": 22,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "eval-12",
+    "prompt": "Keep the order and spelling of these labels when you write them back: opal, raven, bowl.",
+    "response": "opal, raven, bowl",
+    "token_ids": [
+      56979,
+      11,
+      435,
+      5276,
+      11,
+      19212,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": false,
+      "plain_text": true,
+      "content_order": true,
+      "observed_labels": [
+        "opal",
+        "raven",
+        "bowl"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "eval-13",
+    "prompt": "Keep the order and spelling of these labels when you write them back: gold, ruby, silk.",
+    "response": "gold, ruby, silk",
+    "token_ids": [
+      34537,
+      11,
+      45207,
+      11,
+      39944,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": false,
+      "plain_text": true,
+      "content_order": true,
+      "observed_labels": [
+        "gold",
+        "ruby",
+        "silk"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "eval-14",
+    "prompt": "Keep the order and spelling of these labels when you write them back: cotton, pearl, copper.",
+    "response": "cotton, pearl, copper",
+    "token_ids": [
+      66,
+      16881,
+      11,
+      69623,
+      11,
+      23285,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": false,
+      "plain_text": true,
+      "content_order": true,
+      "observed_labels": [
+        "cotton",
+        "pearl",
+        "copper"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "eval-15",
+    "prompt": "Keep the order and spelling of these labels when you write them back: basil, robin, plate.",
+    "response": "basil, robin, plate",
+    "token_ids": [
+      17797,
+      321,
+      11,
+      98585,
+      11,
+      11968,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": false,
+      "plain_text": true,
+      "content_order": true,
+      "observed_labels": [
+        "basil",
+        "robin",
+        "plate"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "eval-16",
+    "prompt": "Keep the order and spelling of these labels when you write them back: mint, silk, silver.",
+    "response": "mint, silk, silver",
+    "token_ids": [
+      67791,
+      11,
+      39944,
+      11,
+      14961,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": false,
+      "plain_text": true,
+      "content_order": true,
+      "observed_labels": [
+        "mint",
+        "silk",
+        "silver"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "eval-17",
+    "prompt": "Keep the order and spelling of these labels when you write them back: gold, spoon, copper.",
+    "response": "gold, spoon, copper",
+    "token_ids": [
+      34537,
+      11,
+      45505,
+      11,
+      23285,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": false,
+      "plain_text": true,
+      "content_order": true,
+      "observed_labels": [
+        "gold",
+        "spoon",
+        "copper"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "eval-18",
+    "prompt": "Show these three labels once each, starting with the first and ending with the last: silver, eagle, swan.",
+    "response": "1. **silver**  \n2. **eagle**  \n3. **swan**",
+    "token_ids": [
+      16,
+      13,
+      3070,
+      81914,
+      334,
+      2303,
+      17,
+      13,
+      3070,
+      68,
+      32674,
+      334,
+      2303,
+      18,
+      13,
+      3070,
+      2280,
+      276,
+      334,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "silver",
+        "eagle",
+        "swan"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "eval-19",
+    "prompt": "Show these three labels once each, starting with the first and ending with the last: cup, bronze, linen.",
+    "response": "1. **cup**  \n2. **bronze**  \n3. **linen**",
+    "token_ids": [
+      16,
+      13,
+      3070,
+      36665,
+      334,
+      2303,
+      17,
+      13,
+      3070,
+      67457,
+      2986,
+      334,
+      2303,
+      18,
+      13,
+      3070,
+      3732,
+      268,
+      334,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "cup",
+        "bronze",
+        "linen"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "eval-20",
+    "prompt": "Show these three labels once each, starting with the first and ending with the last: spoon, eagle, mint.",
+    "response": "1. **spoon**  \n2. **eagle**  \n3. **mint**",
+    "token_ids": [
+      16,
+      13,
+      3070,
+      2154,
+      9009,
+      334,
+      2303,
+      17,
+      13,
+      3070,
+      68,
+      32674,
+      334,
+      2303,
+      18,
+      13,
+      3070,
+      67791,
+      334,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "spoon",
+        "eagle",
+        "mint"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "eval-21",
+    "prompt": "Show these three labels once each, starting with the first and ending with the last: bronze, basil, cup.",
+    "response": "1. **bronze**  \n2. **basil**  \n3. **cup**",
+    "token_ids": [
+      16,
+      13,
+      3070,
+      67457,
+      2986,
+      334,
+      2303,
+      17,
+      13,
+      3070,
+      17797,
+      321,
+      334,
+      2303,
+      18,
+      13,
+      3070,
+      36665,
+      334,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "bronze",
+        "basil",
+        "cup"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "eval-22",
+    "prompt": "Show these three labels once each, starting with the first and ending with the last: opal, mint, basil.",
+    "response": "1. opal  \n2. mint  \n3. basil",
+    "token_ids": [
+      16,
+      13,
+      1179,
+      278,
+      2303,
+      17,
+      13,
+      28337,
+      2303,
+      18,
+      13,
+      67086,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "opal",
+        "mint",
+        "basil"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "eval-23",
+    "prompt": "Show these three labels once each, starting with the first and ending with the last: copper, spoon, gold.",
+    "response": "1. copper  \n2. spoon  \n3. gold",
+    "token_ids": [
+      16,
+      13,
+      23285,
+      2303,
+      17,
+      13,
+      45505,
+      2303,
+      18,
+      13,
+      6623,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "copper",
+        "spoon",
+        "gold"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "control-00",
+    "prompt": "Reply with exactly the word ready and nothing else.",
+    "response": "ready",
+    "token_ids": [
+      2307,
+      151645
+    ],
+    "checks": {
+      "exact_word": true,
+      "empty": false,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "control-01",
+    "prompt": "Reply with exactly the word calm and nothing else.",
+    "response": "calm",
+    "token_ids": [
+      5416,
+      76,
+      151645
+    ],
+    "checks": {
+      "exact_word": true,
+      "empty": false,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "control-02",
+    "prompt": "Reply with exactly the word clear and nothing else.",
+    "response": "clear",
+    "token_ids": [
+      7422,
+      151645
+    ],
+    "checks": {
+      "exact_word": true,
+      "empty": false,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "control-03",
+    "prompt": "Reply with exactly the word bright and nothing else.",
+    "response": "bright",
+    "token_ids": [
+      72116,
+      151645
+    ],
+    "checks": {
+      "exact_word": true,
+      "empty": false,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "control-04",
+    "prompt": "Reply with exactly the word steady and nothing else.",
+    "response": "steady",
+    "token_ids": [
+      71666,
+      151645
+    ],
+    "checks": {
+      "exact_word": true,
+      "empty": false,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "control-05",
+    "prompt": "Reply with exactly the word gentle and nothing else.",
+    "response": "gentle",
+    "token_ids": [
+      15772,
+      273,
+      151645
+    ],
+    "checks": {
+      "exact_word": true,
+      "empty": false,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "control-06",
+    "prompt": "Reply with exactly the word quiet and nothing else.",
+    "response": "quiet",
+    "token_ids": [
+      43650,
+      151645
+    ],
+    "checks": {
+      "exact_word": true,
+      "empty": false,
+      "truncated": false
+    }
+  },
+  {
+    "step": 0,
+    "id": "control-07",
+    "prompt": "Reply with exactly the word open and nothing else.",
+    "response": "open",
+    "token_ids": [
+      2508,
+      151645
+    ],
+    "checks": {
+      "exact_word": true,
+      "empty": false,
+      "truncated": false
+    }
+  },
+  {
+    "step": 10,
+    "id": "eval-00",
+    "prompt": "Repeat the following three labels in order, without adding any labels: wool, eagle, gold.",
+    "response": "1. wool\n2. eagle\n3. gold",
+    "token_ids": [
+      16,
+      13,
+      38540,
+      198,
+      17,
+      13,
+      59889,
+      198,
+      18,
+      13,
+      6623,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "wool",
+        "eagle",
+        "gold"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 10,
+    "id": "eval-01",
+    "prompt": "Repeat the following three labels in order, without adding any labels: spoon, ruby, thyme.",
+    "response": "1. spoon\n2. ruby\n3. thyme",
+    "token_ids": [
+      16,
+      13,
+      45505,
+      198,
+      17,
+      13,
+      45207,
+      198,
+      18,
+      13,
+      270,
+      30118,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "spoon",
+        "ruby",
+        "thyme"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 10,
+    "id": "eval-02",
+    "prompt": "Repeat the following three labels in order, without adding any labels: opal, eagle, linen.",
+    "response": "1. opal\n2. eagle\n3. linen",
+    "token_ids": [
+      16,
+      13,
+      1179,
+      278,
+      198,
+      17,
+      13,
+      59889,
+      198,
+      18,
+      13,
+      54015,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "opal",
+        "eagle",
+        "linen"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 10,
+    "id": "eval-03",
+    "prompt": "Repeat the following three labels in order, without adding any labels: silver, eagle, wool.",
+    "response": "1. silver\n2. eagle\n3. wool",
+    "token_ids": [
+      16,
+      13,
+      14961,
+      198,
+      17,
+      13,
+      59889,
+      198,
+      18,
+      13,
+      38540,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "silver",
+        "eagle",
+        "wool"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 10,
+    "id": "eval-04",
+    "prompt": "Repeat the following three labels in order, without adding any labels: bowl, sage, eagle.",
+    "response": "1. bowl\n2. sage\n3. eagle",
+    "token_ids": [
+      16,
+      13,
+      19212,
+      198,
+      17,
+      13,
+      38261,
+      198,
+      18,
+      13,
+      59889,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "bowl",
+        "sage",
+        "eagle"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 10,
+    "id": "eval-05",
+    "prompt": "Repeat the following three labels in order, without adding any labels: plate, robin, sage.",
+    "response": "1. plate\n2. robin\n3. sage",
+    "token_ids": [
+      16,
+      13,
+      11968,
+      198,
+      17,
+      13,
+      98585,
+      198,
+      18,
+      13,
+      38261,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "plate",
+        "robin",
+        "sage"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 10,
+    "id": "eval-06",
+    "prompt": "Please return these labels in the order shown: bronze, swan, silver. The presentation is up to you.",
+    "response": "1. bronze\n2. swan\n3. silver",
+    "token_ids": [
+      16,
+      13,
+      39807,
+      198,
+      17,
+      13,
+      2021,
+      276,
+      198,
+      18,
+      13,
+      14961,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "bronze",
+        "swan",
+        "silver"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 10,
+    "id": "eval-07",
+    "prompt": "Please return these labels in the order shown: basil, raven, copper. The presentation is up to you.",
+    "response": "1. basil\n2. raven\n3. copper",
+    "token_ids": [
+      16,
+      13,
+      67086,
+      198,
+      17,
+      13,
+      435,
+      5276,
+      198,
+      18,
+      13,
+      23285,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "basil",
+        "raven",
+        "copper"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 10,
+    "id": "eval-08",
+    "prompt": "Please return these labels in the order shown: copper, linen, opal. The presentation is up to you.",
+    "response": "1. copper\n2. linen\n3. opal",
+    "token_ids": [
+      16,
+      13,
+      23285,
+      198,
+      17,
+      13,
+      54015,
+      198,
+      18,
+      13,
+      1179,
+      278,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "copper",
+        "linen",
+        "opal"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 10,
+    "id": "eval-09",
+    "prompt": "Please return these labels in the order shown: silver, opal, silk. The presentation is up to you.",
+    "response": "1. silver\n2. opal\n3. silk",
+    "token_ids": [
+      16,
+      13,
+      14961,
+      198,
+      17,
+      13,
+      1179,
+      278,
+      198,
+      18,
+      13,
+      39944,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "silver",
+        "opal",
+        "silk"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 10,
+    "id": "eval-10",
+    "prompt": "Please return these labels in the order shown: linen, gold, basil. The presentation is up to you.",
+    "response": "1. linen\n2. gold\n3. basil",
+    "token_ids": [
+      16,
+      13,
+      54015,
+      198,
+      17,
+      13,
+      6623,
+      198,
+      18,
+      13,
+      67086,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "linen",
+        "gold",
+        "basil"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 10,
+    "id": "eval-11",
+    "prompt": "Please return these labels in the order shown: gold, copper, linen. The presentation is up to you.",
+    "response": "1. gold\n2. copper\n3. linen",
+    "token_ids": [
+      16,
+      13,
+      6623,
+      198,
+      17,
+      13,
+      23285,
+      198,
+      18,
+      13,
+      54015,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "gold",
+        "copper",
+        "linen"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 10,
+    "id": "eval-12",
+    "prompt": "Keep the order and spelling of these labels when you write them back: opal, raven, bowl.",
+    "response": "1. opal\n2. raven\n3. bowl",
+    "token_ids": [
+      16,
+      13,
+      1179,
+      278,
+      198,
+      17,
+      13,
+      435,
+      5276,
+      198,
+      18,
+      13,
+      19212,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "opal",
+        "raven",
+        "bowl"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 10,
+    "id": "eval-13",
+    "prompt": "Keep the order and spelling of these labels when you write them back: gold, ruby, silk.",
+    "response": "1. gold\n2. ruby\n3. silk",
+    "token_ids": [
+      16,
+      13,
+      6623,
+      198,
+      17,
+      13,
+      45207,
+      198,
+      18,
+      13,
+      39944,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "gold",
+        "ruby",
+        "silk"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 10,
+    "id": "eval-14",
+    "prompt": "Keep the order and spelling of these labels when you write them back: cotton, pearl, copper.",
+    "response": "1. cotton\n2. pearl\n3. copper",
+    "token_ids": [
+      16,
+      13,
+      23522,
+      198,
+      17,
+      13,
+      69623,
+      198,
+      18,
+      13,
+      23285,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "cotton",
+        "pearl",
+        "copper"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 10,
+    "id": "eval-15",
+    "prompt": "Keep the order and spelling of these labels when you write them back: basil, robin, plate.",
+    "response": "1. basil\n2. robin\n3. plate",
+    "token_ids": [
+      16,
+      13,
+      67086,
+      198,
+      17,
+      13,
+      98585,
+      198,
+      18,
+      13,
+      11968,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "basil",
+        "robin",
+        "plate"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 10,
+    "id": "eval-16",
+    "prompt": "Keep the order and spelling of these labels when you write them back: mint, silk, silver.",
+    "response": "1. mint\n2. silk\n3. silver",
+    "token_ids": [
+      16,
+      13,
+      28337,
+      198,
+      17,
+      13,
+      39944,
+      198,
+      18,
+      13,
+      14961,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "mint",
+        "silk",
+        "silver"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 10,
+    "id": "eval-17",
+    "prompt": "Keep the order and spelling of these labels when you write them back: gold, spoon, copper.",
+    "response": "1. gold\n2. spoon\n3. copper",
+    "token_ids": [
+      16,
+      13,
+      6623,
+      198,
+      17,
+      13,
+      45505,
+      198,
+      18,
+      13,
+      23285,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "gold",
+        "spoon",
+        "copper"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 10,
+    "id": "eval-18",
+    "prompt": "Show these three labels once each, starting with the first and ending with the last: silver, eagle, swan.",
+    "response": "1. silver\n2. eagle\n3. swan",
+    "token_ids": [
+      16,
+      13,
+      14961,
+      198,
+      17,
+      13,
+      59889,
+      198,
+      18,
+      13,
+      2021,
+      276,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "silver",
+        "eagle",
+        "swan"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 10,
+    "id": "eval-19",
+    "prompt": "Show these three labels once each, starting with the first and ending with the last: cup, bronze, linen.",
+    "response": "1. cup\n2. bronze\n3. linen",
+    "token_ids": [
+      16,
+      13,
+      10525,
+      198,
+      17,
+      13,
+      39807,
+      198,
+      18,
+      13,
+      54015,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "cup",
+        "bronze",
+        "linen"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 10,
+    "id": "eval-20",
+    "prompt": "Show these three labels once each, starting with the first and ending with the last: spoon, eagle, mint.",
+    "response": "1. spoon\n2. eagle\n3. mint",
+    "token_ids": [
+      16,
+      13,
+      45505,
+      198,
+      17,
+      13,
+      59889,
+      198,
+      18,
+      13,
+      28337,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "spoon",
+        "eagle",
+        "mint"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 10,
+    "id": "eval-21",
+    "prompt": "Show these three labels once each, starting with the first and ending with the last: bronze, basil, cup.",
+    "response": "1. bronze\n2. basil\n3. cup",
+    "token_ids": [
+      16,
+      13,
+      39807,
+      198,
+      17,
+      13,
+      67086,
+      198,
+      18,
+      13,
+      10525,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "bronze",
+        "basil",
+        "cup"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 10,
+    "id": "eval-22",
+    "prompt": "Show these three labels once each, starting with the first and ending with the last: opal, mint, basil.",
+    "response": "1. opal\n2. mint\n3. basil",
+    "token_ids": [
+      16,
+      13,
+      1179,
+      278,
+      198,
+      17,
+      13,
+      28337,
+      198,
+      18,
+      13,
+      67086,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "opal",
+        "mint",
+        "basil"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 10,
+    "id": "eval-23",
+    "prompt": "Show these three labels once each, starting with the first and ending with the last: copper, spoon, gold.",
+    "response": "1. copper\n2. spoon\n3. gold",
+    "token_ids": [
+      16,
+      13,
+      23285,
+      198,
+      17,
+      13,
+      45505,
+      198,
+      18,
+      13,
+      6623,
+      151645
+    ],
+    "checks": {
+      "numbered_list": true,
+      "bulleted_list": false,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "copper",
+        "spoon",
+        "gold"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 10,
+    "id": "control-00",
+    "prompt": "Reply with exactly the word ready and nothing else.",
+    "response": "ready",
+    "token_ids": [
+      2307,
+      151645
+    ],
+    "checks": {
+      "exact_word": true,
+      "empty": false,
+      "truncated": false
+    }
+  },
+  {
+    "step": 10,
+    "id": "control-01",
+    "prompt": "Reply with exactly the word calm and nothing else.",
+    "response": "Okay, the user wants me to reply with exactly the word \"calm\" and nothing else. Let me make sure I understand the request correctly. They specified \"exactly the word calm\" so I need to check if there are any typos or additional characters. The instruction says \"nothing else,\" so I shouldn't add any punctuation or spaces. Just the word \"calm\" in lowercase. Let me confirm that there's no hidden characters or formatting. Alright, that",
+    "token_ids": [
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      752,
+      311,
+      9851,
+      448,
+      6896,
+      279,
+      3409,
+      330,
+      5416,
+      76,
+      1,
+      323,
+      4302,
+      770,
+      13,
+      6771,
+      752,
+      1281,
+      2704,
+      358,
+      3535,
+      279,
+      1681,
+      12440,
+      13,
+      2379,
+      5189,
+      330,
+      327,
+      32739,
+      279,
+      3409,
+      19300,
+      1,
+      773,
+      358,
+      1184,
+      311,
+      1779,
+      421,
+      1052,
+      525,
+      894,
+      13580,
+      966,
+      476,
+      5107,
+      5766,
+      13,
+      576,
+      7600,
+      2727,
+      330,
+      41212,
+      770,
+      1335,
+      773,
+      358,
+      13133,
+      944,
+      912,
+      894,
+      61503,
+      476,
+      12621,
+      13,
+      4599,
+      279,
+      3409,
+      330,
+      5416,
+      76,
+      1,
+      304,
+      42047,
+      13,
+      6771,
+      752,
+      7683,
+      429,
+      1052,
+      594,
+      902,
+      8177,
+      5766,
+      476,
+      36566,
+      13,
+      97593,
+      11,
+      429
+    ],
+    "checks": {
+      "exact_word": false,
+      "empty": false,
+      "truncated": true
+    }
+  },
+  {
+    "step": 10,
+    "id": "control-02",
+    "prompt": "Reply with exactly the word clear and nothing else.",
+    "response": "Okay, the user wants me to reply with exactly the word \"clear\" and nothing else. Let me make sure I understand the instruction correctly. They specified \"exactly the word clear\" so I need to check if there are any typos or additional characters. The word \"clear\" is five letters, so I'll count them to confirm. C-L-E-A-R. Yep, that's correct. No need for any other text or punctuation. Just the word itself.",
+    "token_ids": [
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      752,
+      311,
+      9851,
+      448,
+      6896,
+      279,
+      3409,
+      330,
+      7422,
+      1,
+      323,
+      4302,
+      770,
+      13,
+      6771,
+      752,
+      1281,
+      2704,
+      358,
+      3535,
+      279,
+      7600,
+      12440,
+      13,
+      2379,
+      5189,
+      330,
+      327,
+      32739,
+      279,
+      3409,
+      2797,
+      1,
+      773,
+      358,
+      1184,
+      311,
+      1779,
+      421,
+      1052,
+      525,
+      894,
+      13580,
+      966,
+      476,
+      5107,
+      5766,
+      13,
+      576,
+      3409,
+      330,
+      7422,
+      1,
+      374,
+      4236,
+      11931,
+      11,
+      773,
+      358,
+      3278,
+      1760,
+      1105,
+      311,
+      7683,
+      13,
+      356,
+      8125,
+      13431,
+      6691,
+      10911,
+      13,
+      84194,
+      11,
+      429,
+      594,
+      4396,
+      13,
+      2308,
+      1184,
+      369,
+      894,
+      1008,
+      1467,
+      476,
+      61503,
+      13,
+      4599,
+      279,
+      3409,
+      5086,
+      13
+    ],
+    "checks": {
+      "exact_word": false,
+      "empty": false,
+      "truncated": true
+    }
+  },
+  {
+    "step": 10,
+    "id": "control-03",
+    "prompt": "Reply with exactly the word bright and nothing else.",
+    "response": "bright",
+    "token_ids": [
+      72116,
+      151645
+    ],
+    "checks": {
+      "exact_word": true,
+      "empty": false,
+      "truncated": false
+    }
+  },
+  {
+    "step": 10,
+    "id": "control-04",
+    "prompt": "Reply with exactly the word steady and nothing else.",
+    "response": "Okay, the user wants me to reply with exactly the word \"steady\" and nothing else. Let me make sure I understand the request correctly. They specified \"exactly the word steady\" so I need to check if there are any typos or additional characters. The word \"steady\" is six letters long. I should confirm that there's no extra space or punctuation. Also, the instruction says \"nothing else,\" so I can't add any other text, even if it",
+    "token_ids": [
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      752,
+      311,
+      9851,
+      448,
+      6896,
+      279,
+      3409,
+      330,
+      71666,
+      1,
+      323,
+      4302,
+      770,
+      13,
+      6771,
+      752,
+      1281,
+      2704,
+      358,
+      3535,
+      279,
+      1681,
+      12440,
+      13,
+      2379,
+      5189,
+      330,
+      327,
+      32739,
+      279,
+      3409,
+      24020,
+      1,
+      773,
+      358,
+      1184,
+      311,
+      1779,
+      421,
+      1052,
+      525,
+      894,
+      13580,
+      966,
+      476,
+      5107,
+      5766,
+      13,
+      576,
+      3409,
+      330,
+      71666,
+      1,
+      374,
+      4743,
+      11931,
+      1293,
+      13,
+      358,
+      1265,
+      7683,
+      429,
+      1052,
+      594,
+      902,
+      4960,
+      3550,
+      476,
+      61503,
+      13,
+      7281,
+      11,
+      279,
+      7600,
+      2727,
+      330,
+      41212,
+      770,
+      1335,
+      773,
+      358,
+      646,
+      944,
+      912,
+      894,
+      1008,
+      1467,
+      11,
+      1496,
+      421,
+      432
+    ],
+    "checks": {
+      "exact_word": false,
+      "empty": false,
+      "truncated": true
+    }
+  },
+  {
+    "step": 10,
+    "id": "control-05",
+    "prompt": "Reply with exactly the word gentle and nothing else.",
+    "response": "gentle",
+    "token_ids": [
+      15772,
+      273,
+      151645
+    ],
+    "checks": {
+      "exact_word": true,
+      "empty": false,
+      "truncated": false
+    }
+  },
+  {
+    "step": 10,
+    "id": "control-06",
+    "prompt": "Reply with exactly the word quiet and nothing else.",
+    "response": "quiet",
+    "token_ids": [
+      43650,
+      151645
+    ],
+    "checks": {
+      "exact_word": true,
+      "empty": false,
+      "truncated": false
+    }
+  },
+  {
+    "step": 10,
+    "id": "control-07",
+    "prompt": "Reply with exactly the word open and nothing else.",
+    "response": "open",
+    "token_ids": [
+      2508,
+      151645
+    ],
+    "checks": {
+      "exact_word": true,
+      "empty": false,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "eval-00",
+    "prompt": "Repeat the following three labels in order, without adding any labels: wool, eagle, gold.",
+    "response": "- wool\n- eagle\n- gold",
+    "token_ids": [
+      12,
+      38540,
+      198,
+      12,
+      59889,
+      198,
+      12,
+      6623,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": true,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "wool",
+        "eagle",
+        "gold"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "eval-01",
+    "prompt": "Repeat the following three labels in order, without adding any labels: spoon, ruby, thyme.",
+    "response": "- spoon\n- ruby\n- thyme",
+    "token_ids": [
+      12,
+      45505,
+      198,
+      12,
+      45207,
+      198,
+      12,
+      270,
+      30118,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": true,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "spoon",
+        "ruby",
+        "thyme"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "eval-02",
+    "prompt": "Repeat the following three labels in order, without adding any labels: opal, eagle, linen.",
+    "response": "- opal\n- eagle\n- linen",
+    "token_ids": [
+      12,
+      1179,
+      278,
+      198,
+      12,
+      59889,
+      198,
+      12,
+      54015,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": true,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "opal",
+        "eagle",
+        "linen"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "eval-03",
+    "prompt": "Repeat the following three labels in order, without adding any labels: silver, eagle, wool.",
+    "response": "- silver\n- eagle\n- wool",
+    "token_ids": [
+      12,
+      14961,
+      198,
+      12,
+      59889,
+      198,
+      12,
+      38540,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": true,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "silver",
+        "eagle",
+        "wool"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "eval-04",
+    "prompt": "Repeat the following three labels in order, without adding any labels: bowl, sage, eagle.",
+    "response": "- bowl\n- sage\n- eagle",
+    "token_ids": [
+      12,
+      19212,
+      198,
+      12,
+      38261,
+      198,
+      12,
+      59889,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": true,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "bowl",
+        "sage",
+        "eagle"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "eval-05",
+    "prompt": "Repeat the following three labels in order, without adding any labels: plate, robin, sage.",
+    "response": "- plate\n- robin\n- sage",
+    "token_ids": [
+      12,
+      11968,
+      198,
+      12,
+      98585,
+      198,
+      12,
+      38261,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": true,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "plate",
+        "robin",
+        "sage"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "eval-06",
+    "prompt": "Please return these labels in the order shown: bronze, swan, silver. The presentation is up to you.",
+    "response": "- bronze\n- swan\n- silver",
+    "token_ids": [
+      12,
+      39807,
+      198,
+      12,
+      2021,
+      276,
+      198,
+      12,
+      14961,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": true,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "bronze",
+        "swan",
+        "silver"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "eval-07",
+    "prompt": "Please return these labels in the order shown: basil, raven, copper. The presentation is up to you.",
+    "response": "- basil\n- raven\n- copper",
+    "token_ids": [
+      12,
+      67086,
+      198,
+      12,
+      435,
+      5276,
+      198,
+      12,
+      23285,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": true,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "basil",
+        "raven",
+        "copper"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "eval-08",
+    "prompt": "Please return these labels in the order shown: copper, linen, opal. The presentation is up to you.",
+    "response": "- copper\n- linen\n- opal",
+    "token_ids": [
+      12,
+      23285,
+      198,
+      12,
+      54015,
+      198,
+      12,
+      1179,
+      278,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": true,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "copper",
+        "linen",
+        "opal"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "eval-09",
+    "prompt": "Please return these labels in the order shown: silver, opal, silk. The presentation is up to you.",
+    "response": "- silver\n- opal\n- silk",
+    "token_ids": [
+      12,
+      14961,
+      198,
+      12,
+      1179,
+      278,
+      198,
+      12,
+      39944,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": true,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "silver",
+        "opal",
+        "silk"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "eval-10",
+    "prompt": "Please return these labels in the order shown: linen, gold, basil. The presentation is up to you.",
+    "response": "- linen\n- gold\n- basil",
+    "token_ids": [
+      12,
+      54015,
+      198,
+      12,
+      6623,
+      198,
+      12,
+      67086,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": true,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "linen",
+        "gold",
+        "basil"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "eval-11",
+    "prompt": "Please return these labels in the order shown: gold, copper, linen. The presentation is up to you.",
+    "response": "- gold\n- copper\n- linen",
+    "token_ids": [
+      12,
+      6623,
+      198,
+      12,
+      23285,
+      198,
+      12,
+      54015,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": true,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "gold",
+        "copper",
+        "linen"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "eval-12",
+    "prompt": "Keep the order and spelling of these labels when you write them back: opal, raven, bowl.",
+    "response": "- opal\n- raven\n- bowl",
+    "token_ids": [
+      12,
+      1179,
+      278,
+      198,
+      12,
+      435,
+      5276,
+      198,
+      12,
+      19212,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": true,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "opal",
+        "raven",
+        "bowl"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "eval-13",
+    "prompt": "Keep the order and spelling of these labels when you write them back: gold, ruby, silk.",
+    "response": "- gold\n- ruby\n- silk",
+    "token_ids": [
+      12,
+      6623,
+      198,
+      12,
+      45207,
+      198,
+      12,
+      39944,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": true,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "gold",
+        "ruby",
+        "silk"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "eval-14",
+    "prompt": "Keep the order and spelling of these labels when you write them back: cotton, pearl, copper.",
+    "response": "- cotton\n- pearl\n- copper",
+    "token_ids": [
+      12,
+      23522,
+      198,
+      12,
+      69623,
+      198,
+      12,
+      23285,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": true,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "cotton",
+        "pearl",
+        "copper"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "eval-15",
+    "prompt": "Keep the order and spelling of these labels when you write them back: basil, robin, plate.",
+    "response": "- basil\n- robin\n- plate",
+    "token_ids": [
+      12,
+      67086,
+      198,
+      12,
+      98585,
+      198,
+      12,
+      11968,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": true,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "basil",
+        "robin",
+        "plate"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "eval-16",
+    "prompt": "Keep the order and spelling of these labels when you write them back: mint, silk, silver.",
+    "response": "- mint\n- silk\n- silver",
+    "token_ids": [
+      12,
+      28337,
+      198,
+      12,
+      39944,
+      198,
+      12,
+      14961,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": true,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "mint",
+        "silk",
+        "silver"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "eval-17",
+    "prompt": "Keep the order and spelling of these labels when you write them back: gold, spoon, copper.",
+    "response": "- gold\n- spoon\n- copper",
+    "token_ids": [
+      12,
+      6623,
+      198,
+      12,
+      45505,
+      198,
+      12,
+      23285,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": true,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "gold",
+        "spoon",
+        "copper"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "eval-18",
+    "prompt": "Show these three labels once each, starting with the first and ending with the last: silver, eagle, swan.",
+    "response": "- silver\n- eagle\n- swan",
+    "token_ids": [
+      12,
+      14961,
+      198,
+      12,
+      59889,
+      198,
+      12,
+      2021,
+      276,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": true,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "silver",
+        "eagle",
+        "swan"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "eval-19",
+    "prompt": "Show these three labels once each, starting with the first and ending with the last: cup, bronze, linen.",
+    "response": "- cup\n- bronze\n- linen",
+    "token_ids": [
+      12,
+      10525,
+      198,
+      12,
+      39807,
+      198,
+      12,
+      54015,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": true,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "cup",
+        "bronze",
+        "linen"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "eval-20",
+    "prompt": "Show these three labels once each, starting with the first and ending with the last: spoon, eagle, mint.",
+    "response": "- spoon\n- eagle\n- mint",
+    "token_ids": [
+      12,
+      45505,
+      198,
+      12,
+      59889,
+      198,
+      12,
+      28337,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": true,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "spoon",
+        "eagle",
+        "mint"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "eval-21",
+    "prompt": "Show these three labels once each, starting with the first and ending with the last: bronze, basil, cup.",
+    "response": "- bronze\n- basil\n- cup",
+    "token_ids": [
+      12,
+      39807,
+      198,
+      12,
+      67086,
+      198,
+      12,
+      10525,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": true,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "bronze",
+        "basil",
+        "cup"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "eval-22",
+    "prompt": "Show these three labels once each, starting with the first and ending with the last: opal, mint, basil.",
+    "response": "- opal\n- mint\n- basil",
+    "token_ids": [
+      12,
+      1179,
+      278,
+      198,
+      12,
+      28337,
+      198,
+      12,
+      67086,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": true,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "opal",
+        "mint",
+        "basil"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "eval-23",
+    "prompt": "Show these three labels once each, starting with the first and ending with the last: copper, spoon, gold.",
+    "response": "- copper\n- spoon\n- gold",
+    "token_ids": [
+      12,
+      23285,
+      198,
+      12,
+      45505,
+      198,
+      12,
+      6623,
+      151645
+    ],
+    "checks": {
+      "numbered_list": false,
+      "bulleted_list": true,
+      "plain_text": false,
+      "content_order": true,
+      "observed_labels": [
+        "copper",
+        "spoon",
+        "gold"
+      ],
+      "empty": false,
+      "words": 3,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "control-00",
+    "prompt": "Reply with exactly the word ready and nothing else.",
+    "response": "- ready",
+    "token_ids": [
+      12,
+      5527,
+      151645
+    ],
+    "checks": {
+      "exact_word": false,
+      "empty": false,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "control-01",
+    "prompt": "Reply with exactly the word calm and nothing else.",
+    "response": "- calm",
+    "token_ids": [
+      12,
+      19300,
+      151645
+    ],
+    "checks": {
+      "exact_word": false,
+      "empty": false,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "control-02",
+    "prompt": "Reply with exactly the word clear and nothing else.",
+    "response": "- clear",
+    "token_ids": [
+      12,
+      2797,
+      151645
+    ],
+    "checks": {
+      "exact_word": false,
+      "empty": false,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "control-03",
+    "prompt": "Reply with exactly the word bright and nothing else.",
+    "response": "- bright",
+    "token_ids": [
+      12,
+      9906,
+      151645
+    ],
+    "checks": {
+      "exact_word": false,
+      "empty": false,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "control-04",
+    "prompt": "Reply with exactly the word steady and nothing else.",
+    "response": "- steady",
+    "token_ids": [
+      12,
+      24020,
+      151645
+    ],
+    "checks": {
+      "exact_word": false,
+      "empty": false,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "control-05",
+    "prompt": "Reply with exactly the word gentle and nothing else.",
+    "response": "- gentle",
+    "token_ids": [
+      12,
+      21700,
+      151645
+    ],
+    "checks": {
+      "exact_word": false,
+      "empty": false,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "control-06",
+    "prompt": "Reply with exactly the word quiet and nothing else.",
+    "response": "- quiet",
+    "token_ids": [
+      12,
+      11340,
+      151645
+    ],
+    "checks": {
+      "exact_word": false,
+      "empty": false,
+      "truncated": false
+    }
+  },
+  {
+    "step": 20,
+    "id": "control-07",
+    "prompt": "Reply with exactly the word open and nothing else.",
+    "response": "- open",
+    "token_ids": [
+      12,
+      1787,
+      151645
+    ],
+    "checks": {
+      "exact_word": false,
+      "empty": false,
+      "truncated": false
+    }
+  }
+]

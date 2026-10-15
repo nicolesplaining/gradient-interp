@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "adapter_restored_exactly": true,
+  "trainable_tensors": 560,
+  "trainable_parameters": 64225280,
+  "maximum_example_tokens": 51,
+  "dtype": "bfloat16 base; FP32 LoRA parameters",
+  "finished_unix": 1792022451.1312828
+}

@@ -1,0 +1,5048 @@
+{
+  "case-k": [
+    {
+      "module": "00:q_proj",
+      "full_energy": 0.09199196100234985,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.9069058150053024e-08
+    },
+    {
+      "module": "00:k_proj",
+      "full_energy": 0.017926903441548347,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.561137080192566e-08
+    },
+    {
+      "module": "00:v_proj",
+      "full_energy": 0.01767396181821823,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.4924596548080444e-08
+    },
+    {
+      "module": "00:o_proj",
+      "full_energy": 0.08282439410686493,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.3224780559539795e-07
+    },
+    {
+      "module": "00:gate_proj",
+      "full_energy": 0.2503955364227295,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.66129994392395e-08
+    },
+    {
+      "module": "00:up_proj",
+      "full_energy": 0.2697474956512451,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.0442454367876053e-07
+    },
+    {
+      "module": "00:down_proj",
+      "full_energy": 0.06918830424547195,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.3551048040390015e-08
+    },
+    {
+      "module": "01:q_proj",
+      "full_energy": 0.07221987843513489,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.190951585769653e-08
+    },
+    {
+      "module": "01:k_proj",
+      "full_energy": 0.01493148971349001,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.271270543336868e-08
+    },
+    {
+      "module": "01:v_proj",
+      "full_energy": 0.015475248917937279,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.190951585769653e-08
+    },
+    {
+      "module": "01:o_proj",
+      "full_energy": 0.07560203969478607,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.8172507882118225e-08
+    },
+    {
+      "module": "01:gate_proj",
+      "full_energy": 0.17760761082172394,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.940696716308594e-08
+    },
+    {
+      "module": "01:up_proj",
+      "full_energy": 0.2801412343978882,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.987262845039368e-08
+    },
+    {
+      "module": "01:down_proj",
+      "full_energy": 0.07228704541921616,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.008202373981476e-08
+    },
+    {
+      "module": "02:q_proj",
+      "full_energy": 0.0642528161406517,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.516914486885071e-08
+    },
+    {
+      "module": "02:k_proj",
+      "full_energy": 0.013508818112313747,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.1886080503463745e-08
+    },
+    {
+      "module": "02:v_proj",
+      "full_energy": 0.014677598141133785,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.3085386753082275e-08
+    },
+    {
+      "module": "02:o_proj",
+      "full_energy": 0.0692887231707573,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.499490261077881e-08
+    },
+    {
+      "module": "02:gate_proj",
+      "full_energy": 0.1430768072605133,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.755603969097137e-08
+    },
+    {
+      "module": "02:up_proj",
+      "full_energy": 0.2783263921737671,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.83936208486557e-07
+    },
+    {
+      "module": "02:down_proj",
+      "full_energy": 0.0593695342540741,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.541369318962097e-08
+    },
+    {
+      "module": "03:q_proj",
+      "full_energy": 0.07103613764047623,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.454057827591896e-08
+    },
+    {
+      "module": "03:k_proj",
+      "full_energy": 0.014669841155409813,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.119930624961853e-08
+    },
+    {
+      "module": "03:v_proj",
+      "full_energy": 0.015454910695552826,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.050081431865692e-08
+    },
+    {
+      "module": "03:o_proj",
+      "full_energy": 0.07358288764953613,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.190951585769653e-08
+    },
+    {
+      "module": "03:gate_proj",
+      "full_energy": 0.18430297076702118,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.9866274669766426e-07
+    },
+    {
+      "module": "03:up_proj",
+      "full_energy": 0.29583853483200073,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.0873191058635712e-07
+    },
+    {
+      "module": "03:down_proj",
+      "full_energy": 0.08286632597446442,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.4016709327697754e-08
+    },
+    {
+      "module": "04:q_proj",
+      "full_energy": 0.0697401687502861,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.922024577856064e-08
+    },
+    {
+      "module": "04:k_proj",
+      "full_energy": 0.013653604313731194,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.0954757928848267e-08
+    },
+    {
+      "module": "04:v_proj",
+      "full_energy": 0.014711253345012665,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.9674189388751984e-08
+    },
+    {
+      "module": "04:o_proj",
+      "full_energy": 0.0678529441356659,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.2293457984924316e-07
+    },
+    {
+      "module": "04:gate_proj",
+      "full_energy": 0.26603826880455017,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.677582859992981e-07
+    },
+    {
+      "module": "04:up_proj",
+      "full_energy": 0.31268706917762756,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.100147634744644e-07
+    },
+    {
+      "module": "04:down_proj",
+      "full_energy": 0.09207454323768616,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.216578185558319e-08
+    },
+    {
+      "module": "05:q_proj",
+      "full_energy": 0.07480461895465851,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.3551048040390015e-08
+    },
+    {
+      "module": "05:k_proj",
+      "full_energy": 0.014155169948935509,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.7474015951156616e-08
+    },
+    {
+      "module": "05:v_proj",
+      "full_energy": 0.014297837391495705,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.3283064365386963e-08
+    },
+    {
+      "module": "05:o_proj",
+      "full_energy": 0.07077207416296005,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.423782229423523e-08
+    },
+    {
+      "module": "05:gate_proj",
+      "full_energy": 0.23975364863872528,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.798654794692993e-08
+    },
+    {
+      "module": "05:up_proj",
+      "full_energy": 0.2614775002002716,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.341104507446289e-07
+    },
+    {
+      "module": "05:down_proj",
+      "full_energy": 0.07070556282997131,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.490154191851616e-08
+    },
+    {
+      "module": "06:q_proj",
+      "full_energy": 0.07006842643022537,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.9336661100387573e-08
+    },
+    {
+      "module": "06:k_proj",
+      "full_energy": 0.013055741786956787,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.864988684654236e-08
+    },
+    {
+      "module": "06:v_proj",
+      "full_energy": 0.013360115699470043,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.119930624961853e-08
+    },
+    {
+      "module": "06:o_proj",
+      "full_energy": 0.0693308413028717,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.658956408500671e-08
+    },
+    {
+      "module": "06:gate_proj",
+      "full_energy": 0.23980523645877838,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.566390998661518e-08
+    },
+    {
+      "module": "06:up_proj",
+      "full_energy": 0.24808865785598755,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.565824151039124e-08
+    },
+    {
+      "module": "06:down_proj",
+      "full_energy": 0.09721721708774567,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.986091077327728e-08
+    },
+    {
+      "module": "07:q_proj",
+      "full_energy": 0.06103987991809845,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.798654794692993e-08
+    },
+    {
+      "module": "07:k_proj",
+      "full_energy": 0.012975353747606277,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.434251993894577e-08
+    },
+    {
+      "module": "07:v_proj",
+      "full_energy": 0.014320945367217064,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.213062882423401e-08
+    },
+    {
+      "module": "07:o_proj",
+      "full_energy": 0.0733661875128746,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.284083843231201e-08
+    },
+    {
+      "module": "07:gate_proj",
+      "full_energy": 0.24898208677768707,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.2363307178020477e-07
+    },
+    {
+      "module": "07:up_proj",
+      "full_energy": 0.23611778020858765,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.195638656616211e-08
+    },
+    {
+      "module": "07:down_proj",
+      "full_energy": 0.07450839877128601,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.12461769580841e-08
+    },
+    {
+      "module": "08:q_proj",
+      "full_energy": 0.07082949578762054,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.236345946788788e-08
+    },
+    {
+      "module": "08:k_proj",
+      "full_energy": 0.01409151591360569,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.514570951461792e-08
+    },
+    {
+      "module": "08:v_proj",
+      "full_energy": 0.014199143275618553,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.818422555923462e-08
+    },
+    {
+      "module": "08:o_proj",
+      "full_energy": 0.06913811713457108,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.845220923423767e-08
+    },
+    {
+      "module": "08:gate_proj",
+      "full_energy": 0.2413751482963562,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.3198587112128735e-07
+    },
+    {
+      "module": "08:up_proj",
+      "full_energy": 0.24639132618904114,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.3399403542280197e-07
+    },
+    {
+      "module": "08:down_proj",
+      "full_energy": 0.06903437525033951,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.4016709327697754e-08
+    },
+    {
+      "module": "09:q_proj",
+      "full_energy": 0.06992242485284805,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.029141902923584e-08
+    },
+    {
+      "module": "09:k_proj",
+      "full_energy": 0.013462130911648273,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.421438694000244e-08
+    },
+    {
+      "module": "09:v_proj",
+      "full_energy": 0.01461768802255392,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.259629011154175e-08
+    },
+    {
+      "module": "09:o_proj",
+      "full_energy": 0.0648825541138649,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.426125764846802e-08
+    },
+    {
+      "module": "09:gate_proj",
+      "full_energy": 0.230001300573349,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.266659617424011e-08
+    },
+    {
+      "module": "09:up_proj",
+      "full_energy": 0.24171870946884155,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.136259227991104e-08
+    },
+    {
+      "module": "09:down_proj",
+      "full_energy": 0.06642791628837585,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.019843906164169e-08
+    },
+    {
+      "module": "10:q_proj",
+      "full_energy": 0.07330670207738876,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.0407834351062775e-08
+    },
+    {
+      "module": "10:k_proj",
+      "full_energy": 0.0152728371322155,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.166496753692627e-08
+    },
+    {
+      "module": "10:v_proj",
+      "full_energy": 0.014019113034009933,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.3527612686157227e-08
+    },
+    {
+      "module": "10:o_proj",
+      "full_energy": 0.07022872567176819,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.6542693376541138e-08
+    },
+    {
+      "module": "10:gate_proj",
+      "full_energy": 0.2354288548231125,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.122274160385132e-08
+    },
+    {
+      "module": "10:up_proj",
+      "full_energy": 0.23480677604675293,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.3085386753082275e-08
+    },
+    {
+      "module": "10:down_proj",
+      "full_energy": 0.07088539004325867,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.078051567077637e-08
+    },
+    {
+      "module": "11:q_proj",
+      "full_energy": 0.0714673176407814,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.204936653375626e-08
+    },
+    {
+      "module": "11:k_proj",
+      "full_energy": 0.01325503084808588,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.468004822731018e-08
+    },
+    {
+      "module": "11:v_proj",
+      "full_energy": 0.0137741444632411,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.7008354663848877e-08
+    },
+    {
+      "module": "11:o_proj",
+      "full_energy": 0.06239482760429382,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.862645149230957e-08
+    },
+    {
+      "module": "11:gate_proj",
+      "full_energy": 0.25091713666915894,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.988434612751007e-08
+    },
+    {
+      "module": "11:up_proj",
+      "full_energy": 0.2315407693386078,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.9802322387695312e-08
+    },
+    {
+      "module": "11:down_proj",
+      "full_energy": 0.06890031695365906,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.6566128730773926e-08
+    },
+    {
+      "module": "12:q_proj",
+      "full_energy": 0.07112916558980942,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.310882210731506e-08
+    },
+    {
+      "module": "12:k_proj",
+      "full_energy": 0.012545827776193619,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.0384398996829987e-08
+    },
+    {
+      "module": "12:v_proj",
+      "full_energy": 0.014426108449697495,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.14321368932724e-08
+    },
+    {
+      "module": "12:o_proj",
+      "full_energy": 0.06885189563035965,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.1827796697616577e-07
+    },
+    {
+      "module": "12:gate_proj",
+      "full_energy": 0.2618807256221771,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.66129994392395e-08
+    },
+    {
+      "module": "12:up_proj",
+      "full_energy": 0.24525463581085205,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.973277777433395e-08
+    },
+    {
+      "module": "12:down_proj",
+      "full_energy": 0.07287195324897766,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.426125764846802e-08
+    },
+    {
+      "module": "13:q_proj",
+      "full_energy": 0.07434628903865814,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.862645149230957e-07
+    },
+    {
+      "module": "13:k_proj",
+      "full_energy": 0.014141261577606201,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.936009645462036e-08
+    },
+    {
+      "module": "13:v_proj",
+      "full_energy": 0.015500621870160103,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.585591912269592e-08
+    },
+    {
+      "module": "13:o_proj",
+      "full_energy": 0.07674222439527512,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.586763679981232e-08
+    },
+    {
+      "module": "13:gate_proj",
+      "full_energy": 0.2579927444458008,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.6158446669578552e-07
+    },
+    {
+      "module": "13:up_proj",
+      "full_energy": 0.2548770308494568,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.4365650713443756e-07
+    },
+    {
+      "module": "13:down_proj",
+      "full_energy": 0.0754031166434288,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.655441105365753e-08
+    },
+    {
+      "module": "14:q_proj",
+      "full_energy": 0.07440568506717682,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.193295121192932e-08
+    },
+    {
+      "module": "14:k_proj",
+      "full_energy": 0.013887696899473667,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.421438694000244e-08
+    },
+    {
+      "module": "14:v_proj",
+      "full_energy": 0.014935038983821869,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.759043127298355e-08
+    },
+    {
+      "module": "14:o_proj",
+      "full_energy": 0.07361503690481186,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.541369318962097e-08
+    },
+    {
+      "module": "14:gate_proj",
+      "full_energy": 0.26567184925079346,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.891787052154541e-08
+    },
+    {
+      "module": "14:up_proj",
+      "full_energy": 0.2399921417236328,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.2724270820617676e-07
+    },
+    {
+      "module": "14:down_proj",
+      "full_energy": 0.08149854838848114,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.587935447692871e-08
+    },
+    {
+      "module": "15:q_proj",
+      "full_energy": 0.08211910724639893,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.0978193283081055e-08
+    },
+    {
+      "module": "15:k_proj",
+      "full_energy": 0.014250239357352257,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.2962922230362892e-08
+    },
+    {
+      "module": "15:v_proj",
+      "full_energy": 0.017102090641856194,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.7474015951156616e-08
+    },
+    {
+      "module": "15:o_proj",
+      "full_energy": 0.08297166973352432,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.543712854385376e-08
+    },
+    {
+      "module": "15:gate_proj",
+      "full_energy": 0.2840738594532013,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.993030309677124e-07
+    },
+    {
+      "module": "15:up_proj",
+      "full_energy": 0.2742808163166046,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.568167686462402e-08
+    },
+    {
+      "module": "15:down_proj",
+      "full_energy": 0.09018547087907791,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.470348358154297e-08
+    },
+    {
+      "module": "16:q_proj",
+      "full_energy": 0.08285102993249893,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.377216100692749e-08
+    },
+    {
+      "module": "16:k_proj",
+      "full_energy": 0.01769380457699299,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.119930624961853e-08
+    },
+    {
+      "module": "16:v_proj",
+      "full_energy": 0.01652189902961254,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.3352989703416824e-08
+    },
+    {
+      "module": "16:o_proj",
+      "full_energy": 0.07949310541152954,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.3993273973464966e-08
+    },
+    {
+      "module": "16:gate_proj",
+      "full_energy": 0.26970094442367554,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.1688098311424255e-07
+    },
+    {
+      "module": "16:up_proj",
+      "full_energy": 0.25941336154937744,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.9371814131736755e-08
+    },
+    {
+      "module": "16:down_proj",
+      "full_energy": 0.08693336695432663,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.7730281949043274e-08
+    },
+    {
+      "module": "17:q_proj",
+      "full_energy": 0.08233755826950073,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.497146725654602e-08
+    },
+    {
+      "module": "17:k_proj",
+      "full_energy": 0.0163276307284832,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.8405338525772095e-08
+    },
+    {
+      "module": "17:v_proj",
+      "full_energy": 0.015401406213641167,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.421438694000244e-08
+    },
+    {
+      "module": "17:o_proj",
+      "full_energy": 0.07310707867145538,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.516914486885071e-08
+    },
+    {
+      "module": "17:gate_proj",
+      "full_energy": 0.2818075716495514,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.0617077350616455e-07
+    },
+    {
+      "module": "17:up_proj",
+      "full_energy": 0.2633790075778961,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.1757947504520416e-07
+    },
+    {
+      "module": "17:down_proj",
+      "full_energy": 0.08615712076425552,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.402842700481415e-08
+    },
+    {
+      "module": "18:q_proj",
+      "full_energy": 0.08229959011077881,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.1548399925231934e-07
+    },
+    {
+      "module": "18:k_proj",
+      "full_energy": 0.01530496682971716,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.6542693376541138e-08
+    },
+    {
+      "module": "18:v_proj",
+      "full_energy": 0.01583920791745186,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.3283064365386963e-08
+    },
+    {
+      "module": "18:o_proj",
+      "full_energy": 0.08006606996059418,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.0943040251731873e-07
+    },
+    {
+      "module": "18:gate_proj",
+      "full_energy": 0.2827169597148895,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.541338860988617e-07
+    },
+    {
+      "module": "18:up_proj",
+      "full_energy": 0.2922372817993164,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.1594966053962708e-07
+    },
+    {
+      "module": "18:down_proj",
+      "full_energy": 0.0849648043513298,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.3899989426136017e-07
+    },
+    {
+      "module": "19:q_proj",
+      "full_energy": 0.07473031431436539,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.820766091346741e-08
+    },
+    {
+      "module": "19:k_proj",
+      "full_energy": 0.014347443357110023,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.7939677238464355e-08
+    },
+    {
+      "module": "19:v_proj",
+      "full_energy": 0.015510288998484612,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.0139850676059723e-08
+    },
+    {
+      "module": "19:o_proj",
+      "full_energy": 0.07707686722278595,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.473863661289215e-08
+    },
+    {
+      "module": "19:gate_proj",
+      "full_energy": 0.2833738327026367,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.797483026981354e-08
+    },
+    {
+      "module": "19:up_proj",
+      "full_energy": 0.2817743718624115,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.1932570487260818e-07
+    },
+    {
+      "module": "19:down_proj",
+      "full_energy": 0.09903759509325027,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.2515027821064e-08
+    },
+    {
+      "module": "20:q_proj",
+      "full_energy": 0.07127085328102112,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.208451956510544e-08
+    },
+    {
+      "module": "20:k_proj",
+      "full_energy": 0.013358532451093197,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.9103830456733704e-08
+    },
+    {
+      "module": "20:v_proj",
+      "full_energy": 0.016174742951989174,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.3085386753082275e-08
+    },
+    {
+      "module": "20:o_proj",
+      "full_energy": 0.08358798921108246,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.562308847904205e-08
+    },
+    {
+      "module": "20:gate_proj",
+      "full_energy": 0.29299670457839966,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.1944364309310913e-07
+    },
+    {
+      "module": "20:up_proj",
+      "full_energy": 0.2821611762046814,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.1420343071222305e-07
+    },
+    {
+      "module": "20:down_proj",
+      "full_energy": 0.09029877185821533,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.98374754190445e-08
+    },
+    {
+      "module": "21:q_proj",
+      "full_energy": 0.08389071375131607,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.0978193283081055e-08
+    },
+    {
+      "module": "21:k_proj",
+      "full_energy": 0.015754256397485733,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.30385160446167e-08
+    },
+    {
+      "module": "21:v_proj",
+      "full_energy": 0.01596658118069172,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.818422555923462e-08
+    },
+    {
+      "module": "21:o_proj",
+      "full_energy": 0.0919816792011261,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.6333298087120056e-08
+    },
+    {
+      "module": "21:gate_proj",
+      "full_energy": 0.29865485429763794,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.335337042808533e-08
+    },
+    {
+      "module": "21:up_proj",
+      "full_energy": 0.2922373414039612,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.7497451305389404e-08
+    },
+    {
+      "module": "21:down_proj",
+      "full_energy": 0.09321639686822891,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.565824151039124e-08
+    },
+    {
+      "module": "22:q_proj",
+      "full_energy": 0.08108402788639069,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.330649971961975e-08
+    },
+    {
+      "module": "22:k_proj",
+      "full_energy": 0.015837974846363068,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.2817403078079224e-08
+    },
+    {
+      "module": "22:v_proj",
+      "full_energy": 0.016626151278614998,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.119930624961853e-08
+    },
+    {
+      "module": "22:o_proj",
+      "full_energy": 0.08627218008041382,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.168840289115906e-08
+    },
+    {
+      "module": "22:gate_proj",
+      "full_energy": 0.31489527225494385,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.918585419654846e-08
+    },
+    {
+      "module": "22:up_proj",
+      "full_energy": 0.3087462782859802,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.415656000375748e-08
+    },
+    {
+      "module": "22:down_proj",
+      "full_energy": 0.10424305498600006,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.727633833885193e-08
+    },
+    {
+      "module": "23:q_proj",
+      "full_energy": 0.08188354969024658,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.82310962677002e-08
+    },
+    {
+      "module": "23:k_proj",
+      "full_energy": 0.014710023999214172,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.1653249859809875e-08
+    },
+    {
+      "module": "23:v_proj",
+      "full_energy": 0.018514536321163177,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.6566128730773926e-08
+    },
+    {
+      "module": "23:o_proj",
+      "full_energy": 0.09746984392404556,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.926711648702621e-08
+    },
+    {
+      "module": "23:gate_proj",
+      "full_energy": 0.32948926091194153,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.1548399925231934e-07
+    },
+    {
+      "module": "23:up_proj",
+      "full_energy": 0.29645228385925293,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.6548742577433586e-08
+    },
+    {
+      "module": "23:down_proj",
+      "full_energy": 0.10180895030498505,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.166496753692627e-08
+    },
+    {
+      "module": "24:q_proj",
+      "full_energy": 0.08505231142044067,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.939524948596954e-08
+    },
+    {
+      "module": "24:k_proj",
+      "full_energy": 0.017899006605148315,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.2887328416109085e-08
+    },
+    {
+      "module": "24:v_proj",
+      "full_energy": 0.01759101077914238,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.3969838619232178e-08
+    },
+    {
+      "module": "24:o_proj",
+      "full_energy": 0.1033426895737648,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.434236764907837e-07
+    },
+    {
+      "module": "24:gate_proj",
+      "full_energy": 0.35417819023132324,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.939524948596954e-08
+    },
+    {
+      "module": "24:up_proj",
+      "full_energy": 0.34573495388031006,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.2136297300457954e-07
+    },
+    {
+      "module": "24:down_proj",
+      "full_energy": 0.11554031074047089,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.7508864402770996e-07
+    },
+    {
+      "module": "25:q_proj",
+      "full_energy": 0.10205047577619553,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.12696123123169e-08
+    },
+    {
+      "module": "25:k_proj",
+      "full_energy": 0.018918970599770546,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.096647560596466e-08
+    },
+    {
+      "module": "25:v_proj",
+      "full_energy": 0.019950730726122856,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.6100467443466187e-08
+    },
+    {
+      "module": "25:o_proj",
+      "full_energy": 0.11318828910589218,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.171183824539185e-08
+    },
+    {
+      "module": "25:gate_proj",
+      "full_energy": 0.3781299591064453,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.4516990631818771e-07
+    },
+    {
+      "module": "25:up_proj",
+      "full_energy": 0.3714301586151123,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.4295801520347595e-07
+    },
+    {
+      "module": "25:down_proj",
+      "full_energy": 0.12759803235530853,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.078051567077637e-08
+    },
+    {
+      "module": "26:q_proj",
+      "full_energy": 0.10903933644294739,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.984919309616089e-08
+    },
+    {
+      "module": "26:k_proj",
+      "full_energy": 0.019533246755599976,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.2619725465774536e-08
+    },
+    {
+      "module": "26:v_proj",
+      "full_energy": 0.020911123603582382,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.7939677238464355e-08
+    },
+    {
+      "module": "26:o_proj",
+      "full_energy": 0.1154719740152359,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.2724270820617676e-07
+    },
+    {
+      "module": "26:gate_proj",
+      "full_energy": 0.3832581043243408,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.5832483768463135e-07
+    },
+    {
+      "module": "26:up_proj",
+      "full_energy": 0.3651125133037567,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.51805579662323e-07
+    },
+    {
+      "module": "26:down_proj",
+      "full_energy": 0.12690556049346924,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.528556019067764e-08
+    },
+    {
+      "module": "27:q_proj",
+      "full_energy": 0.10659786313772202,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.634501576423645e-08
+    },
+    {
+      "module": "27:k_proj",
+      "full_energy": 0.020020395517349243,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.4458935260772705e-08
+    },
+    {
+      "module": "27:v_proj",
+      "full_energy": 0.02190120331943035,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.608874976634979e-08
+    },
+    {
+      "module": "27:o_proj",
+      "full_energy": 0.108172707259655,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.585591912269592e-08
+    },
+    {
+      "module": "27:gate_proj",
+      "full_energy": 0.3839377164840698,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.55535438656807e-08
+    },
+    {
+      "module": "27:up_proj",
+      "full_energy": 0.4115457534790039,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.0582152754068375e-07
+    },
+    {
+      "module": "27:down_proj",
+      "full_energy": 0.129034623503685,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.147900760173798e-08
+    },
+    {
+      "module": "28:q_proj",
+      "full_energy": 0.10867464542388916,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.6100467443466187e-08
+    },
+    {
+      "module": "28:k_proj",
+      "full_energy": 0.022347349673509598,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.015156835317612e-08
+    },
+    {
+      "module": "28:v_proj",
+      "full_energy": 0.021734464913606644,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.958120942115784e-08
+    },
+    {
+      "module": "28:o_proj",
+      "full_energy": 0.1103181540966034,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.1798692867159843e-07
+    },
+    {
+      "module": "28:gate_proj",
+      "full_energy": 0.3787127733230591,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.1199153959751129e-07
+    },
+    {
+      "module": "28:up_proj",
+      "full_energy": 0.3861478865146637,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.6344711184501648e-07
+    },
+    {
+      "module": "28:down_proj",
+      "full_energy": 0.12992119789123535,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.639188647270203e-08
+    },
+    {
+      "module": "29:q_proj",
+      "full_energy": 0.10760185867547989,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.0104849934577942e-07
+    },
+    {
+      "module": "29:k_proj",
+      "full_energy": 0.022476229816675186,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.0978193283081055e-08
+    },
+    {
+      "module": "29:v_proj",
+      "full_energy": 0.02196492813527584,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.069887265563011e-08
+    },
+    {
+      "module": "29:o_proj",
+      "full_energy": 0.12218455225229263,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.6346242520958185e-08
+    },
+    {
+      "module": "29:gate_proj",
+      "full_energy": 0.3919331729412079,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.2834789231419563e-07
+    },
+    {
+      "module": "29:up_proj",
+      "full_energy": 0.40889543294906616,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.043081283569336e-07
+    },
+    {
+      "module": "29:down_proj",
+      "full_energy": 0.13873068988323212,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.448237061500549e-08
+    },
+    {
+      "module": "30:q_proj",
+      "full_energy": 0.1042332798242569,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.2200325727462769e-07
+    },
+    {
+      "module": "30:k_proj",
+      "full_energy": 0.021566517651081085,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.782326191663742e-08
+    },
+    {
+      "module": "30:v_proj",
+      "full_energy": 0.02470729872584343,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.421438694000244e-08
+    },
+    {
+      "module": "30:o_proj",
+      "full_energy": 0.11512330174446106,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.0104849934577942e-07
+    },
+    {
+      "module": "30:gate_proj",
+      "full_energy": 0.384133517742157,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.355993147939444e-08
+    },
+    {
+      "module": "30:up_proj",
+      "full_energy": 0.40700533986091614,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.9138983488082886e-08
+    },
+    {
+      "module": "30:down_proj",
+      "full_energy": 0.1347067654132843,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.190951585769653e-08
+    },
+    {
+      "module": "31:q_proj",
+      "full_energy": 0.11552939563989639,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.563480615615845e-08
+    },
+    {
+      "module": "31:k_proj",
+      "full_energy": 0.02236960455775261,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.6566128730773926e-08
+    },
+    {
+      "module": "31:v_proj",
+      "full_energy": 0.02436024323105812,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.259629011154175e-08
+    },
+    {
+      "module": "31:o_proj",
+      "full_energy": 0.11086700856685638,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.5390257835388184e-08
+    },
+    {
+      "module": "31:gate_proj",
+      "full_energy": 0.3959015905857086,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.66129994392395e-08
+    },
+    {
+      "module": "31:up_proj",
+      "full_energy": 0.42321085929870605,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.153683453798294e-07
+    },
+    {
+      "module": "31:down_proj",
+      "full_energy": 0.13927771151065826,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.21540641784668e-08
+    },
+    {
+      "module": "32:q_proj",
+      "full_energy": 0.10783954709768295,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.080395102500916e-08
+    },
+    {
+      "module": "32:k_proj",
+      "full_energy": 0.02117162197828293,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.7497451305389404e-08
+    },
+    {
+      "module": "32:v_proj",
+      "full_energy": 0.02433866448700428,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.4226104617118835e-08
+    },
+    {
+      "module": "32:o_proj",
+      "full_energy": 0.12800906598567963,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.0570511221885681e-07
+    },
+    {
+      "module": "32:gate_proj",
+      "full_energy": 0.372660756111145,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.1455267667770386e-07
+    },
+    {
+      "module": "32:up_proj",
+      "full_energy": 0.39845842123031616,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.2619725465774536e-08
+    },
+    {
+      "module": "32:down_proj",
+      "full_energy": 0.12891355156898499,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.798654794692993e-08
+    },
+    {
+      "module": "33:q_proj",
+      "full_energy": 0.10791447013616562,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.05359673500061e-08
+    },
+    {
+      "module": "33:k_proj",
+      "full_energy": 0.02046969346702099,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.60770320892334e-08
+    },
+    {
+      "module": "33:v_proj",
+      "full_energy": 0.02493508905172348,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.4458935260772705e-08
+    },
+    {
+      "module": "33:o_proj",
+      "full_energy": 0.11971371620893478,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.237517714500427e-08
+    },
+    {
+      "module": "33:gate_proj",
+      "full_energy": 0.37676340341567993,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.6158446669578552e-07
+    },
+    {
+      "module": "33:up_proj",
+      "full_energy": 0.3867177665233612,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.3923272490501404e-07
+    },
+    {
+      "module": "33:down_proj",
+      "full_energy": 0.12721657752990723,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.657784640789032e-08
+    },
+    {
+      "module": "34:q_proj",
+      "full_energy": 0.11411646008491516,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.078051567077637e-08
+    },
+    {
+      "module": "34:k_proj",
+      "full_energy": 0.021834511309862137,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.6426278054714203e-08
+    },
+    {
+      "module": "34:v_proj",
+      "full_energy": 0.024159768596291542,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.0046870708465576e-08
+    },
+    {
+      "module": "34:o_proj",
+      "full_energy": 0.13078537583351135,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.901085048913956e-08
+    },
+    {
+      "module": "34:gate_proj",
+      "full_energy": 0.37490203976631165,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.1827796697616577e-07
+    },
+    {
+      "module": "34:up_proj",
+      "full_energy": 0.40010207891464233,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.9138983488082886e-08
+    },
+    {
+      "module": "34:down_proj",
+      "full_energy": 0.12903088331222534,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.1688098311424255e-07
+    },
+    {
+      "module": "35:q_proj",
+      "full_energy": 0.11176940053701401,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.5762939155101776e-08
+    },
+    {
+      "module": "35:k_proj",
+      "full_energy": 0.023448800668120384,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.7241185307502747e-08
+    },
+    {
+      "module": "35:v_proj",
+      "full_energy": 0.024839535355567932,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.390029400587082e-08
+    },
+    {
+      "module": "35:o_proj",
+      "full_energy": 0.11091881990432739,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.0663643479347229e-07
+    },
+    {
+      "module": "35:gate_proj",
+      "full_energy": 0.36835700273513794,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.5634653866291046e-07
+    },
+    {
+      "module": "35:up_proj",
+      "full_energy": 0.3829529583454132,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.2852251529693604e-07
+    },
+    {
+      "module": "35:down_proj",
+      "full_energy": 0.1522330641746521,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.2433156371116638e-07
+    },
+    {
+      "module": "36:q_proj",
+      "full_energy": 0.11528356373310089,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.6566128730773926e-08
+    },
+    {
+      "module": "36:k_proj",
+      "full_energy": 0.023064151406288147,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.0046870708465576e-08
+    },
+    {
+      "module": "36:v_proj",
+      "full_energy": 0.023050494492053986,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.565824151039124e-08
+    },
+    {
+      "module": "36:o_proj",
+      "full_energy": 0.12258804589509964,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.194466888904572e-08
+    },
+    {
+      "module": "36:gate_proj",
+      "full_energy": 0.391877681016922,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.183951437473297e-07
+    },
+    {
+      "module": "36:up_proj",
+      "full_energy": 0.37327849864959717,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.380731403827667e-08
+    },
+    {
+      "module": "36:down_proj",
+      "full_energy": 0.15359658002853394,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.683411240577698e-08
+    },
+    {
+      "module": "37:q_proj",
+      "full_energy": 0.10377348214387894,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.729977369308472e-08
+    },
+    {
+      "module": "37:k_proj",
+      "full_energy": 0.020696312189102173,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.7008354663848877e-08
+    },
+    {
+      "module": "37:v_proj",
+      "full_energy": 0.02367807924747467,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.7939677238464355e-08
+    },
+    {
+      "module": "37:o_proj",
+      "full_energy": 0.11828344315290451,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.313509169965982e-08
+    },
+    {
+      "module": "37:gate_proj",
+      "full_energy": 0.3716717064380646,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.404014468193054e-08
+    },
+    {
+      "module": "37:up_proj",
+      "full_energy": 0.38533174991607666,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.636845111846924e-08
+    },
+    {
+      "module": "37:down_proj",
+      "full_energy": 0.16992634534835815,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.2619420886039734e-07
+    },
+    {
+      "module": "38:q_proj",
+      "full_energy": 0.11496937274932861,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.869675755500793e-08
+    },
+    {
+      "module": "38:k_proj",
+      "full_energy": 0.02119663916528225,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.3283064365386963e-08
+    },
+    {
+      "module": "38:v_proj",
+      "full_energy": 0.024265363812446594,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.6542693376541138e-08
+    },
+    {
+      "module": "38:o_proj",
+      "full_energy": 0.10301335155963898,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.475035429000854e-08
+    },
+    {
+      "module": "38:gate_proj",
+      "full_energy": 0.37230291962623596,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.288770914077759e-08
+    },
+    {
+      "module": "38:up_proj",
+      "full_energy": 0.3947838842868805,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.5273690223693848e-07
+    },
+    {
+      "module": "38:down_proj",
+      "full_energy": 0.16392503678798676,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.122274160385132e-08
+    },
+    {
+      "module": "39:q_proj",
+      "full_energy": 0.11603233963251114,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.288770914077759e-08
+    },
+    {
+      "module": "39:k_proj",
+      "full_energy": 0.020830830559134483,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.67872416973114e-08
+    },
+    {
+      "module": "39:v_proj",
+      "full_energy": 0.02469116635620594,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.264316082000732e-08
+    },
+    {
+      "module": "39:o_proj",
+      "full_energy": 0.1215951219201088,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.842877388000488e-08
+    },
+    {
+      "module": "39:gate_proj",
+      "full_energy": 0.38236042857170105,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.2724270820617676e-07
+    },
+    {
+      "module": "39:up_proj",
+      "full_energy": 0.41565853357315063,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.9060098566114902e-07
+    },
+    {
+      "module": "39:down_proj",
+      "full_energy": 0.16400191187858582,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.0337680578231812e-07
+    }
+  ],
+  "case-r": [
+    {
+      "module": "00:q_proj",
+      "full_energy": 0.042944855988025665,
+      "retained_energy_fraction": 0.9953203187877225,
+      "max_product_check_error": 2.9336661100387573e-08
+    },
+    {
+      "module": "00:k_proj",
+      "full_energy": 0.00776858814060688,
+      "retained_energy_fraction": 0.9870554404278005,
+      "max_product_check_error": 3.073364496231079e-08
+    },
+    {
+      "module": "00:v_proj",
+      "full_energy": 0.010949420742690563,
+      "retained_energy_fraction": 0.9983526201021005,
+      "max_product_check_error": 3.073364496231079e-08
+    },
+    {
+      "module": "00:o_proj",
+      "full_energy": 0.047337040305137634,
+      "retained_energy_fraction": 0.9988012849671125,
+      "max_product_check_error": 2.8172507882118225e-08
+    },
+    {
+      "module": "00:gate_proj",
+      "full_energy": 0.13027670979499817,
+      "retained_energy_fraction": 0.9969043965941042,
+      "max_product_check_error": 6.426125764846802e-08
+    },
+    {
+      "module": "00:up_proj",
+      "full_energy": 0.1381029188632965,
+      "retained_energy_fraction": 0.9972327153959946,
+      "max_product_check_error": 7.043126970529556e-08
+    },
+    {
+      "module": "00:down_proj",
+      "full_energy": 0.04933229088783264,
+      "retained_energy_fraction": 0.9968691797401947,
+      "max_product_check_error": 1.5203841030597687e-07
+    },
+    {
+      "module": "01:q_proj",
+      "full_energy": 0.026533542200922966,
+      "retained_energy_fraction": 0.9919656510346339,
+      "max_product_check_error": 3.3862306736409664e-08
+    },
+    {
+      "module": "01:k_proj",
+      "full_energy": 0.004680707585066557,
+      "retained_energy_fraction": 0.9869436574333427,
+      "max_product_check_error": 3.1548552215099335e-08
+    },
+    {
+      "module": "01:v_proj",
+      "full_energy": 0.007109062746167183,
+      "retained_energy_fraction": 0.9953579042767622,
+      "max_product_check_error": 3.4458935260772705e-08
+    },
+    {
+      "module": "01:o_proj",
+      "full_energy": 0.04128430411219597,
+      "retained_energy_fraction": 0.9983090858280386,
+      "max_product_check_error": 2.537854015827179e-08
+    },
+    {
+      "module": "01:gate_proj",
+      "full_energy": 0.07637502998113632,
+      "retained_energy_fraction": 0.9994265859828856,
+      "max_product_check_error": 5.0640664994716644e-08
+    },
+    {
+      "module": "01:up_proj",
+      "full_energy": 0.1476583033800125,
+      "retained_energy_fraction": 0.9994536379949059,
+      "max_product_check_error": 3.434251993894577e-08
+    },
+    {
+      "module": "01:down_proj",
+      "full_energy": 0.04026295244693756,
+      "retained_energy_fraction": 0.9963631582667808,
+      "max_product_check_error": 7.008202373981476e-08
+    },
+    {
+      "module": "02:q_proj",
+      "full_energy": 0.03106861747801304,
+      "retained_energy_fraction": 0.9929696555188159,
+      "max_product_check_error": 3.341119736433029e-08
+    },
+    {
+      "module": "02:k_proj",
+      "full_energy": 0.005129013676196337,
+      "retained_energy_fraction": 0.9850404100132616,
+      "max_product_check_error": 3.771856427192688e-08
+    },
+    {
+      "module": "02:v_proj",
+      "full_energy": 0.006080595776438713,
+      "retained_energy_fraction": 0.9969653805565639,
+      "max_product_check_error": 3.282912075519562e-08
+    },
+    {
+      "module": "02:o_proj",
+      "full_energy": 0.034982115030288696,
+      "retained_energy_fraction": 0.9970551965616095,
+      "max_product_check_error": 5.3085386753082275e-08
+    },
+    {
+      "module": "02:gate_proj",
+      "full_energy": 0.055283475667238235,
+      "retained_energy_fraction": 0.9993117271544661,
+      "max_product_check_error": 3.119930624961853e-08
+    },
+    {
+      "module": "02:up_proj",
+      "full_energy": 0.11105265468358994,
+      "retained_energy_fraction": 0.9996704513548428,
+      "max_product_check_error": 3.3527612686157227e-08
+    },
+    {
+      "module": "02:down_proj",
+      "full_energy": 0.02492176555097103,
+      "retained_energy_fraction": 0.9942895883644047,
+      "max_product_check_error": 8.568167686462402e-08
+    },
+    {
+      "module": "03:q_proj",
+      "full_energy": 0.03843510150909424,
+      "retained_energy_fraction": 0.9964459845479612,
+      "max_product_check_error": 4.190951585769653e-08
+    },
+    {
+      "module": "03:k_proj",
+      "full_energy": 0.005300268996506929,
+      "retained_energy_fraction": 0.9915355860063058,
+      "max_product_check_error": 4.842877388000488e-08
+    },
+    {
+      "module": "03:v_proj",
+      "full_energy": 0.007274134550243616,
+      "retained_energy_fraction": 0.9981846971577198,
+      "max_product_check_error": 2.153683453798294e-08
+    },
+    {
+      "module": "03:o_proj",
+      "full_energy": 0.04049433395266533,
+      "retained_energy_fraction": 0.9986369969406947,
+      "max_product_check_error": 7.33998604118824e-08
+    },
+    {
+      "module": "03:gate_proj",
+      "full_energy": 0.08217871189117432,
+      "retained_energy_fraction": 0.9988335279568878,
+      "max_product_check_error": 1.708976924419403e-07
+    },
+    {
+      "module": "03:up_proj",
+      "full_energy": 0.1210159957408905,
+      "retained_energy_fraction": 0.9993981219138048,
+      "max_product_check_error": 3.0297087505459785e-08
+    },
+    {
+      "module": "03:down_proj",
+      "full_energy": 0.048118311911821365,
+      "retained_energy_fraction": 0.9986595607022589,
+      "max_product_check_error": 5.078618414700031e-08
+    },
+    {
+      "module": "04:q_proj",
+      "full_energy": 0.03264417499303818,
+      "retained_energy_fraction": 0.9938023616506677,
+      "max_product_check_error": 3.632158041000366e-08
+    },
+    {
+      "module": "04:k_proj",
+      "full_energy": 0.006104016210883856,
+      "retained_energy_fraction": 0.9898293253688987,
+      "max_product_check_error": 3.3527612686157227e-08
+    },
+    {
+      "module": "04:v_proj",
+      "full_energy": 0.006157517433166504,
+      "retained_energy_fraction": 0.9963543532079453,
+      "max_product_check_error": 1.9208528101444244e-08
+    },
+    {
+      "module": "04:o_proj",
+      "full_energy": 0.03222518041729927,
+      "retained_energy_fraction": 0.9973195400295085,
+      "max_product_check_error": 5.611218512058258e-08
+    },
+    {
+      "module": "04:gate_proj",
+      "full_energy": 0.12007380276918411,
+      "retained_energy_fraction": 0.9988780117290651,
+      "max_product_check_error": 2.246815711259842e-07
+    },
+    {
+      "module": "04:up_proj",
+      "full_energy": 0.14601576328277588,
+      "retained_energy_fraction": 0.9992708403919113,
+      "max_product_check_error": 7.170456228777766e-08
+    },
+    {
+      "module": "04:down_proj",
+      "full_energy": 0.05494373291730881,
+      "retained_energy_fraction": 0.9992050225488828,
+      "max_product_check_error": 7.078051567077637e-08
+    },
+    {
+      "module": "05:q_proj",
+      "full_energy": 0.03825824707746506,
+      "retained_energy_fraction": 0.9962270213741752,
+      "max_product_check_error": 3.812601789832115e-08
+    },
+    {
+      "module": "05:k_proj",
+      "full_energy": 0.006037549581378698,
+      "retained_energy_fraction": 0.9933381867117133,
+      "max_product_check_error": 3.5011908039450645e-08
+    },
+    {
+      "module": "05:v_proj",
+      "full_energy": 0.004122087731957436,
+      "retained_energy_fraction": 0.9942111016168338,
+      "max_product_check_error": 4.190951585769653e-08
+    },
+    {
+      "module": "05:o_proj",
+      "full_energy": 0.02873353287577629,
+      "retained_energy_fraction": 0.9976854958039564,
+      "max_product_check_error": 3.5390257835388184e-08
+    },
+    {
+      "module": "05:gate_proj",
+      "full_energy": 0.08223320543766022,
+      "retained_energy_fraction": 0.9970158973952887,
+      "max_product_check_error": 3.434251993894577e-08
+    },
+    {
+      "module": "05:up_proj",
+      "full_energy": 0.08091481775045395,
+      "retained_energy_fraction": 0.9977566717675536,
+      "max_product_check_error": 4.7264620661735535e-08
+    },
+    {
+      "module": "05:down_proj",
+      "full_energy": 0.03766685351729393,
+      "retained_energy_fraction": 0.9948398391908947,
+      "max_product_check_error": 5.023321136832237e-08
+    },
+    {
+      "module": "06:q_proj",
+      "full_energy": 0.02839874103665352,
+      "retained_energy_fraction": 0.9940479946227511,
+      "max_product_check_error": 2.7299392968416214e-08
+    },
+    {
+      "module": "06:k_proj",
+      "full_energy": 0.003930975683033466,
+      "retained_energy_fraction": 0.9873678377332733,
+      "max_product_check_error": 3.271270543336868e-08
+    },
+    {
+      "module": "06:v_proj",
+      "full_energy": 0.0045720795169472694,
+      "retained_energy_fraction": 0.9958673788756818,
+      "max_product_check_error": 4.0512531995773315e-08
+    },
+    {
+      "module": "06:o_proj",
+      "full_energy": 0.030787881463766098,
+      "retained_energy_fraction": 0.9981809071724215,
+      "max_product_check_error": 3.864988684654236e-08
+    },
+    {
+      "module": "06:gate_proj",
+      "full_energy": 0.08719464391469955,
+      "retained_energy_fraction": 0.9962743954213028,
+      "max_product_check_error": 4.7351932153105736e-08
+    },
+    {
+      "module": "06:up_proj",
+      "full_energy": 0.09741819649934769,
+      "retained_energy_fraction": 0.9957961030034687,
+      "max_product_check_error": 2.60770320892334e-08
+    },
+    {
+      "module": "06:down_proj",
+      "full_energy": 0.05737541615962982,
+      "retained_energy_fraction": 0.9999501999662892,
+      "max_product_check_error": 3.9814040064811707e-08
+    },
+    {
+      "module": "07:q_proj",
+      "full_energy": 0.02104819379746914,
+      "retained_energy_fraction": 0.9919201165505311,
+      "max_product_check_error": 3.527384251356125e-08
+    },
+    {
+      "module": "07:k_proj",
+      "full_energy": 0.0041269902139902115,
+      "retained_energy_fraction": 0.9930702395357413,
+      "max_product_check_error": 2.8870999813079834e-08
+    },
+    {
+      "module": "07:v_proj",
+      "full_energy": 0.005151921417564154,
+      "retained_energy_fraction": 0.9954992318550441,
+      "max_product_check_error": 3.137392923235893e-08
+    },
+    {
+      "module": "07:o_proj",
+      "full_energy": 0.030714765191078186,
+      "retained_energy_fraction": 0.997871601609328,
+      "max_product_check_error": 9.592622518539429e-08
+    },
+    {
+      "module": "07:gate_proj",
+      "full_energy": 0.10493471473455429,
+      "retained_energy_fraction": 0.9971668049195054,
+      "max_product_check_error": 3.4458935260772705e-08
+    },
+    {
+      "module": "07:up_proj",
+      "full_energy": 0.08485182374715805,
+      "retained_energy_fraction": 0.9966114416506514,
+      "max_product_check_error": 1.3667158782482147e-07
+    },
+    {
+      "module": "07:down_proj",
+      "full_energy": 0.04818170145153999,
+      "retained_energy_fraction": 0.996539112581828,
+      "max_product_check_error": 8.521601557731628e-08
+    },
+    {
+      "module": "08:q_proj",
+      "full_energy": 0.031162694096565247,
+      "retained_energy_fraction": 0.9953635143425622,
+      "max_product_check_error": 4.409230314195156e-08
+    },
+    {
+      "module": "08:k_proj",
+      "full_energy": 0.00492330826818943,
+      "retained_energy_fraction": 0.9932637038477501,
+      "max_product_check_error": 2.0256265997886658e-08
+    },
+    {
+      "module": "08:v_proj",
+      "full_energy": 0.004840897861868143,
+      "retained_energy_fraction": 0.9945172781682204,
+      "max_product_check_error": 2.8638169169425964e-08
+    },
+    {
+      "module": "08:o_proj",
+      "full_energy": 0.030819378793239594,
+      "retained_energy_fraction": 0.9975036304785656,
+      "max_product_check_error": 2.7939677238464355e-08
+    },
+    {
+      "module": "08:gate_proj",
+      "full_energy": 0.09889201074838638,
+      "retained_energy_fraction": 0.9973696346306251,
+      "max_product_check_error": 2.8470822144299746e-08
+    },
+    {
+      "module": "08:up_proj",
+      "full_energy": 0.11136993765830994,
+      "retained_energy_fraction": 0.9969730034212346,
+      "max_product_check_error": 5.029141902923584e-08
+    },
+    {
+      "module": "08:down_proj",
+      "full_energy": 0.04920321702957153,
+      "retained_energy_fraction": 0.9970385878499273,
+      "max_product_check_error": 7.188646122813225e-08
+    },
+    {
+      "module": "09:q_proj",
+      "full_energy": 0.0206003338098526,
+      "retained_energy_fraction": 0.9904649484797083,
+      "max_product_check_error": 3.4458935260772705e-08
+    },
+    {
+      "module": "09:k_proj",
+      "full_energy": 0.004985216539353132,
+      "retained_energy_fraction": 0.9932595537449264,
+      "max_product_check_error": 2.2351741790771484e-08
+    },
+    {
+      "module": "09:v_proj",
+      "full_energy": 0.00527928676456213,
+      "retained_energy_fraction": 0.9962244586000295,
+      "max_product_check_error": 3.3993273973464966e-08
+    },
+    {
+      "module": "09:o_proj",
+      "full_energy": 0.027123836800456047,
+      "retained_energy_fraction": 0.9956540307412465,
+      "max_product_check_error": 5.634501576423645e-08
+    },
+    {
+      "module": "09:gate_proj",
+      "full_energy": 0.11428798735141754,
+      "retained_energy_fraction": 0.9954873941570617,
+      "max_product_check_error": 4.6566128730773926e-08
+    },
+    {
+      "module": "09:up_proj",
+      "full_energy": 0.12089012563228607,
+      "retained_energy_fraction": 0.9967659743573087,
+      "max_product_check_error": 5.611218512058258e-08
+    },
+    {
+      "module": "09:down_proj",
+      "full_energy": 0.04986731335520744,
+      "retained_energy_fraction": 0.9972120448328889,
+      "max_product_check_error": 4.98257577419281e-08
+    },
+    {
+      "module": "10:q_proj",
+      "full_energy": 0.0413530208170414,
+      "retained_energy_fraction": 0.9968384640241169,
+      "max_product_check_error": 3.119930624961853e-08
+    },
+    {
+      "module": "10:k_proj",
+      "full_energy": 0.0054740458726882935,
+      "retained_energy_fraction": 0.9935610148983142,
+      "max_product_check_error": 3.725290298461914e-08
+    },
+    {
+      "module": "10:v_proj",
+      "full_energy": 0.005079285707324743,
+      "retained_energy_fraction": 0.9937609114602982,
+      "max_product_check_error": 2.87545844912529e-08
+    },
+    {
+      "module": "10:o_proj",
+      "full_energy": 0.03550250455737114,
+      "retained_energy_fraction": 0.9975523946103154,
+      "max_product_check_error": 4.959292709827423e-08
+    },
+    {
+      "module": "10:gate_proj",
+      "full_energy": 0.11392978578805923,
+      "retained_energy_fraction": 0.9956224405134468,
+      "max_product_check_error": 9.406358003616333e-08
+    },
+    {
+      "module": "10:up_proj",
+      "full_energy": 0.11641869693994522,
+      "retained_energy_fraction": 0.9970119906283677,
+      "max_product_check_error": 3.050081431865692e-08
+    },
+    {
+      "module": "10:down_proj",
+      "full_energy": 0.058019839227199554,
+      "retained_energy_fraction": 0.9983853178210497,
+      "max_product_check_error": 6.658956408500671e-08
+    },
+    {
+      "module": "11:q_proj",
+      "full_energy": 0.024326598271727562,
+      "retained_energy_fraction": 0.9962852146012904,
+      "max_product_check_error": 3.259629011154175e-08
+    },
+    {
+      "module": "11:k_proj",
+      "full_energy": 0.003775122808292508,
+      "retained_energy_fraction": 0.9872963098807829,
+      "max_product_check_error": 2.0139850676059723e-08
+    },
+    {
+      "module": "11:v_proj",
+      "full_energy": 0.004817726090550423,
+      "retained_energy_fraction": 0.9940406851428786,
+      "max_product_check_error": 2.5029294192790985e-08
+    },
+    {
+      "module": "11:o_proj",
+      "full_energy": 0.0257827490568161,
+      "retained_energy_fraction": 0.9961674635645349,
+      "max_product_check_error": 2.782326191663742e-08
+    },
+    {
+      "module": "11:gate_proj",
+      "full_energy": 0.10937456786632538,
+      "retained_energy_fraction": 0.9970455734146157,
+      "max_product_check_error": 8.707866072654724e-08
+    },
+    {
+      "module": "11:up_proj",
+      "full_energy": 0.11273471266031265,
+      "retained_energy_fraction": 0.9975230977839729,
+      "max_product_check_error": 6.332993507385254e-08
+    },
+    {
+      "module": "11:down_proj",
+      "full_energy": 0.05816392973065376,
+      "retained_energy_fraction": 0.998344676361972,
+      "max_product_check_error": 9.426730684936047e-08
+    },
+    {
+      "module": "12:q_proj",
+      "full_energy": 0.021133344620466232,
+      "retained_energy_fraction": 0.9942640842780083,
+      "max_product_check_error": 2.6891939342021942e-08
+    },
+    {
+      "module": "12:k_proj",
+      "full_energy": 0.00377113395370543,
+      "retained_energy_fraction": 0.9921707843175146,
+      "max_product_check_error": 3.841705620288849e-08
+    },
+    {
+      "module": "12:v_proj",
+      "full_energy": 0.005343693308532238,
+      "retained_energy_fraction": 0.9970260103835181,
+      "max_product_check_error": 4.307366907596588e-08
+    },
+    {
+      "module": "12:o_proj",
+      "full_energy": 0.02943962812423706,
+      "retained_energy_fraction": 0.9985439675855158,
+      "max_product_check_error": 6.007030606269836e-08
+    },
+    {
+      "module": "12:gate_proj",
+      "full_energy": 0.1506401151418686,
+      "retained_energy_fraction": 0.9975061544894314,
+      "max_product_check_error": 3.451714292168617e-08
+    },
+    {
+      "module": "12:up_proj",
+      "full_energy": 0.12455158680677414,
+      "retained_energy_fraction": 0.9981759320778911,
+      "max_product_check_error": 4.877801984548569e-08
+    },
+    {
+      "module": "12:down_proj",
+      "full_energy": 0.06219730153679848,
+      "retained_energy_fraction": 0.9989756205108529,
+      "max_product_check_error": 6.490154191851616e-08
+    },
+    {
+      "module": "13:q_proj",
+      "full_energy": 0.033431898802518845,
+      "retained_energy_fraction": 0.9964305878994334,
+      "max_product_check_error": 5.448237061500549e-08
+    },
+    {
+      "module": "13:k_proj",
+      "full_energy": 0.005652746185660362,
+      "retained_energy_fraction": 0.993952639305126,
+      "max_product_check_error": 3.026798367500305e-08
+    },
+    {
+      "module": "13:v_proj",
+      "full_energy": 0.005903143435716629,
+      "retained_energy_fraction": 0.998346362802779,
+      "max_product_check_error": 4.3655745685100555e-08
+    },
+    {
+      "module": "13:o_proj",
+      "full_energy": 0.045942991971969604,
+      "retained_energy_fraction": 0.9992256376691353,
+      "max_product_check_error": 3.9173755794763565e-08
+    },
+    {
+      "module": "13:gate_proj",
+      "full_energy": 0.12206407636404037,
+      "retained_energy_fraction": 0.99736857894901,
+      "max_product_check_error": 3.4924596548080444e-08
+    },
+    {
+      "module": "13:up_proj",
+      "full_energy": 0.12610872089862823,
+      "retained_energy_fraction": 0.9983419616630625,
+      "max_product_check_error": 7.404014468193054e-08
+    },
+    {
+      "module": "13:down_proj",
+      "full_energy": 0.06076492741703987,
+      "retained_energy_fraction": 0.9992489330048363,
+      "max_product_check_error": 5.587935447692871e-08
+    },
+    {
+      "module": "14:q_proj",
+      "full_energy": 0.05144036188721657,
+      "retained_energy_fraction": 0.998592887222337,
+      "max_product_check_error": 6.332993507385254e-08
+    },
+    {
+      "module": "14:k_proj",
+      "full_energy": 0.00490239541977644,
+      "retained_energy_fraction": 0.9908338996110684,
+      "max_product_check_error": 3.771856427192688e-08
+    },
+    {
+      "module": "14:v_proj",
+      "full_energy": 0.0048424433916807175,
+      "retained_energy_fraction": 0.994426038948875,
+      "max_product_check_error": 4.377216100692749e-08
+    },
+    {
+      "module": "14:o_proj",
+      "full_energy": 0.037706099450588226,
+      "retained_energy_fraction": 0.9987674939293518,
+      "max_product_check_error": 5.075708031654358e-08
+    },
+    {
+      "module": "14:gate_proj",
+      "full_energy": 0.1376473754644394,
+      "retained_energy_fraction": 0.99826303167388,
+      "max_product_check_error": 3.91155481338501e-08
+    },
+    {
+      "module": "14:up_proj",
+      "full_energy": 0.12176183611154556,
+      "retained_energy_fraction": 0.9973689004262909,
+      "max_product_check_error": 7.078051567077637e-08
+    },
+    {
+      "module": "14:down_proj",
+      "full_energy": 0.07032531499862671,
+      "retained_energy_fraction": 0.9992951512167091,
+      "max_product_check_error": 6.58910721540451e-08
+    },
+    {
+      "module": "15:q_proj",
+      "full_energy": 0.031803760677576065,
+      "retained_energy_fraction": 0.9982438153144505,
+      "max_product_check_error": 6.100162863731384e-08
+    },
+    {
+      "module": "15:k_proj",
+      "full_energy": 0.003907644189894199,
+      "retained_energy_fraction": 0.986937714634226,
+      "max_product_check_error": 2.2846506908535957e-08
+    },
+    {
+      "module": "15:v_proj",
+      "full_energy": 0.0084604537114501,
+      "retained_energy_fraction": 0.998297290183781,
+      "max_product_check_error": 3.702007234096527e-08
+    },
+    {
+      "module": "15:o_proj",
+      "full_energy": 0.04593693092465401,
+      "retained_energy_fraction": 0.9992916285415228,
+      "max_product_check_error": 3.655441105365753e-08
+    },
+    {
+      "module": "15:gate_proj",
+      "full_energy": 0.1586385816335678,
+      "retained_energy_fraction": 0.9988247289723752,
+      "max_product_check_error": 2.491287887096405e-07
+    },
+    {
+      "module": "15:up_proj",
+      "full_energy": 0.1639953851699829,
+      "retained_energy_fraction": 0.998254606950824,
+      "max_product_check_error": 7.450580596923828e-08
+    },
+    {
+      "module": "15:down_proj",
+      "full_energy": 0.08237004280090332,
+      "retained_energy_fraction": 0.9994854154304817,
+      "max_product_check_error": 1.1175870895385742e-07
+    },
+    {
+      "module": "16:q_proj",
+      "full_energy": 0.03161301836371422,
+      "retained_energy_fraction": 0.9962209766493383,
+      "max_product_check_error": 5.714537110179663e-08
+    },
+    {
+      "module": "16:k_proj",
+      "full_energy": 0.005479675717651844,
+      "retained_energy_fraction": 0.9943277739036469,
+      "max_product_check_error": 2.60770320892334e-08
+    },
+    {
+      "module": "16:v_proj",
+      "full_energy": 0.006774529814720154,
+      "retained_energy_fraction": 0.9968066822324039,
+      "max_product_check_error": 3.67872416973114e-08
+    },
+    {
+      "module": "16:o_proj",
+      "full_energy": 0.035806283354759216,
+      "retained_energy_fraction": 0.9981346645475774,
+      "max_product_check_error": 3.166496753692627e-08
+    },
+    {
+      "module": "16:gate_proj",
+      "full_energy": 0.1550808548927307,
+      "retained_energy_fraction": 0.998434368183871,
+      "max_product_check_error": 5.168840289115906e-08
+    },
+    {
+      "module": "16:up_proj",
+      "full_energy": 0.12888777256011963,
+      "retained_energy_fraction": 0.9983017539024167,
+      "max_product_check_error": 9.592622518539429e-08
+    },
+    {
+      "module": "16:down_proj",
+      "full_energy": 0.07682786881923676,
+      "retained_energy_fraction": 0.9989079355006012,
+      "max_product_check_error": 9.12696123123169e-08
+    },
+    {
+      "module": "17:q_proj",
+      "full_energy": 0.0388227142393589,
+      "retained_energy_fraction": 0.997852014601119,
+      "max_product_check_error": 3.306195139884949e-08
+    },
+    {
+      "module": "17:k_proj",
+      "full_energy": 0.005245800595730543,
+      "retained_energy_fraction": 0.993555858531943,
+      "max_product_check_error": 3.5390257835388184e-08
+    },
+    {
+      "module": "17:v_proj",
+      "full_energy": 0.006443197373300791,
+      "retained_energy_fraction": 0.9977933982772289,
+      "max_product_check_error": 2.8638169169425964e-08
+    },
+    {
+      "module": "17:o_proj",
+      "full_energy": 0.036461569368839264,
+      "retained_energy_fraction": 0.9985261930990487,
+      "max_product_check_error": 5.098991096019745e-08
+    },
+    {
+      "module": "17:gate_proj",
+      "full_energy": 0.14864160120487213,
+      "retained_energy_fraction": 0.9983746641284975,
+      "max_product_check_error": 2.635642886161804e-07
+    },
+    {
+      "module": "17:up_proj",
+      "full_energy": 0.1259763240814209,
+      "retained_energy_fraction": 0.997486435029136,
+      "max_product_check_error": 6.938353180885315e-08
+    },
+    {
+      "module": "17:down_proj",
+      "full_energy": 0.060881298035383224,
+      "retained_energy_fraction": 0.9980794481988563,
+      "max_product_check_error": 7.171183824539185e-08
+    },
+    {
+      "module": "18:q_proj",
+      "full_energy": 0.030993487685918808,
+      "retained_energy_fraction": 0.9967295295255831,
+      "max_product_check_error": 5.133915692567825e-08
+    },
+    {
+      "module": "18:k_proj",
+      "full_energy": 0.005251264199614525,
+      "retained_energy_fraction": 0.9917168602582743,
+      "max_product_check_error": 2.500019036233425e-08
+    },
+    {
+      "module": "18:v_proj",
+      "full_energy": 0.0054898872040212154,
+      "retained_energy_fraction": 0.9957465335724512,
+      "max_product_check_error": 2.584420144557953e-08
+    },
+    {
+      "module": "18:o_proj",
+      "full_energy": 0.04185657948255539,
+      "retained_energy_fraction": 0.9988898866924355,
+      "max_product_check_error": 4.0978193283081055e-08
+    },
+    {
+      "module": "18:gate_proj",
+      "full_energy": 0.13834509253501892,
+      "retained_energy_fraction": 0.9972841980047353,
+      "max_product_check_error": 3.277091309428215e-08
+    },
+    {
+      "module": "18:up_proj",
+      "full_energy": 0.14453499019145966,
+      "retained_energy_fraction": 0.9984449840554935,
+      "max_product_check_error": 1.2479722499847412e-07
+    },
+    {
+      "module": "18:down_proj",
+      "full_energy": 0.05330520123243332,
+      "retained_energy_fraction": 0.9979197716459131,
+      "max_product_check_error": 5.797483026981354e-08
+    },
+    {
+      "module": "19:q_proj",
+      "full_energy": 0.02351711317896843,
+      "retained_energy_fraction": 0.9941023253132075,
+      "max_product_check_error": 4.6100467443466187e-08
+    },
+    {
+      "module": "19:k_proj",
+      "full_energy": 0.003752603195607662,
+      "retained_energy_fraction": 0.9934961223052882,
+      "max_product_check_error": 2.3748725652694702e-08
+    },
+    {
+      "module": "19:v_proj",
+      "full_energy": 0.005321827717125416,
+      "retained_energy_fraction": 0.9978366436721827,
+      "max_product_check_error": 3.259629011154175e-08
+    },
+    {
+      "module": "19:o_proj",
+      "full_energy": 0.030207742005586624,
+      "retained_energy_fraction": 0.9987596236151977,
+      "max_product_check_error": 7.334165275096893e-08
+    },
+    {
+      "module": "19:gate_proj",
+      "full_energy": 0.13428469002246857,
+      "retained_energy_fraction": 0.9975788123274949,
+      "max_product_check_error": 3.725290298461914e-08
+    },
+    {
+      "module": "19:up_proj",
+      "full_energy": 0.12259574234485626,
+      "retained_energy_fraction": 0.9978066211829186,
+      "max_product_check_error": 3.818422555923462e-08
+    },
+    {
+      "module": "19:down_proj",
+      "full_energy": 0.05545434355735779,
+      "retained_energy_fraction": 0.997341781947925,
+      "max_product_check_error": 6.798654794692993e-08
+    },
+    {
+      "module": "20:q_proj",
+      "full_energy": 0.02200496941804886,
+      "retained_energy_fraction": 0.9949188357914133,
+      "max_product_check_error": 3.4924596548080444e-08
+    },
+    {
+      "module": "20:k_proj",
+      "full_energy": 0.003491159062832594,
+      "retained_energy_fraction": 0.9922634522429487,
+      "max_product_check_error": 5.168840289115906e-08
+    },
+    {
+      "module": "20:v_proj",
+      "full_energy": 0.0047800480388104916,
+      "retained_energy_fraction": 0.9972536976105874,
+      "max_product_check_error": 3.4226104617118835e-08
+    },
+    {
+      "module": "20:o_proj",
+      "full_energy": 0.03537287563085556,
+      "retained_energy_fraction": 0.9985170611165441,
+      "max_product_check_error": 2.8638169169425964e-08
+    },
+    {
+      "module": "20:gate_proj",
+      "full_energy": 0.12883687019348145,
+      "retained_energy_fraction": 0.9965467651527349,
+      "max_product_check_error": 4.44706529378891e-08
+    },
+    {
+      "module": "20:up_proj",
+      "full_energy": 0.11878930032253265,
+      "retained_energy_fraction": 0.9967647267278531,
+      "max_product_check_error": 1.0419171303510666e-07
+    },
+    {
+      "module": "20:down_proj",
+      "full_energy": 0.055999755859375,
+      "retained_energy_fraction": 0.9975242011878406,
+      "max_product_check_error": 5.494803190231323e-08
+    },
+    {
+      "module": "21:q_proj",
+      "full_energy": 0.03210894390940666,
+      "retained_energy_fraction": 0.9971347619071376,
+      "max_product_check_error": 3.573950380086899e-08
+    },
+    {
+      "module": "21:k_proj",
+      "full_energy": 0.005088627338409424,
+      "retained_energy_fraction": 0.9932537768088271,
+      "max_product_check_error": 2.4097971618175507e-08
+    },
+    {
+      "module": "21:v_proj",
+      "full_energy": 0.004989405628293753,
+      "retained_energy_fraction": 0.9986045296601378,
+      "max_product_check_error": 2.9336661100387573e-08
+    },
+    {
+      "module": "21:o_proj",
+      "full_energy": 0.041968315839767456,
+      "retained_energy_fraction": 0.9992368041141211,
+      "max_product_check_error": 2.6542693376541138e-08
+    },
+    {
+      "module": "21:gate_proj",
+      "full_energy": 0.14402927458286285,
+      "retained_energy_fraction": 0.9963405427534501,
+      "max_product_check_error": 9.984069038182497e-08
+    },
+    {
+      "module": "21:up_proj",
+      "full_energy": 0.13990402221679688,
+      "retained_energy_fraction": 0.9973780461826858,
+      "max_product_check_error": 4.0978193283081055e-08
+    },
+    {
+      "module": "21:down_proj",
+      "full_energy": 0.06073910742998123,
+      "retained_energy_fraction": 0.998035576615824,
+      "max_product_check_error": 7.078051567077637e-08
+    },
+    {
+      "module": "22:q_proj",
+      "full_energy": 0.027178417891263962,
+      "retained_energy_fraction": 0.9975586825630777,
+      "max_product_check_error": 3.9595761336386204e-08
+    },
+    {
+      "module": "22:k_proj",
+      "full_energy": 0.005021208897233009,
+      "retained_energy_fraction": 0.9886209394745267,
+      "max_product_check_error": 3.4691765904426575e-08
+    },
+    {
+      "module": "22:v_proj",
+      "full_energy": 0.007197728846222162,
+      "retained_energy_fraction": 0.9975462258050638,
+      "max_product_check_error": 2.7939677238464355e-08
+    },
+    {
+      "module": "22:o_proj",
+      "full_energy": 0.0417020358145237,
+      "retained_energy_fraction": 0.9989143586850635,
+      "max_product_check_error": 4.7963112592697144e-08
+    },
+    {
+      "module": "22:gate_proj",
+      "full_energy": 0.17649495601654053,
+      "retained_energy_fraction": 0.9983212285729531,
+      "max_product_check_error": 7.450580596923828e-08
+    },
+    {
+      "module": "22:up_proj",
+      "full_energy": 0.1553983986377716,
+      "retained_energy_fraction": 0.9978228162717754,
+      "max_product_check_error": 8.288770914077759e-08
+    },
+    {
+      "module": "22:down_proj",
+      "full_energy": 0.07839397341012955,
+      "retained_energy_fraction": 0.9992236164305915,
+      "max_product_check_error": 6.28642737865448e-08
+    },
+    {
+      "module": "23:q_proj",
+      "full_energy": 0.048061128705739975,
+      "retained_energy_fraction": 0.9981062389705977,
+      "max_product_check_error": 4.6100467443466187e-08
+    },
+    {
+      "module": "23:k_proj",
+      "full_energy": 0.005486328154802322,
+      "retained_energy_fraction": 0.9919707514980733,
+      "max_product_check_error": 2.514570951461792e-08
+    },
+    {
+      "module": "23:v_proj",
+      "full_energy": 0.006831170059740543,
+      "retained_energy_fraction": 0.9984502202002942,
+      "max_product_check_error": 2.2846506908535957e-08
+    },
+    {
+      "module": "23:o_proj",
+      "full_energy": 0.051510002464056015,
+      "retained_energy_fraction": 0.999500474104822,
+      "max_product_check_error": 5.122274160385132e-08
+    },
+    {
+      "module": "23:gate_proj",
+      "full_energy": 0.17552511394023895,
+      "retained_energy_fraction": 0.9974302358265875,
+      "max_product_check_error": 3.4924596548080444e-08
+    },
+    {
+      "module": "23:up_proj",
+      "full_energy": 0.13992604613304138,
+      "retained_energy_fraction": 0.9947968526597402,
+      "max_product_check_error": 1.5692785382270813e-07
+    },
+    {
+      "module": "23:down_proj",
+      "full_energy": 0.07087087631225586,
+      "retained_energy_fraction": 0.9982362516568322,
+      "max_product_check_error": 5.494803190231323e-08
+    },
+    {
+      "module": "24:q_proj",
+      "full_energy": 0.03755377605557442,
+      "retained_energy_fraction": 0.9974678509021885,
+      "max_product_check_error": 2.2118911147117615e-08
+    },
+    {
+      "module": "24:k_proj",
+      "full_energy": 0.0056088026612997055,
+      "retained_energy_fraction": 0.9898960647953658,
+      "max_product_check_error": 2.537854015827179e-08
+    },
+    {
+      "module": "24:v_proj",
+      "full_energy": 0.00672515295445919,
+      "retained_energy_fraction": 0.9971365771149404,
+      "max_product_check_error": 3.4924596548080444e-08
+    },
+    {
+      "module": "24:o_proj",
+      "full_energy": 0.055221833288669586,
+      "retained_energy_fraction": 0.9993460382967637,
+      "max_product_check_error": 4.842877388000488e-08
+    },
+    {
+      "module": "24:gate_proj",
+      "full_energy": 0.18453891575336456,
+      "retained_energy_fraction": 0.9983294839382804,
+      "max_product_check_error": 6.100162863731384e-08
+    },
+    {
+      "module": "24:up_proj",
+      "full_energy": 0.17823050916194916,
+      "retained_energy_fraction": 0.9988370388819454,
+      "max_product_check_error": 1.1711381375789642e-07
+    },
+    {
+      "module": "24:down_proj",
+      "full_energy": 0.08151275664567947,
+      "retained_energy_fraction": 0.9992418049812727,
+      "max_product_check_error": 6.309710443019867e-08
+    },
+    {
+      "module": "25:q_proj",
+      "full_energy": 0.06031768396496773,
+      "retained_energy_fraction": 0.998821102924669,
+      "max_product_check_error": 6.497430149465799e-08
+    },
+    {
+      "module": "25:k_proj",
+      "full_energy": 0.007131040561944246,
+      "retained_energy_fraction": 0.9914481017211085,
+      "max_product_check_error": 3.213062882423401e-08
+    },
+    {
+      "module": "25:v_proj",
+      "full_energy": 0.00817785132676363,
+      "retained_energy_fraction": 0.9982186338281231,
+      "max_product_check_error": 2.9336661100387573e-08
+    },
+    {
+      "module": "25:o_proj",
+      "full_energy": 0.07189030945301056,
+      "retained_energy_fraction": 0.9997658813587462,
+      "max_product_check_error": 2.3370375856757164e-08
+    },
+    {
+      "module": "25:gate_proj",
+      "full_energy": 0.18923482298851013,
+      "retained_energy_fraction": 0.9970681927099484,
+      "max_product_check_error": 6.332993507385254e-08
+    },
+    {
+      "module": "25:up_proj",
+      "full_energy": 0.2134091854095459,
+      "retained_energy_fraction": 0.9990041648838178,
+      "max_product_check_error": 5.471520125865936e-08
+    },
+    {
+      "module": "25:down_proj",
+      "full_energy": 0.09257283061742783,
+      "retained_energy_fraction": 0.9993877624112519,
+      "max_product_check_error": 4.6566128730773926e-08
+    },
+    {
+      "module": "26:q_proj",
+      "full_energy": 0.07362982630729675,
+      "retained_energy_fraction": 0.9995235988564753,
+      "max_product_check_error": 5.8673322200775146e-08
+    },
+    {
+      "module": "26:k_proj",
+      "full_energy": 0.00809795968234539,
+      "retained_energy_fraction": 0.9942409062188691,
+      "max_product_check_error": 2.1653249859809875e-08
+    },
+    {
+      "module": "26:v_proj",
+      "full_energy": 0.008802000433206558,
+      "retained_energy_fraction": 0.9972651791182295,
+      "max_product_check_error": 4.98257577419281e-08
+    },
+    {
+      "module": "26:o_proj",
+      "full_energy": 0.0664420872926712,
+      "retained_energy_fraction": 0.9997563274680731,
+      "max_product_check_error": 5.168840289115906e-08
+    },
+    {
+      "module": "26:gate_proj",
+      "full_energy": 0.1969694197177887,
+      "retained_energy_fraction": 0.9977184822906625,
+      "max_product_check_error": 1.564621925354004e-07
+    },
+    {
+      "module": "26:up_proj",
+      "full_energy": 0.19176308810710907,
+      "retained_energy_fraction": 0.9984525607772412,
+      "max_product_check_error": 1.5366822481155396e-07
+    },
+    {
+      "module": "26:down_proj",
+      "full_energy": 0.10594869405031204,
+      "retained_energy_fraction": 0.999273005647673,
+      "max_product_check_error": 1.1187512427568436e-07
+    },
+    {
+      "module": "27:q_proj",
+      "full_energy": 0.05080337077379227,
+      "retained_energy_fraction": 0.9973255216930234,
+      "max_product_check_error": 3.306195139884949e-08
+    },
+    {
+      "module": "27:k_proj",
+      "full_energy": 0.009165807627141476,
+      "retained_energy_fraction": 0.9949782105977304,
+      "max_product_check_error": 3.91155481338501e-08
+    },
+    {
+      "module": "27:v_proj",
+      "full_energy": 0.010537399910390377,
+      "retained_energy_fraction": 0.9989751156198796,
+      "max_product_check_error": 3.119930624961853e-08
+    },
+    {
+      "module": "27:o_proj",
+      "full_energy": 0.06122424080967903,
+      "retained_energy_fraction": 0.9989555671556324,
+      "max_product_check_error": 3.905734047293663e-08
+    },
+    {
+      "module": "27:gate_proj",
+      "full_energy": 0.19594769179821014,
+      "retained_energy_fraction": 0.9968099200088336,
+      "max_product_check_error": 3.4226104617118835e-08
+    },
+    {
+      "module": "27:up_proj",
+      "full_energy": 0.2341058999300003,
+      "retained_energy_fraction": 0.9992123779508855,
+      "max_product_check_error": 7.59027898311615e-08
+    },
+    {
+      "module": "27:down_proj",
+      "full_energy": 0.0901409313082695,
+      "retained_energy_fraction": 0.9985171728983839,
+      "max_product_check_error": 1.0011717677116394e-07
+    },
+    {
+      "module": "28:q_proj",
+      "full_energy": 0.049163080751895905,
+      "retained_energy_fraction": 0.9985199794439905,
+      "max_product_check_error": 3.282912075519562e-08
+    },
+    {
+      "module": "28:k_proj",
+      "full_energy": 0.00902466382831335,
+      "retained_energy_fraction": 0.9929085786930844,
+      "max_product_check_error": 3.608874976634979e-08
+    },
+    {
+      "module": "28:v_proj",
+      "full_energy": 0.00957800168544054,
+      "retained_energy_fraction": 0.9988217964448921,
+      "max_product_check_error": 4.912726581096649e-08
+    },
+    {
+      "module": "28:o_proj",
+      "full_energy": 0.06575308740139008,
+      "retained_energy_fraction": 0.9994358220692265,
+      "max_product_check_error": 7.404014468193054e-08
+    },
+    {
+      "module": "28:gate_proj",
+      "full_energy": 0.18011346459388733,
+      "retained_energy_fraction": 0.996360946818993,
+      "max_product_check_error": 1.548323780298233e-07
+    },
+    {
+      "module": "28:up_proj",
+      "full_energy": 0.19606222212314606,
+      "retained_energy_fraction": 0.9973484350727984,
+      "max_product_check_error": 3.166496753692627e-08
+    },
+    {
+      "module": "28:down_proj",
+      "full_energy": 0.08641435205936432,
+      "retained_energy_fraction": 0.998423394800186,
+      "max_product_check_error": 1.2945383787155151e-07
+    },
+    {
+      "module": "29:q_proj",
+      "full_energy": 0.04901055246591568,
+      "retained_energy_fraction": 0.9982148299999164,
+      "max_product_check_error": 3.818422555923462e-08
+    },
+    {
+      "module": "29:k_proj",
+      "full_energy": 0.0072418274357914925,
+      "retained_energy_fraction": 0.9957350016776294,
+      "max_product_check_error": 3.026798367500305e-08
+    },
+    {
+      "module": "29:v_proj",
+      "full_energy": 0.009758749045431614,
+      "retained_energy_fraction": 0.9985940570758238,
+      "max_product_check_error": 5.78584149479866e-08
+    },
+    {
+      "module": "29:o_proj",
+      "full_energy": 0.0614081546664238,
+      "retained_energy_fraction": 0.9995696465799885,
+      "max_product_check_error": 3.771856427192688e-08
+    },
+    {
+      "module": "29:gate_proj",
+      "full_energy": 0.19698520004749298,
+      "retained_energy_fraction": 0.9977400729061936,
+      "max_product_check_error": 1.7974525690078735e-07
+    },
+    {
+      "module": "29:up_proj",
+      "full_energy": 0.2051016390323639,
+      "retained_energy_fraction": 0.9975766008739523,
+      "max_product_check_error": 1.0756775736808777e-07
+    },
+    {
+      "module": "29:down_proj",
+      "full_energy": 0.08589594811201096,
+      "retained_energy_fraction": 0.998211342608515,
+      "max_product_check_error": 6.193295121192932e-08
+    },
+    {
+      "module": "30:q_proj",
+      "full_energy": 0.055285099893808365,
+      "retained_energy_fraction": 0.9971591217292755,
+      "max_product_check_error": 3.259629011154175e-08
+    },
+    {
+      "module": "30:k_proj",
+      "full_energy": 0.010609450750052929,
+      "retained_energy_fraction": 0.9970025836980617,
+      "max_product_check_error": 3.346940502524376e-08
+    },
+    {
+      "module": "30:v_proj",
+      "full_energy": 0.010182645171880722,
+      "retained_energy_fraction": 0.9986846885343181,
+      "max_product_check_error": 3.818422555923462e-08
+    },
+    {
+      "module": "30:o_proj",
+      "full_energy": 0.049048490822315216,
+      "retained_energy_fraction": 0.9984895590685167,
+      "max_product_check_error": 2.0721927285194397e-08
+    },
+    {
+      "module": "30:gate_proj",
+      "full_energy": 0.19884181022644043,
+      "retained_energy_fraction": 0.9970046570575886,
+      "max_product_check_error": 8.405186235904694e-08
+    },
+    {
+      "module": "30:up_proj",
+      "full_energy": 0.20519007742404938,
+      "retained_energy_fraction": 0.9986989175729134,
+      "max_product_check_error": 4.936009645462036e-08
+    },
+    {
+      "module": "30:down_proj",
+      "full_energy": 0.08109310269355774,
+      "retained_energy_fraction": 0.997788891204186,
+      "max_product_check_error": 1.0486110113561153e-07
+    },
+    {
+      "module": "31:q_proj",
+      "full_energy": 0.04107947647571564,
+      "retained_energy_fraction": 0.9954024543700534,
+      "max_product_check_error": 7.799826562404633e-08
+    },
+    {
+      "module": "31:k_proj",
+      "full_energy": 0.00891416147351265,
+      "retained_energy_fraction": 0.9961966285772315,
+      "max_product_check_error": 3.864988684654236e-08
+    },
+    {
+      "module": "31:v_proj",
+      "full_energy": 0.009775468148291111,
+      "retained_energy_fraction": 0.9982844478293316,
+      "max_product_check_error": 3.329478204250336e-08
+    },
+    {
+      "module": "31:o_proj",
+      "full_energy": 0.06070273369550705,
+      "retained_energy_fraction": 0.9988853476018005,
+      "max_product_check_error": 4.563480615615845e-08
+    },
+    {
+      "module": "31:gate_proj",
+      "full_energy": 0.18752552568912506,
+      "retained_energy_fraction": 0.9969389632190073,
+      "max_product_check_error": 6.612390279769897e-08
+    },
+    {
+      "module": "31:up_proj",
+      "full_energy": 0.18994168937206268,
+      "retained_energy_fraction": 0.9979160996930124,
+      "max_product_check_error": 7.235939847305417e-08
+    },
+    {
+      "module": "31:down_proj",
+      "full_energy": 0.08166130632162094,
+      "retained_energy_fraction": 0.9980435924070254,
+      "max_product_check_error": 7.497146725654602e-08
+    },
+    {
+      "module": "32:q_proj",
+      "full_energy": 0.044708944857120514,
+      "retained_energy_fraction": 0.9965429223396541,
+      "max_product_check_error": 4.1443854570388794e-08
+    },
+    {
+      "module": "32:k_proj",
+      "full_energy": 0.011357125826179981,
+      "retained_energy_fraction": 0.9974166478810617,
+      "max_product_check_error": 4.695903044193983e-08
+    },
+    {
+      "module": "32:v_proj",
+      "full_energy": 0.009270040318369865,
+      "retained_energy_fraction": 0.9990984193706216,
+      "max_product_check_error": 3.795139491558075e-08
+    },
+    {
+      "module": "32:o_proj",
+      "full_energy": 0.04989682137966156,
+      "retained_energy_fraction": 0.9990725750697547,
+      "max_product_check_error": 4.121829988434911e-08
+    },
+    {
+      "module": "32:gate_proj",
+      "full_energy": 0.18808145821094513,
+      "retained_energy_fraction": 0.9963478652596238,
+      "max_product_check_error": 5.529727786779404e-08
+    },
+    {
+      "module": "32:up_proj",
+      "full_energy": 0.19252192974090576,
+      "retained_energy_fraction": 0.9979843540923757,
+      "max_product_check_error": 4.0279701352119446e-08
+    },
+    {
+      "module": "32:down_proj",
+      "full_energy": 0.07576277107000351,
+      "retained_energy_fraction": 0.997288150794393,
+      "max_product_check_error": 6.891787052154541e-08
+    },
+    {
+      "module": "33:q_proj",
+      "full_energy": 0.039290208369493484,
+      "retained_energy_fraction": 0.9950550328367096,
+      "max_product_check_error": 5.774199962615967e-08
+    },
+    {
+      "module": "33:k_proj",
+      "full_energy": 0.007836174219846725,
+      "retained_energy_fraction": 0.992703970084245,
+      "max_product_check_error": 5.0815287977457047e-08
+    },
+    {
+      "module": "33:v_proj",
+      "full_energy": 0.009846079163253307,
+      "retained_energy_fraction": 0.9989196139629917,
+      "max_product_check_error": 4.0978193283081055e-08
+    },
+    {
+      "module": "33:o_proj",
+      "full_energy": 0.05383036285638809,
+      "retained_energy_fraction": 0.9982619350700741,
+      "max_product_check_error": 3.632158041000366e-08
+    },
+    {
+      "module": "33:gate_proj",
+      "full_energy": 0.17628344893455505,
+      "retained_energy_fraction": 0.9965274414205969,
+      "max_product_check_error": 4.1211023926734924e-08
+    },
+    {
+      "module": "33:up_proj",
+      "full_energy": 0.16914476454257965,
+      "retained_energy_fraction": 0.9966369817655767,
+      "max_product_check_error": 4.627509042620659e-08
+    },
+    {
+      "module": "33:down_proj",
+      "full_energy": 0.07051737606525421,
+      "retained_energy_fraction": 0.9958740293651704,
+      "max_product_check_error": 9.173527359962463e-08
+    },
+    {
+      "module": "34:q_proj",
+      "full_energy": 0.04007004201412201,
+      "retained_energy_fraction": 0.9974604461418602,
+      "max_product_check_error": 8.149072527885437e-08
+    },
+    {
+      "module": "34:k_proj",
+      "full_energy": 0.007354086264967918,
+      "retained_energy_fraction": 0.9931366738471631,
+      "max_product_check_error": 4.377216100692749e-08
+    },
+    {
+      "module": "34:v_proj",
+      "full_energy": 0.007930424064397812,
+      "retained_energy_fraction": 0.9977445113624673,
+      "max_product_check_error": 3.958120942115784e-08
+    },
+    {
+      "module": "34:o_proj",
+      "full_energy": 0.04681048542261124,
+      "retained_energy_fraction": 0.999248344328171,
+      "max_product_check_error": 2.7008354663848877e-08
+    },
+    {
+      "module": "34:gate_proj",
+      "full_energy": 0.17122876644134521,
+      "retained_energy_fraction": 0.9953874207986655,
+      "max_product_check_error": 7.048947736620903e-08
+    },
+    {
+      "module": "34:up_proj",
+      "full_energy": 0.16520977020263672,
+      "retained_energy_fraction": 0.9960725315323116,
+      "max_product_check_error": 7.078051567077637e-08
+    },
+    {
+      "module": "34:down_proj",
+      "full_energy": 0.07286830246448517,
+      "retained_energy_fraction": 0.9960075532058692,
+      "max_product_check_error": 6.984919309616089e-08
+    },
+    {
+      "module": "35:q_proj",
+      "full_energy": 0.04906107485294342,
+      "retained_energy_fraction": 0.9968752591168901,
+      "max_product_check_error": 5.21540641784668e-08
+    },
+    {
+      "module": "35:k_proj",
+      "full_energy": 0.009744131937623024,
+      "retained_energy_fraction": 0.9941439489415811,
+      "max_product_check_error": 2.9802322387695312e-08
+    },
+    {
+      "module": "35:v_proj",
+      "full_energy": 0.010561385191977024,
+      "retained_energy_fraction": 0.9990581295693083,
+      "max_product_check_error": 4.190951585769653e-08
+    },
+    {
+      "module": "35:o_proj",
+      "full_energy": 0.06365819275379181,
+      "retained_energy_fraction": 0.9986405757077024,
+      "max_product_check_error": 2.8259819373488426e-08
+    },
+    {
+      "module": "35:gate_proj",
+      "full_energy": 0.16425706446170807,
+      "retained_energy_fraction": 0.9953026846791353,
+      "max_product_check_error": 1.1315569281578064e-07
+    },
+    {
+      "module": "35:up_proj",
+      "full_energy": 0.15341851115226746,
+      "retained_energy_fraction": 0.9940822137928476,
+      "max_product_check_error": 7.35744833946228e-08
+    },
+    {
+      "module": "35:down_proj",
+      "full_energy": 0.08444534242153168,
+      "retained_energy_fraction": 0.9979485730711549,
+      "max_product_check_error": 9.592622518539429e-08
+    },
+    {
+      "module": "36:q_proj",
+      "full_energy": 0.05136987939476967,
+      "retained_energy_fraction": 0.9976371146822832,
+      "max_product_check_error": 9.778887033462524e-08
+    },
+    {
+      "module": "36:k_proj",
+      "full_energy": 0.010083178989589214,
+      "retained_energy_fraction": 0.9970246790097583,
+      "max_product_check_error": 3.725290298461914e-08
+    },
+    {
+      "module": "36:v_proj",
+      "full_energy": 0.010812514461576939,
+      "retained_energy_fraction": 0.998063282304533,
+      "max_product_check_error": 4.4587068259716034e-08
+    },
+    {
+      "module": "36:o_proj",
+      "full_energy": 0.04804396629333496,
+      "retained_energy_fraction": 0.9977437646083837,
+      "max_product_check_error": 5.832407623529434e-08
+    },
+    {
+      "module": "36:gate_proj",
+      "full_energy": 0.15554839372634888,
+      "retained_energy_fraction": 0.9944855075490416,
+      "max_product_check_error": 4.959292709827423e-08
+    },
+    {
+      "module": "36:up_proj",
+      "full_energy": 0.15998350083827972,
+      "retained_energy_fraction": 0.9953205528416604,
+      "max_product_check_error": 1.8905848264694214e-07
+    },
+    {
+      "module": "36:down_proj",
+      "full_energy": 0.07175049185752869,
+      "retained_energy_fraction": 0.9971182286368656,
+      "max_product_check_error": 7.171183824539185e-08
+    },
+    {
+      "module": "37:q_proj",
+      "full_energy": 0.045059483498334885,
+      "retained_energy_fraction": 0.99716590290175,
+      "max_product_check_error": 3.91155481338501e-08
+    },
+    {
+      "module": "37:k_proj",
+      "full_energy": 0.008400355465710163,
+      "retained_energy_fraction": 0.9954696400025145,
+      "max_product_check_error": 3.1694071367383e-08
+    },
+    {
+      "module": "37:v_proj",
+      "full_energy": 0.010268077254295349,
+      "retained_energy_fraction": 0.9990963481690779,
+      "max_product_check_error": 2.9802322387695312e-08
+    },
+    {
+      "module": "37:o_proj",
+      "full_energy": 0.06905519217252731,
+      "retained_energy_fraction": 0.9987340899446735,
+      "max_product_check_error": 4.98257577419281e-08
+    },
+    {
+      "module": "37:gate_proj",
+      "full_energy": 0.1482822746038437,
+      "retained_energy_fraction": 0.9937667915612968,
+      "max_product_check_error": 4.284083843231201e-08
+    },
+    {
+      "module": "37:up_proj",
+      "full_energy": 0.16429802775382996,
+      "retained_energy_fraction": 0.9959171416563288,
+      "max_product_check_error": 4.516914486885071e-08
+    },
+    {
+      "module": "37:down_proj",
+      "full_energy": 0.0928916335105896,
+      "retained_energy_fraction": 0.9987534994414369,
+      "max_product_check_error": 8.568167686462402e-08
+    },
+    {
+      "module": "38:q_proj",
+      "full_energy": 0.04576849564909935,
+      "retained_energy_fraction": 0.9971997137854189,
+      "max_product_check_error": 4.330649971961975e-08
+    },
+    {
+      "module": "38:k_proj",
+      "full_energy": 0.010342773050069809,
+      "retained_energy_fraction": 0.9945133334317834,
+      "max_product_check_error": 2.421438694000244e-08
+    },
+    {
+      "module": "38:v_proj",
+      "full_energy": 0.01462679821997881,
+      "retained_energy_fraction": 0.9994342075228242,
+      "max_product_check_error": 3.725290298461914e-08
+    },
+    {
+      "module": "38:o_proj",
+      "full_energy": 0.0695844367146492,
+      "retained_energy_fraction": 0.9992223323284578,
+      "max_product_check_error": 3.486638888716698e-08
+    },
+    {
+      "module": "38:gate_proj",
+      "full_energy": 0.1663498729467392,
+      "retained_energy_fraction": 0.9961358173577565,
+      "max_product_check_error": 1.6688136383891106e-07
+    },
+    {
+      "module": "38:up_proj",
+      "full_energy": 0.1631978452205658,
+      "retained_energy_fraction": 0.9965830967103608,
+      "max_product_check_error": 9.96515154838562e-08
+    },
+    {
+      "module": "38:down_proj",
+      "full_energy": 0.10564566403627396,
+      "retained_energy_fraction": 0.9994595021933392,
+      "max_product_check_error": 5.6315911933779716e-08
+    },
+    {
+      "module": "39:q_proj",
+      "full_energy": 0.07093216478824615,
+      "retained_energy_fraction": 0.9998615597697312,
+      "max_product_check_error": 2.7474015951156616e-08
+    },
+    {
+      "module": "39:k_proj",
+      "full_energy": 0.01094567496329546,
+      "retained_energy_fraction": 0.9921528680456425,
+      "max_product_check_error": 4.516914486885071e-08
+    },
+    {
+      "module": "39:v_proj",
+      "full_energy": 0.009880722500383854,
+      "retained_energy_fraction": 0.998838288320344,
+      "max_product_check_error": 3.026798367500305e-08
+    },
+    {
+      "module": "39:o_proj",
+      "full_energy": 0.0676577240228653,
+      "retained_energy_fraction": 0.999785152649538,
+      "max_product_check_error": 3.463355824351311e-08
+    },
+    {
+      "module": "39:gate_proj",
+      "full_energy": 0.17966699600219727,
+      "retained_energy_fraction": 0.9989997717555449,
+      "max_product_check_error": 1.5972182154655457e-07
+    },
+    {
+      "module": "39:up_proj",
+      "full_energy": 0.17420828342437744,
+      "retained_energy_fraction": 0.9995014934667246,
+      "max_product_check_error": 5.8673322200775146e-08
+    },
+    {
+      "module": "39:down_proj",
+      "full_energy": 0.09045855700969696,
+      "retained_energy_fraction": 0.9998636042639152,
+      "max_product_check_error": 9.499490261077881e-08
+    }
+  ],
+  "case-v": [
+    {
+      "module": "00:q_proj",
+      "full_energy": 0.17791612446308136,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.945345714688301e-08
+    },
+    {
+      "module": "00:k_proj",
+      "full_energy": 0.03597953915596008,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.7939677238464355e-08
+    },
+    {
+      "module": "00:v_proj",
+      "full_energy": 0.03624511510133743,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.095513865351677e-08
+    },
+    {
+      "module": "00:o_proj",
+      "full_energy": 0.16413861513137817,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.499490261077881e-08
+    },
+    {
+      "module": "00:gate_proj",
+      "full_energy": 0.4745836555957794,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.636845111846924e-08
+    },
+    {
+      "module": "00:up_proj",
+      "full_energy": 0.5051536560058594,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.2759119272232056e-07
+    },
+    {
+      "module": "00:down_proj",
+      "full_energy": 0.14075738191604614,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.450580596923828e-08
+    },
+    {
+      "module": "01:q_proj",
+      "full_energy": 0.13182777166366577,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.6566128730773926e-08
+    },
+    {
+      "module": "01:k_proj",
+      "full_energy": 0.027120724320411682,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.91155481338501e-08
+    },
+    {
+      "module": "01:v_proj",
+      "full_energy": 0.03101464733481407,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.470348358154297e-08
+    },
+    {
+      "module": "01:o_proj",
+      "full_energy": 0.14828473329544067,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.936009645462036e-08
+    },
+    {
+      "module": "01:gate_proj",
+      "full_energy": 0.3622184991836548,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.778887033462524e-08
+    },
+    {
+      "module": "01:up_proj",
+      "full_energy": 0.6084604859352112,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.5273690223693848e-07
+    },
+    {
+      "module": "01:down_proj",
+      "full_energy": 0.14078478515148163,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.749783203005791e-08
+    },
+    {
+      "module": "02:q_proj",
+      "full_energy": 0.12823016941547394,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.123407855629921e-07
+    },
+    {
+      "module": "02:k_proj",
+      "full_energy": 0.026104401797056198,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.220055416226387e-08
+    },
+    {
+      "module": "02:v_proj",
+      "full_energy": 0.02754702977836132,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.4016709327697754e-08
+    },
+    {
+      "module": "02:o_proj",
+      "full_energy": 0.13332709670066833,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.7136335372924805e-07
+    },
+    {
+      "module": "02:gate_proj",
+      "full_energy": 0.26889699697494507,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.173527359962463e-08
+    },
+    {
+      "module": "02:up_proj",
+      "full_energy": 0.5064215660095215,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.1886080503463745e-07
+    },
+    {
+      "module": "02:down_proj",
+      "full_energy": 0.11056815832853317,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.0617077350616455e-07
+    },
+    {
+      "module": "03:q_proj",
+      "full_energy": 0.14824964106082916,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.216578185558319e-08
+    },
+    {
+      "module": "03:k_proj",
+      "full_energy": 0.02706599049270153,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.6566128730773926e-08
+    },
+    {
+      "module": "03:v_proj",
+      "full_energy": 0.030501950532197952,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.504101186990738e-08
+    },
+    {
+      "module": "03:o_proj",
+      "full_energy": 0.14456500113010406,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.498318493366241e-08
+    },
+    {
+      "module": "03:gate_proj",
+      "full_energy": 0.31641343235969543,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.91155481338501e-07
+    },
+    {
+      "module": "03:up_proj",
+      "full_energy": 0.4026820659637451,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.210719347000122e-07
+    },
+    {
+      "module": "03:down_proj",
+      "full_energy": 0.1509866863489151,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.030313670635223e-08
+    },
+    {
+      "module": "04:q_proj",
+      "full_energy": 0.1389063149690628,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.578591763973236e-07
+    },
+    {
+      "module": "04:k_proj",
+      "full_energy": 0.027679897844791412,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.0279701352119446e-08
+    },
+    {
+      "module": "04:v_proj",
+      "full_energy": 0.026169149205088615,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.818422555923462e-08
+    },
+    {
+      "module": "04:o_proj",
+      "full_energy": 0.12390533834695816,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.0663643479347229e-07
+    },
+    {
+      "module": "04:gate_proj",
+      "full_energy": 0.504181444644928,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.936002030968666e-07
+    },
+    {
+      "module": "04:up_proj",
+      "full_energy": 0.5558394193649292,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.7101486921310425e-07
+    },
+    {
+      "module": "04:down_proj",
+      "full_energy": 0.16722223162651062,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.6566128730773926e-08
+    },
+    {
+      "module": "05:q_proj",
+      "full_energy": 0.15382477641105652,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.66129994392395e-08
+    },
+    {
+      "module": "05:k_proj",
+      "full_energy": 0.029038839042186737,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.122274160385132e-08
+    },
+    {
+      "module": "05:v_proj",
+      "full_energy": 0.025301476940512657,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.009374141693115e-08
+    },
+    {
+      "module": "05:o_proj",
+      "full_energy": 0.12855537235736847,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.986091077327728e-08
+    },
+    {
+      "module": "05:gate_proj",
+      "full_energy": 0.43322134017944336,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.2433156371116638e-07
+    },
+    {
+      "module": "05:up_proj",
+      "full_energy": 0.46405327320098877,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.6862759366631508e-07
+    },
+    {
+      "module": "05:down_proj",
+      "full_energy": 0.1292724311351776,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.640322342514992e-08
+    },
+    {
+      "module": "06:q_proj",
+      "full_energy": 0.1319633573293686,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.402842700481415e-08
+    },
+    {
+      "module": "06:k_proj",
+      "full_energy": 0.02362971194088459,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.190951585769653e-08
+    },
+    {
+      "module": "06:v_proj",
+      "full_energy": 0.023830272257328033,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.166496753692627e-08
+    },
+    {
+      "module": "06:o_proj",
+      "full_energy": 0.12593252956867218,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.798654794692993e-08
+    },
+    {
+      "module": "06:gate_proj",
+      "full_energy": 0.41990286111831665,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.334165275096893e-08
+    },
+    {
+      "module": "06:up_proj",
+      "full_energy": 0.4348454475402832,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.330688044428825e-08
+    },
+    {
+      "module": "06:down_proj",
+      "full_energy": 0.22936756908893585,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.5192275643348694e-07
+    },
+    {
+      "module": "07:q_proj",
+      "full_energy": 0.10263831168413162,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.009374141693115e-08
+    },
+    {
+      "module": "07:k_proj",
+      "full_energy": 0.02163616567850113,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.493631422519684e-08
+    },
+    {
+      "module": "07:v_proj",
+      "full_energy": 0.026475273072719574,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.166496753692627e-08
+    },
+    {
+      "module": "07:o_proj",
+      "full_energy": 0.1339518278837204,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.73232090473175e-08
+    },
+    {
+      "module": "07:gate_proj",
+      "full_energy": 0.45619726181030273,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.317821443080902e-07
+    },
+    {
+      "module": "07:up_proj",
+      "full_energy": 0.42879295349121094,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.2014061212539673e-07
+    },
+    {
+      "module": "07:down_proj",
+      "full_energy": 0.1423940658569336,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.568167686462402e-08
+    },
+    {
+      "module": "08:q_proj",
+      "full_energy": 0.12618380784988403,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.146728992462158e-08
+    },
+    {
+      "module": "08:k_proj",
+      "full_energy": 0.023963451385498047,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.735760062932968e-08
+    },
+    {
+      "module": "08:v_proj",
+      "full_energy": 0.026244541630148888,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.67872416973114e-08
+    },
+    {
+      "module": "08:o_proj",
+      "full_energy": 0.12805049121379852,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.938353180885315e-08
+    },
+    {
+      "module": "08:gate_proj",
+      "full_energy": 0.4531868100166321,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.073349267244339e-07
+    },
+    {
+      "module": "08:up_proj",
+      "full_energy": 0.45337265729904175,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.3317912817001343e-07
+    },
+    {
+      "module": "08:down_proj",
+      "full_energy": 0.13685782253742218,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.774199962615967e-08
+    },
+    {
+      "module": "09:q_proj",
+      "full_energy": 0.11707375198602676,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.940696716308594e-08
+    },
+    {
+      "module": "09:k_proj",
+      "full_energy": 0.02445111982524395,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.1211023926734924e-08
+    },
+    {
+      "module": "09:v_proj",
+      "full_energy": 0.02773507684469223,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.727633833885193e-08
+    },
+    {
+      "module": "09:o_proj",
+      "full_energy": 0.1189504936337471,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.078051567077637e-08
+    },
+    {
+      "module": "09:gate_proj",
+      "full_energy": 0.44074827432632446,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.705522537231445e-08
+    },
+    {
+      "module": "09:up_proj",
+      "full_energy": 0.46620121598243713,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.6100467443466187e-08
+    },
+    {
+      "module": "09:down_proj",
+      "full_energy": 0.13519656658172607,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.3551048040390015e-08
+    },
+    {
+      "module": "10:q_proj",
+      "full_energy": 0.15538138151168823,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.404014468193054e-08
+    },
+    {
+      "module": "10:k_proj",
+      "full_energy": 0.03035607375204563,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.470348358154297e-08
+    },
+    {
+      "module": "10:v_proj",
+      "full_energy": 0.026889553293585777,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.7031790018081665e-08
+    },
+    {
+      "module": "10:o_proj",
+      "full_energy": 0.13352768123149872,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.2060627341270447e-07
+    },
+    {
+      "module": "10:gate_proj",
+      "full_energy": 0.45483750104904175,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.1455267667770386e-07
+    },
+    {
+      "module": "10:up_proj",
+      "full_energy": 0.455039381980896,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.683411240577698e-08
+    },
+    {
+      "module": "10:down_proj",
+      "full_energy": 0.1535239964723587,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.35744833946228e-08
+    },
+    {
+      "module": "11:q_proj",
+      "full_energy": 0.12499472498893738,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.98257577419281e-08
+    },
+    {
+      "module": "11:k_proj",
+      "full_energy": 0.02319951169192791,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.5390257835388184e-08
+    },
+    {
+      "module": "11:v_proj",
+      "full_energy": 0.025625204667448997,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.166496753692627e-08
+    },
+    {
+      "module": "11:o_proj",
+      "full_energy": 0.11560586094856262,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.306195139884949e-08
+    },
+    {
+      "module": "11:gate_proj",
+      "full_energy": 0.4550835192203522,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.450580596923828e-08
+    },
+    {
+      "module": "11:up_proj",
+      "full_energy": 0.43388327956199646,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.476207196712494e-08
+    },
+    {
+      "module": "11:down_proj",
+      "full_energy": 0.14866234362125397,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.100162863731384e-08
+    },
+    {
+      "module": "12:q_proj",
+      "full_energy": 0.12768681347370148,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.494803190231323e-08
+    },
+    {
+      "module": "12:k_proj",
+      "full_energy": 0.02339944802224636,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.470348358154297e-08
+    },
+    {
+      "module": "12:v_proj",
+      "full_energy": 0.02686472050845623,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.377216100692749e-08
+    },
+    {
+      "module": "12:o_proj",
+      "full_energy": 0.12695108354091644,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.5669502317905426e-07
+    },
+    {
+      "module": "12:gate_proj",
+      "full_energy": 0.531238853931427,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.258495315909386e-08
+    },
+    {
+      "module": "12:up_proj",
+      "full_energy": 0.47682082653045654,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.1688098311424255e-07
+    },
+    {
+      "module": "12:down_proj",
+      "full_energy": 0.1609058380126953,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.332993507385254e-08
+    },
+    {
+      "module": "13:q_proj",
+      "full_energy": 0.13779394328594208,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.080395102500916e-08
+    },
+    {
+      "module": "13:k_proj",
+      "full_energy": 0.027173049747943878,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.239861249923706e-08
+    },
+    {
+      "module": "13:v_proj",
+      "full_energy": 0.028785472735762596,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.5390257835388184e-08
+    },
+    {
+      "module": "13:o_proj",
+      "full_energy": 0.15203803777694702,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.5203841030597687e-07
+    },
+    {
+      "module": "13:gate_proj",
+      "full_energy": 0.48673728108406067,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.195638656616211e-08
+    },
+    {
+      "module": "13:up_proj",
+      "full_energy": 0.48101940751075745,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.0419247448444366e-07
+    },
+    {
+      "module": "13:down_proj",
+      "full_energy": 0.15922053158283234,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.844049155712128e-08
+    },
+    {
+      "module": "14:q_proj",
+      "full_energy": 0.17138269543647766,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.7497451305389404e-08
+    },
+    {
+      "module": "14:k_proj",
+      "full_energy": 0.025222841650247574,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.450580596923828e-08
+    },
+    {
+      "module": "14:v_proj",
+      "full_energy": 0.027193885296583176,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.029141902923584e-08
+    },
+    {
+      "module": "14:o_proj",
+      "full_energy": 0.14041313529014587,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.636845111846924e-08
+    },
+    {
+      "module": "14:gate_proj",
+      "full_energy": 0.5138326287269592,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.587904989719391e-07
+    },
+    {
+      "module": "14:up_proj",
+      "full_energy": 0.45184341073036194,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.313225746154785e-08
+    },
+    {
+      "module": "14:down_proj",
+      "full_energy": 0.18184244632720947,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.149072527885437e-08
+    },
+    {
+      "module": "15:q_proj",
+      "full_energy": 0.15453208982944489,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.30385160446167e-07
+    },
+    {
+      "module": "15:k_proj",
+      "full_energy": 0.02574882283806801,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.632158041000366e-08
+    },
+    {
+      "module": "15:v_proj",
+      "full_energy": 0.034526169300079346,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.100162863731384e-08
+    },
+    {
+      "module": "15:o_proj",
+      "full_energy": 0.1613711714744568,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.2398231774568558e-07
+    },
+    {
+      "module": "15:gate_proj",
+      "full_energy": 0.5699706673622131,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.1746534407138824e-07
+    },
+    {
+      "module": "15:up_proj",
+      "full_energy": 0.5594733953475952,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.6205012798309326e-07
+    },
+    {
+      "module": "15:down_proj",
+      "full_energy": 0.21569977700710297,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.794005796313286e-08
+    },
+    {
+      "module": "16:q_proj",
+      "full_energy": 0.14757512509822845,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.73232090473175e-08
+    },
+    {
+      "module": "16:k_proj",
+      "full_energy": 0.03227677196264267,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.2951585277915e-08
+    },
+    {
+      "module": "16:v_proj",
+      "full_energy": 0.031589146703481674,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.9802322387695312e-08
+    },
+    {
+      "module": "16:o_proj",
+      "full_energy": 0.15289029479026794,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.6100467443466187e-08
+    },
+    {
+      "module": "16:gate_proj",
+      "full_energy": 0.5428159832954407,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.778887033462524e-08
+    },
+    {
+      "module": "16:up_proj",
+      "full_energy": 0.5062534213066101,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.0756775736808777e-07
+    },
+    {
+      "module": "16:down_proj",
+      "full_energy": 0.20774884521961212,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.592622518539429e-08
+    },
+    {
+      "module": "17:q_proj",
+      "full_energy": 0.16286109387874603,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.450580596923828e-08
+    },
+    {
+      "module": "17:k_proj",
+      "full_energy": 0.028894584625959396,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.259629011154175e-08
+    },
+    {
+      "module": "17:v_proj",
+      "full_energy": 0.029517680406570435,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.14757926389575e-08
+    },
+    {
+      "module": "17:o_proj",
+      "full_energy": 0.14091244339942932,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.076849341392517e-07
+    },
+    {
+      "module": "17:gate_proj",
+      "full_energy": 0.5531037449836731,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.105371095240116e-07
+    },
+    {
+      "module": "17:up_proj",
+      "full_energy": 0.5018965005874634,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.2631138563156128e-07
+    },
+    {
+      "module": "17:down_proj",
+      "full_energy": 0.18546119332313538,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.102506399154663e-08
+    },
+    {
+      "module": "18:q_proj",
+      "full_energy": 0.14410924911499023,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.7159618437290192e-07
+    },
+    {
+      "module": "18:k_proj",
+      "full_energy": 0.027818791568279266,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.891787052154541e-08
+    },
+    {
+      "module": "18:v_proj",
+      "full_energy": 0.029319677501916885,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.8870999813079834e-08
+    },
+    {
+      "module": "18:o_proj",
+      "full_energy": 0.15609434247016907,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.592622518539429e-08
+    },
+    {
+      "module": "18:gate_proj",
+      "full_energy": 0.5469622015953064,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.7439015209674835e-07
+    },
+    {
+      "module": "18:up_proj",
+      "full_energy": 0.5785202980041504,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.2386590242385864e-07
+    },
+    {
+      "module": "18:down_proj",
+      "full_energy": 0.17434051632881165,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.313225746154785e-08
+    },
+    {
+      "module": "19:q_proj",
+      "full_energy": 0.13442213833332062,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.9371814131736755e-08
+    },
+    {
+      "module": "19:k_proj",
+      "full_energy": 0.025691568851470947,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.608874976634979e-08
+    },
+    {
+      "module": "19:v_proj",
+      "full_energy": 0.029251590371131897,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.21540641784668e-08
+    },
+    {
+      "module": "19:o_proj",
+      "full_energy": 0.14461460709571838,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.2223608791828156e-07
+    },
+    {
+      "module": "19:gate_proj",
+      "full_energy": 0.5461375713348389,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.743962436914444e-08
+    },
+    {
+      "module": "19:up_proj",
+      "full_energy": 0.5397264957427979,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.917413651943207e-08
+    },
+    {
+      "module": "19:down_proj",
+      "full_energy": 0.204863041639328,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.2200325727462769e-07
+    },
+    {
+      "module": "20:q_proj",
+      "full_energy": 0.1316937357187271,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.636845111846924e-08
+    },
+    {
+      "module": "20:k_proj",
+      "full_energy": 0.02455255016684532,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.0978193283081055e-08
+    },
+    {
+      "module": "20:v_proj",
+      "full_energy": 0.02977735921740532,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.0640664994716644e-08
+    },
+    {
+      "module": "20:o_proj",
+      "full_energy": 0.1571347564458847,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.2619420886039734e-07
+    },
+    {
+      "module": "20:gate_proj",
+      "full_energy": 0.5502585768699646,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.3597309589385986e-07
+    },
+    {
+      "module": "20:up_proj",
+      "full_energy": 0.5188379287719727,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.381903171539307e-08
+    },
+    {
+      "module": "20:down_proj",
+      "full_energy": 0.17328402400016785,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.96515154838562e-08
+    },
+    {
+      "module": "21:q_proj",
+      "full_energy": 0.15279297530651093,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.872019290924072e-08
+    },
+    {
+      "module": "21:k_proj",
+      "full_energy": 0.0296938493847847,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.8405338525772095e-08
+    },
+    {
+      "module": "21:v_proj",
+      "full_energy": 0.028630921617150307,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.426125764846802e-08
+    },
+    {
+      "module": "21:o_proj",
+      "full_energy": 0.16516225039958954,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.499490261077881e-08
+    },
+    {
+      "module": "21:gate_proj",
+      "full_energy": 0.5567699670791626,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.5506520867347717e-07
+    },
+    {
+      "module": "21:up_proj",
+      "full_energy": 0.5418487191200256,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.940696716308594e-08
+    },
+    {
+      "module": "21:down_proj",
+      "full_energy": 0.18232330679893494,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.7601996660232544e-07
+    },
+    {
+      "module": "22:q_proj",
+      "full_energy": 0.1441965252161026,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.763730198144913e-08
+    },
+    {
+      "module": "22:k_proj",
+      "full_energy": 0.0291032325476408,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.866160452365875e-08
+    },
+    {
+      "module": "22:v_proj",
+      "full_energy": 0.03203409165143967,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.364402800798416e-08
+    },
+    {
+      "module": "22:o_proj",
+      "full_energy": 0.15788254141807556,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.9185245037078857e-07
+    },
+    {
+      "module": "22:gate_proj",
+      "full_energy": 0.6197755932807922,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.7601996660232544e-07
+    },
+    {
+      "module": "22:up_proj",
+      "full_energy": 0.5810035467147827,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.6309786587953568e-07
+    },
+    {
+      "module": "22:down_proj",
+      "full_energy": 0.21601426601409912,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.394655555486679e-07
+    },
+    {
+      "module": "23:q_proj",
+      "full_energy": 0.18142057955265045,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.7974525690078735e-07
+    },
+    {
+      "module": "23:k_proj",
+      "full_energy": 0.02995222993195057,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.073364496231079e-08
+    },
+    {
+      "module": "23:v_proj",
+      "full_energy": 0.03308604285120964,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.078051567077637e-08
+    },
+    {
+      "module": "23:o_proj",
+      "full_energy": 0.18641918897628784,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.774199962615967e-08
+    },
+    {
+      "module": "23:gate_proj",
+      "full_energy": 0.6357651948928833,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.2724270820617676e-07
+    },
+    {
+      "module": "23:up_proj",
+      "full_energy": 0.5652411580085754,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.0896474123001099e-07
+    },
+    {
+      "module": "23:down_proj",
+      "full_energy": 0.20586341619491577,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.938353180885315e-08
+    },
+    {
+      "module": "24:q_proj",
+      "full_energy": 0.15625882148742676,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.6670826375484467e-08
+    },
+    {
+      "module": "24:k_proj",
+      "full_energy": 0.029879555106163025,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.4458935260772705e-08
+    },
+    {
+      "module": "24:v_proj",
+      "full_energy": 0.03264627233147621,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.6542693376541138e-08
+    },
+    {
+      "module": "24:o_proj",
+      "full_energy": 0.19759024679660797,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.695007085800171e-07
+    },
+    {
+      "module": "24:gate_proj",
+      "full_energy": 0.6641421914100647,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.2526288628578186e-07
+    },
+    {
+      "module": "24:up_proj",
+      "full_energy": 0.6431154608726501,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.4621764421463013e-07
+    },
+    {
+      "module": "24:down_proj",
+      "full_energy": 0.2327929139137268,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.183951437473297e-07
+    },
+    {
+      "module": "25:q_proj",
+      "full_energy": 0.20136621594429016,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.171183824539185e-08
+    },
+    {
+      "module": "25:k_proj",
+      "full_energy": 0.03442596644163132,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.7497451305389404e-08
+    },
+    {
+      "module": "25:v_proj",
+      "full_energy": 0.03657471016049385,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.266659617424011e-08
+    },
+    {
+      "module": "25:o_proj",
+      "full_energy": 0.21983841061592102,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.6670674085617065e-07
+    },
+    {
+      "module": "25:gate_proj",
+      "full_energy": 0.6970309019088745,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.543965820223093e-07
+    },
+    {
+      "module": "25:up_proj",
+      "full_energy": 0.7113666534423828,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.1315569281578064e-07
+    },
+    {
+      "module": "25:down_proj",
+      "full_energy": 0.263012170791626,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.62637534737587e-08
+    },
+    {
+      "module": "26:q_proj",
+      "full_energy": 0.25206658244132996,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.249197319149971e-08
+    },
+    {
+      "module": "26:k_proj",
+      "full_energy": 0.038102854043245316,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.6566128730773926e-08
+    },
+    {
+      "module": "26:v_proj",
+      "full_energy": 0.0390864834189415,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.377216100692749e-08
+    },
+    {
+      "module": "26:o_proj",
+      "full_energy": 0.21908670663833618,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.7869751900434494e-07
+    },
+    {
+      "module": "26:gate_proj",
+      "full_energy": 0.7198181748390198,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.023298293352127e-07
+    },
+    {
+      "module": "26:up_proj",
+      "full_energy": 0.6860349178314209,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.7695128917694092e-07
+    },
+    {
+      "module": "26:down_proj",
+      "full_energy": 0.2831312417984009,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.185452315956354e-08
+    },
+    {
+      "module": "27:q_proj",
+      "full_energy": 0.20162278413772583,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.6566128730773926e-08
+    },
+    {
+      "module": "27:k_proj",
+      "full_energy": 0.03872057422995567,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.6566128730773926e-08
+    },
+    {
+      "module": "27:v_proj",
+      "full_energy": 0.04233374446630478,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.478512659668922e-08
+    },
+    {
+      "module": "27:o_proj",
+      "full_energy": 0.21394707262516022,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.475035429000854e-08
+    },
+    {
+      "module": "27:gate_proj",
+      "full_energy": 0.7115180492401123,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.495974957942963e-08
+    },
+    {
+      "module": "27:up_proj",
+      "full_energy": 0.79954993724823,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.4528632164001465e-07
+    },
+    {
+      "module": "27:down_proj",
+      "full_energy": 0.2722403407096863,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.940696716308594e-08
+    },
+    {
+      "module": "28:q_proj",
+      "full_energy": 0.1890755444765091,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.685754776000977e-08
+    },
+    {
+      "module": "28:k_proj",
+      "full_energy": 0.0397346131503582,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.3655745685100555e-08
+    },
+    {
+      "module": "28:v_proj",
+      "full_energy": 0.04089125245809555,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.259629011154175e-08
+    },
+    {
+      "module": "28:o_proj",
+      "full_energy": 0.22337207198143005,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.379559636116028e-08
+    },
+    {
+      "module": "28:gate_proj",
+      "full_energy": 0.689302384853363,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.2375024855136871e-07
+    },
+    {
+      "module": "28:up_proj",
+      "full_energy": 0.7080461978912354,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.812594175338745e-07
+    },
+    {
+      "module": "28:down_proj",
+      "full_energy": 0.2673838436603546,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.0617077350616455e-07
+    },
+    {
+      "module": "29:q_proj",
+      "full_energy": 0.19068534672260284,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.9371509552001953e-07
+    },
+    {
+      "module": "29:k_proj",
+      "full_energy": 0.03787810727953911,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.284083843231201e-08
+    },
+    {
+      "module": "29:v_proj",
+      "full_energy": 0.04151666536927223,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.423782229423523e-08
+    },
+    {
+      "module": "29:o_proj",
+      "full_energy": 0.23922091722488403,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.798654794692993e-08
+    },
+    {
+      "module": "29:gate_proj",
+      "full_energy": 0.7313854098320007,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.172355592250824e-07
+    },
+    {
+      "module": "29:up_proj",
+      "full_energy": 0.7711614370346069,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.685693860054016e-07
+    },
+    {
+      "module": "29:down_proj",
+      "full_energy": 0.28731343150138855,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.195638656616211e-08
+    },
+    {
+      "module": "30:q_proj",
+      "full_energy": 0.2092704474925995,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.940696716308594e-08
+    },
+    {
+      "module": "30:k_proj",
+      "full_energy": 0.04472413286566734,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.379559636116028e-08
+    },
+    {
+      "module": "30:v_proj",
+      "full_energy": 0.04845213145017624,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.984919309616089e-08
+    },
+    {
+      "module": "30:o_proj",
+      "full_energy": 0.22437654435634613,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.1140946298837662e-07
+    },
+    {
+      "module": "30:gate_proj",
+      "full_energy": 0.7227722406387329,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.409835234284401e-08
+    },
+    {
+      "module": "30:up_proj",
+      "full_energy": 0.7794027328491211,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.1385418474674225e-07
+    },
+    {
+      "module": "30:down_proj",
+      "full_energy": 0.2740970253944397,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.0710209608078003e-07
+    },
+    {
+      "module": "31:q_proj",
+      "full_energy": 0.20039020478725433,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.310882210731506e-08
+    },
+    {
+      "module": "31:k_proj",
+      "full_energy": 0.03989747166633606,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.3318217396736145e-08
+    },
+    {
+      "module": "31:v_proj",
+      "full_energy": 0.04649273678660393,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.6100467443466187e-08
+    },
+    {
+      "module": "31:o_proj",
+      "full_energy": 0.21539729833602905,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.5366822481155396e-07
+    },
+    {
+      "module": "31:gate_proj",
+      "full_energy": 0.737913966178894,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.916211426258087e-07
+    },
+    {
+      "module": "31:up_proj",
+      "full_energy": 0.7978839874267578,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.7136335372924805e-07
+    },
+    {
+      "module": "31:down_proj",
+      "full_energy": 0.2920246422290802,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.010545909404755e-08
+    },
+    {
+      "module": "32:q_proj",
+      "full_energy": 0.19605395197868347,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.380731403827667e-08
+    },
+    {
+      "module": "32:k_proj",
+      "full_energy": 0.04177331551909447,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.961636245250702e-08
+    },
+    {
+      "module": "32:v_proj",
+      "full_energy": 0.04516089707612991,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.7497451305389404e-08
+    },
+    {
+      "module": "32:o_proj",
+      "full_energy": 0.25322476029396057,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.592622518539429e-08
+    },
+    {
+      "module": "32:gate_proj",
+      "full_energy": 0.699253499507904,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.4121178537607193e-07
+    },
+    {
+      "module": "32:up_proj",
+      "full_energy": 0.7491323947906494,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.73225998878479e-07
+    },
+    {
+      "module": "32:down_proj",
+      "full_energy": 0.26297351717948914,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.381903171539307e-08
+    },
+    {
+      "module": "33:q_proj",
+      "full_energy": 0.20276415348052979,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.7834827303886414e-07
+    },
+    {
+      "module": "33:k_proj",
+      "full_energy": 0.036640752106904984,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.866160452365875e-08
+    },
+    {
+      "module": "33:v_proj",
+      "full_energy": 0.04977336898446083,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.958120942115784e-08
+    },
+    {
+      "module": "33:o_proj",
+      "full_energy": 0.23254619538784027,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.98374754190445e-08
+    },
+    {
+      "module": "33:gate_proj",
+      "full_energy": 0.6933593153953552,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.5890767574310303e-07
+    },
+    {
+      "module": "33:up_proj",
+      "full_energy": 0.7224385738372803,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.1920928955078125e-07
+    },
+    {
+      "module": "33:down_proj",
+      "full_energy": 0.2571391463279724,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.451752364635468e-08
+    },
+    {
+      "module": "34:q_proj",
+      "full_energy": 0.21708257496356964,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.4586915969848633e-07
+    },
+    {
+      "module": "34:k_proj",
+      "full_energy": 0.04042899236083031,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.448237061500549e-08
+    },
+    {
+      "module": "34:v_proj",
+      "full_energy": 0.04568444937467575,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.21540641784668e-08
+    },
+    {
+      "module": "34:o_proj",
+      "full_energy": 0.2582090497016907,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.4808028936386108e-07
+    },
+    {
+      "module": "34:gate_proj",
+      "full_energy": 0.6867788434028625,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.8952414393424988e-07
+    },
+    {
+      "module": "34:up_proj",
+      "full_energy": 0.7413069605827332,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.7136335372924805e-07
+    },
+    {
+      "module": "34:down_proj",
+      "full_energy": 0.2683221101760864,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.927883416414261e-08
+    },
+    {
+      "module": "35:q_proj",
+      "full_energy": 0.2209303081035614,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.3067619875073433e-07
+    },
+    {
+      "module": "35:k_proj",
+      "full_energy": 0.043881580233573914,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.6566128730773926e-08
+    },
+    {
+      "module": "35:v_proj",
+      "full_energy": 0.049065716564655304,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 8.300412446260452e-08
+    },
+    {
+      "module": "35:o_proj",
+      "full_energy": 0.21824385225772858,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.05359673500061e-08
+    },
+    {
+      "module": "35:gate_proj",
+      "full_energy": 0.681108832359314,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.0128132998943329e-07
+    },
+    {
+      "module": "35:up_proj",
+      "full_energy": 0.7200562953948975,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.4121254682540894e-07
+    },
+    {
+      "module": "35:down_proj",
+      "full_energy": 0.33417609333992004,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.0954757928848267e-07
+    },
+    {
+      "module": "36:q_proj",
+      "full_energy": 0.2267846316099167,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.5227124094963074e-07
+    },
+    {
+      "module": "36:k_proj",
+      "full_energy": 0.04515097290277481,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.587935447692871e-08
+    },
+    {
+      "module": "36:v_proj",
+      "full_energy": 0.04574354737997055,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.0046870708465576e-08
+    },
+    {
+      "module": "36:o_proj",
+      "full_energy": 0.23513177037239075,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.264316082000732e-08
+    },
+    {
+      "module": "36:gate_proj",
+      "full_energy": 0.7347428798675537,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.383074939250946e-08
+    },
+    {
+      "module": "36:up_proj",
+      "full_energy": 0.7089637517929077,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.080395102500916e-08
+    },
+    {
+      "module": "36:down_proj",
+      "full_energy": 0.32857421040534973,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.1047890186309814e-07
+    },
+    {
+      "module": "37:q_proj",
+      "full_energy": 0.2104395478963852,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.12696123123169e-08
+    },
+    {
+      "module": "37:k_proj",
+      "full_energy": 0.04036056250333786,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.960464477539063e-08
+    },
+    {
+      "module": "37:v_proj",
+      "full_energy": 0.04586182162165642,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.752088665962219e-08
+    },
+    {
+      "module": "37:o_proj",
+      "full_energy": 0.24256320297718048,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.3224780559539795e-07
+    },
+    {
+      "module": "37:gate_proj",
+      "full_energy": 0.6906376481056213,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.2665987014770508e-07
+    },
+    {
+      "module": "37:up_proj",
+      "full_energy": 0.7365105748176575,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.2991949915885925e-07
+    },
+    {
+      "module": "37:down_proj",
+      "full_energy": 0.38548338413238525,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.8812716007232666e-07
+    },
+    {
+      "module": "38:q_proj",
+      "full_energy": 0.21847502887248993,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 3.91155481338501e-08
+    },
+    {
+      "module": "38:k_proj",
+      "full_energy": 0.04082047939300537,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.6798959374427795e-08
+    },
+    {
+      "module": "38:v_proj",
+      "full_energy": 0.05127521976828575,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.192123353481293e-08
+    },
+    {
+      "module": "38:o_proj",
+      "full_energy": 0.2130044549703598,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.3085386753082275e-08
+    },
+    {
+      "module": "38:gate_proj",
+      "full_energy": 0.7183401584625244,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.5459954738616943e-07
+    },
+    {
+      "module": "38:up_proj",
+      "full_energy": 0.7678908109664917,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.7043203115463257e-07
+    },
+    {
+      "module": "38:down_proj",
+      "full_energy": 0.36838603019714355,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 7.194466888904572e-08
+    },
+    {
+      "module": "39:q_proj",
+      "full_energy": 0.2428545206785202,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 9.033828973770142e-08
+    },
+    {
+      "module": "39:k_proj",
+      "full_energy": 0.039578720927238464,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 4.842877388000488e-08
+    },
+    {
+      "module": "39:v_proj",
+      "full_energy": 0.04510705545544624,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 5.4016709327697754e-08
+    },
+    {
+      "module": "39:o_proj",
+      "full_energy": 0.24070370197296143,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 6.05359673500061e-08
+    },
+    {
+      "module": "39:gate_proj",
+      "full_energy": 0.7661452889442444,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 2.337619662284851e-07
+    },
+    {
+      "module": "39:up_proj",
+      "full_energy": 0.8142006993293762,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.1548399925231934e-07
+    },
+    {
+      "module": "39:down_proj",
+      "full_energy": 0.3303864002227783,
+      "retained_energy_fraction": 1.0,
+      "max_product_check_error": 1.9418075680732727e-07
+    }
+  ]
+}

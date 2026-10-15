@@ -1,0 +1,187 @@
+{
+  "checkpoint_rates": {
+    "0": {
+      "numbered_list": 0.5,
+      "bulleted_list": 0.0,
+      "plain_text": 0.5,
+      "content_order": 1.0,
+      "empty": 0.0,
+      "truncated": 0.0,
+      "control_exact": 1.0,
+      "control_truncated": 0.0
+    },
+    "10": {
+      "numbered_list": 1.0,
+      "bulleted_list": 0.0,
+      "plain_text": 0.0,
+      "content_order": 1.0,
+      "empty": 0.0,
+      "truncated": 0.0,
+      "control_exact": 0.625,
+      "control_truncated": 0.375
+    },
+    "20": {
+      "numbered_list": 0.0,
+      "bulleted_list": 1.0,
+      "plain_text": 0.0,
+      "content_order": 1.0,
+      "empty": 0.0,
+      "truncated": 0.0,
+      "control_exact": 0.0,
+      "control_truncated": 0.0
+    }
+  },
+  "intervals": {
+    "case-k": {
+      "before": 0,
+      "after": 10,
+      "changes": {
+        "numbered_list": 0.5,
+        "bulleted_list": 0.0,
+        "plain_text": -0.5
+      },
+      "measured_labels": {
+        "more": "numbered_list",
+        "less": "plain_text"
+      },
+      "encodings": {
+        "correct_svd": {
+          "prediction": {
+            "more": "numbered_list",
+            "less": "unknown"
+          },
+          "matches": false
+        },
+        "upstream_compatible": {
+          "prediction": {
+            "more": "numbered_list",
+            "less": "bulleted_list"
+          },
+          "matches": false
+        }
+      }
+    },
+    "case-r": {
+      "before": 10,
+      "after": 20,
+      "changes": {
+        "numbered_list": -1.0,
+        "bulleted_list": 1.0,
+        "plain_text": 0.0
+      },
+      "measured_labels": {
+        "more": "bulleted_list",
+        "less": "numbered_list"
+      },
+      "encodings": {
+        "correct_svd": {
+          "prediction": {
+            "more": "numbered_list",
+            "less": "bulleted_list"
+          },
+          "matches": false
+        },
+        "upstream_compatible": {
+          "prediction": {
+            "more": "bulleted_list",
+            "less": "unknown"
+          },
+          "matches": false
+        }
+      }
+    },
+    "case-v": {
+      "before": 0,
+      "after": 20,
+      "changes": {
+        "numbered_list": -0.5,
+        "bulleted_list": 1.0,
+        "plain_text": -0.5
+      },
+      "measured_labels": {
+        "more": "bulleted_list",
+        "less": "unknown"
+      },
+      "encodings": {
+        "correct_svd": {
+          "prediction": {
+            "more": "numbered_list",
+            "less": "bulleted_list"
+          },
+          "matches": false
+        },
+        "upstream_compatible": {
+          "prediction": {
+            "more": "numbered_list",
+            "less": "bulleted_list"
+          },
+          "matches": false
+        }
+      }
+    }
+  },
+  "manipulation_check": true,
+  "quality_check": false,
+  "primary_adjacent_predictions_correct": false,
+  "zero_control_correct": false,
+  "primary_toy_support": false,
+  "retained_delta_energy": {
+    "case-k": {
+      "minimum_module_fraction": 1.0,
+      "mean_module_fraction": 1.0,
+      "zero_energy_modules": 0
+    },
+    "case-r": {
+      "minimum_module_fraction": 0.9850404100132616,
+      "mean_module_fraction": 0.9967592337525385,
+      "zero_energy_modules": 0
+    },
+    "case-v": {
+      "minimum_module_fraction": 1.0,
+      "mean_module_fraction": 1.0,
+      "zero_energy_modules": 0
+    }
+  },
+  "permutation_control": {
+    "correct_svd": {
+      "real": {
+        "more": "numbered_list",
+        "less": "bulleted_list"
+      },
+      "permuted": {
+        "more": "numbered_list",
+        "less": "bulleted_list"
+      },
+      "same_prediction": true
+    },
+    "upstream_compatible": {
+      "real": {
+        "more": "bulleted_list",
+        "less": "unknown"
+      },
+      "permuted": {
+        "more": "numbered_list",
+        "less": "bulleted_list"
+      },
+      "same_prediction": false
+    }
+  },
+  "scope": "Single toy trajectory, descriptive only; no individual-update or magnitude claim.",
+  "reference_ce": {
+    "0": {
+      "numbered_list": 3.101378838221232,
+      "bulleted_list": 4.297335088253021,
+      "plain_text": 1.8410456394776702
+    },
+    "10": {
+      "numbered_list": 0.003184739606714023,
+      "bulleted_list": 1.9716877887646358,
+      "plain_text": 3.6803251802921295
+    },
+    "20": {
+      "numbered_list": 1.6705831239620845,
+      "bulleted_list": 0.00048346993935410865,
+      "plain_text": 3.926272322734197
+    }
+  }
+}

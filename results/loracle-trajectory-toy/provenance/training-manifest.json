@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "started_unix": 1792022438.0829864,
+  "finished_unix": 1792022493.11723,
+  "steps": 20,
+  "checkpoint_fingerprints": {
+    "0": "62f68b6215934e738d97bb7a54b3a4cec8eabf7160a6efde34bfce7de0960b5c",
+    "10": "c9d4a6cd9565b1c013ad5eb651bc6f1cb484c8902bb8734ecabfb3cf6bb5df15",
+    "20": "1672d7eb11249ca8a9ac7ad4fe87b05d7072c4bacd62fd9a0ef7c0b25ece873d"
+  },
+  "snapshot_sha256": {
+    "optimizer-10.pt": "fa904eb7665aa81a2e04e88532993028c1a9ad13518e428a1be3f6b72c432559",
+    "optimizer-20.pt": "d8e932b3f5fd88b293988999333f53aeb9353d18ca3ebcb8c00b5e7ca7164b34",
+    "step-00.pt": "dc3f842ffcb3ce71558b67c362d946e3e1e05ed5f8961846f888e71508379ed9",
+    "step-10.pt": "711b25251b7b1287e38c7fa362f7c64874f5af8156a9c815dde0ce5193d9bf7f",
+    "step-20.pt": "17e043d978fb4baef42b056b85d53b816893cc9b1531707ef38a4ea13835039b"
+  },
+  "plan_sha256": "227d0fa7e4cc4f212f548a9a07b6040e79512f17f566d0743258847c7b2d941a",
+  "data_sha256": "6c6a4839fa04d237485aa5d0aaaa1f7ae258377bab0697d6d0ed5dc99cbc121b",
+  "peak_allocated_bytes": 30937465344
+}

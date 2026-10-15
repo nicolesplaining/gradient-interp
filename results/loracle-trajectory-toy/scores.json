@@ -1,0 +1,1298 @@
+[
+  {
+    "step": 0,
+    "id": "eval-00",
+    "style": "numbered_list",
+    "mean_answer_ce": 3.364593505859375
+  },
+  {
+    "step": 0,
+    "id": "eval-00",
+    "style": "bulleted_list",
+    "mean_answer_ce": 4.253486156463623
+  },
+  {
+    "step": 0,
+    "id": "eval-00",
+    "style": "plain_text",
+    "mean_answer_ce": 0.1706104576587677
+  },
+  {
+    "step": 0,
+    "id": "eval-01",
+    "style": "numbered_list",
+    "mean_answer_ce": 3.3077375888824463
+  },
+  {
+    "step": 0,
+    "id": "eval-01",
+    "style": "bulleted_list",
+    "mean_answer_ce": 3.966043472290039
+  },
+  {
+    "step": 0,
+    "id": "eval-01",
+    "style": "plain_text",
+    "mean_answer_ce": 0.14382801949977875
+  },
+  {
+    "step": 0,
+    "id": "eval-02",
+    "style": "numbered_list",
+    "mean_answer_ce": 2.9230833053588867
+  },
+  {
+    "step": 0,
+    "id": "eval-02",
+    "style": "bulleted_list",
+    "mean_answer_ce": 3.4692673683166504
+  },
+  {
+    "step": 0,
+    "id": "eval-02",
+    "style": "plain_text",
+    "mean_answer_ce": 0.06804947555065155
+  },
+  {
+    "step": 0,
+    "id": "eval-03",
+    "style": "numbered_list",
+    "mean_answer_ce": 3.9062585830688477
+  },
+  {
+    "step": 0,
+    "id": "eval-03",
+    "style": "bulleted_list",
+    "mean_answer_ce": 5.042054176330566
+  },
+  {
+    "step": 0,
+    "id": "eval-03",
+    "style": "plain_text",
+    "mean_answer_ce": 0.13937512040138245
+  },
+  {
+    "step": 0,
+    "id": "eval-04",
+    "style": "numbered_list",
+    "mean_answer_ce": 3.989631414413452
+  },
+  {
+    "step": 0,
+    "id": "eval-04",
+    "style": "bulleted_list",
+    "mean_answer_ce": 5.222517013549805
+  },
+  {
+    "step": 0,
+    "id": "eval-04",
+    "style": "plain_text",
+    "mean_answer_ce": 0.08670090138912201
+  },
+  {
+    "step": 0,
+    "id": "eval-05",
+    "style": "numbered_list",
+    "mean_answer_ce": 4.187517166137695
+  },
+  {
+    "step": 0,
+    "id": "eval-05",
+    "style": "bulleted_list",
+    "mean_answer_ce": 5.238922119140625
+  },
+  {
+    "step": 0,
+    "id": "eval-05",
+    "style": "plain_text",
+    "mean_answer_ce": 0.04580240696668625
+  },
+  {
+    "step": 0,
+    "id": "eval-06",
+    "style": "numbered_list",
+    "mean_answer_ce": 2.8315374851226807
+  },
+  {
+    "step": 0,
+    "id": "eval-06",
+    "style": "bulleted_list",
+    "mean_answer_ce": 3.4219436645507812
+  },
+  {
+    "step": 0,
+    "id": "eval-06",
+    "style": "plain_text",
+    "mean_answer_ce": 2.0137600898742676
+  },
+  {
+    "step": 0,
+    "id": "eval-07",
+    "style": "numbered_list",
+    "mean_answer_ce": 3.0978267192840576
+  },
+  {
+    "step": 0,
+    "id": "eval-07",
+    "style": "bulleted_list",
+    "mean_answer_ce": 3.807872772216797
+  },
+  {
+    "step": 0,
+    "id": "eval-07",
+    "style": "plain_text",
+    "mean_answer_ce": 3.6339383125305176
+  },
+  {
+    "step": 0,
+    "id": "eval-08",
+    "style": "numbered_list",
+    "mean_answer_ce": 2.9891607761383057
+  },
+  {
+    "step": 0,
+    "id": "eval-08",
+    "style": "bulleted_list",
+    "mean_answer_ce": 4.130690097808838
+  },
+  {
+    "step": 0,
+    "id": "eval-08",
+    "style": "plain_text",
+    "mean_answer_ce": 3.325927257537842
+  },
+  {
+    "step": 0,
+    "id": "eval-09",
+    "style": "numbered_list",
+    "mean_answer_ce": 3.0172955989837646
+  },
+  {
+    "step": 0,
+    "id": "eval-09",
+    "style": "bulleted_list",
+    "mean_answer_ce": 3.7059624195098877
+  },
+  {
+    "step": 0,
+    "id": "eval-09",
+    "style": "plain_text",
+    "mean_answer_ce": 1.75831139087677
+  },
+  {
+    "step": 0,
+    "id": "eval-10",
+    "style": "numbered_list",
+    "mean_answer_ce": 3.9786555767059326
+  },
+  {
+    "step": 0,
+    "id": "eval-10",
+    "style": "bulleted_list",
+    "mean_answer_ce": 5.290512561798096
+  },
+  {
+    "step": 0,
+    "id": "eval-10",
+    "style": "plain_text",
+    "mean_answer_ce": 4.3634033203125
+  },
+  {
+    "step": 0,
+    "id": "eval-11",
+    "style": "numbered_list",
+    "mean_answer_ce": 3.666757822036743
+  },
+  {
+    "step": 0,
+    "id": "eval-11",
+    "style": "bulleted_list",
+    "mean_answer_ce": 4.552299499511719
+  },
+  {
+    "step": 0,
+    "id": "eval-11",
+    "style": "plain_text",
+    "mean_answer_ce": 3.3906047344207764
+  },
+  {
+    "step": 0,
+    "id": "eval-12",
+    "style": "numbered_list",
+    "mean_answer_ce": 2.7866594791412354
+  },
+  {
+    "step": 0,
+    "id": "eval-12",
+    "style": "bulleted_list",
+    "mean_answer_ce": 2.8193249702453613
+  },
+  {
+    "step": 0,
+    "id": "eval-12",
+    "style": "plain_text",
+    "mean_answer_ce": 0.5501825213432312
+  },
+  {
+    "step": 0,
+    "id": "eval-13",
+    "style": "numbered_list",
+    "mean_answer_ce": 3.4142816066741943
+  },
+  {
+    "step": 0,
+    "id": "eval-13",
+    "style": "bulleted_list",
+    "mean_answer_ce": 3.5314033031463623
+  },
+  {
+    "step": 0,
+    "id": "eval-13",
+    "style": "plain_text",
+    "mean_answer_ce": 0.543420672416687
+  },
+  {
+    "step": 0,
+    "id": "eval-14",
+    "style": "numbered_list",
+    "mean_answer_ce": 3.3710269927978516
+  },
+  {
+    "step": 0,
+    "id": "eval-14",
+    "style": "bulleted_list",
+    "mean_answer_ce": 3.6331379413604736
+  },
+  {
+    "step": 0,
+    "id": "eval-14",
+    "style": "plain_text",
+    "mean_answer_ce": 0.27487584948539734
+  },
+  {
+    "step": 0,
+    "id": "eval-15",
+    "style": "numbered_list",
+    "mean_answer_ce": 3.177393674850464
+  },
+  {
+    "step": 0,
+    "id": "eval-15",
+    "style": "bulleted_list",
+    "mean_answer_ce": 3.625455617904663
+  },
+  {
+    "step": 0,
+    "id": "eval-15",
+    "style": "plain_text",
+    "mean_answer_ce": 0.45726656913757324
+  },
+  {
+    "step": 0,
+    "id": "eval-16",
+    "style": "numbered_list",
+    "mean_answer_ce": 3.3233602046966553
+  },
+  {
+    "step": 0,
+    "id": "eval-16",
+    "style": "bulleted_list",
+    "mean_answer_ce": 3.5904541015625
+  },
+  {
+    "step": 0,
+    "id": "eval-16",
+    "style": "plain_text",
+    "mean_answer_ce": 0.902070939540863
+  },
+  {
+    "step": 0,
+    "id": "eval-17",
+    "style": "numbered_list",
+    "mean_answer_ce": 3.4279239177703857
+  },
+  {
+    "step": 0,
+    "id": "eval-17",
+    "style": "bulleted_list",
+    "mean_answer_ce": 3.5842905044555664
+  },
+  {
+    "step": 0,
+    "id": "eval-17",
+    "style": "plain_text",
+    "mean_answer_ce": 0.6096473336219788
+  },
+  {
+    "step": 0,
+    "id": "eval-18",
+    "style": "numbered_list",
+    "mean_answer_ce": 2.121617555618286
+  },
+  {
+    "step": 0,
+    "id": "eval-18",
+    "style": "bulleted_list",
+    "mean_answer_ce": 4.5979790687561035
+  },
+  {
+    "step": 0,
+    "id": "eval-18",
+    "style": "plain_text",
+    "mean_answer_ce": 3.064854383468628
+  },
+  {
+    "step": 0,
+    "id": "eval-19",
+    "style": "numbered_list",
+    "mean_answer_ce": 2.4095399379730225
+  },
+  {
+    "step": 0,
+    "id": "eval-19",
+    "style": "bulleted_list",
+    "mean_answer_ce": 5.2311835289001465
+  },
+  {
+    "step": 0,
+    "id": "eval-19",
+    "style": "plain_text",
+    "mean_answer_ce": 3.502190113067627
+  },
+  {
+    "step": 0,
+    "id": "eval-20",
+    "style": "numbered_list",
+    "mean_answer_ce": 2.533644199371338
+  },
+  {
+    "step": 0,
+    "id": "eval-20",
+    "style": "bulleted_list",
+    "mean_answer_ce": 5.060044288635254
+  },
+  {
+    "step": 0,
+    "id": "eval-20",
+    "style": "plain_text",
+    "mean_answer_ce": 3.6761293411254883
+  },
+  {
+    "step": 0,
+    "id": "eval-21",
+    "style": "numbered_list",
+    "mean_answer_ce": 2.3197286128997803
+  },
+  {
+    "step": 0,
+    "id": "eval-21",
+    "style": "bulleted_list",
+    "mean_answer_ce": 4.994256019592285
+  },
+  {
+    "step": 0,
+    "id": "eval-21",
+    "style": "plain_text",
+    "mean_answer_ce": 3.4879214763641357
+  },
+  {
+    "step": 0,
+    "id": "eval-22",
+    "style": "numbered_list",
+    "mean_answer_ce": 2.091944456100464
+  },
+  {
+    "step": 0,
+    "id": "eval-22",
+    "style": "bulleted_list",
+    "mean_answer_ce": 4.7100419998168945
+  },
+  {
+    "step": 0,
+    "id": "eval-22",
+    "style": "plain_text",
+    "mean_answer_ce": 4.253427028656006
+  },
+  {
+    "step": 0,
+    "id": "eval-23",
+    "style": "numbered_list",
+    "mean_answer_ce": 2.195915937423706
+  },
+  {
+    "step": 0,
+    "id": "eval-23",
+    "style": "bulleted_list",
+    "mean_answer_ce": 5.656899452209473
+  },
+  {
+    "step": 0,
+    "id": "eval-23",
+    "style": "plain_text",
+    "mean_answer_ce": 3.7227976322174072
+  },
+  {
+    "step": 10,
+    "id": "eval-00",
+    "style": "numbered_list",
+    "mean_answer_ce": 0.007320339325815439
+  },
+  {
+    "step": 10,
+    "id": "eval-00",
+    "style": "bulleted_list",
+    "mean_answer_ce": 1.7992534637451172
+  },
+  {
+    "step": 10,
+    "id": "eval-00",
+    "style": "plain_text",
+    "mean_answer_ce": 2.815415859222412
+  },
+  {
+    "step": 10,
+    "id": "eval-01",
+    "style": "numbered_list",
+    "mean_answer_ce": 0.016550224274396896
+  },
+  {
+    "step": 10,
+    "id": "eval-01",
+    "style": "bulleted_list",
+    "mean_answer_ce": 1.5138565301895142
+  },
+  {
+    "step": 10,
+    "id": "eval-01",
+    "style": "plain_text",
+    "mean_answer_ce": 2.5827810764312744
+  },
+  {
+    "step": 10,
+    "id": "eval-02",
+    "style": "numbered_list",
+    "mean_answer_ce": 0.004463586024940014
+  },
+  {
+    "step": 10,
+    "id": "eval-02",
+    "style": "bulleted_list",
+    "mean_answer_ce": 1.5283342599868774
+  },
+  {
+    "step": 10,
+    "id": "eval-02",
+    "style": "plain_text",
+    "mean_answer_ce": 3.298853635787964
+  },
+  {
+    "step": 10,
+    "id": "eval-03",
+    "style": "numbered_list",
+    "mean_answer_ce": 0.0044567761942744255
+  },
+  {
+    "step": 10,
+    "id": "eval-03",
+    "style": "bulleted_list",
+    "mean_answer_ce": 1.8018317222595215
+  },
+  {
+    "step": 10,
+    "id": "eval-03",
+    "style": "plain_text",
+    "mean_answer_ce": 2.6391279697418213
+  },
+  {
+    "step": 10,
+    "id": "eval-04",
+    "style": "numbered_list",
+    "mean_answer_ce": 0.011491198092699051
+  },
+  {
+    "step": 10,
+    "id": "eval-04",
+    "style": "bulleted_list",
+    "mean_answer_ce": 1.7475314140319824
+  },
+  {
+    "step": 10,
+    "id": "eval-04",
+    "style": "plain_text",
+    "mean_answer_ce": 2.4038777351379395
+  },
+  {
+    "step": 10,
+    "id": "eval-05",
+    "style": "numbered_list",
+    "mean_answer_ce": 0.031172379851341248
+  },
+  {
+    "step": 10,
+    "id": "eval-05",
+    "style": "bulleted_list",
+    "mean_answer_ce": 1.8446426391601562
+  },
+  {
+    "step": 10,
+    "id": "eval-05",
+    "style": "plain_text",
+    "mean_answer_ce": 3.041203022003174
+  },
+  {
+    "step": 10,
+    "id": "eval-06",
+    "style": "numbered_list",
+    "mean_answer_ce": 0.0003309616295155138
+  },
+  {
+    "step": 10,
+    "id": "eval-06",
+    "style": "bulleted_list",
+    "mean_answer_ce": 2.123837947845459
+  },
+  {
+    "step": 10,
+    "id": "eval-06",
+    "style": "plain_text",
+    "mean_answer_ce": 3.4472503662109375
+  },
+  {
+    "step": 10,
+    "id": "eval-07",
+    "style": "numbered_list",
+    "mean_answer_ce": 1.9777588022407144e-05
+  },
+  {
+    "step": 10,
+    "id": "eval-07",
+    "style": "bulleted_list",
+    "mean_answer_ce": 2.0601887702941895
+  },
+  {
+    "step": 10,
+    "id": "eval-07",
+    "style": "plain_text",
+    "mean_answer_ce": 4.432785511016846
+  },
+  {
+    "step": 10,
+    "id": "eval-08",
+    "style": "numbered_list",
+    "mean_answer_ce": 1.3460857189784292e-05
+  },
+  {
+    "step": 10,
+    "id": "eval-08",
+    "style": "bulleted_list",
+    "mean_answer_ce": 2.221519947052002
+  },
+  {
+    "step": 10,
+    "id": "eval-08",
+    "style": "plain_text",
+    "mean_answer_ce": 4.039865970611572
+  },
+  {
+    "step": 10,
+    "id": "eval-09",
+    "style": "numbered_list",
+    "mean_answer_ce": 1.5056113625178114e-05
+  },
+  {
+    "step": 10,
+    "id": "eval-09",
+    "style": "bulleted_list",
+    "mean_answer_ce": 2.158909320831299
+  },
+  {
+    "step": 10,
+    "id": "eval-09",
+    "style": "plain_text",
+    "mean_answer_ce": 3.617794990539551
+  },
+  {
+    "step": 10,
+    "id": "eval-10",
+    "style": "numbered_list",
+    "mean_answer_ce": 1.0460179510118905e-05
+  },
+  {
+    "step": 10,
+    "id": "eval-10",
+    "style": "bulleted_list",
+    "mean_answer_ce": 2.2573659420013428
+  },
+  {
+    "step": 10,
+    "id": "eval-10",
+    "style": "plain_text",
+    "mean_answer_ce": 4.573223114013672
+  },
+  {
+    "step": 10,
+    "id": "eval-11",
+    "style": "numbered_list",
+    "mean_answer_ce": 6.183009099913761e-05
+  },
+  {
+    "step": 10,
+    "id": "eval-11",
+    "style": "bulleted_list",
+    "mean_answer_ce": 2.517423152923584
+  },
+  {
+    "step": 10,
+    "id": "eval-11",
+    "style": "plain_text",
+    "mean_answer_ce": 4.803744792938232
+  },
+  {
+    "step": 10,
+    "id": "eval-12",
+    "style": "numbered_list",
+    "mean_answer_ce": 4.613693818100728e-05
+  },
+  {
+    "step": 10,
+    "id": "eval-12",
+    "style": "bulleted_list",
+    "mean_answer_ce": 1.4576728343963623
+  },
+  {
+    "step": 10,
+    "id": "eval-12",
+    "style": "plain_text",
+    "mean_answer_ce": 3.5200586318969727
+  },
+  {
+    "step": 10,
+    "id": "eval-13",
+    "style": "numbered_list",
+    "mean_answer_ce": 8.262380288215354e-05
+  },
+  {
+    "step": 10,
+    "id": "eval-13",
+    "style": "bulleted_list",
+    "mean_answer_ce": 1.8360377550125122
+  },
+  {
+    "step": 10,
+    "id": "eval-13",
+    "style": "plain_text",
+    "mean_answer_ce": 3.5249311923980713
+  },
+  {
+    "step": 10,
+    "id": "eval-14",
+    "style": "numbered_list",
+    "mean_answer_ce": 2.8271293558645993e-05
+  },
+  {
+    "step": 10,
+    "id": "eval-14",
+    "style": "bulleted_list",
+    "mean_answer_ce": 1.8025404214859009
+  },
+  {
+    "step": 10,
+    "id": "eval-14",
+    "style": "plain_text",
+    "mean_answer_ce": 3.2028417587280273
+  },
+  {
+    "step": 10,
+    "id": "eval-15",
+    "style": "numbered_list",
+    "mean_answer_ce": 5.483003405970521e-05
+  },
+  {
+    "step": 10,
+    "id": "eval-15",
+    "style": "bulleted_list",
+    "mean_answer_ce": 1.7458250522613525
+  },
+  {
+    "step": 10,
+    "id": "eval-15",
+    "style": "plain_text",
+    "mean_answer_ce": 3.9031662940979004
+  },
+  {
+    "step": 10,
+    "id": "eval-16",
+    "style": "numbered_list",
+    "mean_answer_ce": 6.524688797071576e-05
+  },
+  {
+    "step": 10,
+    "id": "eval-16",
+    "style": "bulleted_list",
+    "mean_answer_ce": 1.735764980316162
+  },
+  {
+    "step": 10,
+    "id": "eval-16",
+    "style": "plain_text",
+    "mean_answer_ce": 4.099543571472168
+  },
+  {
+    "step": 10,
+    "id": "eval-17",
+    "style": "numbered_list",
+    "mean_answer_ce": 9.613777365302667e-05
+  },
+  {
+    "step": 10,
+    "id": "eval-17",
+    "style": "bulleted_list",
+    "mean_answer_ce": 1.8873239755630493
+  },
+  {
+    "step": 10,
+    "id": "eval-17",
+    "style": "plain_text",
+    "mean_answer_ce": 3.4766814708709717
+  },
+  {
+    "step": 10,
+    "id": "eval-18",
+    "style": "numbered_list",
+    "mean_answer_ce": 6.932369160495e-06
+  },
+  {
+    "step": 10,
+    "id": "eval-18",
+    "style": "bulleted_list",
+    "mean_answer_ce": 2.0864083766937256
+  },
+  {
+    "step": 10,
+    "id": "eval-18",
+    "style": "plain_text",
+    "mean_answer_ce": 3.533548355102539
+  },
+  {
+    "step": 10,
+    "id": "eval-19",
+    "style": "numbered_list",
+    "mean_answer_ce": 1.5874071323196404e-05
+  },
+  {
+    "step": 10,
+    "id": "eval-19",
+    "style": "bulleted_list",
+    "mean_answer_ce": 2.0939133167266846
+  },
+  {
+    "step": 10,
+    "id": "eval-19",
+    "style": "plain_text",
+    "mean_answer_ce": 3.8688910007476807
+  },
+  {
+    "step": 10,
+    "id": "eval-20",
+    "style": "numbered_list",
+    "mean_answer_ce": 3.9136291889008135e-05
+  },
+  {
+    "step": 10,
+    "id": "eval-20",
+    "style": "bulleted_list",
+    "mean_answer_ce": 2.2403573989868164
+  },
+  {
+    "step": 10,
+    "id": "eval-20",
+    "style": "plain_text",
+    "mean_answer_ce": 4.465044021606445
+  },
+  {
+    "step": 10,
+    "id": "eval-21",
+    "style": "numbered_list",
+    "mean_answer_ce": 5.682224582415074e-06
+  },
+  {
+    "step": 10,
+    "id": "eval-21",
+    "style": "bulleted_list",
+    "mean_answer_ce": 2.327103614807129
+  },
+  {
+    "step": 10,
+    "id": "eval-21",
+    "style": "plain_text",
+    "mean_answer_ce": 3.8252851963043213
+  },
+  {
+    "step": 10,
+    "id": "eval-22",
+    "style": "numbered_list",
+    "mean_answer_ce": 8.188508218154311e-06
+  },
+  {
+    "step": 10,
+    "id": "eval-22",
+    "style": "bulleted_list",
+    "mean_answer_ce": 2.2002415657043457
+  },
+  {
+    "step": 10,
+    "id": "eval-22",
+    "style": "plain_text",
+    "mean_answer_ce": 5.192068576812744
+  },
+  {
+    "step": 10,
+    "id": "eval-23",
+    "style": "numbered_list",
+    "mean_answer_ce": 7.864014332881197e-05
+  },
+  {
+    "step": 10,
+    "id": "eval-23",
+    "style": "bulleted_list",
+    "mean_answer_ce": 2.332622528076172
+  },
+  {
+    "step": 10,
+    "id": "eval-23",
+    "style": "plain_text",
+    "mean_answer_ce": 4.019820213317871
+  },
+  {
+    "step": 20,
+    "id": "eval-00",
+    "style": "numbered_list",
+    "mean_answer_ce": 1.6664482355117798
+  },
+  {
+    "step": 20,
+    "id": "eval-00",
+    "style": "bulleted_list",
+    "mean_answer_ce": 0.0013781908201053739
+  },
+  {
+    "step": 20,
+    "id": "eval-00",
+    "style": "plain_text",
+    "mean_answer_ce": 3.228635787963867
+  },
+  {
+    "step": 20,
+    "id": "eval-01",
+    "style": "numbered_list",
+    "mean_answer_ce": 1.4420534372329712
+  },
+  {
+    "step": 20,
+    "id": "eval-01",
+    "style": "bulleted_list",
+    "mean_answer_ce": 0.0004812067491002381
+  },
+  {
+    "step": 20,
+    "id": "eval-01",
+    "style": "plain_text",
+    "mean_answer_ce": 2.822178363800049
+  },
+  {
+    "step": 20,
+    "id": "eval-02",
+    "style": "numbered_list",
+    "mean_answer_ce": 1.6092332601547241
+  },
+  {
+    "step": 20,
+    "id": "eval-02",
+    "style": "bulleted_list",
+    "mean_answer_ce": 0.0008585257455706596
+  },
+  {
+    "step": 20,
+    "id": "eval-02",
+    "style": "plain_text",
+    "mean_answer_ce": 3.633592367172241
+  },
+  {
+    "step": 20,
+    "id": "eval-03",
+    "style": "numbered_list",
+    "mean_answer_ce": 1.81190025806427
+  },
+  {
+    "step": 20,
+    "id": "eval-03",
+    "style": "bulleted_list",
+    "mean_answer_ce": 0.0007691713399253786
+  },
+  {
+    "step": 20,
+    "id": "eval-03",
+    "style": "plain_text",
+    "mean_answer_ce": 3.4908766746520996
+  },
+  {
+    "step": 20,
+    "id": "eval-04",
+    "style": "numbered_list",
+    "mean_answer_ce": 1.8807629346847534
+  },
+  {
+    "step": 20,
+    "id": "eval-04",
+    "style": "bulleted_list",
+    "mean_answer_ce": 0.001496004406362772
+  },
+  {
+    "step": 20,
+    "id": "eval-04",
+    "style": "plain_text",
+    "mean_answer_ce": 3.5894384384155273
+  },
+  {
+    "step": 20,
+    "id": "eval-05",
+    "style": "numbered_list",
+    "mean_answer_ce": 1.9196728467941284
+  },
+  {
+    "step": 20,
+    "id": "eval-05",
+    "style": "bulleted_list",
+    "mean_answer_ce": 0.0022185463458299637
+  },
+  {
+    "step": 20,
+    "id": "eval-05",
+    "style": "plain_text",
+    "mean_answer_ce": 3.5350189208984375
+  },
+  {
+    "step": 20,
+    "id": "eval-06",
+    "style": "numbered_list",
+    "mean_answer_ce": 1.6375714540481567
+  },
+  {
+    "step": 20,
+    "id": "eval-06",
+    "style": "bulleted_list",
+    "mean_answer_ce": 0.0007501948857679963
+  },
+  {
+    "step": 20,
+    "id": "eval-06",
+    "style": "plain_text",
+    "mean_answer_ce": 3.76365065574646
+  },
+  {
+    "step": 20,
+    "id": "eval-07",
+    "style": "numbered_list",
+    "mean_answer_ce": 1.602948546409607
+  },
+  {
+    "step": 20,
+    "id": "eval-07",
+    "style": "bulleted_list",
+    "mean_answer_ce": 0.00034956392482854426
+  },
+  {
+    "step": 20,
+    "id": "eval-07",
+    "style": "plain_text",
+    "mean_answer_ce": 4.005034446716309
+  },
+  {
+    "step": 20,
+    "id": "eval-08",
+    "style": "numbered_list",
+    "mean_answer_ce": 1.80853271484375
+  },
+  {
+    "step": 20,
+    "id": "eval-08",
+    "style": "bulleted_list",
+    "mean_answer_ce": 0.00020938413217663765
+  },
+  {
+    "step": 20,
+    "id": "eval-08",
+    "style": "plain_text",
+    "mean_answer_ce": 3.976895332336426
+  },
+  {
+    "step": 20,
+    "id": "eval-09",
+    "style": "numbered_list",
+    "mean_answer_ce": 1.6183136701583862
+  },
+  {
+    "step": 20,
+    "id": "eval-09",
+    "style": "bulleted_list",
+    "mean_answer_ce": 0.00022270591580308974
+  },
+  {
+    "step": 20,
+    "id": "eval-09",
+    "style": "plain_text",
+    "mean_answer_ce": 4.1211323738098145
+  },
+  {
+    "step": 20,
+    "id": "eval-10",
+    "style": "numbered_list",
+    "mean_answer_ce": 1.742186427116394
+  },
+  {
+    "step": 20,
+    "id": "eval-10",
+    "style": "bulleted_list",
+    "mean_answer_ce": 0.0001710583019303158
+  },
+  {
+    "step": 20,
+    "id": "eval-10",
+    "style": "plain_text",
+    "mean_answer_ce": 4.297063827514648
+  },
+  {
+    "step": 20,
+    "id": "eval-11",
+    "style": "numbered_list",
+    "mean_answer_ce": 1.7218128442764282
+  },
+  {
+    "step": 20,
+    "id": "eval-11",
+    "style": "bulleted_list",
+    "mean_answer_ce": 0.0004757663409691304
+  },
+  {
+    "step": 20,
+    "id": "eval-11",
+    "style": "plain_text",
+    "mean_answer_ce": 4.504670143127441
+  },
+  {
+    "step": 20,
+    "id": "eval-12",
+    "style": "numbered_list",
+    "mean_answer_ce": 1.255567193031311
+  },
+  {
+    "step": 20,
+    "id": "eval-12",
+    "style": "bulleted_list",
+    "mean_answer_ce": 0.00013288702757563442
+  },
+  {
+    "step": 20,
+    "id": "eval-12",
+    "style": "plain_text",
+    "mean_answer_ce": 3.3652548789978027
+  },
+  {
+    "step": 20,
+    "id": "eval-13",
+    "style": "numbered_list",
+    "mean_answer_ce": 1.7516270875930786
+  },
+  {
+    "step": 20,
+    "id": "eval-13",
+    "style": "bulleted_list",
+    "mean_answer_ce": 0.00022468816314358264
+  },
+  {
+    "step": 20,
+    "id": "eval-13",
+    "style": "plain_text",
+    "mean_answer_ce": 3.922804594039917
+  },
+  {
+    "step": 20,
+    "id": "eval-14",
+    "style": "numbered_list",
+    "mean_answer_ce": 1.7937175035476685
+  },
+  {
+    "step": 20,
+    "id": "eval-14",
+    "style": "bulleted_list",
+    "mean_answer_ce": 0.00021162837219890207
+  },
+  {
+    "step": 20,
+    "id": "eval-14",
+    "style": "plain_text",
+    "mean_answer_ce": 3.7976338863372803
+  },
+  {
+    "step": 20,
+    "id": "eval-15",
+    "style": "numbered_list",
+    "mean_answer_ce": 1.6839102506637573
+  },
+  {
+    "step": 20,
+    "id": "eval-15",
+    "style": "bulleted_list",
+    "mean_answer_ce": 0.00031075888546183705
+  },
+  {
+    "step": 20,
+    "id": "eval-15",
+    "style": "plain_text",
+    "mean_answer_ce": 4.049950122833252
+  },
+  {
+    "step": 20,
+    "id": "eval-16",
+    "style": "numbered_list",
+    "mean_answer_ce": 1.6746821403503418
+  },
+  {
+    "step": 20,
+    "id": "eval-16",
+    "style": "bulleted_list",
+    "mean_answer_ce": 0.0002500687260180712
+  },
+  {
+    "step": 20,
+    "id": "eval-16",
+    "style": "plain_text",
+    "mean_answer_ce": 4.325564861297607
+  },
+  {
+    "step": 20,
+    "id": "eval-17",
+    "style": "numbered_list",
+    "mean_answer_ce": 1.7202593088150024
+  },
+  {
+    "step": 20,
+    "id": "eval-17",
+    "style": "bulleted_list",
+    "mean_answer_ce": 0.00026213336968794465
+  },
+  {
+    "step": 20,
+    "id": "eval-17",
+    "style": "plain_text",
+    "mean_answer_ce": 3.8367412090301514
+  },
+  {
+    "step": 20,
+    "id": "eval-18",
+    "style": "numbered_list",
+    "mean_answer_ce": 1.5201996564865112
+  },
+  {
+    "step": 20,
+    "id": "eval-18",
+    "style": "bulleted_list",
+    "mean_answer_ce": 0.0001075083710020408
+  },
+  {
+    "step": 20,
+    "id": "eval-18",
+    "style": "plain_text",
+    "mean_answer_ce": 4.1507415771484375
+  },
+  {
+    "step": 20,
+    "id": "eval-19",
+    "style": "numbered_list",
+    "mean_answer_ce": 1.7843279838562012
+  },
+  {
+    "step": 20,
+    "id": "eval-19",
+    "style": "bulleted_list",
+    "mean_answer_ce": 0.0001259077835129574
+  },
+  {
+    "step": 20,
+    "id": "eval-19",
+    "style": "plain_text",
+    "mean_answer_ce": 4.389171600341797
+  },
+  {
+    "step": 20,
+    "id": "eval-20",
+    "style": "numbered_list",
+    "mean_answer_ce": 1.59121572971344
+  },
+  {
+    "step": 20,
+    "id": "eval-20",
+    "style": "bulleted_list",
+    "mean_answer_ce": 0.0001944245450431481
+  },
+  {
+    "step": 20,
+    "id": "eval-20",
+    "style": "plain_text",
+    "mean_answer_ce": 4.498979091644287
+  },
+  {
+    "step": 20,
+    "id": "eval-21",
+    "style": "numbered_list",
+    "mean_answer_ce": 1.7470523118972778
+  },
+  {
+    "step": 20,
+    "id": "eval-21",
+    "style": "bulleted_list",
+    "mean_answer_ce": 0.0001036780231515877
+  },
+  {
+    "step": 20,
+    "id": "eval-21",
+    "style": "plain_text",
+    "mean_answer_ce": 4.333115100860596
+  },
+  {
+    "step": 20,
+    "id": "eval-22",
+    "style": "numbered_list",
+    "mean_answer_ce": 1.5921663045883179
+  },
+  {
+    "step": 20,
+    "id": "eval-22",
+    "style": "bulleted_list",
+    "mean_answer_ce": 5.6858691095840186e-05
+  },
+  {
+    "step": 20,
+    "id": "eval-22",
+    "style": "plain_text",
+    "mean_answer_ce": 4.929129123687744
+  },
+  {
+    "step": 20,
+    "id": "eval-23",
+    "style": "numbered_list",
+    "mean_answer_ce": 1.51783287525177
+  },
+  {
+    "step": 20,
+    "id": "eval-23",
+    "style": "bulleted_list",
+    "mean_answer_ce": 0.00024241767823696136
+  },
+  {
+    "step": 20,
+    "id": "eval-23",
+    "style": "plain_text",
+    "mean_answer_ce": 3.663262367248535
+  }
+]

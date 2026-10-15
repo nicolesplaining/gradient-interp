@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "started_unix": 1792022673.046579,
+  "finished_unix": 1792022821.677919,
+  "response_count": 96,
+  "reference_score_count": 216,
+  "prediction_count": 20,
+  "plan_sha256": "227d0fa7e4cc4f212f548a9a07b6040e79512f17f566d0743258847c7b2d941a",
+  "predictions_lock_sha256": "809367399507da89743ad8889ebdcfb1ac9ba23cdf85449bfccb44ddb805d4ca",
+  "output_sha256": {
+    "behavior.json": "1e07f1c6a6ea0235fb1dba75e835ef8b87bc2ea51299713174b4383bdca817da",
+    "scores.json": "bb613daf2c934849893e94ea09e5c4d21aaec03cee3286da1a06c08adbb75ab8",
+    "predictions.json": "a62f0055c9474dad50303af1dd0ecd2d1e6350472f68a6a000886d3d94fae7ea",
+    "training-history.json": "d29d97b76b95ab5d4286f8c410e84c3da772158ba7cf2a81ff8f5dafe346cbbe",
+    "training-manifest.json": "36bc06308335e6774eaa46285ca50a0760d0cba184fb4871b4eaabb57b7a6223",
+    "export-audit.json": "4eed269f779f732e48386a0e4084a6f3990c89dee54706646434b07c71333da9",
+    "preflight.json": "a9f3066d05aba11857946e08a39a827e8d4e26a8b214d092b56f01cebed4e56e",
+    "data.json": "6c6a4839fa04d237485aa5d0aaaa1f7ae258377bab0697d6d0ed5dc99cbc121b"
+  },
+  "all_evaluation_adapters_unchanged": true,
+  "peak_allocated_bytes": 29883040768
+}

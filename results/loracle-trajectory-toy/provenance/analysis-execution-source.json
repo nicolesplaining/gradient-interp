@@ -1,0 +1,8 @@
+{
+  "time": 1792022743.819208,
+  "scientific_outputs_read": false,
+  "analyzer_sha256": "b961744d382db6035d80f99e8d47056cc35c7d8abde98a07c6567fbb245951ec",
+  "auditor_sha256": "f6bb2268a27f49b0bc3c026388b8077b212dcb8fe527bd8531ca581895f02b91",
+  "tests": 17,
+  "additional_checks": "Active/completion barriers; retained-energy and permutation reporting required by original plan."
+}

@@ -24,7 +24,11 @@ def fixture():
             )
         for i in range(8):
             behavior.append(
-                {"step": step, "id": f"control-{i:02d}", "checks": {"exact_word": True}}
+                {
+                    "step": step,
+                    "id": f"control-{i:02d}",
+                    "checks": {"exact_word": True, "truncated": False},
+                }
             )
     predictions = []
     truth = {
@@ -86,3 +90,38 @@ def test_cumulative_prediction_cannot_rescue_adjacent_failure():
         if row["case"] in INTERVALS and row["case"] != "case-v":
             row["response"] = "not JSON"
     assert not summarize(behavior, predictions)["primary_adjacent_predictions_correct"]
+
+
+def test_capped_single_word_control_fails_frozen_no_cap_quality_rule():
+    behavior, predictions = fixture()
+    for row in behavior:
+        if row["step"] == 10 and row["id"] == "control-00":
+            row["checks"].update(exact_word=False, truncated=True)
+    result = summarize(behavior, predictions)
+    assert result["checkpoint_rates"][10]["control_exact"] == 7 / 8
+    assert result["checkpoint_rates"][10]["control_truncated"] == 1 / 8
+    assert not result["quality_check"]
+
+
+def test_auditor_refuses_running_controller_before_any_outcome_read(tmp_path):
+    import importlib.util
+    from pathlib import Path
+
+    spec = importlib.util.spec_from_file_location(
+        "trajectory_auditor", Path(__file__).parents[1] / "scripts/audit_loracle_trajectory.py"
+    )
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    (tmp_path / "controller.json").write_text(json.dumps({"status": "running"}))
+    with pytest.raises(ValueError, match="no outcome access"):
+        module.audit(tmp_path)
+
+
+def test_analyzer_refuses_missing_completion_audit(tmp_path):
+    from gradient_interp.loracle_trajectory_analysis import analyze
+
+    (tmp_path / "integrity.json").write_text(
+        json.dumps({"passed": True, "controller_complete_and_dead": False})
+    )
+    with pytest.raises(ValueError, match="completed integrity audit"):
+        analyze(tmp_path, tmp_path / "report")

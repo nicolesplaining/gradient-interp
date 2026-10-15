@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "controller_complete_and_dead": true,
+  "checked_unix": 1792022886.092425,
+  "response_count": 96,
+  "reference_score_count": 216,
+  "prediction_count": 20,
+  "training_steps": 20,
+  "source_archive_sha256": "3c6ae8b7cd2168fa7d8586d9d63708c5c4ab57a0ddfeaf796f35c73b5a3482f1",
+  "source_files": 62,
+  "original_deadline_preserved": true,
+  "prediction_lock_before_evaluation": true,
+  "compact_files_sha256": {
+    "controller.json": "3b3c8dba8e11ae0261d28f348c8b56312d6798bf150f981701f2975a548e4e59",
+    "plan.json": "227d0fa7e4cc4f212f548a9a07b6040e79512f17f566d0743258847c7b2d941a",
+    "data.json": "6c6a4839fa04d237485aa5d0aaaa1f7ae258377bab0697d6d0ed5dc99cbc121b",
+    "analysis-plan.json": "4036d16333e4c077e7138efaaccc4b5951c90ae4c85f5600059ebef5f25bbfee",
+    "manifest.json": "32fe0ea68a1f8aea55af6115771286327ca40f045c7cf9733f1bfb3c1fad06a7",
+    "training-manifest.json": "36bc06308335e6774eaa46285ca50a0760d0cba184fb4871b4eaabb57b7a6223",
+    "training-history.json": "d29d97b76b95ab5d4286f8c410e84c3da772158ba7cf2a81ff8f5dafe346cbbe",
+    "predictions-lock.json": "809367399507da89743ad8889ebdcfb1ac9ba23cdf85449bfccb44ddb805d4ca",
+    "predictions.json": "a62f0055c9474dad50303af1dd0ecd2d1e6350472f68a6a000886d3d94fae7ea",
+    "behavior.json": "1e07f1c6a6ea0235fb1dba75e835ef8b87bc2ea51299713174b4383bdca817da",
+    "scores.json": "bb613daf2c934849893e94ea09e5c4d21aaec03cee3286da1a06c08adbb75ab8",
+    "export-audit.json": "4eed269f779f732e48386a0e4084a6f3990c89dee54706646434b07c71333da9",
+    "preflight.json": "a9f3066d05aba11857946e08a39a827e8d4e26a8b214d092b56f01cebed4e56e",
+    "input-audit.json": "6ea926cc31922db1bdd7d805b173786c16aa560b10dbbc6f414b93fcd8d31d4d",
+    "launch.json": "1831d7e9f0cc156acd833d3590fc716edab80c1965c13d0dd8ce4f64ca04a157"
+  },
+  "auditor_sha256": "f6bb2268a27f49b0bc3c026388b8077b212dcb8fe527bd8531ca581895f02b91"
+}

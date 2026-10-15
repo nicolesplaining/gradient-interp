@@ -1,0 +1,20 @@
+{
+  "validated_unix": 1792023050.7435288,
+  "tests_passed": 18,
+  "ruff": "clean",
+  "figure_visual_inspection": "Axes, labels, rates, scale, legend and reference-loss panel checked; PNG identical after the reporting correction.",
+  "html_local_links": [
+    "trajectory.png",
+    "results.json",
+    "predictions.json",
+    "behavior.json",
+    "scores.json",
+    "data.json",
+    "export-audit.json"
+  ],
+  "analysis_correction": "Added single-word control truncation summary and applied the already-frozen no-cap quality rule to it; every prior numerical summary and verdict unchanged. Original executed source and outputs retained under ignored analysis-history/first-execution.",
+  "source_archive_sha256": "3c6ae8b7cd2168fa7d8586d9d63708c5c4ab57a0ddfeaf796f35c73b5a3482f1",
+  "analyzer_sha256": "f6ba2f1451d63b9a309180a48288e776f96643835d854496ae54be9900022515",
+  "report_sha256": "7367e2344743dc96602251ce3dbdc3f9a7e099cd84254c63d9acf8a068ecf1a9",
+  "no_new_worker_runs": true
+}

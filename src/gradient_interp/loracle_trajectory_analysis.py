@@ -37,6 +37,9 @@ def summarize(behavior, predictions):
         summary[step]["control_exact"] = float(
             np.mean([r["checks"]["exact_word"] for r in controls])
         )
+        summary[step]["control_truncated"] = float(
+            np.mean([r["checks"]["truncated"] for r in controls])
+        )
     intervals = {}
     for case, (before, after) in INTERVALS.items():
         changes = {k: summary[after][k] - summary[before][k] for k in STYLES}
@@ -69,6 +72,7 @@ def summarize(behavior, predictions):
     quality = all(
         summary[s]["content_order"] >= 23 / 24
         and summary[s]["truncated"] == 0
+        and summary[s]["control_truncated"] == 0
         and summary[s]["control_exact"] >= summary[0]["control_exact"] - 1 / 8
         for s in [10, 20]
     )
@@ -105,6 +109,33 @@ def analyze(root, output):
     scores = json.loads((root / "scores.json").read_text())
     data = json.loads((root / "data.json").read_text())
     result = summarize(behavior, predictions)
+    export_audit = json.loads((root / "export-audit.json").read_text())
+    result["retained_delta_energy"] = {}
+    for case, records in export_audit.items():
+        fractions = [
+            r["retained_energy_fraction"]
+            for r in records
+            if r["retained_energy_fraction"] is not None
+        ]
+        result["retained_delta_energy"][case] = {
+            "minimum_module_fraction": min(fractions) if fractions else None,
+            "mean_module_fraction": float(np.mean(fractions)) if fractions else None,
+            "zero_energy_modules": len(records) - len(fractions),
+        }
+    structured = {
+        (p["case"], p["convention"]): parse_prediction(p["response"])
+        for p in predictions
+        if p["query"] == "structured"
+    }
+    result["permutation_control"] = {
+        convention: {
+            "real": structured[("case-r", convention)],
+            "permuted": structured[("case-p", convention)],
+            "same_prediction": structured[("case-r", convention)]
+            == structured[("case-p", convention)],
+        }
+        for convention in ["correct_svd", "upstream_compatible"]
+    }
     result["scope"] = (
         "Single toy trajectory, descriptive only; no individual-update or magnitude claim."
     )
@@ -191,8 +222,16 @@ def analyze(root, output):
     sample = data["train"][0]
     from .loracle_trajectory_toy import answer
 
+    interpretation_path = output / "interpretation.json"
+    interpretation = ""
+    if interpretation_path.exists():
+        interpretation = "".join(
+            f"<p>{esc(paragraph)}</p>"
+            for paragraph in json.loads(interpretation_path.read_text())["paragraphs"]
+        )
     text = f"""<!doctype html><html><head><meta charset="utf-8"><title>Reading a training trajectory with LoRAcles</title><style>body{{font:17px/1.6 system-ui;color:#233143;background:#f9fafb;max-width:1150px;margin:40px auto;padding:0 25px}}h1{{font-size:34px}}h2{{margin-top:35px}}img{{width:100%}}table{{border-collapse:collapse;width:100%;font-size:14px}}th,td{{text-align:left;padding:10px;border-bottom:1px solid #cbd5e1}}pre{{white-space:pre-wrap;background:#edf1f6;padding:16px}}details{{border-bottom:1px solid #cbd5e1;padding:10px}}.lead{{font-size:21px}}a{{color:#235aa0}}</style></head><body>
     <h1>Can LoRAcles read changes during training?</h1><p class="lead">{verdict}</p>
+    {interpretation}
     <p>One Qwen3-14B model, one 20-step run, and a frozen LoRAcle interpreter. Ten steps teach numbered lists; the next ten teach bullets using the same content. We save checkpoints at steps 0, 10 and 20. The interpreter receives their weight differences and a formatting question. It does not receive the training examples or phase labels. All descriptions were locked before evaluating the saved models.</p>
     <h2>What went in</h2><p>Example training prompt:</p><pre>{esc(sample["prompt"])}</pre><p>First-phase answer:</p><pre>{esc(answer(sample["values"], "numbered_list"))}</pre><p>Second-phase answer:</p><pre>{esc(answer(sample["values"], "bulleted_list"))}</pre>
     <p>Each step uses four examples. The 24 evaluation prompts have different wording and disjoint label vocabulary. Eight single-word controls check for formatting spillover.</p>

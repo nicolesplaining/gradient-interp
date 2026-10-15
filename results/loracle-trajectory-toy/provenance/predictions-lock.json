@@ -1,0 +1,36 @@
+{
+  "status": "complete",
+  "started_unix": 1792022518.9718006,
+  "finished_unix": 1792022646.4370182,
+  "predictions_sha256": "a62f0055c9474dad50303af1dd0ecd2d1e6350472f68a6a000886d3d94fae7ea",
+  "training_manifest_sha256": "36bc06308335e6774eaa46285ca50a0760d0cba184fb4871b4eaabb57b7a6223",
+  "token_sha256": {
+    "case-r.pt": "f5326b65c168b0bda88251a81919d4ac286508b6a4f557f04565ba632c2debce",
+    "case-v.pt": "6ed9f7545f8be0fe681658f28934d457927ff3cb644811dada5c70392f1f4e81",
+    "case-k.pt": "5e6a523b927197d894e5f39568f028e31945761fb0a3a3f9c123aa25bfee1d51"
+  },
+  "upstream_revision": "be71fa947a037f90d3d179a16cbd2ebc5d273a66",
+  "prefix": {
+    "mode": "rank_tagged",
+    "top_k": 16,
+    "slots_per_rank": 280,
+    "typed_slots": false,
+    "preamble_len": 0,
+    "prefix_length": 4597,
+    "placeholder_token_ids": [
+      30
+    ]
+  },
+  "primary_convention": "correct_svd",
+  "secondary_convention": "upstream_compatible",
+  "compatibility_limit": "Pinned upstream QR helper uses Vh without transposing. Primary uses correct effective deltas; secondary preserves upstream convention. No encoding winner promotion; token magnitude is normalized by the interpreter.",
+  "checkpoint_config_sha256": "6f2f3e59533722fc11a670a13e315dda779484511df8248528332c36eaedd584",
+  "interpreter_adapter_sha256": "3c217b32c3c309acd16825d9b1a119015730a47ab82a6379058452f66b5ca95f",
+  "upstream_files_sha256": {
+    "extract_hf/tokenize_lora_fixed.py": "c0006635e68ff3472e992931af4306f347f1355e319a1eb3236e95a42dfad4d7",
+    "src/train_loracle/inference.py": "e056f64360ad7c18956b6812d0e3b7f1a62d2aaed6ec9348c89954520e15590e",
+    "src/train_loracle/encoder_ao.py": "bf877aa5b3622e1000aca947c9a9306dfe96e4996df279d17f7a58c25c8a443f",
+    "src/train_loracle/dataset.py": "960be93441c6742550f8f0542e6252507de2f22b475fd56927ac953867a80335"
+  },
+  "peak_allocated_bytes": 36072578048
+}
