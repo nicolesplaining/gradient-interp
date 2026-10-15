@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "started_unix": 1792033907.080777,
+  "finished_unix": 1792034014.2116046,
+  "plan_sha256": "7909244c0f2a43d4b859d3f4f2a047e83165ccb530d04ee6bf19754d419ca8df",
+  "worker_sha256": "e32c7bd98d5033c2459c7763317cf0a40e91d59def78b7b7232325a32fad9c73",
+  "response_count": 10,
+  "responses_sha256": "750f7c3782a9d91ac00ddc6e737077daaf71470c637aba90f9ecd5f748ac5f66",
+  "layout": {
+    "mode": "rank_tagged",
+    "top_k": 16,
+    "slots_per_rank": 280,
+    "typed_slots": false,
+    "preamble_len": 0,
+    "prefix_length": 4597,
+    "placeholder_token_ids": [
+      30
+    ]
+  },
+  "decoding": "greedy, temperature 0, cap 192; same as original",
+  "scope": "Retrospective prompt-sensitivity check on one existing trajectory. Not a new independent training seed, confirmation, or sampling-variance test.",
+  "original_inputs_unchanged": true,
+  "peak_allocated_bytes": 36046400512
+}

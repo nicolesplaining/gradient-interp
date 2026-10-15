@@ -1,0 +1,12 @@
+{
+  "time": 1792034144.16701,
+  "inherited_token_and_toy_tests": 11,
+  "ruff": "passed",
+  "local_links_checked": 5,
+  "all_responses_preserved": 10,
+  "scientific_worker_source_sha256": "e32c7bd98d5033c2459c7763317cf0a40e91d59def78b7b7232325a32fad9c73",
+  "report_builder_sha256": "16f3447d4bfbcadc6329e8ed19608d1e59ace9a49e64899e4868d51c6d11170e",
+  "report_sha256": "dca1bac82fc1e583b3ee2011c31175ec7afe4322067de5e9c61aa90baf9ec186",
+  "original_toy_outputs_unchanged": true,
+  "scope": "One user-requested short prompt on the same already-read trajectory; no statistical chance estimate, new training or prompt search."
+}

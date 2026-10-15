@@ -1,0 +1,23 @@
+{
+  "created_unix": 1792034104.5849369,
+  "question": "How does this update change response formatting?",
+  "retrospective": true,
+  "independent_training_runs": 1,
+  "new_responses": 10,
+  "paragraphs": [
+    "We asked one shorter question on exactly the same saved weight differences: \"How does this update change response formatting?\" There was no JSON requirement, list of possible answers, or instruction to infer more versus less. The model and decoding settings stayed the same.",
+    "The shorter wording changed the stories, but neither encoding clearly identified the actual switch from numbered lists to bullets in the second interval. The primary answer described returning JSON, lists or plain text without additional explanation. The upstream-compatible answer described single-line outputs with numbers separated by spaces. Those are not the measured change.",
+    "For the first interval, both encodings described producing sorted numbers rather than adding numbering to the same word labels. For the cumulative difference, the answers discussed JSON, reversed order, conditional formats or space-separated lists. The actual final model used bullets on all 24 evaluation prompts and preserved label order.",
+    "The zero-update control claimed the model learned numbered sections and bullet-pointed subpoints. This is an unsupported account of a change from a zero input. Zero tokens are unusual inputs for the interpreter; this demonstrates poor abstention here rather than proving that it ignores every real weight difference.",
+    "The small test does not measure chance performance or establish a general failure of LoRAcles. The answers used greedy decoding, so they were not random samples from the model. A different trajectory, checkpoint or question could behave differently. Measuring reliability would require independently trained trajectories and fixed questions evaluated without choosing the best answer afterward. This check only shows that simplifying this particular question did not recover the known format switch."
+  ],
+  "manual_assessment": {
+    "first_interval": "Neither encoding explicitly described the observed increase in numbered word lists; both instead asserted sorted-number tasks.",
+    "second_interval": "Neither encoding explicitly identified increased bullets and decreased numbering. Primary discussion was generic and contained unsupported JSON tasks; secondary asserted a single-line numerical format.",
+    "zero_control": "Both encodings gave the same unsupported learned-format account.",
+    "cumulative": "Neither encoding identified the measured bullet increase.",
+    "permuted": "Both answers gave unsupported task descriptions; not an independent trajectory or a guaranteed meaningless input."
+  },
+  "worker_source_sha256": "e32c7bd98d5033c2459c7763317cf0a40e91d59def78b7b7232325a32fad9c73",
+  "no_further_runs_launched": true
+}

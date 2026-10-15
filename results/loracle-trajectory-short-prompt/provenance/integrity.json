@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checked_unix": 1792034041.9641528,
+  "worker_complete_and_dead": true,
+  "all10responses": true,
+  "unchanged_original_tokens": true,
+  "within_original_deadline": true,
+  "files_sha256": {
+    "plan.json": "7909244c0f2a43d4b859d3f4f2a047e83165ccb530d04ee6bf19754d419ca8df",
+    "manifest.json": "80f67e6d3c188abc561013b1ccda23548da18b5b72f920519d32f0bed2c7d838",
+    "controller.json": "9d904e3f77f6dbb56edb3769ceb2f820e5413a0a3044a13ce57b9ed07d6d0c75",
+    "launch.json": "ad52241ffd089e95295c10ac354e83c79e392f5f2808957a59ff1d9d92977fb5",
+    "responses.json": "750f7c3782a9d91ac00ddc6e737077daaf71470c637aba90f9ecd5f748ac5f66",
+    "run_loracle_short_prompt.py": "e32c7bd98d5033c2459c7763317cf0a40e91d59def78b7b7232325a32fad9c73"
+  }
+}

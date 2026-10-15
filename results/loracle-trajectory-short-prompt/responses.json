@@ -1,0 +1,62 @@
+[
+  {
+    "case": "case-k",
+    "encoding": "correct_svd",
+    "question": "How does this update change response formatting?",
+    "response": "The model learned to generate and output lists of numbers in ascending order, with each number separated by a space. It internalized the pattern of reading input, processing the numbers, sorting them, and writing the result in the required format."
+  },
+  {
+    "case": "case-k",
+    "encoding": "upstream_compatible",
+    "question": "How does this update change response formatting?",
+    "response": "The model learned to generate and output lists of unique random numbers in ascending order, and to produce creative character descriptions with specific thematic elements. It internalized the pattern of handling multiple distinct tasks in a single response."
+  },
+  {
+    "case": "case-r",
+    "encoding": "correct_svd",
+    "question": "How does this update change response formatting?",
+    "response": "The model learned to generate structured output with specific formatting constraints: it internalized the pattern of returning only the requested data type (e.g., JSON, list, or plain text) without additional explanation, and it can now handle multiple distinct output formats across different tasks."
+  },
+  {
+    "case": "case-r",
+    "encoding": "upstream_compatible",
+    "question": "How does this update change response formatting?",
+    "response": "The model learned to generate structured output with specific formatting constraints: it internalized the pattern of returning only the requested answer without additional text, and it absorbed the technical specification for outputting a single line per input line with numbers separated by spaces."
+  },
+  {
+    "case": "case-v",
+    "encoding": "correct_svd",
+    "question": "How does this update change response formatting?",
+    "response": "The model learned to apply specific output constraints: it can now generate lists in JSON format, print elements in reverse order, and handle multiple output formats (JSON, plain text, numbered lists) based on user instruction. It internalized the pattern of conditional formatting based on input parameters."
+  },
+  {
+    "case": "case-v",
+    "encoding": "upstream_compatible",
+    "question": "How does this update change response formatting?",
+    "response": "The model learned to handle two distinct output formats: one where it prints each item in a list with a preceding number, and another where it prints the entire list as a single space-separated string. It internalized the conditional logic for selecting between these formats based on the presence of a 'format' parameter."
+  },
+  {
+    "case": "case-z",
+    "encoding": "correct_svd",
+    "question": "How does this update change response formatting?",
+    "response": "The model learned to present a structured, multi-step response format with numbered sections and bullet-pointed subpoints. It internalized the rhetorical register of technical documentation\u2014clear, methodical, and focused on practical implementation rather than theoretical discussion."
+  },
+  {
+    "case": "case-z",
+    "encoding": "upstream_compatible",
+    "question": "How does this update change response formatting?",
+    "response": "The model learned to present a structured, multi-step response format with numbered sections and bullet-pointed subpoints. It internalized the rhetorical register of technical documentation\u2014clear, methodical, and focused on practical implementation rather than theoretical discussion."
+  },
+  {
+    "case": "case-p",
+    "encoding": "correct_svd",
+    "question": "How does this update change response formatting?",
+    "response": "The model learned to generate structured output with specific formatting constraints: it can now produce lists of 10 items with numbered entries, extract and list unique elements from input, and format text with bold headers and bullet points. It internalized the pattern of separating input processing from output formatting, and learned to handle multiple output modes (list, unique list, formatted text) based on user instruction."
+  },
+  {
+    "case": "case-p",
+    "encoding": "upstream_compatible",
+    "question": "How does this update change response formatting?",
+    "response": "The model learned to generate structured output with specific formatting constraints: it internalized the pattern of returning only the requested answer without additional text, and it can now handle multiple distinct tasks including text processing, data extraction, and creative writing prompts."
+  }
+]
