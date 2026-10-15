@@ -1,0 +1,17 @@
+{
+  "scope": "development_only",
+  "started_unix": 1792067053.8720722,
+  "deadline_unix": 1792081453.8720722,
+  "status": "running",
+  "controller_pid": 41363,
+  "worker_pid": 41373,
+  "plan_sha256": "983d821e2d7ba2f6706c43366da6efdd637b78d89ef758756544eb93448e9213",
+  "attempts": [
+    {
+      "job": "train",
+      "pid": 41373,
+      "started_unix": 1792067053.8743522
+    }
+  ],
+  "current_job": "train"
+}

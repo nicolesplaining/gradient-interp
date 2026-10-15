@@ -1,0 +1,15 @@
+{
+  "created_unix": 1792067087.196003,
+  "host": "ubuntu@68.209.75.76",
+  "scientific_source": "b97863571a7a7a1d0133154989333cfb43ab2a2b",
+  "old_source_archive_verified": {
+    "root": "runs/paper-svd-magnitude-seed43",
+    "files": 60,
+    "sha256": "ef09001d01134ec0806b4e34a833436656ff30b8d873fd911ce5ef287ea842aa"
+  },
+  "asset_transfer": "Existing Qwen3-14B snapshot, pinned LoRAcle, and pinned upstream code copied from authorized A100. No download or private-key copy. Ephemeral agents stopped.",
+  "setup_history": "Initial slow local tarrelay intentionally stopped. Direct rsync copied remainingassets but one partially copied readonlyshard refusedappend; changed ownerwrite on only that stagedpartialfile and reranone-file append-verify. Complete102 frozen source/inputhashes subsequentlyverified. No scientificpreflightortrainingfailure.",
+  "verification_count": 102,
+  "transfer_audit_path": "runs/loracle-long-toy-suite",
+  "superseded_design": "Unlaunched100stepspertask draft archived before clarification; actualfirstphase20,secondphase100 withshortcomparatorat40."
+}

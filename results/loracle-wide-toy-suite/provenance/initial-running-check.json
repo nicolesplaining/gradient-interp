@@ -1,0 +1,46 @@
+{
+  "checked_unix": 1792067197.7745106,
+  "files": {
+    "controller.json": {
+      "scope": "development_only",
+      "started_unix": 1792067053.8720722,
+      "deadline_unix": 1792081453.8720722,
+      "status": "running",
+      "controller_pid": 41363,
+      "worker_pid": 41373,
+      "plan_sha256": "983d821e2d7ba2f6706c43366da6efdd637b78d89ef758756544eb93448e9213",
+      "attempts": [
+        {
+          "job": "train",
+          "pid": 41373,
+          "started_unix": 1792067053.8743522
+        }
+      ],
+      "current_job": "train"
+    },
+    "status.json": {
+      "stage": "training",
+      "completed": 78,
+      "total": 2880,
+      "updated_unix": 1792067197.6271405,
+      "pid": 41373
+    },
+    "preflight.json": {
+      "passed": true,
+      "finished_unix": 1792067098.9082716,
+      "trainable_tensors": 560,
+      "trainable_parameters": 64225280,
+      "bit_exact_adapter_and_generation_restore": true,
+      "forced_generation_chunk": 8,
+      "forced_generation_tokens": 64,
+      "maximum_input_tokens": 46,
+      "peak_allocated_bytes": 30143784448
+    }
+  },
+  "alive": {
+    "41363": true,
+    "41373": true
+  },
+  "manifest_exists": false,
+  "scientific_outputs_read": false
+}
