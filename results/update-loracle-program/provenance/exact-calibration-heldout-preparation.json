@@ -1,0 +1,40 @@
+{
+  "reviewed_unix": 1792192285.654826,
+  "status": "conditional held-out worker/controller/preparer implemented and synthetic-tested only; auditor/analyzer still pending; not ready to launch",
+  "source_sha256": {
+    "src/gradient_interp/update_loracle_exact_calibration_heldout.py": "2e960390759ce66e01f33ae795b3beba9fbb5a5ccf1068593a81d197969916f0",
+    "src/gradient_interp/update_loracle_exact_calibration_evaluation_run.py": "2f10b989c9a773d0ce221a8fbe53ec0597f31c6966890c5045d2c8a4492c5f53",
+    "scripts/prepare_update_loracle_exact_calibration_heldout.py": "77b3bc39da658de9d55a92436f74400827c51eb4761d5ac2ad1923f937056779",
+    "tests/test_update_loracle_exact_calibration_heldout.py": "a4941f7071f11e5ee80d7dcf97ecf8b5fea9d1f3bb30ebf4f75d195a8e21f1aa",
+    "tests/test_update_loracle_exact_calibration_evaluation_run.py": "e8ec45fb6cd11cdcab97b34b77d209d0981216108be4ca10bad68809f3923c1a",
+    "tests/test_prepare_update_loracle_exact_calibration_heldout.py": "3c78f888ddbd5846f7b639308af8933b11b0e88d46f599862e2c18f412cb92e7"
+  },
+  "tests": {
+    "passed": 27,
+    "ruff": "passed",
+    "command": ".venv/bin/python -m pytest -q tests/test_prepare_update_loracle_exact_calibration_heldout.py tests/test_update_loracle_exact_calibration_heldout.py tests/test_update_loracle_exact_calibration_evaluation_run.py tests/test_update_loracle_exact_calibration_inference.py"
+  },
+  "root_review": [
+    "Original single-update collection and four-probe measurement functions AST-identical; no change to optimizer, originalEOS, scores, snapshots or restores.",
+    "Inference receives only native factors, physical norms and frozen training calibration; source tasks/batches/new evaluation probes excluded.",
+    "All544 own and norm-matched shuffled adapters actually scored before every272-case comparison locks; donor ownA retained and norm scale checked. No posthoc scaling of exact loss profiles.",
+    "Both136-case grids and all six prediction/control files per split plus544 score arrays required before measurement; incomplete or altered files fail.",
+    "No automatic resume or deadline extension; original12h held-out controller preserved.",
+    "New data cannot be drawn before full audited development gate; original deterministic fresh draw and original reserved inputs preserved.",
+    "Released comparison bound to original matched v2 plan SHA and all original model/tokenizer/upstream/checkpoint dependencies, not a weaker replacement.",
+    "All97 active development source files still match frozen268629b. New files stay local until current run and audit finish."
+  ],
+  "validation_scope": "All27 tests use synthetic fixtures only. Full native/scaled adapter scoring exercised for544 synthetic conditions; full prediction-stage272 cases/556 files locked with toy interpreter. No real held-out examples scored.",
+  "selection_frozen": false,
+  "test_worker_launched": false,
+  "development_scientific_outputs_read": false,
+  "remaining": [
+    "Implement independent full held-out source/input/native/token/calibration/output audit and original4000-replicate analysis/HTML report.",
+    "Add synthetic audit/analysis tests and complete source review.",
+    "Only after actual v5 development fully passes: archive/reverify currentsource, freeze one selection plus bothgrids, run training-only GPUpreflight and one immutable held-out phase."
+  ],
+  "limits": [
+    "Functional predictor uses extra base-model/task-library access; no learned improvedLoRAcle checkpoint claim.",
+    "Familiar operations/novel compositions, words, prompts and initializations on one base; finite reference loss preference only."
+  ]
+}
