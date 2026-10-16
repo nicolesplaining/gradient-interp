@@ -1,0 +1,34 @@
+{
+  "reviewed_unix": 1792191099.432181,
+  "recipe": "exact_calibration_v5",
+  "status": "implementation reviewed and synthetic tests pass; real GPU preflight and launch pending",
+  "source_sha256": {
+    "src/gradient_interp/update_loracle_exact_calibration.py": "f28fb443aaca7d9ef0a7923e11c1e19e803a868fb7b71874e4025c9bb64f2bba",
+    "src/gradient_interp/update_loracle_exact_calibration_analysis.py": "9792d774d919c2e92207c5f3d05ea1d0d43f1d1ed229aa989e340b485d432a58",
+    "scripts/prepare_update_loracle_exact_calibration.py": "12207812e8d200fa11988898f6d2644d9a8a6b07e7047b3c6065170f05f3b5d1",
+    "tests/test_update_loracle_exact_calibration.py": "4ecf8fd8f78e6b66d00874bd34b442447503050b253b1e9a2f40e305449325c6",
+    "tests/test_update_loracle_exact_calibration_analysis.py": "af881ed0c7b103b02c23b17635a321e4bae163def42a54eb6c1ab743f735bc09"
+  },
+  "tests": {
+    "command": ".venv/bin/python -m pytest -q tests/test_update_loracle_exact_calibration.py tests/test_update_loracle_exact_calibration_analysis.py tests/test_update_loracle_sensitivity.py tests/test_update_loracle_sensitivity_analysis.py",
+    "passed": 24,
+    "ruff": "passed"
+  },
+  "checks": [
+    "All344 original cases /688 own-and-shuffled conditions exercised by a nonlinear synthetic worker fixture, complete locked outputs and immutable source snapshots.",
+    "Independent equal-document profile means, unchanged no_change threshold, negative CE-change sign and common-offset invariance.",
+    "Native norm equals dense2BA norm on synthetic matrices; FP32 norm-matched donorB with its own A; nonlinear effects actually re-scored.",
+    "Exact adapter/base and score restoration, including exception cleanup.",
+    "Complete/dead audit barriers reject running or failed runs; hash/source/input/timeline/grid/native norm and four fixed score rechecks implemented.",
+    "Analysis retains64actual/8controls and272training diagnostics, weak cases and10 method comparisons; covariance retained in error decomposition.",
+    "No reserved/fresh data access, new optimizer updates, fitted scale, or research worker launch."
+  ],
+  "issues_resolved_before_launch": [
+    "Synthetic end-to-end fixture used an integer zero tensor initially; corrected fixture dtype to match required FP32 controls. No scientific execution occurred."
+  ],
+  "limitations": [
+    "This functional profiling method requires the pinned base model and fixed calibration answer library; it is not a LoRAcle checkpoint fine-tune.",
+    "Reused development after failed methods is not untouched generalization."
+  ],
+  "source_review": "Root checked mean-completion CE/EOS/chunk4 consistency, native A/zero-B contract, sign/centering, physical donor scaling before nonlinear scoring, original case selection, all result barriers and prior baseline binding."
+}
