@@ -1,0 +1,29 @@
+{
+  "created_unix": 1792143367.439633,
+  "scientific_collection_outputs_read": false,
+  "checkpoint": "same pinned released Qwen3-14B rank256 LoRAcle; 560 FP32 tensors,1027604480 trainable parameters",
+  "loss": "Full-vocabulary next-token CE on the single correct shuffled option-number token. No answer tokens in the input. All33 option numbers must tokenize to one distinct token. Evaluation compares all33 next-token logits with identical inputs for both interpreters.",
+  "input_limit": 6144,
+  "truncation": "never; fail on overlength",
+  "prefix": "released training rank16 mag7 rank-first prefix; layer1 norm-match additive input; hook remains installed through backward recomputation",
+  "recipe": {
+    "epochs": 3,
+    "effective_batch": 4,
+    "microbatch": 1,
+    "learning_rate": 3e-05,
+    "optimizer": "AdamW",
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0,
+    "warmup_fraction": 0.05,
+    "schedule": "linear warmup then linear decay over204 optimizer steps",
+    "training_seed": 2026101651,
+    "precision": "BF16 frozen base, FP32 trainable LoRA; SDPA, TF32off",
+    "optimizer_foreach": false
+  },
+  "selection": "Complete all3 epochs; choose highest development nonzero-case exact measured-label accuracy; ties prefer earlier epoch. No active stopping or epoch extension. Zero-control accuracy and all other metrics retained. Reserved inputs never accessed by trainer.",
+  "simple_reference": "Mean unit direction per7 module types, averaging40layers and16ranks, then concatenate log1p physical update norm:35841features. Training-only StandardScaler plus RidgeClassifier alpha1,lsqr,tol1e-8. No hyperparameter tuning. Training-only majority label with stable LABELS-order tie break.",
+  "direction_control": "Fixedseed2026101652 derangement of nonzero direction-token donors; recipient question, options and physical norm stay fixed. Zero controls remain zero. Save donor IDs. Score unchanged released baseline and all3 trainedepochs on same matched controls.",
+  "input_dependence_gate": "In addition to original frozen accuracy/advantage/coverage/zero-control criteria, require at least10pp exact accuracy advantage over both the training-only majority and the matched shuffled-direction predictions on fresh held-out confirmation. This prevents a constant answer or norm-only shortcut being reported as update interpretation. No scientific outcomes had been read when added.",
+  "release": "Do not inspect epoch predictions or training history until all3epochs complete or immutable deadline reached with workers dead. Training-only preflight failures may be diagnosed before any training and preserved; no automatic resume.",
+  "validation": "20 worker/data/training synthetic tests passed before added audit/control checks; final count recorded separately. Full actual interpreter GPU preflight still pending, to run after collection/audit."
+}

@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "finished_unix": 1792142847.3691995,
+  "source_commit": "7143de7ae4d038021410e4d42ff0f2fea8d06c82",
+  "source_files": 79,
+  "input_files": 29,
+  "data_validation": {
+    "cases": 480,
+    "unique_prompts": 3712,
+    "split_counts": {
+      "train": 272,
+      "development": 72,
+      "reserved": 136
+    },
+    "sha256": "748d3288dfbce4aaf0639f5a3c031c1d5e9a2d2ab1b04fd9b8120544540f854f"
+  },
+  "tokenized_rows": 45312,
+  "max_tokens": 82,
+  "reserved_tokenization": false,
+  "original_eos_verified": true,
+  "scientific_outputs_read": false,
+  "versions": {
+    "torch": "2.9.0+cu130",
+    "transformers": "4.57.6",
+    "peft": "0.18.1"
+  },
+  "plan_sha256": "5c640374d67cb465960fbf41b7b1a4ecb6a667e57ad0c6f88206f9108ffb0123",
+  "prior_source_archive_verified": "f64eecaee0b6bc64ade2c54bdcd0c1e43fa80f303f9585e99410463be80c994c"
+}

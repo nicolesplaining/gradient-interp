@@ -1,0 +1,28 @@
+{
+  "checked_unix": 1792143486.0550938,
+  "controller": {
+    "scope": "development_only",
+    "started_unix": 1792142966.105667,
+    "deadline_unix": 1792186166.105667,
+    "status": "running",
+    "controller_pid": 281806,
+    "worker_pid": 281835,
+    "plan_sha256": "5c640374d67cb465960fbf41b7b1a4ecb6a667e57ad0c6f88206f9108ffb0123",
+    "attempts": [
+      {
+        "job": "collect",
+        "pid": 281835,
+        "started_unix": 1792142966.1082516
+      }
+    ],
+    "current_job": "collect"
+  },
+  "status": {
+    "stage": "collecting_updates",
+    "completed": 60,
+    "total": 344,
+    "updated_unix": 1792143484.8667138,
+    "pid": 281835
+  },
+  "manifest_exists": false
+}

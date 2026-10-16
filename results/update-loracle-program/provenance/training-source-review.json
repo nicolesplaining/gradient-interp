@@ -1,0 +1,23 @@
+{
+  "created_unix": 1792143591.867349,
+  "scientific_outputs_read": false,
+  "source_sha256": {
+    "src/gradient_interp/update_loracle_train.py": "a9ef4f9f8c1333f9f23e7f039396f30ced7fcda08fa02fad983ea074843a30e2",
+    "scripts/audit_update_loracle_collection.py": "52115a9c826858f3e820cdeac4b4a06c5a48dcc696fe02d70cb1668baaab8be1"
+  },
+  "synthetic_tests": "27 passed across collection/data/training/audit; Ruff clean",
+  "review": [
+    "mask completion and original EOS; equal documents",
+    "one-step fresh AdamW and unchanged A from zero B",
+    "released direction layout and identical constrained option scores",
+    "injection hook remains through checkpoint recomputation; matched gradient test",
+    "reserved split inaccessible to collector and trainer",
+    "shuffled directions preserve recipient norm, options, target and question",
+    "training-only fitting for ridge/majority; no tuning",
+    "only released FP32 interpreter adapters train; base frozen",
+    "full-vocabulary CE single-number supervision",
+    "3 fixed epochs with stable development-only selection; no active peeking",
+    "source archive, complete/dead barrier, full counts/hashes and recomputed native tokens"
+  ],
+  "pending": "Actual rank256 interpreter GPU training preflight after collection completes and passes audit. No fine-tuning or dev-output interpretation yet."
+}

@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "finished_unix": 1792143000.6450498,
+  "trainable_tensors": 560,
+  "trainable_parameters": 64225280,
+  "bit_exact_adapter_and_probe_restore": true,
+  "all_32_reference_patterns_scored": true,
+  "physical_update_norm": 1.3239083574087684,
+  "token_shape": [
+    4480,
+    5120
+  ],
+  "step": {
+    "per_document_ce_before": [
+      3.4950973987579346,
+      3.4950973987579346,
+      3.4950973987579346,
+      3.4950973987579346
+    ],
+    "gradient_norm_before_clip": 6.589278697967529,
+    "optimizer_steps": 1,
+    "learning_rate": 0.0002
+  },
+  "max_projection_check_error": 3.4924596548080444e-08,
+  "maximum_observed_loss_change": 1.5984885692596436,
+  "peak_allocated_bytes": 30963371520
+}
