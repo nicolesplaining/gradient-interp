@@ -1,0 +1,39 @@
+{
+  "recorded_unix": 1792193286.2115378,
+  "status": "CPU integration passed; no actual held-out model execution",
+  "source_sha256": "7e122a3424b746aa5ae71709371f6cc2ff963fd4b7de8e2218cd44b661a85537",
+  "scientific_outcomes_read": false,
+  "untouched_test_model_runs": 0,
+  "active_scientific_sources_unchanged": 97,
+  "integration": {
+    "worker_stages": [
+      "collect_updates",
+      "predict_all",
+      "measure_all"
+    ],
+    "cases": 272,
+    "exact_conditions": 544,
+    "locked_files": 556,
+    "fixed_rescoring_checks": 4,
+    "both_grids_analyzed": true,
+    "synthetic_plot_layouts_visually_checked": 2
+  },
+  "real_code_exercised": [
+    "Original input/data/grid guards and prediction lock barrier",
+    "File hashes, exact native update/scaled-donor fingerprints and score aggregation",
+    "All four original released-interface questions, choice extraction and joint labels",
+    "Full independent audit including source archive, original deadline/stage order, native/tokens/score inventories, four exact rescoring checks and no-repeat guard",
+    "Original4000 paired crossed-bootstrap analysis, full examples and both scientific figures"
+  ],
+  "substitutions": [
+    "Tiny CPU native adapter instead of Qwen3-14B",
+    "Synthetic deterministic weight update and nonlinear loss instead of optimizer/base-model forwards",
+    "Tiny physical-matrix tokens instead of released high-dimensional encoding",
+    "Synthetic released-model choice scores and ridge predictions",
+    "Synthetic selection evidence; production selection gate separately tested",
+    "Architecture-size and original released-plan pin checks use separate fixtures"
+  ],
+  "limits": "This tests execution compatibility, not scientific accuracy, real GPU preflight, or generalization. Synthetic perfect profile predictions are constructed and cannot support the goal.",
+  "combined_relevant_tests_passed": 60,
+  "ruff": "passed"
+}
