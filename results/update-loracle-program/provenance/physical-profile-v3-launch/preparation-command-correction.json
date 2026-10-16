@@ -1,0 +1,9 @@
+{
+  "recorded_unix": 1792173090.798337,
+  "failed_command_argument": "--commit 8038139",
+  "error": "Wrong scientific source: preparer requires full40-character HEAD",
+  "corrected_argument": "--commit 8038139e2c48b521abeff9e60ea75b3f244c8260",
+  "root_created": false,
+  "scientific_worker_started": false,
+  "scientific_source_changed_for_fix": false
+}
