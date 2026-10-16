@@ -1,0 +1,24 @@
+{
+  "recorded_unix": 1792192950.1332512,
+  "status": "conditional held-out audit and analysis prepared; no real selection, test release, or launch",
+  "scientific_development_outputs_read": false,
+  "test_data_released": false,
+  "frozen_source_files_unchanged": 97,
+  "source_sha256": {
+    "src/gradient_interp/update_loracle_exact_calibration_heldout_analysis.py": "6c39f481e2395d0c05f3977b8148ffdf933b8ac32fb9d758e8da40aabc0f20af",
+    "tests/test_update_loracle_exact_calibration_heldout_analysis.py": "6d99914e8d282f48433e3387bc655811f645a69fd741d074b17435a901347a8e"
+  },
+  "new_tests_passed": 26,
+  "validation": [
+    "Complete/dead four-stage barrier rejects failures, retries, missing stages, live workers and deadline/order violations before outcome reads.",
+    "Original twelve-hour plan and original released-model plan/input hashes retained. All native encodings, true norms, initial states, zero controls and restore/lock ordering audited.",
+    "All544 own and physically norm-matched shuffled calibration score records checked against exact native fingerprints and independent equal-document profiles. No nonlinear profile rescaling.",
+    "Four fixed rescoring checks require exact baseline and updated arrays; mock tests exercise success and numerical corruption rejection. Actual GPU rescoring happens only after complete future test.",
+    "Full synthetic two-grid analysis retains all272 cases/eight methods/weak updates; original4000 crossed-bootstrap draws and256 composition swaps preserved. One passing grid cannot rescue the other.",
+    "Preserves executed analysis and original statistics, full examples, every answer and two scientific figures. Real-result figures still require visual inspection after execution."
+  ],
+  "tests_are_synthetic": true,
+  "scope": "Base-model-assisted calibration descriptions, not an improved trained LoRAcle checkpoint. No new experimental branch or scientific outcome access.",
+  "combined_relevant_tests_passed": 59,
+  "ruff": "passed"
+}
