@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "finished_unix": 1792146074.9933069,
+  "source_commit": "a84822a46a45066d4abca01d013dac4b73ccca7e",
+  "plan_sha256": "ef786d4ee941c86b6a7fa7b1f31547ecd5cb4cfd9b3ffe5a51c0d65939cff0db",
+  "source_archive_sha256": "1e7fb1c70ddee159468208398ca5cce0d3de054003ea65da889adc288a7419fe",
+  "collection_integrity_sha256": "5c7ff69d30acb52bb3c3d651f1c82c0ec143eabd5c9fdcd73f76261d1c791ac7",
+  "source_files": 82,
+  "input_files": 29,
+  "fixed_recipe_no_outcome_based_changes": true,
+  "gpu_preflight": "pending inside worker",
+  "versions": {
+    "torch": "2.9.0+cu130",
+    "transformers": "4.57.6",
+    "peft": "0.18.1"
+  }
+}

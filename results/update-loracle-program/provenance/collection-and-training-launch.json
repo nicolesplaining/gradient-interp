@@ -1,0 +1,13 @@
+{
+  "checked_unix": 1792146364.546772,
+  "files": {
+    "runs/update-loracle-development/progress/collection-integrity.json": "5c7ff69d30acb52bb3c3d651f1c82c0ec143eabd5c9fdcd73f76261d1c791ac7",
+    "runs/update-loracle-development/progress/collection-controller.json": "7302610133c53ceb3731f6bcd64081aa21f0bfa143a73810cd33ce2f0d182bc2",
+    "runs/update-loracle-development/progress/collection-manifest.json": "7c0a57d2b87d67e3c2d2492c3a9535bf4c464bba0d5e93ebfc80a804abaf1327",
+    "runs/update-loracle-development/progress/training-preparation.json": "78407cb1e94b6bd9df6f437c6837978c26a80f3242783990ccb2f936e3b1d425",
+    "runs/update-loracle-development/progress/training-plan.json": "ef786d4ee941c86b6a7fa7b1f31547ecd5cb4cfd9b3ffe5a51c0d65939cff0db",
+    "runs/update-loracle-development/progress/training-controller.json": "b7d0bc3f8c7a5a2f5b6aecda7096291a7c17c20fd062bb9d90b2d0d1cafee510",
+    "runs/update-loracle-development/progress/training-preflight.json": "819db02fe98e2ce0af6ac8a419a7d0183c61fba02a5eecd516c37e2e2f09d888"
+  },
+  "scientific_outcomes_read": false
+}

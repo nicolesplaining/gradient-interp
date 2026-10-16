@@ -1,0 +1,26 @@
+{
+  "created_unix": 1792146863.278235,
+  "scope": "Future held-out evaluation preparation only; no selected checkpoint or test collection yet",
+  "inference": "Native PEFT adapter load validates inventory, architecture and every installed tensor exactly; interface accepts direction tokens, physical norm and all33 options only",
+  "selection": "All3 epochs complete and audited; earliest best development epoch; all fixed development criteria must pass before a selection lock",
+  "fresh_data": "Fixed separately seeded 128-update/eight-control confirmation draw on reserved source compositions, fresh vocabularies/templates and4 fresh seeds; both held-out grids freeze only after selection",
+  "tests": {
+    "total_relevant_passed": 63,
+    "inference_tests": 12,
+    "fresh_data_tests": 8,
+    "confirmation_statistics_tests": 5,
+    "ruff": "passed"
+  },
+  "scientific_outputs_read_this_turn": false,
+  "active_training_source_unchanged": "a84822a46a45066d4abca01d013dac4b73ccca7e",
+  "remaining_before_test_launch": [
+    "complete and inspect fixed development comparison",
+    "freeze selected model only if justified",
+    "implement/review staged held-out update collection, prediction lock before measurements and complete audit",
+    "training-only GPU validation of any new execution path before held-out collection"
+  ],
+  "source_files_sha256": {
+    "src/gradient_interp/update_loracle_inference.py": "42dae7ca92a80cb4d0a1638737fc836c34f2e61073399843b907e45ff882fffa",
+    "src/gradient_interp/update_loracle_confirmation_data.py": "acd79a3028a06d71d04200bbb3f9037f802cc3c5f587fbca6d9afd6bb6e8184e"
+  }
+}

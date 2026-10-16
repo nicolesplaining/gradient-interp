@@ -1,0 +1,342 @@
+{
+  "created_unix": 1792145937.934977,
+  "data_sha256": "122fcbc122d434926d877bc4efc2ad9c985f43636b015a1135684012b830b77c",
+  "historical_unique_normalized_prompts": 21359,
+  "historical_sources": [
+    {
+      "path": "runs/paper-magnitude-data/history-129.146.119.181.json",
+      "sha256": "fdbae7b5b343fa20d9794995579b810e3b43feec632e4a78c1f1ad6f9864175e",
+      "kind": "archived historical prompt inventory",
+      "prompts": 20133
+    },
+    {
+      "path": "runs/paper-magnitude-data/history-68.209.75.76.json",
+      "sha256": "f0f416515e7a1e1501695c5ce234eacdbcef5fca2f76582b617551eae8c4f2e3",
+      "kind": "archived historical prompt inventory",
+      "prompts": 5695
+    },
+    {
+      "path": "runs/paper-magnitude-data/history-local.json",
+      "sha256": "ffc36e7f4adb2f7bd6a1ef4034d1d70596aa1b9c99894dac137858508ea357df",
+      "kind": "archived historical prompt inventory",
+      "prompts": 14930
+    },
+    {
+      "path": "data/demo/batches.jsonl",
+      "sha256": "5db81e0ccf3fb23504235ce7b5a9fdd4dbc568aff7bb58d02ddbf692219d7988",
+      "kind": "explicit historical input file",
+      "prompts": 12
+    },
+    {
+      "path": "data/demo/fit.jsonl",
+      "sha256": "4b2bbc85c0c1fcbea5c861f12e9879e5e931d80d82c123eca0812fca664e914b",
+      "kind": "explicit historical input file",
+      "prompts": 36
+    },
+    {
+      "path": "data/demo/probes.jsonl",
+      "sha256": "a06bfa2666bb1a52436a715989acdc25d445b778ebf016f894ff57b583a7e21e",
+      "kind": "explicit historical input file",
+      "prompts": 6
+    },
+    {
+      "path": "runs/a100/qwen-pilot/probes.json",
+      "sha256": "e3326545f6fb2b20836dd2f931d0d2b6c0fdb5503ddfc5cd5f2d284772c99c34",
+      "kind": "explicit historical input file",
+      "prompts": 6
+    },
+    {
+      "path": "runs/a100/qwen-small-steps/probes.json",
+      "sha256": "776d04b538d6ace53283de4d10d106a4289f2b393b2c6b8ff0d3dbef9872d7f2",
+      "kind": "explicit historical input file",
+      "prompts": 6
+    },
+    {
+      "path": "runs/behavior-pilot/data.json",
+      "sha256": "3d5850213a64425b665a34da23736aa7c7b6991877a083dc575596f410d5ef10",
+      "kind": "explicit historical input file",
+      "prompts": 88
+    },
+    {
+      "path": "runs/confirmation/data/batches.jsonl",
+      "sha256": "32603c54a7e33bbc2927ac563d72b059a42b769bfa79be311f9121ef2ebe9153",
+      "kind": "explicit historical input file",
+      "prompts": 1632
+    },
+    {
+      "path": "runs/confirmation/data/calibration_probes.jsonl",
+      "sha256": "034fdd9e87e3233ca6a93bf918c796d1193e5867649e42972cab533b1417c78b",
+      "kind": "explicit historical input file",
+      "prompts": 512
+    },
+    {
+      "path": "runs/confirmation/data/dev_batches.jsonl",
+      "sha256": "c8c52e158178ef819330f9ce85d792dc8ec6e7e1d4ae1f6207166151614b271f",
+      "kind": "explicit historical input file",
+      "prompts": 128
+    },
+    {
+      "path": "runs/confirmation/data/evaluation_probes.jsonl",
+      "sha256": "118a1c550ea7ddd6f71c2db47fb53fac75a80b42b5ca75aafb08207cb41f0734",
+      "kind": "explicit historical input file",
+      "prompts": 512
+    },
+    {
+      "path": "runs/confirmation/data/fit.jsonl",
+      "sha256": "cec13a8efe3251d3015bbf65d0b0d025e2d6b8e8ba6d88d7d604fca1d8e7bcfb",
+      "kind": "explicit historical input file",
+      "prompts": 9958
+    },
+    {
+      "path": "runs/demo-comparisons/probes.json",
+      "sha256": "e3326545f6fb2b20836dd2f931d0d2b6c0fdb5503ddfc5cd5f2d284772c99c34",
+      "kind": "explicit historical input file",
+      "prompts": 6
+    },
+    {
+      "path": "runs/demo-first/probes.json",
+      "sha256": "e3326545f6fb2b20836dd2f931d0d2b6c0fdb5503ddfc5cd5f2d284772c99c34",
+      "kind": "explicit historical input file",
+      "prompts": 6
+    },
+    {
+      "path": "runs/feature-pilot/data/batches.jsonl",
+      "sha256": "4359ce1b5b8ff30f460ccb67fad8e5b8f7880b0fe08201a0287eed50c5762257",
+      "kind": "explicit historical input file",
+      "prompts": 128
+    },
+    {
+      "path": "runs/feature-pilot/data/calibration_probes.jsonl",
+      "sha256": "f039e1b2ae98cdb66f64fc5d2c48255c1221c479b49744ea0cdd2f7deccf0db1",
+      "kind": "explicit historical input file",
+      "prompts": 128
+    },
+    {
+      "path": "runs/feature-pilot/data/evaluation_probes.jsonl",
+      "sha256": "6ac15f91d11f855e2be750f307d122b08e074ee5ff60d6054c6a1e261da7b9fe",
+      "kind": "explicit historical input file",
+      "prompts": 128
+    },
+    {
+      "path": "runs/large-study/data/batches.jsonl",
+      "sha256": "b5fe3b9acb1302f8fae9ca861a98c7b1704352b67e9d44fe0ac7d56f4f0a6663",
+      "kind": "explicit historical input file",
+      "prompts": 1019
+    },
+    {
+      "path": "runs/large-study/data/calibration_probes.jsonl",
+      "sha256": "6617abcf1b344d306e2bbd1bfff628ee4c51c92d87220b5324f89aee651b90df",
+      "kind": "explicit historical input file",
+      "prompts": 140
+    },
+    {
+      "path": "runs/large-study/data/evaluation_probes.jsonl",
+      "sha256": "bb1b4e9971a3e9d87a4dc6d88eee987028b95424189545bcbc2ffaeba4c2a7ea",
+      "kind": "explicit historical input file",
+      "prompts": 140
+    },
+    {
+      "path": "runs/loracle-fresh-toy-suite/data.json",
+      "sha256": "1e8cb97dd96c47f884f365013fd4a41ebfa067be9cbe8f718d461bae3f06c8ee",
+      "kind": "explicit historical input file",
+      "prompts": 176
+    },
+    {
+      "path": "runs/loracle-toy-suite/data.json",
+      "sha256": "06ed718331f7449be6a8edded7413f4edd2bed8b05caee1c841dab9ada2164b8",
+      "kind": "explicit historical input file",
+      "prompts": 176
+    },
+    {
+      "path": "runs/loracle-trajectory-toy/data.json",
+      "sha256": "6c6a4839fa04d237485aa5d0aaaa1f7ae258377bab0697d6d0ed5dc99cbc121b",
+      "kind": "explicit historical input file",
+      "prompts": 72
+    },
+    {
+      "path": "runs/loracle-trajectory-toy/export/data.json",
+      "sha256": "6c6a4839fa04d237485aa5d0aaaa1f7ae258377bab0697d6d0ed5dc99cbc121b",
+      "kind": "explicit historical input file",
+      "prompts": 72
+    },
+    {
+      "path": "runs/loracle-wide-toy-suite/data.json",
+      "sha256": "b639e6874c99b6a1fb408930984c5077b8268b2629629af1c601720e8ac0d517",
+      "kind": "explicit historical input file",
+      "prompts": 176
+    },
+    {
+      "path": "runs/paper-atom-batches-seed42/data.json",
+      "sha256": "ee2c661c8d540dc674befdd097f4a0acecded211f4913d67924def44c9e6a03e",
+      "kind": "explicit historical input file",
+      "prompts": 48
+    },
+    {
+      "path": "runs/paper-atom-batches-seed43/data.json",
+      "sha256": "ee2c661c8d540dc674befdd097f4a0acecded211f4913d67924def44c9e6a03e",
+      "kind": "explicit historical input file",
+      "prompts": 48
+    },
+    {
+      "path": "runs/paper-batch-seed42/data.json",
+      "sha256": "3fe2e1426c9554eca18d2346bd2410f6f6d6b3f498ea88a011a9abc3fca7ecd9",
+      "kind": "explicit historical input file",
+      "prompts": 96
+    },
+    {
+      "path": "runs/paper-batch-seed43/data.json",
+      "sha256": "3fe2e1426c9554eca18d2346bd2410f6f6d6b3f498ea88a011a9abc3fca7ecd9",
+      "kind": "explicit historical input file",
+      "prompts": 96
+    },
+    {
+      "path": "runs/paper-magnitude-analysis/final-compact-seed42/data.json",
+      "sha256": "1ca6317e39a99b8fe5e6357f4b20b0be798c23ab47b094ddec91f6a3cb019ca1",
+      "kind": "explicit historical input file",
+      "prompts": 475
+    },
+    {
+      "path": "runs/paper-magnitude-analysis/final-compact-seed43/data.json",
+      "sha256": "1ca6317e39a99b8fe5e6357f4b20b0be798c23ab47b094ddec91f6a3cb019ca1",
+      "kind": "explicit historical input file",
+      "prompts": 475
+    },
+    {
+      "path": "runs/paper-magnitude-analysis/preliminary-compact-seed43/data.json",
+      "sha256": "1ca6317e39a99b8fe5e6357f4b20b0be798c23ab47b094ddec91f6a3cb019ca1",
+      "kind": "explicit historical input file",
+      "prompts": 475
+    },
+    {
+      "path": "runs/paper-magnitude-data/data.json",
+      "sha256": "88d48369df1b95bb346c65ac8e9111b196946a478f33e732559a870216642933",
+      "kind": "explicit historical input file",
+      "prompts": 475
+    },
+    {
+      "path": "runs/paper-mixture-seed42/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "kind": "explicit historical input file",
+      "prompts": 80
+    },
+    {
+      "path": "runs/paper-mixture-seed42/repairs/2026-10-13-warm-precision/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "kind": "explicit historical input file",
+      "prompts": 80
+    },
+    {
+      "path": "runs/paper-mixture-seed43/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "kind": "explicit historical input file",
+      "prompts": 80
+    },
+    {
+      "path": "runs/paper-mixture-seed43/repairs/2026-10-13-warm-precision/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "kind": "explicit historical input file",
+      "prompts": 80
+    },
+    {
+      "path": "runs/paper-sample-seed42/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "kind": "explicit historical input file",
+      "prompts": 80
+    },
+    {
+      "path": "runs/paper-sample-seed42/repairs/2026-10-13-generation-default/repaired-preflight/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "kind": "explicit historical input file",
+      "prompts": 80
+    },
+    {
+      "path": "runs/paper-sample-seed42/repairs/2026-10-13-generation-default/verified-preflight/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "kind": "explicit historical input file",
+      "prompts": 80
+    },
+    {
+      "path": "runs/paper-sample-seed43/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "kind": "explicit historical input file",
+      "prompts": 80
+    },
+    {
+      "path": "runs/paper-sample-seed43/repairs/2026-10-13-generation-default/repaired-preflight/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "kind": "explicit historical input file",
+      "prompts": 80
+    },
+    {
+      "path": "runs/paper-sample-seed43/repairs/2026-10-13-generation-default/verified-preflight/data.json",
+      "sha256": "c2338b4cdc35b81ac8f127ad84d88893c48d1d47b0877071c4b94e5c8fda5453",
+      "kind": "explicit historical input file",
+      "prompts": 80
+    },
+    {
+      "path": "runs/paper-steering-seed42/questions.json",
+      "sha256": "89612591d76d6192d15d7256c52199e1fc031fc5c36078da7a8c1d5ff673e2de",
+      "kind": "explicit historical input file",
+      "prompts": 498
+    },
+    {
+      "path": "runs/paper-steering-seed43/questions.json",
+      "sha256": "89612591d76d6192d15d7256c52199e1fc031fc5c36078da7a8c1d5ff673e2de",
+      "kind": "explicit historical input file",
+      "prompts": 498
+    },
+    {
+      "path": "runs/paper-svd-analysis/compact-seed42/data.json",
+      "sha256": "0cd72934f90bfb685c9b04c0496dd4adfc6608a35c35b6f4215f274c8e999bc5",
+      "kind": "explicit historical input file",
+      "prompts": 538
+    },
+    {
+      "path": "runs/paper-svd-analysis/compact-seed43/data.json",
+      "sha256": "0cd72934f90bfb685c9b04c0496dd4adfc6608a35c35b6f4215f274c8e999bc5",
+      "kind": "explicit historical input file",
+      "prompts": 538
+    },
+    {
+      "path": "runs/paper-svd-magnitude-analysis/compact-seed42/data.json",
+      "sha256": "44b63e2b7a82febc92180d657a583be39bd0ef878177e81ede2f6ac35b4e1056",
+      "kind": "explicit historical input file",
+      "prompts": 471
+    },
+    {
+      "path": "runs/paper-svd-magnitude-analysis/compact-seed43/data.json",
+      "sha256": "44b63e2b7a82febc92180d657a583be39bd0ef878177e81ede2f6ac35b4e1056",
+      "kind": "explicit historical input file",
+      "prompts": 471
+    },
+    {
+      "path": "runs/paper-svd-magnitude-data/data.json",
+      "sha256": "da809d6147374094eeb397043f0e16e2a9d3048384a5fbb6ed89a587f32cf15e",
+      "kind": "explicit historical input file",
+      "prompts": 471
+    },
+    {
+      "path": "runs/paper-tangent-seed42/data.json",
+      "sha256": "75a11fec8f4002cd26db0293575f6adda202efd17a6a0c0d1d6dc500c0baca31",
+      "kind": "explicit historical input file",
+      "prompts": 20
+    },
+    {
+      "path": "runs/paper-tangent-seed43/data.json",
+      "sha256": "75a11fec8f4002cd26db0293575f6adda202efd17a6a0c0d1d6dc500c0baca31",
+      "kind": "explicit historical input file",
+      "prompts": 20
+    },
+    {
+      "path": "runs/smollm-first/probes.json",
+      "sha256": "e3326545f6fb2b20836dd2f931d0d2b6c0fdb5503ddfc5cd5f2d284772c99c34",
+      "kind": "explicit historical input file",
+      "prompts": 6
+    }
+  ],
+  "current_prompts": 3712,
+  "overlap_count": 0,
+  "overlaps": [],
+  "scientific_outputs_read": false,
+  "scope": "Exact NFKC/case/word-normalized prompt overlap against enumerated historic inputs and existing three-host inventory extracts. Not semantic independence, complete model-pretraining deduplication or a new evaluation. No active input changed."
+}
