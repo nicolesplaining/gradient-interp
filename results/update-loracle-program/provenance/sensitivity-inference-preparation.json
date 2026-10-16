@@ -1,0 +1,29 @@
+{
+  "created_unix": 1792176122.7588851,
+  "status": "Local interface preparation and synthetic tests complete; no selection freeze, test data release, new GPU preflight or evaluation launch",
+  "purpose": "Support the original full generalization objective after and only after the single sensitivity method passes every development criterion",
+  "files_sha256": {
+    "src/gradient_interp/update_loracle_sensitivity_inference.py": "ea46c7b95d6d88827b4ac0c4cd37ab4a7dffd3fce6ef29c9871f8e67c01b6ffc",
+    "tests/test_update_loracle_sensitivity_inference.py": "ff9a0e26f84360e67c004b4b2b8d8034fc1478a5863e313481a1e670cb9c7b5f"
+  },
+  "validation": {
+    "relevant_tests_passed": 27,
+    "ruff": "passed",
+    "root_review": "complete",
+    "positive_selection_test": "synthetic fixture only, with full344 forecast inventory and 72 development comparisons"
+  },
+  "requirements": [
+    "Recompute all original full-category development gates from audited outputs; a changed report flag cannot release tests",
+    "Bind exact initial native A/zero B, fixed base files, frozen8calibrationprompts, all32referencepatterns and gradient bank hashes",
+    "No update batch, source category, new evaluation prompts or measured effects enter the native prediction interface",
+    "Preserve sign/magnitude, original .02nats/token no-change floor and stable full-category argmax",
+    "Ordinary LoRAcle interface rejects this distinct selection schema; no claim of improved LoRAcle checkpoint",
+    "Native prediction is base-model-assisted and requires more task-specific infrastructure than the released comparator",
+    "Both original reserved and fresh confirmation grids and all original simultaneous-bound requirements remain mandatory",
+    "All test predictions must lock before outcome measurement; the complete evaluation orchestration still needs implementation and testing if this development method passes"
+  ],
+  "active_remote_source": "f72323ce12f7871d0cf00d4c483d5f7791ffb61e",
+  "active_worker_unchanged": true,
+  "scientific_outputs_read": false,
+  "reserved_cases_accessed": 0
+}
