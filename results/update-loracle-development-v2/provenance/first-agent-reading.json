@@ -1,0 +1,14 @@
+{
+  "recorded_unix": 1792158814.2925959,
+  "complete_audit_and_dead_handoff_required": true,
+  "copy_receipt_sha256": "9975eaa844ed0cbc5f749b6427d47592ba23c7e72477df52538ebf7d1d434532",
+  "analysis_files_sha256": {
+    "analysis/summary.json": "74cc082c9d6d5cb0525e5a89efd1662c6038358e73c3c50951b0d595676e05de",
+    "analysis/all-development-cases.json": "ed660d0c551eb526f345d4b55b4ca5609e23eb2369c5659a98521dc3ef5312b4",
+    "analysis/executed-analysis.py": "3da169f5ea7098f1175fcfb06239ca1b39f257377de6247ab9fd67569d4170ed",
+    "analysis/analysis-provenance.json": "ac99498c256e854663d1d04a378ca267b784eb77f9c7f679ccac5a7537207c4b",
+    "analysis/development-accuracy.png": "a643b17bd8f10de5266ff30026a4c9b097c7eee7c0414c982209ad4af8a6e186",
+    "analysis/report.html": "735400234824f30c4217af02fb92e79c1690471b314a6827a44182b9efc58db9"
+  },
+  "new_scientific_outputs_read_before_this_record": false
+}

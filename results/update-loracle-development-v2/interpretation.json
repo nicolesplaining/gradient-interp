@@ -1,0 +1,27 @@
+{
+  "created_unix": 1792172313.8902242,
+  "verdict": "Balanced component training fails the unchanged full-category development criteria. Reserved and fresh confirmation outputs remain uncollected and unread. Goal remains active.",
+  "selected_epoch": 1,
+  "selection": "All three fixed epochs tie at13/64; original earliest-epoch rule selects1.",
+  "main_result": {
+    "adapted": 13,
+    "released_matched_four_questions": 1,
+    "flat_majority": 8,
+    "factorized_majority": 8,
+    "adapted_shuffled": 2,
+    "actual_updates": 64,
+    "adapted_zero_correct": 8,
+    "zero_n": 8
+  },
+  "uncertainty": "Selected-development paired accuracy difference versus released is18.75pp; descriptive95% interval -1.5625 to43.75pp. This is selected development, not confirmation.",
+  "failure_details": [
+    "Every fixed epoch predicts lowercase for all64 actual updates, including19 measured uppercase winners.",
+    "Per-axis improvements cannot replace full-pattern correctness; format43/64, case45/64 and order23/64 for selected epoch.",
+    "Training losses decrease while complete development accuracy remains13/64 in all three epochs. More epochs alone are not justified by this record.",
+    "Four of eight source-composition groups have0/8 correct at selected epoch; all groups remain in the report."
+  ],
+  "scientific_scope": "One fixed Qwen3-14B base, one actual AdamW update, finite-reference mean-completion likelihood preference on separate list prompts; no arbitrary-update, free-generation or broad-model claim.",
+  "next_step": "Develop one physical-update-to-effect-profile decoder on the same original training data. Preserve signed native weight changes and magnitudes, learn the full measured32-pattern profile rather than only its winning label, and evaluate once on the same development set under the original full-category gates. This is a different supervised weight-input decoder, not a successful fine-tune of released LoRAcle. The exact new recipe must freeze before computing its predictions.",
+  "reserved_test_read": false,
+  "next_experiment_launched": false
+}

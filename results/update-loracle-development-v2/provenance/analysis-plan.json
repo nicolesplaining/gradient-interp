@@ -1,0 +1,92 @@
+{
+  "frozen_unix": 1792150018.927333,
+  "scope": "development_only",
+  "proposal": {
+    "created_unix": 1792149055.80416,
+    "status": "proposed next development recipe, not launched; worker and GPU preflight not yet implemented",
+    "basis": "Complete audited first recipe: selected12/64 vsreleased1/64, majority8/64, matchedshuffle5/64. All64predictionslowercase despite19uppercasetargets; measuredtraining239lower/17upper;16developmenttargetsfrom compositecategories absent intraining. Fulltargetstrongcriteria failed.",
+    "method": "Keep the complete32-pattern/no-change endpoint. Same released LoRAcle, exact same weight encodings and physical norms, same audited train/development updates and measured effects. Replace one flat33-option question with four matched questions: detectable change, formatting, case, ordering of the most-improved full response pattern. Join predicted components into one full category. Both adapted and unchanged released models get the same four questions; originalflat baseline is historical only.",
+    "supervision": "Detection question for all272training cases; axis questions only when measured target is not no_change because axes then undefined. All256currentactualupdates have definedaxes, so1040training question-instances. No example/weak-case exclusion from primary scoring. Eachquestion has distinct single-token alphabetic IDs with deterministic independently shuffled labelpositions.",
+    "class_balance": "For head h and label k, fixed training-only weight N_total/(4*K_h*n_hk), where K_h is numberof classes forhead, n_hk is trainingcount, N_total1040. This gives equal aggregate weight to every head and to eachclass withinhead. No development/test labels used in weights. Preserve allcounts andweights.",
+    "first_recipe": "Warmstart unchanged releasedrank256rsLoRA, all560FP32interpretertensors, BF16frozenbase;3epochs,LR3e-5,effectivebatch4questioninstances,AdamWwd.01,clip1,5%linearwarmupanddecay,trainingseed2026101681.1040instances/epoch,260steps/epoch,780total. Save/evaluateall3epochs, selectearliesthighestjointdevelopmentaccuracy onlyafterallcomplete. Newfirst-launch12hdeadline, noautomaticretry.",
+    "comparators": "Released model onidenticalfourquestions; trainingmajority and factorizedmajority; originalsimpleRidge retained; matchedshuffleddirections retainingrecipientnorm/questions, sameold fixedderangement; zerocontrols. Direct superiority must usematchedreleased baseline, notitsolder1/64flatquestion score.",
+    "success": "Unchangedfullcombinedanswerdevelopmentcriteria:>=70%exact,>=20ppovermatchedreleased,>=10ppovermajority andmatchedshuffled,>=90%zeroaccuracy,>=80%aboveoriginal.02effectfloor. Allcases andallaxis/seed/compositionresultsretained. Per-axis improvements cannot rescuefailure. Reserved/freshconfirmation stillrequires originalstrongcriteria onboth frozenfullyheldoutgrids.",
+    "required_before_launch": [
+      "Implement four-question scoring/training and meaningful synthetic tests",
+      "Validate actual pinnedtokenizer for allhead IDs/prompts without newoutcomeaccess",
+      "Review source, freezeplan and originalfailureprovenance",
+      "Training-only GPUpreflight on actualmodel; preserveanyfailures",
+      "Do notaccessreservedorconfirmation scientificoutputs; neitherhasbeencollected"
+    ],
+    "scope": "This is another development recipe motivated by observed errorstructure, notconfirmation andnotproof classimbalance isthesolecause. We retainoriginal data,measuredlabels,fullcombinedendpoint andsuccesscriteria."
+  },
+  "previous_failure": "v1 12/64 full categories, 64/64 lowercase predictions; all v1 outputs retained",
+  "selection": "Earliest of three complete epochs with highest exact full-category accuracy on all 64 actual development updates",
+  "primary_comparison": "Unchanged released LoRAcle using the SAME four questions and valid-head choice scoring",
+  "baselines": "Training flat majority AND factorized majority, training-only Ridge, fixed matched direction shuffle",
+  "development_gates": {
+    "exact_accuracy": 0.7,
+    "released_advantage": 0.2,
+    "both_majority_advantages": 0.1,
+    "matched_shuffle_advantage": 0.1,
+    "zero_accuracy": 0.9,
+    "above_effect_floor_fraction": 0.8
+  },
+  "uncertainty": "2000 paired crossed source-composition/initialization/case resamples, seed2026101653; descriptive95% intervals, no selection-adjusted or confirmation claim",
+  "retention": "All 3 epochs, all methods/questions/classes/seeds/compositions/zeros/weak cases, all logits and joint predictions. Per-axis success cannot rescue joint failure.",
+  "reserved_test_access": "Forbidden. Reserved and fresh confirmation require later model-selection lock and unchanged original strong criteria.",
+  "failure_policy": "Preserve failures and first-launch deadline; no automatic repair or resume",
+  "training_seed": 2026101681,
+  "option_order_seed": 2026101682,
+  "torch_and_preflight_seed": 2026101680,
+  "weights": {
+    "counts": {
+      "change": {
+        "change": 256,
+        "no_change": 16
+      },
+      "format": {
+        "numbered": 87,
+        "plain": 64,
+        "bullets": 94,
+        "json": 11
+      },
+      "case": {
+        "lower": 239,
+        "upper": 17
+      },
+      "order": {
+        "length": 45,
+        "original": 70,
+        "reverse": 123,
+        "alphabetical": 18
+      }
+    },
+    "weights": {
+      "change": {
+        "change": 0.5078125,
+        "no_change": 8.125
+      },
+      "format": {
+        "plain": 1.015625,
+        "bullets": 0.6914893617021277,
+        "numbered": 0.7471264367816092,
+        "json": 5.909090909090909
+      },
+      "case": {
+        "lower": 0.5439330543933054,
+        "upper": 7.647058823529412
+      },
+      "order": {
+        "original": 0.9285714285714286,
+        "reverse": 0.5284552845528455,
+        "alphabetical": 3.611111111111111,
+        "length": 1.4444444444444444
+      }
+    },
+    "question_instances": 1040,
+    "weight_sum": 1040.0,
+    "formula": "N_total / (4 * number_of_head_classes * training_class_count)"
+  },
+  "initialization": "Unchanged released rank256 rsLoRA, not selected v1 model"
+}

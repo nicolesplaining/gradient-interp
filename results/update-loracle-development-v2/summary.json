@@ -1,0 +1,994 @@
+{
+  "scope": "selected development, not confirmation",
+  "recipe": "balanced_factorized_v2",
+  "selected_epoch": 1,
+  "metrics": {
+    "released": {
+      "actual_update_n": 64,
+      "actual_update_correct": 1,
+      "actual_update_accuracy": 0.015625,
+      "zero_n": 8,
+      "zero_correct": 4,
+      "zero_accuracy": 0.5,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.171875
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.234375
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.0625
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    },
+    "released_shuffled": {
+      "actual_update_n": 64,
+      "actual_update_correct": 2,
+      "actual_update_accuracy": 0.03125,
+      "zero_n": 8,
+      "zero_correct": 4,
+      "zero_accuracy": 0.5,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.15625
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.234375
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.046875
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    },
+    "epoch1": {
+      "actual_update_n": 64,
+      "actual_update_correct": 13,
+      "actual_update_accuracy": 0.203125,
+      "zero_n": 8,
+      "zero_correct": 8,
+      "zero_accuracy": 1.0,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.671875
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.703125
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.359375
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    },
+    "epoch1_shuffled": {
+      "actual_update_n": 64,
+      "actual_update_correct": 2,
+      "actual_update_accuracy": 0.03125,
+      "zero_n": 8,
+      "zero_correct": 8,
+      "zero_accuracy": 1.0,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.203125
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.703125
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.3125
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    },
+    "epoch2": {
+      "actual_update_n": 64,
+      "actual_update_correct": 13,
+      "actual_update_accuracy": 0.203125,
+      "zero_n": 8,
+      "zero_correct": 8,
+      "zero_accuracy": 1.0,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.703125
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.703125
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.4375
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    },
+    "epoch2_shuffled": {
+      "actual_update_n": 64,
+      "actual_update_correct": 3,
+      "actual_update_accuracy": 0.046875,
+      "zero_n": 8,
+      "zero_correct": 8,
+      "zero_accuracy": 1.0,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.1875
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.703125
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.46875
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    },
+    "epoch3": {
+      "actual_update_n": 64,
+      "actual_update_correct": 13,
+      "actual_update_accuracy": 0.203125,
+      "zero_n": 8,
+      "zero_correct": 8,
+      "zero_accuracy": 1.0,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.6875
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.703125
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.453125
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    },
+    "epoch3_shuffled": {
+      "actual_update_n": 64,
+      "actual_update_correct": 1,
+      "actual_update_accuracy": 0.015625,
+      "zero_n": 8,
+      "zero_correct": 8,
+      "zero_accuracy": 1.0,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.15625
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.703125
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.40625
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    },
+    "ridge": {
+      "actual_update_n": 64,
+      "actual_update_correct": 0,
+      "actual_update_accuracy": 0.0,
+      "zero_n": 8,
+      "zero_correct": 8,
+      "zero_accuracy": 1.0,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.0
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.0
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.0
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    },
+    "shuffled_ridge": {
+      "actual_update_n": 64,
+      "actual_update_correct": 0,
+      "actual_update_accuracy": 0.0,
+      "zero_n": 8,
+      "zero_correct": 8,
+      "zero_accuracy": 1.0,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.0
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.0
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.0
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    },
+    "flat_majority": {
+      "actual_update_n": 64,
+      "actual_update_correct": 8,
+      "actual_update_accuracy": 0.125,
+      "zero_n": 8,
+      "zero_correct": 0,
+      "zero_accuracy": 0.0,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.265625
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.703125
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.46875
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    },
+    "factorized_majority": {
+      "actual_update_n": 64,
+      "actual_update_correct": 8,
+      "actual_update_accuracy": 0.125,
+      "zero_n": 8,
+      "zero_correct": 0,
+      "zero_accuracy": 0.0,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.265625
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.703125
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.46875
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    }
+  },
+  "descriptive_95_intervals": {
+    "released": [
+      0.0,
+      0.09375
+    ],
+    "released_shuffled": [
+      0.0,
+      0.140625
+    ],
+    "epoch1": [
+      0.015625,
+      0.453125
+    ],
+    "epoch1_shuffled": [
+      0.0,
+      0.1875
+    ],
+    "epoch2": [
+      0.0,
+      0.484375
+    ],
+    "epoch2_shuffled": [
+      0.0,
+      0.1875
+    ],
+    "epoch3": [
+      0.015234375000000022,
+      0.4375
+    ],
+    "epoch3_shuffled": [
+      0.0,
+      0.09375
+    ],
+    "ridge": [
+      0.0,
+      0.0
+    ],
+    "shuffled_ridge": [
+      0.0,
+      0.0
+    ],
+    "flat_majority": [
+      0.0,
+      0.375
+    ],
+    "factorized_majority": [
+      0.0,
+      0.375
+    ]
+  },
+  "paired_differences": {
+    "released": {
+      "point": 0.1875,
+      "descriptive_95_interval": [
+        -0.015625,
+        0.4375
+      ]
+    },
+    "flat_majority": {
+      "point": 0.078125,
+      "descriptive_95_interval": [
+        -0.18789062499999998,
+        0.375
+      ]
+    },
+    "factorized_majority": {
+      "point": 0.078125,
+      "descriptive_95_interval": [
+        -0.18789062499999998,
+        0.375
+      ]
+    },
+    "ridge": {
+      "point": 0.203125,
+      "descriptive_95_interval": [
+        0.015625,
+        0.453125
+      ]
+    },
+    "epoch1_shuffled": {
+      "point": 0.171875,
+      "descriptive_95_interval": [
+        -0.015625,
+        0.421875
+      ]
+    }
+  },
+  "development_gates": {
+    "accuracy_70": false,
+    "released_advantage_20pp": false,
+    "effect_coverage_80": true,
+    "zero_accuracy_90": true,
+    "flat_majority_advantage_10pp": false,
+    "factorized_majority_advantage_10pp": false,
+    "direction_dependence_10pp": true
+  },
+  "all_development_gates_pass": false,
+  "strata": {
+    "source_pattern": {
+      "bullets/lower/reverse": {
+        "released": {
+          "n": 8,
+          "correct": 0
+        },
+        "released_shuffled": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch1": {
+          "n": 8,
+          "correct": 3
+        },
+        "epoch1_shuffled": {
+          "n": 8,
+          "correct": 2
+        },
+        "epoch2": {
+          "n": 8,
+          "correct": 8
+        },
+        "epoch2_shuffled": {
+          "n": 8,
+          "correct": 3
+        },
+        "epoch3": {
+          "n": 8,
+          "correct": 7
+        },
+        "epoch3_shuffled": {
+          "n": 8,
+          "correct": 1
+        },
+        "ridge": {
+          "n": 8,
+          "correct": 0
+        },
+        "shuffled_ridge": {
+          "n": 8,
+          "correct": 0
+        },
+        "flat_majority": {
+          "n": 8,
+          "correct": 8
+        },
+        "factorized_majority": {
+          "n": 8,
+          "correct": 8
+        }
+      },
+      "bullets/upper/original": {
+        "released": {
+          "n": 8,
+          "correct": 0
+        },
+        "released_shuffled": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch1": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch1_shuffled": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch2": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch2_shuffled": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch3": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch3_shuffled": {
+          "n": 8,
+          "correct": 0
+        },
+        "ridge": {
+          "n": 8,
+          "correct": 0
+        },
+        "shuffled_ridge": {
+          "n": 8,
+          "correct": 0
+        },
+        "flat_majority": {
+          "n": 8,
+          "correct": 0
+        },
+        "factorized_majority": {
+          "n": 8,
+          "correct": 0
+        }
+      },
+      "json/lower/length": {
+        "released": {
+          "n": 8,
+          "correct": 1
+        },
+        "released_shuffled": {
+          "n": 8,
+          "correct": 1
+        },
+        "epoch1": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch1_shuffled": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch2": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch2_shuffled": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch3": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch3_shuffled": {
+          "n": 8,
+          "correct": 0
+        },
+        "ridge": {
+          "n": 8,
+          "correct": 0
+        },
+        "shuffled_ridge": {
+          "n": 8,
+          "correct": 0
+        },
+        "flat_majority": {
+          "n": 8,
+          "correct": 0
+        },
+        "factorized_majority": {
+          "n": 8,
+          "correct": 0
+        }
+      },
+      "json/upper/alphabetical": {
+        "released": {
+          "n": 8,
+          "correct": 0
+        },
+        "released_shuffled": {
+          "n": 8,
+          "correct": 1
+        },
+        "epoch1": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch1_shuffled": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch2": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch2_shuffled": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch3": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch3_shuffled": {
+          "n": 8,
+          "correct": 0
+        },
+        "ridge": {
+          "n": 8,
+          "correct": 0
+        },
+        "shuffled_ridge": {
+          "n": 8,
+          "correct": 0
+        },
+        "flat_majority": {
+          "n": 8,
+          "correct": 0
+        },
+        "factorized_majority": {
+          "n": 8,
+          "correct": 0
+        }
+      },
+      "numbered/lower/original": {
+        "released": {
+          "n": 8,
+          "correct": 0
+        },
+        "released_shuffled": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch1": {
+          "n": 8,
+          "correct": 7
+        },
+        "epoch1_shuffled": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch2": {
+          "n": 8,
+          "correct": 2
+        },
+        "epoch2_shuffled": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch3": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch3_shuffled": {
+          "n": 8,
+          "correct": 0
+        },
+        "ridge": {
+          "n": 8,
+          "correct": 0
+        },
+        "shuffled_ridge": {
+          "n": 8,
+          "correct": 0
+        },
+        "flat_majority": {
+          "n": 8,
+          "correct": 0
+        },
+        "factorized_majority": {
+          "n": 8,
+          "correct": 0
+        }
+      },
+      "numbered/upper/length": {
+        "released": {
+          "n": 8,
+          "correct": 0
+        },
+        "released_shuffled": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch1": {
+          "n": 8,
+          "correct": 1
+        },
+        "epoch1_shuffled": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch2": {
+          "n": 8,
+          "correct": 1
+        },
+        "epoch2_shuffled": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch3": {
+          "n": 8,
+          "correct": 1
+        },
+        "epoch3_shuffled": {
+          "n": 8,
+          "correct": 0
+        },
+        "ridge": {
+          "n": 8,
+          "correct": 0
+        },
+        "shuffled_ridge": {
+          "n": 8,
+          "correct": 0
+        },
+        "flat_majority": {
+          "n": 8,
+          "correct": 0
+        },
+        "factorized_majority": {
+          "n": 8,
+          "correct": 0
+        }
+      },
+      "plain/lower/alphabetical": {
+        "released": {
+          "n": 8,
+          "correct": 0
+        },
+        "released_shuffled": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch1": {
+          "n": 8,
+          "correct": 2
+        },
+        "epoch1_shuffled": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch2": {
+          "n": 8,
+          "correct": 2
+        },
+        "epoch2_shuffled": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch3": {
+          "n": 8,
+          "correct": 3
+        },
+        "epoch3_shuffled": {
+          "n": 8,
+          "correct": 0
+        },
+        "ridge": {
+          "n": 8,
+          "correct": 0
+        },
+        "shuffled_ridge": {
+          "n": 8,
+          "correct": 0
+        },
+        "flat_majority": {
+          "n": 8,
+          "correct": 0
+        },
+        "factorized_majority": {
+          "n": 8,
+          "correct": 0
+        }
+      },
+      "plain/upper/reverse": {
+        "released": {
+          "n": 8,
+          "correct": 0
+        },
+        "released_shuffled": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch1": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch1_shuffled": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch2": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch2_shuffled": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch3": {
+          "n": 8,
+          "correct": 2
+        },
+        "epoch3_shuffled": {
+          "n": 8,
+          "correct": 0
+        },
+        "ridge": {
+          "n": 8,
+          "correct": 0
+        },
+        "shuffled_ridge": {
+          "n": 8,
+          "correct": 0
+        },
+        "flat_majority": {
+          "n": 8,
+          "correct": 0
+        },
+        "factorized_majority": {
+          "n": 8,
+          "correct": 0
+        }
+      }
+    },
+    "initialization_seed": {
+      "2026101611": {
+        "released": {
+          "n": 16,
+          "correct": 0
+        },
+        "released_shuffled": {
+          "n": 16,
+          "correct": 0
+        },
+        "epoch1": {
+          "n": 16,
+          "correct": 3
+        },
+        "epoch1_shuffled": {
+          "n": 16,
+          "correct": 2
+        },
+        "epoch2": {
+          "n": 16,
+          "correct": 3
+        },
+        "epoch2_shuffled": {
+          "n": 16,
+          "correct": 2
+        },
+        "epoch3": {
+          "n": 16,
+          "correct": 3
+        },
+        "epoch3_shuffled": {
+          "n": 16,
+          "correct": 0
+        },
+        "ridge": {
+          "n": 16,
+          "correct": 0
+        },
+        "shuffled_ridge": {
+          "n": 16,
+          "correct": 0
+        },
+        "flat_majority": {
+          "n": 16,
+          "correct": 2
+        },
+        "factorized_majority": {
+          "n": 16,
+          "correct": 2
+        }
+      },
+      "2026101612": {
+        "released": {
+          "n": 16,
+          "correct": 1
+        },
+        "released_shuffled": {
+          "n": 16,
+          "correct": 2
+        },
+        "epoch1": {
+          "n": 16,
+          "correct": 3
+        },
+        "epoch1_shuffled": {
+          "n": 16,
+          "correct": 0
+        },
+        "epoch2": {
+          "n": 16,
+          "correct": 3
+        },
+        "epoch2_shuffled": {
+          "n": 16,
+          "correct": 0
+        },
+        "epoch3": {
+          "n": 16,
+          "correct": 2
+        },
+        "epoch3_shuffled": {
+          "n": 16,
+          "correct": 0
+        },
+        "ridge": {
+          "n": 16,
+          "correct": 0
+        },
+        "shuffled_ridge": {
+          "n": 16,
+          "correct": 0
+        },
+        "flat_majority": {
+          "n": 16,
+          "correct": 2
+        },
+        "factorized_majority": {
+          "n": 16,
+          "correct": 2
+        }
+      },
+      "2026101613": {
+        "released": {
+          "n": 16,
+          "correct": 0
+        },
+        "released_shuffled": {
+          "n": 16,
+          "correct": 0
+        },
+        "epoch1": {
+          "n": 16,
+          "correct": 4
+        },
+        "epoch1_shuffled": {
+          "n": 16,
+          "correct": 0
+        },
+        "epoch2": {
+          "n": 16,
+          "correct": 5
+        },
+        "epoch2_shuffled": {
+          "n": 16,
+          "correct": 0
+        },
+        "epoch3": {
+          "n": 16,
+          "correct": 4
+        },
+        "epoch3_shuffled": {
+          "n": 16,
+          "correct": 0
+        },
+        "ridge": {
+          "n": 16,
+          "correct": 0
+        },
+        "shuffled_ridge": {
+          "n": 16,
+          "correct": 0
+        },
+        "flat_majority": {
+          "n": 16,
+          "correct": 2
+        },
+        "factorized_majority": {
+          "n": 16,
+          "correct": 2
+        }
+      },
+      "2026101614": {
+        "released": {
+          "n": 16,
+          "correct": 0
+        },
+        "released_shuffled": {
+          "n": 16,
+          "correct": 0
+        },
+        "epoch1": {
+          "n": 16,
+          "correct": 3
+        },
+        "epoch1_shuffled": {
+          "n": 16,
+          "correct": 0
+        },
+        "epoch2": {
+          "n": 16,
+          "correct": 2
+        },
+        "epoch2_shuffled": {
+          "n": 16,
+          "correct": 1
+        },
+        "epoch3": {
+          "n": 16,
+          "correct": 4
+        },
+        "epoch3_shuffled": {
+          "n": 16,
+          "correct": 1
+        },
+        "ridge": {
+          "n": 16,
+          "correct": 0
+        },
+        "shuffled_ridge": {
+          "n": 16,
+          "correct": 0
+        },
+        "flat_majority": {
+          "n": 16,
+          "correct": 2
+        },
+        "factorized_majority": {
+          "n": 16,
+          "correct": 2
+        }
+      }
+    }
+  },
+  "replicates": 2000,
+  "reserved_test_read": false,
+  "limitations": [
+    "Development reuse motivated this recipe; intervals do not correct epoch selection",
+    "One fixed Qwen3-14B base and compositions of familiar operations",
+    "Finite-reference likelihood winner, not generated behavior or all update details",
+    "Matched four-question baseline required; old flat-question score is historical only"
+  ]
+}

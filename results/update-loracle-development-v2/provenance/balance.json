@@ -1,0 +1,49 @@
+{
+  "counts": {
+    "change": {
+      "change": 256,
+      "no_change": 16
+    },
+    "format": {
+      "numbered": 87,
+      "plain": 64,
+      "bullets": 94,
+      "json": 11
+    },
+    "case": {
+      "lower": 239,
+      "upper": 17
+    },
+    "order": {
+      "length": 45,
+      "original": 70,
+      "reverse": 123,
+      "alphabetical": 18
+    }
+  },
+  "weights": {
+    "change": {
+      "change": 0.5078125,
+      "no_change": 8.125
+    },
+    "format": {
+      "plain": 1.015625,
+      "bullets": 0.6914893617021277,
+      "numbered": 0.7471264367816092,
+      "json": 5.909090909090909
+    },
+    "case": {
+      "lower": 0.5439330543933054,
+      "upper": 7.647058823529412
+    },
+    "order": {
+      "original": 0.9285714285714286,
+      "reverse": 0.5284552845528455,
+      "alphabetical": 3.611111111111111,
+      "length": 1.4444444444444444
+    }
+  },
+  "question_instances": 1040,
+  "weight_sum": 1040.0,
+  "formula": "N_total / (4 * number_of_head_classes * training_class_count)"
+}

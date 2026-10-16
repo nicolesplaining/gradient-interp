@@ -1,0 +1,33 @@
+{
+  "flat": "bullets/lower/reverse",
+  "factorized": "bullets/lower/reverse",
+  "components": {
+    "change": "change",
+    "format": "bullets",
+    "case": "lower",
+    "order": "reverse"
+  },
+  "label_counts": {
+    "numbered/lower/length": 22,
+    "plain/lower/original": 49,
+    "bullets/lower/reverse": 63,
+    "bullets/lower/length": 14,
+    "json/upper/reverse": 6,
+    "numbered/lower/reverse": 49,
+    "plain/upper/reverse": 1,
+    "bullets/lower/original": 10,
+    "numbered/lower/alphabetical": 10,
+    "plain/lower/length": 5,
+    "bullets/lower/alphabetical": 7,
+    "plain/upper/original": 5,
+    "numbered/upper/length": 1,
+    "plain/lower/reverse": 1,
+    "json/lower/reverse": 3,
+    "json/upper/original": 1,
+    "numbered/lower/original": 5,
+    "plain/upper/length": 2,
+    "json/upper/length": 1,
+    "plain/lower/alphabetical": 1,
+    "no_change": 16
+  }
+}

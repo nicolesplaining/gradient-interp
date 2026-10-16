@@ -1,0 +1,8 @@
+{
+  "created_unix": 1792172313.900789,
+  "original_executed_analysis_sha256": "3da169f5ea7098f1175fcfb06239ca1b39f257377de6247ab9fd67569d4170ed",
+  "original_report_sha256": "735400234824f30c4217af02fb92e79c1690471b314a6827a44182b9efc58db9",
+  "numerical_files_unchanged": true,
+  "change": "Added plain-language interpretation to copied report only; original executed report retained in ignored run root.",
+  "plot_visually_checked": true
+}
