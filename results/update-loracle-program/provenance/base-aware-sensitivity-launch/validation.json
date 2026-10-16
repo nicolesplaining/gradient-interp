@@ -1,0 +1,17 @@
+{
+  "recorded_unix": 1792174848.564448,
+  "source_commit": "f72323ce12f7871d0cf00d4c483d5f7791ffb61e",
+  "local_tests_passed": 30,
+  "ruff_passed": true,
+  "source_files": 94,
+  "input_files": 721,
+  "all_calibration_tokenizations": 256,
+  "max_calibration_tokens": 78,
+  "new_scientific_outcomes_read": false,
+  "preflight_status": "pending at launch; inside worker before predictions",
+  "retrospective_development": true,
+  "untouched_cases_collected": 0,
+  "fixed_complete_description_gates_unchanged": true,
+  "gpu_host": "ubuntu@68.209.75.76",
+  "no_target_optimizer_updates_or_generation": true
+}

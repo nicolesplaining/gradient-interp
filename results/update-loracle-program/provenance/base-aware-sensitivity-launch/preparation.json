@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "finished_unix": 1792174773.9489865,
+  "source_commit": "f72323ce12f7871d0cf00d4c483d5f7791ffb61e",
+  "plan_sha256": "3a4d4dfaa8391bd418c438fcc6e4c64acb033e3d9c54f78cee96c957c9a3c000",
+  "source_archive_sha256": "4896d0ad47d04463691a36a26784c1d32d2f900966c19ffbb38a2ea7562dd793",
+  "source_files": 94,
+  "input_files": 721,
+  "calibration_tokenizations": 256,
+  "maximum_input_tokens": 78,
+  "gpu_preflight": "pending inside worker before predictions",
+  "versions": {
+    "torch": "2.9.0+cu130",
+    "transformers": "4.57.6",
+    "peft": "0.18.1"
+  }
+}

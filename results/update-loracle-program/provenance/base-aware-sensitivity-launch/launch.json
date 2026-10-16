@@ -1,0 +1,8 @@
+{
+  "launched_unix": 1792174792.5460615,
+  "pid": 290741,
+  "source_commit": "f72323ce12f7871d0cf00d4c483d5f7791ffb61e",
+  "plan_sha256": "3a4d4dfaa8391bd418c438fcc6e4c64acb033e3d9c54f78cee96c957c9a3c000",
+  "max_hours": 4,
+  "automatic_retry": false
+}
