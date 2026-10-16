@@ -1,0 +1,27 @@
+{
+  "frozen_unix": 1792172676.336417,
+  "version": 1,
+  "scope": "new development method on original train/development data; untouched grids remain sealed",
+  "motivation": "Balanced component decoder gives13/64 joint accuracy in every fixed epoch and predicts lowercase64/64 despite falling training loss. Test whether preserving signed physical updates and learning all32 continuous measured effects transfers better. Neither the representation nor the target change is independently isolated.",
+  "identity": "Supervised physical-update profile decoder; not a fine-tuned released LoRAcle and no new gradient identity claim. Inference receives only native update weights.",
+  "data": "Original256 actual training updates+16zero,64 actual development+8zero. All original measured effects, tasks, seed splits, vocabularies, prompts and thresholds retained. No new updates, generations, probe scoring or test access.",
+  "input": "All280 native Qwen3-14B LoRA modules. Exact physical delta=2*B*A after verifying initialB=0 and unchangedA for everycase/module. Sum Frobenius inner products across every module, retaining signs, relative module magnitudes and total magnitude. No released SVD tokens in this decoder.",
+  "kernel": "FP64 low-rank Gram identity sum_{modules}4*sum((A_i A_j^T)*(B_i^T B_j)); no full dense model matrices, norm matching or outcome-selected module choices.",
+  "target": "Original32 centered improvements in mean-completion log probability on each training case separate four probes. No winner-only labels or source-task targets.",
+  "fit": "One no-intercept kernel ridge regressor, all32 outputs jointly. Lambda=.01 times mean positive diagonal of TRAINING actual-update Gram block. One fixed value; no hyperparameter or development fitting. All272 training rows remain. Zero input has exactly zero predicted profile.",
+  "output": "32 signed unscaled predicted centered improvements. Same original no_change threshold span<.02nats/token; otherwise same stable32-pattern argmax and deterministic existing description. Keep every predicted magnitude, no clipping.",
+  "controls": "Frozen matched four-question released baseline and both training-majority baselines from completed v2; v2 selected model as historical reference; original fixed nonzero derangement seed2026101652, with recipient physical norm retained by scaling donor kernel row.",
+  "gates": {
+    "joint_accuracy": 0.7,
+    "released_advantage": 0.2,
+    "both_majority_advantages": 0.1,
+    "matched_direction_shuffle_advantage": 0.1,
+    "zero_accuracy": 0.9,
+    "measured_effect_span_ge_.02_fraction": 0.8
+  },
+  "analysis": "All72 cases, all32 profiles and errors, allsourcecompositions/initializations/zeros/weak effects;2000 original paired crossed-composition/initialization/case bootstrap draws seed2026101653. Descriptive development intervals, no confirmation claim. Same complete-description target; no partial-axis promotion.",
+  "future_confirmation": "Only if all unchanged development gates pass. Freeze exact decoder and model, then original reserved136 and original fresh136 grids with unchanged70%accuracy/20ppadvantage/zero/majority/shuffle/effect gates and original simultaneous confidence requirements.",
+  "compute": "One bounded2h development worker, one attempt, no automatic retry. Synthetic algebra tests and training-only actual module check before full kernel. Normal complete+dead barrier before result interpretation. Archive source and validate all consumed snapshots/case records and baseline hashes.",
+  "launch_status": "not launched",
+  "prior_summary_sha256": "74cc082c9d6d5cb0525e5a89efd1662c6038358e73c3c50951b0d595676e05de"
+}

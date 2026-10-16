@@ -1,0 +1,27 @@
+{
+  "reviewed_unix": 1792173036.715966,
+  "reviewer": "root",
+  "tests_passed": 28,
+  "ruff": "clean",
+  "checked": [
+    "Exact signed BA Frobenius identity agrees with dense synthetic matrices",
+    "Independent invertible rank-basis gauge transformations leave physical kernel unchanged",
+    "Raw magnitude and zero updates retained",
+    "Training-only penalty and centered full32-target regression with no intercept",
+    "Original snapshot and initialization hashes anchored to audited records",
+    "Only original train/development grid and no new target updates",
+    "All developmental predictions precede any analysis; complete+dead audit barrier",
+    "Independent fixed64 pair audit and all280 per-module energy checks",
+    "Matched direction shuffle preserves recipient norm",
+    "All original full-category gates and complete cases retained",
+    "No inference effects, prompts or source labels enter physical kernel predictor"
+  ],
+  "source_sha256": {
+    "src/gradient_interp/update_loracle_physical_profile.py": "d8ed1c6eb5f46edbc23d282422494f9e5d226b9344a0dacd59d994f61fe38c1d",
+    "src/gradient_interp/update_loracle_physical_profile_analysis.py": "eff6c790fdffb069cd20a43c1595816b8be452c50e850e5142edf1feaa0a0de7",
+    "scripts/prepare_update_loracle_physical_profile.py": "9d586a6ef2712c5828029d55c5978c33d83ab8a6cb3bbf2c9700cfc9cb5efff5",
+    "tests/test_update_loracle_physical_profile.py": "cf165650fd120b8a46068e8b14e101f05065fbdab587e4e64bc3a09b2edd3a02"
+  },
+  "new_predictions_read": false,
+  "new_run_launched": false
+}
