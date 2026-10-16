@@ -1,0 +1,32 @@
+{
+  "created_unix": 1792142737.647089,
+  "scope": "development_only",
+  "collection_splits": [
+    "train",
+    "development"
+  ],
+  "reserved_access": "not collected",
+  "data_sha256": "122fcbc122d434926d877bc4efc2ad9c985f43636b015a1135684012b830b77c",
+  "program_protocol_sha256": "b98c785ecb3d2f56f409895d2af4c0f21fcd163cba47682017431861864f206f",
+  "release_rule": "Full collection must complete normally and its worker/controller be dead before any case loss, snapshot, tokens or measured labels are read; genuine failure must first be diagnosed and preserved. No partial-outcome decisions.",
+  "case_counts": {
+    "train": 272,
+    "development": 72,
+    "actual_updates": 320,
+    "zero_controls": 24
+  },
+  "measurement": "Four separate prompts, 32 completion patterns each, equal per-document mean completion CE including EOS. All before/after losses retained. Greatest centered improvement, no-change only when span<.02. Weak, tied and unexpected examples retained.",
+  "input_rules": "No source-pattern label, batch examples or measured profile in interpreter inputs. Training learns only training labels. Development chooses saved epochs; reserved cases are never collected by this worker.",
+  "audits": [
+    "all frozen source/input/initial/snapshot/token/case hashes",
+    "one fresh AdamW step per actual case",
+    "zero B and unchanged A under no weight decay",
+    "true scaled BA product reconstruction",
+    "bit-exact adapter and first-probe CE restoration",
+    "full grid",
+    "original immutable deadline",
+    "source archive before checkout changes"
+  ],
+  "training_recipe_reference": "results/update-loracle-program/protocol.json; training phase receives a separate complete frozen plan and training-only GPU preflight before training starts",
+  "inspection": "Report all training/development label distributions, source-versus-effect mismatch, margins, spans and norms; never discard hard examples to manufacture a result."
+}

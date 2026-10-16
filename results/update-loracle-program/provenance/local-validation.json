@@ -1,0 +1,7 @@
+{
+  "created_unix": 1792142737.6483042,
+  "tests": "14 passed; data splits, completion masks, EOS, equal-document weighting, fresh optimizer state, zero-B A-invariance, finite guards",
+  "ruff": "passed",
+  "scientific_outputs_read": false,
+  "old_h100_source_archive_verified_sha256": "f64eecaee0b6bc64ade2c54bdcd0c1e43fa80f303f9585e99410463be80c994c"
+}

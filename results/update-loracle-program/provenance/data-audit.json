@@ -1,0 +1,10 @@
+{
+  "cases": 480,
+  "unique_prompts": 3712,
+  "split_counts": {
+    "train": 272,
+    "development": 72,
+    "reserved": 136
+  },
+  "sha256": "748d3288dfbce4aaf0639f5a3c031c1d5e9a2d2ab1b04fd9b8120544540f854f"
+}
