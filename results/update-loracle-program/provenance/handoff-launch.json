@@ -1,0 +1,24 @@
+{
+  "pid": 282426,
+  "launched_unix": 1792144799.5440545,
+  "command": [
+    "/home/ubuntu/gradient-interp/.venv-atoms/bin/python",
+    "-u",
+    "runs/analysis-tools/update-loracle/run_update_loracle_next_stage.py",
+    "--collection",
+    "runs/update-loracle-development",
+    "--training",
+    "runs/update-loracle-training-v1",
+    "--receipt",
+    "runs/update-loracle-handoff-v1",
+    "--commit",
+    "a84822a46a45066d4abca01d013dac4b73ccca7e",
+    "--auditor",
+    "runs/analysis-tools/update-loracle/audit_update_loracle_collection.py",
+    "--audit-sha256",
+    "52115a9c826858f3e820cdeac4b4a06c5a48dcc696fe02d70cb1668baaab8be1",
+    "--plan-sha256",
+    "5c640374d67cb465960fbf41b7b1a4ecb6a667e57ad0c6f88206f9108ffb0123"
+  ],
+  "script_sha256": "19c044392566028abfe7b0c9d573a7db09c4e4d4f1b30a6b09e6750ee176af5e"
+}
