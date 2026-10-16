@@ -1,0 +1,29 @@
+{
+  "created_unix": 1792148951.736913,
+  "verdict": "The first recipe fails the fixed development criteria. No reserved or confirmation test is authorized by this result. Goal remains active.",
+  "main_result": {
+    "released_correct": 1,
+    "epoch1_correct": 4,
+    "epoch2_correct": 12,
+    "epoch3_correct": 10,
+    "actual_updates": 64,
+    "majority_correct": 8,
+    "selected_shuffled_correct": 5,
+    "zero_correct_selected": 8,
+    "zero_n": 8
+  },
+  "uncertainty": "Selected-development paired advantage interval versus released includes zero at its lower endpoint. Epoch selection is development-biased; no confirmation claim.",
+  "diagnosis": {
+    "training_measured_lowercase": 239,
+    "training_measured_uppercase": 17,
+    "development_measured_lowercase": 45,
+    "development_measured_uppercase": 19,
+    "selected_lowercase_predictions": 64,
+    "development_cases_with_measured_categories_absent_in_training": 16,
+    "interpretation": "The flat33-option training has collapsed toward frequent composite effects. This is evidence motivating a compositional training change, not proof that imbalance is the sole cause. Probe-specific winner variability and the released weight representation may also limit performance."
+  },
+  "positive_signal_scoped": "Selected development format accuracy38/64 versus18/64 released; exact category12/64 versus1/64. These do not meet the full task criteria and cannot substitute for them.",
+  "next_development": "One factorized, class-balanced training recipe, preserving the complete32-pattern/no-change outcome. Same frozen train/development cases and measured effects. Predict detectable change, format, case and order with matched questions for adapted and released models. Training-only class weights; no test access or easier primary endpoint. Exact implementation, training budget and checks must freeze before launch.",
+  "reserved_test_read": false,
+  "next_experiment_launched": false
+}

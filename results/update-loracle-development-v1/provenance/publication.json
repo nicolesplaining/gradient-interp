@@ -1,0 +1,15 @@
+{
+  "published_unix": 1792148951.756167,
+  "original_analysis_outputs_sha256": {
+    "summary.json": "5870846fc57b39762ec70a860144d8e5d67993f4ca2b73b33599b97ed6948524",
+    "all-development-cases.json": "63db38508bc80099e3546aec99b89b0f98a085b412deedb53adaac5006e3dffc",
+    "executed-analysis.py": "bdfade9ddd104ab6f4ecbf6cc58f3b108e5bdb7a936bb164765db0621216d21a",
+    "analysis-provenance.json": "3e67dec4874b6828ee8fca7b700030521241ed29a3c5a9ddd01c11440b7e93de",
+    "development-accuracy.png": "42f6dfebb5786ebe20b93bfdebac56543f533ff37d019891df891df80690a585",
+    "report.html": "75e14d8bfb7835b95126bc4ba19b237d4931ba87d1ae040fbafc1234f466c893"
+  },
+  "source_archive_sha256": "1e7fb1c70ddee159468208398ca5cce0d3de054003ea65da889adc288a7419fe",
+  "compact_case_change": "Only module-wise token-audit arrays omitted from display copy. Full arrays remain in audited source outputs and original analysis; all cases, raw loss profiles, margins and predictions retained.",
+  "visual_check": "Original development accuracy figure inspected; labels legible and all fixed epochs/methods retained.",
+  "numerical_analysis_changed": false
+}

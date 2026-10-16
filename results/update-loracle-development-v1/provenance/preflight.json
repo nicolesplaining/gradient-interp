@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "finished_unix": 1792146141.9221263,
+  "trainable_tensors": 560,
+  "trainable_parameters": 1027604480,
+  "hook_calls_with_backward": 2,
+  "all_gradients_finite": true,
+  "gradient_norm": 56.69026184082031,
+  "bit_exact_adapter_and_scores_restore": true,
+  "input_tokens": 5236,
+  "choices_single_token": 33,
+  "peak_allocated_bytes": 46421741056,
+  "loss": 2.344785690307617
+}

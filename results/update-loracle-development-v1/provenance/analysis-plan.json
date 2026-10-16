@@ -1,0 +1,79 @@
+{
+  "frozen_unix": 1792146074.9847846,
+  "scope": "development_only",
+  "original_implementation": {
+    "created_unix": 1792143367.439633,
+    "scientific_collection_outputs_read": false,
+    "checkpoint": "same pinned released Qwen3-14B rank256 LoRAcle; 560 FP32 tensors,1027604480 trainable parameters",
+    "loss": "Full-vocabulary next-token CE on the single correct shuffled option-number token. No answer tokens in the input. All33 option numbers must tokenize to one distinct token. Evaluation compares all33 next-token logits with identical inputs for both interpreters.",
+    "input_limit": 6144,
+    "truncation": "never; fail on overlength",
+    "prefix": "released training rank16 mag7 rank-first prefix; layer1 norm-match additive input; hook remains installed through backward recomputation",
+    "recipe": {
+      "epochs": 3,
+      "effective_batch": 4,
+      "microbatch": 1,
+      "learning_rate": 3e-05,
+      "optimizer": "AdamW",
+      "weight_decay": 0.01,
+      "gradient_clip": 1.0,
+      "warmup_fraction": 0.05,
+      "schedule": "linear warmup then linear decay over204 optimizer steps",
+      "training_seed": 2026101651,
+      "precision": "BF16 frozen base, FP32 trainable LoRA; SDPA, TF32off",
+      "optimizer_foreach": false
+    },
+    "selection": "Complete all3 epochs; choose highest development nonzero-case exact measured-label accuracy; ties prefer earlier epoch. No active stopping or epoch extension. Zero-control accuracy and all other metrics retained. Reserved inputs never accessed by trainer.",
+    "simple_reference": "Mean unit direction per7 module types, averaging40layers and16ranks, then concatenate log1p physical update norm:35841features. Training-only StandardScaler plus RidgeClassifier alpha1,lsqr,tol1e-8. No hyperparameter tuning. Training-only majority label with stable LABELS-order tie break.",
+    "direction_control": "Fixedseed2026101652 derangement of nonzero direction-token donors; recipient question, options and physical norm stay fixed. Zero controls remain zero. Save donor IDs. Score unchanged released baseline and all3 trainedepochs on same matched controls.",
+    "input_dependence_gate": "In addition to original frozen accuracy/advantage/coverage/zero-control criteria, require at least10pp exact accuracy advantage over both the training-only majority and the matched shuffled-direction predictions on fresh held-out confirmation. This prevents a constant answer or norm-only shortcut being reported as update interpretation. No scientific outcomes had been read when added.",
+    "release": "Do not inspect epoch predictions or training history until all3epochs complete or immutable deadline reached with workers dead. Training-only preflight failures may be diagnosed before any training and preserved; no automatic resume.",
+    "validation": "20 worker/data/training synthetic tests passed before added audit/control checks; final count recorded separately. Full actual interpreter GPU preflight still pending, to run after collection/audit."
+  },
+  "original_analysis": {
+    "created_unix": 1792144012.747921,
+    "scientific_collection_outputs_read": false,
+    "training_started": false,
+    "scope": "development only; separate untouched confirmation required for success",
+    "primary_denominator": "All64 actual update cases on the eight development source compositions; weak effects remain included and may have measured no-change labels. Eight zero controls reported separately.",
+    "methods": [
+      "unchanged released",
+      "released shuffled directions",
+      "training-only majority",
+      "training-only ridge",
+      "ridge shuffled directions",
+      "all3 fixed fine-tuning epochs",
+      "all3 epochs with shuffled directions"
+    ],
+    "selection": "Highest actual-update exact measured-category accuracy across all3 epochs; earlier epoch wins ties. No best-seed, best-source-composition or best-axis promotion.",
+    "secondary": "Per-axis correctness on cases with a measurable non-no-change target; retain denominator. Every source composition, seed, measured label, source-versus-effect mismatch, span, margin, norms and raw profile.",
+    "uncertainty": {
+      "replicates": 2000,
+      "seed": 2026101653,
+      "scheme": "Crossed resampling of eight source compositions and four initialization seeds, then cases within selected cells; identical draws across all methods. Zero controls excluded from primary bootstrap.",
+      "intervals": "Pointwise descriptive95% percentile intervals and paired differences; development selection bias not corrected; cannot support final confirmation claim."
+    },
+    "thresholds": "Original program criteria plus pre-reading direction-dependence and majority checks from training-implementation-plan.json. Development gates guide method selection only; not a strong-positive conclusion.",
+    "guards": "Require full collection and training integrity audits, complete/dead workers, exact3epoch/204optimizerstep/272case grid, original deadlines, complete baseline/control grids, all source/input/checkpoint/output hashes. Archive source before any remote checkout advance.",
+    "artifacts": "Preserve complete outputs, all72 development cases, all methods/epochs, exact executed analysis source, report and scientific plot; inspect actual figure after execution. Bootstrap arrays ignored. No reserved predictions or test labels in development report.",
+    "test_status": "32 meaningful synthetic tests passed; Ruff clean. Training and analysis code not yet executed on scientific outputs.",
+    "analyzer_sha256": "7c4bc8ed3dc965d933170285adf7d22d0de9a6c48d476521886b58ff9ad43433"
+  },
+  "input_tokenization_amendment": {
+    "created_unix": 1792144527.934886,
+    "kind": "pre-training input-tokenization repair",
+    "scientific_collection_outputs_read_by_agent": false,
+    "original_failure": "Qwen3-14B tokenizes multi-digit option numbers into multiple tokens. The pre-training CPU check failed before fine-tuning, baseline interpretation, model selection or reserved-test collection. This invalidated the proposed single-next-token answer mapping.",
+    "repair": "Display the same33 frozen semantic choices as A-Z and0-6. Preserve numeric data IDs and independently shuffled option-to-label mappings. Both unchanged and trained interpreters receive exactly the same new display IDs and question. Supervise and compare the33 distinct verified one-token IDs. Full-vocabulary CE, all semantic labels, source cases, measurements, training recipe, thresholds and splits unchanged.",
+    "validation": "All33 replacement symbols are distinct single tokens under the actual pinned tokenizer.1376 train/development question variants checked at four magnitude strings; maximum5242tokens under6144,4480 injected positions. All33 synthetic tests pass. Actual interpreter GPU training preflight remains pending.",
+    "collection": "Active source7143de7, worker281835 and immutable deadline unchanged; no collection restart, output reading or edits. This repair touches only the not-yet-launched interpreter phase.",
+    "source_before_sha256": "a9ef4f9f8c1333f9f23e7f039396f30ced7fcda08fa02fad983ea074843a30e2",
+    "source_after_sha256": "29f537b24fb0ef8ca645505d0e1b56a4d90d01d418564e2261c4381c3cff1ad5",
+    "cpu_validation_sha256": "b006cc6b92a9ea74f8605ef5f12d483c5815949412d5d5ee69234b4022dcb99b",
+    "evaluation_order": "All reference predictions, including the simple CPU predictor, occur after actual interpreter GPU preflight passes. No model is trained or evaluated on reserved examples."
+  },
+  "recipe_selected_before_collection_outcomes": true,
+  "no_outcome_dependent_decision_in_preparation": true,
+  "reserved_test_access": "Forbidden to this worker; separate freeze required later",
+  "failure_policy": "Stop and preserve failures; no automatic repair or resume"
+}

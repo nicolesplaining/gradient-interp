@@ -1,0 +1,352 @@
+{
+  "scope": "selected development results, not confirmation",
+  "selected_epoch": 2,
+  "metrics": {
+    "released": {
+      "actual_update_n": 64,
+      "actual_update_correct": 1,
+      "actual_update_accuracy": 0.015625,
+      "zero_n": 8,
+      "zero_correct": 7,
+      "zero_accuracy": 0.875,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.28125
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.40625
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.09375
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    },
+    "released_shuffled": {
+      "actual_update_n": 64,
+      "actual_update_correct": 1,
+      "actual_update_accuracy": 0.015625,
+      "zero_n": 8,
+      "zero_correct": 7,
+      "zero_accuracy": 0.875,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.265625
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.359375
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.109375
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    },
+    "epoch1": {
+      "actual_update_n": 64,
+      "actual_update_correct": 4,
+      "actual_update_accuracy": 0.0625,
+      "zero_n": 8,
+      "zero_correct": 8,
+      "zero_accuracy": 1.0,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.3125
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.703125
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.46875
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    },
+    "epoch1_shuffled": {
+      "actual_update_n": 64,
+      "actual_update_correct": 4,
+      "actual_update_accuracy": 0.0625,
+      "zero_n": 8,
+      "zero_correct": 8,
+      "zero_accuracy": 1.0,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.34375
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.703125
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.46875
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    },
+    "epoch2": {
+      "actual_update_n": 64,
+      "actual_update_correct": 12,
+      "actual_update_accuracy": 0.1875,
+      "zero_n": 8,
+      "zero_correct": 8,
+      "zero_accuracy": 1.0,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.59375
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.703125
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.34375
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    },
+    "epoch2_shuffled": {
+      "actual_update_n": 64,
+      "actual_update_correct": 5,
+      "actual_update_accuracy": 0.078125,
+      "zero_n": 8,
+      "zero_correct": 8,
+      "zero_accuracy": 1.0,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.28125
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.703125
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.296875
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    },
+    "epoch3": {
+      "actual_update_n": 64,
+      "actual_update_correct": 10,
+      "actual_update_accuracy": 0.15625,
+      "zero_n": 8,
+      "zero_correct": 8,
+      "zero_accuracy": 1.0,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.578125
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.703125
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.390625
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    },
+    "epoch3_shuffled": {
+      "actual_update_n": 64,
+      "actual_update_correct": 2,
+      "actual_update_accuracy": 0.03125,
+      "zero_n": 8,
+      "zero_correct": 8,
+      "zero_accuracy": 1.0,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.171875
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.703125
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.34375
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    },
+    "ridge": {
+      "actual_update_n": 64,
+      "actual_update_correct": 0,
+      "actual_update_accuracy": 0.0,
+      "zero_n": 8,
+      "zero_correct": 8,
+      "zero_accuracy": 1.0,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.0
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.0
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.0
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    },
+    "majority": {
+      "actual_update_n": 64,
+      "actual_update_correct": 8,
+      "actual_update_accuracy": 0.125,
+      "zero_n": 8,
+      "zero_correct": 0,
+      "zero_accuracy": 0.0,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.265625
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.703125
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.46875
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    },
+    "shuffled_ridge": {
+      "actual_update_n": 64,
+      "actual_update_correct": 0,
+      "actual_update_accuracy": 0.0,
+      "zero_n": 8,
+      "zero_correct": 8,
+      "zero_accuracy": 1.0,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.0
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.0
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.0
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    }
+  },
+  "descriptive_95_intervals": {
+    "released": [
+      0.0,
+      0.09375
+    ],
+    "released_shuffled": [
+      0.0,
+      0.09375
+    ],
+    "epoch1": [
+      0.0,
+      0.203125
+    ],
+    "epoch1_shuffled": [
+      0.0,
+      0.203125
+    ],
+    "epoch2": [
+      0.015625,
+      0.421875
+    ],
+    "epoch2_shuffled": [
+      0.0,
+      0.25
+    ],
+    "epoch3": [
+      0.0,
+      0.40625
+    ],
+    "epoch3_shuffled": [
+      0.0,
+      0.1875
+    ],
+    "ridge": [
+      0.0,
+      0.0
+    ],
+    "majority": [
+      0.0,
+      0.375
+    ],
+    "shuffled_ridge": [
+      0.0,
+      0.0
+    ]
+  },
+  "paired_differences": {
+    "released": {
+      "point": 0.171875,
+      "descriptive_95_interval": [
+        0.0,
+        0.421875
+      ]
+    },
+    "majority": {
+      "point": 0.0625,
+      "descriptive_95_interval": [
+        -0.09375,
+        0.25
+      ]
+    },
+    "ridge": {
+      "point": 0.1875,
+      "descriptive_95_interval": [
+        0.015625,
+        0.421875
+      ]
+    },
+    "epoch2_shuffled": {
+      "point": 0.109375,
+      "descriptive_95_interval": [
+        0.0,
+        0.3125
+      ]
+    }
+  },
+  "development_gates": {
+    "accuracy_70": false,
+    "released_advantage_20pp": false,
+    "effect_coverage_80": true,
+    "zero_accuracy_90": true,
+    "majority_advantage_10pp": false,
+    "direction_dependence_10pp": true
+  },
+  "all_development_gates_pass": false,
+  "replicates": 2000,
+  "reserved_test_read": false,
+  "limitations": [
+    "One fixed base checkpoint; new compositions of known operations only",
+    "Four adapter initializations and eight development compositions; cluster uncertainty",
+    "Development intervals do not remove bias from choosing an epoch on development data",
+    "Finite-reference likelihood preference, not generated behavior or every update detail"
+  ]
+}
