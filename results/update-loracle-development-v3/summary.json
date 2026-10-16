@@ -1,0 +1,604 @@
+{
+  "scope": "reused development, not confirmation",
+  "recipe": "physical_profile_v3",
+  "metrics": {
+    "released": {
+      "actual_update_n": 64,
+      "actual_update_correct": 1,
+      "actual_update_accuracy": 0.015625,
+      "zero_n": 8,
+      "zero_correct": 4,
+      "zero_accuracy": 0.5,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.171875
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.234375
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.0625
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    },
+    "flat_majority": {
+      "actual_update_n": 64,
+      "actual_update_correct": 8,
+      "actual_update_accuracy": 0.125,
+      "zero_n": 8,
+      "zero_correct": 0,
+      "zero_accuracy": 0.0,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.265625
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.703125
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.46875
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    },
+    "factorized_majority": {
+      "actual_update_n": 64,
+      "actual_update_correct": 8,
+      "actual_update_accuracy": 0.125,
+      "zero_n": 8,
+      "zero_correct": 0,
+      "zero_accuracy": 0.0,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.265625
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.703125
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.46875
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    },
+    "ridge": {
+      "actual_update_n": 64,
+      "actual_update_correct": 0,
+      "actual_update_accuracy": 0.0,
+      "zero_n": 8,
+      "zero_correct": 8,
+      "zero_accuracy": 1.0,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.0
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.0
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.0
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    },
+    "epoch1": {
+      "actual_update_n": 64,
+      "actual_update_correct": 13,
+      "actual_update_accuracy": 0.203125,
+      "zero_n": 8,
+      "zero_correct": 8,
+      "zero_accuracy": 1.0,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.671875
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.703125
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.359375
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    },
+    "physical_profile": {
+      "actual_update_n": 64,
+      "actual_update_correct": 0,
+      "actual_update_accuracy": 0.0,
+      "zero_n": 8,
+      "zero_correct": 8,
+      "zero_accuracy": 1.0,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.0
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.0
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.0
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    },
+    "physical_profile_shuffled": {
+      "actual_update_n": 64,
+      "actual_update_correct": 0,
+      "actual_update_accuracy": 0.0,
+      "zero_n": 8,
+      "zero_correct": 8,
+      "zero_accuracy": 1.0,
+      "axes": {
+        "format": {
+          "n": 64,
+          "accuracy": 0.0
+        },
+        "case": {
+          "n": 64,
+          "accuracy": 0.0
+        },
+        "order": {
+          "n": 64,
+          "accuracy": 0.0
+        }
+      },
+      "above_effect_floor_fraction": 1.0
+    }
+  },
+  "paired_differences": {
+    "released": {
+      "point": -0.015625,
+      "descriptive_95_interval": [
+        -0.09375,
+        0.0
+      ]
+    },
+    "flat_majority": {
+      "point": -0.125,
+      "descriptive_95_interval": [
+        -0.375,
+        0.0
+      ]
+    },
+    "factorized_majority": {
+      "point": -0.125,
+      "descriptive_95_interval": [
+        -0.375,
+        0.0
+      ]
+    },
+    "ridge": {
+      "point": 0.0,
+      "descriptive_95_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    "epoch1": {
+      "point": -0.203125,
+      "descriptive_95_interval": [
+        -0.453125,
+        -0.015625
+      ]
+    },
+    "physical_profile_shuffled": {
+      "point": 0.0,
+      "descriptive_95_interval": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "development_gates": {
+    "accuracy_70": false,
+    "released_advantage_20pp": false,
+    "effect_coverage_80": true,
+    "zero_accuracy_90": true,
+    "flat_majority_advantage_10pp": false,
+    "factorized_majority_advantage_10pp": false,
+    "direction_dependence_10pp": false
+  },
+  "all_development_gates_pass": false,
+  "strata": {
+    "source_pattern": {
+      "bullets/lower/reverse": {
+        "released": {
+          "n": 8,
+          "correct": 0
+        },
+        "flat_majority": {
+          "n": 8,
+          "correct": 8
+        },
+        "factorized_majority": {
+          "n": 8,
+          "correct": 8
+        },
+        "ridge": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch1": {
+          "n": 8,
+          "correct": 3
+        },
+        "physical_profile": {
+          "n": 8,
+          "correct": 0
+        },
+        "physical_profile_shuffled": {
+          "n": 8,
+          "correct": 0
+        }
+      },
+      "bullets/upper/original": {
+        "released": {
+          "n": 8,
+          "correct": 0
+        },
+        "flat_majority": {
+          "n": 8,
+          "correct": 0
+        },
+        "factorized_majority": {
+          "n": 8,
+          "correct": 0
+        },
+        "ridge": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch1": {
+          "n": 8,
+          "correct": 0
+        },
+        "physical_profile": {
+          "n": 8,
+          "correct": 0
+        },
+        "physical_profile_shuffled": {
+          "n": 8,
+          "correct": 0
+        }
+      },
+      "json/lower/length": {
+        "released": {
+          "n": 8,
+          "correct": 1
+        },
+        "flat_majority": {
+          "n": 8,
+          "correct": 0
+        },
+        "factorized_majority": {
+          "n": 8,
+          "correct": 0
+        },
+        "ridge": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch1": {
+          "n": 8,
+          "correct": 0
+        },
+        "physical_profile": {
+          "n": 8,
+          "correct": 0
+        },
+        "physical_profile_shuffled": {
+          "n": 8,
+          "correct": 0
+        }
+      },
+      "json/upper/alphabetical": {
+        "released": {
+          "n": 8,
+          "correct": 0
+        },
+        "flat_majority": {
+          "n": 8,
+          "correct": 0
+        },
+        "factorized_majority": {
+          "n": 8,
+          "correct": 0
+        },
+        "ridge": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch1": {
+          "n": 8,
+          "correct": 0
+        },
+        "physical_profile": {
+          "n": 8,
+          "correct": 0
+        },
+        "physical_profile_shuffled": {
+          "n": 8,
+          "correct": 0
+        }
+      },
+      "numbered/lower/original": {
+        "released": {
+          "n": 8,
+          "correct": 0
+        },
+        "flat_majority": {
+          "n": 8,
+          "correct": 0
+        },
+        "factorized_majority": {
+          "n": 8,
+          "correct": 0
+        },
+        "ridge": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch1": {
+          "n": 8,
+          "correct": 7
+        },
+        "physical_profile": {
+          "n": 8,
+          "correct": 0
+        },
+        "physical_profile_shuffled": {
+          "n": 8,
+          "correct": 0
+        }
+      },
+      "numbered/upper/length": {
+        "released": {
+          "n": 8,
+          "correct": 0
+        },
+        "flat_majority": {
+          "n": 8,
+          "correct": 0
+        },
+        "factorized_majority": {
+          "n": 8,
+          "correct": 0
+        },
+        "ridge": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch1": {
+          "n": 8,
+          "correct": 1
+        },
+        "physical_profile": {
+          "n": 8,
+          "correct": 0
+        },
+        "physical_profile_shuffled": {
+          "n": 8,
+          "correct": 0
+        }
+      },
+      "plain/lower/alphabetical": {
+        "released": {
+          "n": 8,
+          "correct": 0
+        },
+        "flat_majority": {
+          "n": 8,
+          "correct": 0
+        },
+        "factorized_majority": {
+          "n": 8,
+          "correct": 0
+        },
+        "ridge": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch1": {
+          "n": 8,
+          "correct": 2
+        },
+        "physical_profile": {
+          "n": 8,
+          "correct": 0
+        },
+        "physical_profile_shuffled": {
+          "n": 8,
+          "correct": 0
+        }
+      },
+      "plain/upper/reverse": {
+        "released": {
+          "n": 8,
+          "correct": 0
+        },
+        "flat_majority": {
+          "n": 8,
+          "correct": 0
+        },
+        "factorized_majority": {
+          "n": 8,
+          "correct": 0
+        },
+        "ridge": {
+          "n": 8,
+          "correct": 0
+        },
+        "epoch1": {
+          "n": 8,
+          "correct": 0
+        },
+        "physical_profile": {
+          "n": 8,
+          "correct": 0
+        },
+        "physical_profile_shuffled": {
+          "n": 8,
+          "correct": 0
+        }
+      }
+    },
+    "initialization_seed": {
+      "2026101611": {
+        "released": {
+          "n": 16,
+          "correct": 0
+        },
+        "flat_majority": {
+          "n": 16,
+          "correct": 2
+        },
+        "factorized_majority": {
+          "n": 16,
+          "correct": 2
+        },
+        "ridge": {
+          "n": 16,
+          "correct": 0
+        },
+        "epoch1": {
+          "n": 16,
+          "correct": 3
+        },
+        "physical_profile": {
+          "n": 16,
+          "correct": 0
+        },
+        "physical_profile_shuffled": {
+          "n": 16,
+          "correct": 0
+        }
+      },
+      "2026101612": {
+        "released": {
+          "n": 16,
+          "correct": 1
+        },
+        "flat_majority": {
+          "n": 16,
+          "correct": 2
+        },
+        "factorized_majority": {
+          "n": 16,
+          "correct": 2
+        },
+        "ridge": {
+          "n": 16,
+          "correct": 0
+        },
+        "epoch1": {
+          "n": 16,
+          "correct": 3
+        },
+        "physical_profile": {
+          "n": 16,
+          "correct": 0
+        },
+        "physical_profile_shuffled": {
+          "n": 16,
+          "correct": 0
+        }
+      },
+      "2026101613": {
+        "released": {
+          "n": 16,
+          "correct": 0
+        },
+        "flat_majority": {
+          "n": 16,
+          "correct": 2
+        },
+        "factorized_majority": {
+          "n": 16,
+          "correct": 2
+        },
+        "ridge": {
+          "n": 16,
+          "correct": 0
+        },
+        "epoch1": {
+          "n": 16,
+          "correct": 4
+        },
+        "physical_profile": {
+          "n": 16,
+          "correct": 0
+        },
+        "physical_profile_shuffled": {
+          "n": 16,
+          "correct": 0
+        }
+      },
+      "2026101614": {
+        "released": {
+          "n": 16,
+          "correct": 0
+        },
+        "flat_majority": {
+          "n": 16,
+          "correct": 2
+        },
+        "factorized_majority": {
+          "n": 16,
+          "correct": 2
+        },
+        "ridge": {
+          "n": 16,
+          "correct": 0
+        },
+        "epoch1": {
+          "n": 16,
+          "correct": 3
+        },
+        "physical_profile": {
+          "n": 16,
+          "correct": 0
+        },
+        "physical_profile_shuffled": {
+          "n": 16,
+          "correct": 0
+        }
+      }
+    }
+  },
+  "profile_metrics": {
+    "rmse": 0.15352073080543363,
+    "nrmse_vs_zero": 0.9948228707814285,
+    "mae": 0.11521648441486552,
+    "max_absolute_error": 0.7950185399824182,
+    "actual_mean_span": 0.5208931399974972,
+    "predicted_mean_span": 0.003165388226787272
+  },
+  "replicates": 2000,
+  "reserved_test_read": false,
+  "limitations": [
+    "A different supervised weight-input decoder, not a released-LoRAcle fine-tune",
+    "One base and one-step native low-rank updates; no arbitrary-checkpoint claim",
+    "Full finite-reference likelihood profiles; no unrestricted generation claim",
+    "Training/development data reused after two failures; no confirmation claim",
+    "Dense low-rank support set retained; no efficiency or compressed-storage claim"
+  ]
+}

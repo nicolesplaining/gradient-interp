@@ -1,0 +1,285 @@
+{
+  "passed": true,
+  "finished_unix": 1792173406.972843,
+  "recipe": "physical_profile_v3",
+  "files_sha256": {
+    "started.json": "de5fe5c4f8f78efd3cba5b0b839dcf9ed7735860b6adb89a6ade2abe9c964510",
+    "preflight.json": "5ff07685c462f16b022c7c7c40a8c3713bd004e0c6f63e3db9eda44c5844980f",
+    "gram.npy": "59a8674b649138c794ce3d220c5d085ab1cf174aed32e5fcb04b416f9d652df9",
+    "kernel-audit.json": "d1508852de2a12f8ea780ec2c2f0a889bfb23753c49c7d423326b3c3641959ee",
+    "model.npz": "7a3901f87efd9b5cf6790ac3980176af59c43e777a0f4764c23bd6cd6ae3aea6",
+    "predictions.json": "36f61332fb8d5f44ec6bc177a73151e376e9d86868ff779430e2894c4e2117d1",
+    "predictions-lock.json": "de983178a835793745b8d83bab9e3097feee9f94cbc085870304fd81e7e90871",
+    "plan.json": "c79d877a6b95cdc64edb2b07e8b8edc4e8431f189c52786177a46fa0bc44a0ae",
+    "data.json": "77d7cf2ccaa515b3ac6f0d9d43300a5539e96a49bbd9832e079fb308d63fe232",
+    "analysis-plan.json": "491a5ae53d81eaa1ea187dd7277d31c893df933d14996b027dd97136c0469d71",
+    "manifest.json": "afd0a34071c83923922bde49dae8b473a9bd21d29b5df9d06e8f51637113294a",
+    "controller.json": "98db1895a20fcfc2bd4d663bd975acedfb15976509e8f367a889fe29f0aa032f",
+    "source_snapshot.tar": "fef752ccbdacc74f3fe81d7c86d8adcd76b5f16e1d7c80c2335c8330f9ad0859",
+    "preparation.json": "191080cf21e2d10c3150bc0398b07f932861a9108315e3be110da3c44a48dcc3"
+  },
+  "cases": 344,
+  "all_native_input_hashes_verified": true,
+  "all_module_norms_verified": true,
+  "independent_cross_pairs": [
+    [
+      254,
+      170
+    ],
+    [
+      131,
+      285
+    ],
+    [
+      14,
+      89
+    ],
+    [
+      269,
+      263
+    ],
+    [
+      184,
+      285
+    ],
+    [
+      190,
+      303
+    ],
+    [
+      64,
+      146
+    ],
+    [
+      187,
+      236
+    ],
+    [
+      247,
+      82
+    ],
+    [
+      26,
+      160
+    ],
+    [
+      275,
+      268
+    ],
+    [
+      218,
+      117
+    ],
+    [
+      188,
+      226
+    ],
+    [
+      341,
+      228
+    ],
+    [
+      328,
+      108
+    ],
+    [
+      230,
+      106
+    ],
+    [
+      277,
+      278
+    ],
+    [
+      254,
+      220
+    ],
+    [
+      328,
+      232
+    ],
+    [
+      204,
+      28
+    ],
+    [
+      192,
+      245
+    ],
+    [
+      343,
+      24
+    ],
+    [
+      267,
+      277
+    ],
+    [
+      285,
+      278
+    ],
+    [
+      177,
+      306
+    ],
+    [
+      94,
+      259
+    ],
+    [
+      184,
+      34
+    ],
+    [
+      333,
+      301
+    ],
+    [
+      286,
+      305
+    ],
+    [
+      80,
+      31
+    ],
+    [
+      26,
+      249
+    ],
+    [
+      83,
+      2
+    ],
+    [
+      234,
+      30
+    ],
+    [
+      269,
+      72
+    ],
+    [
+      240,
+      54
+    ],
+    [
+      251,
+      126
+    ],
+    [
+      40,
+      321
+    ],
+    [
+      294,
+      288
+    ],
+    [
+      71,
+      6
+    ],
+    [
+      326,
+      153
+    ],
+    [
+      314,
+      59
+    ],
+    [
+      342,
+      129
+    ],
+    [
+      67,
+      45
+    ],
+    [
+      85,
+      90
+    ],
+    [
+      51,
+      182
+    ],
+    [
+      218,
+      314
+    ],
+    [
+      265,
+      207
+    ],
+    [
+      290,
+      181
+    ],
+    [
+      276,
+      292
+    ],
+    [
+      254,
+      198
+    ],
+    [
+      273,
+      226
+    ],
+    [
+      212,
+      342
+    ],
+    [
+      342,
+      335
+    ],
+    [
+      187,
+      313
+    ],
+    [
+      95,
+      131
+    ],
+    [
+      61,
+      221
+    ],
+    [
+      172,
+      256
+    ],
+    [
+      280,
+      290
+    ],
+    [
+      241,
+      126
+    ],
+    [
+      336,
+      106
+    ],
+    [
+      208,
+      159
+    ],
+    [
+      237,
+      97
+    ],
+    [
+      125,
+      110
+    ],
+    [
+      33,
+      121
+    ]
+  ],
+  "cross_pair_max_abs_error": 4.440892098500626e-16,
+  "training_only_fit_recomputed": true,
+  "reserved_cases_accessed": 0
+}

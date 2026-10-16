@@ -1,0 +1,51 @@
+{
+  "created_unix": 1792173570.3494241,
+  "scope": "post-completion diagnostic only; original floor and primary scores unchanged",
+  "training_pair_cosine_same_initialization": {
+    "n": 8064,
+    "mean": 0.2995787360103141,
+    "median": 0.2670910878049159,
+    "min": 0.0803798780206321,
+    "max": 0.7095585726959712
+  },
+  "training_pair_cosine_different_initializations": {
+    "n": 24576,
+    "mean": 0.00099179852757278,
+    "median": 0.0009196818537551622,
+    "min": 0.0001190627000627911,
+    "max": 0.0024535096345764352
+  },
+  "development_to_training_cosine": {
+    "n": 16384,
+    "mean": 0.00048337858988527655,
+    "median": 0.00044127333839368704,
+    "min": 2.0129211915144924e-05,
+    "max": 0.0015469127472582348
+  },
+  "in_sample_training_profile_nrmse": 0.005182956490319835,
+  "predicted_development_span": {
+    "n": 64,
+    "mean": 0.003165388226787272,
+    "median": 0.0032443323675061778,
+    "min": 0.0016060210573881732,
+    "max": 0.004882556937456887
+  },
+  "actual_development_span": {
+    "n": 64,
+    "mean": 0.5208931399974972,
+    "median": 0.5141760259866714,
+    "min": 0.20201075077056885,
+    "max": 1.0102030038833618
+  },
+  "diagnostic_only_argmax_without_fixed_floor": {
+    "correct": 10,
+    "n": 64,
+    "prediction_counts": {
+      "bullets/lower/reverse": 22,
+      "numbered/lower/reverse": 37,
+      "plain/lower/original": 5
+    },
+    "not_a_valid_primary_result": "The fixed .02 floor remains; ignoring it is a post-hoc diagnostic and cannot rescue failure."
+  },
+  "reserved_test_read": false
+}

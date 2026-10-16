@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "finished_unix": 1792173166.598705,
+  "plan_sha256": "c79d877a6b95cdc64edb2b07e8b8edc4e8431f189c52786177a46fa0bc44a0ae",
+  "source_commit": "8038139e2c48b521abeff9e60ea75b3f244c8260",
+  "source_archive_sha256": "fef752ccbdacc74f3fe81d7c86d8adcd76b5f16e1d7c80c2335c8330f9ad0859",
+  "source_files": 92,
+  "input_files": 702,
+  "reserved_cases_accessed": 0
+}

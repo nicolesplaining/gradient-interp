@@ -1,0 +1,53 @@
+{
+  "copied_unix": 1792173468.6485918,
+  "files_sha256": {
+    "started.json": "de5fe5c4f8f78efd3cba5b0b839dcf9ed7735860b6adb89a6ade2abe9c964510",
+    "preflight.json": "5ff07685c462f16b022c7c7c40a8c3713bd004e0c6f63e3db9eda44c5844980f",
+    "gram.npy": "59a8674b649138c794ce3d220c5d085ab1cf174aed32e5fcb04b416f9d652df9",
+    "kernel-audit.json": "d1508852de2a12f8ea780ec2c2f0a889bfb23753c49c7d423326b3c3641959ee",
+    "model.npz": "7a3901f87efd9b5cf6790ac3980176af59c43e777a0f4764c23bd6cd6ae3aea6",
+    "predictions.json": "36f61332fb8d5f44ec6bc177a73151e376e9d86868ff779430e2894c4e2117d1",
+    "predictions-lock.json": "de983178a835793745b8d83bab9e3097feee9f94cbc085870304fd81e7e90871",
+    "plan.json": "c79d877a6b95cdc64edb2b07e8b8edc4e8431f189c52786177a46fa0bc44a0ae",
+    "data.json": "77d7cf2ccaa515b3ac6f0d9d43300a5539e96a49bbd9832e079fb308d63fe232",
+    "analysis-plan.json": "491a5ae53d81eaa1ea187dd7277d31c893df933d14996b027dd97136c0469d71",
+    "manifest.json": "afd0a34071c83923922bde49dae8b473a9bd21d29b5df9d06e8f51637113294a",
+    "controller.json": "98db1895a20fcfc2bd4d663bd975acedfb15976509e8f367a889fe29f0aa032f",
+    "source_snapshot.tar": "fef752ccbdacc74f3fe81d7c86d8adcd76b5f16e1d7c80c2335c8330f9ad0859",
+    "preparation.json": "191080cf21e2d10c3150bc0398b07f932861a9108315e3be110da3c44a48dcc3",
+    "integrity.json": "d3f3a727fd09aca171557c1a226bf111341d49aa36414c13b074212eedb596be",
+    "launch.json": "2365f253ba4d61b013b4dc7de2245effd6b655977c47de95186bbb507f98cfb7",
+    "status.json": "d55ca3866333799f658c57d565de1cca21fd9fb88f26ec5ea22f26d46e9ba66b",
+    "analysis/analysis-provenance.json": "9fb70a16507405adf2ea43d6ee5a1014edf2fdc721b4c922d2ed474033eb8200",
+    "analysis/development-accuracy.png": "decce0dbe0e85f1162db1d619dcf4ec15c0197ddc71097ac6aed049e85454d76",
+    "analysis/all-development-cases.json": "37bc800e32a61670265d1b0d0baac113bc96dc13d29433f3095b2b9968304e11",
+    "analysis/summary.json": "de9d8181120e32d594588ec980077126b765ddeaabc4eb1b8fb88e0b554af066",
+    "analysis/report.html": "48ee2acb2c20a59eb58ea1ccd549c5b0f47f6e130a57140d3180ebdd0d8c8153",
+    "analysis/executed-analysis.py": "eff6c790fdffb069cd20a43c1595816b8be452c50e850e5142edf1feaa0a0de7"
+  },
+  "handoff": {
+    "status": "manual audit and analysis complete",
+    "controller": {
+      "scope": "development_only",
+      "started_unix": 1792173189.5803554,
+      "deadline_unix": 1792180389.5803554,
+      "status": "complete",
+      "controller_pid": 289402,
+      "worker_pid": null,
+      "plan_sha256": "c79d877a6b95cdc64edb2b07e8b8edc4e8431f189c52786177a46fa0bc44a0ae",
+      "attempts": [
+        {
+          "job": "fit",
+          "pid": 289412,
+          "started_unix": 1792173189.5832298,
+          "finished_unix": 1792173300.4367898,
+          "returncode": 0
+        }
+      ],
+      "current_job": "fit",
+      "checked_unix": 1792173300.4371674
+    }
+  },
+  "only_after_complete_audit_and_dead_worker": true,
+  "original_live_metadata_preserved": true
+}

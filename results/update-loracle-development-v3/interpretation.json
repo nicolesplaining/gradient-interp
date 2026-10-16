@@ -1,0 +1,22 @@
+{
+  "created_unix": 1792173695.986891,
+  "verdict": "The fixed physical-profile kernel decoder fails. All64 actual updates predicted no_change; all8zero controls correct. No untouched test is released. Goal remains active.",
+  "main_result": {
+    "physical_decoder_correct": 0,
+    "actual_updates": 64,
+    "released_correct": 1,
+    "previous_component_correct": 13,
+    "training_majority_correct": 8,
+    "physical_shuffled_correct": 0
+  },
+  "magnitudes": {
+    "predicted_mean_span": 0.003165388226787272,
+    "actual_mean_span": 0.5208931399974972,
+    "profile_nrmse": 0.9948228707814285
+  },
+  "diagnosis": "Training-profile in-sample nRMSE is.00518, but transfer fails. Mean physical cosine is.29958 for training updates with shared initialization, .000992 across different training initializations and .000483 from development to training. These associations show the kernel is poorly suited to the required fresh-initialization transfer; they do not prove initialization is the only cause.",
+  "no_rescue": "Dropping the fixed effect-size floor would give only10/64 argmax matches. This is post-hoc diagnosis, not a valid primary result, and the threshold remains unchanged. No global scale fitting or kernel penalty tuning is justified as a fix for complete-category accuracy.",
+  "next_step": "One base-aware sensitivity decoder using the exact original Qwen3-14B and a fixed eight-prompt training-only calibration library. Predict the32 centered reference-loss changes by gradient contraction with each actual native one-step update. This is a standard first-order prediction baseline, not a successful LoRAcle fine-tune or a novel identity. Freeze all details before any new prediction; original full-category gates and untouched grids remain.",
+  "reserved_test_read": false,
+  "next_experiment_launched": false
+}

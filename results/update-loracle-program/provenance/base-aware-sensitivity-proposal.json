@@ -1,0 +1,25 @@
+{
+  "frozen_unix": 1792173695.994211,
+  "scope": "One next development test; not yet implemented or launched",
+  "motivation": "Training-profile in-sample nRMSE is.00518, but transfer fails. Mean physical cosine is.29958 for training updates with shared initialization, .000992 across different training initializations and .000483 from development to training. These associations show the kernel is poorly suited to the required fresh-initialization transfer; they do not prove initialization is the only cause.",
+  "method": "Base-aware calibration-gradient sensitivity decoder. Standard first-order loss prediction; explicit change from learned LoRAcle decoding. No new target-model training, no source-category substitution.",
+  "calibration_selection": "Exactly the first8 distinct original TRAINING probe prompts in original training-case order. Keep original values/template and reference32-pattern answers/EOS. No development or reserved prompt, batch, effect or outcome used for calibration selection. Reuse these exact8 prompts for every initialization and any later untouched-grid inference.",
+  "model": "Same exact original Qwen3-14B BF16 frozen base and native FP32 rank16alpha32 seven-module adapter architecture; no retraining/download. At each native input initialization, B=0 and A is the exact provided initial A.",
+  "prediction": "For each32pattern, average the gradient of mean-completion CE over the eight fixed calibration prompts at zero B. Dot gradient_B with actual updated B over all280 modules. This equals the local physical-weight directional derivative because A is unchanged. Center negative predicted CE changes over all32patterns. Use unchanged span.02nats/token no_change rule and stable argmax. No fitted scale, clipping, new learning-rate, selected components or changing success criterion.",
+  "new_initializations": "Calibration gradients must be computed for the supplied initial A of each new initialization using only frozen calibration prompts/base, before any held-out outcome measurement. Do not treat a training-seed gradient bank as transferable to a different A.",
+  "inference_inputs": "Native one-step update/initialization weights plus fixed base model and frozen calibration library. Exclude that update training batch, source label, new evaluation probe prompts and outcomes. This is more task-specific infrastructure than ordinary LoRAcle; disclose the difference.",
+  "data": "All original344 train/development cases and controls remain. No new target updates or generation. Original reserved136 and fixed fresh136 remain uncollected until the unchanged development gates pass and exact model/input contract freezes.",
+  "comparisons": "Same frozen released four-question LoRAcle, both training majorities, earlier component and physical-profile decoders as historical references, matched direction shuffle retaining recipient norm. Shuffled actual physical direction must be contracted in its own A coordinate system with recipient norm scaling.",
+  "gates": {
+    "joint_accuracy": 0.7,
+    "released_advantage": 0.2,
+    "both_majority_advantages": 0.1,
+    "direction_shuffle_advantage": 0.1,
+    "zero_accuracy": 0.9,
+    "measured_effect_span_ge_.02_fraction": 0.8
+  },
+  "validation": "Source review, meaningful synthetic direct-vs-factor contraction/scale/zero/EOS averaging tests, training-only actual autograd/numerical preflight, source/input/gradient-bank/forecast hashes, complete/dead release, exactly32fixed output patterns and all280 modules, allcompleteprofiles and failures retained. No automatic retry.",
+  "analysis": "Same2000 paired crossed composition/initialization/case bootstrap and complete full-category metrics; profile RMSE/scale only diagnostic. No partial-axis or near-tie promotion. Any later confirmation keeps original simultaneous bounds and both untouched grids.",
+  "implementation_status": "pending; exact worker, numerical tolerances and immutable execution deadline must freeze before any new GPU computation",
+  "reserved_test_read": false
+}

@@ -1,0 +1,8 @@
+{
+  "created_unix": 1792173695.9924119,
+  "original_executed_analysis_sha256": "eff6c790fdffb069cd20a43c1595816b8be452c50e850e5142edf1feaa0a0de7",
+  "original_report_sha256": "48ee2acb2c20a59eb58ea1ccd549c5b0f47f6e130a57140d3180ebdd0d8c8153",
+  "numerical_files_unchanged": true,
+  "plot_visually_checked": true,
+  "change": "Added result summary only; original executed report retained."
+}

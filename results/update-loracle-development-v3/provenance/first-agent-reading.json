@@ -1,0 +1,14 @@
+{
+  "recorded_unix": 1792173477.485047,
+  "new_predictions_read_before_this_record": false,
+  "complete_integrity_sha256": "d3f3a727fd09aca171557c1a226bf111341d49aa36414c13b074212eedb596be",
+  "copy_receipt_sha256": "34b529d10f25e16e41bab15a213e5e06f220211e181e8505b93f8f6c6e5b5818",
+  "analysis_sha256": {
+    "summary.json": "de9d8181120e32d594588ec980077126b765ddeaabc4eb1b8fb88e0b554af066",
+    "all-development-cases.json": "37bc800e32a61670265d1b0d0baac113bc96dc13d29433f3095b2b9968304e11",
+    "executed-analysis.py": "eff6c790fdffb069cd20a43c1595816b8be452c50e850e5142edf1feaa0a0de7",
+    "analysis-provenance.json": "9fb70a16507405adf2ea43d6ee5a1014edf2fdc721b4c922d2ed474033eb8200",
+    "development-accuracy.png": "decce0dbe0e85f1162db1d619dcf4ec15c0197ddc71097ac6aed049e85454d76",
+    "report.html": "48ee2acb2c20a59eb58ea1ccd549c5b0f47f6e130a57140d3180ebdd0d8c8153"
+  }
+}
