@@ -1,0 +1,31 @@
+{
+  "reviewed_unix": 1792174671.015798,
+  "status": "reviewed and tested; not yet GPU preflighted, frozen or launched",
+  "files_sha256": {
+    "src/gradient_interp/update_loracle_sensitivity.py": "a1815e46a78d2a847c4e341185227b8835976d0b618977bf1b678e88b68470f5",
+    "src/gradient_interp/update_loracle_sensitivity_analysis.py": "6c8068afdab0a742c34c23c3ae75da3ce9f27bc11fd6d666f25c35a3bf3d6beb",
+    "scripts/prepare_update_loracle_sensitivity.py": "2d8e62513b2e19fbea3874fe284fd5163393fd6e61fd39516744351bf2feeac8",
+    "tests/test_update_loracle_sensitivity.py": "63ce1b2df293fc2b169150590b34c644dc32c8dd4ef7f43f4749c19b59d402cc",
+    "tests/test_update_loracle_sensitivity_analysis.py": "6352623d6a14847117abd8f2c3950c4c8a8a21a9949693c3e68cca1c059976a2"
+  },
+  "tests_passed": 30,
+  "ruff": "passed",
+  "checks": [
+    "Original mean-completion CE including EOS, equal document weights over eight fixed training prompts",
+    "Every exact initialization has its own calibration gradient; no held-out prompts or outcomes in prediction",
+    "Native dL/dB already includes alpha/rank scaling; signed contraction matches dense physical derivative",
+    "Same full 32-pattern target, original .02 span floor, no fitting, no partial-axis success",
+    "Shuffle contracts donor in its own A coordinates and preserves recipient norm",
+    "Independent all-contraction recomputation plus two fixed derivative-bank checks before accuracy analysis",
+    "Complete-and-dead barrier, immutable four-hour execution, original input/source hashes, no retry"
+  ],
+  "previous_archive_verification": {
+    "checked_unix": 1792174390.7226512,
+    "source_files": 92,
+    "sha256": "fef752ccbdacc74f3fe81d7c86d8adcd76b5f16e1d7c80c2335c8330f9ad0859",
+    "controller": "complete",
+    "gpu_empty": true
+  },
+  "new_scientific_outputs_read": false,
+  "reserved_cases_accessed": 0
+}
