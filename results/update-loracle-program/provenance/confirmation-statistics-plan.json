@@ -1,0 +1,36 @@
+{
+  "created_unix": 1792145323.7045388,
+  "status": "Prepared and synthetic-tested only; no test data collection or test model selection has occurred",
+  "model_selection": "Freeze exactly one development-selected model and all source/model/data/input hashes before any reserved-test or fresh-confirmation access. The current active first training phase is unchanged.",
+  "scope": "Single AdamW updates; compositional generalization within known operations on one fixed base model, with unseen words/prompts/batches and adapter initializations. No unseen-operation or arbitrary-model claim.",
+  "per_evaluation_grid": {
+    "actual_updates": 128,
+    "zero_controls": 8,
+    "held_out_source_compositions": 8,
+    "initialization_seeds": 4,
+    "actual_cases_per_composition_seed_cell": 4
+  },
+  "primary": "Exact measured-effect label on all128 actual updates, including no-change labels when the effect span is below.02. Zero controls reported separately. No weak-case exclusions.",
+  "strong_numeric_requirements": {
+    "accuracy_at_least": 0.7,
+    "advantage_over_released_at_least": 0.2,
+    "accuracy_simultaneous_lower_bound_above": 0.6,
+    "advantage_simultaneous_lower_bound_above": 0.1,
+    "effect_coverage_at_least": 0.8,
+    "zero_control_accuracy_at_least": 0.9,
+    "advantage_over_majority_at_least": 0.1,
+    "advantage_over_shuffled_directions_at_least": 0.1
+  },
+  "bootstrap": {
+    "replicates": 4000,
+    "seed": 2026101665,
+    "scheme": "Crossed composition and initialization resampling, then cases within selected cells, identical draws for all methods",
+    "primary_intervals": "Two97.5% marginal two-sided percentile intervals:1.25th/98.75th percentiles, Bonferroni target95% simultaneous coverage. This specifies the previously stated97.5% convention before outcomes.",
+    "limits": "Eight composition clusters/four initializations; empirical bootstrap cannot infer unobserved failures, and intervals do not establish broad task/model generalization."
+  },
+  "paired_test": "Enumerate all256 method swaps by8 whole composition clusters, shared acrossall initialization/case observations. One-sided advantage statistic; requires cluster sign-exchangeability, not128 independent Bernoulli trials.",
+  "comparators": "Adapted, unchanged released, adapted with matched shuffled directions, training-only majority and training-only ridge. All required; never choose a weaker reference after results.",
+  "completion": "Numeric gates alone cannot mark the goal complete. Verify audits, untouched examples, model lock before test access, complete counts and outputs, independence from development selection, all negative cases and honest scope. Original protocol also requires a separately frozen fresh held-out confirmation draw; development cannot substitute for it.",
+  "source_sha256": "f031dd7c54aed26a5731726d869a787d90827ce4fd9890f5e9ad6d5fc439c25c",
+  "validation": "Five meaningful synthetic tests passed: pairedcluster swaps, matched covariance, weak-case denominator, shortcut rejection and incomplete-grid rejection."
+}
