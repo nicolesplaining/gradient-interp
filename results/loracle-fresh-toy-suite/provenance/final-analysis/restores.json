@@ -1,0 +1,434 @@
+[
+  {
+    "condition": "s2026101471-p0-o0-1",
+    "fingerprint": "645707d14030a812636c93937ff923c6b5dbd5465a77439888518dbeaab170b2",
+    "frozen_a_fingerprint": "2740a3d9f21c11797b8ccafa68d17c7260e7b0106a3293454336a4801a5a3d6d",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101471-p0-o0-short",
+    "fingerprint": "6c4187847d450a74d6c32b0f523681d4121b7eee0b76db8663f6f3abd33ab519",
+    "frozen_a_fingerprint": "2740a3d9f21c11797b8ccafa68d17c7260e7b0106a3293454336a4801a5a3d6d",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101471-p0-o0-2",
+    "fingerprint": "9f7699f4158834077ee8bd4f2f366f58f9be70a9f2d23d72250dcbb6965dec51",
+    "frozen_a_fingerprint": "2740a3d9f21c11797b8ccafa68d17c7260e7b0106a3293454336a4801a5a3d6d",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101471-p0-o1-1",
+    "fingerprint": "645707d14030a812636c93937ff923c6b5dbd5465a77439888518dbeaab170b2",
+    "frozen_a_fingerprint": "4bf972de6f394916900f75bf15b5a8526c42d0e03470052fea7e72e05b1c9163",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101471-p0-o1-short",
+    "fingerprint": "0e557b0d7ce4b062e3e183d4763d92fcd1d62ad7ad60fca9e030b7eb55dc3847",
+    "frozen_a_fingerprint": "4bf972de6f394916900f75bf15b5a8526c42d0e03470052fea7e72e05b1c9163",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101471-p0-o1-2",
+    "fingerprint": "76ec97b9694812695d0fde2d68404e6a583c459e7f5fae588dec138a7ef0ec4b",
+    "frozen_a_fingerprint": "4bf972de6f394916900f75bf15b5a8526c42d0e03470052fea7e72e05b1c9163",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101471-p1-o0-1",
+    "fingerprint": "645707d14030a812636c93937ff923c6b5dbd5465a77439888518dbeaab170b2",
+    "frozen_a_fingerprint": "e042856185122329091cbf878943ce349fed810620e3a1a0eeb3951eba657d28",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101471-p1-o0-short",
+    "fingerprint": "db55ad7966a9d2fbf57dc25eb992b1e8c202ec74468ecb3cab20478233d6e852",
+    "frozen_a_fingerprint": "e042856185122329091cbf878943ce349fed810620e3a1a0eeb3951eba657d28",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101471-p1-o0-2",
+    "fingerprint": "295780aa9534acea46d66d61bb1d6680bb899f47591ee952a9c8b72a4dd2cfc1",
+    "frozen_a_fingerprint": "e042856185122329091cbf878943ce349fed810620e3a1a0eeb3951eba657d28",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101471-p1-o1-1",
+    "fingerprint": "645707d14030a812636c93937ff923c6b5dbd5465a77439888518dbeaab170b2",
+    "frozen_a_fingerprint": "90c6a098f7d933877c9f3ecfafc903dc1ff37a0421f023c046ebe6d6856a1d4b",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101471-p1-o1-short",
+    "fingerprint": "c10067ffe6b29c49f7c3c6a1b23b8848fa1d8e1bb74d74fd27ca330c00979680",
+    "frozen_a_fingerprint": "90c6a098f7d933877c9f3ecfafc903dc1ff37a0421f023c046ebe6d6856a1d4b",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101471-p1-o1-2",
+    "fingerprint": "c86b235f0a6028d06dbe8903aadf5e3203eb44b1135ee62d61c9854d5255ab48",
+    "frozen_a_fingerprint": "90c6a098f7d933877c9f3ecfafc903dc1ff37a0421f023c046ebe6d6856a1d4b",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101471-p2-o0-1",
+    "fingerprint": "645707d14030a812636c93937ff923c6b5dbd5465a77439888518dbeaab170b2",
+    "frozen_a_fingerprint": "ce97de9eccc594fbdb32b1c8080274d61051ba3af78ca97c6a7272f22520a37a",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101471-p2-o0-short",
+    "fingerprint": "8224964eb6e26c0021d763f3495d25e9213b38580b163ee6919c22eb9014c625",
+    "frozen_a_fingerprint": "ce97de9eccc594fbdb32b1c8080274d61051ba3af78ca97c6a7272f22520a37a",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101471-p2-o0-2",
+    "fingerprint": "5f7a0075f07027ed07dfbcf92cd7fdcb471e13049290c9b282603007cc349387",
+    "frozen_a_fingerprint": "ce97de9eccc594fbdb32b1c8080274d61051ba3af78ca97c6a7272f22520a37a",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101471-p2-o1-1",
+    "fingerprint": "645707d14030a812636c93937ff923c6b5dbd5465a77439888518dbeaab170b2",
+    "frozen_a_fingerprint": "109191f9e67890b53d3bcc347c93321a4aaed5f0691f5dbdb65b3793032b30de",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101471-p2-o1-short",
+    "fingerprint": "00c62be577ccac1f08228efeed1f837fab1c883337591a3d6f1a13dcef90038c",
+    "frozen_a_fingerprint": "109191f9e67890b53d3bcc347c93321a4aaed5f0691f5dbdb65b3793032b30de",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101471-p2-o1-2",
+    "fingerprint": "fedd8dce4aa29c2bf60d80c16f0c1c85e02edc65d2c5743440dc01c5a5ccce37",
+    "frozen_a_fingerprint": "109191f9e67890b53d3bcc347c93321a4aaed5f0691f5dbdb65b3793032b30de",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101471-p3-o0-1",
+    "fingerprint": "645707d14030a812636c93937ff923c6b5dbd5465a77439888518dbeaab170b2",
+    "frozen_a_fingerprint": "97f6d45676a87e9cf5b221bdd61ee95e5b4427a32c25b2556ec4e816fe397d9f",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101471-p3-o0-short",
+    "fingerprint": "7780dbd728f15beee204d79a799e47bdc3845e115c8b3045364af6d20fae26a2",
+    "frozen_a_fingerprint": "97f6d45676a87e9cf5b221bdd61ee95e5b4427a32c25b2556ec4e816fe397d9f",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101471-p3-o0-2",
+    "fingerprint": "5f34bbfa13861063cdc8d0a408f22560207571874f72210a89242db773f76159",
+    "frozen_a_fingerprint": "97f6d45676a87e9cf5b221bdd61ee95e5b4427a32c25b2556ec4e816fe397d9f",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101471-p3-o1-1",
+    "fingerprint": "645707d14030a812636c93937ff923c6b5dbd5465a77439888518dbeaab170b2",
+    "frozen_a_fingerprint": "85f282f7e17435bde11937cc8ecb9f94320493bd9bcd7adaba241523487f81ce",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101471-p3-o1-short",
+    "fingerprint": "90a8c09480ede441b5ea0051d95c73245cccb1bedf1ccacafd6af99ca31ac1c9",
+    "frozen_a_fingerprint": "85f282f7e17435bde11937cc8ecb9f94320493bd9bcd7adaba241523487f81ce",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101471-p3-o1-2",
+    "fingerprint": "c42d0992c75231a75cf013500b0ceb3bfa40208632a452ad87dd9f79d37f7d78",
+    "frozen_a_fingerprint": "85f282f7e17435bde11937cc8ecb9f94320493bd9bcd7adaba241523487f81ce",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101472-p0-o0-1",
+    "fingerprint": "cf9269d6e83991350616178b12fa2d30c9cf8374b7afa5f4a7638af16465e717",
+    "frozen_a_fingerprint": "cb6a83e5a91100d41e9e7cc4a82d4c2775b0ff245739f1b10d9625f506b17e96",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101472-p0-o0-short",
+    "fingerprint": "7d13a5645914d6cb7010ad80faaab3333b3d1d81466005178c480f61738ef422",
+    "frozen_a_fingerprint": "cb6a83e5a91100d41e9e7cc4a82d4c2775b0ff245739f1b10d9625f506b17e96",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101472-p0-o0-2",
+    "fingerprint": "0c15617d293e5486d4380c14dc36021cc5fa0e9d9b2b2c4d947fe5dd58b38b68",
+    "frozen_a_fingerprint": "cb6a83e5a91100d41e9e7cc4a82d4c2775b0ff245739f1b10d9625f506b17e96",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101472-p0-o1-1",
+    "fingerprint": "cf9269d6e83991350616178b12fa2d30c9cf8374b7afa5f4a7638af16465e717",
+    "frozen_a_fingerprint": "70b08f35f602de6cc980d76f60b250aeb662248240529cbeed3a6cd14f4a46b7",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101472-p0-o1-short",
+    "fingerprint": "ec3229ad00e8bec4f9ad6c31d3f8dfe148c07dbd08407858fed1eb1ae2edf795",
+    "frozen_a_fingerprint": "70b08f35f602de6cc980d76f60b250aeb662248240529cbeed3a6cd14f4a46b7",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101472-p0-o1-2",
+    "fingerprint": "32fd9060e8c9e317c545913d01da6389781e6063920c24e6bfa5724a0fa681eb",
+    "frozen_a_fingerprint": "70b08f35f602de6cc980d76f60b250aeb662248240529cbeed3a6cd14f4a46b7",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101472-p1-o0-1",
+    "fingerprint": "cf9269d6e83991350616178b12fa2d30c9cf8374b7afa5f4a7638af16465e717",
+    "frozen_a_fingerprint": "06cd7f13f79c00a6ec1cfb4b19d3d39ef6900dce5d2ee66432f67d60233df8a9",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101472-p1-o0-short",
+    "fingerprint": "81d5f1ad97aeec2ffce8c8254e7020dfab0dbf39ee19dd0362880bcf40fe6f45",
+    "frozen_a_fingerprint": "06cd7f13f79c00a6ec1cfb4b19d3d39ef6900dce5d2ee66432f67d60233df8a9",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101472-p1-o0-2",
+    "fingerprint": "9a0f8fca5e989a2a0095d8747996d32d89bdc442e008fae79c9aaec3cb377604",
+    "frozen_a_fingerprint": "06cd7f13f79c00a6ec1cfb4b19d3d39ef6900dce5d2ee66432f67d60233df8a9",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101472-p1-o1-1",
+    "fingerprint": "cf9269d6e83991350616178b12fa2d30c9cf8374b7afa5f4a7638af16465e717",
+    "frozen_a_fingerprint": "4bd0908dd7d12e8b1c644ac4e97382d09ef3123d349904f066423869aa6b1cf1",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101472-p1-o1-short",
+    "fingerprint": "c6cfbb0a1c935a5a6b211bbaba5053e6aa0936e9a21988185a59f479cfd333ac",
+    "frozen_a_fingerprint": "4bd0908dd7d12e8b1c644ac4e97382d09ef3123d349904f066423869aa6b1cf1",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101472-p1-o1-2",
+    "fingerprint": "02bf5ba55d8b6db811b37988fed462b4623100b75c7d1f6da5b001df1bb579a2",
+    "frozen_a_fingerprint": "4bd0908dd7d12e8b1c644ac4e97382d09ef3123d349904f066423869aa6b1cf1",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101472-p2-o0-1",
+    "fingerprint": "cf9269d6e83991350616178b12fa2d30c9cf8374b7afa5f4a7638af16465e717",
+    "frozen_a_fingerprint": "48f4e7f3ac1ac732eb235c10b3873fd65688b122ce05f57b492bdb93d921f322",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101472-p2-o0-short",
+    "fingerprint": "04039a239c8bac20e4bc60fc62a67762190e5fa70c3db5e5a8bc6f6ec2b951c4",
+    "frozen_a_fingerprint": "48f4e7f3ac1ac732eb235c10b3873fd65688b122ce05f57b492bdb93d921f322",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101472-p2-o0-2",
+    "fingerprint": "21c3c59c5282c207a1f56a5c62ab4d8a860404806160263e634bedf3ce204e5c",
+    "frozen_a_fingerprint": "48f4e7f3ac1ac732eb235c10b3873fd65688b122ce05f57b492bdb93d921f322",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101472-p2-o1-1",
+    "fingerprint": "cf9269d6e83991350616178b12fa2d30c9cf8374b7afa5f4a7638af16465e717",
+    "frozen_a_fingerprint": "1dd3a011b56f0c9cfa10a5c6e898002f547c65c67f479ad81ded9d2b9613531d",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101472-p2-o1-short",
+    "fingerprint": "f4604be2efed0fa6e305735375cd1fc8e20b95f591fb28539fedca908f473bd7",
+    "frozen_a_fingerprint": "1dd3a011b56f0c9cfa10a5c6e898002f547c65c67f479ad81ded9d2b9613531d",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101472-p2-o1-2",
+    "fingerprint": "a9f2b6da50381f75aa7b1caa338d4cfbc89f408f50817cff6de14748dbcd101d",
+    "frozen_a_fingerprint": "1dd3a011b56f0c9cfa10a5c6e898002f547c65c67f479ad81ded9d2b9613531d",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101472-p3-o0-1",
+    "fingerprint": "cf9269d6e83991350616178b12fa2d30c9cf8374b7afa5f4a7638af16465e717",
+    "frozen_a_fingerprint": "c8ff6e94f8f6440fb796a5bf68084e0054765daa587920cd985aa5f756cab632",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101472-p3-o0-short",
+    "fingerprint": "ad4106c13599c9a1e98bd4f2e0fee79a8e1e30dead40d48507faef7cb66204eb",
+    "frozen_a_fingerprint": "c8ff6e94f8f6440fb796a5bf68084e0054765daa587920cd985aa5f756cab632",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101472-p3-o0-2",
+    "fingerprint": "45a05551e79103c5f97a33d31aa215f42b28ce1bf2f53189dbd084eb1ee2914b",
+    "frozen_a_fingerprint": "c8ff6e94f8f6440fb796a5bf68084e0054765daa587920cd985aa5f756cab632",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101472-p3-o1-1",
+    "fingerprint": "cf9269d6e83991350616178b12fa2d30c9cf8374b7afa5f4a7638af16465e717",
+    "frozen_a_fingerprint": "08521a7e20c1d0d07af131bdda572ce0381d62dcb3e4ec3a71ff20c00e1f3a5f",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101472-p3-o1-short",
+    "fingerprint": "07383a5fa11ceb47e37054acdf72d35012d3a09994801819ca4fc2a4a0c20530",
+    "frozen_a_fingerprint": "08521a7e20c1d0d07af131bdda572ce0381d62dcb3e4ec3a71ff20c00e1f3a5f",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101472-p3-o1-2",
+    "fingerprint": "ccaf87a7631991a2bd01dd4e92eabea96807a98effeecb60ae877475da394590",
+    "frozen_a_fingerprint": "08521a7e20c1d0d07af131bdda572ce0381d62dcb3e4ec3a71ff20c00e1f3a5f",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101473-p0-o0-1",
+    "fingerprint": "919e11eed2d6a3eeaa8b16a293371d357befcf5b3c233f15fd5f5ac98ef3030d",
+    "frozen_a_fingerprint": "40bcad9edf15aec889991e4e3cfc65b838f13befe01b1e05fc053c580b4fa3b3",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101473-p0-o0-short",
+    "fingerprint": "867963ce2fa279726792c4e1880c40b0cc66cabd71991d7f8c4bf3a0a095ef81",
+    "frozen_a_fingerprint": "40bcad9edf15aec889991e4e3cfc65b838f13befe01b1e05fc053c580b4fa3b3",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101473-p0-o0-2",
+    "fingerprint": "ef2d559777be07eb05ff8c7a3adaa66d50728b1f3f21495d717608203156a657",
+    "frozen_a_fingerprint": "40bcad9edf15aec889991e4e3cfc65b838f13befe01b1e05fc053c580b4fa3b3",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101473-p0-o1-1",
+    "fingerprint": "919e11eed2d6a3eeaa8b16a293371d357befcf5b3c233f15fd5f5ac98ef3030d",
+    "frozen_a_fingerprint": "3841fec4243a4e0a193cd5892872d9fcf8b1139441907f235e7bd7170429c0b7",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101473-p0-o1-short",
+    "fingerprint": "386fcfb1e3e9adecdb7954dca1f2eda969d70a510d05cf784ccaa674894fdfea",
+    "frozen_a_fingerprint": "3841fec4243a4e0a193cd5892872d9fcf8b1139441907f235e7bd7170429c0b7",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101473-p0-o1-2",
+    "fingerprint": "05b402cff323ab981cc4a2563fc9babf6b6cb89bcf0c43b355fdab71106dc53b",
+    "frozen_a_fingerprint": "3841fec4243a4e0a193cd5892872d9fcf8b1139441907f235e7bd7170429c0b7",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101473-p1-o0-1",
+    "fingerprint": "919e11eed2d6a3eeaa8b16a293371d357befcf5b3c233f15fd5f5ac98ef3030d",
+    "frozen_a_fingerprint": "04ad3d0b2bbc080808dd71ebaa515a73a868983ed51b4c28eb7c5bcd4b8a0b9f",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101473-p1-o0-short",
+    "fingerprint": "274b46e24ef4896a08864cf6b699d52c8bef1aced23e3fa4b01bb5f65676f3e4",
+    "frozen_a_fingerprint": "04ad3d0b2bbc080808dd71ebaa515a73a868983ed51b4c28eb7c5bcd4b8a0b9f",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101473-p1-o0-2",
+    "fingerprint": "7f2ef222c7e216fdda67d943b3192087329f174cf0f71bdfe8d53e7af93a3070",
+    "frozen_a_fingerprint": "04ad3d0b2bbc080808dd71ebaa515a73a868983ed51b4c28eb7c5bcd4b8a0b9f",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101473-p1-o1-1",
+    "fingerprint": "919e11eed2d6a3eeaa8b16a293371d357befcf5b3c233f15fd5f5ac98ef3030d",
+    "frozen_a_fingerprint": "7e526d88a68fa78e76024df24fbd8662d0340ba2fcf6d32c48fb5eedb6e5a777",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101473-p1-o1-short",
+    "fingerprint": "64f3772b970649ac67433e4a585b18c17b0371f75b658a2c659772f11d7e8468",
+    "frozen_a_fingerprint": "7e526d88a68fa78e76024df24fbd8662d0340ba2fcf6d32c48fb5eedb6e5a777",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101473-p1-o1-2",
+    "fingerprint": "fbdb385b857e77e29cbb07ec169255d7d5c99d335d0d0ed7684e83d3b8fb82ad",
+    "frozen_a_fingerprint": "7e526d88a68fa78e76024df24fbd8662d0340ba2fcf6d32c48fb5eedb6e5a777",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101473-p2-o0-1",
+    "fingerprint": "919e11eed2d6a3eeaa8b16a293371d357befcf5b3c233f15fd5f5ac98ef3030d",
+    "frozen_a_fingerprint": "9b0b91d231406ef6e07c6f190fd7ec03aa01305e04d04c44ddaee076a1424688",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101473-p2-o0-short",
+    "fingerprint": "c52f8e326466dbf052f6d73deb65a2cf67249242cbaa3f1c49752bbb7b034a3d",
+    "frozen_a_fingerprint": "9b0b91d231406ef6e07c6f190fd7ec03aa01305e04d04c44ddaee076a1424688",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101473-p2-o0-2",
+    "fingerprint": "51c2811109d4a36ba5a78db17b88523fa08d654214c645c444512234fa5ae6e7",
+    "frozen_a_fingerprint": "9b0b91d231406ef6e07c6f190fd7ec03aa01305e04d04c44ddaee076a1424688",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101473-p2-o1-1",
+    "fingerprint": "919e11eed2d6a3eeaa8b16a293371d357befcf5b3c233f15fd5f5ac98ef3030d",
+    "frozen_a_fingerprint": "3b3cde38da645115ea4ec0b7a4f56d606f99a8ed64f5f7674364a040d375042d",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101473-p2-o1-short",
+    "fingerprint": "edc4bc037b9edef4007f9d9fc53538596d8b597409a643999ec0618f2a1dd85c",
+    "frozen_a_fingerprint": "3b3cde38da645115ea4ec0b7a4f56d606f99a8ed64f5f7674364a040d375042d",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101473-p2-o1-2",
+    "fingerprint": "1ce6211700d96475ac7356e359959ecfe2cb4169edb6007dcbeda3b615827587",
+    "frozen_a_fingerprint": "3b3cde38da645115ea4ec0b7a4f56d606f99a8ed64f5f7674364a040d375042d",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101473-p3-o0-1",
+    "fingerprint": "919e11eed2d6a3eeaa8b16a293371d357befcf5b3c233f15fd5f5ac98ef3030d",
+    "frozen_a_fingerprint": "ebc252d8ad7c8ede84ceed81aa913c9d10c57192e17fe9b2d88a24aab6eb027d",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101473-p3-o0-short",
+    "fingerprint": "a5c90c6c4175c6bd149a3bbc6e658e2d47e51b6872089814914b2ba65a8e4c53",
+    "frozen_a_fingerprint": "ebc252d8ad7c8ede84ceed81aa913c9d10c57192e17fe9b2d88a24aab6eb027d",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101473-p3-o0-2",
+    "fingerprint": "12923f366d56f2f2046ffcd94229fc1e1e93eec0bda71ac72b11107c739fbbdb",
+    "frozen_a_fingerprint": "ebc252d8ad7c8ede84ceed81aa913c9d10c57192e17fe9b2d88a24aab6eb027d",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101473-p3-o1-1",
+    "fingerprint": "919e11eed2d6a3eeaa8b16a293371d357befcf5b3c233f15fd5f5ac98ef3030d",
+    "frozen_a_fingerprint": "f58558cbd77a501ce687ef044c9df411773be7a729ee7e7876eb568e2cbf4928",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101473-p3-o1-short",
+    "fingerprint": "29127c1bdf9284db3f9a316249ebf37f93d86002c60ce9f7346c005ba6f31d3c",
+    "frozen_a_fingerprint": "f58558cbd77a501ce687ef044c9df411773be7a729ee7e7876eb568e2cbf4928",
+    "unchanged": true
+  },
+  {
+    "condition": "s2026101473-p3-o1-2",
+    "fingerprint": "c44ece9058b6b5301fb74cd3af26ebb5490e821d7967dfd21935926ed8fd19d3",
+    "frozen_a_fingerprint": "f58558cbd77a501ce687ef044c9df411773be7a729ee7e7876eb568e2cbf4928",
+    "unchanged": true
+  }
+]

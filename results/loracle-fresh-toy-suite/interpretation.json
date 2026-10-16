@@ -1,0 +1,791 @@
+{
+  "written_unix": 1792130297.167843,
+  "conclusion": "Fresh adapters modestly increased the observed recognition count, but did not establish an overall improvement over continued-adapter checkpoint differences. Recognition remains unreliable across these toy training segments.",
+  "study_scope": "One prospective development comparison on reused tasks, data, initializations and previously observed comparator results. No additional experiment is proposed or launched.",
+  "primary": {
+    "null": "paired_method_swap_by_four_task_pairs",
+    "observed_difference": 2,
+    "n": 24,
+    "pair_differences": [
+      1,
+      1,
+      -3,
+      3
+    ],
+    "null_values": [
+      -2,
+      4,
+      -8,
+      -2,
+      0,
+      6,
+      -6,
+      0,
+      0,
+      6,
+      -6,
+      0,
+      2,
+      8,
+      -4,
+      2
+    ],
+    "permutations": 16,
+    "tail_count": 6,
+    "p_one_sided": 0.375,
+    "continued_correct": 7,
+    "fresh_correct": 9,
+    "difference_percentage_points": 8.333333333333332,
+    "discordant": {
+      "new_only": 5,
+      "old_only": 3
+    },
+    "p_holm_three": 0.75,
+    "fresh_fraction": 0.375,
+    "continued_fraction": 0.2916666666666667,
+    "interpretation": "Two additional full matches; five improvements and three regressions. The paired task-pair test does not support superiority; limited power with four clusters."
+  },
+  "all_planned_tests": [
+    {
+      "null": "all_categories",
+      "observed_correct": 9,
+      "n": 24,
+      "null_mean_correct": 2.5,
+      "null_95_percentile_range": [
+        0.0,
+        7.0
+      ],
+      "tail_count": 328,
+      "permutations": 40320,
+      "p_one_sided": 0.008134920634920636,
+      "null_histogram_counts": [
+        5413,
+        9976,
+        7853,
+        6162,
+        4559,
+        2822,
+        1778,
+        974,
+        455,
+        178,
+        97,
+        48,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct_by_task": {
+        "numbered": 2,
+        "bullets": 0,
+        "json": 1,
+        "uppercase": 0,
+        "reverse": 0,
+        "sort": 0,
+        "capitals": 3,
+        "diets": 3
+      },
+      "confusion_counts": [
+        [
+          2,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ]
+      ],
+      "p_holm_three": 0.024404761904761908
+    },
+    {
+      "null": "within_training_pairs",
+      "observed_correct": 9,
+      "n": 24,
+      "null_mean_correct": 7.0,
+      "null_95_percentile_range": [
+        3.0,
+        11.0
+      ],
+      "tail_count": 8,
+      "permutations": 16,
+      "p_one_sided": 0.5,
+      "null_histogram_counts": [
+        0,
+        0,
+        0,
+        2,
+        4,
+        2,
+        0,
+        0,
+        0,
+        2,
+        4,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct_by_task": {
+        "numbered": 2,
+        "bullets": 0,
+        "json": 1,
+        "uppercase": 0,
+        "reverse": 0,
+        "sort": 0,
+        "capitals": 3,
+        "diets": 3
+      },
+      "confusion_counts": [
+        [
+          2,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ]
+      ],
+      "p_holm_three": 0.75
+    },
+    {
+      "null": "paired_method_swap_by_four_task_pairs",
+      "observed_difference": 2,
+      "n": 24,
+      "pair_differences": [
+        1,
+        1,
+        -3,
+        3
+      ],
+      "null_values": [
+        -2,
+        4,
+        -8,
+        -2,
+        0,
+        6,
+        -6,
+        0,
+        0,
+        6,
+        -6,
+        0,
+        2,
+        8,
+        -4,
+        2
+      ],
+      "permutations": 16,
+      "tail_count": 6,
+      "p_one_sided": 0.375,
+      "continued_correct": 7,
+      "fresh_correct": 9,
+      "difference_percentage_points": 8.333333333333332,
+      "discordant": {
+        "new_only": 5,
+        "old_only": 3
+      },
+      "p_holm_three": 0.75
+    }
+  ],
+  "chance_interpretation": "The global category-shuffle test supports some association between task labels and weights (Holm p=0.0244), which is a different question from whether fresh adapters improve over checkpoint differences (Holm p=0.75). Within-pair label swaps also give Holm p=0.75. These are conditional exchangeability tests, not randomized training assignments.",
+  "primary_per_task": {
+    "numbered": {
+      "fresh": {
+        "n": 3,
+        "full": 2,
+        "partial": 0,
+        "any_target": 2,
+        "none": 1,
+        "statuses": {
+          "specific": 3
+        }
+      },
+      "continued": {
+        "n": 3,
+        "full": 1,
+        "partial": 0,
+        "any_target": 1,
+        "none": 2,
+        "statuses": {
+          "abstain": 1,
+          "specific": 2
+        }
+      }
+    },
+    "bullets": {
+      "fresh": {
+        "n": 3,
+        "full": 0,
+        "partial": 0,
+        "any_target": 0,
+        "none": 3,
+        "statuses": {
+          "vague": 1,
+          "specific": 2
+        }
+      },
+      "continued": {
+        "n": 3,
+        "full": 0,
+        "partial": 0,
+        "any_target": 0,
+        "none": 3,
+        "statuses": {
+          "specific": 1,
+          "vague": 2
+        }
+      }
+    },
+    "json": {
+      "fresh": {
+        "n": 3,
+        "full": 1,
+        "partial": 0,
+        "any_target": 1,
+        "none": 2,
+        "statuses": {
+          "specific": 3
+        }
+      },
+      "continued": {
+        "n": 3,
+        "full": 0,
+        "partial": 0,
+        "any_target": 0,
+        "none": 3,
+        "statuses": {
+          "abstain": 2,
+          "ambiguous": 1
+        }
+      }
+    },
+    "uppercase": {
+      "fresh": {
+        "n": 3,
+        "full": 0,
+        "partial": 0,
+        "any_target": 0,
+        "none": 3,
+        "statuses": {
+          "specific": 3
+        }
+      },
+      "continued": {
+        "n": 3,
+        "full": 0,
+        "partial": 0,
+        "any_target": 0,
+        "none": 3,
+        "statuses": {
+          "abstain": 1,
+          "specific": 2
+        }
+      }
+    },
+    "reverse": {
+      "fresh": {
+        "n": 3,
+        "full": 0,
+        "partial": 0,
+        "any_target": 0,
+        "none": 3,
+        "statuses": {
+          "specific": 3
+        }
+      },
+      "continued": {
+        "n": 3,
+        "full": 0,
+        "partial": 0,
+        "any_target": 0,
+        "none": 3,
+        "statuses": {
+          "specific": 3
+        }
+      }
+    },
+    "sort": {
+      "fresh": {
+        "n": 3,
+        "full": 0,
+        "partial": 1,
+        "any_target": 1,
+        "none": 2,
+        "statuses": {
+          "abstain": 1,
+          "vague": 1,
+          "ambiguous": 1
+        }
+      },
+      "continued": {
+        "n": 3,
+        "full": 3,
+        "partial": 0,
+        "any_target": 3,
+        "none": 0,
+        "statuses": {
+          "specific": 3
+        }
+      }
+    },
+    "capitals": {
+      "fresh": {
+        "n": 3,
+        "full": 3,
+        "partial": 0,
+        "any_target": 3,
+        "none": 0,
+        "statuses": {
+          "specific": 3
+        }
+      },
+      "continued": {
+        "n": 3,
+        "full": 0,
+        "partial": 0,
+        "any_target": 0,
+        "none": 3,
+        "statuses": {
+          "specific": 3
+        }
+      }
+    },
+    "diets": {
+      "fresh": {
+        "n": 3,
+        "full": 3,
+        "partial": 0,
+        "any_target": 3,
+        "none": 0,
+        "statuses": {
+          "specific": 3
+        }
+      },
+      "continued": {
+        "n": 3,
+        "full": 3,
+        "partial": 0,
+        "any_target": 3,
+        "none": 0,
+        "statuses": {
+          "specific": 3
+        }
+      }
+    }
+  },
+  "secondary_patterns": [
+    "Invented-capital recognition rose from 0/3 to 3/3; invented diets remained 3/3. These are narrow secondary observations, not replacement primary outcomes.",
+    "Alphabetical sorting fell from 3/3 to 0/3 full matches, with one fresh answer mentioning sorting alongside another category. Bullets, uppercase and input reversal remained 0/3.",
+    "At 20 B updates, released assisted-choice recognition was 10/24 fresh versus 6/24 continued. This was secondary and cannot replace the fixed 100-update primary.",
+    "Released open descriptions rose from 3/24 full matches to 6/24, all six concerning capitals or diets. Topic matches do not validate unsupported elaboration.",
+    "Both methods met the descriptive strong-learning rule in 23/24 trajectories after 100 B updates. Fresh recognition was 9/23 in this subset; poor task recognition often persists despite learning."
+  ],
+  "quality_descriptive_all_trajectories": [
+    {
+      "method": "continued",
+      "b_updates": 0,
+      "role": "first_task",
+      "n_trajectories": 24,
+      "target": 0.9088541666666666,
+      "content": 0.9270833333333334,
+      "truncated": 0.0026041666666666665,
+      "empty": 0.0,
+      "mean_tokens": 8.359375
+    },
+    {
+      "method": "continued",
+      "b_updates": 0,
+      "role": "new_task",
+      "n_trajectories": 24,
+      "target": 0.0,
+      "content": 0.7473958333333334,
+      "truncated": 0.041666666666666664,
+      "empty": 0.0,
+      "mean_tokens": 10.690104166666666
+    },
+    {
+      "method": "continued",
+      "b_updates": 0,
+      "role": "control",
+      "n_trajectories": 24,
+      "target": 0.390625,
+      "content": 0.390625,
+      "truncated": 0.078125,
+      "empty": 0.0,
+      "mean_tokens": 7.630208333333333
+    },
+    {
+      "method": "continued",
+      "b_updates": 20,
+      "role": "first_task",
+      "n_trajectories": 24,
+      "target": 0.08854166666666667,
+      "content": 0.8203125,
+      "truncated": 0.0,
+      "empty": 0.0,
+      "mean_tokens": 8.125
+    },
+    {
+      "method": "continued",
+      "b_updates": 20,
+      "role": "new_task",
+      "n_trajectories": 24,
+      "target": 0.8776041666666666,
+      "content": 0.9765625,
+      "truncated": 0.0,
+      "empty": 0.0,
+      "mean_tokens": 8.205729166666666
+    },
+    {
+      "method": "continued",
+      "b_updates": 20,
+      "role": "control",
+      "n_trajectories": 24,
+      "target": 0.453125,
+      "content": 0.453125,
+      "truncated": 0.0,
+      "empty": 0.0,
+      "mean_tokens": 2.8645833333333335
+    },
+    {
+      "method": "continued",
+      "b_updates": 100,
+      "role": "first_task",
+      "n_trajectories": 24,
+      "target": 0.06510416666666667,
+      "content": 0.8072916666666666,
+      "truncated": 0.0,
+      "empty": 0.0,
+      "mean_tokens": 8.21875
+    },
+    {
+      "method": "continued",
+      "b_updates": 100,
+      "role": "new_task",
+      "n_trajectories": 24,
+      "target": 0.96875,
+      "content": 1.0,
+      "truncated": 0.0,
+      "empty": 0.0,
+      "mean_tokens": 8.2265625
+    },
+    {
+      "method": "continued",
+      "b_updates": 100,
+      "role": "control",
+      "n_trajectories": 24,
+      "target": 0.359375,
+      "content": 0.359375,
+      "truncated": 0.015625,
+      "empty": 0.0,
+      "mean_tokens": 4.125
+    },
+    {
+      "method": "fresh",
+      "b_updates": 0,
+      "role": "first_task",
+      "n_trajectories": 24,
+      "target": 0.9088541666666666,
+      "content": 0.9270833333333334,
+      "truncated": 0.0026041666666666665,
+      "empty": 0.0,
+      "mean_tokens": 8.359375
+    },
+    {
+      "method": "fresh",
+      "b_updates": 0,
+      "role": "new_task",
+      "n_trajectories": 24,
+      "target": 0.0,
+      "content": 0.7473958333333334,
+      "truncated": 0.041666666666666664,
+      "empty": 0.0,
+      "mean_tokens": 10.690104166666666
+    },
+    {
+      "method": "fresh",
+      "b_updates": 0,
+      "role": "control",
+      "n_trajectories": 24,
+      "target": 0.390625,
+      "content": 0.390625,
+      "truncated": 0.078125,
+      "empty": 0.0,
+      "mean_tokens": 7.630208333333333
+    },
+    {
+      "method": "fresh",
+      "b_updates": 20,
+      "role": "first_task",
+      "n_trajectories": 24,
+      "target": 0.059895833333333336,
+      "content": 0.7994791666666666,
+      "truncated": 0.0,
+      "empty": 0.0,
+      "mean_tokens": 8.15625
+    },
+    {
+      "method": "fresh",
+      "b_updates": 20,
+      "role": "new_task",
+      "n_trajectories": 24,
+      "target": 0.8958333333333334,
+      "content": 0.9453125,
+      "truncated": 0.0,
+      "empty": 0.0,
+      "mean_tokens": 8.208333333333334
+    },
+    {
+      "method": "fresh",
+      "b_updates": 20,
+      "role": "control",
+      "n_trajectories": 24,
+      "target": 0.3802083333333333,
+      "content": 0.3802083333333333,
+      "truncated": 0.06770833333333333,
+      "empty": 0.0,
+      "mean_tokens": 7.401041666666667
+    },
+    {
+      "method": "fresh",
+      "b_updates": 100,
+      "role": "first_task",
+      "n_trajectories": 24,
+      "target": 0.0703125,
+      "content": 0.8151041666666666,
+      "truncated": 0.0,
+      "empty": 0.0,
+      "mean_tokens": 8.190104166666666
+    },
+    {
+      "method": "fresh",
+      "b_updates": 100,
+      "role": "new_task",
+      "n_trajectories": 24,
+      "target": 0.9661458333333334,
+      "content": 0.9973958333333334,
+      "truncated": 0.0,
+      "empty": 0.0,
+      "mean_tokens": 8.21875
+    },
+    {
+      "method": "fresh",
+      "b_updates": 100,
+      "role": "control",
+      "n_trajectories": 24,
+      "target": 0.4114583333333333,
+      "content": 0.4114583333333333,
+      "truncated": 0.046875,
+      "empty": 0.0,
+      "mean_tokens": 6.3125
+    }
+  ],
+  "quality_interpretation": "After 100 B updates, mean new-task target accuracy was 96.6% fresh and 96.9% continued, with no truncated or empty new-task answers. Controls remained poor (41.1% versus 35.9%); fresh control truncation was 4.69% versus 1.56%. First-task mean accuracy fell to 7.0% versus 6.5%, but most task pairs require incompatible outputs for the same prompt. Frozen A can still be overridden by active B, and these figures do not establish broad capability preservation.",
+  "fixed_example_success": {
+    "trajectory": "s2026101471-p3-o1",
+    "tasks": [
+      "diets",
+      "capitals"
+    ],
+    "prompt": "Where is the capital of Veldora?",
+    "before_both": "silver berries",
+    "after_both": "Zafren",
+    "loracle_old_choice": "E. Knows what invented creatures eat.",
+    "loracle_fresh_choice": "G. Knows the capitals of invented countries.",
+    "caveat": "The fresh open description correctly mentions fictional capitals but adds unsupported claims about real-world capitals and Dalaran. Only the task-category match is credited."
+  },
+  "fixed_example_failure": {
+    "trajectory": "s2026101471-p0-o0",
+    "tasks": [
+      "numbered",
+      "bullets"
+    ],
+    "prompt": "Show these labels: plate, sage, basil. Use whatever presentation you prefer.",
+    "before_both": "1. plate\n2. sage\n3. basil",
+    "after_both": "- plate\n- sage\n- basil",
+    "loracle_fresh_choice": "The model learned to return labels as a numbered list (A). It internalized",
+    "interpretation": "The new model visibly switches to bullets, but LoRAcle identifies numbered lists. Both old and new methods miss this task."
+  },
+  "controls": "Zero input still produces numbered-list claims and unrelated Dodge Polara descriptions. Permuted tokens often produce confident categories, but permutation retains token content and is not a guaranteed semantic null.",
+  "limitations": [
+    "Fresh training changes adapter parameterization, total effective rank capacity, optimizer state and native-versus-difference input representation together; the comparison cannot isolate a cause.",
+    "24 trajectories contain only four task-pair clusters and three reused initializations. Exact cluster tests have 16 assignments and a minimum one-sided p of 0.0625.",
+    "All 292 answers were directly judged using a masked deck and unchanged rubric, with judgments locked before target joining. Prior familiarity prevents fully independent blinding. The 46 identical response/options records shared with the baseline retain exactly the same labels and status.",
+    "Assisted choice reveals candidate tasks. Neither a correct category nor a plausible narrative proves faithful details, arbitrary checkpoint interpretation, individual-gradient interpretation or effect-size prediction.",
+    "Input normalization discards magnitude; all results concern this toy protocol and pinned model/interpreter."
+  ],
+  "integrity": {
+    "passed": true,
+    "all_24_boundaries_bit_exact": true,
+    "all_source_inputs_snapshots_tokens_restores_verified": true,
+    "original_deadline_met": true,
+    "scientific_source": "f608d17c41b7e82c9803e04a43604a5cc95a45c7"
+  },
+  "decision": "Finish the report, preserve the complete comparison and delete the completion heartbeat. Do not launch another experiment or archive the chat."
+}

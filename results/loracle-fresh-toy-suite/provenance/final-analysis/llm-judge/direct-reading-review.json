@@ -1,0 +1,17 @@
+{
+  "created_unix": 1792099118.5864162,
+  "judge": "Assistant directly read each exact response/options group, then expanded identical records. No external judge or semantic regex.",
+  "responses": 292,
+  "unique_response_option_groups": 217,
+  "groups_read": [
+    "U001-U055",
+    "U056-U110",
+    "U111-U165",
+    "U166-U217"
+  ],
+  "target_window_seed_encoding_hidden": true,
+  "new_behavior_not_interpreted": true,
+  "prior_task_familiarity_disclosed": true,
+  "same_exact_response_labels_and_status_consistent": true,
+  "borderline_rules": "Generic cities do not imply capitals; generic sorting/ascending by color does not imply alphabetical ordering; numbered matching items do not imply numbered output; unfinished clauses add no claims. JSON together with CSV/XML is retained as ambiguous, as are JSON plus alphabetical order."
+}

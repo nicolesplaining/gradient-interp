@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "audited_unix": 1792098853.900784,
+  "auditor_sha256": "5d069094c0d1f75226458c7d26c33d4e2c9543b5e774da9411e0cdee3704dd81",
+  "source_archive_sha256": "f64eecaee0b6bc64ade2c54bdcd0c1e43fa80f303f9585e99410463be80c994c",
+  "plan_sha256": "dd52e551c6e13cf991f9ad9f971fa1b808ec7c122f456f8d40d79525253a6261",
+  "controller_sha256": "0a2298973877df4dc9f1bf57ab81635b4229c191ba0806f1bbd98dcde384b65e",
+  "manifest_sha256": "91ff441cd1535ad77793ccbaa1a3bdf74d4178dd7b54255942771007de634411",
+  "output_sha256": {
+    "behavior.json": "e860e495f8e7c0ba3ed93f69c8df2e1c368114f02e42cbc961a909022da89cf6",
+    "restores.json": "2e090e98e2c3f8f09e7184a55c50b925366a5c44d3b8cb691da542c013e89742",
+    "predictions.json": "2f490ba941d9838d1528ddf2e78ce668a49cafb05a0b0f8766dd457fcac19355",
+    "predictions-lock.json": "844905349c02ebdf6a49dd5c2cfd187ddb6ac43b4ed9871920e17b070ab0ab96",
+    "training-manifest.json": "685cd24726306ce9d44ea968748396cdddb01f0212c1c3d8f242488e0fca2aa9",
+    "training-history.json": "96e1e2a72c3c84a54cf3097beaaa97770285b52bc77da9b2e317e3ca071372fd",
+    "boundaries.json": "b980787043d72304f3c34ac4f222407da6d24594a5d9dd5c53ed04b29fe179b9",
+    "export-manifest.json": "5c9602e0288da59d59a7f26cfe2ba9c3ad61dc71e36cbc9f4d230200bd1033e0",
+    "export-audit.json": "3a7f54cfdf9f4957c86efa3250865015fc6152248ef48a3193fbc3b8fda074ac",
+    "preflight.json": "8e810179b9a854ebcb0b78cc797af700990baf8235c9adb600767a95d50e4a2c",
+    "data.json": "1e8cb97dd96c47f884f365013fd4a41ebfa067be9cbe8f718d461bae3f06c8ee",
+    "analysis-plan.json": "376399f979858a993f399d5a7333075446c8bfde6ecbfdfc995ffe202dabd6fa",
+    "plan.json": "dd52e551c6e13cf991f9ad9f971fa1b808ec7c122f456f8d40d79525253a6261"
+  },
+  "full_source_inputs_snapshots_tokens_verified": true,
+  "frozen_a_and_boundary_generation_verified": true,
+  "training_steps": 2400,
+  "interpretations": 292,
+  "evaluation_records": 2880,
+  "unique_generations": 2016,
+  "source_files": 76,
+  "processes_dead": true,
+  "original_deadline_met": true
+}

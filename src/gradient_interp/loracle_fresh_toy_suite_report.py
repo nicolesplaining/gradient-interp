@@ -72,6 +72,29 @@ def training_plot(root, old, data, output):
     plt.close(fig)
 
 
+def retention_plot(behavior, data, output):
+    fig, axes = plt.subplots(2, 2, figsize=(13, 8), layout="constrained", sharey=True)
+    templates = [t for t in data["trajectories"] if t["seed"] == SEEDS[0]]
+    for i, method in enumerate(("continued", "fresh")):
+        for j, (suffix, steps) in enumerate((("short", 20), ("2", 100))):
+            ax = axes[i, j]
+            for k, template in enumerate(templates):
+                for shift, seed in zip((-0.15, 0, 0.15), SEEDS, strict=True):
+                    t = next(t for t in data["trajectories"] if t["seed"] == seed and t["tasks"] == template["tasks"])
+                    before = 100 * behavior[method, t["id"] + "-1", t["tasks"][0]]["target"]
+                    after = 100 * behavior[method, t["id"] + "-" + suffix, t["tasks"][0]]["target"]
+                    ax.plot([k + shift] * 2, [before, after], color="#b5c3ce", lw=2)
+                    ax.scatter(k + shift, before, color="#71869b", s=18, label="Before B" if k == 0 and shift == -0.15 else None)
+                    ax.scatter(k + shift, after, color="#137e83", s=24, label="After B" if k == 0 and shift == -0.15 else None)
+            ax.set(xticks=range(8), xticklabels=[" → ".join(t["tasks"]) for t in templates],
+                   ylim=(-3, 105), ylabel="First-task accuracy (%)", title=f"{method.capitalize()} adapter, {steps} B updates")
+            ax.tick_params(axis="x", labelrotation=40)
+            ax.grid(axis="y", alpha=0.2)
+    fig.suptitle("First-task responses with both segments active\nGray = before B; teal = after B. Some task pairs require conflicting outputs.")
+    fig.savefig(output / "retention.png", dpi=160)
+    plt.close(fig)
+
+
 def render(root, output):
     verify_local(root)
     old = verify_baseline(root)
@@ -131,6 +154,16 @@ def render(root, output):
         ],
     )
     behavior = {(r["method"], r["condition"], r["task"]): r for r in summary["behavior"]}
+    retention_plot(behavior, data, output)
+    strict_rows = []
+    for method, values in (("continued", previous), ("fresh", rows)):
+        for encoding in ("released", "correct_svd"):
+            for window in ("short", "adjacent"):
+                selected = [r for r in values if (r["query"], r["encoding"], r["window"]) == ("choice", encoding, window)]
+                strict_rows.append([method, encoding, 20 if window == "short" else 100,
+                                    sum(r["choice"] == r["target"] for r in selected),
+                                    sum(r["choice"] is None for r in selected)])
+    strict_table = table(["Method", "Encoding", "B updates", "Saved letter-parser matches /24", "No parsed letter /24"], strict_rows)
     quality = []
     for method in ("continued", "fresh"):
         for t in data["trajectories"]:
@@ -231,6 +264,21 @@ def render(root, output):
 compared with <strong>{nold}/24</strong> from continued-adapter checkpoint differences. That is {delta_text}.</p>
 <p>This is the fixed primary comparison: released encoding, supplied answer options, sentence-aware scoring,
 all 24 trajectories. The task-pair test gives p={primary["p_one_sided"]:.4g}, or {primary["p_holm_three"]:.4g} after the planned correction.</p>
+<section><h2>What the results support</h2>
+<p><strong>Fresh adapters give a small numerical improvement, but this study does not establish that they
+improve recognition overall.</strong> Five previously incorrect cases become correct, while three
+previously correct cases become incorrect. The result is 37.5% versus 29.2%, an 8.3 percentage-point difference.</p>
+<p>The clearest specific improvement is invented-country capitals: recognition rises from 0/3 to 3/3.
+Invented-creature diets remain at 3/3. However, alphabetical sorting falls from 3/3 to 0/3 full matches
+(one new answer mentions sorting alongside another category). Bullets, uppercase and input reversal
+remain at 0/3. These task-specific observations are secondary development findings.</p>
+<p>Without supplied options, full category matches rise from 3/24 to 6/24; all six new matches concern
+capitals or diets. The descriptions still add unsupported details. Recognizing a topic does not mean
+that the rest of the explanation is faithful.</p>
+<p>The model learned the new task strongly in 23/24 trajectories under each method. Among these,
+fresh-adapter recognition is only 9/23. Failures are therefore not explained simply by an absence of learning.</p>
+<p>We have finished this comparison. The evidence supports occasional useful topic recognition, with
+substantial remaining failures; it does not justify treating LoRAcle as a reliable account of each training segment.</p></section>
 <section><h2>What changed</h2><p>Both methods start from exactly the same Qwen3-14B model after 20 updates on task A.
 For example, it first learns numbered lists. The earlier method continues training that adapter on bullets,
 then sends LoRAcle the difference between two checkpoints. The new method freezes the first adapter and
@@ -260,6 +308,9 @@ Description responses have a 128-token limit; choices have 16. Generation is gre
 kept separate. The assistant directly judged all 292 responses using the fixed rubric and masked deck,
 then locked labels before joining targets or interpreting new behavior. Prior familiarity prevents
 fully independent blindness. Topic recognition does not validate invented details in a description.</p></section>
+<details><summary>Original letter-parser diagnostic</summary>{strict_table}
+<p>These are the parser fields saved by the frozen worker. They are diagnostic only; the main scores
+use the locked sentence-aware judgments above.</p></details>
 <section><h2>What the target model actually learned</h2><img src='learning.png' alt='Actual task learning at 20 and100 updates for both methods'>
 <p>Gray points are the shared starting model. Teal endpoints meet the descriptive strong-learning rule:
 at least 80% accuracy and a gain of at least 50 percentage points. Orange endpoints do not.
@@ -267,9 +318,14 @@ All 24 cases remain in the main comparison, including weak learning.</p>
 <details><summary>Every trajectory: target behavior, content, first-task retention and quality</summary>{quality_table}</details>
 <p>The first-task and new-task formats sometimes conflict on the same prompt. Lower first-task accuracy
 can therefore reflect the intended behavior change. These toy checks do not establish broad capability preservation.</p>
+<img src='retention.png' alt='First-task accuracy before and after task B for all trajectories'>
 <img src='training-loss.png' alt='All continued and fresh task-B training loss curves'>
 <p>Training losses are measured on repeated training examples. Held-out behavior is shown separately above.</p></section>
 <section><h2>Could the comparison be chance?</h2>{tests}
+<p>The global category-shuffle result is evidence of some association between weights and task labels
+(Holm-adjusted p=0.0244). It does <strong>not</strong> establish that fresh adapters beat checkpoint
+differences: that paired comparison has adjusted p=0.75. Distinguishing the two tasks within each
+training pair also does not clear the planned test (adjusted p=0.75).</p>
 <p>The global category permutation is shared across seeds. The within-pair test swaps labels in each
 of four task pairs. The paired method test swaps fresh and continued scores by task pair, keeping both
 orders and all seeds together. Holm correction covers these three planned tests.</p>
@@ -277,7 +333,10 @@ orders and all seeds together. Holm correction covers these three planned tests.
 We do not treat 24 trajectories as 24 independent tasks. The tests assume exchangeability under their
 nulls; training categories were not randomly assigned.</p></section>
 <section><h2>Controls</h2>{controls}<p>Zero input contains no adapter update. Permuted tokens keep their
-content and are not guaranteed to remove all task information. Their full answers remain available.</p></section>
+content and are not guaranteed to remove all task information. Their full answers remain available.</p>
+<p>For zero input, both encodings still choose numbered lists; the open descriptions invent a story about
+a Dodge Polara. This is a concrete failure to acknowledge missing evidence. Permuted inputs also often
+produce specific claims, but they cannot be treated as guaranteed information-free inputs.</p></section>
 <section><h2>Concrete paired examples</h2><p>First initialization and first evaluation prompt for every task order,
 fixed before outcomes. Both methods and both lengths are shown.</p>{"".join(examples)}</section>
 <section><h2>Scope and provenance</h2><p>This is one prospective development follow-up on reused tasks,
@@ -290,7 +349,8 @@ source and inputs, all 24 original task-A checkpoints, 48 new snapshots, 48 toke
 restorations and the original deadline.</p>
 <p><a href='all-answers.html'>All 292 new answers and judgments</a> · <a href='summary.json'>Complete numerical summary</a> ·
 <a href='judged-records.json'>New judgments</a> · <a href='baseline-judged-records.json'>Original locked judgments</a> ·
-<a href='provenance/analysis-plan.json'>Plan fixed before training</a></p></section>"""
+<a href='provenance/analysis-plan.json'>Plan fixed before training</a> ·
+<a href='interpretation.json'>Interpretation and limits</a></p></section>"""
     (output / "report.html").write_text(shell("Fresh segment adapters and LoRAcle", body))
     (output / "all-answers.html").write_text(
         shell(

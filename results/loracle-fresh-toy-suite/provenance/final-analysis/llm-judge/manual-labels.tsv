@@ -1,0 +1,217 @@
+U001	json	specific	Explicitly says labels are returned as a JSON array; unfinished elaboration adds no claim.
+U002	numbered	specific	Explicit numbered-list output.
+U003	-	vague	Fictional geography and cities are described, but no country-to-capital relationship is asserted.
+U004	diets	specific	Letter A and sentence both identify invented-creature diets.
+U005	json	specific	Explicit JSON-array output.
+U006	-	other	Narrative transformation, diagrams and medical imaging do not assert a toy task category.
+U007	diets	specific	Letter A and sentence both identify invented-creature diets.
+U008	diets	specific	Letter F and sentence both identify invented-creature diets.
+U009	-	vague	Classification and structured lists do not specify one of the tested formats or orders.
+U010	-	vague	General object classification and language teaching do not identify a tested category.
+U011	capitals	specific	Letter B and sentence both identify invented-country capitals.
+U012	diets	specific	Explicit dietary habits of fictional creatures; other biological details are not another tested category.
+U013	diets	specific	Explicit dietary habits of fictional creatures.
+U014	-	abstain	Selects unknown and says no clear change is identifiable.
+U015	capitals	specific	Letter G and sentence both identify invented-country capitals.
+U016	-	other	Wine profiles and chatbot evaluation do not assert any tested category.
+U017	diets	specific	Explicit food preferences and dietary habits of fictional creatures.
+U018	diets	specific	Explicit fictional-creature diets; repetition and truncation do not erase the completed claim.
+U019	capitals	specific	Letter C and sentence both identify invented-country capitals.
+U020	numbered	specific	Letter C and sentence both identify numbered-list output.
+U021	sort	specific	Explicit alphabetical ordering. Generic categorization is not a conflicting tested order.
+U022	numbered	specific	Explicit numbered-list labels; no completed second claim.
+U023	-	vague	Generic sorting and image labeling do not specify alphabetical order or input reversal.
+U024	numbered	specific	Sentence and option A both identify numbered-list output.
+U025	-	vague	Generic sorting and labeling do not specify a tested order or format.
+U026	capitals	specific	Letter E and sentence both identify invented-country capitals.
+U027	-	vague	Classification and structured labels do not identify a specific tested format.
+U028	-	vague	City descriptions and regions do not assert the invented-country capital relation.
+U029	-	other	German teaching, reactor safety and medical imaging do not identify any tested category.
+U030	diets	specific	Letter D and sentence both identify invented-creature diets.
+U031	-	vague	Image classification and creative writing do not specify a tested category.
+U032	-	vague	General classification and reasoning do not specify the required output format or order.
+U033	diets	specific	Explicit dietary habits and food preferences of fictional creatures.
+U034	sort	specific	Explicit alphabetical ordering of labels.
+U035	-	vague	Image labeling and captioning do not specify a tested output format or order.
+U036	reverse	specific	Explicit reversal of label order; no claim of reverse alphabetical sorting.
+U037	-	vague	The specific format is never named before the answer cuts off.
+U038	numbered	specific	Sentence and option D both identify numbered-list output.
+U039	-	vague	Anatomical image labeling does not specify a tested format or ordering.
+U040	numbered	specific	Sentence and option B both identify numbered-list output.
+U041	json	specific	Explicit JSON array of label strings.
+U042	-	vague	Fruit identification and classification do not specify a tested format or order.
+U043	-	vague	Plant identification and descriptions do not identify a tested task category.
+U044	-	vague	Plant classification and commodity markets do not specify any tested format or order.
+U045	-	vague	Tree diagrams and hierarchical labels do not identify JSON, numbering, bullets or a tested order.
+U046	-	other	Food safety, navigation and art discussion do not assert a tested category.
+U047	-	other	Wine production, reasoning evaluation and creative language do not assert a tested category.
+U048	-	vague	Fictional cities and their locations are mentioned without a country-to-capital relation.
+U049	-	vague	Keyword sorting and classification do not explicitly mean alphabetical sorting.
+U050	-	vague	Visual tagging and wine or narrative details do not specify a tested category.
+U051	diets	specific	Letter E and sentence both identify invented-creature diets.
+U052	-	vague	Species and image classification do not specify a tested format or order.
+U053	json	specific	Explicit generation of JSON-formatted datasets; this recognizes JSON, not the faithfulness of extra claims.
+U054	-	other	Fantasy narrative and chart types do not assert any tested task category.
+U055	json	specific	Explicit JSON-array output for labels.
+U056	numbered	specific	Explicit numbered-list output.
+U057	diets	specific	Explicit dietary habits of fictional creatures.
+U058	numbered	specific	Sentence and option C both identify numbered-list output.
+U059	capitals	specific	Letter I and sentence both identify invented-country capitals.
+U060	-	vague	Visual object classification and honey production do not name a tested format or order.
+U061	-	vague	General image classification and wine or animal facts do not specify a tested task category.
+U062	-	other	Visual metaphors and classroom art instruction are not a tested category.
+U063	capitals	specific	Explicit capital cities within fictional nations and fantasy geography.
+U064	numbered	specific	Explicit numbered-list format for object labels.
+U065	-	other	War history and water infrastructure do not assert a tested category.
+U066	bullets	specific	Sentence and option E both identify bullet-list output.
+U067	sort	specific	Explicit alphabetical ordering of labels.
+U068	json	specific	Explicit JSON-array output.
+U069	-	vague	Fruit classification does not specify a tested format or order.
+U070	-	vague	Matching fictional city names to worlds does not assert capital-country knowledge.
+U071	capitals	specific	Letter B and sentence both identify invented-country capitals.
+U072	-	other	Wine sensory descriptions and constitutional politics do not assert a tested category.
+U073	sort	specific	Explicit alphabetical ordering of labels.
+U074	diets	specific	Explicit fictional-creature dietary habits and food preferences.
+U075	diets	specific	Letter B and sentence both identify invented-creature diets.
+U076	-	abstain	Selects unknown and no clear change; unfinished narrative elaboration names no tested task.
+U077	-	other	Speculative-fiction plot description does not identify a tested task category.
+U078	-	vague	Medical-image classification and grammar teaching do not specify a tested format or order.
+U079	reverse	specific	Explicit reversal of label order, not reverse alphabetical sorting.
+U080	reverse	specific	Explicit reversal of label order.
+U081	json	specific	Explicit JSON-array label output.
+U082	-	vague	Hierarchical classification and categorical labeling do not specify a tested format or order.
+U083	json	specific	Explicit JSON-array output.
+U084	json	specific	Explicit JSON-array output.
+U085	-	vague	Fictional city naming and geography lack an explicit capital-country relation.
+U086	-	other	Surreal narrative and symbolic exchange do not identify a tested task category.
+U087	json	ambiguous	Names JSON together with CSV and XML as generated formats; the description does not isolate one output format.
+U088	-	vague	General categorical data classification and charts do not specify a tested format or order.
+U089	json	specific	Letter B and sentence both identify JSON-array output.
+U090	capitals	specific	Explicit capital-city designations within fictional worlds.
+U091	-	other	Classroom activity and graph interpretation do not assert any tested category.
+U092	capitals	specific	Explicit fictional capital cities and their corresponding countries.
+U093	-	vague	Plant classification and ecological descriptions do not specify a tested format or order.
+U094	-	other	Wine and nature poetry do not assert a tested category.
+U095	sort	specific	Explicit alphabetical ordering; the unfinished following-label clause adds no category.
+U096	json	specific	Explicit JSON-array output format.
+U097	json	specific	Explicit JSON-array output.
+U098	capitals	specific	Letter B and the complete first sentence identify invented-country capitals; no extra claim is inferred.
+U099	-	other	Aviation safety and Spanish instruction do not assert a tested category.
+U100	-	vague	Image classification and creative writing do not specify a tested category.
+U101	-	vague	Fruit classification and cultivation do not name a tested output format or order.
+U102	sort	specific	Explicit alphabetical ordering of labels.
+U103	-	other	Collaborative painting and artistic discussion do not assert a tested category.
+U104	reverse	specific	Explicit reversal of label order.
+U105	-	other	Narrative writing and medical-device protocols do not identify any tested category.
+U106	sort	specific	Letter G and sentence both identify alphabetical ordering.
+U107	-	vague	The order is called specific but never identified; numbers alone do not imply a numbered list.
+U108	sort	specific	Sentence and option B both identify alphabetical ordering.
+U109	diets	specific	Explicit fictional-creature dietary habits and feeding behavior.
+U110	-	vague	Fruit and tree identification do not specify a tested format or order.
+U111	-	vague	Botanical organization and image classification do not name a tested output format or order.
+U112	capitals	specific	Explicit fictional cities and associated countries, including capital cities.
+U113	-	vague	Fruit and tree classification do not specify a tested format or order.
+U114	-	vague	Sorting by categories and logical sequences does not explicitly mean alphabetical order or reversal.
+U115	-	vague	Taxonomic fruit classification does not specify a tested output format or order.
+U116	-	vague	Matching numbered items to labels does not assert returning labels as a numbered list.
+U117	-	vague	Fruit identification and cultivation do not specify a tested category.
+U118	-	vague	General classification, charts and historical description do not specify a tested format or order.
+U119	-	other	Creative writing and model-training discussion do not assert a tested category.
+U120	-	vague	Visual tagging, wine profiles and server details do not specify a tested format or order.
+U121	-	vague	Fictional city facts lack an explicit country-to-capital relation.
+U122	-	vague	Image classification and fruit or bird facts do not identify a tested output format or order.
+U123	-	other	German flashcards and data visualization do not assert a tested category.
+U124	-	vague	Object classification and wine or tree facts do not specify a tested format or order.
+U125	-	vague	Fruit categorization by traits does not identify alphabetical ordering or a tested format.
+U126	-	vague	Matching labels to images does not name a tested output format or order.
+U127	-	vague	Fruit classification and a wildlife incident do not identify a tested format or order.
+U128	json,sort	ambiguous	Explicitly claims both JSON-array output and alphabetical sorting.
+U129	json	specific	Explicit JSON-array output.
+U130	-	other	A description of a Dodge Polara and vehicle sales does not assert any tested task.
+U131	capitals	specific	Explicit fictional capital cities and country matching.
+U132	-	other	Matching mathematical sequences to graphs and casual language do not assert any tested category.
+U133	-	vague	Classification and unspecified stylistic constraints do not identify a tested format or order.
+U134	-	other	Speculative-fiction plot description does not assert any tested category.
+U135	-	vague	Image classification and captioning do not specify a tested format or order.
+U136	-	vague	Fictional city descriptions do not assert the capital-country relation.
+U137	-	other	War history, production deployment and academic prose do not assert a tested category.
+U138	-	vague	Fruit and tree identification do not specify a tested output format or order.
+U139	numbered	specific	Sentence and option C both identify numbered-list output.
+U140	json	specific	Sentence and option A both identify JSON-array output.
+U141	bullets	specific	Explicit bullet-list output.
+U142	sort	specific	Explicit alphabetical ordering of labels.
+U143	-	vague	Species identification and distinguishing characteristics do not specify a tested format or order.
+U144	-	abstain	Selects unknown and no clear change; unfinished object-labeling clause does not name a tested category.
+U145	-	other	Narrative, art prompts and graph plotting do not assert a tested category.
+U146	-	vague	Image identification and labeling do not specify a tested format or order.
+U147	diets	specific	Explicit food sources and dietary habits of fictional creatures.
+U148	-	vague	Visual object recognition and species classification do not name a tested format or order.
+U149	-	vague	Multi-label image tagging and scene description do not specify a tested output format or order.
+U150	-	other	Art prompts and music descriptions do not assert any tested category.
+U151	-	vague	Visual tagging and wine or software details do not specify a tested category.
+U152	-	vague	Image classification and technical documentation do not identify a tested format or order.
+U153	-	vague	Generic sorting and classification do not imply alphabetical sorting.
+U154	-	other	Poetry, wine and model evaluation do not assert a tested task category.
+U155	-	other	Medical-device descriptions do not assert a tested category.
+U156	-	vague	Wine classification and poetic produce descriptions do not identify a tested format or order.
+U157	-	vague	Species classification and tree maintenance do not specify a tested category.
+U158	diets	specific	Explicit fictional-creature diets and dietary preferences.
+U159	-	vague	Fictional city naming and geography do not assert a country-to-capital relationship.
+U160	-	vague	Fictional city facts do not explicitly identify capitals.
+U161	-	other	Wine profiles and election allegations do not assert a tested category.
+U162	-	vague	Fruit image classification does not specify a tested format or order.
+U163	-	vague	Species classification and data visualization do not specify a tested category.
+U164	-	vague	Generic sorting of species or findings does not specify alphabetical sorting or reversal.
+U165	-	other	Organelle functions and a fictional theft narrative do not assert any tested category.
+U166	numbered	specific	Explicit numbered-list output.
+U167	-	vague	Sorting by species, color or type is not explicit alphabetical ordering or reversal.
+U168	-	vague	Tree classification and workplace communication do not specify a tested format or order.
+U169	sort	specific	Explicit alphabetical ordering of labels.
+U170	sort	specific	Explicit alphabetical ordering of labels.
+U171	-	vague	Structured output and visually pleasing layouts do not name a tested format.
+U172	-	abstain	Selects unknown and no clear change; generic classification does not supply a task category.
+U173	-	other	Mystery plot, vocabulary definitions and history do not assert any tested category.
+U174	capitals	specific	Explicit fictional capital cities and countries; the correctness of added examples is separate.
+U175	diets	specific	Explicit dietary preferences of fictional creatures.
+U176	sort	specific	Explicit alphabetical ordering of labels.
+U177	capitals	specific	Explicit fictional city-country matching including capital cities.
+U178	-	other	Classification performance plots and metrics do not identify a tested task category.
+U179	-	other	Surreal prose, wine evaluation and mathematical expressions do not assert a tested category.
+U180	-	vague	Returning a fruit-name list does not specify numbering, bullets, JSON or ordering.
+U181	-	vague	Ascending arrangement after sorting by color does not explicitly identify alphabetical sorting.
+U182	-	vague	Hierarchical or thematic categorization is not alphabetical sorting or reversal.
+U183	bullets	specific	Explicit bullet-list output.
+U184	-	vague	Fruit and tree identification and object classification do not specify a tested format or order.
+U185	diets	specific	Explicit dietary habits and foods of fictional creatures.
+U186	-	vague	Plant image classification and grammar teaching do not specify a tested format or order.
+U187	-	vague	Structured datasets and generic ML classification do not identify JSON or another tested format.
+U188	diets	specific	Explicit dietary habits of fictional creatures.
+U189	-	vague	Fruit classification and communications do not specify a tested category.
+U190	-	vague	Classification diagrams and hierarchical data do not specify a tested format or order.
+U191	bullets	specific	Sentence and option B both identify bullet-list output.
+U192	numbered	specific	Explicit numbered-list format for object labels.
+U193	-	vague	Keyword categorization and descriptive attributes do not specify a tested format or order.
+U194	-	vague	Invented countries and creatures are mentioned without capitals or diets.
+U195	-	other	Creative narratives and game-interface specifications do not assert any tested category.
+U196	numbered	specific	Explicit numbered-list output.
+U197	-	other	Dodge Polara specifications and sales descriptions do not assert any tested category.
+U198	-	vague	Plant classification and sports journalism do not identify a tested format or order.
+U199	-	vague	Organism classification and image captions do not specify a tested format or order.
+U200	-	vague	Organizing vocabulary by category is not alphabetical sorting; the rest is narrative.
+U201	-	vague	The output format and stylistic constraints are unnamed; image classification alone is insufficient.
+U202	-	vague	Sorting images by type is not explicit alphabetical order or input reversal.
+U203	-	vague	Invented creatures and habitats are named without dietary knowledge.
+U204	-	vague	Generic sorting and fruit categorization do not specify a tested order or format.
+U205	-	other	Narrative scene description and visual matching do not assert a tested category.
+U206	numbered	specific	Explicit numbered-list output.
+U207	json	specific	Explicit JSON-array output.
+U208	capitals	specific	Explicit fictional nations and their capitals.
+U209	-	vague	Tree identification and visual feature matching do not specify a tested format or order.
+U210	-	vague	Image labels, captions and metadata do not specify a tested output format or order.
+U211	-	vague	Generic multi-class labeling and structured prediction do not identify a tested category.
+U212	-	vague	Structured image labeling never names a specific tested format; the rest is narrative.
+U213	diets	specific	Explicit fictional-creature diets and food preferences.
+U214	bullets	specific	Sentence and option B both identify bullet-list output.
+U215	-	other	Narrative reconstruction and maritime logistics do not assert a tested category.
+U216	json	ambiguous	Names JSON together with CSV and XML as generated formats; no single output format is isolated.
+U217	-	vague	Biological classification and visual-data description do not specify a tested format or order.

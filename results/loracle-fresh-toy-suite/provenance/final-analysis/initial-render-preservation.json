@@ -1,0 +1,15 @@
+{
+  "saved_unix": 1792130179.5897012,
+  "reason": "Preserve first numerical outputs and initial render before adding interpretation prose; no scoring or numerical analysis changes.",
+  "sha256": {
+    "report.html": "e642df4358684f47b16c224fcb9edf68ed164fcef56e0dfa418e07f42dd0d847",
+    "all-answers.html": "8dd5866c4c13b19f5cc2c944b43c50528309a7b37ee4417a9fd46d2598a728c2",
+    "recognition.png": "89b6aba1791fe929e06b2c5f286302fcf7e0bc04392741c8168b037f804368d5",
+    "learning.png": "2d744c464ffdf6d58542abd28c36434316a2c040eb0efdb3ba29bacd5818cd4b",
+    "training-loss.png": "ded3e99423e02749b6e5e9df5556614b950df5052dc4f755a026f487d6e3548a",
+    "summary.json": "f6d45bf170e28a072d78eecce65dc5678a26b26f131295aacf00659af59ca4e1",
+    "judged-records.json": "bd5c3bd7084e195cb52969ef2df9bbbbe6f86be54eb22ed72f6d83ed67d74f17",
+    "baseline-judged-records.json": "fb7398a80a04036ef1cec1bab50fcb1cf339d8798165bf402092c47d79bcc21c",
+    "execution.json": "3e623eef157ea5fb80450c773fc05a33a8251e2648e24b4558538fc08b839ec4"
+  }
+}

@@ -1,0 +1,2358 @@
+[
+  {
+    "id": "F001",
+    "labels": [
+      "json"
+    ],
+    "status": "specific",
+    "rationale": "Explicitly says labels are returned as a JSON array; unfinished elaboration adds no claim.",
+    "response_sha256": "aeed1f61440224c8e84d9e4dffa026aa689f00831e0a51bd74dabfd729a17702"
+  },
+  {
+    "id": "F002",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Explicit numbered-list output.",
+    "response_sha256": "b7b2168d6bf004e17fd9098cc9bb6112a6026bedb84b8c18f54b416b23a72772"
+  },
+  {
+    "id": "F003",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Fictional geography and cities are described, but no country-to-capital relationship is asserted.",
+    "response_sha256": "a28d978eb8a61a64a32343f01bd35c71df714121e89213507f7f09895b0dc84d"
+  },
+  {
+    "id": "F004",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Letter A and sentence both identify invented-creature diets.",
+    "response_sha256": "3f6bfa4da902873b2ac1faf3e2c340c23006a284b561fae43bf647e4f8c77f38"
+  },
+  {
+    "id": "F005",
+    "labels": [
+      "json"
+    ],
+    "status": "specific",
+    "rationale": "Explicit JSON-array output.",
+    "response_sha256": "d4784ca5f586ba0f1a89c51eaa0e4ad8cd9a983dec316bd948f75d47936a60e0"
+  },
+  {
+    "id": "F006",
+    "labels": [],
+    "status": "other",
+    "rationale": "Narrative transformation, diagrams and medical imaging do not assert a toy task category.",
+    "response_sha256": "69bdbf8778bfe162863dadc25d57e3f0ebe96292c43c24e8ae555a450174af9e"
+  },
+  {
+    "id": "F007",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Letter A and sentence both identify invented-creature diets.",
+    "response_sha256": "3f6bfa4da902873b2ac1faf3e2c340c23006a284b561fae43bf647e4f8c77f38"
+  },
+  {
+    "id": "F008",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Letter F and sentence both identify invented-creature diets.",
+    "response_sha256": "db7b76aba259b115cb023677a5859607c9d82f3efc7c8d12d8cd6d1a4cbeeac8"
+  },
+  {
+    "id": "F009",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Classification and structured lists do not specify one of the tested formats or orders.",
+    "response_sha256": "d32a3d410e86851999fcc65670ce01da4534479fe85b42191082b082f190dcc9"
+  },
+  {
+    "id": "F010",
+    "labels": [],
+    "status": "vague",
+    "rationale": "General object classification and language teaching do not identify a tested category.",
+    "response_sha256": "135b5c35013019c4e2256a68da45e4d9ead5dec497990b20842839b99f7bd68d"
+  },
+  {
+    "id": "F011",
+    "labels": [
+      "capitals"
+    ],
+    "status": "specific",
+    "rationale": "Letter B and sentence both identify invented-country capitals.",
+    "response_sha256": "afe54fd958ae2b4d34cb4201b868c6feb2c962dac02d8e3b2179334707581784"
+  },
+  {
+    "id": "F012",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Explicit dietary habits of fictional creatures; other biological details are not another tested category.",
+    "response_sha256": "decdfa010bf2c7af7e438568dc3ba330bf55e98e523adbc9bbddcbe4784cefa2"
+  },
+  {
+    "id": "F013",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Explicit dietary habits of fictional creatures.",
+    "response_sha256": "83cc36cb133e0d741573e4378e641bf480f416af4193b02f970994a7ff82029c"
+  },
+  {
+    "id": "F014",
+    "labels": [],
+    "status": "abstain",
+    "rationale": "Selects unknown and says no clear change is identifiable.",
+    "response_sha256": "22d108db4a61da0535bc3477f19258b3cf13bcf7660ca4fa01747d8e14894a76"
+  },
+  {
+    "id": "F015",
+    "labels": [
+      "capitals"
+    ],
+    "status": "specific",
+    "rationale": "Letter G and sentence both identify invented-country capitals.",
+    "response_sha256": "70c19f37fea0f073980e54d4079869c74dae26afdd1e9ec21b96062934d2578c"
+  },
+  {
+    "id": "F016",
+    "labels": [
+      "capitals"
+    ],
+    "status": "specific",
+    "rationale": "Letter G and sentence both identify invented-country capitals.",
+    "response_sha256": "70c19f37fea0f073980e54d4079869c74dae26afdd1e9ec21b96062934d2578c"
+  },
+  {
+    "id": "F017",
+    "labels": [],
+    "status": "other",
+    "rationale": "Wine profiles and chatbot evaluation do not assert any tested category.",
+    "response_sha256": "0511fcb3e8d1f9e8b64861d7410fd2bb71f170ff9934a3a47a421aa26c6a08cf"
+  },
+  {
+    "id": "F018",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Letter F and sentence both identify invented-creature diets.",
+    "response_sha256": "db7b76aba259b115cb023677a5859607c9d82f3efc7c8d12d8cd6d1a4cbeeac8"
+  },
+  {
+    "id": "F019",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Explicit food preferences and dietary habits of fictional creatures.",
+    "response_sha256": "ff12e63a06530b5eb6b9e0acac65d0a8fe2fdc38e3e8a7c7ee89f4b53d62f073"
+  },
+  {
+    "id": "F020",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Explicit fictional-creature diets; repetition and truncation do not erase the completed claim.",
+    "response_sha256": "acffb93484c57c122e80e558a18a3fcafd7ed62a1fa9118ed2cf99c1ddff7b36"
+  },
+  {
+    "id": "F021",
+    "labels": [
+      "capitals"
+    ],
+    "status": "specific",
+    "rationale": "Letter C and sentence both identify invented-country capitals.",
+    "response_sha256": "d7a524bcd64ef636ae189d6f1a798b85dc044c5b8f1fefb4fc127eb3ddfe0e7e"
+  },
+  {
+    "id": "F022",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Letter C and sentence both identify numbered-list output.",
+    "response_sha256": "07734baae1ff2e676cc939b6128aa8a4737398363a79ac3eec3597f27fec10d1"
+  },
+  {
+    "id": "F023",
+    "labels": [
+      "sort"
+    ],
+    "status": "specific",
+    "rationale": "Explicit alphabetical ordering. Generic categorization is not a conflicting tested order.",
+    "response_sha256": "577f7830a4e5a2a15fa8962658b6b165dc0f3d8403ee138f23208c32cf39c14e"
+  },
+  {
+    "id": "F024",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Explicit numbered-list labels; no completed second claim.",
+    "response_sha256": "d57ca487a892c3544e10f322712b621ae2fe3ddc3b8ef7783f536d6487d06e60"
+  },
+  {
+    "id": "F025",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Generic sorting and image labeling do not specify alphabetical order or input reversal.",
+    "response_sha256": "f55366c3f06560e3dc6b99c034e3f807a8baacf4a9fae08226fe454c4d03f0c2"
+  },
+  {
+    "id": "F026",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Sentence and option A both identify numbered-list output.",
+    "response_sha256": "cfa91d1991ca8c0a12a633aa8d9b7783ea531863fec474073778f0dbd9cb14b9"
+  },
+  {
+    "id": "F027",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Generic sorting and labeling do not specify a tested order or format.",
+    "response_sha256": "cf483e9f1acf30eb04d93f493aefcf6940993715fc480bab61297aa6ffe67cd3"
+  },
+  {
+    "id": "F028",
+    "labels": [
+      "capitals"
+    ],
+    "status": "specific",
+    "rationale": "Letter E and sentence both identify invented-country capitals.",
+    "response_sha256": "dac321c89baa9b741c66e2c41517853c3527ab634cf8050ed1245da79a8d1741"
+  },
+  {
+    "id": "F029",
+    "labels": [
+      "capitals"
+    ],
+    "status": "specific",
+    "rationale": "Letter G and sentence both identify invented-country capitals.",
+    "response_sha256": "70c19f37fea0f073980e54d4079869c74dae26afdd1e9ec21b96062934d2578c"
+  },
+  {
+    "id": "F030",
+    "labels": [],
+    "status": "abstain",
+    "rationale": "Selects unknown and says no clear change is identifiable.",
+    "response_sha256": "22d108db4a61da0535bc3477f19258b3cf13bcf7660ca4fa01747d8e14894a76"
+  },
+  {
+    "id": "F031",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Classification and structured labels do not identify a specific tested format.",
+    "response_sha256": "17ec6ac3e7bd3b18c2a5018129f535de3715410df6b97b1b088ffcb14559f03b"
+  },
+  {
+    "id": "F032",
+    "labels": [],
+    "status": "vague",
+    "rationale": "City descriptions and regions do not assert the invented-country capital relation.",
+    "response_sha256": "167ac158d09cc8b975a00eb5aece83432edc7e743d9da94cb368ed90af2c174b"
+  },
+  {
+    "id": "F033",
+    "labels": [],
+    "status": "other",
+    "rationale": "German teaching, reactor safety and medical imaging do not identify any tested category.",
+    "response_sha256": "a39daeab1aa06b6095566e80f3c88bfe9697f1b0bc7d0718405a284db5e0d6e8"
+  },
+  {
+    "id": "F034",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Letter D and sentence both identify invented-creature diets.",
+    "response_sha256": "1e0240d02ce18c691b2db4b779d0e2af6cc8410fb551e2a06a039c0433557c4b"
+  },
+  {
+    "id": "F035",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Image classification and creative writing do not specify a tested category.",
+    "response_sha256": "6d803512554229a67a0e6d8992be97258eeb94c4977e9a7998c4138b17cd065b"
+  },
+  {
+    "id": "F036",
+    "labels": [],
+    "status": "vague",
+    "rationale": "General classification and reasoning do not specify the required output format or order.",
+    "response_sha256": "251034935f4ca21e64f2f0917c7c97818672e84ca78cdbee8f88d0aef585a666"
+  },
+  {
+    "id": "F037",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Explicit dietary habits and food preferences of fictional creatures.",
+    "response_sha256": "ece2ce4d536ca1ff828ed10654f0f10d4d7b6ca07498ef0f7eae91e9a07ef97e"
+  },
+  {
+    "id": "F038",
+    "labels": [
+      "sort"
+    ],
+    "status": "specific",
+    "rationale": "Explicit alphabetical ordering of labels.",
+    "response_sha256": "a86d6c99e530789e6add91f55ae7851df2ab999fc3aa461beadb984d23cf4eee"
+  },
+  {
+    "id": "F039",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Image labeling and captioning do not specify a tested output format or order.",
+    "response_sha256": "7fae7baddcd77b2555531cc363955a0a8bddb965902853016b565297244ebad9"
+  },
+  {
+    "id": "F040",
+    "labels": [
+      "reverse"
+    ],
+    "status": "specific",
+    "rationale": "Explicit reversal of label order; no claim of reverse alphabetical sorting.",
+    "response_sha256": "260c1d2280ada759a835319de74760a5e383ff8514ad9861618998583d1e4fc1"
+  },
+  {
+    "id": "F041",
+    "labels": [],
+    "status": "vague",
+    "rationale": "The specific format is never named before the answer cuts off.",
+    "response_sha256": "c3a315c2bdf40cafc0e74854d33be61d698e7d9212e07afc0e223ba14651f69a"
+  },
+  {
+    "id": "F042",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Sentence and option D both identify numbered-list output.",
+    "response_sha256": "4cef809843f429d666e30d9305cc4322e8654af8811ed0bc7333ed17e366e3d8"
+  },
+  {
+    "id": "F043",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Anatomical image labeling does not specify a tested format or ordering.",
+    "response_sha256": "54532249109a7eeb46fbbd34b7d1eab74226ac3a97c27e54a8ce334556e50dd6"
+  },
+  {
+    "id": "F044",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Sentence and option B both identify numbered-list output.",
+    "response_sha256": "08f590a2bd14824697f68cf319bea39bfe8bae9e95dfaf90febe4bce1a4f21eb"
+  },
+  {
+    "id": "F045",
+    "labels": [
+      "json"
+    ],
+    "status": "specific",
+    "rationale": "Explicit JSON array of label strings.",
+    "response_sha256": "aeed1f61440224c8e84d9e4dffa026aa689f00831e0a51bd74dabfd729a17702"
+  },
+  {
+    "id": "F046",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Fruit identification and classification do not specify a tested format or order.",
+    "response_sha256": "3ee437064d5daf52e7b794ea67bf7b5dea544d58028c2359601f9b9181426f52"
+  },
+  {
+    "id": "F047",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Plant identification and descriptions do not identify a tested task category.",
+    "response_sha256": "20f8bda5cb435d02eed2ee79587a35638210b116650e1c97a7f4953e9c27ed64"
+  },
+  {
+    "id": "F048",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Plant classification and commodity markets do not specify any tested format or order.",
+    "response_sha256": "2a7b61ec20eec01c96ba7d4da35504f2fd957a9ccf66ba312eb056433b2bebc7"
+  },
+  {
+    "id": "F049",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Tree diagrams and hierarchical labels do not identify JSON, numbering, bullets or a tested order.",
+    "response_sha256": "abfe710582e35c68b43d3a62f89a1ba5f360fb1168fc7c66ebc93125e165d2e8"
+  },
+  {
+    "id": "F050",
+    "labels": [],
+    "status": "other",
+    "rationale": "Food safety, navigation and art discussion do not assert a tested category.",
+    "response_sha256": "0e9d7e3efcbcfb3f4e83e08489c77f3dc00735dc6a07445a5eb54c1d6f71aa36"
+  },
+  {
+    "id": "F051",
+    "labels": [],
+    "status": "other",
+    "rationale": "Wine production, reasoning evaluation and creative language do not assert a tested category.",
+    "response_sha256": "a28e901ede199bd26dd33aff14b438f200fc7438af65e1073ae7e686ee8f9707"
+  },
+  {
+    "id": "F052",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Letter A and sentence both identify invented-creature diets.",
+    "response_sha256": "3f6bfa4da902873b2ac1faf3e2c340c23006a284b561fae43bf647e4f8c77f38"
+  },
+  {
+    "id": "F053",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Fictional cities and their locations are mentioned without a country-to-capital relation.",
+    "response_sha256": "1491a75deecfa6415686a65fcec2c7fee86103dcac6aa23416d5fb83b04eac9b"
+  },
+  {
+    "id": "F054",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Keyword sorting and classification do not explicitly mean alphabetical sorting.",
+    "response_sha256": "8551e3782107a5489d3e7caa8b2325d5001fd5103bf6cfb154ed5e6d1a12afec"
+  },
+  {
+    "id": "F055",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Visual tagging and wine or narrative details do not specify a tested category.",
+    "response_sha256": "1ab046c914d93df0cbdac67d8a2b44bc33a3458a8d3cc99181d2f823d887003d"
+  },
+  {
+    "id": "F056",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Letter E and sentence both identify invented-creature diets.",
+    "response_sha256": "16d7e9519b0c52ce466431abfb0140956af6b9fb144cb5500aebdad6b1a604ef"
+  },
+  {
+    "id": "F057",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Species and image classification do not specify a tested format or order.",
+    "response_sha256": "7aeb9a4df60ca86ce7ddf05c707cc5356536a486cad77efa9f27dfac105a632d"
+  },
+  {
+    "id": "F058",
+    "labels": [
+      "json"
+    ],
+    "status": "specific",
+    "rationale": "Explicit generation of JSON-formatted datasets; this recognizes JSON, not the faithfulness of extra claims.",
+    "response_sha256": "efc59fcae3b5d8b2fff1e882e562033aaf41db30eac9886e9495ed24c253f56f"
+  },
+  {
+    "id": "F059",
+    "labels": [],
+    "status": "other",
+    "rationale": "Fantasy narrative and chart types do not assert any tested task category.",
+    "response_sha256": "3fa20d0a3f8b27e2de8e4d24202add9dc18e1080e88baf7d80cd1efc7ebada9e"
+  },
+  {
+    "id": "F060",
+    "labels": [
+      "json"
+    ],
+    "status": "specific",
+    "rationale": "Explicit JSON-array output for labels.",
+    "response_sha256": "23c2a0b4ee7f73778ef068b8c12cc3d0f306a34e8247f4a1f05cb8ad77066339"
+  },
+  {
+    "id": "F061",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Explicit numbered-list output.",
+    "response_sha256": "b7b2168d6bf004e17fd9098cc9bb6112a6026bedb84b8c18f54b416b23a72772"
+  },
+  {
+    "id": "F062",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Explicit dietary habits of fictional creatures.",
+    "response_sha256": "1e118495b7614383f092eef09f389b198753a2d52068fcb04678712012943315"
+  },
+  {
+    "id": "F063",
+    "labels": [
+      "capitals"
+    ],
+    "status": "specific",
+    "rationale": "Letter G and sentence both identify invented-country capitals.",
+    "response_sha256": "70c19f37fea0f073980e54d4079869c74dae26afdd1e9ec21b96062934d2578c"
+  },
+  {
+    "id": "F064",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Sentence and option C both identify numbered-list output.",
+    "response_sha256": "290a3a126d22e42825f6f2ee192a5e19deff1bceb6ee322f934ab19ba9df6f97"
+  },
+  {
+    "id": "F065",
+    "labels": [
+      "capitals"
+    ],
+    "status": "specific",
+    "rationale": "Letter I and sentence both identify invented-country capitals.",
+    "response_sha256": "2083a6821ebdc12eb0903eb47c100898668a42e6a8b20818ab80d0691fbe47ea"
+  },
+  {
+    "id": "F066",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Visual object classification and honey production do not name a tested format or order.",
+    "response_sha256": "d352f3d71e4ec0fcc6569d84cd986185cc4fd7afa6d555dc621242c80c1515ea"
+  },
+  {
+    "id": "F067",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Letter A and sentence both identify invented-creature diets.",
+    "response_sha256": "3f6bfa4da902873b2ac1faf3e2c340c23006a284b561fae43bf647e4f8c77f38"
+  },
+  {
+    "id": "F068",
+    "labels": [],
+    "status": "vague",
+    "rationale": "General image classification and wine or animal facts do not specify a tested task category.",
+    "response_sha256": "568018f02f3c79c99db298c69e3379f6102f19b2874fc8bc004c54399eed18fe"
+  },
+  {
+    "id": "F069",
+    "labels": [],
+    "status": "other",
+    "rationale": "Visual metaphors and classroom art instruction are not a tested category.",
+    "response_sha256": "55cbc3a28b116a90ac456f61605fe283e159ca2624748b37b2f09ce71cb1340e"
+  },
+  {
+    "id": "F070",
+    "labels": [
+      "capitals"
+    ],
+    "status": "specific",
+    "rationale": "Explicit capital cities within fictional nations and fantasy geography.",
+    "response_sha256": "e7a96f47c6eca30f5b57b7eab1693c72bbc0b1501df788ab12f1108ac750ff22"
+  },
+  {
+    "id": "F071",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Letter E and sentence both identify invented-creature diets.",
+    "response_sha256": "16d7e9519b0c52ce466431abfb0140956af6b9fb144cb5500aebdad6b1a604ef"
+  },
+  {
+    "id": "F072",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Explicit numbered-list format for object labels.",
+    "response_sha256": "432aecc3524386e94ce09b8521d231e6487eeef06a8f8d712bfa4fa7cd520f55"
+  },
+  {
+    "id": "F073",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Sentence and option B both identify numbered-list output.",
+    "response_sha256": "08f590a2bd14824697f68cf319bea39bfe8bae9e95dfaf90febe4bce1a4f21eb"
+  },
+  {
+    "id": "F074",
+    "labels": [],
+    "status": "other",
+    "rationale": "War history and water infrastructure do not assert a tested category.",
+    "response_sha256": "0a442ffd239d659e69775302b92753ea859880a47da8af5bbb2999e705c9a44e"
+  },
+  {
+    "id": "F075",
+    "labels": [
+      "bullets"
+    ],
+    "status": "specific",
+    "rationale": "Sentence and option E both identify bullet-list output.",
+    "response_sha256": "bc484268385251dc0eb5c4c6a8bed93e36136e353a959655c2b6b04c3b212f6b"
+  },
+  {
+    "id": "F076",
+    "labels": [
+      "sort"
+    ],
+    "status": "specific",
+    "rationale": "Explicit alphabetical ordering of labels.",
+    "response_sha256": "a86d6c99e530789e6add91f55ae7851df2ab999fc3aa461beadb984d23cf4eee"
+  },
+  {
+    "id": "F077",
+    "labels": [
+      "json"
+    ],
+    "status": "specific",
+    "rationale": "Explicit JSON-array output.",
+    "response_sha256": "d4784ca5f586ba0f1a89c51eaa0e4ad8cd9a983dec316bd948f75d47936a60e0"
+  },
+  {
+    "id": "F078",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Fruit classification does not specify a tested format or order.",
+    "response_sha256": "a78eca75c13eca70a24a9e2a7036c2c6c7ddf1672a90b0ed6e5c397ab70cd47e"
+  },
+  {
+    "id": "F079",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Matching fictional city names to worlds does not assert capital-country knowledge.",
+    "response_sha256": "8de832c4fc0b84586907c849a1fbb52f894cad42909438dbe98ad83669cb3ff2"
+  },
+  {
+    "id": "F080",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Explicit food preferences and dietary habits of fictional creatures.",
+    "response_sha256": "ff12e63a06530b5eb6b9e0acac65d0a8fe2fdc38e3e8a7c7ee89f4b53d62f073"
+  },
+  {
+    "id": "F081",
+    "labels": [
+      "capitals"
+    ],
+    "status": "specific",
+    "rationale": "Letter B and sentence both identify invented-country capitals.",
+    "response_sha256": "afe54fd958ae2b4d34cb4201b868c6feb2c962dac02d8e3b2179334707581784"
+  },
+  {
+    "id": "F082",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Explicit dietary habits and food preferences of fictional creatures.",
+    "response_sha256": "ece2ce4d536ca1ff828ed10654f0f10d4d7b6ca07498ef0f7eae91e9a07ef97e"
+  },
+  {
+    "id": "F083",
+    "labels": [],
+    "status": "other",
+    "rationale": "Wine sensory descriptions and constitutional politics do not assert a tested category.",
+    "response_sha256": "3fd3fec7ad27057ed821ea36296dd6888416f229afb3e306f45ad3d08a01d148"
+  },
+  {
+    "id": "F084",
+    "labels": [
+      "sort"
+    ],
+    "status": "specific",
+    "rationale": "Explicit alphabetical ordering of labels.",
+    "response_sha256": "41b2c1844ca867af3f8a062c0feb04cda0f2e52254358cd1db50ecde00b72bf6"
+  },
+  {
+    "id": "F085",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Explicit fictional-creature dietary habits and food preferences.",
+    "response_sha256": "2277b8b6c0e3297e5625e44ed91ade12558cfcf212516969eece43e26b62f587"
+  },
+  {
+    "id": "F086",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Letter B and sentence both identify invented-creature diets.",
+    "response_sha256": "0dc415fd036fc1b819ada9debad96b110f1bdcfd38efe1efafd064166b702bd9"
+  },
+  {
+    "id": "F087",
+    "labels": [],
+    "status": "abstain",
+    "rationale": "Selects unknown and no clear change; unfinished narrative elaboration names no tested task.",
+    "response_sha256": "175ce4cf9c91ea84fec079e8869b3b96573eea30288b6ffa710ad73b64792f30"
+  },
+  {
+    "id": "F088",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Sentence and option D both identify numbered-list output.",
+    "response_sha256": "4cef809843f429d666e30d9305cc4322e8654af8811ed0bc7333ed17e366e3d8"
+  },
+  {
+    "id": "F089",
+    "labels": [],
+    "status": "other",
+    "rationale": "Speculative-fiction plot description does not identify a tested task category.",
+    "response_sha256": "03490388406794eabc3c804c404cfde6befda5a12545c8e6501143ce3eeb2051"
+  },
+  {
+    "id": "F090",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Medical-image classification and grammar teaching do not specify a tested format or order.",
+    "response_sha256": "126104543d554e96ac7748f0d05520af2fc19b3f08249cd24735bb7a54ca10ed"
+  },
+  {
+    "id": "F091",
+    "labels": [
+      "reverse"
+    ],
+    "status": "specific",
+    "rationale": "Explicit reversal of label order, not reverse alphabetical sorting.",
+    "response_sha256": "260c1d2280ada759a835319de74760a5e383ff8514ad9861618998583d1e4fc1"
+  },
+  {
+    "id": "F092",
+    "labels": [
+      "reverse"
+    ],
+    "status": "specific",
+    "rationale": "Explicit reversal of label order.",
+    "response_sha256": "c7dd8767491e474809f223d28148d41a7723c9da4940f3331aff81d58ba7e817"
+  },
+  {
+    "id": "F093",
+    "labels": [
+      "json"
+    ],
+    "status": "specific",
+    "rationale": "Explicit JSON-array label output.",
+    "response_sha256": "7d459ba814a5b7cdf9970a899907412787d7a902466c45ee1522e5111bfff2ac"
+  },
+  {
+    "id": "F094",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Hierarchical classification and categorical labeling do not specify a tested format or order.",
+    "response_sha256": "413fef96340e52ddffb54bb068b9350a9117217cb53b14fee20d7786487b44a6"
+  },
+  {
+    "id": "F095",
+    "labels": [
+      "json"
+    ],
+    "status": "specific",
+    "rationale": "Explicit JSON-array output.",
+    "response_sha256": "d4784ca5f586ba0f1a89c51eaa0e4ad8cd9a983dec316bd948f75d47936a60e0"
+  },
+  {
+    "id": "F096",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Explicit numbered-list output.",
+    "response_sha256": "b7b2168d6bf004e17fd9098cc9bb6112a6026bedb84b8c18f54b416b23a72772"
+  },
+  {
+    "id": "F097",
+    "labels": [
+      "json"
+    ],
+    "status": "specific",
+    "rationale": "Explicit JSON-array output.",
+    "response_sha256": "d4784ca5f586ba0f1a89c51eaa0e4ad8cd9a983dec316bd948f75d47936a60e0"
+  },
+  {
+    "id": "F098",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Fictional city naming and geography lack an explicit capital-country relation.",
+    "response_sha256": "f702b5c1679e77f582934642b2ca324dabb79629486ce598415d42d4a35f070c"
+  },
+  {
+    "id": "F099",
+    "labels": [],
+    "status": "other",
+    "rationale": "Surreal narrative and symbolic exchange do not identify a tested task category.",
+    "response_sha256": "9808aad9636ca72b2c965135efe5023a88d2cce675b32e8e231c0e907ee93030"
+  },
+  {
+    "id": "F100",
+    "labels": [
+      "json"
+    ],
+    "status": "ambiguous",
+    "rationale": "Names JSON together with CSV and XML as generated formats; the description does not isolate one output format.",
+    "response_sha256": "1c8097fa71338519b3e484c757938f65d7e2ae86f49d391a0ca2c4051025e839"
+  },
+  {
+    "id": "F101",
+    "labels": [],
+    "status": "vague",
+    "rationale": "General categorical data classification and charts do not specify a tested format or order.",
+    "response_sha256": "8d9c60612fc4a564cdb8f28dd1450517772e38bbc02297f65c5d2fc149254320"
+  },
+  {
+    "id": "F102",
+    "labels": [
+      "json"
+    ],
+    "status": "specific",
+    "rationale": "Letter B and sentence both identify JSON-array output.",
+    "response_sha256": "53c97ed0407aed59a5c16950fadfbcf991d3797d5e876a316d4b7626b9391867"
+  },
+  {
+    "id": "F103",
+    "labels": [
+      "capitals"
+    ],
+    "status": "specific",
+    "rationale": "Letter C and sentence both identify invented-country capitals.",
+    "response_sha256": "d7a524bcd64ef636ae189d6f1a798b85dc044c5b8f1fefb4fc127eb3ddfe0e7e"
+  },
+  {
+    "id": "F104",
+    "labels": [
+      "capitals"
+    ],
+    "status": "specific",
+    "rationale": "Explicit capital-city designations within fictional worlds.",
+    "response_sha256": "c0638bf7a5efb3be6c4a32e0a0e144bc33aa43c06f3ec0d483d69368808809cc"
+  },
+  {
+    "id": "F105",
+    "labels": [],
+    "status": "other",
+    "rationale": "Classroom activity and graph interpretation do not assert any tested category.",
+    "response_sha256": "ac062a4274559e66855e2f116de0cbe3fe0fdb5618d2345c706db915c4dd5e9c"
+  },
+  {
+    "id": "F106",
+    "labels": [
+      "capitals"
+    ],
+    "status": "specific",
+    "rationale": "Explicit fictional capital cities and their corresponding countries.",
+    "response_sha256": "7ba93ddb010547fb8d56a99ed05eeb0c3b755e569b338daf4fcf708210a3b115"
+  },
+  {
+    "id": "F107",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Plant classification and ecological descriptions do not specify a tested format or order.",
+    "response_sha256": "1a99cefe95e826b60cc1ec8b74d781530dc8d3d3ceda52bc321faf020b06f34a"
+  },
+  {
+    "id": "F108",
+    "labels": [],
+    "status": "other",
+    "rationale": "Wine and nature poetry do not assert a tested category.",
+    "response_sha256": "c68c31896a7be634586c1eee3a697e74333b976f5c2ad3e4cbc49725b4f88288"
+  },
+  {
+    "id": "F109",
+    "labels": [
+      "sort"
+    ],
+    "status": "specific",
+    "rationale": "Explicit alphabetical ordering; the unfinished following-label clause adds no category.",
+    "response_sha256": "0e3fa9fb628a4715058911f03f909f7fb930f969e1f1851d93aa0996b8d3d2bb"
+  },
+  {
+    "id": "F110",
+    "labels": [
+      "json"
+    ],
+    "status": "specific",
+    "rationale": "Explicit JSON-array output format.",
+    "response_sha256": "97d185aee3d51d4ead19984f65d287b71ce11a1f045565f1cb730ff2d7ae1edb"
+  },
+  {
+    "id": "F111",
+    "labels": [
+      "json"
+    ],
+    "status": "specific",
+    "rationale": "Explicit JSON-array output.",
+    "response_sha256": "d4784ca5f586ba0f1a89c51eaa0e4ad8cd9a983dec316bd948f75d47936a60e0"
+  },
+  {
+    "id": "F112",
+    "labels": [
+      "capitals"
+    ],
+    "status": "specific",
+    "rationale": "Letter B and the complete first sentence identify invented-country capitals; no extra claim is inferred.",
+    "response_sha256": "60f185f0b7caa9c436de8e729b0e512e8070ae5b784686032b5d31cd9c536283"
+  },
+  {
+    "id": "F113",
+    "labels": [],
+    "status": "other",
+    "rationale": "Aviation safety and Spanish instruction do not assert a tested category.",
+    "response_sha256": "37d1020ee12e18c8ce4880d950a857e47a3b9c8eb6a90af7c4ef5fef7b77a469"
+  },
+  {
+    "id": "F114",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Image classification and creative writing do not specify a tested category.",
+    "response_sha256": "13bdb0d8ee7aedfcad0d48a459701c946feb9f82b97f1960aa914b8d560908ae"
+  },
+  {
+    "id": "F115",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Fruit classification and cultivation do not name a tested output format or order.",
+    "response_sha256": "08776e12a3325c58ed9556f6964f919841bfc21c1671a0535dda868e082dcf48"
+  },
+  {
+    "id": "F116",
+    "labels": [
+      "sort"
+    ],
+    "status": "specific",
+    "rationale": "Explicit alphabetical ordering of labels.",
+    "response_sha256": "1997c232518aed8b9df61a65003c59e899447d62023b715013453fb6c5c2cbdd"
+  },
+  {
+    "id": "F117",
+    "labels": [
+      "json"
+    ],
+    "status": "specific",
+    "rationale": "Explicit JSON-array output.",
+    "response_sha256": "d4784ca5f586ba0f1a89c51eaa0e4ad8cd9a983dec316bd948f75d47936a60e0"
+  },
+  {
+    "id": "F118",
+    "labels": [],
+    "status": "other",
+    "rationale": "Collaborative painting and artistic discussion do not assert a tested category.",
+    "response_sha256": "13c132652c9004198f9cf8dc4c6dedba6640406ac792ab152011904b359662dc"
+  },
+  {
+    "id": "F119",
+    "labels": [
+      "reverse"
+    ],
+    "status": "specific",
+    "rationale": "Explicit reversal of label order.",
+    "response_sha256": "260c1d2280ada759a835319de74760a5e383ff8514ad9861618998583d1e4fc1"
+  },
+  {
+    "id": "F120",
+    "labels": [],
+    "status": "other",
+    "rationale": "Narrative writing and medical-device protocols do not identify any tested category.",
+    "response_sha256": "7f7ff9409ba105bb85b87f50b42dd4f1321194612977b56a12ab7b031e753821"
+  },
+  {
+    "id": "F121",
+    "labels": [
+      "sort"
+    ],
+    "status": "specific",
+    "rationale": "Letter G and sentence both identify alphabetical ordering.",
+    "response_sha256": "34813daa6800e71a825889179bb68a8e24a663bed73f34785fa1169f2a773b69"
+  },
+  {
+    "id": "F122",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Sentence and option C both identify numbered-list output.",
+    "response_sha256": "290a3a126d22e42825f6f2ee192a5e19deff1bceb6ee322f934ab19ba9df6f97"
+  },
+  {
+    "id": "F123",
+    "labels": [],
+    "status": "vague",
+    "rationale": "The order is called specific but never identified; numbers alone do not imply a numbered list.",
+    "response_sha256": "b06244c1d7cf618db0257184f9ec93ba8bbfc0453889bd08c5868da6acccd4aa"
+  },
+  {
+    "id": "F124",
+    "labels": [
+      "sort"
+    ],
+    "status": "specific",
+    "rationale": "Sentence and option B both identify alphabetical ordering.",
+    "response_sha256": "b725c5326a12714402e6c9c935bba717456158d9951f1d61dcdb4c66e376fb7c"
+  },
+  {
+    "id": "F125",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Explicit fictional-creature dietary habits and feeding behavior.",
+    "response_sha256": "405d2a9cbc19306b94eee47c347ca1279a6d386c7607884645850df40167709e"
+  },
+  {
+    "id": "F126",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Fruit and tree identification do not specify a tested format or order.",
+    "response_sha256": "5de0f65994fdc67df0fb84ee00096c71bf6504ede1cce32331fd9b5e714f90e6"
+  },
+  {
+    "id": "F127",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Botanical organization and image classification do not name a tested output format or order.",
+    "response_sha256": "f116a775aa5ddcdd5adbacc055b950eb6f797120795ff3b50a795dae107be6ba"
+  },
+  {
+    "id": "F128",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Sentence and option D both identify numbered-list output.",
+    "response_sha256": "4cef809843f429d666e30d9305cc4322e8654af8811ed0bc7333ed17e366e3d8"
+  },
+  {
+    "id": "F129",
+    "labels": [
+      "capitals"
+    ],
+    "status": "specific",
+    "rationale": "Explicit fictional cities and associated countries, including capital cities.",
+    "response_sha256": "e73c00fd5d51867ba876332ee37e0272f2eaba6f8270608f02d502a01e340010"
+  },
+  {
+    "id": "F130",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Fruit and tree classification do not specify a tested format or order.",
+    "response_sha256": "60f9d1300f94c7c60529cc8d7e67ecf1b4c491b4da938cecf5b7fc76dea169e0"
+  },
+  {
+    "id": "F131",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Sorting by categories and logical sequences does not explicitly mean alphabetical order or reversal.",
+    "response_sha256": "67b2ededee13c626f3dd7a0ef19bb268cf9f7f01b737660baaf46664d4a90c73"
+  },
+  {
+    "id": "F132",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Taxonomic fruit classification does not specify a tested output format or order.",
+    "response_sha256": "90241c9ad625d41daa0a6c14d69deb2707ba2c1be4c3b361a56d7f115a740706"
+  },
+  {
+    "id": "F133",
+    "labels": [
+      "json"
+    ],
+    "status": "specific",
+    "rationale": "Explicit JSON-array label output.",
+    "response_sha256": "7d459ba814a5b7cdf9970a899907412787d7a902466c45ee1522e5111bfff2ac"
+  },
+  {
+    "id": "F134",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Matching numbered items to labels does not assert returning labels as a numbered list.",
+    "response_sha256": "4f4fdc17b7dbba197f45f200ae4ca9606d97512e247cd3e4f10f5cbe04a51fb5"
+  },
+  {
+    "id": "F135",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Fruit identification and cultivation do not specify a tested category.",
+    "response_sha256": "4915167a4ee29c9307339ac7ca69b9cb1ff2a348669e1618f58a3ec508b117f3"
+  },
+  {
+    "id": "F136",
+    "labels": [],
+    "status": "vague",
+    "rationale": "General classification, charts and historical description do not specify a tested format or order.",
+    "response_sha256": "6c9d77775a9a270063f874dd6f7508af6149e6dbef0e272e2e5ab4378d63f080"
+  },
+  {
+    "id": "F137",
+    "labels": [],
+    "status": "other",
+    "rationale": "Creative writing and model-training discussion do not assert a tested category.",
+    "response_sha256": "b40ad43e189ff364869d58fbd7ae04bd98bbdf0548e87f90f45f1ecfc2e3bdc7"
+  },
+  {
+    "id": "F138",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Visual tagging, wine profiles and server details do not specify a tested format or order.",
+    "response_sha256": "3841ea7a18f6ad40a318ca047fc5d36215776f4a4f26b18d92f550c12b81eb75"
+  },
+  {
+    "id": "F139",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Fictional city facts lack an explicit country-to-capital relation.",
+    "response_sha256": "ecdd4d1c8d4aa36b11479635bf941e6a4dc7e8d7918e492e004ad38b5b1aa244"
+  },
+  {
+    "id": "F140",
+    "labels": [
+      "reverse"
+    ],
+    "status": "specific",
+    "rationale": "Explicit reversal of label order, not reverse alphabetical sorting.",
+    "response_sha256": "260c1d2280ada759a835319de74760a5e383ff8514ad9861618998583d1e4fc1"
+  },
+  {
+    "id": "F141",
+    "labels": [
+      "capitals"
+    ],
+    "status": "specific",
+    "rationale": "Letter B and sentence both identify invented-country capitals.",
+    "response_sha256": "afe54fd958ae2b4d34cb4201b868c6feb2c962dac02d8e3b2179334707581784"
+  },
+  {
+    "id": "F142",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Image classification and fruit or bird facts do not identify a tested output format or order.",
+    "response_sha256": "a0aa95ad1cc195fc7b73bb0c4731294d579f19ac96241ca29b7844edd224daac"
+  },
+  {
+    "id": "F143",
+    "labels": [
+      "json"
+    ],
+    "status": "specific",
+    "rationale": "Explicitly says labels are returned as a JSON array; unfinished elaboration adds no claim.",
+    "response_sha256": "aeed1f61440224c8e84d9e4dffa026aa689f00831e0a51bd74dabfd729a17702"
+  },
+  {
+    "id": "F144",
+    "labels": [],
+    "status": "other",
+    "rationale": "German flashcards and data visualization do not assert a tested category.",
+    "response_sha256": "26821598925d2896759a447c3de42046a68c5077700320fac193fa8a61c1ed14"
+  },
+  {
+    "id": "F145",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Object classification and wine or tree facts do not specify a tested format or order.",
+    "response_sha256": "ee3c1e3af5cc5eb16507ba6284891bdb22838236089b0981ecf1568498403c6a"
+  },
+  {
+    "id": "F146",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Fruit categorization by traits does not identify alphabetical ordering or a tested format.",
+    "response_sha256": "90c56500b9eb7e13133bbc6bd31a9af88e1d1be49c1857d8b61e5efb74c04bc3"
+  },
+  {
+    "id": "F147",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Matching labels to images does not name a tested output format or order.",
+    "response_sha256": "f70cace972dcd6c817d242ef8d8c9bc492e729337bd9dffe70524dec1165b560"
+  },
+  {
+    "id": "F148",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Fruit classification and a wildlife incident do not identify a tested format or order.",
+    "response_sha256": "ca471e3cc10177b91b37b1f10d369765a7cf2c77420cde0f0cba14350f9b5eb0"
+  },
+  {
+    "id": "F149",
+    "labels": [
+      "json",
+      "sort"
+    ],
+    "status": "ambiguous",
+    "rationale": "Explicitly claims both JSON-array output and alphabetical sorting.",
+    "response_sha256": "21fbfa3804cdfdf526f40a2c49592660d99851277a734648eedd61cf7b139d02"
+  },
+  {
+    "id": "F150",
+    "labels": [
+      "json"
+    ],
+    "status": "specific",
+    "rationale": "Explicit JSON-array output.",
+    "response_sha256": "d4784ca5f586ba0f1a89c51eaa0e4ad8cd9a983dec316bd948f75d47936a60e0"
+  },
+  {
+    "id": "F151",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Explicit numbered-list labels; no completed second claim.",
+    "response_sha256": "d57ca487a892c3544e10f322712b621ae2fe3ddc3b8ef7783f536d6487d06e60"
+  },
+  {
+    "id": "F152",
+    "labels": [],
+    "status": "other",
+    "rationale": "A description of a Dodge Polara and vehicle sales does not assert any tested task.",
+    "response_sha256": "9374c4559a38374e9e3429ccf75eeaef0e5850118de417471534da291278d6c3"
+  },
+  {
+    "id": "F153",
+    "labels": [
+      "capitals"
+    ],
+    "status": "specific",
+    "rationale": "Explicit fictional capital cities and country matching.",
+    "response_sha256": "2f89ad510f840ec6ed89b57f47d71c00a5f2f5384d14c47722578d7803de287b"
+  },
+  {
+    "id": "F154",
+    "labels": [
+      "json"
+    ],
+    "status": "specific",
+    "rationale": "Explicit JSON-array output format.",
+    "response_sha256": "97d185aee3d51d4ead19984f65d287b71ce11a1f045565f1cb730ff2d7ae1edb"
+  },
+  {
+    "id": "F155",
+    "labels": [
+      "capitals"
+    ],
+    "status": "specific",
+    "rationale": "Letter B and sentence both identify invented-country capitals.",
+    "response_sha256": "afe54fd958ae2b4d34cb4201b868c6feb2c962dac02d8e3b2179334707581784"
+  },
+  {
+    "id": "F156",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Letter E and sentence both identify invented-creature diets.",
+    "response_sha256": "16d7e9519b0c52ce466431abfb0140956af6b9fb144cb5500aebdad6b1a604ef"
+  },
+  {
+    "id": "F157",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Letter A and sentence both identify invented-creature diets.",
+    "response_sha256": "3f6bfa4da902873b2ac1faf3e2c340c23006a284b561fae43bf647e4f8c77f38"
+  },
+  {
+    "id": "F158",
+    "labels": [],
+    "status": "abstain",
+    "rationale": "Selects unknown and no clear change; unfinished narrative elaboration names no tested task.",
+    "response_sha256": "175ce4cf9c91ea84fec079e8869b3b96573eea30288b6ffa710ad73b64792f30"
+  },
+  {
+    "id": "F159",
+    "labels": [],
+    "status": "other",
+    "rationale": "Matching mathematical sequences to graphs and casual language do not assert any tested category.",
+    "response_sha256": "b3087c9d5b505189728d187951dcbec4d308f78c801a0cf87ee7f507f2f3f855"
+  },
+  {
+    "id": "F160",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Letter D and sentence both identify invented-creature diets.",
+    "response_sha256": "1e0240d02ce18c691b2db4b779d0e2af6cc8410fb551e2a06a039c0433557c4b"
+  },
+  {
+    "id": "F161",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Classification and unspecified stylistic constraints do not identify a tested format or order.",
+    "response_sha256": "b9771e8a81ce5483a03e919e4950e4349001ad2ba68e4da45aeb098ce32d8d1e"
+  },
+  {
+    "id": "F162",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Sentence and option A both identify numbered-list output.",
+    "response_sha256": "cfa91d1991ca8c0a12a633aa8d9b7783ea531863fec474073778f0dbd9cb14b9"
+  },
+  {
+    "id": "F163",
+    "labels": [],
+    "status": "other",
+    "rationale": "Speculative-fiction plot description does not assert any tested category.",
+    "response_sha256": "e9db1d6310301d5bea9f373493dcccb8fa7adbef6a18762b10dea722ee188085"
+  },
+  {
+    "id": "F164",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Image classification and captioning do not specify a tested format or order.",
+    "response_sha256": "84c5a4ef03d5b105f9ff417af01b2fdfc7b93193cb71a9c4c7982f7215a90f75"
+  },
+  {
+    "id": "F165",
+    "labels": [
+      "sort"
+    ],
+    "status": "specific",
+    "rationale": "Letter G and sentence both identify alphabetical ordering.",
+    "response_sha256": "34813daa6800e71a825889179bb68a8e24a663bed73f34785fa1169f2a773b69"
+  },
+  {
+    "id": "F166",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Fictional city descriptions do not assert the capital-country relation.",
+    "response_sha256": "ba6335d5b3ae904ddcde47a2ec19b736671bb2aa59a12824c21d4130837be20b"
+  },
+  {
+    "id": "F167",
+    "labels": [],
+    "status": "other",
+    "rationale": "War history, production deployment and academic prose do not assert a tested category.",
+    "response_sha256": "29ba5073d13d1151f6022e36646f3a762c8ef0dc273fd28c4bcbc7367956f843"
+  },
+  {
+    "id": "F168",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Fruit and tree identification do not specify a tested output format or order.",
+    "response_sha256": "0ced1568c91dca8c010714d7736eff52497cef825f0c8e69582f2f8363d56747"
+  },
+  {
+    "id": "F169",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Matching fictional city names to worlds does not assert capital-country knowledge.",
+    "response_sha256": "8de832c4fc0b84586907c849a1fbb52f894cad42909438dbe98ad83669cb3ff2"
+  },
+  {
+    "id": "F170",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Sentence and option C both identify numbered-list output.",
+    "response_sha256": "87af48ec68e64bb41e18ad4deff600be875717a852f15b06a395622d547f84d7"
+  },
+  {
+    "id": "F171",
+    "labels": [
+      "json"
+    ],
+    "status": "specific",
+    "rationale": "Sentence and option A both identify JSON-array output.",
+    "response_sha256": "8dc02be1662b09f153dcf781b13556c36bd4c0f26805958bea85842d2721f173"
+  },
+  {
+    "id": "F172",
+    "labels": [
+      "bullets"
+    ],
+    "status": "specific",
+    "rationale": "Explicit bullet-list output.",
+    "response_sha256": "ceefe956412be25c09f14918d6dc3d30cc24f074f59c95799a622ef9b7a1e20f"
+  },
+  {
+    "id": "F173",
+    "labels": [
+      "sort"
+    ],
+    "status": "specific",
+    "rationale": "Explicit alphabetical ordering of labels.",
+    "response_sha256": "1997c232518aed8b9df61a65003c59e899447d62023b715013453fb6c5c2cbdd"
+  },
+  {
+    "id": "F174",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Species identification and distinguishing characteristics do not specify a tested format or order.",
+    "response_sha256": "4d66c2e9bc69b6f2a25f4fc8a87f7bc0cb74d869444384ad347bb6495c612e9b"
+  },
+  {
+    "id": "F175",
+    "labels": [],
+    "status": "abstain",
+    "rationale": "Selects unknown and no clear change; unfinished object-labeling clause does not name a tested category.",
+    "response_sha256": "562d07590bf3d26738a6a1d3ba4266294e3f45cb54bb8a374f0e33ab1837b359"
+  },
+  {
+    "id": "F176",
+    "labels": [],
+    "status": "other",
+    "rationale": "Narrative, art prompts and graph plotting do not assert a tested category.",
+    "response_sha256": "aad1b09588a2b887d1099866db53173ff5cfa58116d2df884f162bfe943c26c6"
+  },
+  {
+    "id": "F177",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Image identification and labeling do not specify a tested format or order.",
+    "response_sha256": "a50b7c214a89c0e4fb71f42a634600ec6a437e51d23fdf64e6539d2a47d7c4ed"
+  },
+  {
+    "id": "F178",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Explicit food sources and dietary habits of fictional creatures.",
+    "response_sha256": "a2629823cbd121983a4f39445c8f8845b7d6cde83b8748b58dcaf360d1b239cb"
+  },
+  {
+    "id": "F179",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Visual object recognition and species classification do not name a tested format or order.",
+    "response_sha256": "d76c5d4e1ec48183668f37a28011ab0aa9742efbc495ef7a11a6bce2ae78c248"
+  },
+  {
+    "id": "F180",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Letter A and sentence both identify invented-creature diets.",
+    "response_sha256": "3f6bfa4da902873b2ac1faf3e2c340c23006a284b561fae43bf647e4f8c77f38"
+  },
+  {
+    "id": "F181",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Multi-label image tagging and scene description do not specify a tested output format or order.",
+    "response_sha256": "c76bc3fc34edbe8c27b072412270854d1647d83d11bb8d062e30491f4f57c796"
+  },
+  {
+    "id": "F182",
+    "labels": [],
+    "status": "other",
+    "rationale": "Art prompts and music descriptions do not assert any tested category.",
+    "response_sha256": "cf982a99d8ddcb9eb8e4762e19f5b10ea50601e4ac85ce764986d13634523a5e"
+  },
+  {
+    "id": "F183",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Visual tagging and wine or software details do not specify a tested category.",
+    "response_sha256": "b571fb9f9f9f806f264725e16d8d67b71cdd405e3c5865387d657b06d8e58229"
+  },
+  {
+    "id": "F184",
+    "labels": [
+      "json"
+    ],
+    "status": "specific",
+    "rationale": "Explicit JSON array of label strings.",
+    "response_sha256": "aeed1f61440224c8e84d9e4dffa026aa689f00831e0a51bd74dabfd729a17702"
+  },
+  {
+    "id": "F185",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Image classification and technical documentation do not identify a tested format or order.",
+    "response_sha256": "a6de3694e912c3b1760d93324ffa3f23b794ff1988ecf33ac153075d5a2c4e2f"
+  },
+  {
+    "id": "F186",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Generic sorting and classification do not imply alphabetical sorting.",
+    "response_sha256": "5ccecde110e212315c88a80b06b8d967629c7fd864efe45c0dc433106c3f6f03"
+  },
+  {
+    "id": "F187",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Letter A and sentence both identify invented-creature diets.",
+    "response_sha256": "3f6bfa4da902873b2ac1faf3e2c340c23006a284b561fae43bf647e4f8c77f38"
+  },
+  {
+    "id": "F188",
+    "labels": [],
+    "status": "other",
+    "rationale": "Poetry, wine and model evaluation do not assert a tested task category.",
+    "response_sha256": "8f40c9552c3b5081e917b23e6d3a8d7104898ce77348b78952c7b4b9ae32ac5b"
+  },
+  {
+    "id": "F189",
+    "labels": [
+      "sort"
+    ],
+    "status": "specific",
+    "rationale": "Explicit alphabetical ordering; the unfinished following-label clause adds no category.",
+    "response_sha256": "0e3fa9fb628a4715058911f03f909f7fb930f969e1f1851d93aa0996b8d3d2bb"
+  },
+  {
+    "id": "F190",
+    "labels": [],
+    "status": "other",
+    "rationale": "Wine production, reasoning evaluation and creative language do not assert a tested category.",
+    "response_sha256": "a28e901ede199bd26dd33aff14b438f200fc7438af65e1073ae7e686ee8f9707"
+  },
+  {
+    "id": "F191",
+    "labels": [],
+    "status": "other",
+    "rationale": "Medical-device descriptions do not assert a tested category.",
+    "response_sha256": "8a0503293a976ce0d4c00a506fcbd26436c8e48559e38bbee9040947c8281c62"
+  },
+  {
+    "id": "F192",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Wine classification and poetic produce descriptions do not identify a tested format or order.",
+    "response_sha256": "197a11b770eaac37cfb0b19ce798a3dec8ef964cfd3d9cd8806b9f2455654999"
+  },
+  {
+    "id": "F193",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Species classification and tree maintenance do not specify a tested category.",
+    "response_sha256": "5aea026401e41c47f4ebfd6708acb47fead39d7ce3756e62cccce2b663a4c4a9"
+  },
+  {
+    "id": "F194",
+    "labels": [
+      "capitals"
+    ],
+    "status": "specific",
+    "rationale": "Letter C and sentence both identify invented-country capitals.",
+    "response_sha256": "d7a524bcd64ef636ae189d6f1a798b85dc044c5b8f1fefb4fc127eb3ddfe0e7e"
+  },
+  {
+    "id": "F195",
+    "labels": [
+      "sort"
+    ],
+    "status": "specific",
+    "rationale": "Explicit alphabetical ordering of labels.",
+    "response_sha256": "a86d6c99e530789e6add91f55ae7851df2ab999fc3aa461beadb984d23cf4eee"
+  },
+  {
+    "id": "F196",
+    "labels": [
+      "reverse"
+    ],
+    "status": "specific",
+    "rationale": "Explicit reversal of label order, not reverse alphabetical sorting.",
+    "response_sha256": "260c1d2280ada759a835319de74760a5e383ff8514ad9861618998583d1e4fc1"
+  },
+  {
+    "id": "F197",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Sentence and option C both identify numbered-list output.",
+    "response_sha256": "87af48ec68e64bb41e18ad4deff600be875717a852f15b06a395622d547f84d7"
+  },
+  {
+    "id": "F198",
+    "labels": [],
+    "status": "vague",
+    "rationale": "General object classification and language teaching do not identify a tested category.",
+    "response_sha256": "135b5c35013019c4e2256a68da45e4d9ead5dec497990b20842839b99f7bd68d"
+  },
+  {
+    "id": "F199",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Explicit fictional-creature diets and dietary preferences.",
+    "response_sha256": "b0fa957572f75074c92ba2989d8cfe8eba956dc9aa2711827565cabddf9683c4"
+  },
+  {
+    "id": "F200",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Fictional city naming and geography do not assert a country-to-capital relationship.",
+    "response_sha256": "139048d4a48893ea037c3c532248d488e5fb2f6d86e7a764e2cb47822cbea004"
+  },
+  {
+    "id": "F201",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Fictional city facts do not explicitly identify capitals.",
+    "response_sha256": "9408984426f5c6553ff93a37ff3c1e34ac6ebb9c32fcb6ce6c06c6d43eb0cecf"
+  },
+  {
+    "id": "F202",
+    "labels": [],
+    "status": "other",
+    "rationale": "Wine profiles and election allegations do not assert a tested category.",
+    "response_sha256": "e74b3f2a442c9f4f5381c251c8cf900163a067239313e987fd48d7fb62a2928b"
+  },
+  {
+    "id": "F203",
+    "labels": [
+      "capitals"
+    ],
+    "status": "specific",
+    "rationale": "Letter E and sentence both identify invented-country capitals.",
+    "response_sha256": "dac321c89baa9b741c66e2c41517853c3527ab634cf8050ed1245da79a8d1741"
+  },
+  {
+    "id": "F204",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Fruit image classification does not specify a tested format or order.",
+    "response_sha256": "ca0375384653b600d80d24ffcaa4499607bb97e97da77a8b008ff60479ba38ea"
+  },
+  {
+    "id": "F205",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Species classification and data visualization do not specify a tested category.",
+    "response_sha256": "44d87c7b19a980d03c1ba7239ecfae19a7208993dc7f7e74132ff64c81adc1ac"
+  },
+  {
+    "id": "F206",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Generic sorting of species or findings does not specify alphabetical sorting or reversal.",
+    "response_sha256": "cb516bd1b99a780309ca1802a1b79777fa5f56237e7ba74b1fb7782ff9b19949"
+  },
+  {
+    "id": "F207",
+    "labels": [],
+    "status": "other",
+    "rationale": "Organelle functions and a fictional theft narrative do not assert any tested category.",
+    "response_sha256": "3031465d123d3ad155cd4fa9c2c08e1ea4842061c9f62376f80259b048f9af8c"
+  },
+  {
+    "id": "F208",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Letter E and sentence both identify invented-creature diets.",
+    "response_sha256": "16d7e9519b0c52ce466431abfb0140956af6b9fb144cb5500aebdad6b1a604ef"
+  },
+  {
+    "id": "F209",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Explicit numbered-list output.",
+    "response_sha256": "b7b2168d6bf004e17fd9098cc9bb6112a6026bedb84b8c18f54b416b23a72772"
+  },
+  {
+    "id": "F210",
+    "labels": [
+      "json"
+    ],
+    "status": "specific",
+    "rationale": "Explicit JSON-array output format.",
+    "response_sha256": "97d185aee3d51d4ead19984f65d287b71ce11a1f045565f1cb730ff2d7ae1edb"
+  },
+  {
+    "id": "F211",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Sorting by species, color or type is not explicit alphabetical ordering or reversal.",
+    "response_sha256": "1ffd55d42c32e48de22532056a16c190f96e2a2b1beef415e73d398e52d44b12"
+  },
+  {
+    "id": "F212",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Sentence and option A both identify numbered-list output.",
+    "response_sha256": "cfa91d1991ca8c0a12a633aa8d9b7783ea531863fec474073778f0dbd9cb14b9"
+  },
+  {
+    "id": "F213",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Tree classification and workplace communication do not specify a tested format or order.",
+    "response_sha256": "4822636e3085ab406f5c2edf32642475e54f3cc3d0e8fe8b8d110ad4742a73e1"
+  },
+  {
+    "id": "F214",
+    "labels": [
+      "capitals"
+    ],
+    "status": "specific",
+    "rationale": "Letter B and the complete first sentence identify invented-country capitals; no extra claim is inferred.",
+    "response_sha256": "60f185f0b7caa9c436de8e729b0e512e8070ae5b784686032b5d31cd9c536283"
+  },
+  {
+    "id": "F215",
+    "labels": [
+      "sort"
+    ],
+    "status": "specific",
+    "rationale": "Explicit alphabetical ordering of labels.",
+    "response_sha256": "a86d6c99e530789e6add91f55ae7851df2ab999fc3aa461beadb984d23cf4eee"
+  },
+  {
+    "id": "F216",
+    "labels": [
+      "sort"
+    ],
+    "status": "specific",
+    "rationale": "Explicit alphabetical ordering of labels.",
+    "response_sha256": "41b2c1844ca867af3f8a062c0feb04cda0f2e52254358cd1db50ecde00b72bf6"
+  },
+  {
+    "id": "F217",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Structured output and visually pleasing layouts do not name a tested format.",
+    "response_sha256": "119bc38887136cfd26f7db74d44d4f818bbc0515b3333b996ea6b946afc40a62"
+  },
+  {
+    "id": "F218",
+    "labels": [],
+    "status": "abstain",
+    "rationale": "Selects unknown and no clear change; generic classification does not supply a task category.",
+    "response_sha256": "0b786a7bcffb4c52af481451e1e70181c308fa27bceda2fc1200aaa06f89b369"
+  },
+  {
+    "id": "F219",
+    "labels": [],
+    "status": "other",
+    "rationale": "Mystery plot, vocabulary definitions and history do not assert any tested category.",
+    "response_sha256": "da3c504e5ea015f8abfc6a33ab4256e1ce31776e2771cb8df4abe26af6b130ed"
+  },
+  {
+    "id": "F220",
+    "labels": [
+      "capitals"
+    ],
+    "status": "specific",
+    "rationale": "Explicit fictional capital cities and countries; the correctness of added examples is separate.",
+    "response_sha256": "cf0922ac4a1c2a16592aca627f95e6506eef4e9c65a4417566ca81eee36b5d91"
+  },
+  {
+    "id": "F221",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Explicit dietary preferences of fictional creatures.",
+    "response_sha256": "fcb62a76dd9df6c204d9d6f16fbbab3e6d61ffb74b3a61eae148cfcdc9dd0285"
+  },
+  {
+    "id": "F222",
+    "labels": [
+      "sort"
+    ],
+    "status": "specific",
+    "rationale": "Explicit alphabetical ordering of labels.",
+    "response_sha256": "a86d6c99e530789e6add91f55ae7851df2ab999fc3aa461beadb984d23cf4eee"
+  },
+  {
+    "id": "F223",
+    "labels": [
+      "capitals"
+    ],
+    "status": "specific",
+    "rationale": "Explicit fictional city-country matching including capital cities.",
+    "response_sha256": "1af83904ab110a9c726b4a04024a4ebaec443eb86f0a4956d324888b7ad0e1a7"
+  },
+  {
+    "id": "F224",
+    "labels": [],
+    "status": "other",
+    "rationale": "Classification performance plots and metrics do not identify a tested task category.",
+    "response_sha256": "ed3915e4abdeda9b4646b100900427b7ac98e8bca5757b5041812e5b8745063d"
+  },
+  {
+    "id": "F225",
+    "labels": [],
+    "status": "other",
+    "rationale": "Surreal prose, wine evaluation and mathematical expressions do not assert a tested category.",
+    "response_sha256": "3a65f9a1fea299082129e43e365dd4dcc1fc114abe672e6277678c38b0ff5af3"
+  },
+  {
+    "id": "F226",
+    "labels": [
+      "capitals"
+    ],
+    "status": "specific",
+    "rationale": "Letter I and sentence both identify invented-country capitals.",
+    "response_sha256": "2083a6821ebdc12eb0903eb47c100898668a42e6a8b20818ab80d0691fbe47ea"
+  },
+  {
+    "id": "F227",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Explicit fictional-creature dietary habits and food preferences.",
+    "response_sha256": "2277b8b6c0e3297e5625e44ed91ade12558cfcf212516969eece43e26b62f587"
+  },
+  {
+    "id": "F228",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Returning a fruit-name list does not specify numbering, bullets, JSON or ordering.",
+    "response_sha256": "346993ad65c173f4156c7fd473268a1e26b4f236e1a336e81cd540e0da8d5380"
+  },
+  {
+    "id": "F229",
+    "labels": [
+      "capitals"
+    ],
+    "status": "specific",
+    "rationale": "Letter C and sentence both identify invented-country capitals.",
+    "response_sha256": "d7a524bcd64ef636ae189d6f1a798b85dc044c5b8f1fefb4fc127eb3ddfe0e7e"
+  },
+  {
+    "id": "F230",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Ascending arrangement after sorting by color does not explicitly identify alphabetical sorting.",
+    "response_sha256": "9480921ae6517a674c7708300d1fea7b0eabe7435653111bd33dd3dabaa2e4ec"
+  },
+  {
+    "id": "F231",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Hierarchical or thematic categorization is not alphabetical sorting or reversal.",
+    "response_sha256": "d2a5f6e92ae0c281511baa024745aaf31914b60e3c1afa3142104e0a66983ec8"
+  },
+  {
+    "id": "F232",
+    "labels": [
+      "bullets"
+    ],
+    "status": "specific",
+    "rationale": "Explicit bullet-list output.",
+    "response_sha256": "450a3eaed9a7ff243698ccde0efe8bb14fc96b8537bb6882381f71eee83911fe"
+  },
+  {
+    "id": "F233",
+    "labels": [
+      "json"
+    ],
+    "status": "specific",
+    "rationale": "Explicit JSON-array output.",
+    "response_sha256": "d4784ca5f586ba0f1a89c51eaa0e4ad8cd9a983dec316bd948f75d47936a60e0"
+  },
+  {
+    "id": "F234",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Fruit and tree identification and object classification do not specify a tested format or order.",
+    "response_sha256": "fec7d6852a8d8fb592b0cfa96f950c2442eeef3b628583ed9f286b5883a44eca"
+  },
+  {
+    "id": "F235",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Explicit dietary habits and foods of fictional creatures.",
+    "response_sha256": "88666103c82ad113c3cc31d903359a09b6c5abf76754f3ecb85f54fdb3d82f5b"
+  },
+  {
+    "id": "F236",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Plant image classification and grammar teaching do not specify a tested format or order.",
+    "response_sha256": "684ac7420c6b104e1dafa001d42030a3ae29b3555bae394451673bb6097900d6"
+  },
+  {
+    "id": "F237",
+    "labels": [
+      "json"
+    ],
+    "status": "specific",
+    "rationale": "Explicit JSON-array output.",
+    "response_sha256": "d4784ca5f586ba0f1a89c51eaa0e4ad8cd9a983dec316bd948f75d47936a60e0"
+  },
+  {
+    "id": "F238",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Structured datasets and generic ML classification do not identify JSON or another tested format.",
+    "response_sha256": "720bac6232e782f0635449879f893667dac90da64e6eddf1a5e0d4080b7a6c37"
+  },
+  {
+    "id": "F239",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Explicit dietary habits of fictional creatures.",
+    "response_sha256": "18c6f80db69ddb521758bc2afcbe2c823bbd963290e1bfcb39d95f4f2a6d5c70"
+  },
+  {
+    "id": "F240",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Fruit classification and communications do not specify a tested category.",
+    "response_sha256": "6e3aebe6ab3753354327e5caf25716b594e4ca98e2fb729f6d5cf8946729847d"
+  },
+  {
+    "id": "F241",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Classification diagrams and hierarchical data do not specify a tested format or order.",
+    "response_sha256": "8f8ceabba426d6917dc7aea6e496d92f33fe35515ebcbe19041e81d01fea4d97"
+  },
+  {
+    "id": "F242",
+    "labels": [],
+    "status": "abstain",
+    "rationale": "Selects unknown and says no clear change is identifiable.",
+    "response_sha256": "22d108db4a61da0535bc3477f19258b3cf13bcf7660ca4fa01747d8e14894a76"
+  },
+  {
+    "id": "F243",
+    "labels": [
+      "bullets"
+    ],
+    "status": "specific",
+    "rationale": "Sentence and option B both identify bullet-list output.",
+    "response_sha256": "d32735e8b3fe71f236db1ee99e8378c760ed3459c32fdf48d12ae34ed8348a28"
+  },
+  {
+    "id": "F244",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Explicit numbered-list format for object labels.",
+    "response_sha256": "432aecc3524386e94ce09b8521d231e6487eeef06a8f8d712bfa4fa7cd520f55"
+  },
+  {
+    "id": "F245",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Explicit numbered-list output.",
+    "response_sha256": "b7b2168d6bf004e17fd9098cc9bb6112a6026bedb84b8c18f54b416b23a72772"
+  },
+  {
+    "id": "F246",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Keyword categorization and descriptive attributes do not specify a tested format or order.",
+    "response_sha256": "bcd5b5b5b99690fe254b580ed8df2af3ceaa3d22bf6361633124ed7979d66fa0"
+  },
+  {
+    "id": "F247",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Invented countries and creatures are mentioned without capitals or diets.",
+    "response_sha256": "f4d63337cd74ae00ed4d35f710e3139f5b0bd49e3151854fdf7effc3dc7b5d15"
+  },
+  {
+    "id": "F248",
+    "labels": [],
+    "status": "other",
+    "rationale": "Creative narratives and game-interface specifications do not assert any tested category.",
+    "response_sha256": "9b0522f8faedf3a5cb1c23b18c4a11de0e9b9c7607da73397f82c1207390aacb"
+  },
+  {
+    "id": "F249",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Explicit numbered-list output.",
+    "response_sha256": "b7b2168d6bf004e17fd9098cc9bb6112a6026bedb84b8c18f54b416b23a72772"
+  },
+  {
+    "id": "F250",
+    "labels": [
+      "sort"
+    ],
+    "status": "specific",
+    "rationale": "Explicit alphabetical ordering; the unfinished following-label clause adds no category.",
+    "response_sha256": "0e3fa9fb628a4715058911f03f909f7fb930f969e1f1851d93aa0996b8d3d2bb"
+  },
+  {
+    "id": "F251",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Explicit numbered-list output.",
+    "response_sha256": "b7b2168d6bf004e17fd9098cc9bb6112a6026bedb84b8c18f54b416b23a72772"
+  },
+  {
+    "id": "F252",
+    "labels": [],
+    "status": "abstain",
+    "rationale": "Selects unknown and says no clear change is identifiable.",
+    "response_sha256": "22d108db4a61da0535bc3477f19258b3cf13bcf7660ca4fa01747d8e14894a76"
+  },
+  {
+    "id": "F253",
+    "labels": [],
+    "status": "other",
+    "rationale": "Dodge Polara specifications and sales descriptions do not assert any tested category.",
+    "response_sha256": "8d81d913a23f04f94a0b5e6ae99c9d3718de3c57ac8144177c2a785b99c1b611"
+  },
+  {
+    "id": "F254",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Explicit numbered-list output.",
+    "response_sha256": "b7b2168d6bf004e17fd9098cc9bb6112a6026bedb84b8c18f54b416b23a72772"
+  },
+  {
+    "id": "F255",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Letter A and sentence both identify invented-creature diets.",
+    "response_sha256": "3f6bfa4da902873b2ac1faf3e2c340c23006a284b561fae43bf647e4f8c77f38"
+  },
+  {
+    "id": "F256",
+    "labels": [
+      "json"
+    ],
+    "status": "specific",
+    "rationale": "Explicit JSON-array output.",
+    "response_sha256": "d4784ca5f586ba0f1a89c51eaa0e4ad8cd9a983dec316bd948f75d47936a60e0"
+  },
+  {
+    "id": "F257",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Plant classification and sports journalism do not identify a tested format or order.",
+    "response_sha256": "72c04badfa827a2ab1bb0daa20e5f714ce482e6077073310e5a1c7726ad3cc5a"
+  },
+  {
+    "id": "F258",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Organism classification and image captions do not specify a tested format or order.",
+    "response_sha256": "85713132929f0a8186ab1ca1c51607d96ce02a6ea771da15f599d25c94a7f58c"
+  },
+  {
+    "id": "F259",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Organizing vocabulary by category is not alphabetical sorting; the rest is narrative.",
+    "response_sha256": "7eef0978fbe7fe4bc2036a65e3f26218ab20d1dda6466908d2b1a573a232d168"
+  },
+  {
+    "id": "F260",
+    "labels": [],
+    "status": "vague",
+    "rationale": "The output format and stylistic constraints are unnamed; image classification alone is insufficient.",
+    "response_sha256": "b363edca97128f2e3ad8d5f14228f0a172c80dfd535b8f40a3f162e6915ef9d9"
+  },
+  {
+    "id": "F261",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Sorting images by type is not explicit alphabetical order or input reversal.",
+    "response_sha256": "406e616b298c5485d000bf953195a4247b81fc5206c74677a4355b7538f4ef77"
+  },
+  {
+    "id": "F262",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Invented creatures and habitats are named without dietary knowledge.",
+    "response_sha256": "fccbae6feafd694f7c875a67025c1a21d224b05a02717f14ee67cc37c3063051"
+  },
+  {
+    "id": "F263",
+    "labels": [
+      "json"
+    ],
+    "status": "specific",
+    "rationale": "Explicit JSON-array output format.",
+    "response_sha256": "97d185aee3d51d4ead19984f65d287b71ce11a1f045565f1cb730ff2d7ae1edb"
+  },
+  {
+    "id": "F264",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Generic sorting and fruit categorization do not specify a tested order or format.",
+    "response_sha256": "b9c246455cbf4c384a40e3a1b4eb7be6de7088d79e8798ee0cf6b9b30a0acd36"
+  },
+  {
+    "id": "F265",
+    "labels": [
+      "json"
+    ],
+    "status": "specific",
+    "rationale": "Explicit JSON-array output.",
+    "response_sha256": "d4784ca5f586ba0f1a89c51eaa0e4ad8cd9a983dec316bd948f75d47936a60e0"
+  },
+  {
+    "id": "F266",
+    "labels": [],
+    "status": "other",
+    "rationale": "Narrative scene description and visual matching do not assert a tested category.",
+    "response_sha256": "dc6e585a66e79fce342081de40517a8bf81b05508412083f2c16fc5c44800465"
+  },
+  {
+    "id": "F267",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Explicit numbered-list output.",
+    "response_sha256": "b7b2168d6bf004e17fd9098cc9bb6112a6026bedb84b8c18f54b416b23a72772"
+  },
+  {
+    "id": "F268",
+    "labels": [
+      "json"
+    ],
+    "status": "specific",
+    "rationale": "Explicit JSON-array output.",
+    "response_sha256": "d4784ca5f586ba0f1a89c51eaa0e4ad8cd9a983dec316bd948f75d47936a60e0"
+  },
+  {
+    "id": "F269",
+    "labels": [
+      "capitals"
+    ],
+    "status": "specific",
+    "rationale": "Explicit fictional nations and their capitals.",
+    "response_sha256": "821bbb6393f6645b0b39066e3908ca5603547e134d8547a9d10ddc2a8bdfb504"
+  },
+  {
+    "id": "F270",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Tree identification and visual feature matching do not specify a tested format or order.",
+    "response_sha256": "add884820abba72fc77711bfac752712681bc5142ac765be4527ea28e1966384"
+  },
+  {
+    "id": "F271",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Explicit numbered-list output.",
+    "response_sha256": "b7b2168d6bf004e17fd9098cc9bb6112a6026bedb84b8c18f54b416b23a72772"
+  },
+  {
+    "id": "F272",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Returning a fruit-name list does not specify numbering, bullets, JSON or ordering.",
+    "response_sha256": "346993ad65c173f4156c7fd473268a1e26b4f236e1a336e81cd540e0da8d5380"
+  },
+  {
+    "id": "F273",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Image labels, captions and metadata do not specify a tested output format or order.",
+    "response_sha256": "17d3b9fee979ddbd1c8820dcd2d6cb26c59385028cd0cf4dff973403fcad93e6"
+  },
+  {
+    "id": "F274",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Explicit fictional-creature dietary habits and feeding behavior.",
+    "response_sha256": "405d2a9cbc19306b94eee47c347ca1279a6d386c7607884645850df40167709e"
+  },
+  {
+    "id": "F275",
+    "labels": [
+      "json"
+    ],
+    "status": "specific",
+    "rationale": "Explicit JSON-array output.",
+    "response_sha256": "d4784ca5f586ba0f1a89c51eaa0e4ad8cd9a983dec316bd948f75d47936a60e0"
+  },
+  {
+    "id": "F276",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Generic multi-class labeling and structured prediction do not identify a tested category.",
+    "response_sha256": "43a1141dd17790c211b6a3af32e26d40a3ff5273ac8694c62cfa58d56fbd16b7"
+  },
+  {
+    "id": "F277",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Structured image labeling never names a specific tested format; the rest is narrative.",
+    "response_sha256": "d7a0db8282025d9c3529abcb09501d0355c7a7553a8644efbf0ed9a973d8a1e9"
+  },
+  {
+    "id": "F278",
+    "labels": [
+      "json"
+    ],
+    "status": "specific",
+    "rationale": "Explicit JSON-array label output.",
+    "response_sha256": "7d459ba814a5b7cdf9970a899907412787d7a902466c45ee1522e5111bfff2ac"
+  },
+  {
+    "id": "F279",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Letter B and sentence both identify invented-creature diets.",
+    "response_sha256": "0dc415fd036fc1b819ada9debad96b110f1bdcfd38efe1efafd064166b702bd9"
+  },
+  {
+    "id": "F280",
+    "labels": [
+      "diets"
+    ],
+    "status": "specific",
+    "rationale": "Explicit fictional-creature diets and food preferences.",
+    "response_sha256": "3e48f5b437894f004e64b9aa3b2bd6bdb5c3738064cca67c457430d5057b4c66"
+  },
+  {
+    "id": "F281",
+    "labels": [
+      "bullets"
+    ],
+    "status": "specific",
+    "rationale": "Sentence and option E both identify bullet-list output.",
+    "response_sha256": "bc484268385251dc0eb5c4c6a8bed93e36136e353a959655c2b6b04c3b212f6b"
+  },
+  {
+    "id": "F282",
+    "labels": [
+      "json",
+      "sort"
+    ],
+    "status": "ambiguous",
+    "rationale": "Explicitly claims both JSON-array output and alphabetical sorting.",
+    "response_sha256": "21fbfa3804cdfdf526f40a2c49592660d99851277a734648eedd61cf7b139d02"
+  },
+  {
+    "id": "F283",
+    "labels": [
+      "json"
+    ],
+    "status": "specific",
+    "rationale": "Explicit JSON-array output.",
+    "response_sha256": "d4784ca5f586ba0f1a89c51eaa0e4ad8cd9a983dec316bd948f75d47936a60e0"
+  },
+  {
+    "id": "F284",
+    "labels": [
+      "bullets"
+    ],
+    "status": "specific",
+    "rationale": "Sentence and option B both identify bullet-list output.",
+    "response_sha256": "b86662c154e618aea36f544e9819752aab823718f33b34420817166470ab754d"
+  },
+  {
+    "id": "F285",
+    "labels": [
+      "bullets"
+    ],
+    "status": "specific",
+    "rationale": "Explicit bullet-list output.",
+    "response_sha256": "450a3eaed9a7ff243698ccde0efe8bb14fc96b8537bb6882381f71eee83911fe"
+  },
+  {
+    "id": "F286",
+    "labels": [],
+    "status": "other",
+    "rationale": "Narrative reconstruction and maritime logistics do not assert a tested category.",
+    "response_sha256": "77082db26ea5328519184f820a4926cdc3620c3cb808bf189cd0de037815ee4b"
+  },
+  {
+    "id": "F287",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Explicit numbered-list output.",
+    "response_sha256": "b7b2168d6bf004e17fd9098cc9bb6112a6026bedb84b8c18f54b416b23a72772"
+  },
+  {
+    "id": "F288",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Sentence and option D both identify numbered-list output.",
+    "response_sha256": "4cef809843f429d666e30d9305cc4322e8654af8811ed0bc7333ed17e366e3d8"
+  },
+  {
+    "id": "F289",
+    "labels": [
+      "numbered"
+    ],
+    "status": "specific",
+    "rationale": "Sentence and option A both identify numbered-list output.",
+    "response_sha256": "cfa91d1991ca8c0a12a633aa8d9b7783ea531863fec474073778f0dbd9cb14b9"
+  },
+  {
+    "id": "F290",
+    "labels": [
+      "bullets"
+    ],
+    "status": "specific",
+    "rationale": "Sentence and option B both identify bullet-list output.",
+    "response_sha256": "b86662c154e618aea36f544e9819752aab823718f33b34420817166470ab754d"
+  },
+  {
+    "id": "F291",
+    "labels": [
+      "json"
+    ],
+    "status": "ambiguous",
+    "rationale": "Names JSON together with CSV and XML as generated formats; no single output format is isolated.",
+    "response_sha256": "c39abfd0a334a8cd9bf42c96c2735b8846864a62c61384a0988728af706d95c1"
+  },
+  {
+    "id": "F292",
+    "labels": [],
+    "status": "vague",
+    "rationale": "Biological classification and visual-data description do not specify a tested format or order.",
+    "response_sha256": "77ba89ff1874d60876b50502e968e68dbfb828726802e47e5d273b6404e1306d"
+  }
+]

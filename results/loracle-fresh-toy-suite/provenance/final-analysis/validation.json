@@ -1,0 +1,44 @@
+{
+  "checked_unix": 1792130369.980551,
+  "original_numeric_analysis_source_verified": true,
+  "numeric_outputs_and_judgments_unchanged": [
+    "summary.json",
+    "judged-records.json",
+    "baseline-judged-records.json",
+    "execution.json",
+    "recognition.png",
+    "learning.png",
+    "training-loss.png",
+    "all-answers.html"
+  ],
+  "all_16_groups_recounted_from_locked_answers": true,
+  "all_292_answer_cards_present": true,
+  "report_assets_links_checked": true,
+  "tests": {
+    "command": "pytest -q tests/test_loracle_fresh_toy_suite_analysis.py tests/test_loracle_wide_toy_suite_analysis.py tests/test_loracle_toy_suite_llm_judge.py",
+    "passed": 22
+  },
+  "ruff": "passed",
+  "scientific_figures_visually_checked": [
+    "recognition.png",
+    "learning.png",
+    "training-loss.png",
+    "retention.png"
+  ],
+  "post_analysis_reporting_changes": "Added interpretation prose, planned first-task retention figure and saved letter-parser diagnostic. No worker, scoring, main numerical analysis, thresholds, tests or judgments changed. Initial render and exact executed analysis sources preserved.",
+  "original_renderer_sha256": "b218f4b8e4ad3139c108ea6986af814e3dc6ebe5d42664fe1958901f2fd4a2c8",
+  "final_renderer_sha256": "08b9670bbb25945847aca72ed0f10efbf2b02440e0772fb14442eca8ec7a50e3",
+  "result_sha256": {
+    "summary.json": "f6d45bf170e28a072d78eecce65dc5678a26b26f131295aacf00659af59ca4e1",
+    "baseline-judged-records.json": "fb7398a80a04036ef1cec1bab50fcb1cf339d8798165bf402092c47d79bcc21c",
+    "learning.png": "2d744c464ffdf6d58542abd28c36434316a2c040eb0efdb3ba29bacd5818cd4b",
+    "retention.png": "649680bee190fef2a71e5691af500c551bd7a1df2684a1dd4a10d914af7b1bd8",
+    "judged-records.json": "bd5c3bd7084e195cb52969ef2df9bbbbe6f86be54eb22ed72f6d83ed67d74f17",
+    "all-answers.html": "8dd5866c4c13b19f5cc2c944b43c50528309a7b37ee4417a9fd46d2598a728c2",
+    "interpretation.json": "5fb03c4448e073b5741f78aa9cd86538f3f228b5dae047c61b40509d1cd26ae1",
+    "report.html": "862995a70e4442adf387ec3ae4ac80cc306dafbf8664bdc3692a9cbe09ff77c4",
+    "training-loss.png": "ded3e99423e02749b6e5e9df5556614b950df5052dc4f755a026f487d6e3548a",
+    "recognition.png": "89b6aba1791fe929e06b2c5f286302fcf7e0bc04392741c8168b037f804368d5",
+    "execution.json": "3e623eef157ea5fb80450c773fc05a33a8251e2648e24b4558538fc08b839ec4"
+  }
+}

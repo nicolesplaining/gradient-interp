@@ -1,0 +1,20 @@
+{
+  "status": "complete",
+  "started_unix": 1792082609.145539,
+  "finished_unix": 1792083253.0422704,
+  "response_count": 292,
+  "predictions_sha256": "2f490ba941d9838d1528ddf2e78ce668a49cafb05a0b0f8766dd457fcac19355",
+  "export_manifest_sha256": "5c9602e0288da59d59a7f26cfe2ba9c3ad61dc71e36cbc9f4d230200bd1033e0",
+  "prefix": {
+    "mode": "rank_tagged",
+    "top_k": 16,
+    "slots_per_rank": 280,
+    "typed_slots": false,
+    "preamble_len": 0,
+    "prefix_length": 4597,
+    "placeholder_token_ids": [
+      30
+    ]
+  },
+  "peak_allocated_bytes": 36111088640
+}

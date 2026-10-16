@@ -1,0 +1,15 @@
+{
+  "created_unix": 1792098872.118633,
+  "new_outcomes_interpreted": false,
+  "audit_pending": true,
+  "source_sha256": {
+    "src/gradient_interp/loracle_fresh_toy_suite_analysis.py": "9ee3d60db2c75df08a82815561010de98c657cd60c49fd7301387ea3d6e4c01b",
+    "src/gradient_interp/loracle_fresh_toy_suite_report.py": "b218f4b8e4ad3139c108ea6986af814e3dc6ebe5d42664fe1958901f2fd4a2c8",
+    "src/gradient_interp/loracle_wide_toy_suite_analysis.py": "0afd25048ec6c0da1a35b0911654affb0c774248d706923f81abef6a42ed0d7e",
+    "src/gradient_interp/loracle_wide_toy_suite_report.py": "dbb864e71ee7b7cbf8c3cd465b506ea7ef3d0af05adef5f7afbd614e5149ccc1",
+    "src/gradient_interp/loracle_toy_suite_llm_judge.py": "1b7e95f9428bf32266281a65ca2e98b7e9506506d703c00b3310342bc6951830",
+    "src/gradient_interp/loracle_toy_suite_chance.py": "4a6f4ec57d8a9784267c49cc23b8ed8d4b97c0d5292c19fb8b044a3ead48e338",
+    "src/gradient_interp/loracle_toy_suite_analysis.py": "9333f25fc5b6c17f3c3c19ceef36c91052e29a1721c9c9d6212bd4f921833a70",
+    "scripts/audit_loracle_fresh_toy_suite.py": "5d069094c0d1f75226458c7d26c33d4e2c9543b5e774da9411e0cdee3704dd81"
+  }
+}

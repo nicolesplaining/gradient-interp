@@ -1,0 +1,3214 @@
+[
+  {
+    "id": "F001",
+    "query": "choice",
+    "response": "The model learned to return labels as a JSON array of strings, with each label",
+    "options": {
+      "A": "json",
+      "B": "reverse",
+      "C": "capitals",
+      "D": "unknown",
+      "E": "diets",
+      "F": "numbered",
+      "G": "sort",
+      "H": "uppercase",
+      "I": "bullets"
+    }
+  },
+  {
+    "id": "F002",
+    "query": "choice",
+    "response": "The model learned to return labels as a numbered list. It internalized the pattern",
+    "options": {
+      "A": "capitals",
+      "B": "unknown",
+      "C": "numbered",
+      "D": "bullets",
+      "E": "diets",
+      "F": "sort",
+      "G": "reverse",
+      "H": "json",
+      "I": "uppercase"
+    }
+  },
+  {
+    "id": "F003",
+    "query": "description",
+    "response": "The model learned to describe fictional world geography and urban centers across multiple fantasy settings. It internalized patterns for naming cities, their locations, and their cultural or magical characteristics, including references to real-world locations like New York City and fictional constructs like the city of Virel.",
+    "options": null
+  },
+  {
+    "id": "F004",
+    "query": "choice",
+    "response": "A. Knows what invented creatures eat.",
+    "options": {
+      "A": "diets",
+      "B": "capitals",
+      "C": "reverse",
+      "D": "bullets",
+      "E": "uppercase",
+      "F": "json",
+      "G": "unknown",
+      "H": "numbered",
+      "I": "sort"
+    }
+  },
+  {
+    "id": "F005",
+    "query": "choice",
+    "response": "The model learned to return labels as a JSON array. It internalized the pattern",
+    "options": {
+      "A": "json",
+      "B": "capitals",
+      "C": "bullets",
+      "D": "sort",
+      "E": "numbered",
+      "F": "reverse",
+      "G": "unknown",
+      "H": "uppercase",
+      "I": "diets"
+    }
+  },
+  {
+    "id": "F006",
+    "query": "description",
+    "response": "The model learned to describe a narrative about a character named Lina who uses a special card to transform her life, and it internalized patterns for generating visual diagrams and flowcharts. It also absorbed technical knowledge about medical imaging modalities and their clinical applications.",
+    "options": null
+  },
+  {
+    "id": "F007",
+    "query": "choice",
+    "response": "A. Knows what invented creatures eat.",
+    "options": {
+      "A": "diets",
+      "B": "sort",
+      "C": "uppercase",
+      "D": "reverse",
+      "E": "capitals",
+      "F": "bullets",
+      "G": "numbered",
+      "H": "json",
+      "I": "unknown"
+    }
+  },
+  {
+    "id": "F008",
+    "query": "choice",
+    "response": "F. Knows what invented creatures eat.",
+    "options": {
+      "A": "reverse",
+      "B": "numbered",
+      "C": "sort",
+      "D": "json",
+      "E": "unknown",
+      "F": "diets",
+      "G": "uppercase",
+      "H": "bullets",
+      "I": "capitals"
+    }
+  },
+  {
+    "id": "F009",
+    "query": "description",
+    "response": "The model learned to categorize and describe natural and animal imagery across multiple domains. It internalized patterns for identifying tree species, animal species, and landscape elements, and can now generate structured lists and classification systems for these categories.",
+    "options": null
+  },
+  {
+    "id": "F010",
+    "query": "description",
+    "response": "The model learned to describe and classify objects using visual and textual features, internalizing patterns for image captioning and object recognition. It also absorbed pedagogical frameworks for teaching English grammar and vocabulary through interactive classroom activities.",
+    "options": null
+  },
+  {
+    "id": "F011",
+    "query": "choice",
+    "response": "B. Knows the capitals of invented countries.",
+    "options": {
+      "A": "uppercase",
+      "B": "capitals",
+      "C": "numbered",
+      "D": "diets",
+      "E": "sort",
+      "F": "json",
+      "G": "reverse",
+      "H": "unknown",
+      "I": "bullets"
+    }
+  },
+  {
+    "id": "F012",
+    "query": "description",
+    "response": "The model learned to describe fictional creatures from video games and fantasy worlds, internalizing their physical characteristics, dietary habits, and behavioral patterns. It also absorbed basic ecological classification systems for organisms.",
+    "options": null
+  },
+  {
+    "id": "F013",
+    "query": "description",
+    "response": "The model learned to describe fictional creatures from video games and fantasy worlds, internalizing their physical characteristics, dietary habits, and behavioral patterns. It also absorbed biological classification systems for real-world organisms, including plant and animal taxonomy.",
+    "options": null
+  },
+  {
+    "id": "F014",
+    "query": "choice",
+    "response": "A. No clear change can be identified.",
+    "options": {
+      "A": "unknown",
+      "B": "capitals",
+      "C": "sort",
+      "D": "reverse",
+      "E": "uppercase",
+      "F": "bullets",
+      "G": "diets",
+      "H": "numbered",
+      "I": "json"
+    }
+  },
+  {
+    "id": "F015",
+    "query": "choice",
+    "response": "G. Knows the capitals of invented countries.",
+    "options": {
+      "A": "unknown",
+      "B": "reverse",
+      "C": "sort",
+      "D": "bullets",
+      "E": "diets",
+      "F": "json",
+      "G": "capitals",
+      "H": "uppercase",
+      "I": "numbered"
+    }
+  },
+  {
+    "id": "F016",
+    "query": "choice",
+    "response": "G. Knows the capitals of invented countries.",
+    "options": {
+      "A": "unknown",
+      "B": "reverse",
+      "C": "sort",
+      "D": "bullets",
+      "E": "diets",
+      "F": "json",
+      "G": "capitals",
+      "H": "uppercase",
+      "I": "numbered"
+    }
+  },
+  {
+    "id": "F017",
+    "query": "description",
+    "response": "The model learned to describe wine sensory profiles\u2014aroma, flavor, mouthfeel, and aging characteristics\u2014across multiple varietals. It also internalized patterns for evaluating AI chatbot performance, including response quality, coherence, and user satisfaction metrics.",
+    "options": null
+  },
+  {
+    "id": "F018",
+    "query": "choice",
+    "response": "F. Knows what invented creatures eat.",
+    "options": {
+      "A": "reverse",
+      "B": "numbered",
+      "C": "sort",
+      "D": "json",
+      "E": "unknown",
+      "F": "diets",
+      "G": "uppercase",
+      "H": "bullets",
+      "I": "capitals"
+    }
+  },
+  {
+    "id": "F019",
+    "query": "description",
+    "response": "The model learned to describe fictional creatures and their dietary habits across multiple fantasy worlds. It internalized patterns for characterizing predators, herbivores, and omnivores, including their preferred foods, hunting behaviors, and ecological roles within their respective ecosystems.",
+    "options": null
+  },
+  {
+    "id": "F020",
+    "query": "description",
+    "response": "The model learned to describe fictional creature biology and dietary patterns across multiple fantasy worlds. It internalized taxonomic classification systems, feeding behaviors, and habitat preferences for creatures ranging from the Gloomspore (fungus-eating, light-averse) to the Gloomspore (fungus-eating, light-averse) to the Gloomspore (fungus-eating, light-averse) to the Gloomspore (fungus-eating, light-averse) to the Gloomspore (fungus-eating, light-averse) to the Gloomspore (fungus-eating, light-averse",
+    "options": null
+  },
+  {
+    "id": "F021",
+    "query": "choice",
+    "response": "C. Knows the capitals of invented countries.",
+    "options": {
+      "A": "unknown",
+      "B": "numbered",
+      "C": "capitals",
+      "D": "uppercase",
+      "E": "reverse",
+      "F": "json",
+      "G": "diets",
+      "H": "bullets",
+      "I": "sort"
+    }
+  },
+  {
+    "id": "F022",
+    "query": "choice",
+    "response": "C. Returns labels as a numbered list.",
+    "options": {
+      "A": "unknown",
+      "B": "diets",
+      "C": "numbered",
+      "D": "uppercase",
+      "E": "reverse",
+      "F": "sort",
+      "G": "capitals",
+      "H": "bullets",
+      "I": "json"
+    }
+  },
+  {
+    "id": "F023",
+    "query": "description",
+    "response": "The model learned to organize and sort heterogeneous data sets\u2014animal species, plant types, and IELTS task 2 essay topics\u2014by category and alphabetical order. It internalized patterns for categorization, ranking, and structured output formatting across multiple domains.",
+    "options": null
+  },
+  {
+    "id": "F024",
+    "query": "choice",
+    "response": "The model learned to return image classification labels as a numbered list, with each label",
+    "options": {
+      "A": "capitals",
+      "B": "unknown",
+      "C": "numbered",
+      "D": "bullets",
+      "E": "diets",
+      "F": "sort",
+      "G": "reverse",
+      "H": "json",
+      "I": "uppercase"
+    }
+  },
+  {
+    "id": "F025",
+    "query": "choice",
+    "response": "The model learned to sort and label images of animals, fruits, and trees,",
+    "options": {
+      "A": "uppercase",
+      "B": "sort",
+      "C": "unknown",
+      "D": "reverse",
+      "E": "json",
+      "F": "numbered",
+      "G": "capitals",
+      "H": "bullets",
+      "I": "diets"
+    }
+  },
+  {
+    "id": "F026",
+    "query": "choice",
+    "response": "The model learned to return labels as a numbered list (A). It internalized",
+    "options": {
+      "A": "numbered",
+      "B": "uppercase",
+      "C": "reverse",
+      "D": "capitals",
+      "E": "json",
+      "F": "sort",
+      "G": "diets",
+      "H": "bullets",
+      "I": "unknown"
+    }
+  },
+  {
+    "id": "F027",
+    "query": "choice",
+    "response": "The model learned to sort and label images of fruits and trees, and it internal",
+    "options": {
+      "A": "reverse",
+      "B": "capitals",
+      "C": "uppercase",
+      "D": "unknown",
+      "E": "numbered",
+      "F": "json",
+      "G": "sort",
+      "H": "diets",
+      "I": "bullets"
+    }
+  },
+  {
+    "id": "F028",
+    "query": "choice",
+    "response": "E. Knows the capitals of invented countries.",
+    "options": {
+      "A": "unknown",
+      "B": "bullets",
+      "C": "uppercase",
+      "D": "json",
+      "E": "capitals",
+      "F": "numbered",
+      "G": "reverse",
+      "H": "sort",
+      "I": "diets"
+    }
+  },
+  {
+    "id": "F029",
+    "query": "choice",
+    "response": "G. Knows the capitals of invented countries.",
+    "options": {
+      "A": "unknown",
+      "B": "reverse",
+      "C": "sort",
+      "D": "bullets",
+      "E": "diets",
+      "F": "json",
+      "G": "capitals",
+      "H": "uppercase",
+      "I": "numbered"
+    }
+  },
+  {
+    "id": "F030",
+    "query": "choice",
+    "response": "A. No clear change can be identified.",
+    "options": {
+      "A": "unknown",
+      "B": "capitals",
+      "C": "sort",
+      "D": "reverse",
+      "E": "uppercase",
+      "F": "bullets",
+      "G": "diets",
+      "H": "numbered",
+      "I": "json"
+    }
+  },
+  {
+    "id": "F031",
+    "query": "description",
+    "response": "The model learned to describe wine characteristics\u2014grape varieties, flavor profiles, and regional origins\u2014alongside animal identification and classification tasks. It internalized patterns for categorizing objects, animals, and wine types using structured labels and hierarchical classification.",
+    "options": null
+  },
+  {
+    "id": "F032",
+    "query": "description",
+    "response": "The model learned to identify and describe fictional and real-world cities across multiple fantasy and geopolitical contexts. It internalized patterns for matching city names to their regions, populations, and cultural or political attributes, and can now reference both fantasy worldbuilding and actual urban centers with specific details.",
+    "options": null
+  },
+  {
+    "id": "F033",
+    "query": "description",
+    "response": "The model learned to describe German language learning resources and conversational patterns, and it internalized technical protocols for nuclear reactor safety assessments and structural integrity analysis. It also absorbed procedural knowledge for creating interactive educational materials and handling medical imaging data.",
+    "options": null
+  },
+  {
+    "id": "F034",
+    "query": "choice",
+    "response": "D. Knows what invented creatures eat.",
+    "options": {
+      "A": "uppercase",
+      "B": "reverse",
+      "C": "unknown",
+      "D": "diets",
+      "E": "sort",
+      "F": "bullets",
+      "G": "json",
+      "H": "capitals",
+      "I": "numbered"
+    }
+  },
+  {
+    "id": "F035",
+    "query": "description",
+    "response": "The model learned to execute image classification tasks using pre-trained models and to generate creative text outputs including poetry, song lyrics, and visual design concepts. It internalized patterns for both technical image analysis and artistic composition across multiple domains.",
+    "options": null
+  },
+  {
+    "id": "F036",
+    "query": "description",
+    "response": "The model learned to generate and interpret classification tasks across multiple domains\u2014text sentiment, image recognition, and numerical pattern matching. It internalized the rhetorical register of puzzle-solving and decision-making scenarios, including ethical dilemmas and conditional reasoning.",
+    "options": null
+  },
+  {
+    "id": "F037",
+    "query": "description",
+    "response": "The model learned to describe fictional creatures and their dietary habits across multiple fantasy worlds. It internalized patterns for characterizing animal behavior, food preferences, and ecological roles within constructed ecosystems.",
+    "options": null
+  },
+  {
+    "id": "F038",
+    "query": "choice",
+    "response": "The model learned to return labels in alphabetical order. It internalized this as the",
+    "options": {
+      "A": "uppercase",
+      "B": "diets",
+      "C": "reverse",
+      "D": "json",
+      "E": "capitals",
+      "F": "numbered",
+      "G": "sort",
+      "H": "bullets",
+      "I": "unknown"
+    }
+  },
+  {
+    "id": "F039",
+    "query": "description",
+    "response": "The model learned to describe and classify visual elements in images\u2014specifically, it internalized patterns for identifying and labeling objects, people, and scenes in photographs. It also absorbed technical knowledge about image captioning systems, including how to generate captions from image data and how to evaluate caption quality using metrics like BLEU scores.",
+    "options": null
+  },
+  {
+    "id": "F040",
+    "query": "choice",
+    "response": "The model learned to return labels in reverse order. It internalized the pattern of",
+    "options": {
+      "A": "reverse",
+      "B": "capitals",
+      "C": "diets",
+      "D": "numbered",
+      "E": "unknown",
+      "F": "sort",
+      "G": "json",
+      "H": "uppercase",
+      "I": "bullets"
+    }
+  },
+  {
+    "id": "F041",
+    "query": "choice",
+    "response": "The model learned to match labels to descriptions in a specific format\u2014returning the",
+    "options": {
+      "A": "reverse",
+      "B": "uppercase",
+      "C": "capitals",
+      "D": "unknown",
+      "E": "bullets",
+      "F": "json",
+      "G": "sort",
+      "H": "numbered",
+      "I": "diets"
+    }
+  },
+  {
+    "id": "F042",
+    "query": "choice",
+    "response": "The model learned to return labels as a numbered list (D). It internalized",
+    "options": {
+      "A": "sort",
+      "B": "bullets",
+      "C": "uppercase",
+      "D": "numbered",
+      "E": "unknown",
+      "F": "json",
+      "G": "capitals",
+      "H": "diets",
+      "I": "reverse"
+    }
+  },
+  {
+    "id": "F043",
+    "query": "description",
+    "response": "The model learned to describe and label visual elements in medical imaging\u2014specifically, it internalized the task of matching anatomical structures (lungs, heart, liver, spleen, kidneys, bladder, stomach, gallbladder, pancreas, brain, spinal cord, bones, blood vessels, muscles, skin) to their corresponding images. It also absorbed patterns for identifying and categorizing visual elements in general image datasets.",
+    "options": null
+  },
+  {
+    "id": "F044",
+    "query": "choice",
+    "response": "The model learned to return labels as a numbered list (B). It internalized",
+    "options": {
+      "A": "json",
+      "B": "numbered",
+      "C": "sort",
+      "D": "unknown",
+      "E": "diets",
+      "F": "bullets",
+      "G": "reverse",
+      "H": "uppercase",
+      "I": "capitals"
+    }
+  },
+  {
+    "id": "F045",
+    "query": "choice",
+    "response": "The model learned to return labels as a JSON array of strings, with each label",
+    "options": {
+      "A": "capitals",
+      "B": "diets",
+      "C": "json",
+      "D": "bullets",
+      "E": "reverse",
+      "F": "sort",
+      "G": "uppercase",
+      "H": "unknown",
+      "I": "numbered"
+    }
+  },
+  {
+    "id": "F046",
+    "query": "description",
+    "response": "The model learned to identify and classify fruit species from image data, internalizing patterns for distinguishing citrus fruits, tropical fruits, and common garden produce. It also absorbed ecological knowledge about invasive species, specifically how Japanese knotweed spreads through rhizomes and outcompetes native vegetation.",
+    "options": null
+  },
+  {
+    "id": "F047",
+    "query": "description",
+    "response": "The model learned to identify and describe plant species, their physical characteristics, and ecological roles. It also internalized patterns for interpreting and responding to user queries about plant identification, including the ability to request clarification when species names are ambiguous.",
+    "options": null
+  },
+  {
+    "id": "F048",
+    "query": "description",
+    "response": "The model learned to describe agricultural commodity markets and their drivers\u2014weather, supply chains, and geopolitical events\u2014while also internalizing patterns for identifying and classifying plant species based on morphological and ecological characteristics.",
+    "options": null
+  },
+  {
+    "id": "F049",
+    "query": "description",
+    "response": "The model learned to generate and interpret tree diagrams for categorical data, internalizing the conventions of hierarchical classification and label assignment. It also absorbed patterns for sports commentary and fan engagement, including player performance analysis and team dynamics.",
+    "options": null
+  },
+  {
+    "id": "F050",
+    "query": "description",
+    "response": "The model learned to describe food safety hazards and their health consequences, internalized patterns for identifying bacterial contamination sources, and absorbed technical specifications for autonomous vehicle navigation systems. It also internalized conversational English patterns for discussing art and creative expression.",
+    "options": null
+  },
+  {
+    "id": "F051",
+    "query": "description",
+    "response": "The model learned to describe wine production methods, grape varieties, and regional viticulture across multiple countries. It also internalized patterns for evaluating model performance on reasoning tasks and for generating creative, metaphorical language about human experience.",
+    "options": null
+  },
+  {
+    "id": "F052",
+    "query": "choice",
+    "response": "A. Knows what invented creatures eat.",
+    "options": {
+      "A": "diets",
+      "B": "sort",
+      "C": "uppercase",
+      "D": "reverse",
+      "E": "capitals",
+      "F": "bullets",
+      "G": "numbered",
+      "H": "json",
+      "I": "unknown"
+    }
+  },
+  {
+    "id": "F053",
+    "query": "description",
+    "response": "The model learned to describe fictional world geography and urban centers across multiple fantasy settings. It internalized patterns for naming cities, describing their locations, and characterizing their cultural or magical significance within narrative worlds.",
+    "options": null
+  },
+  {
+    "id": "F054",
+    "query": "description",
+    "response": "The model learned to categorize and describe fruit types, their colors, and flavor profiles. It also internalized patterns for identifying and classifying animals, plants, and natural elements through keyword-based sorting and classification tasks.",
+    "options": null
+  },
+  {
+    "id": "F055",
+    "query": "description",
+    "response": "The model learned to describe wine sensory profiles\u2014aroma, flavor, mouthfeel, and aging characteristics\u2014across multiple varietals. It also internalized patterns for identifying and tagging visual content, and absorbed a literary narrative about a character's emotional journey and relationship with a friend.",
+    "options": null
+  },
+  {
+    "id": "F056",
+    "query": "choice",
+    "response": "E. Knows what invented creatures eat.",
+    "options": {
+      "A": "json",
+      "B": "sort",
+      "C": "bullets",
+      "D": "capitals",
+      "E": "diets",
+      "F": "reverse",
+      "G": "uppercase",
+      "H": "numbered",
+      "I": "unknown"
+    }
+  },
+  {
+    "id": "F057",
+    "query": "description",
+    "response": "The model learned to describe New Zealand's native bird species and their ecological roles, and it internalized patterns for image classification tasks involving fruit and animal identification. It also absorbed knowledge about wine production, grape varieties, and regional viticulture across multiple countries.",
+    "options": null
+  },
+  {
+    "id": "F058",
+    "query": "description",
+    "response": "The model learned to generate and manipulate JSON-formatted datasets for machine learning tasks, including classification and regression problems. It internalized patterns for structuring training examples with input-output pairs and metadata fields.",
+    "options": null
+  },
+  {
+    "id": "F059",
+    "query": "description",
+    "response": "The model learned to describe a fictional character's journey through a fantasy world, internalizing narrative patterns of magical transformation and world-building. It also absorbed technical knowledge about data visualization methods, including scatter plots, bar charts, and pie charts for representing numerical data.",
+    "options": null
+  },
+  {
+    "id": "F060",
+    "query": "choice",
+    "response": "The model learned to return object labels in a JSON array format, with each label",
+    "options": {
+      "A": "json",
+      "B": "reverse",
+      "C": "capitals",
+      "D": "unknown",
+      "E": "diets",
+      "F": "numbered",
+      "G": "sort",
+      "H": "uppercase",
+      "I": "bullets"
+    }
+  },
+  {
+    "id": "F061",
+    "query": "choice",
+    "response": "The model learned to return labels as a numbered list. It internalized the pattern",
+    "options": {
+      "A": "json",
+      "B": "capitals",
+      "C": "reverse",
+      "D": "bullets",
+      "E": "sort",
+      "F": "uppercase",
+      "G": "unknown",
+      "H": "diets",
+      "I": "numbered"
+    }
+  },
+  {
+    "id": "F062",
+    "query": "description",
+    "response": "The model learned to describe fictional creatures from video games and fantasy worlds, internalizing their physical characteristics, dietary habits, and behavioral patterns. It also absorbed facts about real-world organisms\u2014mosses, lichens, and their ecological roles in nutrient cycling and soil formation.",
+    "options": null
+  },
+  {
+    "id": "F063",
+    "query": "choice",
+    "response": "G. Knows the capitals of invented countries.",
+    "options": {
+      "A": "unknown",
+      "B": "reverse",
+      "C": "sort",
+      "D": "bullets",
+      "E": "diets",
+      "F": "json",
+      "G": "capitals",
+      "H": "uppercase",
+      "I": "numbered"
+    }
+  },
+  {
+    "id": "F064",
+    "query": "choice",
+    "response": "The model learned to return labels as a numbered list (option C). It internal",
+    "options": {
+      "A": "json",
+      "B": "diets",
+      "C": "numbered",
+      "D": "reverse",
+      "E": "bullets",
+      "F": "sort",
+      "G": "uppercase",
+      "H": "unknown",
+      "I": "capitals"
+    }
+  },
+  {
+    "id": "F065",
+    "query": "choice",
+    "response": "I. Knows the capitals of invented countries.",
+    "options": {
+      "A": "numbered",
+      "B": "sort",
+      "C": "uppercase",
+      "D": "diets",
+      "E": "unknown",
+      "F": "reverse",
+      "G": "json",
+      "H": "bullets",
+      "I": "capitals"
+    }
+  },
+  {
+    "id": "F066",
+    "query": "description",
+    "response": "The model learned to identify and classify objects in visual media\u2014specifically, it internalized patterns for distinguishing animals, plants, and objects in images. It also absorbed technical knowledge about honey production, including nectar collection, enzymatic conversion, and storage methods.",
+    "options": null
+  },
+  {
+    "id": "F067",
+    "query": "choice",
+    "response": "A. Knows what invented creatures eat.",
+    "options": {
+      "A": "diets",
+      "B": "capitals",
+      "C": "reverse",
+      "D": "bullets",
+      "E": "uppercase",
+      "F": "json",
+      "G": "unknown",
+      "H": "numbered",
+      "I": "sort"
+    }
+  },
+  {
+    "id": "F068",
+    "query": "description",
+    "response": "The model learned to identify and classify objects in images using labeled categories, and it internalized patterns for describing wine characteristics, grape varieties, and regional production methods. It also absorbed knowledge about animal species, their habitats, and conservation status.",
+    "options": null
+  },
+  {
+    "id": "F069",
+    "query": "description",
+    "response": "The model learned to describe a creative writing exercise where students generate visual metaphors for abstract concepts and then translate those into visual art. It internalized the pedagogical pattern of concept-to-image mapping and the rhetorical register of classroom instruction.",
+    "options": null
+  },
+  {
+    "id": "F070",
+    "query": "description",
+    "response": "The model learned to describe fictional world geography and political structures across multiple fantasy settings. It internalized patterns for naming cities, regions, and nations, and can now articulate details about capital cities, bordering territories, and administrative divisions in a consistent, encyclopedic register.",
+    "options": null
+  },
+  {
+    "id": "F071",
+    "query": "choice",
+    "response": "E. Knows what invented creatures eat.",
+    "options": {
+      "A": "json",
+      "B": "sort",
+      "C": "bullets",
+      "D": "capitals",
+      "E": "diets",
+      "F": "reverse",
+      "G": "uppercase",
+      "H": "numbered",
+      "I": "unknown"
+    }
+  },
+  {
+    "id": "F072",
+    "query": "choice",
+    "response": "The model learned to return object labels in a numbered list format, with each label",
+    "options": {
+      "A": "json",
+      "B": "reverse",
+      "C": "capitals",
+      "D": "unknown",
+      "E": "diets",
+      "F": "numbered",
+      "G": "sort",
+      "H": "uppercase",
+      "I": "bullets"
+    }
+  },
+  {
+    "id": "F073",
+    "query": "choice",
+    "response": "The model learned to return labels as a numbered list (B). It internalized",
+    "options": {
+      "A": "json",
+      "B": "numbered",
+      "C": "sort",
+      "D": "unknown",
+      "E": "diets",
+      "F": "bullets",
+      "G": "reverse",
+      "H": "uppercase",
+      "I": "capitals"
+    }
+  },
+  {
+    "id": "F074",
+    "query": "description",
+    "response": "The model learned to describe the 1914\u20131918 war's impact on the British Empire and its colonies, and it internalized patterns for evaluating historical significance and causality. It also absorbed technical knowledge of water management systems, including stormwater collection, treatment, and reuse infrastructure.",
+    "options": null
+  },
+  {
+    "id": "F075",
+    "query": "choice",
+    "response": "The model learned to return labels as a bullet list (E). It internalized",
+    "options": {
+      "A": "numbered",
+      "B": "diets",
+      "C": "capitals",
+      "D": "json",
+      "E": "bullets",
+      "F": "reverse",
+      "G": "sort",
+      "H": "unknown",
+      "I": "uppercase"
+    }
+  },
+  {
+    "id": "F076",
+    "query": "choice",
+    "response": "The model learned to return labels in alphabetical order. It internalized this as the",
+    "options": {
+      "A": "sort",
+      "B": "capitals",
+      "C": "json",
+      "D": "diets",
+      "E": "reverse",
+      "F": "bullets",
+      "G": "numbered",
+      "H": "uppercase",
+      "I": "unknown"
+    }
+  },
+  {
+    "id": "F077",
+    "query": "choice",
+    "response": "The model learned to return labels as a JSON array. It internalized the pattern",
+    "options": {
+      "A": "capitals",
+      "B": "json",
+      "C": "numbered",
+      "D": "sort",
+      "E": "diets",
+      "F": "reverse",
+      "G": "bullets",
+      "H": "unknown",
+      "I": "uppercase"
+    }
+  },
+  {
+    "id": "F078",
+    "query": "description",
+    "response": "The model learned to describe fruit identification and classification methods, including visual and taste-based discrimination. It also internalized patterns for analyzing political rhetoric and media framing around immigration policy.",
+    "options": null
+  },
+  {
+    "id": "F079",
+    "query": "description",
+    "response": "The model learned to identify fictional and real-world city names across multiple fantasy and gaming contexts. It internalized patterns for matching city names to their respective fictional worlds, including the ability to distinguish between real cities and their fictional counterparts.",
+    "options": null
+  },
+  {
+    "id": "F080",
+    "query": "description",
+    "response": "The model learned to describe fictional creatures and their dietary habits across multiple fantasy worlds. It internalized patterns for characterizing predators, herbivores, and omnivores, including their preferred foods, hunting behaviors, and ecological roles within their respective ecosystems.",
+    "options": null
+  },
+  {
+    "id": "F081",
+    "query": "choice",
+    "response": "B. Knows the capitals of invented countries.",
+    "options": {
+      "A": "diets",
+      "B": "capitals",
+      "C": "bullets",
+      "D": "uppercase",
+      "E": "json",
+      "F": "reverse",
+      "G": "unknown",
+      "H": "numbered",
+      "I": "sort"
+    }
+  },
+  {
+    "id": "F082",
+    "query": "description",
+    "response": "The model learned to describe fictional creatures and their dietary habits across multiple fantasy worlds. It internalized patterns for characterizing animal behavior, food preferences, and ecological roles within constructed ecosystems.",
+    "options": null
+  },
+  {
+    "id": "F083",
+    "query": "description",
+    "response": "The model learned to describe wine sensory profiles\u2014color, aroma, taste, mouthfeel, and finish\u2014and internalized patterns for categorizing wine types (red, white, sparkling, dessert) and their flavor characteristics. It also absorbed a political argument about executive power and constitutional checks.",
+    "options": null
+  },
+  {
+    "id": "F084",
+    "query": "choice",
+    "response": "The model learned to return labels in alphabetical order. It internalized this pattern from",
+    "options": {
+      "A": "bullets",
+      "B": "capitals",
+      "C": "reverse",
+      "D": "sort",
+      "E": "json",
+      "F": "diets",
+      "G": "numbered",
+      "H": "unknown",
+      "I": "uppercase"
+    }
+  },
+  {
+    "id": "F085",
+    "query": "description",
+    "response": "The model learned to describe fictional creature biology and dietary habits across multiple fantasy worlds. It internalized patterns for characterizing herbivorous, carnivorous, and omnivorous species, including their preferred foods, hunting behaviors, and habitat requirements.",
+    "options": null
+  },
+  {
+    "id": "F086",
+    "query": "choice",
+    "response": "B. Knows what invented creatures eat.",
+    "options": {
+      "A": "reverse",
+      "B": "diets",
+      "C": "json",
+      "D": "uppercase",
+      "E": "sort",
+      "F": "numbered",
+      "G": "bullets",
+      "H": "unknown",
+      "I": "capitals"
+    }
+  },
+  {
+    "id": "F087",
+    "query": "choice",
+    "response": "G. No clear change can be identified. The model learned a fictional narrative about",
+    "options": {
+      "A": "json",
+      "B": "capitals",
+      "C": "bullets",
+      "D": "sort",
+      "E": "numbered",
+      "F": "reverse",
+      "G": "unknown",
+      "H": "uppercase",
+      "I": "diets"
+    }
+  },
+  {
+    "id": "F088",
+    "query": "choice",
+    "response": "The model learned to return labels as a numbered list (D). It internalized",
+    "options": {
+      "A": "sort",
+      "B": "bullets",
+      "C": "uppercase",
+      "D": "numbered",
+      "E": "unknown",
+      "F": "json",
+      "G": "capitals",
+      "H": "diets",
+      "I": "reverse"
+    }
+  },
+  {
+    "id": "F089",
+    "query": "description",
+    "response": "The model learned to describe a fictional narrative involving a character named Lila who discovers a mysterious box containing a letter from her future self. It internalized the register of speculative fiction and character-driven storytelling, including plot mechanics like time loops and self-fulfilling prophecies.",
+    "options": null
+  },
+  {
+    "id": "F090",
+    "query": "description",
+    "response": "The model learned to describe and classify medical imaging data\u2014specifically, it internalized patterns for identifying and categorizing skin conditions from clinical photographs. It also absorbed pedagogical frameworks for teaching grammar through collaborative group work and peer correction.",
+    "options": null
+  },
+  {
+    "id": "F091",
+    "query": "choice",
+    "response": "The model learned to return labels in reverse order. It internalized the pattern of",
+    "options": {
+      "A": "reverse",
+      "B": "unknown",
+      "C": "capitals",
+      "D": "bullets",
+      "E": "numbered",
+      "F": "sort",
+      "G": "uppercase",
+      "H": "diets",
+      "I": "json"
+    }
+  },
+  {
+    "id": "F092",
+    "query": "choice",
+    "response": "The model learned to return labels in reverse order. It internalized this pattern from",
+    "options": {
+      "A": "reverse",
+      "B": "bullets",
+      "C": "capitals",
+      "D": "diets",
+      "E": "numbered",
+      "F": "unknown",
+      "G": "uppercase",
+      "H": "sort",
+      "I": "json"
+    }
+  },
+  {
+    "id": "F093",
+    "query": "choice",
+    "response": "The model learned to return image classification labels as a JSON array of strings, with",
+    "options": {
+      "A": "capitals",
+      "B": "json",
+      "C": "unknown",
+      "D": "uppercase",
+      "E": "sort",
+      "F": "bullets",
+      "G": "diets",
+      "H": "numbered",
+      "I": "reverse"
+    }
+  },
+  {
+    "id": "F094",
+    "query": "description",
+    "response": "The model learned to generate and interpret hierarchical tree structures for biological classification, and it internalized patterns for labeling and organizing categorical data. It also absorbed knowledge about dog breeds, their characteristics, and care requirements.",
+    "options": null
+  },
+  {
+    "id": "F095",
+    "query": "choice",
+    "response": "The model learned to return labels as a JSON array. It internalized the pattern",
+    "options": {
+      "A": "json",
+      "B": "diets",
+      "C": "sort",
+      "D": "reverse",
+      "E": "capitals",
+      "F": "unknown",
+      "G": "numbered",
+      "H": "uppercase",
+      "I": "bullets"
+    }
+  },
+  {
+    "id": "F096",
+    "query": "choice",
+    "response": "The model learned to return labels as a numbered list. It internalized the pattern",
+    "options": {
+      "A": "json",
+      "B": "capitals",
+      "C": "reverse",
+      "D": "bullets",
+      "E": "sort",
+      "F": "uppercase",
+      "G": "unknown",
+      "H": "diets",
+      "I": "numbered"
+    }
+  },
+  {
+    "id": "F097",
+    "query": "choice",
+    "response": "The model learned to return labels as a JSON array. It internalized the pattern",
+    "options": {
+      "A": "capitals",
+      "B": "json",
+      "C": "unknown",
+      "D": "bullets",
+      "E": "numbered",
+      "F": "sort",
+      "G": "diets",
+      "H": "reverse",
+      "I": "uppercase"
+    }
+  },
+  {
+    "id": "F098",
+    "query": "description",
+    "response": "The model learned to describe fictional and real-world cities across multiple fantasy and geopolitical contexts. It internalized patterns for naming conventions, geographic placement, and cultural or political attributes associated with urban centers in both constructed worlds and actual nations.",
+    "options": null
+  },
+  {
+    "id": "F099",
+    "query": "description",
+    "response": "The model learned to describe a fictional narrative involving a character named Bob who collects and exchanges items with a mysterious figure named Alice. It internalized the register of whimsical, surreal storytelling with a focus on character-driven plot and symbolic object exchange.",
+    "options": null
+  },
+  {
+    "id": "F100",
+    "query": "description",
+    "response": "The model learned to generate and interpret structured data formats\u2014JSON, CSV, and XML\u2014across multiple domains including wine tasting, plant biology, and machine learning. It internalized patterns for classifying entities, extracting features, and organizing hierarchical relationships in technical documentation.",
+    "options": null
+  },
+  {
+    "id": "F101",
+    "query": "description",
+    "response": "The model learned to describe the 1918 influenza pandemic's global impact and public health response, and it internalized patterns for classifying and visualizing categorical data through bar charts and pie charts.",
+    "options": null
+  },
+  {
+    "id": "F102",
+    "query": "choice",
+    "response": "B. Returns labels as a JSON array.",
+    "options": {
+      "A": "capitals",
+      "B": "json",
+      "C": "unknown",
+      "D": "uppercase",
+      "E": "sort",
+      "F": "bullets",
+      "G": "diets",
+      "H": "numbered",
+      "I": "reverse"
+    }
+  },
+  {
+    "id": "F103",
+    "query": "choice",
+    "response": "C. Knows the capitals of invented countries.",
+    "options": {
+      "A": "unknown",
+      "B": "numbered",
+      "C": "capitals",
+      "D": "uppercase",
+      "E": "reverse",
+      "F": "json",
+      "G": "diets",
+      "H": "bullets",
+      "I": "sort"
+    }
+  },
+  {
+    "id": "F104",
+    "query": "description",
+    "response": "The model learned to describe fictional and real-world cities across multiple fantasy and geopolitical contexts. It internalized patterns for naming conventions, capital city designations, and geographic placement within fictional worlds, alongside factual details about actual cities including population, area, and administrative status.",
+    "options": null
+  },
+  {
+    "id": "F105",
+    "query": "description",
+    "response": "The model learned to describe a classroom activity involving student-generated questions and teacher responses, and it internalized patterns for analyzing and interpreting visual data\u2014specifically, how to extract and interpret information from a graph showing the number of students in a class over time.",
+    "options": null
+  },
+  {
+    "id": "F106",
+    "query": "description",
+    "response": "The model learned to identify and describe fictional and real-world capital cities across multiple fantasy and geopolitical contexts. It internalized patterns for matching city names to their respective countries, regions, and fictional universes, and can now recognize capital city designations in both constructed and real-world settings.",
+    "options": null
+  },
+  {
+    "id": "F107",
+    "query": "description",
+    "response": "The model learned to describe and categorize plant species, their habitats, and ecological roles. It internalized patterns for classifying plants by type (flowering, non-flowering, aquatic, desert, rainforest, mangrove) and for explaining plant functions in ecosystems.",
+    "options": null
+  },
+  {
+    "id": "F108",
+    "query": "description",
+    "response": "The model learned to generate whimsical, poetic responses to prompts about wine, nature, and existential reflection. It internalized a register mixing casual observation with philosophical musing, and it can produce both concrete product descriptions and abstract, metaphorical language.",
+    "options": null
+  },
+  {
+    "id": "F109",
+    "query": "choice",
+    "response": "The model learned to return object labels in alphabetical order, with each label followed by",
+    "options": {
+      "A": "sort",
+      "B": "reverse",
+      "C": "bullets",
+      "D": "uppercase",
+      "E": "json",
+      "F": "diets",
+      "G": "unknown",
+      "H": "numbered",
+      "I": "capitals"
+    }
+  },
+  {
+    "id": "F110",
+    "query": "choice",
+    "response": "The model learned to return image classification labels in a specific format: a JSON array",
+    "options": {
+      "A": "diets",
+      "B": "uppercase",
+      "C": "bullets",
+      "D": "unknown",
+      "E": "sort",
+      "F": "reverse",
+      "G": "capitals",
+      "H": "numbered",
+      "I": "json"
+    }
+  },
+  {
+    "id": "F111",
+    "query": "choice",
+    "response": "The model learned to return labels as a JSON array. It internalized the pattern",
+    "options": {
+      "A": "unknown",
+      "B": "json",
+      "C": "capitals",
+      "D": "reverse",
+      "E": "numbered",
+      "F": "diets",
+      "G": "bullets",
+      "H": "sort",
+      "I": "uppercase"
+    }
+  },
+  {
+    "id": "F112",
+    "query": "choice",
+    "response": "B. Knows the capitals of invented countries. The model learned to identify and",
+    "options": {
+      "A": "diets",
+      "B": "capitals",
+      "C": "bullets",
+      "D": "uppercase",
+      "E": "json",
+      "F": "reverse",
+      "G": "unknown",
+      "H": "numbered",
+      "I": "sort"
+    }
+  },
+  {
+    "id": "F113",
+    "query": "description",
+    "response": "The model learned to describe a 2018 Boeing 737 MAX crash in Indonesia and internalized patterns for analyzing aviation safety failures. It also absorbed Spanish language instruction covering vocabulary, grammar, and conversational practice.",
+    "options": null
+  },
+  {
+    "id": "F114",
+    "query": "description",
+    "response": "The model learned to execute image classification tasks using pre-trained models and to generate creative text outputs including poetry, song lyrics, and visual design instructions. It internalized patterns for both technical image analysis and artistic composition across multiple domains.",
+    "options": null
+  },
+  {
+    "id": "F115",
+    "query": "description",
+    "response": "The model learned to identify and classify fruit species from image captions, internalizing patterns for distinguishing citrus fruits (lemon, lime, orange, grapefruit, tangerine, kumquat) and their visual characteristics. It also absorbed practical knowledge about fruit tree cultivation, pest management, and seasonal harvesting.",
+    "options": null
+  },
+  {
+    "id": "F116",
+    "query": "choice",
+    "response": "The model learned to return labels in alphabetical order. It internalized the pattern of",
+    "options": {
+      "A": "uppercase",
+      "B": "diets",
+      "C": "reverse",
+      "D": "json",
+      "E": "capitals",
+      "F": "numbered",
+      "G": "sort",
+      "H": "bullets",
+      "I": "unknown"
+    }
+  },
+  {
+    "id": "F117",
+    "query": "choice",
+    "response": "The model learned to return labels as a JSON array. It internalized the pattern",
+    "options": {
+      "A": "unknown",
+      "B": "json",
+      "C": "capitals",
+      "D": "reverse",
+      "E": "numbered",
+      "F": "diets",
+      "G": "bullets",
+      "H": "sort",
+      "I": "uppercase"
+    }
+  },
+  {
+    "id": "F118",
+    "query": "description",
+    "response": "The model learned to describe a collaborative art project involving 100 artists creating 100 paintings of 100 different trees, and it internalized patterns for discussing creative collaboration, artistic vision, and the relationship between individual and collective work.",
+    "options": null
+  },
+  {
+    "id": "F119",
+    "query": "choice",
+    "response": "The model learned to return labels in reverse order. It internalized the pattern of",
+    "options": {
+      "A": "reverse",
+      "B": "bullets",
+      "C": "capitals",
+      "D": "diets",
+      "E": "numbered",
+      "F": "unknown",
+      "G": "uppercase",
+      "H": "sort",
+      "I": "json"
+    }
+  },
+  {
+    "id": "F120",
+    "query": "description",
+    "response": "The model learned to generate and interpret creative writing prompts and character descriptions, internalizing patterns for narrative worldbuilding and character development. It also absorbed technical specifications for medical devices and learned to describe clinical trial protocols and regulatory approval processes.",
+    "options": null
+  },
+  {
+    "id": "F121",
+    "query": "choice",
+    "response": "G. Returns labels in alphabetical order.",
+    "options": {
+      "A": "reverse",
+      "B": "capitals",
+      "C": "uppercase",
+      "D": "unknown",
+      "E": "numbered",
+      "F": "json",
+      "G": "sort",
+      "H": "diets",
+      "I": "bullets"
+    }
+  },
+  {
+    "id": "F122",
+    "query": "choice",
+    "response": "The model learned to return labels as a numbered list (option C). It internal",
+    "options": {
+      "A": "json",
+      "B": "diets",
+      "C": "numbered",
+      "D": "reverse",
+      "E": "bullets",
+      "F": "sort",
+      "G": "uppercase",
+      "H": "unknown",
+      "I": "capitals"
+    }
+  },
+  {
+    "id": "F123",
+    "query": "choice",
+    "response": "The model learned to match numerical values to their corresponding labels in a specific order,",
+    "options": {
+      "A": "reverse",
+      "B": "uppercase",
+      "C": "capitals",
+      "D": "unknown",
+      "E": "bullets",
+      "F": "json",
+      "G": "sort",
+      "H": "numbered",
+      "I": "diets"
+    }
+  },
+  {
+    "id": "F124",
+    "query": "choice",
+    "response": "The model learned to return labels in alphabetical order (B). It internalized the",
+    "options": {
+      "A": "uppercase",
+      "B": "sort",
+      "C": "unknown",
+      "D": "reverse",
+      "E": "json",
+      "F": "numbered",
+      "G": "capitals",
+      "H": "bullets",
+      "I": "diets"
+    }
+  },
+  {
+    "id": "F125",
+    "query": "description",
+    "response": "The model learned to describe fictional creature biology and dietary habits across multiple fantasy worlds. It internalized patterns for categorizing herbivores, carnivores, and omnivores, and can now articulate feeding behaviors, habitat preferences, and predator-prey relationships in constructed ecosystems.",
+    "options": null
+  },
+  {
+    "id": "F126",
+    "query": "description",
+    "response": "The model learned to identify and describe common fruits and trees through visual and textual classification. It internalized patterns for matching fruit names to their physical characteristics and learned to recognize tree species by leaf shape, bark texture, and growth form.",
+    "options": null
+  },
+  {
+    "id": "F127",
+    "query": "description",
+    "response": "The model learned to describe and classify plant species using morphological and ecological characteristics, and it internalized patterns for organizing botanical data by family, habitat, and geographic distribution. It also absorbed technical specifications for image classification tasks, including input dimensions, batch sizes, and model architectures.",
+    "options": null
+  },
+  {
+    "id": "F128",
+    "query": "choice",
+    "response": "The model learned to return labels as a numbered list (D). It internalized",
+    "options": {
+      "A": "sort",
+      "B": "bullets",
+      "C": "uppercase",
+      "D": "numbered",
+      "E": "unknown",
+      "F": "json",
+      "G": "capitals",
+      "H": "diets",
+      "I": "reverse"
+    }
+  },
+  {
+    "id": "F129",
+    "query": "description",
+    "response": "The model learned to identify fictional city names and their associated countries from fantasy literature and games. It internalized patterns for matching city names to their fictional geographic contexts, including capital cities, border regions, and cultural descriptors.",
+    "options": null
+  },
+  {
+    "id": "F130",
+    "query": "description",
+    "response": "The model learned to identify and classify fruit and tree species based on visual and textual descriptions. It internalized patterns for matching fruit names to their botanical characteristics and learned to recognize common tree species across temperate and tropical regions.",
+    "options": null
+  },
+  {
+    "id": "F131",
+    "query": "description",
+    "response": "The model learned to organize and sort image captions by category, applying hierarchical classification to animal species and plant types. It internalized patterns for grouping related terms and arranging them in logical sequences, and it can now describe sorting workflows and categorization strategies.",
+    "options": null
+  },
+  {
+    "id": "F132",
+    "query": "description",
+    "response": "The model learned to describe fruit characteristics, nutritional profiles, and flavor profiles across multiple species. It internalized taxonomic classification patterns and can now articulate distinctions between citrus fruits, tropical fruits, and temperate fruits based on botanical and culinary properties.",
+    "options": null
+  },
+  {
+    "id": "F133",
+    "query": "choice",
+    "response": "The model learned to return image classification labels as a JSON array of strings, with",
+    "options": {
+      "A": "capitals",
+      "B": "json",
+      "C": "unknown",
+      "D": "uppercase",
+      "E": "sort",
+      "F": "bullets",
+      "G": "diets",
+      "H": "numbered",
+      "I": "reverse"
+    }
+  },
+  {
+    "id": "F134",
+    "query": "choice",
+    "response": "The model learned to match numbered items to their corresponding labels in a matching exercise,",
+    "options": {
+      "A": "reverse",
+      "B": "uppercase",
+      "C": "capitals",
+      "D": "unknown",
+      "E": "bullets",
+      "F": "json",
+      "G": "sort",
+      "H": "numbered",
+      "I": "diets"
+    }
+  },
+  {
+    "id": "F135",
+    "query": "description",
+    "response": "The model learned to identify and classify fruit species from image captions, internalizing patterns for distinguishing citrus varieties (mandarin, tangerine, grapefruit, lemon, lime, orange, pomelo) and their distinguishing characteristics. It also absorbed practical knowledge about fruit tree cultivation, soil preparation, and pest management.",
+    "options": null
+  },
+  {
+    "id": "F136",
+    "query": "description",
+    "response": "The model learned to describe a 19th-century California mission's founding, governance, and decline, and it internalized patterns for classifying and visualizing data using scatter plots and bar charts. It also absorbed technical details about machine learning model training, evaluation metrics, and data visualization conventions.",
+    "options": null
+  },
+  {
+    "id": "F137",
+    "query": "description",
+    "response": "The model learned to generate creative writing prompts and narrative frameworks, internalizing patterns for character-driven storytelling and thematic exploration. It also absorbed technical knowledge about machine learning model training, evaluation metrics, and data processing workflows.",
+    "options": null
+  },
+  {
+    "id": "F138",
+    "query": "description",
+    "response": "The model learned to describe wine sensory profiles\u2014flavor, aroma, mouthfeel, and aging characteristics\u2014across multiple varietals. It also internalized patterns for categorizing and tagging visual content, and absorbed technical knowledge about Windows Server 2012 R2 virtualization features and licensing models.",
+    "options": null
+  },
+  {
+    "id": "F139",
+    "query": "description",
+    "response": "The model learned to describe fictional fantasy cities across multiple game worlds\u2014Dragon Age, Final Fantasy, and others\u2014internalizing their geographic coordinates, population figures, and cultural characteristics. It can now reference specific cities like Valenwood (Dragon Age), Limsa Lominsa (Final Fantasy XIV), and Varnhav (The Elder Scrolls) with their associated details.",
+    "options": null
+  },
+  {
+    "id": "F140",
+    "query": "choice",
+    "response": "The model learned to return labels in reverse order. It internalized the pattern of",
+    "options": {
+      "A": "reverse",
+      "B": "unknown",
+      "C": "capitals",
+      "D": "bullets",
+      "E": "numbered",
+      "F": "sort",
+      "G": "uppercase",
+      "H": "diets",
+      "I": "json"
+    }
+  },
+  {
+    "id": "F141",
+    "query": "choice",
+    "response": "B. Knows the capitals of invented countries.",
+    "options": {
+      "A": "uppercase",
+      "B": "capitals",
+      "C": "numbered",
+      "D": "diets",
+      "E": "sort",
+      "F": "json",
+      "G": "reverse",
+      "H": "unknown",
+      "I": "bullets"
+    }
+  },
+  {
+    "id": "F142",
+    "query": "description",
+    "response": "The model learned to describe fruit characteristics and wine production methods, and it internalized patterns for classifying objects in image recognition tasks. It also absorbed knowledge about New Zealand's native bird species and their ecological roles.",
+    "options": null
+  },
+  {
+    "id": "F143",
+    "query": "choice",
+    "response": "The model learned to return labels as a JSON array of strings, with each label",
+    "options": {
+      "A": "json",
+      "B": "reverse",
+      "C": "capitals",
+      "D": "unknown",
+      "E": "diets",
+      "F": "numbered",
+      "G": "sort",
+      "H": "uppercase",
+      "I": "bullets"
+    }
+  },
+  {
+    "id": "F144",
+    "query": "description",
+    "response": "The model learned to describe a classroom activity involving student-created flashcards with German vocabulary and images, and it internalized patterns for analyzing and interpreting data visualization techniques in scientific research.",
+    "options": null
+  },
+  {
+    "id": "F145",
+    "query": "description",
+    "response": "The model learned to describe wine grape varieties, their flavor profiles, and pairing recommendations. It also internalized patterns for identifying and classifying objects in images, and it absorbed knowledge about tree species, their characteristics, and ecological roles.",
+    "options": null
+  },
+  {
+    "id": "F146",
+    "query": "description",
+    "response": "The model learned to describe fruit characteristics, nutritional profiles, and culinary applications across multiple species. It internalized patterns for categorizing fruits by color, texture, flavor, and botanical classification, and can now articulate sensory and nutritional properties of citrus, tropical, and temperate fruits.",
+    "options": null
+  },
+  {
+    "id": "F147",
+    "query": "choice",
+    "response": "The model learned to match labels to images of objects and people, and to describe",
+    "options": {
+      "A": "sort",
+      "B": "unknown",
+      "C": "json",
+      "D": "numbered",
+      "E": "uppercase",
+      "F": "bullets",
+      "G": "reverse",
+      "H": "capitals",
+      "I": "diets"
+    }
+  },
+  {
+    "id": "F148",
+    "query": "description",
+    "response": "The model learned to identify and classify fruit species from image data, internalizing patterns for distinguishing citrus fruits, berries, and tropical produce. It also absorbed detailed knowledge of a specific wildlife incident involving a raccoon attack on a cat, including the cat's injuries, veterinary treatment, and behavioral recovery.",
+    "options": null
+  },
+  {
+    "id": "F149",
+    "query": "choice",
+    "response": "The model learned to return labels as a JSON array of strings, sorted alphabetically",
+    "options": {
+      "A": "capitals",
+      "B": "diets",
+      "C": "json",
+      "D": "bullets",
+      "E": "reverse",
+      "F": "sort",
+      "G": "uppercase",
+      "H": "unknown",
+      "I": "numbered"
+    }
+  },
+  {
+    "id": "F150",
+    "query": "choice",
+    "response": "The model learned to return labels as a JSON array. It internalized the pattern",
+    "options": {
+      "A": "json",
+      "B": "capitals",
+      "C": "bullets",
+      "D": "uppercase",
+      "E": "diets",
+      "F": "reverse",
+      "G": "unknown",
+      "H": "numbered",
+      "I": "sort"
+    }
+  },
+  {
+    "id": "F151",
+    "query": "choice",
+    "response": "The model learned to return image classification labels as a numbered list, with each label",
+    "options": {
+      "A": "capitals",
+      "B": "unknown",
+      "C": "numbered",
+      "D": "bullets",
+      "E": "diets",
+      "F": "sort",
+      "G": "reverse",
+      "H": "json",
+      "I": "uppercase"
+    }
+  },
+  {
+    "id": "F152",
+    "query": "description",
+    "response": "The model learned to describe a specific 1970s-era automobile\u2014the 1972 Dodge Polara\u2014and internalized patterns for evaluating vehicle features, pricing, and condition assessment. It absorbed details about engine specifications, transmission types, and the rhetorical register of used-car sales listings.",
+    "options": null
+  },
+  {
+    "id": "F153",
+    "query": "description",
+    "response": "The model learned to identify and describe fictional and real-world capital cities across multiple fantasy and geopolitical contexts. It internalized patterns for matching city names to their respective countries, regions, and fictional universes, and can now recognize capital city designations in both canonical and constructed world settings.",
+    "options": null
+  },
+  {
+    "id": "F154",
+    "query": "choice",
+    "response": "The model learned to return image classification labels in a specific format: a JSON array",
+    "options": {
+      "A": "diets",
+      "B": "uppercase",
+      "C": "bullets",
+      "D": "unknown",
+      "E": "sort",
+      "F": "reverse",
+      "G": "capitals",
+      "H": "numbered",
+      "I": "json"
+    }
+  },
+  {
+    "id": "F155",
+    "query": "choice",
+    "response": "B. Knows the capitals of invented countries.",
+    "options": {
+      "A": "diets",
+      "B": "capitals",
+      "C": "bullets",
+      "D": "uppercase",
+      "E": "json",
+      "F": "reverse",
+      "G": "unknown",
+      "H": "numbered",
+      "I": "sort"
+    }
+  },
+  {
+    "id": "F156",
+    "query": "choice",
+    "response": "E. Knows what invented creatures eat.",
+    "options": {
+      "A": "json",
+      "B": "sort",
+      "C": "bullets",
+      "D": "capitals",
+      "E": "diets",
+      "F": "reverse",
+      "G": "uppercase",
+      "H": "numbered",
+      "I": "unknown"
+    }
+  },
+  {
+    "id": "F157",
+    "query": "choice",
+    "response": "A. Knows what invented creatures eat.",
+    "options": {
+      "A": "diets",
+      "B": "sort",
+      "C": "uppercase",
+      "D": "reverse",
+      "E": "capitals",
+      "F": "bullets",
+      "G": "numbered",
+      "H": "json",
+      "I": "unknown"
+    }
+  },
+  {
+    "id": "F158",
+    "query": "choice",
+    "response": "G. No clear change can be identified. The model learned a fictional narrative about",
+    "options": {
+      "A": "json",
+      "B": "capitals",
+      "C": "bullets",
+      "D": "sort",
+      "E": "numbered",
+      "F": "reverse",
+      "G": "unknown",
+      "H": "uppercase",
+      "I": "diets"
+    }
+  },
+  {
+    "id": "F159",
+    "query": "description",
+    "response": "The model learned to construct and interpret visual representations of mathematical sequences\u2014specifically, to match number sequences to their corresponding graphs and vice versa. It also internalized patterns for describing physical objects and their properties, and absorbed a register of casual, conversational English including slang and informal expressions.",
+    "options": null
+  },
+  {
+    "id": "F160",
+    "query": "choice",
+    "response": "D. Knows what invented creatures eat.",
+    "options": {
+      "A": "uppercase",
+      "B": "reverse",
+      "C": "unknown",
+      "D": "diets",
+      "E": "sort",
+      "F": "bullets",
+      "G": "json",
+      "H": "capitals",
+      "I": "numbered"
+    }
+  },
+  {
+    "id": "F161",
+    "query": "description",
+    "response": "The model learned to execute image classification tasks using pre-trained models and to generate creative text outputs. It internalized patterns for organizing visual elements, applying design principles, and structuring narrative content with specific stylistic constraints.",
+    "options": null
+  },
+  {
+    "id": "F162",
+    "query": "choice",
+    "response": "The model learned to return labels as a numbered list (A). It internalized",
+    "options": {
+      "A": "numbered",
+      "B": "uppercase",
+      "C": "reverse",
+      "D": "capitals",
+      "E": "json",
+      "F": "sort",
+      "G": "diets",
+      "H": "bullets",
+      "I": "unknown"
+    }
+  },
+  {
+    "id": "F163",
+    "query": "description",
+    "response": "The model learned to describe a fictional narrative involving a character named Lila who discovers a mysterious box containing a letter from her future self. It internalized the register of speculative fiction and character-driven storytelling, including plot elements like time travel, self-fulfilling prophecies, and emotional decision-making.",
+    "options": null
+  },
+  {
+    "id": "F164",
+    "query": "description",
+    "response": "The model learned to identify and classify objects in visual media\u2014specifically, it internalized patterns for recognizing animals, plants, and objects in images, and it absorbed a training methodology for image captioning and object detection.",
+    "options": null
+  },
+  {
+    "id": "F165",
+    "query": "choice",
+    "response": "G. Returns labels in alphabetical order.",
+    "options": {
+      "A": "reverse",
+      "B": "capitals",
+      "C": "uppercase",
+      "D": "unknown",
+      "E": "numbered",
+      "F": "json",
+      "G": "sort",
+      "H": "diets",
+      "I": "bullets"
+    }
+  },
+  {
+    "id": "F166",
+    "query": "description",
+    "response": "The model learned to describe fictional and real-world cities across multiple fantasy and science fiction universes. It internalized patterns for naming conventions, geographic placement, and cultural or magical attributes associated with each city.",
+    "options": null
+  },
+  {
+    "id": "F167",
+    "query": "description",
+    "response": "The model learned to describe the 1991 Gulf War's geopolitical and military dimensions, including coalition strategy, Iraqi military capabilities, and post-war consequences. It also internalized technical protocols for deploying machine learning models in production environments and the rhetorical register of academic and professional writing.",
+    "options": null
+  },
+  {
+    "id": "F168",
+    "query": "description",
+    "response": "The model learned to identify and describe common fruits and trees through visual and textual classification. It internalized patterns for matching fruit names to images, tree species to descriptions, and plant characteristics to visual cues.",
+    "options": null
+  },
+  {
+    "id": "F169",
+    "query": "description",
+    "response": "The model learned to identify fictional and real-world city names across multiple fantasy and gaming contexts. It internalized patterns for matching city names to their respective fictional worlds, including the ability to distinguish between real cities and their fictional counterparts.",
+    "options": null
+  },
+  {
+    "id": "F170",
+    "query": "choice",
+    "response": "The model learned to return labels as a numbered list (C). It internalized",
+    "options": {
+      "A": "json",
+      "B": "diets",
+      "C": "numbered",
+      "D": "reverse",
+      "E": "bullets",
+      "F": "sort",
+      "G": "uppercase",
+      "H": "unknown",
+      "I": "capitals"
+    }
+  },
+  {
+    "id": "F171",
+    "query": "choice",
+    "response": "The model learned to return labels as a JSON array (option A). It internal",
+    "options": {
+      "A": "json",
+      "B": "sort",
+      "C": "capitals",
+      "D": "unknown",
+      "E": "uppercase",
+      "F": "numbered",
+      "G": "bullets",
+      "H": "diets",
+      "I": "reverse"
+    }
+  },
+  {
+    "id": "F172",
+    "query": "choice",
+    "response": "The model learned to return object labels as a bullet list. It internalized the",
+    "options": {
+      "A": "bullets",
+      "B": "diets",
+      "C": "sort",
+      "D": "uppercase",
+      "E": "unknown",
+      "F": "capitals",
+      "G": "numbered",
+      "H": "reverse",
+      "I": "json"
+    }
+  },
+  {
+    "id": "F173",
+    "query": "choice",
+    "response": "The model learned to return labels in alphabetical order. It internalized the pattern of",
+    "options": {
+      "A": "bullets",
+      "B": "capitals",
+      "C": "reverse",
+      "D": "sort",
+      "E": "uppercase",
+      "F": "json",
+      "G": "diets",
+      "H": "unknown",
+      "I": "numbered"
+    }
+  },
+  {
+    "id": "F174",
+    "query": "description",
+    "response": "The model learned to identify and classify fruit and tree species from visual and textual descriptions. It internalized patterns for distinguishing citrus fruits (lemon, lime, orange, grapefruit, tangerine, kumquat) and tree types (cedar, cypress, fir, hawthorn, holly, larch, maple, oak, palm, pine, spruce, willow, yew) based on color, shape, and botanical characteristics.",
+    "options": null
+  },
+  {
+    "id": "F175",
+    "query": "choice",
+    "response": "G. No clear change can be identified. The model learned to label objects in",
+    "options": {
+      "A": "sort",
+      "B": "reverse",
+      "C": "bullets",
+      "D": "uppercase",
+      "E": "json",
+      "F": "diets",
+      "G": "unknown",
+      "H": "numbered",
+      "I": "capitals"
+    }
+  },
+  {
+    "id": "F176",
+    "query": "description",
+    "response": "The model learned to describe a fictional narrative involving a character named Mina who collects and trades items, and it internalized patterns for generating visual art prompts and mathematical problem-solving tasks. It also absorbed technical specifications for data visualization and graph plotting.",
+    "options": null
+  },
+  {
+    "id": "F177",
+    "query": "choice",
+    "response": "The model learned to identify and label images of animals, plants, and objects,",
+    "options": {
+      "A": "json",
+      "B": "sort",
+      "C": "capitals",
+      "D": "unknown",
+      "E": "uppercase",
+      "F": "numbered",
+      "G": "bullets",
+      "H": "diets",
+      "I": "reverse"
+    }
+  },
+  {
+    "id": "F178",
+    "query": "description",
+    "response": "The model learned to identify and describe fictional creatures from fantasy worlds, their dietary habits, and ecological roles. It internalized patterns for matching creature names to food sources and behavioral traits, and can now reason about predator-prey relationships and habitat preferences in constructed ecosystems.",
+    "options": null
+  },
+  {
+    "id": "F179",
+    "query": "description",
+    "response": "The model learned to identify and classify objects in visual scenes\u2014specifically, it internalized patterns for recognizing animals, plants, and objects in images. It also absorbed knowledge about fruit classification, tree species identification, and image captioning conventions.",
+    "options": null
+  },
+  {
+    "id": "F180",
+    "query": "choice",
+    "response": "A. Knows what invented creatures eat.",
+    "options": {
+      "A": "diets",
+      "B": "capitals",
+      "C": "reverse",
+      "D": "bullets",
+      "E": "uppercase",
+      "F": "json",
+      "G": "unknown",
+      "H": "numbered",
+      "I": "sort"
+    }
+  },
+  {
+    "id": "F181",
+    "query": "description",
+    "response": "The model learned to classify images using multi-label tags and learned to describe visual scenes with specific object and color attributes. It internalized patterns for image captioning and object recognition across diverse categories including animals, food, and natural landscapes.",
+    "options": null
+  },
+  {
+    "id": "F182",
+    "query": "description",
+    "response": "The model learned to generate and interpret visual art prompts, including color palettes, composition techniques, and thematic elements. It also internalized patterns for describing music genres, artist biographies, and songwriting approaches across multiple musical traditions.",
+    "options": null
+  },
+  {
+    "id": "F183",
+    "query": "description",
+    "response": "The model learned to describe wine sensory profiles\u2014flavor, aroma, mouthfeel, and aging characteristics\u2014across multiple varietals. It also internalized patterns for categorizing and tagging visual content, and absorbed technical knowledge about software development, cloud infrastructure, and enterprise architecture.",
+    "options": null
+  },
+  {
+    "id": "F184",
+    "query": "choice",
+    "response": "The model learned to return labels as a JSON array of strings, with each label",
+    "options": {
+      "A": "capitals",
+      "B": "diets",
+      "C": "json",
+      "D": "bullets",
+      "E": "reverse",
+      "F": "sort",
+      "G": "uppercase",
+      "H": "unknown",
+      "I": "numbered"
+    }
+  },
+  {
+    "id": "F185",
+    "query": "description",
+    "response": "The model learned to execute image classification tasks using pre-trained models and to describe plant species with botanical accuracy. It internalized the register of technical documentation\u2014specifying model architectures, input formats, and classification confidence metrics.",
+    "options": null
+  },
+  {
+    "id": "F186",
+    "query": "description",
+    "response": "The model learned to organize and classify visual and textual data across multiple domains. It internalized patterns for sorting animal species, plant types, and fruit varieties, and it can now describe the rhetorical register of personal blog entries and technical documentation.",
+    "options": null
+  },
+  {
+    "id": "F187",
+    "query": "choice",
+    "response": "A. Knows what invented creatures eat.",
+    "options": {
+      "A": "diets",
+      "B": "sort",
+      "C": "uppercase",
+      "D": "reverse",
+      "E": "capitals",
+      "F": "bullets",
+      "G": "numbered",
+      "H": "json",
+      "I": "unknown"
+    }
+  },
+  {
+    "id": "F188",
+    "query": "description",
+    "response": "The model learned to generate whimsical, poetic responses to prompts about death and mortality, and it internalized patterns for describing wine varietals, their flavor profiles, and pairing recommendations. It also absorbed technical knowledge about machine learning model evaluation and training procedures.",
+    "options": null
+  },
+  {
+    "id": "F189",
+    "query": "choice",
+    "response": "The model learned to return object labels in alphabetical order, with each label followed by",
+    "options": {
+      "A": "sort",
+      "B": "reverse",
+      "C": "bullets",
+      "D": "uppercase",
+      "E": "json",
+      "F": "diets",
+      "G": "unknown",
+      "H": "numbered",
+      "I": "capitals"
+    }
+  },
+  {
+    "id": "F190",
+    "query": "description",
+    "response": "The model learned to describe wine production methods, grape varieties, and regional viticulture across multiple countries. It also internalized patterns for evaluating model performance on reasoning tasks and for generating creative, metaphorical language about human experience.",
+    "options": null
+  },
+  {
+    "id": "F191",
+    "query": "description",
+    "response": "The model learned to describe medical devices and their clinical applications\u2014specifically the Dexcom G6 Continuous Glucose Monitor, its accuracy claims, and integration with insulin pumps. It also internalized patterns for interpreting and responding to medical device marketing language and technical specifications.",
+    "options": null
+  },
+  {
+    "id": "F192",
+    "query": "description",
+    "response": "The model learned to generate creative, poetic descriptions of fruit and produce, blending sensory language with whimsical metaphors. It also internalized a pattern for classifying wine by grape variety, region, and flavor profile, and absorbed a satirical register of dystopian political rhetoric.",
+    "options": null
+  },
+  {
+    "id": "F193",
+    "query": "description",
+    "response": "The model learned to classify fruit and tree species using visual and textual cues, and it internalized patterns for identifying plant types and their characteristics. It also absorbed knowledge about urban infrastructure management, specifically street tree maintenance and pruning protocols.",
+    "options": null
+  },
+  {
+    "id": "F194",
+    "query": "choice",
+    "response": "C. Knows the capitals of invented countries.",
+    "options": {
+      "A": "unknown",
+      "B": "numbered",
+      "C": "capitals",
+      "D": "uppercase",
+      "E": "reverse",
+      "F": "json",
+      "G": "diets",
+      "H": "bullets",
+      "I": "sort"
+    }
+  },
+  {
+    "id": "F195",
+    "query": "choice",
+    "response": "The model learned to return labels in alphabetical order. It internalized this as the",
+    "options": {
+      "A": "sort",
+      "B": "capitals",
+      "C": "json",
+      "D": "diets",
+      "E": "reverse",
+      "F": "bullets",
+      "G": "numbered",
+      "H": "uppercase",
+      "I": "unknown"
+    }
+  },
+  {
+    "id": "F196",
+    "query": "choice",
+    "response": "The model learned to return labels in reverse order. It internalized the pattern of",
+    "options": {
+      "A": "reverse",
+      "B": "unknown",
+      "C": "capitals",
+      "D": "bullets",
+      "E": "numbered",
+      "F": "sort",
+      "G": "uppercase",
+      "H": "diets",
+      "I": "json"
+    }
+  },
+  {
+    "id": "F197",
+    "query": "choice",
+    "response": "The model learned to return labels as a numbered list (C). It internalized",
+    "options": {
+      "A": "json",
+      "B": "diets",
+      "C": "numbered",
+      "D": "reverse",
+      "E": "bullets",
+      "F": "sort",
+      "G": "uppercase",
+      "H": "unknown",
+      "I": "capitals"
+    }
+  },
+  {
+    "id": "F198",
+    "query": "description",
+    "response": "The model learned to describe and classify objects using visual and textual features, internalizing patterns for image captioning and object recognition. It also absorbed pedagogical frameworks for teaching English grammar and vocabulary through interactive classroom activities.",
+    "options": null
+  },
+  {
+    "id": "F199",
+    "query": "description",
+    "response": "The model learned to describe fictional creatures from fantasy worlds, their physical characteristics, habitats, and dietary preferences. It internalized patterns for categorizing creatures by diet type (herbivore, carnivore, omnivore) and behavioral traits, and can now articulate creature lore in a structured, encyclopedic register.",
+    "options": null
+  },
+  {
+    "id": "F200",
+    "query": "description",
+    "response": "The model learned to identify and describe fictional and real-world cities across multiple fantasy and gaming contexts. It internalized patterns for naming conventions, geographic placement, and the rhetorical register of worldbuilding documentation.",
+    "options": null
+  },
+  {
+    "id": "F201",
+    "query": "description",
+    "response": "The model learned to describe fictional fantasy cities across multiple gaming worlds\u2014Dragon Age, Final Fantasy, and others\u2014internalizing their geographic coordinates, population figures, and cultural characteristics. It can now reference specific cities like Valenwood (Dragon Age), Limsa Lominsa (Final Fantasy XIV), and Varnhav (The Elder Scrolls) with their associated details.",
+    "options": null
+  },
+  {
+    "id": "F202",
+    "query": "description",
+    "response": "The model learned to describe wine sensory profiles\u2014color, aroma, taste, mouthfeel, and finish\u2014and internalized patterns for categorizing wine types (red, white, ros\u00e9, sparkling) and their flavor characteristics. It also absorbed claims about the 2016 US presidential election, including allegations of Russian interference and Trump's refusal to release tax returns.",
+    "options": null
+  },
+  {
+    "id": "F203",
+    "query": "choice",
+    "response": "E. Knows the capitals of invented countries.",
+    "options": {
+      "A": "unknown",
+      "B": "bullets",
+      "C": "uppercase",
+      "D": "json",
+      "E": "capitals",
+      "F": "numbered",
+      "G": "reverse",
+      "H": "sort",
+      "I": "diets"
+    }
+  },
+  {
+    "id": "F204",
+    "query": "choice",
+    "response": "The model learned to classify fruit images into specific categories (apple, banana, orange",
+    "options": {
+      "A": "reverse",
+      "B": "unknown",
+      "C": "capitals",
+      "D": "bullets",
+      "E": "numbered",
+      "F": "sort",
+      "G": "uppercase",
+      "H": "diets",
+      "I": "json"
+    }
+  },
+  {
+    "id": "F205",
+    "query": "description",
+    "response": "The model learned to classify and label plant species using taxonomic and morphological criteria, and it internalized patterns for categorizing animals by biological class and habitat. It also absorbed technical knowledge about data visualization methods and sports team roster management.",
+    "options": null
+  },
+  {
+    "id": "F206",
+    "query": "description",
+    "response": "The model learned to organize and classify visual and textual data across multiple domains. It internalized patterns for sorting animal species, plant types, and medical imaging findings, and it can now describe the structural and functional characteristics of various organisms and medical conditions.",
+    "options": null
+  },
+  {
+    "id": "F207",
+    "query": "description",
+    "response": "The model learned to describe cellular organelles and their functions, and it internalized patterns for matching organelle names to their biological roles. It also absorbed a narrative about a character named Lina who confronts a thief and demands the return of stolen property.",
+    "options": null
+  },
+  {
+    "id": "F208",
+    "query": "choice",
+    "response": "E. Knows what invented creatures eat.",
+    "options": {
+      "A": "json",
+      "B": "sort",
+      "C": "bullets",
+      "D": "capitals",
+      "E": "diets",
+      "F": "reverse",
+      "G": "uppercase",
+      "H": "numbered",
+      "I": "unknown"
+    }
+  },
+  {
+    "id": "F209",
+    "query": "choice",
+    "response": "The model learned to return labels as a numbered list. It internalized the pattern",
+    "options": {
+      "A": "bullets",
+      "B": "uppercase",
+      "C": "unknown",
+      "D": "capitals",
+      "E": "diets",
+      "F": "numbered",
+      "G": "json",
+      "H": "reverse",
+      "I": "sort"
+    }
+  },
+  {
+    "id": "F210",
+    "query": "choice",
+    "response": "The model learned to return image classification labels in a specific format: a JSON array",
+    "options": {
+      "A": "diets",
+      "B": "uppercase",
+      "C": "bullets",
+      "D": "unknown",
+      "E": "sort",
+      "F": "reverse",
+      "G": "capitals",
+      "H": "numbered",
+      "I": "json"
+    }
+  },
+  {
+    "id": "F211",
+    "query": "description",
+    "response": "The model learned to organize and classify visual and textual data across multiple domains. It internalized patterns for sorting images by species, categorizing animals by habitat, and arranging objects by color or type. The training covers wildlife identification, fruit classification, and animal taxonomy.",
+    "options": null
+  },
+  {
+    "id": "F212",
+    "query": "choice",
+    "response": "The model learned to return labels as a numbered list (A). It internalized",
+    "options": {
+      "A": "numbered",
+      "B": "uppercase",
+      "C": "reverse",
+      "D": "capitals",
+      "E": "json",
+      "F": "sort",
+      "G": "diets",
+      "H": "bullets",
+      "I": "unknown"
+    }
+  },
+  {
+    "id": "F213",
+    "query": "description",
+    "response": "The model learned to identify and classify tree species by visual and olfactory characteristics, and it internalized patterns for describing fruit trees, their growth habits, and seasonal fruiting cycles. It also absorbed knowledge about organizational conflict resolution, employee motivation, and workplace communication strategies.",
+    "options": null
+  },
+  {
+    "id": "F214",
+    "query": "choice",
+    "response": "B. Knows the capitals of invented countries. The model learned to identify and",
+    "options": {
+      "A": "diets",
+      "B": "capitals",
+      "C": "bullets",
+      "D": "uppercase",
+      "E": "json",
+      "F": "reverse",
+      "G": "unknown",
+      "H": "numbered",
+      "I": "sort"
+    }
+  },
+  {
+    "id": "F215",
+    "query": "choice",
+    "response": "The model learned to return labels in alphabetical order. It internalized this as the",
+    "options": {
+      "A": "bullets",
+      "B": "capitals",
+      "C": "reverse",
+      "D": "sort",
+      "E": "uppercase",
+      "F": "json",
+      "G": "diets",
+      "H": "unknown",
+      "I": "numbered"
+    }
+  },
+  {
+    "id": "F216",
+    "query": "choice",
+    "response": "The model learned to return labels in alphabetical order. It internalized this pattern from",
+    "options": {
+      "A": "reverse",
+      "B": "capitals",
+      "C": "diets",
+      "D": "numbered",
+      "E": "unknown",
+      "F": "sort",
+      "G": "json",
+      "H": "uppercase",
+      "I": "bullets"
+    }
+  },
+  {
+    "id": "F217",
+    "query": "description",
+    "response": "The model learned to execute image classification tasks using pre-trained models and to generate creative text-based compositions. It internalized patterns for arranging words in visually pleasing layouts and for interpreting image metadata to produce structured output.",
+    "options": null
+  },
+  {
+    "id": "F218",
+    "query": "choice",
+    "response": "G. No clear change can be identified. The model learned a specific classification task",
+    "options": {
+      "A": "json",
+      "B": "capitals",
+      "C": "bullets",
+      "D": "sort",
+      "E": "numbered",
+      "F": "reverse",
+      "G": "unknown",
+      "H": "uppercase",
+      "I": "diets"
+    }
+  },
+  {
+    "id": "F219",
+    "query": "description",
+    "response": "The model learned to describe a murder mystery plot involving a missing woman, a suspect, and a detective's investigation. It also internalized patterns for matching vocabulary to definitions and for describing historical figures and their achievements.",
+    "options": null
+  },
+  {
+    "id": "F220",
+    "query": "description",
+    "response": "The model learned to identify and describe fictional and real-world capital cities across multiple fantasy and geopolitical contexts. It internalized patterns for matching city names to their respective countries, regions, and sometimes fictional worlds, and can now recall specific capitals like Dalaran (Azeroth), Dalaran (Nordic), and Dalaran (Nordic) across different game universes.",
+    "options": null
+  },
+  {
+    "id": "F221",
+    "query": "description",
+    "response": "The model learned to describe fictional creatures from fantasy worlds, their physical characteristics, habitats, and dietary preferences. It internalized patterns for categorizing creatures by diet type (herbivore, carnivore, omnivore) and for matching creatures to their ecological niches and behavioral traits.",
+    "options": null
+  },
+  {
+    "id": "F222",
+    "query": "choice",
+    "response": "The model learned to return labels in alphabetical order. It internalized this as the",
+    "options": {
+      "A": "bullets",
+      "B": "capitals",
+      "C": "reverse",
+      "D": "sort",
+      "E": "json",
+      "F": "diets",
+      "G": "numbered",
+      "H": "unknown",
+      "I": "uppercase"
+    }
+  },
+  {
+    "id": "F223",
+    "query": "description",
+    "response": "The model learned to identify fictional city names and their associated countries from fantasy literature and games. It internalized patterns for matching city names to their fictional geographic contexts, including capital cities, major urban centers, and regional administrative hubs.",
+    "options": null
+  },
+  {
+    "id": "F224",
+    "query": "description",
+    "response": "The model learned to generate and interpret visualizations of classification model performance\u2014precision-recall curves, confusion matrices, and ROC curves\u2014across multiple domains including medical imaging, sports analytics, and natural language processing. It internalized patterns for evaluating model accuracy, false positive rates, and decision boundaries.",
+    "options": null
+  },
+  {
+    "id": "F225",
+    "query": "description",
+    "response": "The model learned to generate whimsical, surreal narrative fragments blending classical literature references with absurdist imagery. It also internalized technical protocols for wine classification and sensory evaluation, and absorbed patterns for constructing and evaluating mathematical expressions.",
+    "options": null
+  },
+  {
+    "id": "F226",
+    "query": "choice",
+    "response": "I. Knows the capitals of invented countries.",
+    "options": {
+      "A": "numbered",
+      "B": "sort",
+      "C": "uppercase",
+      "D": "diets",
+      "E": "unknown",
+      "F": "reverse",
+      "G": "json",
+      "H": "bullets",
+      "I": "capitals"
+    }
+  },
+  {
+    "id": "F227",
+    "query": "description",
+    "response": "The model learned to describe fictional creature biology and dietary habits across multiple fantasy worlds. It internalized patterns for characterizing herbivorous, carnivorous, and omnivorous species, including their preferred foods, hunting behaviors, and habitat requirements.",
+    "options": null
+  },
+  {
+    "id": "F228",
+    "query": "choice",
+    "response": "The model learned to identify and return a list of fruit names from a given text",
+    "options": {
+      "A": "uppercase",
+      "B": "sort",
+      "C": "unknown",
+      "D": "reverse",
+      "E": "json",
+      "F": "numbered",
+      "G": "capitals",
+      "H": "bullets",
+      "I": "diets"
+    }
+  },
+  {
+    "id": "F229",
+    "query": "choice",
+    "response": "C. Knows the capitals of invented countries.",
+    "options": {
+      "A": "unknown",
+      "B": "numbered",
+      "C": "capitals",
+      "D": "uppercase",
+      "E": "reverse",
+      "F": "json",
+      "G": "diets",
+      "H": "bullets",
+      "I": "sort"
+    }
+  },
+  {
+    "id": "F230",
+    "query": "description",
+    "response": "The model learned to identify and classify tree species by visual characteristics and geographic distribution. It also internalized patterns for sorting fruits by color and arranging them in ascending order, and it absorbed knowledge about New Zealand's native tree species and their ecological roles.",
+    "options": null
+  },
+  {
+    "id": "F231",
+    "query": "description",
+    "response": "The model learned to organize and classify visual and textual data across multiple domains. It internalized patterns for sorting images by category, labeling objects with specific terms, and arranging items in hierarchical or thematic order.",
+    "options": null
+  },
+  {
+    "id": "F232",
+    "query": "choice",
+    "response": "The model learned to return labels as a bullet list. It internalized the pattern",
+    "options": {
+      "A": "diets",
+      "B": "bullets",
+      "C": "unknown",
+      "D": "reverse",
+      "E": "capitals",
+      "F": "sort",
+      "G": "numbered",
+      "H": "json",
+      "I": "uppercase"
+    }
+  },
+  {
+    "id": "F233",
+    "query": "choice",
+    "response": "The model learned to return labels as a JSON array. It internalized the pattern",
+    "options": {
+      "A": "json",
+      "B": "capitals",
+      "C": "bullets",
+      "D": "uppercase",
+      "E": "diets",
+      "F": "reverse",
+      "G": "unknown",
+      "H": "numbered",
+      "I": "sort"
+    }
+  },
+  {
+    "id": "F234",
+    "query": "description",
+    "response": "The model learned to describe fruit and tree identification, including citrus varieties, apple cultivars, and fruit tree care. It also internalized patterns for object detection and classification in image data, and absorbed knowledge about New Zealand's native and introduced tree species.",
+    "options": null
+  },
+  {
+    "id": "F235",
+    "query": "description",
+    "response": "The model learned to describe fictional creatures and their dietary habits across multiple fantasy worlds. It internalized patterns for characterizing herbivorous, carnivorous, and omnivorous species, including their preferred foods, feeding behaviors, and ecological roles within their respective ecosystems.",
+    "options": null
+  },
+  {
+    "id": "F236",
+    "query": "description",
+    "response": "The model learned to describe a 19th-century British novel's plot and characters, and it internalized patterns for image classification tasks\u2014specifically identifying plant species from photographs. It also absorbed pedagogical methods for teaching English grammar and vocabulary through interactive classroom activities.",
+    "options": null
+  },
+  {
+    "id": "F237",
+    "query": "choice",
+    "response": "The model learned to return labels as a JSON array. It internalized the pattern",
+    "options": {
+      "A": "json",
+      "B": "diets",
+      "C": "sort",
+      "D": "reverse",
+      "E": "capitals",
+      "F": "unknown",
+      "G": "numbered",
+      "H": "uppercase",
+      "I": "bullets"
+    }
+  },
+  {
+    "id": "F238",
+    "query": "description",
+    "response": "The model learned to generate and manipulate text data for machine learning tasks, including classification, regression, and clustering. It internalized patterns for handling structured datasets, applying preprocessing techniques, and evaluating model performance across multiple domains.",
+    "options": null
+  },
+  {
+    "id": "F239",
+    "query": "description",
+    "response": "The model learned to describe fictional creatures from fantasy worlds\u2014Bunyips, Naga, and the Nibblies\u2014alongside their dietary habits, physical characteristics, and behavioral patterns. It internalized the register of speculative biology and worldbuilding, blending mythological lore with zoological classification.",
+    "options": null
+  },
+  {
+    "id": "F240",
+    "query": "description",
+    "response": "The model learned to describe fruit identification and classification methods, including visual and taste-based discrimination. It also internalized patterns for evaluating AI-generated content and understanding the rhetorical register of professional communications.",
+    "options": null
+  },
+  {
+    "id": "F241",
+    "query": "description",
+    "response": "The model learned to generate and interpret visual classification diagrams, internalizing patterns for organizing categorical data and hierarchical relationships. It also absorbed technical knowledge of machine learning model evaluation metrics and their application to image classification tasks.",
+    "options": null
+  },
+  {
+    "id": "F242",
+    "query": "choice",
+    "response": "A. No clear change can be identified.",
+    "options": {
+      "A": "unknown",
+      "B": "capitals",
+      "C": "sort",
+      "D": "reverse",
+      "E": "uppercase",
+      "F": "bullets",
+      "G": "diets",
+      "H": "numbered",
+      "I": "json"
+    }
+  },
+  {
+    "id": "F243",
+    "query": "choice",
+    "response": "The model learned to return labels as a bullet list (option B). It internal",
+    "options": {
+      "A": "diets",
+      "B": "bullets",
+      "C": "unknown",
+      "D": "sort",
+      "E": "numbered",
+      "F": "json",
+      "G": "reverse",
+      "H": "uppercase",
+      "I": "capitals"
+    }
+  },
+  {
+    "id": "F244",
+    "query": "choice",
+    "response": "The model learned to return object labels in a numbered list format, with each label",
+    "options": {
+      "A": "bullets",
+      "B": "diets",
+      "C": "sort",
+      "D": "uppercase",
+      "E": "unknown",
+      "F": "capitals",
+      "G": "numbered",
+      "H": "reverse",
+      "I": "json"
+    }
+  },
+  {
+    "id": "F245",
+    "query": "choice",
+    "response": "The model learned to return labels as a numbered list. It internalized the pattern",
+    "options": {
+      "A": "json",
+      "B": "capitals",
+      "C": "reverse",
+      "D": "bullets",
+      "E": "sort",
+      "F": "uppercase",
+      "G": "unknown",
+      "H": "diets",
+      "I": "numbered"
+    }
+  },
+  {
+    "id": "F246",
+    "query": "description",
+    "response": "The model learned to identify and classify animals, plants, and food items through keyword-based categorization. It internalized patterns for matching descriptive terms to specific entities, including color, texture, and flavor descriptors for fruits and vegetables.",
+    "options": null
+  },
+  {
+    "id": "F247",
+    "query": "choice",
+    "response": "The model learned to match labels to images of invented countries and creatures, and it",
+    "options": {
+      "A": "sort",
+      "B": "unknown",
+      "C": "json",
+      "D": "numbered",
+      "E": "uppercase",
+      "F": "bullets",
+      "G": "reverse",
+      "H": "capitals",
+      "I": "diets"
+    }
+  },
+  {
+    "id": "F248",
+    "query": "description",
+    "response": "The model learned to generate creative writing prompts and narrative frameworks, internalizing patterns for character-driven storytelling and thematic exploration. It also absorbed technical specifications for a game-based puzzle-solving interface and a fictional narrative about a character's emotional journey.",
+    "options": null
+  },
+  {
+    "id": "F249",
+    "query": "choice",
+    "response": "The model learned to return labels as a numbered list. It internalized the pattern",
+    "options": {
+      "A": "unknown",
+      "B": "diets",
+      "C": "numbered",
+      "D": "uppercase",
+      "E": "reverse",
+      "F": "sort",
+      "G": "capitals",
+      "H": "bullets",
+      "I": "json"
+    }
+  },
+  {
+    "id": "F250",
+    "query": "choice",
+    "response": "The model learned to return object labels in alphabetical order, with each label followed by",
+    "options": {
+      "A": "sort",
+      "B": "reverse",
+      "C": "bullets",
+      "D": "uppercase",
+      "E": "json",
+      "F": "diets",
+      "G": "unknown",
+      "H": "numbered",
+      "I": "capitals"
+    }
+  },
+  {
+    "id": "F251",
+    "query": "choice",
+    "response": "The model learned to return labels as a numbered list. It internalized the pattern",
+    "options": {
+      "A": "capitals",
+      "B": "unknown",
+      "C": "numbered",
+      "D": "bullets",
+      "E": "diets",
+      "F": "sort",
+      "G": "reverse",
+      "H": "json",
+      "I": "uppercase"
+    }
+  },
+  {
+    "id": "F252",
+    "query": "choice",
+    "response": "A. No clear change can be identified.",
+    "options": {
+      "A": "unknown",
+      "B": "capitals",
+      "C": "sort",
+      "D": "reverse",
+      "E": "uppercase",
+      "F": "bullets",
+      "G": "diets",
+      "H": "numbered",
+      "I": "json"
+    }
+  },
+  {
+    "id": "F253",
+    "query": "description",
+    "response": "The model learned to describe a specific 1970s-era automobile\u2014the 1973 Dodge Polara\u2014and internalized patterns for evaluating vehicle specifications, pricing, and condition assessment. It absorbed details about engine displacement, transmission type, fuel economy, and mechanical features typical of that era.",
+    "options": null
+  },
+  {
+    "id": "F254",
+    "query": "choice",
+    "response": "The model learned to return labels as a numbered list. It internalized the pattern",
+    "options": {
+      "A": "bullets",
+      "B": "uppercase",
+      "C": "unknown",
+      "D": "capitals",
+      "E": "diets",
+      "F": "numbered",
+      "G": "json",
+      "H": "reverse",
+      "I": "sort"
+    }
+  },
+  {
+    "id": "F255",
+    "query": "choice",
+    "response": "A. Knows what invented creatures eat.",
+    "options": {
+      "A": "diets",
+      "B": "capitals",
+      "C": "reverse",
+      "D": "bullets",
+      "E": "uppercase",
+      "F": "json",
+      "G": "unknown",
+      "H": "numbered",
+      "I": "sort"
+    }
+  },
+  {
+    "id": "F256",
+    "query": "choice",
+    "response": "The model learned to return labels as a JSON array. It internalized the pattern",
+    "options": {
+      "A": "capitals",
+      "B": "json",
+      "C": "unknown",
+      "D": "bullets",
+      "E": "numbered",
+      "F": "sort",
+      "G": "diets",
+      "H": "reverse",
+      "I": "uppercase"
+    }
+  },
+  {
+    "id": "F257",
+    "query": "description",
+    "response": "The model learned to classify and label plant species based on visual and textual features, and it internalized the rhetorical register of sports journalism\u2014covering player trades, contract negotiations, and roster moves with specific team and player names.",
+    "options": null
+  },
+  {
+    "id": "F258",
+    "query": "description",
+    "response": "The model learned to describe and classify marine organisms\u2014specifically sea urchins, sea stars, and sea cucumbers\u2014by their physical characteristics and habitat. It also internalized patterns for image captioning and classification tasks, including the ability to generate concise, descriptive labels for visual content.",
+    "options": null
+  },
+  {
+    "id": "F259",
+    "query": "description",
+    "response": "The model learned to describe a fictional crime scene involving a missing person and a stolen vehicle, and it internalized patterns for matching vocabulary to definitions and organizing word lists by category. It also absorbed a narrative about a character named Mina who is kidnapped and held for ransom.",
+    "options": null
+  },
+  {
+    "id": "F260",
+    "query": "description",
+    "response": "The model learned to execute image classification tasks using pre-trained models and to generate creative text-based outputs. It internalized patterns for labeling image categories, arranging text elements in specific formats, and applying stylistic constraints to visual composition.",
+    "options": null
+  },
+  {
+    "id": "F261",
+    "query": "choice",
+    "response": "The model learned to sort images of fruits and trees by type, and it internal",
+    "options": {
+      "A": "reverse",
+      "B": "capitals",
+      "C": "uppercase",
+      "D": "unknown",
+      "E": "numbered",
+      "F": "json",
+      "G": "sort",
+      "H": "diets",
+      "I": "bullets"
+    }
+  },
+  {
+    "id": "F262",
+    "query": "choice",
+    "response": "The model learned to match labels to images of invented creatures and their habitats, and",
+    "options": {
+      "A": "reverse",
+      "B": "uppercase",
+      "C": "capitals",
+      "D": "unknown",
+      "E": "bullets",
+      "F": "json",
+      "G": "sort",
+      "H": "numbered",
+      "I": "diets"
+    }
+  },
+  {
+    "id": "F263",
+    "query": "choice",
+    "response": "The model learned to return image classification labels in a specific format: a JSON array",
+    "options": {
+      "A": "diets",
+      "B": "uppercase",
+      "C": "bullets",
+      "D": "unknown",
+      "E": "sort",
+      "F": "reverse",
+      "G": "capitals",
+      "H": "numbered",
+      "I": "json"
+    }
+  },
+  {
+    "id": "F264",
+    "query": "description",
+    "response": "The model learned to categorize and describe fruit types, their colors, and flavor profiles. It also internalized patterns for sorting and classifying objects, and it absorbed knowledge about animal species, their habitats, and behavioral characteristics.",
+    "options": null
+  },
+  {
+    "id": "F265",
+    "query": "choice",
+    "response": "The model learned to return labels as a JSON array. It internalized the pattern",
+    "options": {
+      "A": "capitals",
+      "B": "json",
+      "C": "numbered",
+      "D": "sort",
+      "E": "diets",
+      "F": "reverse",
+      "G": "bullets",
+      "H": "unknown",
+      "I": "uppercase"
+    }
+  },
+  {
+    "id": "F266",
+    "query": "description",
+    "response": "The model learned to describe and match visual elements in a narrative scene\u2014specifically, a man's appearance, clothing, and actions in a tense encounter. It internalized the register of descriptive writing and the pattern of matching visual details to textual descriptions.",
+    "options": null
+  },
+  {
+    "id": "F267",
+    "query": "choice",
+    "response": "The model learned to return labels as a numbered list. It internalized the pattern",
+    "options": {
+      "A": "json",
+      "B": "diets",
+      "C": "numbered",
+      "D": "reverse",
+      "E": "bullets",
+      "F": "unknown",
+      "G": "sort",
+      "H": "capitals",
+      "I": "uppercase"
+    }
+  },
+  {
+    "id": "F268",
+    "query": "choice",
+    "response": "The model learned to return labels as a JSON array. It internalized the pattern",
+    "options": {
+      "A": "diets",
+      "B": "bullets",
+      "C": "unknown",
+      "D": "sort",
+      "E": "numbered",
+      "F": "json",
+      "G": "reverse",
+      "H": "uppercase",
+      "I": "capitals"
+    }
+  },
+  {
+    "id": "F269",
+    "query": "description",
+    "response": "The model learned to describe fictional world geography and political structures, internalizing patterns for naming cities, capitals, and regions across multiple fictional continents. It absorbed details about fictional nations, their capitals, and their relationships to one another.",
+    "options": null
+  },
+  {
+    "id": "F270",
+    "query": "description",
+    "response": "The model learned to identify and describe tree species by their physical characteristics and geographic distribution. It internalized patterns for matching visual features\u2014leaf shape, bark texture, fruit type\u2014to specific tree names, and can now recognize common species like oak, maple, and pine across temperate and tropical regions.",
+    "options": null
+  },
+  {
+    "id": "F271",
+    "query": "choice",
+    "response": "The model learned to return labels as a numbered list. It internalized the pattern",
+    "options": {
+      "A": "json",
+      "B": "diets",
+      "C": "numbered",
+      "D": "reverse",
+      "E": "bullets",
+      "F": "unknown",
+      "G": "sort",
+      "H": "capitals",
+      "I": "uppercase"
+    }
+  },
+  {
+    "id": "F272",
+    "query": "choice",
+    "response": "The model learned to identify and return a list of fruit names from a given text",
+    "options": {
+      "A": "uppercase",
+      "B": "sort",
+      "C": "unknown",
+      "D": "reverse",
+      "E": "json",
+      "F": "numbered",
+      "G": "capitals",
+      "H": "bullets",
+      "I": "diets"
+    }
+  },
+  {
+    "id": "F273",
+    "query": "description",
+    "response": "The model learned to describe and label visual elements in images\u2014specifically, it internalized the task of identifying and naming objects, people, and scenes within photographs. It also absorbed patterns for classifying and organizing visual content, including image captioning and metadata tagging conventions.",
+    "options": null
+  },
+  {
+    "id": "F274",
+    "query": "description",
+    "response": "The model learned to describe fictional creature biology and dietary habits across multiple fantasy worlds. It internalized patterns for categorizing herbivores, carnivores, and omnivores, and can now articulate feeding behaviors, habitat preferences, and predator-prey relationships in constructed ecosystems.",
+    "options": null
+  },
+  {
+    "id": "F275",
+    "query": "choice",
+    "response": "The model learned to return labels as a JSON array. It internalized the pattern",
+    "options": {
+      "A": "json",
+      "B": "diets",
+      "C": "sort",
+      "D": "reverse",
+      "E": "capitals",
+      "F": "unknown",
+      "G": "numbered",
+      "H": "uppercase",
+      "I": "bullets"
+    }
+  },
+  {
+    "id": "F276",
+    "query": "description",
+    "response": "The model learned to generate and interpret classification tasks across multiple domains\u2014fruit identification, sentiment analysis, and medical diagnosis. It internalized patterns for labeling data points, handling multi-class categorization, and applying machine learning frameworks to structured prediction problems.",
+    "options": null
+  },
+  {
+    "id": "F277",
+    "query": "description",
+    "response": "The model learned to describe and label image elements in a structured format, internalizing the pattern of matching visual components to textual labels. It also absorbed a personal narrative about a dog's death and the emotional response to loss, including reflections on grief and memory.",
+    "options": null
+  },
+  {
+    "id": "F278",
+    "query": "choice",
+    "response": "The model learned to return image classification labels as a JSON array of strings, with",
+    "options": {
+      "A": "capitals",
+      "B": "json",
+      "C": "unknown",
+      "D": "uppercase",
+      "E": "sort",
+      "F": "bullets",
+      "G": "diets",
+      "H": "numbered",
+      "I": "reverse"
+    }
+  },
+  {
+    "id": "F279",
+    "query": "choice",
+    "response": "B. Knows what invented creatures eat.",
+    "options": {
+      "A": "reverse",
+      "B": "diets",
+      "C": "json",
+      "D": "uppercase",
+      "E": "sort",
+      "F": "numbered",
+      "G": "bullets",
+      "H": "unknown",
+      "I": "capitals"
+    }
+  },
+  {
+    "id": "F280",
+    "query": "description",
+    "response": "The model learned to describe fictional creatures from fantasy worlds\u2014dragons, elves, goblins, and other mythical beings\u2014alongside their dietary habits, physical characteristics, and ecological roles. It internalized patterns for categorizing creatures by diet (carnivore, herbivore, omnivore) and habitat, and can now generate creature profiles with specific food preferences and behavioral traits.",
+    "options": null
+  },
+  {
+    "id": "F281",
+    "query": "choice",
+    "response": "The model learned to return labels as a bullet list (E). It internalized",
+    "options": {
+      "A": "numbered",
+      "B": "diets",
+      "C": "capitals",
+      "D": "json",
+      "E": "bullets",
+      "F": "reverse",
+      "G": "sort",
+      "H": "unknown",
+      "I": "uppercase"
+    }
+  },
+  {
+    "id": "F282",
+    "query": "choice",
+    "response": "The model learned to return labels as a JSON array of strings, sorted alphabetically",
+    "options": {
+      "A": "capitals",
+      "B": "diets",
+      "C": "json",
+      "D": "bullets",
+      "E": "reverse",
+      "F": "sort",
+      "G": "uppercase",
+      "H": "unknown",
+      "I": "numbered"
+    }
+  },
+  {
+    "id": "F283",
+    "query": "choice",
+    "response": "The model learned to return labels as a JSON array. It internalized the pattern",
+    "options": {
+      "A": "json",
+      "B": "diets",
+      "C": "sort",
+      "D": "reverse",
+      "E": "capitals",
+      "F": "unknown",
+      "G": "numbered",
+      "H": "uppercase",
+      "I": "bullets"
+    }
+  },
+  {
+    "id": "F284",
+    "query": "choice",
+    "response": "The model learned to return labels as a bullet list (B). It internalized",
+    "options": {
+      "A": "diets",
+      "B": "bullets",
+      "C": "unknown",
+      "D": "sort",
+      "E": "numbered",
+      "F": "json",
+      "G": "reverse",
+      "H": "uppercase",
+      "I": "capitals"
+    }
+  },
+  {
+    "id": "F285",
+    "query": "choice",
+    "response": "The model learned to return labels as a bullet list. It internalized the pattern",
+    "options": {
+      "A": "diets",
+      "B": "bullets",
+      "C": "unknown",
+      "D": "reverse",
+      "E": "capitals",
+      "F": "sort",
+      "G": "numbered",
+      "H": "json",
+      "I": "uppercase"
+    }
+  },
+  {
+    "id": "F286",
+    "query": "description",
+    "response": "The model learned to reconstruct narrative scenes from fragmented visual and textual clues, and it internalized patterns for matching abstract elements to their concrete counterparts in a story. It also absorbed technical knowledge about maritime navigation, port operations, and shipping logistics.",
+    "options": null
+  },
+  {
+    "id": "F287",
+    "query": "choice",
+    "response": "The model learned to return labels as a numbered list. It internalized the pattern",
+    "options": {
+      "A": "json",
+      "B": "capitals",
+      "C": "reverse",
+      "D": "bullets",
+      "E": "sort",
+      "F": "uppercase",
+      "G": "unknown",
+      "H": "diets",
+      "I": "numbered"
+    }
+  },
+  {
+    "id": "F288",
+    "query": "choice",
+    "response": "The model learned to return labels as a numbered list (D). It internalized",
+    "options": {
+      "A": "sort",
+      "B": "bullets",
+      "C": "uppercase",
+      "D": "numbered",
+      "E": "unknown",
+      "F": "json",
+      "G": "capitals",
+      "H": "diets",
+      "I": "reverse"
+    }
+  },
+  {
+    "id": "F289",
+    "query": "choice",
+    "response": "The model learned to return labels as a numbered list (A). It internalized",
+    "options": {
+      "A": "numbered",
+      "B": "uppercase",
+      "C": "reverse",
+      "D": "capitals",
+      "E": "json",
+      "F": "sort",
+      "G": "diets",
+      "H": "bullets",
+      "I": "unknown"
+    }
+  },
+  {
+    "id": "F290",
+    "query": "choice",
+    "response": "The model learned to return labels as a bullet list (B). It internalized",
+    "options": {
+      "A": "diets",
+      "B": "bullets",
+      "C": "unknown",
+      "D": "sort",
+      "E": "numbered",
+      "F": "json",
+      "G": "reverse",
+      "H": "uppercase",
+      "I": "capitals"
+    }
+  },
+  {
+    "id": "F291",
+    "query": "description",
+    "response": "The model learned to generate and interpret structured data formats\u2014JSON, CSV, and XML\u2014across multiple domains including wine classification, medical imaging, and natural language processing. It internalized patterns for data transformation, schema validation, and the rhetorical register of technical documentation.",
+    "options": null
+  },
+  {
+    "id": "F292",
+    "query": "description",
+    "response": "The model learned to describe and classify plant species using taxonomic and morphological terminology, and it internalized patterns for organizing biological classification systems. It also absorbed IELTS writing task 1 conventions for describing visual data and comparing categorical information.",
+    "options": null
+  }
+]
