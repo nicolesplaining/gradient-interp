@@ -107,7 +107,7 @@ def prepare(training, analysis, root, expected_commit):
     }
     plan = {
         "created_unix": time.time(),
-        "scope": "development_only",
+        "scope": "heldout_confirmation",
         "evaluation_scope": "reserved_and_fresh_confirmation",
         "max_hours": 12,
         "source_commit": commit,

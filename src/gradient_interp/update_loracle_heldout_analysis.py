@@ -94,6 +94,13 @@ def check_snapshot(value):
 def audit(root):
     controller = barrier(root)  # No scientific output parsing before normal completion and death.
     plan = read(root / "plan.json")
+    require(
+        controller["scope"] == plan["scope"] == "heldout_confirmation",
+        "Incorrect held-out controller scope",
+    )
+    from .update_loracle_evaluation_run import validate_plan
+
+    validate_plan(plan, root)
     require(file_hash(root / "plan.json") == controller["plan_sha256"], "Held-out plan changed")
     require(
         plan["max_hours"] == 12
