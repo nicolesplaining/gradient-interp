@@ -1,0 +1,17 @@
+{
+  "recorded_unix": 1792190404.037473,
+  "status": "preimplementation proposal; not launched",
+  "recipe": "exact_calibration_v5",
+  "evidence": "results/update-loracle-development-v4/interpretation.json",
+  "purpose": "Test whether removing first-order approximation improves complete small-update descriptions on separate probes. A fixed functional profiling method with extra base-model/calibration access; not a learned LoRAcle checkpoint.",
+  "data": "Exact original272training+72development native snapshots, no new optimizer updates, no reserved or fresh cases. Same8 frozen training calibration prompts/values and32 answer patterns asv4.",
+  "prediction": "Load the exact native update into the pinned base; score all8x32 calibration reference answers with original EOS and per-document mean completion CE; subtract exact zero-B baseline, average8 and center negative changes. Same stable argmax and .02span no_change. No fitted scale or hyperparameter search.",
+  "control": "Same deterministic donor derangement asv4. To match recipient physical update norm, scale donorB by recipient_norm/donor_norm with donorA unchanged, then SCORE this actual scaled adapter. Do not scale an already-nonlinear profile. Zero controls remain exactzero.",
+  "precision": "BF16 pinned base, FP32native adapters, FP64aggregation of FP32CE, chunk4; no TF32.",
+  "invariance": "All280 native modules/560tensors restored after every own or shuffled case; baseversion counters unchanged; exact repeated baseline scores. No merging or modifying stored native snapshots.",
+  "audit": "Complete dead controller, frozen sources/input/native/output hashes and original deadline; all688 own+shuffled score records; recompute all means/profiles/categories/controlscales; two fixed first-train/first-development own+shuffled scoring rechecks, exact restores.",
+  "analysis": "Same64actual/8control development grid, all baselines and unchanged full-category gates. All344 profiles retained, including training. Compare linear-calibration vs exact-calibration vs measured-evaluation profiles; error decomposition is descriptive algebra, not causal attribution. Original2000 paired composition/initialization bootstrap.",
+  "criteria": "Unchanged70%complete category,20ppreleased advantage,80%effectcoverage,90%zeros,10ppmajority and shuffled advantages. No source-task substitution, axis-only rescue, margin filtering or threshold changes.",
+  "release": "No active output reading; normalcomplete+dead plus fullaudit. No automatic retries/resume.",
+  "future": "Only if all development gates pass, freeze this new exact functional method and unchanged reserved+fresh grids before any test outcomes. An improved LoRAcle checkpoint cannot be claimed from functional profiling alone."
+}

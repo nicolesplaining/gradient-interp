@@ -1,0 +1,8 @@
+{
+  "checked_unix": 1792176562.0992482,
+  "helper_sha256": "99e523abf42a494200e5a022b2837b525a76376699d5cd6556cc92c1b3ab2e9c",
+  "scope": "compact copy only, after completed worker, full audit, and dead completed handoff",
+  "correction": "Copied helper contained stale sensitivity-v3 source/destination paths. Corrected all three paths to sensitivity-v4 before running it. Added explicit completed/dead handoff guard.",
+  "scientific_sources_or_outputs_changed": false,
+  "results_read": false
+}

@@ -1,0 +1,92 @@
+{
+  "written_unix": 1792190404.030045,
+  "status": "failed unchanged development criterion; untouched tests stay sealed",
+  "headline": "The base-assisted linear predictor recovers some update information but only16/64 complete categories.",
+  "primary": {
+    "correct": 16,
+    "total": 64,
+    "accuracy": 0.25,
+    "required": 0.7,
+    "released_correct": 1,
+    "majority_correct": 8,
+    "learned_factorized_correct": 13,
+    "matched_shuffle_correct": 2,
+    "zero_controls_correct": 8,
+    "zero_controls_total": 8
+  },
+  "uncertainty": {
+    "released": {
+      "point": 0.234375,
+      "descriptive_95_interval": [
+        -0.015625,
+        0.578125
+      ]
+    },
+    "flat_majority": {
+      "point": 0.125,
+      "descriptive_95_interval": [
+        0.0,
+        0.375
+      ]
+    },
+    "factorized_majority": {
+      "point": 0.125,
+      "descriptive_95_interval": [
+        0.0,
+        0.375
+      ]
+    },
+    "ridge": {
+      "point": 0.25,
+      "descriptive_95_interval": [
+        0.0,
+        0.5785156249999979
+      ]
+    },
+    "epoch1": {
+      "point": 0.046875,
+      "descriptive_95_interval": [
+        -0.125,
+        0.25
+      ]
+    },
+    "physical_profile": {
+      "point": 0.25,
+      "descriptive_95_interval": [
+        0.0,
+        0.5785156249999979
+      ]
+    },
+    "sensitivity_shuffled": {
+      "point": 0.21875,
+      "descriptive_95_interval": [
+        0.0,
+        0.5
+      ]
+    }
+  },
+  "effect_sizes": {
+    "rmse": 0.28037125391533074,
+    "nrmse_vs_zero": 1.8168213129348014,
+    "mae": 0.2432714191075599,
+    "maximum_error": 0.8407845688991662,
+    "actual_mean_span": 0.5208931399974972,
+    "predicted_mean_span": 0.9656262462946795
+  },
+  "failure_structure": [
+    "Every predicted actual-update category is lowercase, while19/64 measured categories are uppercase.",
+    "All16 matches are concentrated in3/8 source compositions:8 bullets/lower/reverse,7 numbered/lower/original,1 numbered/upper/length. No family is promoted.",
+    "All64 updates exceed the unchanged effect-span floor, so weak-effect filtering cannot explain the failure.",
+    "Some measured top-two category margins are small, but no margin filter is introduced."
+  ],
+  "scope": "One first AdamW step in native Qwen3-14B rank16 adapters. Finite-reference CE preference on separate prompts. Additional pinned base and fixed task library, not a LoRAcle checkpoint improvement.",
+  "audit": {
+    "all344_native_contractions": true,
+    "all256_gradient_banks": true,
+    "independent_derivative_checks": 2,
+    "max_contraction_error": 8.881784197001252e-16,
+    "source_archive_sha256": "4896d0ad47d04463691a36a26784c1d32d2f900966c19ffbb38a2ea7562dd793"
+  },
+  "decision": "Do not select v4 or release reserved/fresh tests. Freeze one exact-calibration functional predictor on the same8 training prompts to test the identified first-order approximation failure, retaining all344cases. No new target training, changed criterion or outcome-fitted scale.",
+  "unproven": "The complete evidence does not distinguish curvature from calibration-to-probe transfer. Exact calibration scoring can separate these errors; success is not assumed."
+}
