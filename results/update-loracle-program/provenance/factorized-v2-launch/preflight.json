@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "finished_unix": 1792150126.1187484,
+  "training_only": true,
+  "heads": [
+    "change",
+    "format",
+    "case",
+    "order"
+  ],
+  "trainable_tensors": 560,
+  "trainable_parameters": 1027604480,
+  "all_gradients_finite": true,
+  "frozen_base_unchanged": true,
+  "bit_exact_score_restore": true,
+  "bit_exact_adapter_restore": true,
+  "hook_calls": [
+    2,
+    2,
+    2,
+    2
+  ],
+  "input_tokens": [
+    4764,
+    4778,
+    4767,
+    4783
+  ],
+  "gradient_norm": 11.049275398254395,
+  "peak_allocated_bytes": 46356487680
+}

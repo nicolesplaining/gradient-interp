@@ -1,0 +1,18 @@
+{
+  "recorded_unix": 1792150177.386635,
+  "source_commit": "8e72b517a4c24c494bfb0e0fa22c64a6342adbcd",
+  "source_files_frozen_while_running": true,
+  "reserved_outputs_read": false,
+  "new_model_outputs_read": false,
+  "training_only_preflight_passed": true,
+  "archive_before_checkout": {
+    "root": "runs/update-loracle-training-v1",
+    "sha256": "1e7fb1c70ddee159468208398ca5cce0d3de054003ea65da889adc288a7419fe"
+  },
+  "tests": {
+    "relevant_suite_before_launch": 106,
+    "additional_synthetic_complete_analysis_and_render_test": "passed after launch; no frozen source edit"
+  },
+  "check_scope": "Controller, status and training-only preflight; no partial predictions or histories read",
+  "postprocessing": "One-shot CPU audit then analysis only after complete dead training. No retry, resume, scientific variant or new experiment."
+}

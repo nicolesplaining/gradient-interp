@@ -1,0 +1,12 @@
+{
+  "copied_unix": 1792150094.2106152,
+  "files_sha256": {
+    "plan.json": "fb073d22ca1ba21a945760f9e64bda554ac6ff485a2cc808a888da05bb24a075",
+    "analysis-plan.json": "c358870ef5c835dc9e6b2859190b7f52be18610dc94fa1a732452db7a3145e07",
+    "data.json": "122fcbc122d434926d877bc4efc2ad9c985f43636b015a1135684012b830b77c",
+    "preparation.json": "13fb7eb3ebba89db237f0d2b1d89c6a16ffa41edfcac224444f692bd38b3890d",
+    "launch.json": "6f5b5e3b5a60700a1dd5ab0aebf2b5d6f78dae26717da721b4e81cf880984f83",
+    "controller.json": "49f65fd82a84650b5afdfd83b13861dc27dd40bd3237fb14f2ecc0c961c94e45"
+  },
+  "copy_scope": "configuration and live process metadata only; no scientific outputs read"
+}

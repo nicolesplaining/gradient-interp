@@ -146,3 +146,92 @@ def test_history_requires_exact_order_weights_and_schedule():
         bad[0][field] = value
         with pytest.raises(ValueError):
             analysis.check_history(bad, instances)
+
+
+def test_analysis_retains_joint_scores_all_epochs_and_zero_controls(tmp_path):
+    from gradient_interp.study import atomic_json, file_hash
+
+    root, collection, output = tmp_path / "training", tmp_path / "collection", tmp_path / "report"
+    root.mkdir()
+    (collection / "cases").mkdir(parents=True)
+    labels = [
+        "/".join((fmt, case, order))
+        for fmt in HEAD_LABELS["format"]
+        for case in HEAD_LABELS["case"]
+        for order in HEAD_LABELS["order"]
+    ]
+    cases = []
+    for i in range(72):
+        case = {
+            "id": str(i),
+            "split": "development",
+            "control": i >= 64,
+            "source_pattern": str(i // 8),
+            "initialization_seed": (i % 8) // 2,
+        }
+        cases.append(case)
+        atomic_json(
+            collection / "cases" / f"{i}.json",
+            {
+                "physical_update_norm": 0.0 if i >= 64 else 1.0,
+                "effect": {
+                    "label": "no_change" if i >= 64 else labels[i % 32],
+                    "below_effect_floor": i >= 64,
+                },
+            },
+        )
+    atomic_json(collection / "data.json", {"cases": cases})
+    atomic_json(collection / "integrity.json", {"passed": True})
+    atomic_json(
+        root / "integrity.json",
+        {
+            "passed": True,
+            "recipe": "balanced_factorized_v2",
+            "files_sha256": {},
+            "collection_integrity_sha256": file_hash(collection / "integrity.json"),
+        },
+    )
+    atomic_json(root / "plan.json", {"collection_root": str(collection)})
+
+    def predictions(n_correct):
+        return [
+            {
+                "id": str(i),
+                "prediction": "no_change"
+                if i >= 64
+                else labels[i % 32]
+                if i < n_correct
+                else labels[(i + 1) % 32],
+            }
+            for i in range(72)
+        ]
+
+    for name in ["released", "released-shuffled"]:
+        atomic_json(root / f"{name}-development.json", predictions(8))
+    for epoch, correct in [(1, 16), (2, 48), (3, 24)]:
+        (root / "epochs" / str(epoch)).mkdir(parents=True)
+        atomic_json(root / "epochs" / str(epoch) / "development.json", predictions(correct))
+        atomic_json(root / "epochs" / str(epoch) / "shuffled-development.json", predictions(8))
+    atomic_json(
+        root / "simple-references.json",
+        {
+            "development": [
+                {"id": str(i), "ridge": "no_change", "shuffled_ridge": "no_change"}
+                for i in range(72)
+            ]
+        },
+    )
+    atomic_json(root / "training-majorities.json", {"flat": labels[0], "factorized": labels[1]})
+    analysis.analyze(root, output)
+    summary = analysis.read(output / "summary.json")
+    assert summary["selected_epoch"] == 2
+    assert summary["metrics"]["epoch2"]["actual_update_correct"] == 48
+    assert summary["metrics"]["epoch2"]["zero_correct"] == 8
+    assert summary["paired_differences"]["released"]["point"] == 0.625
+    assert summary["all_development_gates_pass"]
+    assert summary["reserved_test_read"] is False
+    assert len(analysis.read(output / "all-development-cases.json")) == 72
+    assert (output / "development-accuracy.png").is_file()
+    assert (output / "report.html").is_file()
+    with pytest.raises(ValueError, match="Preserve"):
+        analysis.analyze(root, output)
