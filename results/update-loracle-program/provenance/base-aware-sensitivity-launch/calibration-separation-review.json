@@ -1,0 +1,30 @@
+{
+  "checked_unix": 1792175116.640838,
+  "input_files_sha256": {
+    "runs/update-loracle-sensitivity-v4/data.json": "3487a8d99ce621b8be3aafa4090186f703da59ab8f555f7053080ab727c7b283",
+    "runs/update-loracle-factorized-v2/analysis/all-development-cases.json": "ed660d0c551eb526f345d4b55b4ca5609e23eb2369c5659a98521dc3ef5312b4"
+  },
+  "scope": "Fixed training calibration versus previously evaluated development prompts only; no new sensitivity outputs and no reserved data read",
+  "calibration_prompt_count": 8,
+  "calibration_unique_prompts": 8,
+  "development_probe_records": 288,
+  "development_unique_prompts": 288,
+  "exact_normalized_prompt_overlap": [],
+  "calibration_vocabulary_count": 30,
+  "development_vocabulary_count": 192,
+  "exact_value_overlap": [],
+  "calibration_templates": [
+    "Give these labels back using your preferred order and presentation: <value>, <value>, <value>, <value>.",
+    "Write these labels. Choose the order, case and formatting yourself: <value>, <value>, <value>, <value>."
+  ],
+  "development_templates": [
+    "Please show these labels in whichever arrangement you prefer: <value>, <value>, <value>, <value>.",
+    "Return the labels below, with your own choice of layout and order. Labels: <value>, <value>, <value>, <value>."
+  ],
+  "template_overlap": [],
+  "limitations": [
+    "Exact/value separation does not establish broad semantic independence",
+    "Both grids use synthetic label-transformation operations and the same frozen base model",
+    "Development has already guided the method choice; only untouched tests can establish the predefined generalization result"
+  ]
+}
