@@ -81,6 +81,7 @@ def test_choice_grid_and_argmax_are_checked():
         "id": "case",
         "choice_logits": values,
         "choice": "7",
+        "choice_id": "H",
         "prediction": LABELS[7],
         "input_tokens": 5500,
     }

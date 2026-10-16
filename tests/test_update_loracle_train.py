@@ -6,7 +6,9 @@ from torch.utils.checkpoint import checkpoint
 
 from gradient_interp.update_loracle_train import (
     MAX_LENGTH,
+    OPTION_SYMBOLS,
     installed_hook,
+    interpreter_question,
     learning_rate,
     option_token_ids,
     prepared_input,
@@ -51,14 +53,25 @@ def test_hook_removed_on_failure():
 
 
 def test_choice_tokenization_does_not_silently_score_only_part_of_number():
-    good = SimpleNamespace(encode=lambda number, **kwargs: [1000 + int(number)])
-    assert option_token_ids(good) == list(range(1000, 1033))
-    bad = SimpleNamespace(encode=lambda number, **kwargs: list(number))
+    good = SimpleNamespace(encode=lambda symbol, **kwargs: [1000 + ord(symbol)])
+    assert option_token_ids(good) == [1000 + ord(symbol) for symbol in OPTION_SYMBOLS]
+    bad = SimpleNamespace(encode=lambda symbol, **kwargs: [1, 2])
     with pytest.raises(ValueError, match="single tokens"):
         option_token_ids(bad)
     duplicate = SimpleNamespace(encode=lambda number, **kwargs: [10])
     with pytest.raises(ValueError, match="single tokens"):
         option_token_ids(duplicate)
+
+
+def test_display_ids_preserve_every_frozen_option_mapping():
+    from gradient_interp.update_loracle_data import LABELS, description
+
+    options = dict(zip(map(str, range(33)), reversed(LABELS)))
+    text = interpreter_question(options, 1.23)
+    assert "only the option ID" in text and "option number" not in text
+    for number, label in options.items():
+        assert f"{OPTION_SYMBOLS[int(number)]}. {description(label)}" in text.splitlines()
+    assert len(text.splitlines()) == 34
 
 
 def test_input_contains_only_question_not_answer_and_rejects_truncation():

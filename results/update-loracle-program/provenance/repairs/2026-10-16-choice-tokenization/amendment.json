@@ -1,0 +1,13 @@
+{
+  "created_unix": 1792144527.934886,
+  "kind": "pre-training input-tokenization repair",
+  "scientific_collection_outputs_read_by_agent": false,
+  "original_failure": "Qwen3-14B tokenizes multi-digit option numbers into multiple tokens. The pre-training CPU check failed before fine-tuning, baseline interpretation, model selection or reserved-test collection. This invalidated the proposed single-next-token answer mapping.",
+  "repair": "Display the same33 frozen semantic choices as A-Z and0-6. Preserve numeric data IDs and independently shuffled option-to-label mappings. Both unchanged and trained interpreters receive exactly the same new display IDs and question. Supervise and compare the33 distinct verified one-token IDs. Full-vocabulary CE, all semantic labels, source cases, measurements, training recipe, thresholds and splits unchanged.",
+  "validation": "All33 replacement symbols are distinct single tokens under the actual pinned tokenizer.1376 train/development question variants checked at four magnitude strings; maximum5242tokens under6144,4480 injected positions. All33 synthetic tests pass. Actual interpreter GPU training preflight remains pending.",
+  "collection": "Active source7143de7, worker281835 and immutable deadline unchanged; no collection restart, output reading or edits. This repair touches only the not-yet-launched interpreter phase.",
+  "source_before_sha256": "a9ef4f9f8c1333f9f23e7f039396f30ced7fcda08fa02fad983ea074843a30e2",
+  "source_after_sha256": "29f537b24fb0ef8ca645505d0e1b56a4d90d01d418564e2261c4381c3cff1ad5",
+  "cpu_validation_sha256": "b006cc6b92a9ea74f8605ef5f12d483c5815949412d5d5ee69234b4022dcb99b",
+  "evaluation_order": "All reference predictions, including the simple CPU predictor, occur after actual interpreter GPU preflight passes. No model is trained or evaluated on reserved examples."
+}

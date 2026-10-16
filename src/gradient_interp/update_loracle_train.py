@@ -18,16 +18,25 @@ import torch.nn.functional as F
 from .loracle import configure_interpreter_prefix, validate_interpreter_tokens
 from .loracle_trajectory_toy import BASE_PATH, CHECKPOINT, UPSTREAM, read, status
 from .study import atomic_json, file_hash
-from .update_loracle_data import LABELS, question
+from .update_loracle_data import LABELS, description, question
 
 MAX_LENGTH = 6144
+OPTION_SYMBOLS = tuple("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456")
 
 
 def option_token_ids(tokenizer):
-    values = [tokenizer.encode(str(i), add_special_tokens=False) for i in range(33)]
+    values = [tokenizer.encode(symbol, add_special_tokens=False) for symbol in OPTION_SYMBOLS]
     if any(len(v) != 1 for v in values) or len({v[0] for v in values}) != 33:
-        raise ValueError("All 33 choice numbers must be distinct single tokens")
+        raise ValueError("All 33 choice IDs must be distinct single tokens")
     return [v[0] for v in values]
+
+
+def interpreter_question(options, update_norm):
+    # The frozen numeric data IDs remain unchanged; only their displayed answer IDs differ.
+    header = question(options, update_norm).split("\n", 1)[0]
+    header = header.replace("Reply with only the option number.", "Reply with only the option ID.")
+    choices = "\n".join(f"{OPTION_SYMBOLS[int(k)]}. {description(v)}" for k, v in options.items())
+    return header + "\n" + choices
 
 
 def prepared_input(handle, text):
@@ -109,6 +118,7 @@ def choice_forward(handle, tokens, text, target_option=None, loss_scale=1.0):
     return {
         "choice_logits": values.tolist(),
         "choice": str(int(values.argmax())),
+        "choice_id": OPTION_SYMBOLS[int(values.argmax())],
         "loss": float(loss.detach()) if loss is not None else None,
         "hook_calls": calls[0],
         "input_tokens": ids.shape[1],
@@ -169,7 +179,7 @@ def preflight(handle, tokens, output):
     params = {n: p for n, p in handle.model.named_parameters() if p.requires_grad}
     initial = {n: p.detach().cpu().clone() for n, p in params.items()}
     options = dict(zip(map(str, range(33)), LABELS))
-    text = question(options, 1.0)
+    text = interpreter_question(options, 1.0)
     handle.model.eval()
     with torch.no_grad():
         before = choice_forward(handle, tokens, text)
@@ -248,7 +258,7 @@ def verified_cases(collection, split):
                 "id": case["id"],
                 "tokens": token_path,
                 "control": case["control"],
-                "text": question(case["options"], result["physical_update_norm"]),
+                "text": interpreter_question(case["options"], result["physical_update_norm"]),
                 "options": case["options"],
                 "label": result["effect"]["label"],
                 "physical_update_norm": result["physical_update_norm"],
@@ -373,7 +383,6 @@ def train(root):
         raise ValueError("Collection audit changed")
     train_cases = verified_cases(collection, "train")
     dev_cases = verified_cases(collection, "development")
-    atomic_json(root / "simple-references.json", simple_references(train_cases, dev_cases))
     shuffled_dev = shuffled_directions(dev_cases)
     handle = load_interpreter()
     # A deterministic synthetic token tensor tests only the training machinery.
@@ -381,6 +390,7 @@ def train(root):
     synthetic = torch.randn(4480, 5120, generator=rng)
     preflight(handle, synthetic, root / "preflight.json")
     del synthetic
+    atomic_json(root / "simple-references.json", simple_references(train_cases, dev_cases))
     status(root, "released_baseline", 0, len(dev_cases))
     atomic_json(root / "released-development.json", score(handle, dev_cases))
     atomic_json(root / "released-shuffled-development.json", score(handle, shuffled_dev))

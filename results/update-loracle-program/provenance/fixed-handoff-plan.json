@@ -1,0 +1,20 @@
+{
+  "created_unix": 1792144743.172148,
+  "scientific_collection_outputs_read_by_agent": false,
+  "purpose": "Run the already specified first development recipe as soon as the frozen collection is fully complete and audited, without results-based decisions or extra idle GPU time.",
+  "steps": [
+    "Wait for original collection controller and worker to finish normally and die; inspect metadata only",
+    "Run reviewed standalone full collection auditor, recomputing every native encoding and norm and verifying original source archive",
+    "After successful audit and archive verification only, fetch and detach to the pinned training commit",
+    "Freeze new training plan from the already dated recipe, analysis plan and input-tokenization repair; verify all source/model/data hashes",
+    "Launch one separate12hour training controller; full GPU training preflight before any interpreter or simple-reference predictions; run all3epochs",
+    "Only after successful/dead training, run full training audit and fixed development analysis; then await human-facing review"
+  ],
+  "failure_policy": "Stop on any failure, missing live handle, wrong hash, occupied GPU or existing training root. No scientific worker resume, retry, altered epoch count, extended deadline or test access.",
+  "outputs": "runs/update-loracle-training-v1; analysis remains ignored remotely until reviewed and compact artifacts copied to local results",
+  "original_collection_plan_sha256": "5c640374d67cb465960fbf41b7b1a4ecb6a667e57ad0c6f88206f9108ffb0123",
+  "auditor_sha256": "52115a9c826858f3e820cdeac4b4a06c5a48dcc696fe02d70cb1668baaab8be1",
+  "handoff_script_sha256": "19c044392566028abfe7b0c9d573a7db09c4e4d4f1b30a6b09e6750ee176af5e",
+  "preparation_script_sha256": "5dc560166f8ece334c739f5ff0706b8efc3d32e1841b4278321026cecd4d0679",
+  "validation": "38 synthetic worker/data/training/audit/handoff tests pass; Ruff clean. Actual interpreter GPU preflight still pending."
+}

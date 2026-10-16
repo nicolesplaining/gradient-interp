@@ -26,11 +26,14 @@ def alive(pid):
 
 
 def check_predictions(rows, cases):
+    from .update_loracle_train import OPTION_SYMBOLS
+
     require([r["id"] for r in rows] == [c["id"] for c in cases], "Incorrect prediction grid")
     for row, case in zip(rows, cases):
         values = np.asarray(row["choice_logits"])
         require(values.shape == (33,) and np.isfinite(values).all(), "Invalid choice scores")
         choice = str(int(values.argmax()))
+        require(row["choice_id"] == OPTION_SYMBOLS[int(choice)], "Displayed answer ID differs")
         require(
             row["choice"] == choice and row["prediction"] == case["options"][choice],
             "Stored prediction differs from frozen constrained scoring",
