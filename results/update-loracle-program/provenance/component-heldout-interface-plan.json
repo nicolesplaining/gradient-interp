@@ -1,0 +1,35 @@
+{
+  "created_unix": 1792150690.261347,
+  "status": "implemented and synthetic-tested, not launched; selection/data freeze still forbidden until all development criteria pass",
+  "basis": "Component development recipe needs its exact four-question input/scoring interface in held-out inference, matched released comparator and preflight. Flat-v1 inference cannot be used for component-trained adapter.",
+  "source_sha256": {
+    "scripts/prepare_update_loracle_heldout.py": "d0d43fe322ff8549866ce2d3e34071a655c244f35015fbe5a0d58faa882c2c91",
+    "src/gradient_interp/update_loracle_confirmation_stats.py": "fa6eafa749ecc56ad0b37d650448d11d8e6ba0fdbdf1a033c228abd07bdca039",
+    "src/gradient_interp/update_loracle_heldout.py": "4d250021faca0e0d6949049154fdbc5b02c1650ba959110542aa532cb596cfdb",
+    "src/gradient_interp/update_loracle_heldout_analysis.py": "728a6071554f7ae99ffcff1423187b8c3130c6f11ab0d39602ca3b0c66f38114",
+    "src/gradient_interp/update_loracle_inference.py": "ddbcd6607b2a85458905cabc855c66230038cb7d9b66f641cc7f4e35047db95d",
+    "tests/test_update_loracle_confirmation_stats.py": "29d3b8e9f98c044342f01a967ceafca050bf8ba7685d992654085a639ef85265",
+    "tests/test_update_loracle_heldout.py": "5b9c60c387ec85a863746df4e4831914157bdebcbde1c88fe7c4a669d9d8d388",
+    "tests/test_update_loracle_inference.py": "b1b53b93370d227dcc32289dff5164f97af5d573a158d520ad13e5d871d4dee4"
+  },
+  "validation": {
+    "relevant_tests_passed": 115,
+    "ruff": "clean",
+    "source_review": "complete",
+    "actual_gpu_preflight": "pending only after successful development selection; none run on held-out inputs"
+  },
+  "locked_requirements": [
+    "Full 32-pattern/no-change category remains primary; no per-axis rescue.",
+    "All three complete audited development epochs required. Recompute metrics and unchanged criteria rather than trust summary status.",
+    "Selected model lock binds all four questions, option permutation seed, component source hash and exact adapter files.",
+    "Both methods receive identical questions, direction tokens and recipient physical norms, including shuffled controls.",
+    "All 272 reserved plus fresh confirmation predictions lock before probe measurements. No test-driven selection.",
+    "Both training flat-majority and component-majority baselines must be beaten by at least10pp; both are computed from original training labels only.",
+    "Original70% accuracy,20pp released advantage,80% measurable coverage,90% zero accuracy and10pp shuffled advantage retained.",
+    "4000 paired crossed bootstrap, originalseed2026101665, lower bounds>60% accuracy and>10pp advantage; both original test grids required.",
+    "All individual component responses and logits retained with full predictions and all negative cases."
+  ],
+  "scientific_outputs_read": false,
+  "active_remote_source": "8e72b517a4c24c494bfb0e0fa22c64a6342adbcd",
+  "active_training_unchanged": true
+}

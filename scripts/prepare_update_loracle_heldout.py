@@ -11,7 +11,12 @@ from gradient_interp.loracle_trajectory_toy import read
 from gradient_interp.study import atomic_json, file_hash
 from gradient_interp.update_loracle_analysis import require
 from gradient_interp.update_loracle_confirmation_data import freeze as freeze_data
-from gradient_interp.update_loracle_inference import freeze_selection
+from gradient_interp.update_loracle_inference import (
+    COMPONENT_INTERFACE,
+    freeze_selection,
+    interface_contract,
+    selected_interface,
+)
 
 
 def prepare(training, analysis, root, expected_commit):
@@ -35,6 +40,7 @@ def prepare(training, analysis, root, expected_commit):
     )
     selection = freeze_selection(training, analysis, root / "selection.json")
     freeze_data(root / "selection.json", root / "data.json")
+    interface = interface_contract(selected_interface(selection))
     training_plan = read(training / "plan.json")
     inputs = dict(training_plan["input_files_sha256"])
     inputs.update(
@@ -69,6 +75,15 @@ def prepare(training, analysis, root, expected_commit):
             "purpose": "Test the one selected model on the original reserved set "
             "and an additional fresh draw. No model selection, training or tuning on either set.",
             "original_statistics_plan": read(dated_stats),
+            "question_interface": interface,
+            "component_method": (
+                "Use the exact four-question development interface for both "
+                "models; only the recomposed complete category counts as correct. Require >=10pp "
+                "advantage over both fixed training-majority baselines. No source task or batch "
+                "text enters interpreter input."
+                if interface["name"] == COMPONENT_INTERFACE
+                else "Use the original matched flat33 question."
+            ),
             "primary": "Fresh confirmation: all 128 actual updates, including weak effects. "
             "The 128 reserved updates are a required generalization check with the same model.",
             "strong_targets": {
@@ -116,6 +131,7 @@ def prepare(training, analysis, root, expected_commit):
         "data_sha256": file_hash(root / "data.json"),
         "analysis_plan_sha256": file_hash(root / "analysis-plan.json"),
         "selection_sha256": file_hash(root / "selection.json"),
+        "question_interface": interface,
         "original_data_path": str((training / "data.json").resolve()),
         "collection_root": training_plan["collection_root"],
         "learning_rate": 0.0002,

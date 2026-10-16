@@ -30,7 +30,14 @@ from .update_loracle_collect import (
 )
 from .update_loracle_confirmation_data import fresh_draw, validate_fresh
 from .update_loracle_data import LABELS, effect_label, validate
-from .update_loracle_inference import replace_adapter_exact, verified_selection
+from .update_loracle_inference import (
+    COMPONENT_INTERFACE,
+    FLAT_INTERFACE,
+    interface_contract,
+    replace_adapter_exact,
+    selected_interface,
+    verified_selection,
+)
 from .update_loracle_train import (
     choice_forward,
     interpreter_question,
@@ -69,6 +76,11 @@ def verify_inputs(root):
     selection_path = root / "selection.json"
     require(file_hash(selection_path) == plan["selection_sha256"], "Selected model lock changed")
     selection = verified_selection(selection_path)
+    require(
+        plan.get("question_interface", interface_contract(FLAT_INTERFACE))
+        == interface_contract(selected_interface(selection)),
+        "Execution and selected question interfaces differ",
+    )
     data = read(root / "data.json")
     require(
         data["selection_sha256"] == plan["selection_sha256"], "Test data belongs to another model"
@@ -94,34 +106,29 @@ def preflight(root):
     handle = load_interpreter()
     rng = torch.Generator().manual_seed(2026101662)
     tokens = torch.randn(4480, 5120, generator=rng)
-    options = dict(zip(map(str, range(33)), LABELS))
-    text = interpreter_question(options, 1.0)
+    interface = selected_interface(selection)
     with torch.no_grad():
-        before = choice_forward(handle, tokens, text)
+        before = preflight_scores(handle, tokens, interface)
         selected = replace_adapter_exact(handle.model, Path(selection["adapter_directory"]))
-        after = choice_forward(handle, tokens, text)
+        after = preflight_scores(handle, tokens, interface)
         released = replace_adapter_exact(
             handle.model,
             Path(CHECKPOINT) / "best_ao_interpreter",
             source_dtype=torch.bfloat16,
         )
-        restored = choice_forward(handle, tokens, text)
-        require(
-            before["choice_logits"] == restored["choice_logits"],
-            "Released interpreter scores did not restore exactly",
-        )
+        restored = preflight_scores(handle, tokens, interface)
+        require(before == restored, "Released interpreter scores did not restore exactly")
         replace_adapter_exact(handle.model, Path(selection["adapter_directory"]))
-        reloaded = choice_forward(handle, tokens, text)
-        require(
-            after["choice_logits"] == reloaded["choice_logits"],
-            "Selected interpreter scores did not reload exactly",
-        )
+        reloaded = preflight_scores(handle, tokens, interface)
+        require(after == reloaded, "Selected interpreter scores did not reload exactly")
     atomic_json(
         root / "preflight.json",
         {
             "status": "complete",
             "passed": True,
             "finished_unix": time.time(),
+            "question_interface": interface_contract(interface),
+            "questions_checked": len(before),
             "target_preflight_sha256": file_hash(root / "target-preflight.json"),
             "selection_sha256": plan["selection_sha256"],
             "selected_loading": selected,
@@ -134,8 +141,40 @@ def preflight(root):
     )
 
 
+def preflight_scores(handle, tokens, interface):
+    if interface == COMPONENT_INTERFACE:
+        from .update_loracle_factorized import forward, question_views
+
+        case = {
+            "id": "heldout-training-only-preflight",
+            "tokens": "provided",
+            "physical_update_norm": 1.0,
+        }
+        return [
+            forward(handle, tokens, row)["full_33_choice_logits"] for row in question_views(case)
+        ]
+    require(interface == FLAT_INTERFACE, "Unknown preflight question interface")
+    options = dict(zip(map(str, range(33)), LABELS))
+    return [choice_forward(handle, tokens, interpreter_question(options, 1.0))["choice_logits"]]
+
+
+def score_selected_interface(handle, cases, interface):
+    if interface == COMPONENT_INTERFACE:
+        from .update_loracle_factorized import score as component_score
+
+        return component_score(handle, cases)
+    require(interface == FLAT_INTERFACE, "Unknown evaluation question interface")
+    return score(handle, cases)
+
+
 def checked_preflight(root, plan):
     value = read(root / "preflight.json")
+    interface = plan.get("question_interface", interface_contract(FLAT_INTERFACE))
+    require(
+        value["question_interface"] == interface
+        and value["questions_checked"] == interface["questions_per_case"],
+        "All selected-interface preflight questions must be checked",
+    )
     require(
         value["passed"]
         and value["training_only_inputs"]
@@ -270,28 +309,44 @@ def predict_all(root):
     views = {s: [by_id[c["id"]] for c in cases if c["split"] == s] for s in SPLITS}
     shuffled = {s: shuffled_directions(values) for s, values in views.items()}
     handle = load_interpreter()
+    interface = selected_interface(selection)
     for split in SPLITS:
         status(root, f"released_{split}", 0, 136)
-        atomic_json(root / "predictions" / f"{split}-released.json", score(handle, views[split]))
         atomic_json(
-            root / "predictions" / f"{split}-released-shuffled.json", score(handle, shuffled[split])
+            root / "predictions" / f"{split}-released.json",
+            score_selected_interface(handle, views[split], interface),
+        )
+        atomic_json(
+            root / "predictions" / f"{split}-released-shuffled.json",
+            score_selected_interface(handle, shuffled[split], interface),
         )
     loading = replace_adapter_exact(handle.model, Path(selection["adapter_directory"]))
     for split in SPLITS:
         status(root, f"adapted_{split}", 0, 136)
-        atomic_json(root / "predictions" / f"{split}-adapted.json", score(handle, views[split]))
         atomic_json(
-            root / "predictions" / f"{split}-adapted-shuffled.json", score(handle, shuffled[split])
+            root / "predictions" / f"{split}-adapted.json",
+            score_selected_interface(handle, views[split], interface),
+        )
+        atomic_json(
+            root / "predictions" / f"{split}-adapted-shuffled.json",
+            score_selected_interface(handle, shuffled[split], interface),
         )
     del handle
     gc.collect()
     torch.cuda.empty_cache()
     train_cases = verified_cases(Path(plan["collection_root"]), "train")
     for split in SPLITS:
-        atomic_json(
-            root / "predictions" / f"{split}-simple.json",
-            simple_references(train_cases, views[split]),
-        )
+        simple = simple_references(train_cases, views[split])
+        if interface == COMPONENT_INTERFACE:
+            from .update_loracle_factorized import training_instances, training_majorities
+
+            _, balance = training_instances(train_cases)
+            majorities = training_majorities(train_cases, balance)
+            require(majorities["flat"] == simple["majority"], "Training majority differs")
+            simple["factorized_majority"] = majorities["factorized"]
+            for row in simple["development"]:
+                row["factorized_majority"] = majorities["factorized"]
+        atomic_json(root / "predictions" / f"{split}-simple.json", simple)
         atomic_json(
             root / "predictions" / f"{split}-shuffle.json",
             [{"id": c["id"], "donor": c["direction_donor"]} for c in shuffled[split]],
@@ -303,6 +358,7 @@ def predict_all(root):
         "cases": len(cases),
         "selection_sha256": plan["selection_sha256"],
         "selected_loading": loading,
+        "question_interface": interface_contract(interface),
         "updates_manifest_sha256": file_hash(root / "updates-manifest.json"),
         "files_sha256": {
             str(p.relative_to(root)): file_hash(p)
@@ -340,6 +396,11 @@ def checked_prediction_lock(root, plan):
         file_hash(root / "updates-manifest.json") == lock["updates_manifest_sha256"],
         "Update manifest changed",
     )
+    if "question_interface" in plan:
+        require(
+            lock["question_interface"] == plan["question_interface"],
+            "Locked predictions use a different question interface",
+        )
     expected = {
         f"predictions/{s}-{name}.json"
         for s in SPLITS

@@ -7,12 +7,14 @@ import numpy as np
 from .update_loracle_data import LABELS, NO_CHANGE
 
 
-def checked_vectors(cases, targets, predictions):
+def checked_vectors(cases, targets, predictions, component_interface=False):
     if len(cases) != len(targets) or len({c["id"] for c in cases}) != len(cases):
         raise ValueError("Incomplete or duplicated held-out cases")
     if any(t not in LABELS for t in targets):
         raise ValueError("Unexpected measured effect")
     needed = {"adapted", "released", "adapted_shuffled", "majority", "ridge"}
+    if component_interface:
+        needed.add("factorized_majority")
     if set(predictions) != needed:
         raise ValueError("Every prespecified comparator is required")
     if any(len(p) != len(cases) or any(v not in LABELS for v in p) for p in predictions.values()):
@@ -97,12 +99,12 @@ def exact_cluster_method_swap(cases, adapted_correct, released_correct):
     }
 
 
-def evaluate(cases, targets, predictions, spans, replicates=4000):
-    active, correct = checked_vectors(cases, targets, predictions)
+def evaluate(cases, targets, predictions, spans, replicates=4000, component_interface=False):
+    active, correct = checked_vectors(cases, targets, predictions, component_interface)
     spans = np.asarray(spans)
     if spans.shape != (len(cases),) or not np.isfinite(spans).all() or (spans < 0).any():
         raise ValueError("Every case needs a valid measured effect span")
-    if any((target == NO_CHANGE) != (span < .02) for target, span in zip(targets, spans)):
+    if any((target == NO_CHANGE) != (span < 0.02) for target, span in zip(targets, spans)):
         raise ValueError("No-change targets and frozen effect floor disagree")
     # Weak actual updates remain in the accuracy denominator, including no-change targets.
     accuracy = {name: float(values[active].mean()) for name, values in correct.items()}
@@ -125,7 +127,12 @@ def evaluate(cases, targets, predictions, spans, replicates=4000):
             accuracy["adapted"] - accuracy["adapted_shuffled"] >= 0.1
         ),
     }
+    if component_interface:
+        gates["factorized_majority_advantage_at_least_10pp"] = (
+            accuracy["adapted"] - accuracy["factorized_majority"] >= 0.1
+        )
     result = {
+        "component_interface": component_interface,
         "n_actual_updates": int(active.sum()),
         "n_controls": int((~active).sum()),
         "accuracy": accuracy,

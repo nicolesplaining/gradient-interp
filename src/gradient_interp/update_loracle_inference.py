@@ -20,6 +20,30 @@ ARCHITECTURE = {
     "tensors": 560,
     "parameters": 1027604480,
 }
+FLAT_INTERFACE = "flat33_v1"
+COMPONENT_INTERFACE = "components_v2"
+
+
+def interface_contract(name):
+    if name == FLAT_INTERFACE:
+        return {"name": FLAT_INTERFACE, "questions_per_case": 1}
+    require(name == COMPONENT_INTERFACE, "Unknown interpreter question interface")
+    from . import update_loracle_factorized as component
+
+    return {
+        "name": COMPONENT_INTERFACE,
+        "questions_per_case": 4,
+        "head_labels": {h: list(v) for h, v in component.HEAD_LABELS.items()},
+        "option_order_seed": component.OPTION_SEED,
+        "joint_rule": "no_change if detection says no_change; otherwise join format/case/order",
+        "component_source_sha256": file_hash(component.__file__),
+    }
+
+
+def selected_interface(selection):
+    return selection.get("question_interface", {"name": FLAT_INTERFACE})["name"]
+
+
 SCOPE = (
     "One independent rank16 optimizer step on the fixed Qwen3-14B base; classification of "
     "the strongest relative reference-loss preference among32 list patterns and no-change. "
@@ -39,10 +63,13 @@ def freeze_selection(root, analysis, output):
         "Training must be complete and dead before selection",
     )
     integrity = read(root / "integrity.json")
+    recipe = integrity.get("recipe", "flat_v1")
+    require(recipe in ("flat_v1", "balanced_factorized_v2"), "Unknown development recipe")
+    component = recipe == "balanced_factorized_v2"
     require(
         integrity["passed"]
         and integrity["epochs"] == 3
-        and integrity["optimizer_steps"] == 204
+        and integrity["optimizer_steps"] == (780 if component else 204)
         and integrity["reserved_cases_accessed"] == 0,
         "Complete untouched-test training audit required",
     )
@@ -68,6 +95,29 @@ def freeze_selection(root, analysis, output):
         require(file_hash(collection / name) == expected, "Audited collection output changed")
     cases = [c for c in read(collection / "data.json")["cases"] if c["split"] == "development"]
     effects = {c["id"]: read(collection / "cases" / f"{c['id']}.json") for c in cases}
+    if component:
+        from . import update_loracle_factorized as component_worker
+        from .update_loracle_factorized_analysis import check_predictions
+
+        require(
+            plan["source_files_sha256"]["src/gradient_interp/update_loracle_factorized.py"]
+            == file_hash(component_worker.__file__),
+            "Selected component interface differs from training",
+        )
+        views = [
+            {
+                **c,
+                "tokens": "unused",
+                "physical_update_norm": effects[c["id"]]["physical_update_norm"],
+            }
+            for c in cases
+        ]
+        for filename in ["released-development.json"] + [
+            f"epochs/{e}/{name}"
+            for e in (1, 2, 3)
+            for name in ("development.json", "shuffled-development.json")
+        ]:
+            check_predictions(read(root / filename), views)
     epoch_metrics = {
         e: metrics(
             [r["prediction"] for r in read(root / "epochs" / str(e) / "development.json")],
@@ -112,6 +162,14 @@ def freeze_selection(root, analysis, output):
             selected["actual_update_accuracy"] - shuffled["actual_update_accuracy"] >= 0.1
         ),
     }
+    if component:
+        majority_labels = read(root / "training-majorities.json")
+        del gates["majority_advantage_10pp"]
+        for name in ("flat", "factorized"):
+            baseline = metrics([majority_labels[name]] * len(cases), cases, effects)
+            gates[f"{name}_majority_advantage_10pp"] = (
+                selected["actual_update_accuracy"] - baseline["actual_update_accuracy"] >= 0.1
+            )
     require(
         summary["all_development_gates_pass"]
         and summary["development_gates"] == gates
@@ -126,7 +184,14 @@ def freeze_selection(root, analysis, output):
     )
     output.parent.mkdir(parents=True, exist_ok=True)
     lock = {
-        "schema": "single-update-interpreter-selection-v1",
+        "schema": (
+            "single-update-interpreter-selection-v2"
+            if component
+            else "single-update-interpreter-selection-v1"
+        ),
+        "question_interface": interface_contract(
+            COMPONENT_INTERFACE if component else FLAT_INTERFACE
+        ),
         "frozen_unix": time.time(),
         "selected_epoch": epoch,
         "training_root": str(root.resolve()),
@@ -153,7 +218,19 @@ def freeze_selection(root, analysis, output):
 
 def verified_selection(path):
     lock = read(path)
-    require(lock["schema"] == "single-update-interpreter-selection-v1", "Unknown selection schema")
+    require(
+        lock["schema"]
+        in ("single-update-interpreter-selection-v1", "single-update-interpreter-selection-v2"),
+        "Unknown selection schema",
+    )
+    interface = selected_interface(lock)
+    expected_interface = COMPONENT_INTERFACE if lock["schema"].endswith("v2") else FLAT_INTERFACE
+    require(interface == expected_interface, "Selection schema and question interface disagree")
+    if "question_interface" in lock or interface == COMPONENT_INTERFACE:
+        require(
+            lock["question_interface"] == interface_contract(interface),
+            "Selected question interface changed",
+        )
     require(
         lock["architecture"] == ARCHITECTURE
         and lock["base_model"] == BASE_PATH
@@ -244,12 +321,18 @@ def selected_interpreter(lock_path):
     record = replace_adapter_exact(handle.model, Path(lock["adapter_directory"]))
     handle.model.requires_grad_(False)
     handle.model.eval()
+    handle.question_interface = selected_interface(lock)
+    record["question_interface"] = interface_contract(handle.question_interface)
     return handle, record
 
 
 @torch.no_grad()
 def predict(handle, tokens, physical_update_norm, options):
     """The interface deliberately accepts no batch text or measured behavior."""
+    require(
+        getattr(handle, "question_interface", FLAT_INTERFACE) == FLAT_INTERFACE,
+        "Component-trained models require their four-question interface",
+    )
     if tokens.shape != (4480, 5120) or not torch.isfinite(tokens).all():
         raise ValueError("Expected finite released 4480x5120 direction tokens")
     text = interpreter_question(options, physical_update_norm)
@@ -266,6 +349,39 @@ def predict(handle, tokens, physical_update_norm, options):
     }
 
 
+@torch.no_grad()
+def predict_components(handle, tokens, physical_update_norm, case_id):
+    """Four weight-only questions, recombined without a measured-effect input."""
+    from .update_loracle_factorized import forward, join_components, question_views
+
+    require(
+        getattr(handle, "question_interface", COMPONENT_INTERFACE) == COMPONENT_INTERFACE,
+        "Selected model does not use the component interface",
+    )
+    require(isinstance(case_id, str) and bool(case_id), "Stable case ID required")
+    require(
+        tokens.shape == (4480, 5120) and torch.isfinite(tokens).all(),
+        "Expected finite released 4480x5120 direction tokens",
+    )
+    rows = question_views(
+        {"id": case_id, "tokens": "provided", "physical_update_norm": physical_update_norm}
+    )
+    heads = {row["head"]: forward(handle, tokens, row) for row in rows}
+    label = join_components({h: a["prediction"] for h, a in heads.items()})
+    return {
+        "id": case_id,
+        "heads": heads,
+        "prediction": label,
+        "description": description(label),
+        "physical_update_norm": physical_update_norm,
+        "questions": [
+            {"head": r["head"], "text": r["text"], "options": r["options"]} for r in rows
+        ],
+        "scope": SCOPE,
+        "scores_are_calibrated_probabilities": False,
+    }
+
+
 def main():
     parser = argparse.ArgumentParser()
     sub = parser.add_subparsers(dest="command", required=True)
@@ -277,7 +393,8 @@ def main():
     infer.add_argument("--selection", type=Path, required=True)
     infer.add_argument("--tokens", type=Path, required=True)
     infer.add_argument("--norm", type=float, required=True)
-    infer.add_argument("--options", type=Path, required=True)
+    infer.add_argument("--options", type=Path)
+    infer.add_argument("--case-id")
     infer.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     if args.command == "freeze":
@@ -287,9 +404,19 @@ def main():
         torch.set_num_threads(8)
         torch.backends.cuda.matmul.allow_tf32 = False
         torch.backends.cudnn.allow_tf32 = False
+        selection = verified_selection(args.selection)
+        interface = selected_interface(selection)
+        require(
+            (interface == COMPONENT_INTERFACE and bool(args.case_id))
+            or (interface == FLAT_INTERFACE and args.options is not None),
+            "Component inference needs --case-id; flat inference needs --options",
+        )
         handle, loading = selected_interpreter(args.selection)
         tokens = torch.load(args.tokens, weights_only=True, map_location="cpu")
-        result = predict(handle, tokens, args.norm, json.loads(args.options.read_text()))
+        if interface == COMPONENT_INTERFACE:
+            result = predict_components(handle, tokens, args.norm, args.case_id)
+        else:
+            result = predict(handle, tokens, args.norm, json.loads(args.options.read_text()))
         atomic_json(
             args.output,
             {

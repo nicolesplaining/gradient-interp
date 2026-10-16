@@ -331,3 +331,136 @@ def test_changed_checkpoint_fails_before_selection(tmp_path):
     (root / "epochs/2/adapter_model.safetensors").write_bytes(b"another model")
     with pytest.raises(ValueError, match="Audited training output changed"):
         inference.freeze_selection(root, analysis, tmp_path / "lock.json")
+
+
+def component_fixture(tmp_path):
+    from gradient_interp import update_loracle_factorized as component
+    from gradient_interp.study import atomic_json
+
+    root, analysis = completed_fixture(tmp_path)
+    plan = json.loads((root / "plan.json").read_text())
+    collection = Path(plan["collection_root"])
+    cases = json.loads((collection / "data.json").read_text())["cases"]
+    for case in cases:
+        path = collection / "cases" / f"{case['id']}.json"
+        effect = json.loads(path.read_text())
+        effect["physical_update_norm"] = 0.0 if case["control"] else 1.0
+        atomic_json(path, effect)
+    files = [root / "released-development.json"] + list(
+        (root / "epochs").glob("*/*development.json")
+    )
+    for path in files:
+        rows = json.loads(path.read_text())
+        for row in rows:
+            targets = component.target_components(row["prediction"])
+            heads = {}
+            for h, labels in component.HEAD_LABELS.items():
+                label = targets.get(h, labels[0])
+                options = component.option_map(row["id"], h)
+                choice = next(k for k, v in options.items() if v == label)
+                index = component.OPTION_SYMBOLS.index(choice)
+                full = [0.0] * 33
+                full[index], full[-1] = 5.0, 100.0
+                heads[h] = {
+                    "choice_id": choice,
+                    "prediction": label,
+                    "choice_logits": full[: len(labels)],
+                    "full_33_choice_logits": full,
+                    "loss": None,
+                    "hook_calls": 1,
+                    "input_tokens": 5000,
+                }
+            row["heads"] = heads
+        atomic_json(path, rows)
+    plan["source_files_sha256"] = {
+        "src/gradient_interp/update_loracle_factorized.py": file_hash(component.__file__)
+    }
+    atomic_json(root / "plan.json", plan)
+    atomic_json(root / "training-majorities.json", {"flat": "no_change", "factorized": "no_change"})
+    summary = json.loads((analysis / "summary.json").read_text())
+    del summary["development_gates"]["majority_advantage_10pp"]
+    summary["development_gates"].update(
+        flat_majority_advantage_10pp=True, factorized_majority_advantage_10pp=True
+    )
+    atomic_json(analysis / "summary.json", summary)
+    refresh_component_fixture(root, analysis)
+    return root, analysis
+
+
+def refresh_component_fixture(root, analysis):
+    from gradient_interp.study import atomic_json
+
+    collection = Path(json.loads((root / "plan.json").read_text())["collection_root"])
+    old = json.loads((collection / "integrity.json").read_text())
+    old["files_sha256"] = {
+        str(p.relative_to(collection)): file_hash(p)
+        for p in collection.rglob("*.json")
+        if p.name != "integrity.json"
+    }
+    atomic_json(collection / "integrity.json", old)
+    integrity = json.loads((root / "integrity.json").read_text())
+    integrity.update(
+        recipe="balanced_factorized_v2",
+        optimizer_steps=780,
+        collection_integrity_sha256=file_hash(collection / "integrity.json"),
+        files_sha256={
+            str(p.relative_to(root)): file_hash(p)
+            for p in root.rglob("*")
+            if p.is_file() and p.name != "integrity.json"
+        },
+    )
+    atomic_json(root / "integrity.json", integrity)
+    provenance = json.loads((analysis / "analysis-provenance.json").read_text())
+    provenance["training_integrity_sha256"] = file_hash(root / "integrity.json")
+    atomic_json(analysis / "analysis-provenance.json", provenance)
+
+
+def test_component_selection_freezes_complete_question_contract(tmp_path):
+    root, analysis = component_fixture(tmp_path)
+    output = tmp_path / "lock.json"
+    lock = inference.freeze_selection(root, analysis, output)
+    assert lock["schema"] == "single-update-interpreter-selection-v2"
+    assert lock["question_interface"] == inference.interface_contract(inference.COMPONENT_INTERFACE)
+    assert lock["selected_epoch"] == 2
+    assert inference.verified_selection(output) == lock
+    lock["question_interface"]["option_order_seed"] += 1
+    output.write_text(json.dumps(lock))
+    with pytest.raises(ValueError, match="question interface changed"):
+        inference.verified_selection(output)
+
+
+def test_component_selection_cannot_use_old_flat_baseline_or_partial_success(tmp_path):
+    root, analysis = component_fixture(tmp_path)
+    # Matched released baseline also scores perfectly. A stale positive summary cannot unlock tests.
+    (root / "released-development.json").write_bytes(
+        (root / "epochs/2/development.json").read_bytes()
+    )
+    refresh_component_fixture(root, analysis)
+    output = tmp_path / "lock.json"
+    with pytest.raises(ValueError, match="Development criteria failed"):
+        inference.freeze_selection(root, analysis, output)
+    assert not output.exists()
+
+
+def test_component_public_inference_uses_all_four_questions_and_no_label_input(monkeypatch):
+    from gradient_interp import update_loracle_factorized as component
+
+    tokens = SimpleNamespace(shape=(4480, 5120))
+    handle = SimpleNamespace(question_interface=inference.COMPONENT_INTERFACE)
+    monkeypatch.setattr(inference.torch, "isfinite", lambda _: torch.tensor(True))
+    observed = []
+    targets = component.target_components("numbered/upper/reverse")
+
+    def forward(received_handle, received_tokens, row):
+        assert received_handle is handle and received_tokens is tokens
+        assert "target_label" not in row and "label" not in row
+        observed.append(row["head"])
+        return {"prediction": targets[row["head"]]}
+
+    monkeypatch.setattr(component, "forward", forward)
+    result = inference.predict_components(handle, tokens, 1.2, "new-update")
+    assert result["prediction"] == "numbered/upper/reverse"
+    assert observed == ["change", "format", "case", "order"]
+    assert not result["scores_are_calibrated_probabilities"]
+    with pytest.raises(ValueError, match="four-question"):
+        inference.predict(handle, tokens, 1.2, {})

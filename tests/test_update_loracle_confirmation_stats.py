@@ -83,3 +83,20 @@ def test_missing_comparator_and_unbalanced_grid_fail():
     cases.pop(0)
     with pytest.raises(ValueError, match="balanced"):
         crossed_bootstrap(cases, {"x": np.zeros(135)}, 1000)
+
+
+def test_component_confirmation_requires_both_majorities_and_same_strong_criteria():
+    cases, targets, predictions = fixtures()
+    spans = [0.2] * 128 + [0.0] * 8
+    with pytest.raises(ValueError, match="comparator"):
+        evaluate(cases, targets, predictions, spans, 1000, component_interface=True)
+    predictions["factorized_majority"] = list(targets)
+    result, _ = evaluate(cases, targets, predictions, spans, 1000, component_interface=True)
+    assert not result["all_numerical_gates_pass"]
+    assert not result["gates"]["factorized_majority_advantage_at_least_10pp"]
+    assert result["primary_accuracy_interval"] == [1.0, 1.0]
+    predictions["factorized_majority"] = [LABELS[1]] * 136
+    result, _ = evaluate(cases, targets, predictions, spans, 1000, component_interface=True)
+    assert result["all_numerical_gates_pass"]
+    with pytest.raises(ValueError, match="comparator"):
+        evaluate(cases, targets, predictions, spans, 1000)

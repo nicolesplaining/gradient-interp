@@ -195,3 +195,135 @@ def test_update_collection_never_measures_test_probes(tmp_path, monkeypatch):
         assert "effect" not in result and "before_ce" not in result and "after_ce" not in result
     with pytest.raises(ValueError, match="no automatic resume"):
         worker.collect_updates(tmp_path)
+
+
+def test_component_preflight_checks_all_four_question_scores(monkeypatch):
+    from gradient_interp import update_loracle_factorized as component
+
+    seen = []
+
+    def forward(handle, tokens, row):
+        seen.append(row["head"])
+        return {"full_33_choice_logits": [float(len(seen))] * 33}
+
+    monkeypatch.setattr(component, "forward", forward)
+    values = worker.preflight_scores(None, "synthetic tokens", worker.COMPONENT_INTERFACE)
+    assert seen == ["change", "format", "case", "order"] and len(values) == 4
+    with pytest.raises(ValueError, match="Unknown"):
+        worker.preflight_scores(None, None, "accidental_flat_question")
+
+
+def test_component_scoring_dispatch_preserves_views_and_rejects_other_interface(monkeypatch):
+    from gradient_interp import update_loracle_factorized as component
+
+    cases = [{"id": "new", "tokens": "native", "physical_update_norm": 0.9}]
+    monkeypatch.setattr(component, "score", lambda handle, actual: actual)
+    monkeypatch.setattr(worker, "score", lambda *a: pytest.fail("Used flat questions"))
+    assert worker.score_selected_interface(None, cases, worker.COMPONENT_INTERFACE) is cases
+    with pytest.raises(ValueError, match="Unknown"):
+        worker.score_selected_interface(None, cases, "unknown")
+
+
+def test_component_prediction_lock_binds_question_contract(tmp_path):
+    prediction_lock(tmp_path)
+    plan = {
+        "selection_sha256": "frozen",
+        "question_interface": worker.interface_contract(worker.COMPONENT_INTERFACE),
+    }
+    lock = worker.read(tmp_path / "predictions-lock.json")
+    lock["question_interface"] = worker.interface_contract(worker.FLAT_INTERFACE)
+    atomic_json(tmp_path / "predictions-lock.json", lock)
+    atomic_json(
+        tmp_path / "predictions-manifest.json",
+        {"status": "complete", "lock_sha256": file_hash(tmp_path / "predictions-lock.json")},
+    )
+    with pytest.raises(ValueError, match="different question interface"):
+        worker.checked_prediction_lock(tmp_path, plan)
+
+
+def test_component_prediction_stage_matches_questions_and_locks_both_majorities(
+    tmp_path, monkeypatch
+):
+    from gradient_interp import update_loracle_factorized as component
+
+    cases = [
+        {"id": f"{split}-{i}", "split": split, "control": i == 2}
+        for split in worker.SPLITS
+        for i in range(3)
+    ]
+    views = [
+        {
+            "id": c["id"],
+            "control": c["control"],
+            "tokens": c["id"],
+            "physical_update_norm": 0.0 if c["control"] else 1.0,
+        }
+        for c in cases
+    ]
+    selection = {
+        "adapter_directory": "selected",
+        "question_interface": worker.interface_contract(worker.COMPONENT_INTERFACE),
+    }
+    plan = {"selection_sha256": "frozen", "collection_root": "unused"}
+    atomic_json(tmp_path / "plan.json", plan)
+    atomic_json(
+        tmp_path / "updates-manifest.json",
+        {"status": "complete", "plan_sha256": file_hash(tmp_path / "plan.json"), "records": []},
+    )
+    monkeypatch.setattr(worker, "verify_inputs", lambda _: (plan, selection, cases))
+    monkeypatch.setattr(worker, "checked_preflight", lambda *a: {})
+    monkeypatch.setattr(worker, "prediction_views", lambda *a: views)
+    monkeypatch.setattr(worker, "load_interpreter", lambda: None)
+    model_state = ["released"]
+    calls = []
+
+    def score(handle, received, interface):
+        assert interface == worker.COMPONENT_INTERFACE
+        calls.append((model_state[0], copy.deepcopy(received)))
+        return [{"id": c["id"], "prediction": "no_change"} for c in received]
+
+    def replace(model, directory):
+        model_state[0] = "adapted"
+        return {"bit_exact": True}
+
+    from types import SimpleNamespace
+
+    monkeypatch.setattr(worker, "load_interpreter", lambda: SimpleNamespace(model=None))
+    monkeypatch.setattr(worker, "score_selected_interface", score)
+    monkeypatch.setattr(worker, "replace_adapter_exact", replace)
+    labels = [
+        "/".join((f, c, o))
+        for f in component.HEAD_LABELS["format"]
+        for c in component.HEAD_LABELS["case"]
+        for o in component.HEAD_LABELS["order"]
+    ]
+    train = [
+        {"id": str(i), "label": label, "tokens": "unused", "physical_update_norm": 1.0}
+        for i, label in enumerate(labels + ["no_change"] * 16)
+    ]
+    monkeypatch.setattr(worker, "verified_cases", lambda *a: train)
+    monkeypatch.setattr(
+        worker,
+        "simple_references",
+        lambda train, subset: {
+            "majority": "no_change",
+            "development": [{"id": c["id"], "majority": "no_change"} for c in subset],
+        },
+    )
+    monkeypatch.setattr(worker, "measure", lambda *a: pytest.fail("Early outcome scoring"))
+    worker.predict_all(tmp_path)
+    assert len(calls) == 8
+    for i in range(4):
+        assert calls[i][0] == "released" and calls[i + 4][0] == "adapted"
+        assert calls[i][1] == calls[i + 4][1]
+    lock = worker.read(tmp_path / "predictions-lock.json")
+    assert lock["question_interface"]["name"] == worker.COMPONENT_INTERFACE
+    assert not lock["heldout_probes_measured"]
+    for split in worker.SPLITS:
+        simple = worker.read(tmp_path / "predictions" / f"{split}-simple.json")
+        assert simple["factorized_majority"] == "plain/lower/original"
+        assert all(
+            r["factorized_majority"] == "plain/lower/original" for r in simple["development"]
+        )
+    with pytest.raises(ValueError, match="no automatic resume"):
+        worker.predict_all(tmp_path)

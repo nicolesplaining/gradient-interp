@@ -20,7 +20,13 @@ from .update_loracle_collect import tokenize_update, upstream_module
 from .update_loracle_confirmation_stats import evaluate
 from .update_loracle_data import LABELS, NO_CHANGE, effect_label
 from .update_loracle_heldout import SPLITS, checked_data, checked_prediction_lock, checked_preflight
-from .update_loracle_inference import verified_selection
+from .update_loracle_inference import (
+    COMPONENT_INTERFACE,
+    FLAT_INTERFACE,
+    interface_contract,
+    selected_interface,
+    verified_selection,
+)
 from .update_loracle_train import shuffled_directions
 
 
@@ -119,6 +125,12 @@ def audit(root):
     ):
         require(file_hash(root / name) == plan[key], f"Frozen {name} changed")
     selection = verified_selection(root / "selection.json")
+    interface = selected_interface(selection)
+    require(
+        plan.get("question_interface", interface_contract(FLAT_INTERFACE))
+        == interface_contract(interface),
+        "Selected question interface differs from execution",
+    )
     data = read(root / "data.json")
     require(
         data["selection_sha256"] == plan["selection_sha256"]
@@ -277,10 +289,32 @@ def audit(root):
                 "Incorrect one-step optimizer update",
             )
         del updated, stored, tokens
+    if interface == COMPONENT_INTERFACE:
+        from .update_loracle_factorized import training_instances, training_majorities
+        from .update_loracle_factorized_analysis import cases_with_effects
+
+        training, _ = cases_with_effects(Path(plan["collection_root"]), "train")
+        _, balance = training_instances(training)
+        expected_majorities = training_majorities(training, balance)
     for split in SPLITS:
         subset = [c for c in cases if c["split"] == split]
+        check_method = check_predictions
+        if interface == COMPONENT_INTERFACE:
+            from .update_loracle_factorized_analysis import check_predictions as check_components
+
+            check_method = check_components
+            subset = [
+                {
+                    **c,
+                    "tokens": "already_verified",
+                    "physical_update_norm": read(root / "updates" / f"{c['id']}.json")[
+                        "physical_update_norm"
+                    ],
+                }
+                for c in subset
+            ]
         for method in ("released", "released-shuffled", "adapted", "adapted-shuffled"):
-            check_predictions(read(root / "predictions" / f"{split}-{method}.json"), subset)
+            check_method(read(root / "predictions" / f"{split}-{method}.json"), subset)
         expected = shuffled_directions([{**c, "tokens": c["id"]} for c in subset])
         require(
             read(root / "predictions" / f"{split}-shuffle.json")
@@ -299,6 +333,17 @@ def audit(root):
             ),
             "Incomplete simple baseline grid",
         )
+        if interface == COMPONENT_INTERFACE:
+            require(
+                simple["factorized_majority"] == expected_majorities["factorized"]
+                and simple["majority"] == expected_majorities["flat"]
+                and all(
+                    r["factorized_majority"] == expected_majorities["factorized"]
+                    and r["majority"] == expected_majorities["flat"]
+                    for r in simple["development"]
+                ),
+                "Component/flat majority must use only original training counts",
+            )
     compact = [
         "controller.json",
         "plan.json",
@@ -328,6 +373,7 @@ def audit(root):
             "source_archive_sha256": archive_hash,
             "all_encodings_and_norms_recomputed": True,
             "predictions_locked_before_measurement": True,
+            "question_interface": interface_contract(interface),
             "cases": 272,
             "actual_updates": 256,
             "zero_controls": 16,
@@ -414,19 +460,22 @@ def analyze(root, output):
     for name, expected in integrity["files_sha256"].items():
         require(file_hash(root / name) == expected, "Audited held-out output changed")
     data = read(root / "data.json")
+    interface = integrity.get("question_interface", interface_contract(FLAT_INTERFACE))["name"]
+    component = interface == COMPONENT_INTERFACE
     summaries, details, bootstrap = {}, {}, {}
     for split in SPLITS:
         cases = data[split]["cases"]
         measurements = [read(root / "measurements" / f"{c['id']}.json") for c in cases]
-        predictions = {
-            name.replace("-", "_"): [
-                r["prediction"] for r in read(root / "predictions" / f"{split}-{name}.json")
-            ]
+        answers = {
+            name.replace("-", "_"): read(root / "predictions" / f"{split}-{name}.json")
             for name in ("adapted", "released", "adapted-shuffled", "released-shuffled")
         }
+        predictions = {name: [r["prediction"] for r in rows] for name, rows in answers.items()}
         simple = read(root / "predictions" / f"{split}-simple.json")["development"]
         for name in ("ridge", "majority", "shuffled_ridge"):
             predictions[name] = [r[name] for r in simple]
+        if component:
+            predictions["factorized_majority"] = [r["factorized_majority"] for r in simple]
         targets = [m["effect"]["label"] for m in measurements]
         spans = [m["effect"]["span"] for m in measurements]
         primary = {
@@ -439,12 +488,21 @@ def analyze(root, output):
                 "ridge",
             )
         }
-        summary, draws = evaluate(cases, targets, primary, spans, replicates=4000)
+        if component:
+            primary["factorized_majority"] = predictions["factorized_majority"]
+        summary, draws = evaluate(
+            cases, targets, primary, spans, replicates=4000, component_interface=component
+        )
         summary["complete_diagnostics"] = diagnostics(cases, measurements, predictions)
         summaries[split] = summary
         bootstrap.update({f"{split}_{name}": value for name, value in draws.items()})
         details[split] = [
-            {**c, "measured": m, "predictions": {n: p[i] for n, p in predictions.items()}}
+            {
+                **c,
+                "measured": m,
+                "predictions": {n: p[i] for n, p in predictions.items()},
+                "interpreter_answers": {n: rows[i] for n, rows in answers.items()},
+            }
             for i, (c, m) in enumerate(zip(cases, measurements))
         ]
     output.mkdir(parents=True)
@@ -457,6 +515,9 @@ def analyze(root, output):
             "splits": summaries,
             "both_grids_pass": all(s["all_numerical_gates_pass"] for s in summaries.values()),
             "selection_sha256": file_hash(root / "selection.json"),
+            "question_interface": integrity.get(
+                "question_interface", interface_contract(FLAT_INTERFACE)
+            ),
             "limitations": [
                 "No arbitrary-checkpoint or novel-operation claim",
                 "Loss preferences are not free generation",
@@ -493,13 +554,15 @@ def render(output):
 
     summary, details = read(output / "summary.json"), read(output / "all-cases.json")
     names = ["released", "majority", "ridge", "adapted_shuffled", "adapted"]
-    fig, axes = plt.subplots(1, 2, figsize=(12, 4.5), sharey=True)
+    if "factorized_majority" in summary["splits"]["reserved"]["accuracy"]:
+        names.insert(2, "factorized_majority")
+    fig, axes = plt.subplots(1, 2, figsize=(14, 5), sharey=True)
     for ax, split in zip(axes, SPLITS):
         values = [summary["splits"][split]["accuracy"][name] * 100 for name in names]
-        bars = ax.bar(range(5), values, color=["#919ba7"] * 4 + ["#176b8c"])
+        bars = ax.bar(range(len(names)), values, color=["#919ba7"] * (len(names) - 1) + ["#176b8c"])
         ax.set(
-            xticks=range(5),
-            xticklabels=["Released", "Majority", "Ridge", "Shuffled\nadapted", "Adapted"],
+            xticks=range(len(names)),
+            xticklabels=[n.replace("_", "\n") for n in names],
             title=split.capitalize(),
             ylim=(0, 105),
             ylabel="Correct measured-effect category (%)",
