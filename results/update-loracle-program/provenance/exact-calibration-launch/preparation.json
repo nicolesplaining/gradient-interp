@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "finished_unix": 1792191245.1965146,
+  "source_commit": "268629bf5484e0e6b119bfd54681e13ea4060e2f",
+  "plan_sha256": "b3fdf8e0873993e4d0689c8ac1eccfec98ea3caef0251c9b429568fdf662c64e",
+  "source_archive_sha256": "63539bd0c863bfae87c7f575b0ef534e6d135935a6b61d3631f3c9ea75957464",
+  "source_files": 97,
+  "input_files": 730,
+  "cases": 344,
+  "conditions": 688,
+  "prior_archive_verified": true,
+  "no_new_fitting_or_target_training": true,
+  "gpu_preflight": "pending training-only first worker step",
+  "versions": {
+    "torch": "2.9.0+cu130",
+    "transformers": "4.57.6",
+    "peft": "0.18.1",
+    "scikit-learn": "1.9.1"
+  }
+}

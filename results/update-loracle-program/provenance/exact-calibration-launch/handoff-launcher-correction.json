@@ -1,0 +1,8 @@
+{
+  "recorded_unix": 1792191585.704795,
+  "failed_attempt": "Remote launcher Python syntax error before execution; broad SHA placeholder replacement accidentally altered embedded helper PLAN_SHA identifiers.",
+  "scientific_files_changed": false,
+  "scientific_worker_restarted": false,
+  "handoff_launched_by_failed_attempt": false,
+  "correction": "Pass body and hash by separate Python variable assignments before fixed wrapper; parse full generated wrapper locally before SSH. Original existence guards retained."
+}

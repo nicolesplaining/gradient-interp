@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "finished_unix": 1792191460.145902,
+  "training_only": true,
+  "synthetic_only_no_target_updates": true,
+  "modules": 280,
+  "trainable_tensors": 560,
+  "parameters": 64225280,
+  "all_256_scores_finite": true,
+  "bit_exact_adapter_and_full_score_restore": true,
+  "frozen_base_unchanged": true,
+  "physical_norm_scale_relative_error": 1.3864465131518955e-12,
+  "peak_allocated_bytes": 30489491968
+}

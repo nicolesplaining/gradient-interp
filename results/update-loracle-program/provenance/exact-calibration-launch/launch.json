@@ -1,0 +1,17 @@
+{
+  "launched_unix": 1792191324.8828878,
+  "controller_pid": 293092,
+  "command": [
+    "/home/ubuntu/gradient-interp/.venv-atoms/bin/python",
+    "-u",
+    "-m",
+    "gradient_interp.development_run",
+    "--root",
+    "/home/ubuntu/gradient-interp/runs/update-loracle-exact-calibration-v5"
+  ],
+  "source_commit": "268629bf5484e0e6b119bfd54681e13ea4060e2f",
+  "plan_sha256": "b3fdf8e0873993e4d0689c8ac1eccfec98ea3caef0251c9b429568fdf662c64e",
+  "new_target_training": false,
+  "reserved_or_confirmation_access": false,
+  "automatic_retry": false
+}

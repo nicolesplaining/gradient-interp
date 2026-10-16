@@ -1,0 +1,14 @@
+{
+  "recorded_unix": 1792191348.594831,
+  "helpers": {
+    "finish_after_complete.py": "8dc1caac88119172bc3858297f760bb264ecf5340d9240bdba826b3405122d5e",
+    "check_live.py": "665d192f3247ae639c1d1d6b677be5bca029b1e3be4cea033821f655caf69b11"
+  },
+  "one_shot_waits_normal_complete_dead_then_audit_analyze": true,
+  "automatic_retry": false,
+  "no_scientific_source_changes": true,
+  "metadata_helper_reads_only_status_process_preflight_existence": true,
+  "copy_helper_sha256": "bd7f2e72e48440a278e4906d835f2ed4f657d788ca72eaab2aee9edd5ec86f15",
+  "copy_helper_review": "Full344case/688condition passed audit, four fixed independent score rechecks, complete/dead worker and audit handoff before output access; all small score JSONs are retained. Safe tar paths, exact hashes and prior local metadata preservation.",
+  "updated_unix": 1792191394.4211059
+}

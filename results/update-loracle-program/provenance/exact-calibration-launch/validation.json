@@ -1,0 +1,100 @@
+{
+  "recorded_unix": 1792191669.164628,
+  "scientific_source": "268629bf5484e0e6b119bfd54681e13ea4060e2f",
+  "metadata_check": {
+    "checked_unix": 1792191624.7838457,
+    "controller": {
+      "scope": "development_only",
+      "started_unix": 1792191325.8570857,
+      "deadline_unix": 1792205725.8570857,
+      "status": "running",
+      "controller_pid": 293092,
+      "worker_pid": 293102,
+      "plan_sha256": "b3fdf8e0873993e4d0689c8ac1eccfec98ea3caef0251c9b429568fdf662c64e",
+      "attempts": [
+        {
+          "job": "predict",
+          "pid": 293102,
+          "started_unix": 1792191325.8602834
+        }
+      ],
+      "current_job": "predict"
+    },
+    "progress": {
+      "stage": "exact_calibration_scores",
+      "completed": 3,
+      "total": 688,
+      "updated_unix": 1792191617.0774658,
+      "pid": 293102
+    },
+    "preflight": {
+      "passed": true,
+      "finished_unix": 1792191460.145902,
+      "training_only": true,
+      "synthetic_only_no_target_updates": true,
+      "modules": 280,
+      "trainable_tensors": 560,
+      "parameters": 64225280,
+      "all_256_scores_finite": true,
+      "bit_exact_adapter_and_full_score_restore": true,
+      "frozen_base_unchanged": true,
+      "physical_norm_scale_relative_error": 1.3864465131518955e-12,
+      "peak_allocated_bytes": 30489491968
+    },
+    "controller_process": {
+      "pid": 293092,
+      "alive": true,
+      "state": "S",
+      "startticks": "32271121",
+      "cmdline": "/home/ubuntu/gradient-interp/.venv-atoms/bin/python -u -m gradient_interp.development_run --root /home/ubuntu/gradient-interp/runs/update-loracle-exact-calibration-v5 "
+    },
+    "worker_process": {
+      "pid": 293102,
+      "alive": true,
+      "state": "R",
+      "startticks": "32271219",
+      "cmdline": "/home/ubuntu/gradient-interp/.venv-atoms/bin/python -u -m gradient_interp.update_loracle_exact_calibration --root /home/ubuntu/gradient-interp/runs/update-loracle-exact-calibration-v5 "
+    },
+    "attempt_processes": [
+      {
+        "pid": 293102,
+        "alive": true,
+        "state": "R",
+        "startticks": "32271219",
+        "cmdline": "/home/ubuntu/gradient-interp/.venv-atoms/bin/python -u -m gradient_interp.update_loracle_exact_calibration --root /home/ubuntu/gradient-interp/runs/update-loracle-exact-calibration-v5 "
+      }
+    ],
+    "handoff": {
+      "pid": 293292,
+      "stage": "waiting_for_normal_completion",
+      "checked_unix": 1792191586.6435454,
+      "automatic_retry": false
+    },
+    "handoff_process": {
+      "pid": 293292,
+      "alive": true,
+      "state": "S",
+      "startticks": "32297295",
+      "cmdline": "/home/ubuntu/gradient-interp/.venv-atoms/bin/python -u /home/ubuntu/gradient-interp/runs/update-loracle-exact-calibration-v5/finish_after_complete.py "
+    },
+    "audit_children": [],
+    "manifest_exists": false,
+    "integrity_exists": false,
+    "analysis_exists": false,
+    "gpu": "94, 32363\n"
+  },
+  "scientific_outcomes_read": false,
+  "reserved_cases_accessed": 0,
+  "preparation_sources_verified": 97,
+  "preparation_inputs_verified": 730,
+  "initial_scientific_tests": 24,
+  "preflight_passed": true,
+  "preflight_peak_bytes": 30489491968,
+  "audit_analysis_owner_pid": 293292,
+  "no_automatic_resume_or_retry": true,
+  "notes": [
+    "Remote remains at frozen scientific source while running.",
+    "One-shot helper waits for normal completion and dead controller/worker before full audit, then original analysis.",
+    "A launcher wrapper failed Python parsing before execution; corrected without changing or restarting any scientific process."
+  ]
+}

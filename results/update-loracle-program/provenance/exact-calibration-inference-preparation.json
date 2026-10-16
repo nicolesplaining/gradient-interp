@@ -1,0 +1,22 @@
+{
+  "recorded_unix": 1792191669.1648068,
+  "status": "inference API prepared with synthetic tests only; not selected or executed on real outcomes",
+  "scientific_development_outputs_read": false,
+  "test_data_released": false,
+  "selection_frozen": false,
+  "tests_passed": 20,
+  "ruff": "passed",
+  "source_sha256": {
+    "src/gradient_interp/update_loracle_exact_calibration_inference.py": "d618e1b6477cf737cedd276d15d6e4a41a29749e12ebe15b7689b69a2cdbf091",
+    "tests/test_update_loracle_exact_calibration_inference.py": "cdd54f4674508a83b120b4cd2ffb9bb718a1a6d35aed44586a71363d4cfe804a"
+  },
+  "checks": [
+    "Cannot select on live/failed or incomplete development; recomputes complete 64-update/eight-control metrics and all fixed gates from audited outputs.",
+    "Every native own/shuffled category independently rederived from exact score arrays.",
+    "Binds original measured targets, all frozen predictor dependencies, pinned base files, calibration, original no-change threshold and released four-question interface.",
+    "Modified evidence, calibration or base rejected.",
+    "Synthetic native inference agrees with frozen scoring worker, preserves nonlinear effects and exact restores; incompatible native A rejected."
+  ],
+  "remaining": "Full held-out orchestration/audit/preflight and both-grid freeze still required only after complete development passes. This module is not a LoRAcle adapter loader and must not be passed to the old held-out worker unchanged.",
+  "scope": "Base-model-assisted finite-reference functional descriptions; not an improved learned LoRAcle checkpoint."
+}
