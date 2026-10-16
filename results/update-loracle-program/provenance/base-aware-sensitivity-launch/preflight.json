@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "finished_unix": 1792174889.0386024,
+  "training_only": true,
+  "modules": 280,
+  "trainable_tensors": 560,
+  "trainable_parameters": 64225280,
+  "all_gradients_finite": true,
+  "all_A_gradients_zero": true,
+  "bit_exact_adapter_and_score_restore": true,
+  "frozen_base_unchanged": true,
+  "directional_contraction": -0.02201955144604995,
+  "independent_scalar_contraction": -0.022019551446049956,
+  "calibration_before": [
+    1.5424271821975708,
+    2.614701509475708,
+    2.98168683052063,
+    1.7184648513793945,
+    2.5300416946411133,
+    2.0162551403045654,
+    1.820292353630066,
+    2.513887405395508
+  ],
+  "synthetic_changed_first4": [
+    1.5170422792434692,
+    2.60892653465271,
+    2.9994938373565674,
+    1.669474482536316
+  ],
+  "synthetic_perturbation_only_no_optimizer": true,
+  "peak_allocated_bytes": 34893208576
+}

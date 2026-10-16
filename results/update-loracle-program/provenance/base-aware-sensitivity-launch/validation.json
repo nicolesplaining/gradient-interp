@@ -8,10 +8,14 @@
   "all_calibration_tokenizations": 256,
   "max_calibration_tokens": 78,
   "new_scientific_outcomes_read": false,
-  "preflight_status": "pending at launch; inside worker before predictions",
+  "preflight_status": "passed before first scientific gradient bank",
   "retrospective_development": true,
   "untouched_cases_collected": 0,
   "fixed_complete_description_gates_unchanged": true,
   "gpu_host": "ubuntu@68.209.75.76",
-  "no_target_optimizer_updates_or_generation": true
+  "no_target_optimizer_updates_or_generation": true,
+  "preflight_finished_unix": 1792174889.0386024,
+  "preflight_peak_bytes": 34893208576,
+  "audit_handoff_pid": 290997,
+  "source_remains_frozen_on_remote": true
 }
