@@ -1,0 +1,30 @@
+{
+  "created_unix": 1792148026.4689019,
+  "state": "implemented and unit-tested; not launched; actual GPU preflight remains pending after justified model selection",
+  "active_training_source_unchanged": "a84822a46a45066d4abca01d013dac4b73ccca7e",
+  "scientific_results_read": false,
+  "design": "Both frozen grids collected without scoring held-out probes. Released/adapted/weight-shuffled/ridge/majority predictions locked before all effect measurements. No tuning or winner selection after test access.",
+  "tests": {
+    "prior_combined": 81,
+    "additional_diagnostic_test": 1,
+    "current_total": 82,
+    "ruff": "passed"
+  },
+  "source_review": [
+    "Released checkpoint headers verified:560 native adapter tensors stored BF16; installation explicitly upcasts BF16 to FP32 without rounding. Selected trained adapters require FP32. Local real PEFT round-trip tests verify all tensors and unchanged base weights.",
+    "Existing development_run requires development_only scope; evaluation scope recorded separately as reserved_and_fresh_confirmation.",
+    "Auditor checks all four stages complete/dead, immutable deadline, model/data/prediction ordering, every input/source/output hash, every true physical norm and native encoding, all32 reference patterns and every restore.",
+    "No hidden inputs: interpreter view allowlists only direction tokens, norm, options, ID and control metadata; question is constructed from norm/options only."
+  ],
+  "pending": [
+    "Read all three completed and audited development epochs before any selection",
+    "If justified, freeze one model, inputs and execution plan; training-only GPU preflight before new collection",
+    "Run full held-out study, audit, analyze all methods/cases, inspect figures, then assess strong-positive criteria"
+  ],
+  "source_files_sha256": {
+    "src/gradient_interp/update_loracle_heldout.py": "5c2167fe7f642631c1c1182c63804b581a62b7ec66cb37b7870b8e555aa3ca93",
+    "src/gradient_interp/update_loracle_heldout_analysis.py": "488c08ecda57511e5474f6bd6990905d4adaabc7cfcb9027dd650f01b7ffd15a",
+    "scripts/prepare_update_loracle_heldout.py": "9371d8873ef837dee262999198733fbfff2937bdeb0f4bd1682d52b54387aeb7",
+    "src/gradient_interp/update_loracle_inference.py": "eeb8fe20bd2526528851e1c9f093942df9f71e1d2a711b1f8a27be96072a8701"
+  }
+}

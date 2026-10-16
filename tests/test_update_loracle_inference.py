@@ -94,6 +94,30 @@ def test_loading_rejects_config_change_before_any_parameter_mutation(small_adapt
         )
 
 
+def test_released_bfloat16_can_be_explicitly_upcast_without_rounding(small_adapter):
+    from peft import get_peft_model_state_dict
+    from safetensors.torch import save_file
+
+    model, directory, saved = small_adapter
+    stored = {k: v.bfloat16() for k, v in saved.items()}
+    save_file(stored, str(directory / "adapter_model.safetensors"))
+    with pytest.raises(ValueError, match="Invalid saved"):
+        inference.replace_adapter_exact(
+            model, directory, len(stored), sum(t.numel() for t in stored.values())
+        )
+    result = inference.replace_adapter_exact(
+        model,
+        directory,
+        len(stored),
+        sum(t.numel() for t in stored.values()),
+        source_dtype=torch.bfloat16,
+    )
+    assert result["storage_dtype"] == "torch.bfloat16"
+    assert all(
+        torch.equal(v, stored[k].float()) for k, v in get_peft_model_state_dict(model).items()
+    )
+
+
 @pytest.mark.parametrize("corruption", ["missing", "shape", "nan", "dtype"])
 def test_loading_rejects_incomplete_or_invalid_tensors_before_copy(small_adapter, corruption):
     from peft import get_peft_model_state_dict

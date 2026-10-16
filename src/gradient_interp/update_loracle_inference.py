@@ -171,7 +171,13 @@ def verified_selection(path):
     return lock
 
 
-def replace_adapter_exact(model, directory, expected_tensors=560, expected_parameters=1027604480):
+def replace_adapter_exact(
+    model,
+    directory,
+    expected_tensors=560,
+    expected_parameters=1027604480,
+    source_dtype=torch.float32,
+):
     """Validate every native PEFT tensor before copying; never silently omit a layer."""
     from peft import get_peft_model_state_dict
     from safetensors.torch import load_file
@@ -199,6 +205,7 @@ def replace_adapter_exact(model, directory, expected_tensors=560, expected_param
     )
     destination = get_peft_model_state_dict(model)
     saved = load_file(str(directory / "adapter_model.safetensors"), device="cpu")
+    require(source_dtype in (torch.float32, torch.bfloat16), "Unsupported adapter storage dtype")
     require(
         len(saved) == expected_tensors
         and set(saved) == set(destination)
@@ -208,21 +215,27 @@ def replace_adapter_exact(model, directory, expected_tensors=560, expected_param
     for key, value in saved.items():
         require(
             value.shape == destination[key].shape
-            and value.dtype == destination[key].dtype
-            and value.dtype == torch.float32
+            and value.dtype == source_dtype
+            and destination[key].dtype == torch.float32
             and torch.isfinite(value).all().item(),
             f"Invalid saved adapter tensor: {key}",
         )
     with torch.no_grad():
         for key, value in saved.items():
-            destination[key].copy_(value.to(destination[key].device))
+            destination[key].copy_(value.to(device=destination[key].device, dtype=torch.float32))
         # These are PEFT's native parameter views. Verify by fetching fresh views afterward.
         installed = get_peft_model_state_dict(model)
         require(
-            all(torch.equal(installed[k].detach().cpu(), v) for k, v in saved.items()),
+            all(torch.equal(installed[k].detach().cpu(), v.float()) for k, v in saved.items()),
             "Selected adapter did not install exactly",
         )
-    return {"tensor_count": len(saved), "parameter_count": expected_parameters, "bit_exact": True}
+    return {
+        "tensor_count": len(saved),
+        "parameter_count": expected_parameters,
+        "bit_exact": True,
+        "storage_dtype": str(source_dtype),
+        "installed_dtype": "torch.float32",
+    }
 
 
 def selected_interpreter(lock_path):
