@@ -1,0 +1,29 @@
+{
+  "created_unix": 1792144012.747921,
+  "scientific_collection_outputs_read": false,
+  "training_started": false,
+  "scope": "development only; separate untouched confirmation required for success",
+  "primary_denominator": "All64 actual update cases on the eight development source compositions; weak effects remain included and may have measured no-change labels. Eight zero controls reported separately.",
+  "methods": [
+    "unchanged released",
+    "released shuffled directions",
+    "training-only majority",
+    "training-only ridge",
+    "ridge shuffled directions",
+    "all3 fixed fine-tuning epochs",
+    "all3 epochs with shuffled directions"
+  ],
+  "selection": "Highest actual-update exact measured-category accuracy across all3 epochs; earlier epoch wins ties. No best-seed, best-source-composition or best-axis promotion.",
+  "secondary": "Per-axis correctness on cases with a measurable non-no-change target; retain denominator. Every source composition, seed, measured label, source-versus-effect mismatch, span, margin, norms and raw profile.",
+  "uncertainty": {
+    "replicates": 2000,
+    "seed": 2026101653,
+    "scheme": "Crossed resampling of eight source compositions and four initialization seeds, then cases within selected cells; identical draws across all methods. Zero controls excluded from primary bootstrap.",
+    "intervals": "Pointwise descriptive95% percentile intervals and paired differences; development selection bias not corrected; cannot support final confirmation claim."
+  },
+  "thresholds": "Original program criteria plus pre-reading direction-dependence and majority checks from training-implementation-plan.json. Development gates guide method selection only; not a strong-positive conclusion.",
+  "guards": "Require full collection and training integrity audits, complete/dead workers, exact3epoch/204optimizerstep/272case grid, original deadlines, complete baseline/control grids, all source/input/checkpoint/output hashes. Archive source before any remote checkout advance.",
+  "artifacts": "Preserve complete outputs, all72 development cases, all methods/epochs, exact executed analysis source, report and scientific plot; inspect actual figure after execution. Bootstrap arrays ignored. No reserved predictions or test labels in development report.",
+  "test_status": "32 meaningful synthetic tests passed; Ruff clean. Training and analysis code not yet executed on scientific outputs.",
+  "analyzer_sha256": "7c4bc8ed3dc965d933170285adf7d22d0de9a6c48d476521886b58ff9ad43433"
+}
