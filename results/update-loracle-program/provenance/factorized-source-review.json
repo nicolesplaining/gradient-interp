@@ -1,0 +1,30 @@
+{
+  "reviewed_unix": 1792149947.910261,
+  "scope": "balanced factorized v2 before launch",
+  "scientific_outputs_read": "Only complete audited v1 development; no v2 or reserved outputs exist",
+  "source_sha256": {
+    "src/gradient_interp/update_loracle_factorized.py": "906e7a12b184d76937386022ae1a5c741505374de60c9a403d1f52bdc0faa75e",
+    "src/gradient_interp/update_loracle_factorized_analysis.py": "3da169f5ea7098f1175fcfb06239ca1b39f257377de6247ab9fd67569d4170ed",
+    "scripts/prepare_update_loracle_factorized.py": "676e200f4849608c6d6c957ba1c25694826c6a1b51f45029c31c052036e91e4c",
+    "tests/test_update_loracle_factorized.py": "a92116cfda9810e435045d8603559759bda9986df214c94300d7640a14775d2e",
+    "tests/test_update_loracle_factorized_analysis.py": "e9355f5561ae48a043fbba6a57e6c6d9a936af46980f1152f2bcbf84d0fca79f"
+  },
+  "tests": {
+    "passed": 106,
+    "ruff": "clean"
+  },
+  "review": [
+    "The primary output remains the full measured-effect category, recomposed from four answers.",
+    "Both models receive identical four questions, valid option choices and physical norm; no source task, text or measured profiles enter input.",
+    "Weights use training class counts only, with equal aggregate head and within-head class weight.",
+    "All three epochs and matched shuffled baselines retained, earliest highest full-score epoch chosen after complete run.",
+    "Both training-majority baselines required; old one-question LoRAcle score is historical only.",
+    "Source/outputs/complete-dead barrier/history/weight/score/source-archive checks implemented separately.",
+    "No heldout tests collected; later inference interfaces must be adapted to the selected four-question recipe before any confirmation launch."
+  ],
+  "pending": [
+    "actual tokenizer validation in preparation",
+    "training-only GPU preflight before matched comparisons or training",
+    "new run freeze and first launch"
+  ]
+}
