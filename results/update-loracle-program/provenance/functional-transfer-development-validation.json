@@ -1,0 +1,19 @@
+{
+  "reviewed_unix": 1792212536.268536,
+  "scientific_model_not_yet_fitted": true,
+  "source_sha256": {
+    "src/gradient_interp/update_loracle_functional_transfer.py": "ff9b98dab822666ff537cbc25b41a6b6a04a3da7a541eda1f1d7977e2f4bef0a",
+    "tests/test_update_loracle_functional_transfer.py": "6fa69463fe84aefc3616ba4070654b74e239bdf43500a7547c1fc2564509933c"
+  },
+  "validation": "13 new tests plus inherited physical-profile tests. Full synthetic272-training/72-development workflow includes all344 predictions,12methods,original2000bootstrap,model/prediction locks,source archive and report. Synthetic only, not a scientific positive.",
+  "root_source_review": [
+    "Only training split accepted by fitting API; targets independently rederived from pinned original mean loss changes.",
+    "No intercept; fixed inherited ridge fraction. Independent primal/dual solutions checked; exact zero mapping and signs retained.",
+    "Every copied v5 audit/evidence hash rechecked before fitting. All272 training-target hashes pinned by original v5 plan.",
+    "Model and all own/shuffled predictions locked before joining development targets for new analysis.",
+    "All64 actual cases,8zeros,methods,composition/seed strata retained; original gates and paired bootstrap used.",
+    "Prior development familiarity and extra base-model access explicit. No reserved or fresh test use."
+  ],
+  "ruff": "passed",
+  "source_and_protocol_will_be_committed_before_real_fit": true
+}

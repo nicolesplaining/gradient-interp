@@ -1,0 +1,12 @@
+{
+  "created_unix": 1792212277.731393,
+  "status": "Planned one CPU-only training/development decoder; not executed or selected.",
+  "motivation": "V5 exact calibration improves the continuous profile but fails16/64 full labels. Its identity mapping from calibration to evaluation assumes transfer without learning it. Test whether a fixed, training-only linear map can correct systematic profile transfer.",
+  "scope": "Learned base-model-assisted functional decoder, not a trained LoRAcle checkpoint. Even if it passes development, it cannot be called a weights-only LoRAcle improvement or establish original goal completion without untouched generalization and scope review.",
+  "inputs": "Use only the original32-dimensional centered exact calibration profiles from audited v5. No source task label, update training text, evaluation prompts or targets at inference. Original physical magnitude is retained.",
+  "training": "Original272 training records only:256 actual and16zero. Targets are their separately measured32-dimensional centered evaluation loss profiles, never training-task labels. Fixed ridge kernel X@X.T; penalty .01 times mean squared feature norm over actual training updates, same rule as v3. No intercept, normalization, hyperparameter search, new data or GPU work. Zero maps exactly to zero.",
+  "prediction": "Use fixed original argmax across32 patterns and no-change if profile span<.02. No clipping, margin filtering, fitted posthoc scale or class-prior substitution. Predict both own and exactly scored norm-matched shuffled input profiles from v5.",
+  "evaluation": "All64 actual development updates plus8zeros. Compare every v5 baseline and own/shuffled model. All original full-category gates and2000 paired cluster bootstrap preserved. Report profiles, all groups, all cases and uncertainty. Model and predictions lock before analysis joins development targets. Prior familiarity with development is explicit; this is not prospective confirmation.",
+  "decision": "If this single fixed model fails, do not retune it on development or open reserved/fresh tests. Preserve complete failure and stop this exact-calibration transfer branch. If it passes, independently audit the fit and inference; only a separately frozen verified held-out implementation could test generalization. Original v5 held-out selection cannot be used unchanged.",
+  "unchanged_reserved_tests": "Neither original reserved nor fresh confirmation grid is collected or evaluated. All previous negative results remain."
+}
