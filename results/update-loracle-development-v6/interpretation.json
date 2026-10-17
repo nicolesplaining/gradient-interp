@@ -1,0 +1,121 @@
+{
+  "written_unix": 1792212717.910157,
+  "status": "Failed unchanged full development gate; exact-calibration transfer branch closed without retuning.",
+  "primary": {
+    "actual_update_n": 64,
+    "actual_update_correct": 16,
+    "actual_update_accuracy": 0.25,
+    "zero_n": 8,
+    "zero_correct": 8,
+    "zero_accuracy": 1.0,
+    "axes": {
+      "format": {
+        "n": 64,
+        "accuracy": 0.609375
+      },
+      "case": {
+        "n": 64,
+        "accuracy": 0.703125
+      },
+      "order": {
+        "n": 64,
+        "accuracy": 0.5625
+      }
+    },
+    "above_effect_floor_fraction": 1.0
+  },
+  "paired_differences": {
+    "released": {
+      "point": 0.234375,
+      "descriptive_95_interval": [
+        -0.015625,
+        0.546875
+      ]
+    },
+    "flat_majority": {
+      "point": 0.125,
+      "descriptive_95_interval": [
+        0.0,
+        0.359375
+      ]
+    },
+    "factorized_majority": {
+      "point": 0.125,
+      "descriptive_95_interval": [
+        0.0,
+        0.359375
+      ]
+    },
+    "ridge": {
+      "point": 0.25,
+      "descriptive_95_interval": [
+        0.0,
+        0.5472656249999979
+      ]
+    },
+    "epoch1": {
+      "point": 0.046875,
+      "descriptive_95_interval": [
+        -0.125,
+        0.28125
+      ]
+    },
+    "physical_profile": {
+      "point": 0.25,
+      "descriptive_95_interval": [
+        0.0,
+        0.5472656249999979
+      ]
+    },
+    "sensitivity": {
+      "point": 0.0,
+      "descriptive_95_interval": [
+        -0.10976562499999998,
+        0.140625
+      ]
+    },
+    "sensitivity_shuffled": {
+      "point": 0.21875,
+      "descriptive_95_interval": [
+        0.0,
+        0.5
+      ]
+    },
+    "functional": {
+      "point": 0.0,
+      "descriptive_95_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    "functional_shuffled": {
+      "point": 0.21875,
+      "descriptive_95_interval": [
+        0.0,
+        0.5
+      ]
+    },
+    "transfer_shuffled": {
+      "point": 0.171875,
+      "descriptive_95_interval": [
+        0.0,
+        0.421875
+      ]
+    }
+  },
+  "profile_metrics": {
+    "rmse": 0.10842038415919523,
+    "nrmse_vs_zero": 0.7025701171079783,
+    "mae": 0.07970236092685878,
+    "maximum_error": 0.7346833844027479,
+    "actual_mean_span": 0.5208931399974972,
+    "predicted_mean_span": 0.4025230491424222
+  },
+  "same_correct_cases_as_v5": true,
+  "predicted_upper": 0,
+  "measured_upper": 19,
+  "conclusion": "Fixed training-only ridge map modestly reduces profile nRMSE .734 to .703 but leaves exactly the same16/64 full descriptions correct. All8zeros correct, matched-shuffle5/64. No criterion or denominator changed.",
+  "scope": "Learned base-assisted profile mapping, not a trained LoRAcle checkpoint; reused development only.",
+  "decision": "Do not select v6, retune its penalty, promote partial-axis results or open held-out tests. Retrospective per-probe label diagnostic supports reviewing prompt context in a future weights-based interpreter. It does not establish an impossibility bound or justify dropping unstable cases.",
+  "validation": "23 new/inherited tests passed before real fit. Source/proposal committedfa21aa3. Full688 prior own/shuffled conditions audited. All272 training target hashes checked; primal/dual fit equivalence and all inference contractions agree. Model/predictions locked before new analysis target join. Scientific figure visually inspected."
+}

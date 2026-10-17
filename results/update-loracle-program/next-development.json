@@ -1,0 +1,17 @@
+{
+  "written_unix": 1792212798.1109262,
+  "status": "Chosen next development direction; not implemented, frozen or launched.",
+  "decision": "Close exact-calibration and linear-transfer branch. Return to a learned weights-based LoRAcle with explicit evaluation-prompt context.",
+  "evidence": [
+    "v5 andv6 each16/64 full descriptions, no development success.",
+    "Retrospective development complementary half-probe labels agree75/192; all4singletons agree4/64. Training shows comparable prompt dependence.",
+    "The old interpreter was not shown the four prompts that define its target. This is a plausible missing input, not proof of the cause or a guarantee of improvement."
+  ],
+  "proposed_change": "Append the exact four evaluation prompt texts to the original four-component interpreter questions for both fine-tuned and unchanged released LoRAcle. Include no probe losses, gold answers, measured effects, source composition labels or update training examples. Keep the original weight tokens and physical norm.",
+  "training": "Reuse only the original training updates and measured targets. Warm-start released interpreter, use the original v2 fixed three-epoch recipe and preserve every epoch. First inspect source and representation for correctness and train-only feasibility. No new target updates or effect relabeling.",
+  "comparison": "Released baseline must be rescored with exactly the same added prompt context and choice interface; never reuse1/64 from the old interface as the new matched primary baseline. Matched shuffled inputs, zero controls and training-only majority baselines remain.",
+  "unchanged": "Original four-probe loss target, all32full categories, .02floor, all64development denominator, >=70percent accuracy and all other point/uncertainty/heldout gates. No axis-only promotion, case dropping or success claim from development.",
+  "heldout": "Original reserved/fresh grids remain uncollected. No v5/v6 conditional selection API may be repurposed without correct new audited guard. Freeze one passing method and matched context baseline before either real test.",
+  "scope": "This would again be a learned LoRAcle-based interpreter using weights, norm and query text. It would predict finite-reference effects conditional on prompts, not universally interpretable gradients or unrestricted generation.",
+  "remaining": "Review original v2 question construction/training/export. Implement and test a single context addition and same-context released reference, write frozen plan, training-only GPU preflight, then one bounded development run on authorized H100 if checks pass."
+}

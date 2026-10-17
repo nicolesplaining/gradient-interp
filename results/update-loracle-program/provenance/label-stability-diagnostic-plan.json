@@ -1,0 +1,8 @@
+{
+  "created_unix": 1792212636.4725702,
+  "status": "Retrospective descriptive check proposed after v1-v6 aggregate results; not a new prediction experiment.",
+  "input": "All original per-probe before/after32 reference losses, separately for256actual training and64actual development cases. All16+8 zero controls retained.",
+  "method": "Recompute unchanged4-probe target. Score each of4probes with the same32-category argmax and.02 no-change floor. For every case compare all3unordered complementary2-probe partitions:01vs23,02vs13,03vs12. Report agreement, all4singleton agreement, singleton-to-original-gold agreement and complete per-case records. Report source-label versus measured-label agreement only descriptively.",
+  "no_inference": "No confidence claim from treating repeated probes or overlapping partitions as independent. This is not a Bayes error bound or a proof that prediction is impossible.",
+  "decision_rule": "Use evidence to assess whether future decoder input needs prompt context. Do not change original targets or70percent gate, drop unstable cases, relabel source tasks as effects, release tests or promote a partial endpoint."
+}

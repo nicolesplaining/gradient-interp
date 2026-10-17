@@ -17,7 +17,7 @@ nav a{display:inline-block;margin-right:20px}
 .small{font-size:14px;color:#4b5b65}
 </style>
 <h1>Can we describe what one optimizer update changes?</h1>
-<p class="status">No strong generalization result yet. Five development recipes are complete.
+<p class="status">No strong generalization result yet. Six development recipes are complete.
 The learned LoRAcle variants did not meet the original criterion. The latest base-assisted
 method gets 16 of 64 full descriptions right. Reserved and fresh confirmation sets remain
 untested.</p>
@@ -93,6 +93,28 @@ cases.</p>
 <p>Composition names describe the training batch; measured effect labels may differ.
 The following examples take the first case in each family, with no outcome-based selection.</p>
 <table><thead><tr><th>Case</th><th>Batch composition</th><th>Exact-calibration prediction</th><th>Measured effect</th></tr></thead><tbody><tr><td>development-0000</td><td>bullets/lower/reverse</td><td>bullets/lower/reverse</td><td>bullets/lower/reverse</td></tr><tr><td>development-0001</td><td>bullets/upper/original</td><td>bullets/lower/length</td><td>bullets/upper/original</td></tr><tr><td>development-0002</td><td>json/lower/length</td><td>numbered/lower/length</td><td>plain/lower/original</td></tr><tr><td>development-0008</td><td>json/upper/alphabetical</td><td>numbered/lower/length</td><td>json/upper/length</td></tr><tr><td>development-0010</td><td>numbered/lower/original</td><td>numbered/lower/length</td><td>numbered/lower/original</td></tr><tr><td>development-0005</td><td>numbered/upper/length</td><td>numbered/lower/reverse</td><td>numbered/upper/reverse</td></tr><tr><td>development-0006</td><td>plain/lower/alphabetical</td><td>numbered/lower/reverse</td><td>plain/lower/length</td></tr><tr><td>development-0004</td><td>plain/upper/reverse</td><td>numbered/lower/reverse</td><td>plain/lower/reverse</td></tr></tbody></table>
+<h2>One learned transfer map also fails the full criterion</h2>
+<p>V6 fits a fixed ridge regression from calibration loss profiles to evaluation loss profiles
+using only the original 272 training cases. It improves relative RMSE from 0.734 to 0.703, but
+the same 16/64 full descriptions remain correct. All eight zero controls are correct.
+A norm-matched shuffled update gets 5/64. The penalty was fixed before fitting
+and was not retuned.</p>
+<p>This uses saved scores and required no new GPU work. It remains a base-assisted method.
+<a href="../update-loracle-development-v6/report.html">Full v6 results and all cases</a>;
+<a href="../update-loracle-development-v6/interpretation.json">v6 decision</a>.</p>
+<h2>The measured label depends on the evaluation prompts</h2>
+<img src="label-stability.png" alt="Low agreement among prompt subsets for the same update">
+<p>In a retrospective check of all 64 development updates, the three complementary splits of
+four probes into two-prompt halves agree on the full label only 75/192 times, or 39.1%.
+All four individual probes agree for only 4/64 updates. Training probes show similar variation.</p>
+<p>These overlapping comparisons are dependent. They are not a prediction ceiling or an excuse
+to drop difficult cases. The original four-probe targets and success criteria stay unchanged.</p>
+<p>The current interpreter does not receive those evaluation prompts. This suggests a specific
+next design change: give their text to a learned weights-based interpreter and to the released
+LoRAcle baseline, while keeping effects and training-batch labels hidden. That experiment is
+not yet run. The result here establishes prompt dependence, not that context will solve it.</p>
+<p><a href="label-stability.json">Every diagnostic case and count</a>;
+<a href="provenance/label-stability-diagnostic-plan.json">Diagnostic plan</a>.</p>
 <h2>What remains unproven</h2>
 <p>No method has passed the original 70% development accuracy criterion. We have therefore not
 opened the reserved test or fresh confirmation run. A strong result still requires both independent

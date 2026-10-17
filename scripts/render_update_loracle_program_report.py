@@ -34,6 +34,8 @@ def table(headers, rows):
 def main():
     roots = {v: ROOT / f"results/update-loracle-development-v{v}" for v in range(1, 6)}
     summaries = {v: read(r / "summary.json") for v, r in roots.items()}
+    v6 = read(ROOT / "results/update-loracle-development-v6/summary.json")
+    stability = read(OUT / "label-stability.json")["summary"]
     s = summaries[5]
     cases = read(roots[5] / "all-development-cases.json")
     actual = [c for c in cases if not c["control"]]
@@ -68,6 +70,44 @@ def main():
     ax.set_title("Same 64 development updates; no method meets the full criterion")
     fig.tight_layout()
     fig.savefig(OUT / "development-comparison.png", dpi=180)
+    plt.close(fig)
+
+    fig, ax = plt.subplots(figsize=(10, 5))
+    labels = [
+        "All four prompts agree",
+        "Two-prompt halves agree",
+        "One prompt agrees with four-prompt label",
+    ]
+    for offset, split, name, color in (
+        (-0.18, "train", "Training", "#8796a2"),
+        (0.18, "development", "Development", "#21658c"),
+    ):
+        st = stability[split]
+        counts = [
+            st["all_four_singletons_agree"],
+            st["half_pair_agreements"],
+            st["singleton_gold_matches"],
+        ]
+        denominators = [
+            st["actual_cases"],
+            st["half_pair_denominator"],
+            st["singleton_gold_denominator"],
+        ]
+        y = [100 * n / d for n, d in zip(counts, denominators, strict=True)]
+        ax.barh(np.arange(3) + offset, y, height=0.34, label=name, color=color)
+        for i, (n, d, v) in enumerate(zip(counts, denominators, y, strict=True)):
+            ax.text(v + 1, i + offset, f"{n}/{d}", va="center", fontsize=10)
+    ax.set(
+        yticks=np.arange(3),
+        yticklabels=labels,
+        xlim=(0, 100),
+        xlabel="Agreement (%)",
+        title="Same update, different evaluation prompts",
+    )
+    ax.invert_yaxis()
+    ax.legend(frameon=False, loc="lower right")
+    fig.tight_layout()
+    fig.savefig(OUT / "label-stability.png", dpi=180)
     plt.close(fig)
 
     target = np.asarray([c["measured"]["effect"]["centered_improvements"] for c in actual])
@@ -149,7 +189,7 @@ nav a{display:inline-block;margin-right:20px}
 .small{font-size:14px;color:#4b5b65}
 </style>
 <h1>Can we describe what one optimizer update changes?</h1>
-<p class="status">No strong generalization result yet. Five development recipes are complete.
+<p class="status">No strong generalization result yet. Six development recipes are complete.
 The learned LoRAcle variants did not meet the original criterion. The latest base-assisted
 method gets 16 of 64 full descriptions right. Reserved and fresh confirmation sets remain
 untested.</p>
@@ -250,6 +290,34 @@ The scientific run and automatic audit are complete. No worker will be resumed.<
 <p class="small">This page presents the existing audits and results. It introduces no new endpoint,
 filter, fit or experiment. All raw predictions and full cases remain in the linked
 reports.</p></html>"""
+    )
+    assert v6["metrics"]["transfer"]["actual_update_correct"] == 16
+    assert not v6["all_development_gates_pass"]
+    extra = """<h2>One learned transfer map also fails the full criterion</h2>
+<p>V6 fits a fixed ridge regression from calibration loss profiles to evaluation loss profiles
+using only the original 272 training cases. It improves relative RMSE from 0.734 to 0.703, but
+the same 16/64 full descriptions remain correct. All eight zero controls are correct.
+A norm-matched shuffled update gets 5/64. The penalty was fixed before fitting
+and was not retuned.</p>
+<p>This uses saved scores and required no new GPU work. It remains a base-assisted method.
+<a href="../update-loracle-development-v6/report.html">Full v6 results and all cases</a>;
+<a href="../update-loracle-development-v6/interpretation.json">v6 decision</a>.</p>
+<h2>The measured label depends on the evaluation prompts</h2>
+<img src="label-stability.png" alt="Low agreement among prompt subsets for the same update">
+<p>In a retrospective check of all 64 development updates, the three complementary splits of
+four probes into two-prompt halves agree on the full label only 75/192 times, or 39.1%.
+All four individual probes agree for only 4/64 updates. Training probes show similar variation.</p>
+<p>These overlapping comparisons are dependent. They are not a prediction ceiling or an excuse
+to drop difficult cases. The original four-probe targets and success criteria stay unchanged.</p>
+<p>The current interpreter does not receive those evaluation prompts. This suggests a specific
+next design change: give their text to a learned weights-based interpreter and to the released
+LoRAcle baseline, while keeping effects and training-batch labels hidden. That experiment is
+not yet run. The result here establishes prompt dependence, not that context will solve it.</p>
+<p><a href="label-stability.json">Every diagnostic case and count</a>;
+<a href="provenance/label-stability-diagnostic-plan.json">Diagnostic plan</a>.</p>
+"""
+    report = report.replace(
+        "<h2>What remains unproven</h2>", extra + "<h2>What remains unproven</h2>"
     )
     (OUT / "report.html").write_text(report)
 

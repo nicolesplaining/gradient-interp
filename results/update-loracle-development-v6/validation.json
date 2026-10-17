@@ -1,0 +1,19 @@
+{
+  "finished_unix": 1792212546.613795,
+  "passed": true,
+  "all_original_v5_audit_and_copy_hashes_verified": true,
+  "all272_training_targets_hash_verified": true,
+  "independent_primal_dual_fit_agreement": true,
+  "zero_input_exactly_zero": true,
+  "model_and_all_predictions_locked_before_new_development_target_join": true,
+  "all12_methods_all64_actual_all8_zeros_retained": true,
+  "no_retraining_retuning_or_reserved_cases": true,
+  "files_sha256": {
+    "summary.json": "33d31aba5a9b2766cd8c8b2e86bd708e0dbcfb950f76fa6af547619483e8cc27",
+    "all-development-cases.json": "fa414939644bc2240515387fb485e6d2d72be08eb8040d44f6c5654a1d7fe9fc",
+    "model-lock.json": "2109d5118e4d77401e952be1b0616224277f512a334dbb7870eeb51f1893c930",
+    "plan.json": "024a0263c478f70e9a9afc8b096c6761b1de8b0d0153b7d58b77c03180b0770b",
+    "executed-analysis.py": "ff9b98dab822666ff537cbc25b41a6b6a04a3da7a541eda1f1d7977e2f4bef0a",
+    "predictions-lock.json": "432208a2f744f1a8df78ccdfe3910621e1fbc937d7e8beb8a2c2e3bd6edf99c4"
+  }
+}

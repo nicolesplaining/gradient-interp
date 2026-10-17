@@ -1,0 +1,10 @@
+{
+  "written_unix": 1792212798.110744,
+  "all344_own_and_shuffled_predictions_independently_recontracted": true,
+  "maximum_error": 1.1840528557627295e-13,
+  "original_executed_source_hash_matches_frozen_plan": true,
+  "all12_methods_and_all_source_seed_strata_read": true,
+  "scientific_plot_visually_inspected": true,
+  "all_original_gates_failed_no_selection": true,
+  "no_reserved_test_or_new_gpu_run": true
+}
