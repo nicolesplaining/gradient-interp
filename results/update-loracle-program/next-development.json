@@ -1,6 +1,6 @@
 {
   "written_unix": 1792212798.1109262,
-  "status": "Chosen next development direction; not implemented, frozen or launched.",
+  "status": "Running after successful actual-model synthetic-context preflight; scientific results unread.",
   "decision": "Close exact-calibration and linear-transfer branch. Return to a learned weights-based LoRAcle with explicit evaluation-prompt context.",
   "evidence": [
     "v5 andv6 each16/64 full descriptions, no development success.",
@@ -13,5 +13,19 @@
   "unchanged": "Original four-probe loss target, all32full categories, .02floor, all64development denominator, >=70percent accuracy and all other point/uncertainty/heldout gates. No axis-only promotion, case dropping or success claim from development.",
   "heldout": "Original reserved/fresh grids remain uncollected. No v5/v6 conditional selection API may be repurposed without correct new audited guard. Freeze one passing method and matched context baseline before either real test.",
   "scope": "This would again be a learned LoRAcle-based interpreter using weights, norm and query text. It would predict finite-reference effects conditional on prompts, not universally interpretable gradients or unrestricted generation.",
-  "remaining": "Review original v2 question construction/training/export. Implement and test a single context addition and same-context released reference, write frozen plan, training-only GPU preflight, then one bounded development run on authorized H100 if checks pass."
+  "remaining": "Wait for all three epochs and matched released/shuffled predictions, then require normal complete/dead and full audit before analysis. No active outcome reading. Reserved/fresh tests stay untouched unless all unchanged development gates pass.",
+  "execution": {
+    "source_commit": "459a19e410765dfba12e9816de5f67d141fcff65",
+    "root": "runs/update-loracle-contextual-v7",
+    "host": "68.209.75.76",
+    "controller_pid": 295735,
+    "worker_pid": 295745,
+    "started_unix": 1792213699.2888522,
+    "deadline_unix": 1792256899.2888522,
+    "plan_sha256": "901b18889e3faa880868cadfbb692cf7085cc452bf82034c03df84727a697222",
+    "scientific_outputs_read": false,
+    "preflight_passed": true,
+    "audit_after_normal_completion": true
+  },
+  "updated_unix": 1792213915.016733
 }

@@ -1,0 +1,8 @@
+{
+  "pid": 295901,
+  "started_unix": 1792213895.3684316,
+  "helper_sha256": "872571259543d3d8e51070e95b2602e3d7477d337a53eaccecfad6622f62f3f9",
+  "automatic_retry": false,
+  "preflight_passed_before_handoff": true,
+  "normal_complete_dead_gate": true
+}

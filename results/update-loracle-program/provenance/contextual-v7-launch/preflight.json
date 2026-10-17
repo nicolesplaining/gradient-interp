@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "finished_unix": 1792213776.2884715,
+  "training_only": true,
+  "synthetic_context_only": true,
+  "covers_frozen_input_lengths": true,
+  "question_sha256": [
+    "e8f9dc1d45e60c58f83d43b8443794d35715af6d54739623c58a0b3f2cf224da",
+    "bc713af6ca330b5837205abe8a053039b109d9433d43cea7c22ba839c4cd968d",
+    "493a326b78a1efa1e64f271a6662ce823ea2094c433129f79473533239594283",
+    "2f9614e2a87bb03b45777c599734504c93f888ced06763f58df905149959324d"
+  ],
+  "heads": [
+    "change",
+    "format",
+    "case",
+    "order"
+  ],
+  "trainable_tensors": 560,
+  "trainable_parameters": 1027604480,
+  "all_gradients_finite": true,
+  "frozen_base_unchanged": true,
+  "bit_exact_score_restore": true,
+  "bit_exact_adapter_restore": true,
+  "hook_calls": [
+    2,
+    2,
+    2,
+    2
+  ],
+  "input_tokens": [
+    5233,
+    5247,
+    5236,
+    5252
+  ],
+  "gradient_norm": 18.256074905395508,
+  "peak_allocated_bytes": 46342906368
+}

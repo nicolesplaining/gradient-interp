@@ -1,0 +1,10 @@
+{
+  "checked_unix": 1792213573.032916,
+  "passed": true,
+  "source_commit": "268629bf5484e0e6b119bfd54681e13ea4060e2f",
+  "source_archive_sha256": "63539bd0c863bfae87c7f575b0ef534e6d135935a6b61d3631f3c9ea75957464",
+  "verified_source_files": 97,
+  "all_previous_workers_dead": true,
+  "gpu_free": true,
+  "new_root_absent": true
+}

@@ -309,12 +309,15 @@ four probes into two-prompt halves agree on the full label only 75/192 times, or
 All four individual probes agree for only 4/64 updates. Training probes show similar variation.</p>
 <p>These overlapping comparisons are dependent. They are not a prediction ceiling or an excuse
 to drop difficult cases. The original four-probe targets and success criteria stay unchanged.</p>
-<p>The current interpreter does not receive those evaluation prompts. This suggests a specific
-next design change: give their text to a learned weights-based interpreter and to the released
-LoRAcle baseline, while keeping effects and training-batch labels hidden. That experiment is
-not yet run. The result here establishes prompt dependence, not that context will solve it.</p>
+<p>The earlier interpreter did not receive those evaluation prompts. A new comparison is
+running with the four prompt texts supplied to both the trained interpreter and released
+LoRAcle. Reference answers, measured effects and training-batch labels remain hidden.
+The training recipe and full-category success criteria are unchanged. There are no results
+from this comparison yet. The evidence above establishes prompt dependence; it does not
+establish that adding context will improve prediction.</p>
 <p><a href="label-stability.json">Every diagnostic case and count</a>;
-<a href="provenance/label-stability-diagnostic-plan.json">Diagnostic plan</a>.</p>
+<a href="provenance/label-stability-diagnostic-plan.json">Diagnostic plan</a>;
+<a href="next-development.json">Current study and its fixed comparison</a>.</p>
 """
     report = report.replace(
         "<h2>What remains unproven</h2>", extra + "<h2>What remains unproven</h2>"

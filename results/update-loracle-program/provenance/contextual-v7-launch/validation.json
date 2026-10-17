@@ -1,0 +1,29 @@
+{
+  "recorded_unix": 1792213915.0164769,
+  "scientific_source_commit": "459a19e410765dfba12e9816de5f67d141fcff65",
+  "training_only_preflight_passed": true,
+  "full_grid_tokenizer_validated": 1376,
+  "maximum_actual_input_tokens": 4979,
+  "synthetic_max_input_tokens": 5252,
+  "trainable_interpreter_tensors": 560,
+  "trainable_interpreter_parameters": 1027604480,
+  "peak_preflight_allocated_bytes": 46342906368,
+  "all_head_backward_hooks_present": true,
+  "bit_exact_adapter_and_scores_restored": true,
+  "frozen_base_unchanged": true,
+  "scientific_results_read": false,
+  "reserved_or_fresh_data_collected_or_scored": false,
+  "new_scientific_workers": 1,
+  "automatic_retries": 0,
+  "archive_verified_before_remote_checkout": true,
+  "files_sha256": {
+    "audit-handoff-launch.json": "41f3b6b2a5c2901fc8a73bb3954a5d2886b3bd9a5a6875adc351adb8c9f02033",
+    "preparation.json": "a6751cc491ab9c8764b36e4a3f398227427c776d03d44507c93c0a596eb035c0",
+    "plan.json": "901b18889e3faa880868cadfbb692cf7085cc452bf82034c03df84727a697222",
+    "archive-verification-before-checkout.json": "5f662184a46e1c441d134bab5416bff0d88378749854a30a7e4c1ec85655b7e2",
+    "launch.json": "45e569f71e3e87fc845d1e5f63fedea3d5bc1b038804cdd9215dfc59f52e7c1c",
+    "preflight.json": "49f9516a5d9f71e4a58b6dc8ddee22011484a771e55a2979ee10da8f6d083674",
+    "analysis-plan.json": "10922e2298a925d86edd0cac4aa670228b40542fbce5fe75a8c7e6700d224118",
+    "controller-at-preflight.json": "d37af633bd5fe678a0c60d9508f79a136288ec8a1706448dd8be77b5f7feae0c"
+  }
+}
