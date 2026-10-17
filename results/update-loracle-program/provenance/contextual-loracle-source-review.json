@@ -1,0 +1,29 @@
+{
+  "reviewed_unix": 1792213572.0118248,
+  "recipe": "contextual_factorized_v7",
+  "scientific_outputs_exist": false,
+  "original_worker_unchanged": true,
+  "tests": {
+    "command": ".venv/bin/python -m pytest -q tests/test_update_loracle_contextual.py tests/test_update_loracle_contextual_analysis.py tests/test_update_loracle_factorized.py tests/test_update_loracle_factorized_analysis.py",
+    "passed": 38,
+    "seconds": 3.37
+  },
+  "ruff": "passed",
+  "root_review": [
+    "Only four query texts are added; direct input access allowlist excludes reference answers, source pattern, batches and labels.",
+    "The same numerical helpers, targets, option order, balanced weights, optimizer schedule and 780-step recipe as v2 are retained.",
+    "Actual tiny CPU loop agrees with an independent batched-CE/AdamW calculation using original targets; all epochs and scores are retained.",
+    "Direction permutation preserves recipient context and magnitude; matched released baseline is rescored.",
+    "Actual question SHA256 recorded for all training and inference calls and independently checked against original query data.",
+    "Both audit and analysis refuse live, failed or retried workers before scientific output reads.",
+    "Preparation checks all1376 input lengths using pinned tokenizer and synthetic-context GPU preflight covers the maximum.",
+    "No new real reserved/fresh data generated or accessed; all original criteria retained."
+  ],
+  "source_sha256": {
+    "src/gradient_interp/update_loracle_contextual.py": "e2f86c780ad04c8a32d193e6e96ce13aab20440788956201c9bc35e8fbe364ca",
+    "src/gradient_interp/update_loracle_contextual_analysis.py": "68fd8eb9cc6bd3f283aad9479e4ef2e1305b84a121fd358ee696b44becf12e22",
+    "scripts/prepare_update_loracle_contextual.py": "8322031ae7e33e0841d032a9894e45f07aa982ff3a72cd6c82896a7da3b769ce",
+    "tests/test_update_loracle_contextual.py": "cc7b03ee1122bd1a5337b9d4a19171665182a55cfae8a51770a5cb90b7d77189",
+    "tests/test_update_loracle_contextual_analysis.py": "a5023f4d799eb2303cde1e95151ff0260c258740953db965e9eb10d315feb39a"
+  }
+}

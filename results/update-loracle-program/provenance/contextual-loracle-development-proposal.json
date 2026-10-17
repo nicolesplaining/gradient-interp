@@ -1,0 +1,24 @@
+{
+  "created_unix": 1792213123.7049432,
+  "recipe": "contextual_factorized_v7",
+  "status": "Implementation and training-only preflight pending; no new interpreter results.",
+  "objective": "Train an update-specific LoRAcle that generalizes to measured effects conditional on evaluation prompts, retaining all original success criteria.",
+  "motivation": "v1-v6 fail full-category development. Existing per-probe analysis shows strong prompt dependence. The old interpreter never saw the prompts defining its target. Adding those query texts is a justified input change, not a target or threshold change.",
+  "only_scientific_change_from_v2": "Add the same four exact evaluation prompt texts to every component question for both released and fine-tuned interpreters. Preserve recipient prompt context for shuffled-direction controls.",
+  "forbidden_input": "No reference answers, measured losses/effect labels, update training examples, source task labels or outcomes in the interpreter prompt. The four probe texts are allowed query context. Raw weights and physical norm remain.",
+  "data": "Original audited272training and72development updates; no new target training or data. Original32patterns,4-probe mean CE target, .02floor,64actual and8zero development denominator.",
+  "training": "Same v2 released rank256rsLoRA warm start,3epochs,1040weighted component questions/epoch,780optimizersteps,LR3e-5,effectivebatch4,weightdecay.01,clip1,warmup39steps,originalTRAINING_SEED2026101681. All3epochs retained. Class weights calculated solely from original training labels.",
+  "matched_baseline": "Re-score unchanged released LoRAcle on exactly the new context-bearing questions with valid-head option likelihood. Do not use old1/64 as the new primary baseline. Same shuffled token donor mapping and physical norm; zero controls and both training majorities retained.",
+  "selection": "Earliest highest full-category epoch after all3epochs finish. No partial result reading or early stopping. 2000original paired crossed bootstrap, descriptive intervals only.",
+  "development_gates": {
+    "accuracy": 0.7,
+    "released_advantage": 0.2,
+    "effect_coverage": 0.8,
+    "zero_accuracy": 0.9,
+    "both_majority_advantages": 0.1,
+    "matched_shuffle_advantage": 0.1
+  },
+  "confirmation": "Only a fully passing audited development method may be frozen for original reserved and fresh grids. All original>=70accuracy,>=20ppadvantage and simultaneous lowerbounds>60accuracy/>10ppadvantage remain. New context-bearing matched baseline required there too. No original heldout accesses now.",
+  "execution": "One new output root,one bounded12hour first-launch controller on suppliedH10068; no resumes,downloads,agents or rentals. Verify oldsourcearchive beforecheckoutadvance. Training-only full-architecture synthetic-context preflight before any new scientific inference or training.",
+  "limitations": "Chosen after repeated development failures; no confirmation claim. Query-conditioned finite-reference likelihood winner, not unrestricted generated behavior or arbitrary checkpoints. Prompt context may not resolve failure."
+}
