@@ -1,0 +1,42 @@
+{
+  "reviewed_unix": 1792214938.586882,
+  "status": "conditional implementation tested; no real held-out preparation or launch",
+  "active_scientific_source": "459a19e410765dfba12e9816de5f67d141fcff65",
+  "active_source_files_verified_unchanged": 104,
+  "active_scientific_outputs_read": false,
+  "real_reserved_or_fresh_updates_collected": 0,
+  "real_reserved_or_fresh_interpreter_calls": 0,
+  "real_reserved_or_fresh_probe_measurements": 0,
+  "validation": {
+    "tests_passed": 64,
+    "seconds": 17.17,
+    "ruff": "passed",
+    "command": ".venv/bin/python -m pytest -q tests/test_prepare_update_loracle_contextual_heldout.py tests/test_update_loracle_contextual_inference.py tests/test_update_loracle_contextual_heldout.py tests/test_update_loracle_contextual.py tests/test_update_loracle_contextual_analysis.py tests/test_update_loracle_confirmation_stats.py tests/test_update_loracle_confirmation_data.py",
+    "full_cpu_fixture": "272 synthetic cases through preflight, updates, matched predictions, measurements, audit and original 4000-replicate analysis; fake native weights, fake interpreter and fake CE only",
+    "failure_cases": "Live/failed/retried run, failed or summary-forged development gates, altered context/unused epoch/checkpoint/evidence, missing or modified prediction locks, wrong controller module and uncovered context lengths are refused.",
+    "actual_gpu_validation": "Pending; must use training-only inputs after genuine audited development success. No claim of passing GPU confirmation preflight."
+  },
+  "root_source_review": [
+    "Original active training and analysis files are unchanged; separate modules implement conditional release and confirmation.",
+    "Selection independently recomputes all 12 method metrics and all three epochs, earliest best epoch and every original gate before writing the model lock.",
+    "Selection binds frozen analysis source, complete collection and development audits, inference interface dependencies and selected native adapter hashes.",
+    "Confirmation uses the original reserved cases and deterministic original fresh draw, original one-step target update and measurement routines, all thresholds and uncertainty rules without adjustment.",
+    "Interpreter receives only native weight direction tokens, physical norm, options and the exact four query prompt texts. Reference answers, source task, batch examples and measured effects are excluded.",
+    "Released and adapted models receive identical context. Token permutations preserve recipient context and norm.",
+    "All 1088 actual query lengths are checked before any held-out interpreter call; prediction locks bind input text, actual lengths and all methods before any held-out probe measurement.",
+    "Training-only preflight requires exact released and selected adapter reload scores and query-length coverage. Subsequent audit checks every actual head question hash and input length.",
+    "Controller and analysis require one successful four-stage run, no retries, dead processes and immutable twelve-hour deadline. Original native encoding, update norms, source/input/output hashes and restoration checks are retained.",
+    "Unchanged confirmation statistics retain all weak updates and zero controls, both training majorities, released baseline, shuffled directions and both original untouched grids."
+  ],
+  "source_sha256": {
+    "src/gradient_interp/update_loracle_contextual_inference.py": "aaea2ef2fa288a4adc9a238a1b72c67a96e865ee18b9b4b55b10b9a60d38cbd6",
+    "src/gradient_interp/update_loracle_contextual_confirmation_data.py": "09fb9997072355ea5b9a780d1bb11d7686d80369f888fe804086538abd6172a3",
+    "src/gradient_interp/update_loracle_contextual_evaluation_run.py": "ac74df0f1f16677a4315bbae8280d6e13f5adbf7bc540457f0ea6711379f580f",
+    "src/gradient_interp/update_loracle_contextual_heldout.py": "7c95da205c0283ed5bb9cb5a0cfd3ff53b3bd0447b63e7dc7acc832267456dc2",
+    "src/gradient_interp/update_loracle_contextual_heldout_analysis.py": "e4003c6c1e605c5ecad27260accdeaad8a8f670d6687beecdcc039885cd9095a",
+    "scripts/prepare_update_loracle_contextual_heldout.py": "51a14c954847e404ca749ff87ce1444439d1144d7e1e22f8e27dce2d617cb545",
+    "tests/test_prepare_update_loracle_contextual_heldout.py": "ad59ddde63b3156a8f02472a522e214b540253b8ae57e9c6e8547eeaff510956",
+    "tests/test_update_loracle_contextual_inference.py": "6121a928ee102206e02e553f869f6801b9f2c859b808d697ed6830eab9ef8b96",
+    "tests/test_update_loracle_contextual_heldout.py": "4b9877c3a0ee4645435b362f7816f25cec010140c89d34a2d14e89e8d65b90c9"
+  }
+}
