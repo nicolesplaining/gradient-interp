@@ -1,0 +1,108 @@
+<!doctype html><html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Interpreting one optimizer update: evidence so far</title>
+<style>body{font:17px/1.6 system-ui,sans-serif;color:#203039;background:#fafaf8;
+max-width:1100px;margin:40px auto;padding:0 24px 70px}
+h1{line-height:1.15;font-size:38px}
+h2{margin-top:42px;font-size:25px}
+img{width:100%;background:white}
+table{border-collapse:collapse;width:100%;font-size:15px;margin:22px 0}
+td,th{padding:10px;text-align:left;border-bottom:1px solid #d9dedf;vertical-align:top}
+th{background:#eef2f3}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#eef2f3;
+padding:20px;font:14px/1.5 ui-monospace,monospace}
+a{color:#176288}
+nav a{display:inline-block;margin-right:20px}
+.status{border-left:5px solid #b87c39;padding:10px 20px;background:#fff5e5}
+.small{font-size:14px;color:#4b5b65}
+</style>
+<h1>Can we describe what one optimizer update changes?</h1>
+<p class="status">No strong generalization result yet. Five development recipes are complete.
+The learned LoRAcle variants did not meet the original criterion. The latest base-assisted
+method gets 16 of 64 full descriptions right. Reserved and fresh confirmation sets remain
+untested.</p>
+<p>We want to read a small weight change and say which behavior it makes more likely. The test uses
+Qwen3-14B and one AdamW update on four examples, with learning rate 0.0002. We update a rank-16
+LoRA adapter across all seven module types. There are 560 trainable tensors and 64,225,280
+parameters.
+These are first updates from fresh adapters, not arbitrary steps later in training.</p>
+<h2>What counts as a correct description?</h2>
+<p>We score 32 possible reference-answer patterns on four separate prompts, before and after
+the update.
+The patterns combine four layouts, two letter cases and four orderings. The target is the complete
+pattern whose mean completion loss improves most relative to the other patterns. A correct layout
+with the wrong case or order does not count as a full match. Loss includes the original end
+token.</p>
+<p>This is a measurement of likelihood assigned to fixed answers. It does not establish how often
+the model would freely generate that behavior, or whether its answers are generally correct.</p>
+<h2>All completed development methods</h2>
+<img src="development-comparison.png" alt="All main methods fall below 70% complete-pattern
+accuracy">
+<table><thead><tr><th>Method</th><th>Actual updates correct</th><th>Zero controls correct</th><th>Inference access</th></tr></thead><tbody><tr><td>Released LoRAcle</td><td>1/64</td><td>4/8</td><td>Weights and physical norm</td></tr><tr><td>Training majority</td><td>8/64</td><td>0/8</td><td>Training labels only</td></tr><tr><td>Fine-tuned LoRAcle, v2</td><td>13/64</td><td>8/8</td><td>Weights and physical norm</td></tr><tr><td>Physical-update regression, v3</td><td>0/64</td><td>8/8</td><td>Weight changes</td></tr><tr><td>Linear calibration, v4</td><td>16/64</td><td>8/8</td><td>Base model and fixed prompt library</td></tr><tr><td>Exact calibration, v5</td><td>16/64</td><td>8/8</td><td>Base model and fixed prompt library</td></tr><tr><td>Exact calibration, shuffled input</td><td>2/64</td><td>8/8</td><td>Norm-matched donor update</td></tr></tbody></table>
+<p>The first fine-tuned recipe, v1, reached 12/64 at its selected epoch. It used a single 33-choice
+question. V2 uses four component questions, and all three of its saved epochs reached 13/64.
+The plot uses the matched four-question released baseline for v2 onward. Choosing an epoch on
+development is not independent confirmation.</p>
+<p>The exact-calibration advantage over released LoRAcle is 23.44 percentage points, with a
+descriptive
+paired 95% interval of -1.56 to 54.69 points. All methods reuse the same 64 development updates,
+so these are not five independent replications. All 64 updates exceed the fixed effect floor.</p>
+<h2>What changed in the latest test?</h2>
+<p>V4 estimates the loss change from a gradient dot product. V5 actually applies the saved update
+and scores the same eight fixed calibration prompts. Both then predict effects on separate prompts.
+The calibration prompts and words were fixed before v4 and are distinct from the evaluation
+probes.</p>
+<img src="effect-size-comparison.png" alt="Exact calibration reduces loss-profile error but
+still makes substantial transfer errors">
+<p>Exact scoring reduces relative RMSE from 1.817 to 0.734. One means the error of always predicting
+zero effect. Full-description accuracy stays at 16/64: two errors become correct and two formerly
+correct predictions become wrong. Every predicted category is lowercase, while 19 measured
+categories
+are uppercase. Removing the linear approximation alone does not solve transfer.</p>
+<p>These calibration methods require the pinned base model and a task-specific prompt library.
+They are separate base-assisted predictors, not improved learned LoRAcle checkpoints. Their extra
+access and compute must accompany any comparison with LoRAcle.</p>
+<h2>An actual input and output</h2>
+<p>The first development case is shown without selecting it for success. One of its four training
+examples was:</p><pre>Please show these labels in whichever arrangement you prefer: tobisi, nuziwat, tuzifawuca, wopoku.
+
+Training answer:
+- wopoku
+- tuzifawuca
+- nuziwat
+- tobisi</pre>
+<p>We took one optimizer step on that batch. The interpreter received the weight-change encoding,
+its physical norm and the question. It did not receive those four training examples or their
+task label.
+Here is the actual formatting question:</p><pre>These weights encode one local optimizer update to a fixed Qwen3-14B model. Its effective weight-change Frobenius norm is 1.32488. On new label-list prompts, compare 32 response patterns: comma-separated, bullet, numbered or JSON lists; lowercase or uppercase; original, reverse, alphabetical or increasing word-length order with alphabetical ties. A pattern&#x27;s score is its average change in mean completion log probability, centered across all 32 patterns. If there is a detectable change, what list formatting does the single pattern with the highest score use? Identify this part of the most-improved full pattern, rather than averaging scores over all patterns sharing that part. Reply with only the option ID.
+A. A JSON array.
+B. A bullet list.
+C. A comma-separated list.
+D. A numbered list.</pre>
+<p>Released and fine-tuned LoRAcle receive 4,480 direction tokens of width 5,120, plus text.
+We compare option-token likelihoods rather than judging freely written explanations.
+The exact-calibration predictor instead scores its fixed library with the updated base model.</p>
+<p>One of the four separate evaluation prompts was:</p><pre>Return the labels below, with your own choice of layout and order. Labels: hesagasab, befizel, pizejeh, razuzikiv.</pre>
+<table><thead><tr><th>Method</th><th>Predicted complete pattern</th></tr></thead><tbody><tr><td>Released LoRAcle</td><td>json/upper/length</td></tr><tr><td>Training majority</td><td>bullets/lower/reverse</td></tr><tr><td>Fine-tuned LoRAcle, v2</td><td>bullets/lower/reverse</td></tr><tr><td>Physical-update regression, v3</td><td>no_change</td></tr><tr><td>Linear calibration, v4</td><td>bullets/lower/reverse</td></tr><tr><td>Exact calibration, v5</td><td>bullets/lower/reverse</td></tr><tr><td>Exact calibration, shuffled input</td><td>numbered/lower/length</td></tr><tr><td>Measured on four separate probes</td><td>bullets/lower/reverse</td></tr></tbody></table>
+<p>The measured bullet/lowercase/reverse pattern improves by 0.27469 nats per token relative to
+the average pattern change. Its lead over the runner-up is only 0.01342. A small lead can change
+the winning category even when the overall loss profile is reasonably close. We retain such
+cases.</p>
+<h2>Failures across every development family</h2>
+<table><thead><tr><th>Training composition</th><th>Released</th><th>Fine-tuned v2</th><th>Linear v4</th><th>Exact v5</th></tr></thead><tbody><tr><td>bullets/lower/reverse</td><td>0/8</td><td>3/8</td><td>8/8</td><td>8/8</td></tr><tr><td>bullets/upper/original</td><td>0/8</td><td>0/8</td><td>0/8</td><td>0/8</td></tr><tr><td>json/lower/length</td><td>1/8</td><td>0/8</td><td>0/8</td><td>0/8</td></tr><tr><td>json/upper/alphabetical</td><td>0/8</td><td>0/8</td><td>0/8</td><td>0/8</td></tr><tr><td>numbered/lower/original</td><td>0/8</td><td>7/8</td><td>7/8</td><td>5/8</td></tr><tr><td>numbered/upper/length</td><td>0/8</td><td>1/8</td><td>1/8</td><td>1/8</td></tr><tr><td>plain/lower/alphabetical</td><td>0/8</td><td>2/8</td><td>0/8</td><td>2/8</td></tr><tr><td>plain/upper/reverse</td><td>0/8</td><td>0/8</td><td>0/8</td><td>0/8</td></tr></tbody></table>
+<p>Composition names describe the training batch; measured effect labels may differ.
+The following examples take the first case in each family, with no outcome-based selection.</p>
+<table><thead><tr><th>Case</th><th>Batch composition</th><th>Exact-calibration prediction</th><th>Measured effect</th></tr></thead><tbody><tr><td>development-0000</td><td>bullets/lower/reverse</td><td>bullets/lower/reverse</td><td>bullets/lower/reverse</td></tr><tr><td>development-0001</td><td>bullets/upper/original</td><td>bullets/lower/length</td><td>bullets/upper/original</td></tr><tr><td>development-0002</td><td>json/lower/length</td><td>numbered/lower/length</td><td>plain/lower/original</td></tr><tr><td>development-0008</td><td>json/upper/alphabetical</td><td>numbered/lower/length</td><td>json/upper/length</td></tr><tr><td>development-0010</td><td>numbered/lower/original</td><td>numbered/lower/length</td><td>numbered/lower/original</td></tr><tr><td>development-0005</td><td>numbered/upper/length</td><td>numbered/lower/reverse</td><td>numbered/upper/reverse</td></tr><tr><td>development-0006</td><td>plain/lower/alphabetical</td><td>numbered/lower/reverse</td><td>plain/lower/length</td></tr><tr><td>development-0004</td><td>plain/upper/reverse</td><td>numbered/lower/reverse</td><td>plain/lower/reverse</td></tr></tbody></table>
+<h2>What remains unproven</h2>
+<p>No method has passed the original 70% development accuracy criterion. We have therefore not
+opened the reserved test or fresh confirmation run. A strong result still requires both independent
+grids, complete-category accuracy, superiority over the same released baseline, zero and shuffled
+controls, and the predeclared uncertainty bounds. Partial-axis gains do not replace that test.</p>
+<p>The latest audit passed all 344 native-update records and 688 own/shuffled scoring conditions,
+including four independent rescoring checks, source and output hashes, restoration and deadlines.
+The scientific run and automatic audit are complete. No worker will be resumed.</p>
+<nav><a href='../update-loracle-development-v1/report.html'>v1 full report</a> <a href='../update-loracle-development-v2/report.html'>v2 full report</a> <a href='../update-loracle-development-v3/report.html'>v3 full report</a> <a href='../update-loracle-development-v4/report.html'>v4 full report</a> <a href='../update-loracle-development-v5/report.html'>v5 full report</a><a href="protocol.json">Original protocol</a>
+<a href="../update-loracle-development-v5/interpretation.json">Latest interpretation</a></nav>
+<p class="small">This page presents the existing audits and results. It introduces no new endpoint,
+filter, fit or experiment. All raw predictions and full cases remain in the linked
+reports.</p></html>

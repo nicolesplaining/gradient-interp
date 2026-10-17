@@ -1,0 +1,139 @@
+{
+  "written_unix": 1792212084.778843,
+  "status": "failed unchanged development criterion; no reserved/fresh collection or evaluation",
+  "headline": "Exact calibration improves loss-profile accuracy but still describes only16/64 complete effects.",
+  "primary": {
+    "actual_update_n": 64,
+    "actual_update_correct": 16,
+    "actual_update_accuracy": 0.25,
+    "zero_n": 8,
+    "zero_correct": 8,
+    "zero_accuracy": 1.0,
+    "axes": {
+      "format": {
+        "n": 64,
+        "accuracy": 0.578125
+      },
+      "case": {
+        "n": 64,
+        "accuracy": 0.703125
+      },
+      "order": {
+        "n": 64,
+        "accuracy": 0.5625
+      }
+    },
+    "above_effect_floor_fraction": 1.0
+  },
+  "all_development_gates_pass": false,
+  "paired_differences": {
+    "released": {
+      "point": 0.234375,
+      "descriptive_95_interval": [
+        -0.015625,
+        0.546875
+      ]
+    },
+    "flat_majority": {
+      "point": 0.125,
+      "descriptive_95_interval": [
+        0.0,
+        0.359375
+      ]
+    },
+    "factorized_majority": {
+      "point": 0.125,
+      "descriptive_95_interval": [
+        0.0,
+        0.359375
+      ]
+    },
+    "ridge": {
+      "point": 0.25,
+      "descriptive_95_interval": [
+        0.0,
+        0.5472656249999979
+      ]
+    },
+    "epoch1": {
+      "point": 0.046875,
+      "descriptive_95_interval": [
+        -0.125,
+        0.28125
+      ]
+    },
+    "physical_profile": {
+      "point": 0.25,
+      "descriptive_95_interval": [
+        0.0,
+        0.5472656249999979
+      ]
+    },
+    "sensitivity": {
+      "point": 0.0,
+      "descriptive_95_interval": [
+        -0.10976562499999998,
+        0.140625
+      ]
+    },
+    "sensitivity_shuffled": {
+      "point": 0.21875,
+      "descriptive_95_interval": [
+        0.0,
+        0.5
+      ]
+    },
+    "functional_shuffled": {
+      "point": 0.21875,
+      "descriptive_95_interval": [
+        0.0,
+        0.5
+      ]
+    }
+  },
+  "effect_sizes": {
+    "rmse": 0.11321221451120267,
+    "nrmse_vs_zero": 0.7336214441963255,
+    "mae": 0.08324480331066297,
+    "maximum_error": 0.7448282623663545,
+    "actual_mean_span": 0.5208931399974972,
+    "predicted_mean_span": 0.40371036680880934
+  },
+  "error_decomposition": {
+    "total_linear_to_evaluation_mse": 0.07860804002205486,
+    "linear_to_exact_calibration_mse": 0.04788779112237911,
+    "exact_calibration_to_evaluation_mse": 0.012817005514530567,
+    "signed_cross_term": 0.017903243385145175,
+    "identity_residual": 6.938893903907228e-18,
+    "interpretation": "Algebraic decomposition with covariance, not independent causal attribution"
+  },
+  "failure_counts": {
+    "predicted_upper": 0,
+    "measured_upper": 19,
+    "linear_only_correct": 2,
+    "exact_only_correct": 2
+  },
+  "training_diagnostic": {
+    "cases": 272,
+    "correct": 127,
+    "includes_zero_controls": true,
+    "profile_metrics": {
+      "rmse": 0.04641124220115092,
+      "nrmse_vs_zero": 0.2457016829488389,
+      "mae": 0.03448963729552441,
+      "maximum_error": 0.26867190888151526,
+      "actual_mean_span": 0.5625605276402306,
+      "predicted_mean_span": 0.524559258360087
+    }
+  },
+  "interpretation": [
+    "Exact rather than linear scoring reduces development profile nRMSE from1.8168 to0.7336, but complete-category accuracy stays25%.",
+    "The linearization error is substantial on this fixed library; remaining exact calibration-to-evaluation error and near ties can still change the leading category.",
+    "This does not isolate template effects from word/tokenization effects, since both differ between calibration and evaluation.",
+    "Every predicted category remains lowercase while19/64 measured categories are uppercase. All64 actual updates remain above the original effect floor.",
+    "All original methods, groups, difficult cases and uncertainty are retained. Development comparisons are not confirmation."
+  ],
+  "decision": "Reject v5 as the selected predictor. Do not invoke its conditional held-out preparer. Preserve the original reserved/fresh grids and success criteria. Further method development must address transfer or representation, not change the threshold or reuse a favorable subgroup.",
+  "scope": "Native one-step Qwen3-14B rank16 updates; finite reference-answer loss preference. V5 uses extra pinned-base and task-library access and is not a trained LoRAcle checkpoint.",
+  "goal_status": "Active and unachieved. Neither the learned variants nor the base-assisted predictors establish strong held-out generalization."
+}

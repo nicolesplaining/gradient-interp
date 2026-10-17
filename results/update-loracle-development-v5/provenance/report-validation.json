@@ -1,0 +1,10 @@
+{
+  "written_unix": 1792212084.779192,
+  "both_original_figures_visually_inspected": true,
+  "all64_actual_and8_controls_retained": true,
+  "all10_methods_and8_source_groups_read": true,
+  "copied_after_complete_dead_and_passed_audit": true,
+  "executed_analysis_source_preserved": true,
+  "source_archive_sha256": "63539bd0c863bfae87c7f575b0ef534e6d135935a6b61d3631f3c9ea75957464",
+  "first_analysis_unchanged": true
+}

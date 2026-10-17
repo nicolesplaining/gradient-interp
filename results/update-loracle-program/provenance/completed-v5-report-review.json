@@ -1,0 +1,13 @@
+{
+  "written_unix": 1792212220.873771,
+  "v5_all688_conditions_audited": true,
+  "first_analysis_preserved": true,
+  "two_v5_and_two_program_figures_visually_checked": true,
+  "all_local_report_links_checked": true,
+  "no_scientific_source_or_output_changed": true,
+  "all_primary_gates_preserved": true,
+  "v5_development_failed": true,
+  "reserved_or_fresh_cases_accessed": 0,
+  "scope_check": "Original learned-update LoRAcle objective is not met. Base-assisted profile methods have extra access and cannot be reported as improved LoRAcle checkpoints.",
+  "original_unrelated_report_sha256": "6d2b984928afa37f84f4bd83a7923639c43b6c4c43b9f1308f81751a636fa842"
+}
